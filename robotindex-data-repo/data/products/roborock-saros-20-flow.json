@@ -1,0 +1,43 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "roborock-saros-20-flow",
+  "slug": "product-roborock-saros-20-flow.html",
+  "name": "Roborock Saros 20 Flow",
+  "manufacturer": "Roborock",
+  "manufacturerUrl": "https://us.roborock.com/products/roborock-saros-20-flow",
+  "category": "Cleaning & Home Care",
+  "subcategory": "Floors",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "Roborock's just-launched Saros flagship, named for its SpiraFlow 2.0 pressurized roller-mop wash system. Pairs a retracting LiDAR turret with an AdaptiLift chassis that climbs double-layer thresholds up to 3.46\" despite an ultra-slim body. Launched in the US on September 14, 2026.",
+  "image": {
+    "src": "images/roborock-saros-20-flow.jpg",
+    "alt": "Roborock Saros 20 Flow",
+    "credit": "Roborock (official)"
+  },
+  "specs": [
+    { "label": "Suction", "value": "36,000 Pa", "note": "HyperForce digital motor" },
+    { "label": "Navigation", "value": "RetractSense LiDAR", "note": "+ structured light/RGB reactive AI" },
+    { "label": "Mopping", "value": "SpiraFlow 2.0", "note": "16 pressurized water outlets, 240 RPM" },
+    { "label": "Mop Wash Temp", "value": "212°F", "note": "100°C wash; 145°F hot-air dry" },
+    { "label": "Threshold Climb", "value": "Up to 3.46\"", "note": "AdaptiLift Traverse 3.0, double-layer" },
+    { "label": "Battery", "value": "6,400 mAh", "note": "~200 m² per charge; 150-min fast charge" },
+    { "label": "Dock", "value": "RockDock", "note": "auto-empty, water/detergent refill, drain" },
+    { "label": "Price", "value": "$1,499.99", "note": "launch price; $1,699.99 after ~Sept 20, 2026" }
+  ],
+  "pricing": {
+    "summary": "Launch price $1,499.99 through roughly September 20, 2026, reverting to a $1,699.99 MSRP afterward. Launched in the US on September 14, 2026, following an IFA 2026 announcement; a Canada launch is planned for October 2026."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "The \"Flow\" name refers to SpiraFlow 2.0, a pressurized self-cleaning roller-mop system that runs 16 water outlets continuously across the roller while mopping at up to 15N of pressure and 240 RPM; an edge-adaptive roller extends 44mm into corners, and the mop auto-lifts 15mm on carpet. Navigation combines a retractable, elevated LiDAR unit (RetractSense) — which tucks away for tight clearances — with structured-light and RGB-camera-based reactive AI recognizing 300+ obstacle types, plus LED lighting for low-light navigation. The AdaptiLift Traverse 3.0 chassis is the successor to the leg-lift design on the earlier Saros 10R, letting an ultra-slim 8.98cm-tall body climb double-layer thresholds up to 8.8cm (3.46\") — normally out of reach for a body this low-profile. The RockDock handles auto-empty, automatic water and detergent refill, dirty-water draining, mop washing at 212°F, and hot-air drying at 145°F. The Roborock app adds no-go zone suggestions, pet-friendly detection, a built-in \"Hello, Rocky\" voice assistant, and Matter/Alexa/Siri/Google Home compatibility; robotindex could not confirm explicit multi-floor mapping support, exact dustbin/water-tank capacities, or a published noise-level (dB) figure from the sources checked."
+    }
+  ],
+  "firmwareCommunity": [],
+  "sourcing": "Specs sourced from Roborock's own US product pages (us.roborock.com/products/roborock-saros-20-flow), Android Authority's launch coverage, VacuumWars' launch article, and GSMDome, as of September 2026. This model launched just days before this page was written — noise level (dB), exact runtime in minutes, and exact dustbin/water-tank capacities are not published by Roborock and were not found in press coverage checked. robotindex does not sell this product."
+}

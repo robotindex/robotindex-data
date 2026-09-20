@@ -1,0 +1,222 @@
+{
+  "$schema": "../schema/builds-mods-entry.schema.json",
+  "entries": [
+    {
+      "id": "huggingface-lerobot-humanoid",
+      "tab": "opensource",
+      "name": "Hugging Face LeRobot Humanoid",
+      "desc": "Open-source humanoid platform under the LeRobot project.",
+      "repo": "https://github.com/huggingface/lerobot"
+    },
+    {
+      "id": "huggingface-lerobot-humanoid-hardware",
+      "tab": "opensource",
+      "name": "LeRobot Humanoid Hardware",
+      "desc": "BOM, STL files, and wiring/assembly docs for the LeRobot humanoid platform (Apache-2.0).",
+      "repo": "https://github.com/huggingface/lerobot-humanoid-hardware"
+    },
+    {
+      "id": "kscalelabs-kbot",
+      "tab": "opensource",
+      "name": "K-Scale Z-Bot / K-Bot",
+      "desc": "DIY open-source humanoid — no vendor currently sells an assembled unit.",
+      "repo": "https://github.com/kscalelabs/kbot"
+    },
+    {
+      "id": "mirobotics-cyberdog-ros2",
+      "tab": "opensource",
+      "name": "Xiaomi CyberDog 2",
+      "desc": "Open-source quadruped platform with public ROS2 stack.",
+      "repo": "https://github.com/MiRoboticsLab/cyberdog_ros2"
+    },
+    {
+      "id": "petoi-bittle-x-opencat",
+      "tab": "opensource",
+      "name": "Petoi Bittle X",
+      "desc": "Built on the OpenCat open-source quadruped framework.",
+      "repo": "https://github.com/PetoiCamp/OpenCat"
+    },
+    {
+      "id": "petoi-quaddle-opencat",
+      "tab": "opensource",
+      "name": "Petoi Quaddle",
+      "desc": "Also built on the OpenCat open-source framework.",
+      "repo": "https://github.com/PetoiCamp/OpenCat"
+    },
+    {
+      "id": "mangdang-mini-pupper-2-pro",
+      "tab": "opensource",
+      "name": "MangDang Mini Pupper 2 Pro",
+      "desc": "Open-source ROS robot dog kit.",
+      "repo": "https://github.com/mangdangroboticsclub/QuadrupedRobot"
+    },
+    {
+      "id": "so-100-arm100",
+      "tab": "opensource",
+      "name": "SO-100",
+      "desc": "Open-source 6-axis arm, native Hugging Face LeRobot support.",
+      "repo": "https://github.com/TheRobotStudio/SO-ARM100"
+    },
+    {
+      "id": "so-101-arm100",
+      "tab": "opensource",
+      "name": "SO-101",
+      "desc": "Successor to SO-100, same open-source LeRobot lineage.",
+      "repo": "https://github.com/TheRobotStudio/SO-ARM100"
+    },
+    {
+      "id": "elephant-robotics-mycobot-280",
+      "tab": "opensource",
+      "name": "Elephant Robotics myCobot 280",
+      "desc": "Open-source 6-axis collaborative arm, Python/ROS support.",
+      "repo": "https://docs.elephantrobotics.com"
+    },
+    {
+      "id": "waveshareteam-roarm-m2",
+      "tab": "opensource",
+      "name": "Waveshare RoArm-M2-S",
+      "desc": "Open hardware + firmware desktop arm kit.",
+      "repo": "https://github.com/waveshareteam/roarm_m2"
+    },
+    {
+      "id": "annin-robotics-ar4",
+      "tab": "opensource",
+      "name": "Annin Robotics AR4",
+      "desc": "Open-source 6-axis arm, machined or 3D-printed at home.",
+      "repo": "https://anninrobotics.com"
+    },
+    {
+      "id": "robotis-open-manipulator-x",
+      "tab": "opensource",
+      "name": "ROBOTIS Open-Manipulator-X",
+      "desc": "ROBOTIS's official open-source manipulator platform.",
+      "repo": "https://github.com/ROBOTIS-GIT/open_manipulator"
+    },
+    {
+      "id": "arctos-robotics-arm",
+      "tab": "opensource",
+      "name": "Arctos Robotics Arm",
+      "desc": "3D-printable open-source 6-axis arm.",
+      "repo": "https://github.com/Arctos-Robotics"
+    },
+    {
+      "id": "liyiteng-alohamini",
+      "tab": "opensource",
+      "name": "AlohaMini",
+      "desc": "Open-source 3D-printable dual-arm mobile robot, LeRobot-native.",
+      "repo": "https://github.com/liyiteng/AlohaMini"
+    },
+    {
+      "id": "sigrobotics-lekiwi",
+      "tab": "opensource",
+      "name": "LeKiwi",
+      "desc": "Low-cost open-source holonomic mobile manipulator base.",
+      "repo": "https://github.com/SIGRobotics-UIUC/LeKiwi"
+    },
+    {
+      "id": "linorobot-linorobot2",
+      "tab": "opensource",
+      "name": "Linorobot2",
+      "desc": "Open-source ROS2 framework for DIY autonomous mobile robots.",
+      "repo": "https://github.com/linorobot/linorobot2"
+    },
+    {
+      "id": "ottodiy-maker-kit",
+      "tab": "opensource",
+      "name": "Otto DIY Maker Kit",
+      "desc": "Open-source 3D-printed bipedal robot kit with open hardware, firmware, and app.",
+      "repo": "https://github.com/OttoDIY"
+    },
+    {
+      "id": "turtlebot-turtlebot4",
+      "tab": "opensource",
+      "name": "TurtleBot4 / Clearpath TurtleBot",
+      "desc": "ROS 2 educational/research robot with its full navigation, drivers, and simulation stack open-sourced — software only; hardware is a closed commercial build on the iRobot Create 3 base.",
+      "repo": "https://github.com/turtlebot/turtlebot4"
+    },
+    {
+      "id": "waveshareteam-ugv-rpi",
+      "tab": "opensource",
+      "name": "Waveshare UGV Rover Series",
+      "desc": "Raspberry Pi/ESP32-powered tracked rover chassis with open firmware and demo code for motion control, ROS, and AI-camera vision — hardware is documented but not formally open-licensed.",
+      "repo": "https://github.com/waveshareteam/ugv_rpi"
+    },
+    {
+      "id": "hypfer-valetudo-map-card",
+      "tab": "configs",
+      "name": "Valetudo Map Card for Home Assistant",
+      "desc": "Community Lovelace card rendering live Valetudo map/zone data inside Home Assistant dashboards.",
+      "repo": "https://github.com/Hypfer/lovelace-valetudo-map-card"
+    },
+    {
+      "id": "chvmp-champ",
+      "tab": "configs",
+      "name": "CHAMP Locomotion Profiles for Unitree Go2",
+      "desc": "Community-tuned gait/locomotion config profiles adapting the CHAMP quadruped controller to Go2 hardware.",
+      "repo": "https://github.com/chvmp/champ"
+    },
+    {
+      "id": "mtrab-landroid-cloud",
+      "tab": "configs",
+      "name": "Worx Landroid Home Assistant Automation Recipe",
+      "desc": "Community integration recipe (via the Landroid Cloud HACS integration) for scheduling and monitoring Worx Landroid mowers from Home Assistant.",
+      "repo": "https://github.com/MTrab/landroid_cloud"
+    },
+    {
+      "id": "wire-pod-llm-hook-recipes",
+      "tab": "configs",
+      "name": "Wire-Pod Local LLM Hook Recipes",
+      "desc": "Community configuration recipes wiring Wire-Pod's chat intent into locally-hosted LLMs instead of a cloud API.",
+      "repo": "https://github.com/kercre123/wire-pod"
+    },
+    {
+      "id": "huggingface-lerobot-teleop-presets",
+      "tab": "configs",
+      "name": "LeRobot Teleoperation Calibration Presets",
+      "desc": "Community-shared calibration presets for teleoperating and training SO-100/SO-101 arms with Hugging Face LeRobot.",
+      "repo": "https://github.com/huggingface/lerobot"
+    },
+    {
+      "id": "valetudo-firmware",
+      "tab": "firmware",
+      "name": "Valetudo",
+      "desc": "Open-source, cloud-free local control layer for supported LiDAR robot vacuums (Dreame, Roborock), replacing vendor clouds with local HTTP/MQTT.",
+      "repo": "https://valetudo.cloud/pages/general/supported-robots/"
+    },
+    {
+      "id": "wire-pod-vector-bypass",
+      "tab": "firmware",
+      "name": "Wire-Pod (Digital Dream Labs Vector 1.0 & 2.0)",
+      "desc": "Community-maintained local server bypass for Vector's voice/cloud features, an alternative to the official subscription.",
+      "repo": "https://github.com/kercre123/wire-pod"
+    },
+    {
+      "id": "openmoxie",
+      "tab": "firmware",
+      "name": "OpenMoxie",
+      "desc": "Community-developed local server framework restoring conversational function to Embodied Moxie units after the official cloud shut down.",
+      "repo": "https://github.com/openmoxie/openmoxie"
+    },
+    {
+      "id": "openmower",
+      "tab": "firmware",
+      "name": "OpenMower",
+      "desc": "Open-source firmware and carrier board converting perimeter-wire mowers (e.g. YardForce Classic 500) into wire-free, RTK-accurate autonomous mowers.",
+      "repo": "https://openmower.de/"
+    },
+    {
+      "id": "unitree-sdk2-python",
+      "tab": "firmware",
+      "name": "Unitree SDK2 (unitree_sdk2_python)",
+      "desc": "Official local control SDK for Unitree Go2 and G1, built on CycloneDDS — no vendor app required.",
+      "repo": "https://github.com/unitreerobotics/unitree_sdk2_python"
+    },
+    {
+      "id": "aibohack-rcode",
+      "tab": "firmware",
+      "name": "AiboHack RCode (legacy Sony Aibo ERS-210/220/31x)",
+      "desc": "Long-running community hacking framework for extending autonomous behavior on legacy Aibo memory-stick models.",
+      "repo": "https://www.aibohack.com/rcode/index.html"
+    }
+  ]
+}
