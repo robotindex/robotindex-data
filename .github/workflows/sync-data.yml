@@ -1,0 +1,73 @@
+
+name: Sync data from robotindex.io
+
+on:
+  schedule:
+    - cron: "0 6 1-31/2 * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install jsonschema
+
+      - name: Fetch latest data from robotindex.io
+        run: |
+          set -euo pipefail
+          curl -sSf -o /tmp/builds-mods.json https://robotindex.io/data/builds-mods.json
+          curl -sSf -o /tmp/models-data.json https://robotindex.io/data/models-data.json
+
+      - name: Validate fetched data against schema
+        run: |
+          python scripts/validate_data.py \
+            /tmp/builds-mods.json schema/builds-mods-entry.schema.json \
+            /tmp/models-data.json schema/models-data-entry.schema.json
+
+      - name: Apply changes if any
+        id: diff
+        run: |
+          set -euo pipefail
+          changed=false
+          if ! diff -q /tmp/builds-mods.json data/builds-mods.json > /dev/null 2>&1; then
+            cp /tmp/builds-mods.json data/builds-mods.json
+            changed=true
+          fi
+          if ! diff -q /tmp/models-data.json data/models-data.json > /dev/null 2>&1; then
+            cp /tmp/models-data.json data/models-data.json
+            changed=true
+          fi
+          echo "changed=$changed" >> "$GITHUB_OUTPUT"
+
+      - name: Open pull request
+        if: steps.diff.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Sync data from robotindex.io"
+          title: "Scheduled data sync from robotindex.io"
+          body: |
+            Automated sync — pulled the current `data/builds-mods.json` and
+            `data/models-data.json` from the live deployed site
+            (robotindex.io) and found differences from what's committed
+            here.
+
+            Both fetched files passed schema validation before this PR was
+            opened (see the "Validate fetched data against schema" step of
+            this run for details). Review the diff below and merge to
+            publish.
+          branch: auto/sync-data
+          delete-branch: true
+          labels: automated-sync
