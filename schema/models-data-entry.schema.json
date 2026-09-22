@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://robotindex.io/schema/models-data-entry.schema.json",
+  "title": "robotindex Models & Data Entry",
+  "description": "One entry in data/models-data.json \u2014 the AI/software substrate underneath physical robots, as opposed to the robots themselves (Directory) or the mods/firmware for a specific product (Builds & Mods). Draft schema, not yet as battle-tested as builds-mods-entry.schema.json: expect fields to evolve as the page's first real content goes live. Unlike Builds & Mods, entries here are not required to have a public repository \u2014 a 'closed' world model has no source to link to, only a vendor's own product page, and that distinction is exactly what the schema needs to preserve rather than paper over.",
+  "type": "object",
+  "required": [
+    "id",
+    "tab",
+    "category",
+    "name",
+    "desc",
+    "license",
+    "link",
+    "access"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Stable unique id, never renamed once published."
+    },
+    "tab": {
+      "type": "string",
+      "enum": [
+        "world-models",
+        "simulation-training",
+        "datasets"
+      ],
+      "description": "Which top-level tab this renders under."
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Open",
+        "Closed",
+        "Physics Engine",
+        "RL Training",
+        "Synthetic Data & Sensors",
+        "Robot Manipulation",
+        "Egocentric Human Video",
+        "Gameplay / Simulated Interaction",
+        "Human Motion Capture"
+      ],
+      "description": "Sub-grouping within a tab. world-models entries must be 'Open' or 'Closed' \u2014 this is the load-bearing distinction on this page, since a 'Closed' entry is described from a vendor's own materials, not verified against source the way everything in Builds & Mods is."
+    },
+    "access": {
+      "type": "string",
+      "enum": [
+        "Open",
+        "Closed"
+      ],
+      "description": "Whether this entry can be checked against real public source material (Open) or is described only from a vendor's own claims (Closed). For world-models entries this always matches `category` and is shown via the page's Open/Closed columns. For simulation-training and datasets entries \u2014 where every entry so far has a real, disclosed license even when gated or restrictive \u2014 it's shown as a small prefix on the license badge instead, so the same trust distinction stays visible without a second set of columns."
+    },
+    "name": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string",
+      "description": "Plain-language license/access status. Not gated to OSI licenses the way Builds & Mods' opensource tab is \u2014 but must be accurate: 'Proprietary', 'Gated \u2014 approval required', 'CC BY-NC 4.0', 'MIT', a specific custom license name, etc. Never left vague when the real answer is a restriction."
+    },
+    "link": {
+      "type": "string",
+      "format": "uri",
+      "description": "Canonical source. A GitHub/Codeberg repo when one exists (Open world models, Simulation & Training, most Datasets); a vendor's own product/docs page when it doesn't (Closed world models, gated datasets like Ego4D)."
+    }
+  }
+}

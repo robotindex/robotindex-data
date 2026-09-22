@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://robotindex.io/schema/directory.schema.json",
+  "title": "robotindex Directory",
+  "description": "The full browse structure of the robotindex Directory — every product organized by category and subcategory, in display order. This is the catalog shape; the actual per-product data (specs, pricing, editorial, sourcing) lives one file per product under data/products/<productId>.json, keyed by the productId referenced here. Regenerated from directory.html — the site's own authoritative source for category/subcategory/tier assignment.",
+  "type": "object",
+  "required": ["categories"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string", "description": "Editor/tooling hint pointing back at this schema file. Not semantically meaningful." },
+    "categories": {
+      "type": "array",
+      "description": "Top-level categories, in display order.",
+      "items": {
+        "type": "object",
+        "required": ["category", "subcategories"],
+        "additionalProperties": false,
+        "properties": {
+          "category": { "type": "string", "description": "e.g. 'Humanoid & General Purpose'." },
+          "subcategories": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name", "items"],
+              "additionalProperties": false,
+              "properties": {
+                "name": { "type": "string", "description": "e.g. 'Four Legs'. Empty string when the category has no subcategory split (e.g. Robot Arms)." },
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["name", "tier", "productId"],
+                    "additionalProperties": false,
+                    "properties": {
+                      "name": { "type": "string", "description": "Display name, as shown in the directory listing." },
+                      "tier": { "type": "string", "enum": ["featured", "pending"] },
+                      "productId": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+                        "description": "References the matching record's 'id' field in data/products/<productId>.json — NOT the .html slug. Every productId here must have a corresponding product record."
+                      },
+                      "openSource": { "type": "boolean", "description": "Present and true only when this product qualifies under robotindex's Strict Open Source policy." },
+                      "pending": { "type": "boolean", "description": "Present and true only for a not-yet-released or availability-unconfirmed product. Distinct from tier." }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
