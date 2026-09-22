@@ -556,13 +556,11 @@ def main():
         out_path = os.path.join(PRODUCTS_DIR, record["id"] + ".json")
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(record, f, indent=2, ensure_ascii=False)
-            f.write("\n")
         ok += 1
 
     directory_json["$schema"] = "../schema/directory.schema.json"
     with open(os.path.join(DATA_DIR, "directory.json"), "w", encoding="utf-8") as f:
         json.dump(directory_json, f, indent=2, ensure_ascii=False)
-        f.write("\n")
 
     print(f"Extracted {ok} of {len(dir_map)} directory items")
     if fetch_warnings:
@@ -578,3 +576,4 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+
