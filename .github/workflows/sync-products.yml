@@ -1,0 +1,62 @@
+name: Sync products & directory from robotindex.io
+
+on:
+  schedule:
+    - cron: "0 8 1-31/2 * *" # ~every 2 days, offset from sync-data.yml
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync-products:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install beautifulsoup4 jsonschema
+
+      - name: Re-extract directory + products from the live site
+        run: python scripts/sync_products.py
+
+      - name: Validate the freshly extracted data
+        run: python scripts/validate_products.py
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git status --porcelain data/directory.json data/products/ | grep -q .; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open pull request
+        if: steps.diff.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Sync directory + products from robotindex.io"
+          title: "Scheduled directory/products sync from robotindex.io"
+          body: |
+            Automated re-extraction of `data/directory.json` and
+            `data/products/*.json` from the live site (robotindex.io) --
+            found differences from what's committed here.
+
+            This ran `scripts/sync_products.py` (fetches directory.html
+            and every product page, re-parses the same way the original
+            manual extraction did) and `scripts/validate_products.py`
+            (schema + orphan checks), both of which passed before this PR
+            was opened. Review the diff below -- pay particular attention
+            to any `manufacturer` field on a product that's new since the
+            last sync, since that field is inferred from page text/domain
+            heuristics and a genuinely new product won't be in the
+            hand-verified overrides table yet.
+          branch: auto/sync-products
+          delete-branch: true
+          labels: automated-sync
