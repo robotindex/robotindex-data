@@ -1,5 +1,4 @@
 {
-  "$schema": "../schema/directory.schema.json",
   "categories": [
     {
       "category": "Humanoid & General Purpose",
@@ -860,5 +859,6 @@
         }
       ]
     }
-  ]
+  ],
+  "$schema": "../schema/directory.schema.json"
 }
