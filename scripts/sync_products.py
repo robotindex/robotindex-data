@@ -47,6 +47,7 @@ import os
 import re
 import sys
 import urllib.request
+from collections import defaultdict
 from urllib.parse import unquote
 
 try:
@@ -298,7 +299,64 @@ def build_directory_and_map(categories):
 
 # ------------------------------------------------------------- extraction
 
-def classify_firmware_community(soup, repo_to_id):
+_STOPWORDS = {"the", "a", "an", "and", "for", "of", "in", "on", "with", "&"}
+
+
+def _name_tokens(text):
+    return {w for w in re.findall(r"[a-z0-9]+", text.lower()) if w not in _STOPWORDS}
+
+
+def _resolve_crosslink(repo_url, tab_param, repo_to_entries, product_id, product_name):
+    """Pick the single builds-mods entry a cross-link-card refers to.
+
+    Multiple builds-mods.json entries can legitimately share a repo (two
+    editorial rows citing the same project) -- see README "Contributing".
+    repo_url alone isn't a unique key in that case, so this resolves in
+    order of specificity:
+      1. repo + tab (matches the tab= query param the site's own
+         cross-link hrefs already carry, e.g. builds-mods-id pairs that
+         differ by tab like configs vs firmware).
+      2. if repo+tab is still ambiguous (two entries share BOTH repo and
+         tab), fall back to token overlap between the current product's
+         name and each candidate entry's name -- e.g. "Petoi Bittle X"
+         vs. the "petoi-bittle-x-opencat" / "petoi-quaddle-opencat" pair,
+         which share repo and tab but not name.
+    Returns (bm_id_or_None, ambiguous_candidate_ids_or_None).
+    """
+    candidates = repo_to_entries.get(repo_url, [])
+    if not candidates:
+        return None, None
+    if len(candidates) == 1:
+        return candidates[0]["id"], None
+
+    pool = [c for c in candidates if tab_param and c["tab"] == tab_param]
+    if not pool:
+        pool = candidates
+    if len(pool) == 1:
+        return pool[0]["id"], None
+
+    product_tokens = _name_tokens(product_name)
+    scored = sorted(
+        ((len(product_tokens & _name_tokens(c["name"])), c) for c in pool),
+        key=lambda pair: pair[0],
+        reverse=True,
+    )
+    top_score = scored[0][0]
+    top_matches = [c for score, c in scored if score == top_score]
+    if top_score > 0 and len(top_matches) == 1:
+        chosen = top_matches[0]
+        review_flags.append((
+            product_id, "firmwareCommunity",
+            f"repo {repo_url!r} is shared by {len(pool)} builds-mods entries "
+            f"({', '.join(c['id'] for c in pool)}) -- picked {chosen['id']!r} by "
+            f"name match, worth a human double-check",
+        ))
+        return chosen["id"], None
+
+    return None, [c["id"] for c in pool]
+
+
+def classify_firmware_community(soup, repo_to_entries, product_id, product_name):
     section = None
     for h2 in soup.find_all("h2"):
         if h2.get_text(strip=True).startswith("Firmware"):
@@ -325,17 +383,51 @@ def classify_firmware_community(soup, repo_to_id):
             if "builds-mods.html" in href:
                 m = re.search(r"[?&]repo=([^&]+)", href)
                 if m:
-                    repo_url = unquote(m.group(1))
-                    bm_id = repo_to_id.get(repo_url.rstrip("/").lower())
+                    repo_url = unquote(m.group(1)).rstrip("/").lower()
+                    tab_m = re.search(r"[?&]tab=([^&]+)", href)
+                    tab_param = unquote(tab_m.group(1)) if tab_m else None
+                    bm_id, ambiguous = _resolve_crosslink(
+                        repo_url, tab_param, repo_to_entries, product_id, product_name)
                     if bm_id:
                         entries.append({"buildsModsId": bm_id})
+                        continue
+                    if ambiguous:
+                        # No existing "status" value in schema/product.schema.json
+                        # fits "matches more than one builds-mods entry" -- rather
+                        # than invent a new enum value (which validate_products.py
+                        # doesn't know about either), fall back to "not-listed" and
+                        # say why in the note, and flag it loudly for a human.
+                        review_flags.append((
+                            product_id, "firmwareCommunity",
+                            f"repo {repo_url!r} matches {len(ambiguous)} builds-mods entries "
+                            f"({', '.join(ambiguous)}) with no way to tell which this card "
+                            f"means -- left as not-listed, needs a human pick",
+                        ))
+                        entries.append({
+                            "status": "not-listed",
+                            "note": desc or f"Repo: {repo_url} -- matches {len(ambiguous)} builds-mods entries ({', '.join(ambiguous)}), needs manual disambiguation",
+                        })
                         continue
                     entries.append({"status": "not-listed", "note": desc or f"Repo: {repo_url}"})
                     continue
             entries.append({"status": "not-listed", "note": desc or f"See {href}"})
         else:
             entries.append({"status": "not-listed", "note": desc or name or "No public repository listed."})
-    return entries
+
+    # Belt-and-suspenders: even with the resolution above, dedupe any
+    # buildsModsId that ends up appended twice (e.g. two cards that
+    # legitimately resolve to the same entry) rather than shipping a
+    # visible duplicate in the record.
+    seen_ids = set()
+    deduped = []
+    for e in entries:
+        bm_id = e.get("buildsModsId")
+        if bm_id is not None:
+            if bm_id in seen_ids:
+                continue
+            seen_ids.add(bm_id)
+        deduped.append(e)
+    return deduped
 
 
 def extract_specs_from_grid(soup):
@@ -450,7 +542,7 @@ def extract_sourcing(soup):
     return inline_to_md(note) if note else ""
 
 
-def process_product(href, html_text, meta, repo_to_id):
+def process_product(href, html_text, meta, repo_to_entries):
     soup = BeautifulSoup(html_text, "html.parser")
     pid = href[len("product-"):-len(".html")]
 
@@ -481,7 +573,7 @@ def process_product(href, html_text, meta, repo_to_id):
 
     pricing = extract_pricing(soup)
     editorial = extract_editorial(soup)
-    firmware_community = classify_firmware_community(soup, repo_to_id)
+    firmware_community = classify_firmware_community(soup, repo_to_entries, pid, name)
     sourcing = extract_sourcing(soup)
 
     closed_platform = bool(firmware_community) and all(e.get("status") == "closed-platform" for e in firmware_community)
@@ -537,7 +629,17 @@ def main():
     try:
         with open(os.path.join(DATA_DIR, "builds-mods.json"), encoding="utf-8") as f:
             builds_mods = json.load(f)
-        repo_to_id = {e["repo"].rstrip("/").lower(): e["id"] for e in builds_mods["entries"]}
+        # repo -> list of entries, NOT a single id: multiple builds-mods.json
+        # entries can legitimately share a repo URL (see README under
+        # Contributing -- "distinct editorial rows" citing the same project),
+        # and a plain {repo: id} dict comprehension silently drops every
+        # entry but the last one with a given repo, which then can never be
+        # linked from a product page again. classify_firmware_community()
+        # disambiguates using tab + product-name matching (see
+        # _resolve_crosslink) instead of assuming repo alone is unique.
+        repo_to_entries = defaultdict(list)
+        for e in builds_mods["entries"]:
+            repo_to_entries[e["repo"].rstrip("/").lower()].append(e)
     except (OSError, json.JSONDecodeError, KeyError) as e:
         print(f"FATAL: could not load data/builds-mods.json for firmware cross-referencing: {e}", file=sys.stderr)
         return 1
@@ -549,7 +651,7 @@ def main():
         if page_html is None:
             continue
         try:
-            record = process_product(href, page_html, meta, repo_to_id)
+            record = process_product(href, page_html, meta, repo_to_entries)
         except Exception as e:
             fetch_warnings.append(f"{href}: extraction failed: {e}")
             continue
@@ -576,4 +678,5 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+
 
