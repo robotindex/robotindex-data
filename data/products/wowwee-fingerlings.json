@@ -1,0 +1,75 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "wowwee-fingerlings",
+  "slug": "product-wowwee-fingerlings.html",
+  "name": "WowWee Fingerlings",
+  "manufacturer": "WowWee",
+  "category": "Pets & Toys",
+  "subcategory": "Toys & Characters",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A finger-perching robotic baby monkey from WowWee, the Hong Kong-based robotic-toy maker behind Robosapien and MiP. Fingerlings grip on with wraparound hands and a curled tail, then react to touch, clapping, kissing sounds, and being turned upside down with blinking eyes, head movement, and dozens of built-in sounds. The original 2017 monkey became one of that year's defining \"hot toy\" phenomena, with real shortages and scalped resale prices.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "4× LR44/AG13",
+      "note": "replaceable per WowWee's own support docs, though fiddly"
+    },
+    {
+      "label": "Dimensions",
+      "value": "~4–5 in",
+      "note": "no official spec sheet found; approximate"
+    },
+    {
+      "label": "Sensors",
+      "value": "Touch, mic, motion, tilt",
+      "note": "detects claps, kisses, rocking, upside-down"
+    },
+    {
+      "label": "Grip",
+      "value": "Wraparound hands/tail",
+      "note": "perches on a single finger"
+    },
+    {
+      "label": "Sounds",
+      "value": "40+ (original)",
+      "note": "current \"next-gen\" models marketed at 70+, plus a light-up heart"
+    },
+    {
+      "label": "Materials",
+      "value": "Faux fur + plastic",
+      "note": "one independent review notes painted details may peel"
+    },
+    {
+      "label": "App",
+      "value": "None for control",
+      "note": "separate, unrelated Fingerlings emoji/sticker apps exist"
+    },
+    {
+      "label": "Collectibility",
+      "value": "Not blind-boxed",
+      "note": "you choose the character; Fingerlings Minis spin-off is blind-boxed"
+    }
+  ],
+  "sourcing": "Verified against Wikipedia (WowWee, Fingerlings), WowWee's own official sites (wowwee.com, fingerlingsbrand.com, and its support/instruction-manual pages), an SEC-filed 2007 acquisition press release, and press coverage from CNBC, the Seattle Times, Time magazine, the Houston Chronicle, Today.com, and CNNMoney. WowWee's founding year/location, a claimed 1998 Hasbro acquisition, exact device dimensions, and products called \"Fingerlings Seal\" or \"Fingerlings Bigfoot\" are inconsistently reported, unverified, or not found at all, and are flagged accordingly rather than stated as fact. Battery replaceability is corrected here against a common online assumption, based on WowWee's own support documentation. No recall was found for this product line.",
+  "manufacturerUrl": "https://fingerlingsbrand.com/",
+  "pricing": {
+    "summary": "The original 2017 monkey launched at **$14.99**, while current \"next-gen\" interactive monkeys, with an upgraded 70+ sounds and a light-up heart feature, retail for around **$24.99** at major retailers today. That $24.99 reflects a genuinely upgraded product rather than the same 2017 toy at a higher price."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "The 2017 shortage led to a real legal action: WowWee filed suit against 165 counterfeit sellers of the toy by October 2017. One popular belief worth correcting: original Fingerlings monkeys use small LR44/AG13 batteries that are replaceable per WowWee's own documentation, not sealed and disposable as commonly assumed, though the fiddly tiny-cell compartment likely led many owners to treat them as disposable anyway."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "WowWee has not released a public SDK or developer API for Fingerlings; its WowWee Labs developer program covers other product lines (MiP, CHIP, R.E.V.) but not Fingerlings. Not currently listed in Builds & Mods."
+    }
+  ]
+}

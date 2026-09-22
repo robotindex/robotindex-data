@@ -1,0 +1,92 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "haushof-window-cleaner-robot",
+  "slug": "product-haushof-window-cleaner-robot.html",
+  "name": "HAUSHOF Window Cleaner Robot",
+  "manufacturer": "HAUSHOF",
+  "category": "Cleaning & Home Care",
+  "subcategory": "Other",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A budget window-cleaning robot from HAUSHOF, an Amazon/Walmart marketplace house brand with no dedicated official site. Ships with a physical remote and ten spare microfiber pads. Confirmed to exist and be actively sold, but with very little independently verifiable spec data.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "Not confirmed",
+      "note": "third-party listings conflict: eBay cites ~4.77 lb (2.16kg), Ubuy cites ~2.2 lb (1kg)"
+    },
+    {
+      "label": "Dimensions",
+      "value": "~29.2 × 14.4 × 9.1 cm",
+      "note": "11.5×5.67×3.6in, per a Ubuy marketplace listing — unverified, no official source found"
+    },
+    {
+      "label": "Navigation",
+      "value": "\"AI Path Planning\"",
+      "note": "+ edge detection, manufacturer's own branding"
+    },
+    {
+      "label": "Suction",
+      "value": "3,800 Pa"
+    },
+    {
+      "label": "Price",
+      "value": "Not confirmed",
+      "note": "check live Amazon listing"
+    },
+    {
+      "label": "Cleaning",
+      "value": "Auto water spray",
+      "note": "+ microfiber pads, spares included"
+    },
+    {
+      "label": "Control",
+      "value": "Physical remote",
+      "note": "HAUSHOF-branded"
+    },
+    {
+      "label": "Battery Backup",
+      "value": "Not confirmed",
+      "note": "not found in accessible sources"
+    },
+    {
+      "label": "Water Tank",
+      "value": "Not confirmed",
+      "note": "not found in accessible sources"
+    },
+    {
+      "label": "Noise",
+      "value": "Not published"
+    },
+    {
+      "label": "Subscription",
+      "value": "Not applicable",
+      "note": "no app/cloud service — physical remote only"
+    }
+  ],
+  "sourcing": "Confirmed details sourced from live Amazon and eBay listing titles as of September 2026. HAUSHOF has no dedicated official website robotindex could find, and no reputable tech press review of this model was located. Battery backup, water tank capacity, noise level, and current price could not be independently verified and are marked as such rather than estimated. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.amazon.com/s?k=HAUSHOF+Window+Cleaner+Robot",
+  "pricing": {
+    "summary": "robotindex could not confirm current pricing for this listing (Amazon blocks automated access to its product pages). Check the live Amazon listing directly for current price."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware — Sourcing Caveat",
+      "body": "HAUSHOF's window-cleaning robot is a real, currently-listed Amazon/eBay product, but has no dedicated brand website and no reputable tech press review. The Amazon listing title alone confirms 3,800 Pa suction, automatic water spray, \"AI path planning\"/edge-detection branding, and a physical remote control. Battery runtime, water-tank capacity, spare-pad count, noise level, and price could not be independently confirmed."
+    },
+    {
+      "heading": "Insights",
+      "body": "robotindex found no recalls, lawsuits, or safety-incident reports for this product in the sources reviewed — though that reflects an unusually thin sourcing base rather than a verified clean record: HAUSHOF has no dedicated official website found, and no reputable tech-press review of this model exists."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "HAUSHOF Window Cleaner Robot has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "adeept-rasptank-pro",
+  "slug": "product-adeept-rasptank-pro.html",
+  "name": "Adeept RaspTank Pro",
+  "manufacturer": "Adeept",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Mobile Robot Kits",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A tank-tread Raspberry Pi rover with a 3-DOF robotic arm bolted to the deck — the first tracked chassis and the first arm-equipped kit in this subcategory. Adeept's official spec lists a 3-DOF arm and aluminum body for the \"Pro\" tier, distinct from the cheaper base RaspTank's 4-DOF arm and acrylic chassis; the visible \"AD002\" servo label on this unit matches the Pro's listed component set.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "2× 18650 Li-ion",
+      "note": "not included; no onboard charging circuit"
+    },
+    {
+      "label": "Weight",
+      "value": "2 kg",
+      "note": "per Adeept's listed spec (RaspTank Pro), assembled"
+    },
+    {
+      "label": "Dimensions",
+      "value": "33 × 23.5 × 10 cm",
+      "note": "per Adeept's listed spec"
+    },
+    {
+      "label": "Sensors",
+      "value": "Ultrasonic + IR array + MPU6050",
+      "note": "obstacle avoidance is ultrasonic-based, not vision-based"
+    },
+    {
+      "label": "Compute",
+      "value": "Raspberry Pi 4B/3B/3B+",
+      "note": "not included; no Pi 5 support"
+    },
+    {
+      "label": "Camera",
+      "value": "Pi Camera, pan-tilt bracket",
+      "note": "color-target tracking via OpenCV, not face or object ID"
+    },
+    {
+      "label": "Drive",
+      "value": "2× DC motor, tracks",
+      "note": "skid-steer via left/right track speed"
+    },
+    {
+      "label": "Chassis",
+      "value": "Aluminum, tank-tread",
+      "note": "dual-track drive, not wheeled — a category first here"
+    },
+    {
+      "label": "Arm",
+      "value": "3-DOF + gripper",
+      "note": "2× MG946R metal-gear + 3× AD002 micro servo"
+    },
+    {
+      "label": "LEDs / Display",
+      "value": "12× WS2812 RGB + 0.96\" OLED",
+      "note": "RGB used for line-tracking calibration feedback, not just show"
+    }
+  ],
+  "sourcing": "Specs and pricing compiled from Adeept's official product listing and GitHub repository as of this build; the arm's 3-DOF figure is Adeept's own stated spec, matched here to this unit via its visible servo labeling rather than an independent joint recount. Verify current price and license status before purchase.",
+  "manufacturerUrl": "https://www.adeept.com/rasptank-pro_p0405.html",
+  "pricing": {
+    "summary": "RaspTank Pro lists at $169.99 direct from Adeept — roughly double the base RaspTank's $89.99, and the most expensive kit in this subcategory apart from the higher-end Yahboom ROSMASTER SKUs. It's sold through Adeept's own store, Amazon, and AliExpress, with no evidence of a crowdfunding origin."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Adeept sells three overlapping RaspTank products, and the servo labels on this unit's arm (\"Adeept AD002 Micro Servo\" paired with MG946R) identify it as the RaspTank Pro ($169.99, 3-DOF arm) rather than the base model, even though that 3-DOF figure is Adeept's own stated number rather than an independently recounted joint tally. The Pro's GitHub repo has real, browsable code but no license file and few stars — the weakest openness posture of any kit in this subcategory — so no Open Source badge is applied here."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Adeept's own GitHub repository ships real, browsable Python control code for RaspTank Pro, though it carries no LICENSE file, so usage rights are not formally granted."
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "ascento-guard",
+  "slug": "product-ascento-guard.html",
+  "name": "Ascento Guard",
+  "manufacturer": "Ascento",
+  "category": "Security",
+  "subcategory": "Outdoor Security",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A two-wheeled, self-balancing patrol robot from Ascento (an ETH Zurich spin-off) with spring-like \"wheel-leg\" hybrid legs that let it climb curbs, stairs, and rough terrain. Sold only as B2B robot-as-a-service, not to consumers.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "~4.5–8 hrs",
+      "note": "autonomous docking/charging"
+    },
+    {
+      "label": "Weight",
+      "value": "~30 kg (66 lb)",
+      "note": "Ascento Research / The Robot Report; ranges 30–32 kg across sources"
+    },
+    {
+      "label": "Height",
+      "value": "50–90 cm",
+      "note": "variable — crouches/extends via wheel-leg suspension; ~70 × 50 cm footprint"
+    },
+    {
+      "label": "Sensors",
+      "value": "RGB + thermal cameras",
+      "note": "mic/speaker, GPS, 4G/WiFi; no LiDAR reported"
+    },
+    {
+      "label": "Mobility",
+      "value": "Wheel-leg hybrid",
+      "note": "2 wheels + spring-like legs; self-balancing, self-righting"
+    },
+    {
+      "label": "Terrain",
+      "value": "Curbs, stairs, snow",
+      "note": "crouches/extends to absorb bumps"
+    },
+    {
+      "label": "Autonomy",
+      "value": "Fully autonomous patrol",
+      "note": "+ remote human monitoring for alerts"
+    },
+    {
+      "label": "Business Model",
+      "value": "Robot-as-a-Service",
+      "note": "hourly rental, not sold as hardware"
+    },
+    {
+      "label": "Customers",
+      "value": "B2B only",
+      "note": "warehouses, manufacturing, pharma, logistics, estates"
+    },
+    {
+      "label": "Version",
+      "value": "Guard 2.0",
+      "note": "adds higher-res thermal, brighter spotlights"
+    },
+    {
+      "label": "Subscription",
+      "value": "Bundled into RaaS fee",
+      "note": "remote human alert triage included in the hourly rental — no separate monitoring tier"
+    }
+  ],
+  "sourcing": "Verified against Ascento's own official site (ascento.ai), TechCrunch and Forbes launch coverage, and The Robot Report's Guard and Guard 2.0 coverage. Company funding/status information is only confirmed through 2024 reporting; no 2025–2026 update was found. \"Watchlist\" could not be confirmed as an Ascento product or customer name and should not be treated as accurate. Do not confuse this B2B \"Ascento Guard\" security robot with \"Ascento Pro,\" a similarly-descended but separately-sold research/education robot from a different company (MYBOTSHOP).",
+  "manufacturerUrl": "https://ascento.ai/",
+  "pricing": {
+    "summary": "Ascento Guard is not sold as a purchasable product with a listed MSRP — it's leased through a robot-as-a-service model at an hourly rate to business customers, with pricing arranged per contract rather than published publicly."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "Ascento Guard (Guard 2.0) uses a wheel-leg hybrid: variable-length, spring-like legs on a two-wheel-drive base let it self-balance, self-right, and crouch or extend to climb curbs, stairs, and rough or snowy terrain, its defining feature versus flat-ground-only patrol robots. Caution: no evidence 'Watchlist' is an Ascento product; don't confuse Guard with the separately-made 'Ascento Pro' education robot."
+    },
+    {
+      "heading": "Insights",
+      "body": "The name \"Watchlist,\" sometimes associated with Ascento, is not an actual Ascento product or confirmed customer. Ascento Guard should also not be confused with \"Ascento Pro,\" a similarly-descended but separately-sold research/education robot from a different company (MYBOTSHOP)."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Ascento Robotics has not released a public SDK, firmware repo, or developer API for Guard. Not currently listed in Builds & Mods."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "sunfounder-picar-x",
+  "slug": "product-sunfounder-picar-x.html",
+  "name": "SunFounder PiCar-X",
+  "manufacturer": "SunFounder",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Mobile Robot Kits",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "An AI-focused Raspberry Pi robot car kit built around genuine Ackermann-style front-wheel steering — a dedicated steering servo turns the front wheels like a real car, rather than the skid-steer turning most Pi robot kits use. Ships with an ultrasonic sensor, a line-tracking module, and a pan-tilt camera for OpenCV-based face, color, and traffic-sign detection, controllable through either block-based EzBlock Studio or Python. Distinct from SunFounder's own similarly-named PiCar-V and PiCar-S kits, which are older, skid-steer, and less AI-focused.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "18650 Li-ion",
+      "note": "rechargeable, user-installed"
+    },
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "a ~1.76 lb (0.8kg) figure appears in third-party listings, but SunFounder's own forum confirms no official assembled-robot spec exists"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Not published",
+      "note": "a ~10 × 6.5 × 4 in figure appears in third-party listings, but provenance (robot vs. packaging) is unconfirmed"
+    },
+    {
+      "label": "Sensors",
+      "value": "Ultrasonic + grayscale",
+      "note": "line-tracking / edge-detection array"
+    },
+    {
+      "label": "Compute",
+      "value": "Raspberry Pi 3B+ – 5",
+      "note": "not included in the base kit"
+    },
+    {
+      "label": "Camera",
+      "value": "2-axis pan-tilt",
+      "note": "face, color, and traffic-sign detection via OpenCV"
+    },
+    {
+      "label": "Software",
+      "value": "EzBlock + Python",
+      "note": "block-based or code; picar-x/vilib libraries"
+    },
+    {
+      "label": "Steering",
+      "value": "Ackermann, front",
+      "note": "dedicated steering servo; rear wheels drive"
+    },
+    {
+      "label": "AI Layer",
+      "value": "LLM voice assistant",
+      "note": "recent add-on: ChatGPT/Gemini/other model integration"
+    },
+    {
+      "label": "Assembly",
+      "value": "No soldering",
+      "note": "screw/snap assembly; servo-zeroing step required"
+    }
+  ],
+  "sourcing": "Verified against SunFounder's official PiCar-X product page, documentation site (including the assembly and introduction docs), and curriculum page; the PiCar-V and PiCar-S documentation (for the naming-lineage comparison); SunFounder's GitHub organization (picar-x, robot_hat, vilib, picar-x-web-control repositories) and their license/commit history; independent reviews from CNX Software, RaspberryTips, and NotEnoughTech; SunFounder's own support forum threads on Raspberry Pi 5 compatibility; an academic open-source project (Kiel University's ARCHES-PiCar-X) as evidence of research-adjacent use; and manufacturer/distributor listings from Yahboom, Waveshare, ELEGOO, and Freenove for the competitive comparison. Flagged as uncertain: exact camera resolution and field-of-view (not published in specs, only described by feature), precise current Amazon review scores (not independently retrievable at research time), and live AliExpress pricing, which varies by listing and easily gets confused with SunFounder's other PiCar lines.",
+  "manufacturerUrl": "https://www.sunfounder.com/products/picar-x",
+  "pricing": {
+    "summary": "SunFounder's own store lists the base kit (no Raspberry Pi included) at $89.99, with Amazon and AliExpress listings observed anywhere from roughly $75–$130 depending on promotions; a bundled version with a Raspberry Pi Zero 2 W and 32GB card runs significantly higher, around $145–$155. Pricing fluctuates by channel and sale, and the \"Pi not included\" base configuration is easy to order by mistake if a listing isn't read carefully."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "The core picar-x control library is genuinely open source on GitHub under GPL-2.0, but the companion EzBlock Studio app is closed and cloud-dependent — one independent review flagged an insecure, HTTP-only (not HTTPS) login form in that companion software as a genuine security concern. SunFounder's own support forum also shows a real, recurring pattern of Raspberry Pi 5-specific problems (dead servos, failed Wi-Fi setup, non-working camera or microphone), despite Pi 5 being listed as officially supported."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "SunFounder's own official Python library repository for PiCar-X."
+    }
+  ]
+}

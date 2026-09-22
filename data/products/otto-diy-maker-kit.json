@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "otto-diy-maker-kit",
+  "slug": "product-otto-diy-maker-kit.html",
+  "name": "Otto DIY Maker Kit",
+  "manufacturer": "OttoDIY",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Classroom & Coding Kits",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A small bipedal, mostly 3D-printed walking robot built around an Arduino Nano, 4 SG90 micro servos (2 hip, 2 ankle), and an HC-SR04 ultrasonic sensor doubling as its face. Programmed via \"Otto Blockly\" (a Blockly-derived block coding app that generates real Arduino C/C++) or directly in Arduino IDE/MicroPython. Sold either as a full kit with pre-printed body parts or an electronics-only \"Maker Kit\" for owners of their own 3D printer, who print the free, open STL files themselves. Descends from a documented lineage: Kevin Biagini's \"BoB the Biped\" → BQ's Zowi (Spain) → creator Camilo Parra Palacio's \"Tito\" → Otto, first launched via a 2017 Kickstarter.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "4x AA (original design)",
+      "note": "Otto DIY+ and the newer HP Otto line switch to a rechargeable 3.7V Li-ion/LiPo pack instead"
+    },
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "no official figure found in this research; weight would vary by 3D-print settings and electronics-only vs. full kit"
+    },
+    {
+      "label": "Dimensions",
+      "value": "~11 × 7 × 12 cm",
+      "note": "assembled size per the Otto DIY project's own community documentation; an independent retailer listing gives a close ~11 × 6.5 × 11.5 cm"
+    },
+    {
+      "label": "Sensors",
+      "value": "HC-SR04 ultrasonic (\"eyes\")",
+      "note": "obstacle avoidance/distance sensing; a passive buzzer provides sound; some variants add a MAX7219 LED matrix face or RGB LEDs"
+    },
+    {
+      "label": "Software",
+      "value": "Otto Blockly + Arduino C++",
+      "note": "Blockly-derived (Google/MIT lineage) block coding generates real compiled Arduino code; official MicroPython port and a mobile Bluetooth app also exist"
+    },
+    {
+      "label": "Control Board",
+      "value": "Arduino Nano",
+      "note": "the current commercial \"HP Otto\" flagship has moved to an ESP32 (Wi-Fi/BLE) board instead — a separate, newer product line from the classic open Otto DIY described here"
+    },
+    {
+      "label": "Actuation",
+      "value": "4x SG90 micro servos",
+      "note": "2 hip + 2 ankle, giving the biped walking gait; Otto DIY+ upgrades to MG90 metal-gear servos and adds Bluetooth"
+    },
+    {
+      "label": "Body",
+      "value": "6 3D-printed PLA parts",
+      "note": "press-fit, no supports needed at ~0.15mm layer height/20% infill; free STL files published on GitHub, Printables, and Thingiverse"
+    },
+    {
+      "label": "Kit Options",
+      "value": "Full kit or electronics-only",
+      "note": "a full \"Builder Kit\" ships pre-printed body parts; a cheaper electronics-only kit assumes you own a 3D printer and print the free body files yourself"
+    },
+    {
+      "label": "Age Range",
+      "value": "Marketed 7-8+, reviewed as harder",
+      "note": "an independent review explicitly recommends against unsupervised assembly by elementary-age kids, citing dense wiring and delicate servo calibration — a real tension with the marketed age range"
+    },
+    {
+      "label": "Variants",
+      "value": "Basic, DIY+, Humanoid, Ninja, HP Otto",
+      "note": "this entry's photo matches the arm/gripper-equipped Humanoid-style build; HP Otto (2024, ESP32-based) is a separately-branded commercial line from Moravia Consulting under HP's brand license"
+    }
+  ],
+  "sourcing": "Specs and history compiled from Otto DIY's own site, blog, and software pages, the OttoDIY GitHub organization's repositories and their license files, Hackaday.io project pages for the original Otto and Otto DIY+, the original 2017 Kickstarter campaign page, HP Robots' current product/FAQ pages and reseller listings (Moravia Education, RobotShop, dstewart.com), and independent reviews (Tech Age Kids, mia-cat.com). Several details are flagged as unconfirmed above: the exact scope of what's open vs. proprietary in the newest HP Otto electronics, the \"Kickstarter fraud\" claim (one-sided, not independently corroborated), creator Camilo Parra Palacio's country of origin, and whether a Distributed Design Platform listing represents an actual won award or a nomination. A recollection that this project has documented Latin American humanitarian/institutional STEM adoption could not be independently confirmed and is likely a conflation with its Spain-based Zowi/BQ lineage; it isn't included above. This entry hasn't yet been cross-linked into the rest of the Classroom & Coding Kits subcategory or synced to the directory listing; that's planned for a later pass.",
+  "manufacturerUrl": "https://www.ottodiy.com/",
+  "pricing": {
+    "summary": "Current HP-branded Otto kits run roughly **$150-$215** for a full Starter Builder Kit and around **$150** for the electronics-only Starter Creator Kit, with price varying by reseller. The original classic Builder Kit (**$49.99**) and Maker Kit (**$29.99**) are no longer officially produced, since Otto DIY's line has moved to this HP-branded product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "The classic Otto DIY project is genuinely open source (GPL/MIT-licensed code, CC-BY-SA body files), but the newer commercial \"HP Otto\" line built by Moravia Consulting is narrower: the project's own blog states its custom electronics now balance openness with \"product integrity protection\" and reserve premium content for supporters and partners."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "ottodiy-maker-kit"
+    }
+  ]
+}

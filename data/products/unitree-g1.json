@@ -1,0 +1,79 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "unitree-g1",
+  "slug": "product-unitree-g1.html",
+  "name": "Unitree G1",
+  "manufacturer": "Hangzhou-based Unitree Robotics",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A compact, comparatively affordable humanoid from Hangzhou-based Unitree Robotics — launched at $16,000 in 2024 and now closer to $13,500, sold directly online to universities, researchers, and developers rather than gated behind enterprise sales, which is unusual for a full-size humanoid. Unitree itself completed a Shanghai STAR Market IPO in August 2026. The pictured unit carries \"Futurology\" branding on its chest panel — that's a U.S. authorized distributor/reseller of Unitree hardware, not a different robot or manufacturer.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "~2 hrs runtime",
+      "note": "quick-swap 9000mAh smart battery pack"
+    },
+    {
+      "label": "Weight",
+      "value": "35 kg",
+      "note": "with battery — an early pre-launch report cited 127cm/47kg, since superseded"
+    },
+    {
+      "label": "Height",
+      "value": "132 cm",
+      "note": "standing, with battery — an early pre-launch report cited 127cm/47kg, since superseded"
+    },
+    {
+      "label": "Sensors",
+      "value": "3D LiDAR + depth cam",
+      "note": "4-mic array, WiFi 6, Bluetooth 5.2"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "23 DOF standard",
+      "note": "up to 43 DOF on the EDU research tier with optional hands"
+    },
+    {
+      "label": "Payload",
+      "value": "2 kg/arm standard",
+      "note": "3 kg/arm on the EDU tier"
+    },
+    {
+      "label": "Price",
+      "value": "~$13,500 base",
+      "note": "$16,000 at 2024 launch; EDU tier custom-quoted"
+    },
+    {
+      "label": "Speed",
+      "value": "~2 m/s",
+      "note": "roughly 4.5 mph"
+    },
+    {
+      "label": "Hands",
+      "value": "Bare wrist stubs",
+      "note": "optional 7-DOF Dex3-1 dexterous hands with tactile feedback"
+    }
+  ],
+  "sourcing": "Verified against Unitree's own official G1 product page, The Robot Report, TIME's July 2026 investigative piece on Unitree, Wikipedia, CNBC, SCMP, Forbes, Live Science, Global Times, Interesting Engineering, TechNode, Notebookcheck, Gagadget, Phemex News, Futurology's own site and distributor announcement, Gasgoo/Autonews, and KraneShares' IPO coverage. Flagged as uncertain: the exact terms of Futurology's distributor arrangement (exclusive or not, and whether Unitree formally sanctions the rebranded chest panel); a bystander-injury claim tied to a G1 performance collapse, sourced only to a single social media post; per-event model attribution (G1 vs. other Unitree models) at the 2026 World Humanoid Robot Games; and current G1 order lead times, which weren't confirmed from an official source. Two corrections made from initial assumptions: G1 participated in but did not win the 2025 Beijing half-marathon (won by a competitor's robot, Tiangong Ultra), and the widely-remembered 2025 Spring Festival Gala dance belongs to Unitree's H1, not G1.",
+  "manufacturerUrl": "https://www.unitree.com/g1/",
+  "pricing": {
+    "summary": "Unitree G1 launched in 2024 at $16,000 and has since dropped to roughly $13,500 for the standard configuration, sold directly through Unitree's own online shop as well as authorized resellers including Futurology in the US. A hardware-refreshed \"G1+\" was announced in September 2026 at roughly ¥95,000 (about $13,000–14,000), a separate configuration from the standard G1 priced above."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "At public demos, a G1 struck a child during a kick routine and, separately, kicked its own operator during a motion-mirroring demonstration — both real, documented safety incidents. G1 did not win the 2025 Beijing half-marathon or perform the viral Spring Festival Gala dance routine, two achievements often misattributed to it but actually credited to Tiangong Ultra and Unitree's larger H1 model, respectively."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "unitree-sdk2-python"
+    }
+  ]
+}

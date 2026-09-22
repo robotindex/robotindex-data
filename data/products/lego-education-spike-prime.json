@@ -1,0 +1,90 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "lego-education-spike-prime",
+  "slug": "product-lego-education-spike-prime.html",
+  "name": "LEGO Education SPIKE Prime",
+  "manufacturer": "LEGO Education",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Classroom & Coding Kits",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A middle-school (grades 6–8) robotics and coding kit from LEGO Education built around a programmable Technic Hub, 3 motors, and 3 sensors on top of ~528 LEGO Technic pieces. Block-based (Word/Icon Blocks) and Python programming via the official SPIKE App. The de facto successor to Mindstorms EV3 and the standard platform for FIRST LEGO League competition — though LEGO ended new sales of the entire SPIKE line as of June 30, 2026, in favor of a new \"Computer Science & AI\" kit line.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "2,000mAh Li-ion (rechargeable)",
+      "note": "6 input/output ports; stores up to ~20 downloaded programs"
+    },
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "no official figure found in this research; LEGO Education's tub packaging isn't specced the way standard retail LEGO boxes are"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Bluetooth + Micro USB",
+      "note": "exact BLE version not published by LEGO; documented pairing/discovery issues in independent reviews"
+    },
+    {
+      "label": "Sensors",
+      "value": "Color, Distance, Force",
+      "note": "distance sensor independently reported inaccurate at close range (~4cm) despite a 1–200cm spec"
+    },
+    {
+      "label": "Software",
+      "value": "SPIKE App (proprietary)",
+      "note": "Scratch-style block coding (Word/Icon Blocks) + Python; official firmware and app are closed-source"
+    },
+    {
+      "label": "Status",
+      "value": "Discontinued",
+      "note": "LEGO ended new sales June 30, 2026; app support continues through 2031, FLL eligibility through the 2027–28 season"
+    },
+    {
+      "label": "Set Contents",
+      "value": "528 pieces",
+      "note": "2 minifigures; Technic Hub, 3 motors, 3 sensors; storage tub with 2 sorting trays"
+    },
+    {
+      "label": "Motors",
+      "value": "1 Large + 2 Medium Angular",
+      "note": "all 3 pictured motor units are part of the standard set, not an add-on"
+    },
+    {
+      "label": "Hub",
+      "value": "LEGO Technic Large Hub",
+      "note": "100MHz processor running embedded MicroPython; 6-axis gyro/accelerometer, 5×5 LED matrix, speaker"
+    },
+    {
+      "label": "Age/Grade",
+      "value": "Grades 6–8 (ages 10+)",
+      "note": "SPIKE Essential covers K–5; both lines are being discontinued together"
+    }
+  ],
+  "sourcing": "Specs compiled from LEGO Education's own product and technical-spec pages, independent reviews (BrickArchitect, RoboCamp, Common Sense Education), Wikipedia's FIRST LEGO League Challenge history, the Pybricks project's own documentation and GitHub LICENSE file, and recent (2026) press coverage of LEGO's SPIKE portfolio retirement. Several details are flagged as unconfirmed above: the hub's exact Bluetooth version and processor chip (LEGO's public spec sheet doesn't name either precisely), current live reseller pricing given the imminent end-of-sale, and the exact license type on LEGO's own protocol-documentation GitHub repos (confirmed to exist, not confirmed which license). This entry hasn't yet been cross-linked or synced to the directory listing; that's planned for a later pass.",
+  "manufacturerUrl": "https://education.lego.com/en-us/products/lego-education-spike-prime-set/45678/",
+  "pricing": {
+    "summary": "LEGO Education's list price for the core set (45678) was **$359.99** (€399.99 / £359.99), per official pricing captured in reviews. LEGO has ended new sales of SPIKE Prime as of June 30, 2026, so current pricing now depends entirely on remaining retailer/reseller stock rather than LEGO's own store."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "LEGO's own SPIKE App and stock hub firmware are proprietary and closed-source, but Pybricks — an independent third-party project unaffiliated with LEGO — offers a genuine MIT-licensed open-source firmware alternative that runs on the same Technic Hub hardware, confirmed directly against its LICENSE file. That alternative firmware isn't yet stably supported on hubs with a reported 2026 internal-electronics revision, only in beta as of this writing."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "LEGO's own GitHub organization publishes open documentation of the SPIKE Prime hub's Bluetooth communication protocol, though this covers the protocol only, not the hub's firmware or app source code."
+    }
+  ]
+}

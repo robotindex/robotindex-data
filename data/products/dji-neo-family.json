@@ -1,0 +1,99 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "dji-neo-family",
+  "slug": "product-dji-neo-family.html",
+  "name": "DJI Neo Family",
+  "manufacturer": "DJI",
+  "category": "Personal Drones",
+  "subcategory": "Flying",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "DJI's ultra-light, palm-launch, propeller-guarded selfie drone line — a direct response to the HOVERAir X1 category — covering two generations: the original DJI Neo (2024) and DJI Neo 2 (2025). Unlike DJI's foldable Mini series, neither generation folds; both are fixed frames with individually-guarded propellers, and both can be flown hands-free from a phone app or, uniquely for this class, with full FPV goggles and a motion controller via DJI's O4 transmission system.",
+  "specs": [
+    {
+      "label": "Release",
+      "value": "DJI Neo: September 5, 2024; DJI Neo 2: China Oct 30, 2025; global (excl. US) Nov 13, 2025"
+    },
+    {
+      "label": "MSRP",
+      "value": "DJI Neo: $199 launch → $159 current (US); DJI Neo 2: €239 / £209 (non-US launch) (never officially sold by DJI in the US — see Worth Knowing)"
+    },
+    {
+      "label": "Weight",
+      "value": "DJI Neo: 135 g; DJI Neo 2: 151 g (160 g with O4 transceiver accessory attached)"
+    },
+    {
+      "label": "Camera / Sensor",
+      "value": "DJI Neo: 1/2\" CMOS, 12MP, f/2.8 fixed focus, 117.6° FOV; DJI Neo 2: 1/2\" CMOS, 12MP (same sensor), f/2.2, ISO 100–12800 (exact FOV not consistently published)"
+    },
+    {
+      "label": "Video",
+      "value": "DJI Neo: 4K@30, 1080p up to 60fps, JPEG-only stills, no RAW; DJI Neo 2: 4K up to 60fps (100fps slow-mo w/ controller), vertical video up to 2.7K (still JPEG-only, no RAW)"
+    },
+    {
+      "label": "Gimbal / Stabilization",
+      "value": "DJI Neo: Single-axis mechanical + EIS (RockSteady); DJI Neo 2: Two-axis mechanical + RockSteady EIS"
+    },
+    {
+      "label": "Obstacle sensing",
+      "value": "DJI Neo: None — DJI's own manual states twice: \"does not feature obstacle sensing\" (has downward vision + IR, but only for hover/altitude hold, not collision avoidance); DJI Neo 2: Forward LiDAR + monocular vision (front/side/top) (marketed as \"omnidirectional\" but independent reviews confirm no rear sensor and it can miss thin objects like branches or wires)"
+    },
+    {
+      "label": "Flight time (claimed)",
+      "value": "DJI Neo: ~18 min; DJI Neo 2: ~19 min (independently measured at ~13–15 min real-world per Oscar Liang — a meaningful overstatement)"
+    },
+    {
+      "label": "Top speed",
+      "value": "DJI Neo: 17.89 mph (Sport); 35.79 mph with FPV/motion controller; DJI Neo 2: ~35.8 mph; subject-tracking speed improved to 12 m/s from 8 m/s"
+    },
+    {
+      "label": "Wind resistance",
+      "value": "DJI Neo: Level 4 (~18 mph); DJI Neo 2: Level 5 (~19–24 mph)"
+    },
+    {
+      "label": "Transmission",
+      "value": "DJI Neo: WiFi (phone app); O4 (OcuSync 4) built into the aircraft for RC-N3/goggles use, ~50m via app; DJI Neo 2: WiFi (phone app); O4 **removed from the aircraft** and sold as a separate add-on transceiver required for controller/goggles FPV — up to 10km (FCC region) with it attached"
+    },
+    {
+      "label": "Storage",
+      "value": "DJI Neo: 22GB built-in, no microSD (~40 min of 4K footage); DJI Neo 2: 49GB built-in, no microSD (~105 min of 4K/60 footage)"
+    },
+    {
+      "label": "Battery",
+      "value": "DJI Neo: 1435 mAh / 10.5Wh, USB-C, no bundled charging hub; DJI Neo 2: 1606 mAh / 11.5Wh, USB-C, optional 3-battery hub (replacement battery price roughly doubled vs. original Neo (~$69 → ~$129))"
+    },
+    {
+      "label": "Controller options",
+      "value": "DJI Fly app (phone), RC-N3 controller, DJI RC Motion 3, DJI FPV Remote Controller 3 with Goggles N3 or Goggles 3 — a full FPV path neither the HOVERAir X1 family nor most drones in this weight class offer."
+    },
+    {
+      "label": "US regulatory status",
+      "value": "Both under FAA's 250g threshold. Neo remains officially, legally sold in the US via DJI's own store. Neo 2 is FCC-certified but has never been officially launched or sold by DJI itself in the US — available only through independent third-party resellers."
+    },
+    {
+      "label": "Subscription",
+      "value": "DJI Fly app is free for both models; no cloud storage or editing subscription required. DJI Care Refresh is available separately as device-replacement insurance (accidental damage/loss coverage) — not a feature or storage subscription."
+    }
+  ],
+  "sourcing": "Specs compiled from DJI's own product pages (dji.com/neo, store.dji.com), independent reviews (TechRadar for both generations, Oscar Liang's Neo 2 review, DPReview's Neo 2 announcement coverage), PetaPixel's coverage of the Neo 2 screen/LiDAR redesign, and 2025–2026 regulatory reporting from DroneDJ and DroneXL on the FCC Covered List situation. Flagged as unconfirmed or conflicting above: exact Neo 2 max altitude and top speed figures, whether Remote ID broadcast is supported on either generation (reported by secondary sources but not confirmed against a primary DJI compliance document), and whether \"ActiveTrack\" is officially used as branding for this line. This entry hasn't yet been cross-linked or synced to the directory listing; that's planned for a later pass.",
+  "manufacturerUrl": "https://www.dji.com/neo",
+  "pricing": {
+    "summary": "DJI Neo launched at **$199** in the US and has since been discounted to **$159** (Fly More Combo down to $229 from $289), while DJI Neo 2 launched outside the US at **€239 / £209** with a £349 Fly More Combo. **DJI has never officially sold Neo 2 in the US** — it reaches American buyers (around $259) only through third-party Amazon sellers and independent reseller djiusa.com, not DJI's own storefront."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "DJI markets Neo as a beginner-friendly, hands-free drone, yet the original Neo's own manual states twice that it \"does not feature obstacle sensing\" and to fly with caution; Neo 2 adds LiDAR-based sensing, but independent testing found no rear-facing coverage and occasional misses of thin obstacles like wires. DJI has been added to the FCC's Covered List (which it is contesting in court) blocking new equipment authorizations, and while the original Neo remains for sale in the US, Neo 2 was FCC-certified in July 2025 but has still never been officially launched there."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "DJI's official Mobile SDK does not cover the Neo family (it lists Mavic, Mini, and Matrice-series drones); no public developer API exists for Neo. Not currently listed in Builds & Mods."
+    }
+  ]
+}

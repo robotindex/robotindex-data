@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "waveshare-jetracer",
+  "slug": "product-waveshare-jetracer.html",
+  "name": "Waveshare JetRacer",
+  "manufacturer": "Waveshare",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Mobile Robot Kits",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A pre-assembled hardware kit built to run NVIDIA's own open-source JetRacer software — Ackermann front-steering, a Jetson Nano carrier board, and a CSI camera, with GPU-accelerated TensorRT road-following out of the box. This is the base \"JetRacer AI Kit\"; Waveshare also sells a faster Pro variant and a ROS-equipped Professional kit with lidar and an IMU. Every SKU runs exclusively on the Jetson Nano, which NVIDIA is now discontinuing — a real caveat worth knowing before buying.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "3× 18650 Li-ion",
+      "note": "sold separately; onboard charge/discharge protection"
+    },
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Connectivity",
+      "value": "AC8265 Wi-Fi + BT",
+      "note": "dual-band combo module; two antennas, one radio chip"
+    },
+    {
+      "label": "Compute",
+      "value": "Jetson Nano B01 (4GB)",
+      "note": "2GB Dev Kit variant also sold; no Orin option exists"
+    },
+    {
+      "label": "Camera",
+      "value": "Sony IMX219, CSI",
+      "note": "8MP, 160° wide-angle — same sensor as Pi Camera v2"
+    },
+    {
+      "label": "Software",
+      "value": "Jupyter + PyTorch/TensorRT",
+      "note": "GPU-accelerated on-device inference via torch2trt"
+    },
+    {
+      "label": "Steering",
+      "value": "Ackermann, front",
+      "note": "servo-actuated front axle, rear-wheel drive"
+    },
+    {
+      "label": "Motor",
+      "value": "37-520 DC gearmotor",
+      "note": "1:10 reduction, ~740 RPM; Pro kit uses faster RC380 motors"
+    },
+    {
+      "label": "Compute Support",
+      "value": "Jetson Nano is EOL",
+      "note": "NVIDIA discontinuing; module support only through Jan. 2027"
+    }
+  ],
+  "sourcing": "Verified against Waveshare's official JetRacer AI Kit, Pro AI Kit, and ROS AI Kit product pages and wiki; the original NVIDIA-AI-IOT/jetracer GitHub repository and Waveshare's own fork; NVIDIA's blog and Hackster's coverage of Jetson Nano cars at DIY Robocars events; NVIDIA developer-forum threads confirming both the Jetson Nano Developer Kit's discontinuation and community use of this specific hardware; Tianbot's separate same-named project (for the naming-disambiguation note); and Amazon/AliExpress/RobotShop listings for pricing and bundle-configuration variance. Flagged as uncertain: exact current DIY Robocars league activity level for Nano-class hardware in 2026 (historical evidence is solid, current activity is not confirmed); and precise like-for-like pricing against PiCar-X and ROSMASTER, since JetRacer's price swings heavily by bundle configuration in a way that resists a single clean number.",
+  "manufacturerUrl": "https://www.waveshare.com/jetracer-ai-kit.htm",
+  "pricing": {
+    "summary": "Waveshare's own listings for the base AI Kit range from $213.99 to $632.99 depending on bundle configuration (with or without the Jetson Nano board, battery, and gamepad); the Pro AI Kit runs $255.99–$685.99, and the ROS Professional kit (adding an RPLiDAR A1 and IMU) runs $259.99–$694.99. Because so much of the price swings on which accessories are included, a fair comparison against other kits in this catalog requires checking exactly what's bundled, not just the headline number."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "JetRacer's onboard inference is genuinely GPU-accelerated rather than a marketing claim: training happens off-device in PyTorch, but inference runs optimized through TensorRT directly on the Jetson Nano's GPU — a real capability edge over CPU-only rival kits. Every JetRacer SKU depends on the now-EOL Jetson Nano, which NVIDIA is discontinuing with module support only through January 2027."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Waveshare's own GitHub fork of NVIDIA's original open-source JetRacer project, adapted for its pre-assembled AI Kit hardware."
+    }
+  ]
+}

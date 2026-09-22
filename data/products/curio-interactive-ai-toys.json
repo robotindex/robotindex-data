@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "curio-interactive-ai-toys",
+  "slug": "product-curio-interactive-ai-toys.html",
+  "name": "Curio",
+  "manufacturer": "Curio Interactive",
+  "category": "Companion & Social",
+  "subcategory": "Children Companions",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "Screen-free AI plush toys from Curio Interactive, built around a detachable \"Voice Box\" (mic, speaker, processor, battery) that snaps into different soft characters. The lineup now spans 8 characters on Curio's own site — Gabbo, Grem, Poppy, Lingo, Ballerina Cappuccina, Springer, The Visitor, and Professor Linus. No camera, no wheels, no screen — a genuinely different form factor from the mobile/screen-faced robots elsewhere in this category. Already shipping via retail, not a pre-order.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Connectivity",
+      "value": "WiFi required",
+      "note": "no offline / no-WiFi mode"
+    },
+    {
+      "label": "AI",
+      "value": "Cloud-based LLM",
+      "note": "OpenAI, Azure, and Perplexity APIs used as backends"
+    },
+    {
+      "label": "Status",
+      "value": "Shipping via retail",
+      "note": "heycurio.com, Amazon, Walmart"
+    },
+    {
+      "label": "Form Factor",
+      "value": "Screen-free plush",
+      "note": "no wheels, no mobility, no camera"
+    },
+    {
+      "label": "Core Hardware",
+      "value": "Detachable \"Voice Box\"",
+      "note": "mic, speaker, processor, li-ion battery"
+    },
+    {
+      "label": "Charging",
+      "value": "USB-C",
+      "note": "Voice Box removes from plush to charge"
+    },
+    {
+      "label": "App",
+      "value": "Companion app",
+      "note": "setup, parental controls, transcript review"
+    },
+    {
+      "label": "Subscription",
+      "value": "Optional",
+      "note": "free tier always available; paid \"Curio Plus\" removes conversation-time limits and adds early feature access — price not publicly disclosed"
+    }
+  ],
+  "sourcing": "Verified against Curio's own site (heycurio.com) and privacy policy, TechCrunch and Decrypt coverage of the product line and characters, PIRG's \"Trouble in Toyland 2025\" report, Futurism's reporting on the data-retention/subprocessor tension, and a Tom's Guide hands-on review. Funding amount and exact HQ city are inconsistently sourced (a \"$17M raised\" figure and a San Francisco-vs-Redwood City HQ both trace to single or conflicting sources) and are not asserted as confirmed. Curio's storefront was re-checked directly on heycurio.com during this update and lists 8 current characters (Gabbo, Grem, Poppy, Lingo, Ballerina Cappuccina, Springer, The Visitor, Professor Linus); Grok, named in earlier press coverage, no longer appears there. The identity of the bunny character shown in this page's product photo could not be matched to any of the 8 currently-listed characters and is flagged rather than guessed at. Curio's own FAQ confirms free chat and baseline features are always available with no subscription required, but also discloses an optional paid \"Curio Plus\" tier (unlimited conversation time, early feature access) whose price is not publicly disclosed anywhere checked.",
+  "manufacturerUrl": "https://heycurio.com/",
+  "pricing": {
+    "summary": "Current pricing on Curio's own site lists the original Grok at $119 regular / $99 sale (up from a flat $99 at its Dec 2023 beta launch), while newer Gen 2 characters (Grem and Gabbo) run $150 regular / $119 sale. The lineup has since expanded well beyond the original three characters, so exact current pricing by character should be re-checked on heycurio.com."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Contrary to a common assumption, there is no OpenAI or Sam Altman equity or founder connection to Curio Interactive — the only real tie is that Curio's own privacy policy lists OpenAI's API as one of several backend LLM vendors. Despite Curio's public claim that it doesn't retain data beyond parental review, its own privacy policy discloses that OpenAI, Microsoft Azure, Perplexity AI, and \"Kids Web Services\" may all process or retain children's data as subprocessors — a genuine tension Futurism has reported, not resolved by Curio's messaging."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Curio has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

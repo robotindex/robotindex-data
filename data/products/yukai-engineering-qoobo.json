@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "yukai-engineering-qoobo",
+  "slug": "product-yukai-engineering-qoobo.html",
+  "name": "Yukai Engineering Qoobo",
+  "manufacturer": "Yukai Engineering",
+  "category": "Pets & Toys",
+  "subcategory": "Robot Pets",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A headless, legless cushion from Tokyo's Yukai Engineering — the same company behind BOCCO emo elsewhere in this directory — with a realistic motorized tail that wags in response to touch. No face, no camera, no app, and no wireless connectivity of any kind: this is a simple reactive comfort object, not a smart or connected robot.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "6.0V NiMH",
+      "note": "~8 hr runtime; 4–8 hr charge via AC adapter"
+    },
+    {
+      "label": "Dimensions",
+      "value": "52 × 32 × 15 cm",
+      "note": "~1 kg"
+    },
+    {
+      "label": "Connectivity",
+      "value": "None",
+      "note": "no app, no Wi-Fi, no Bluetooth"
+    },
+    {
+      "label": "Tail",
+      "value": "Motorized, touch-reactive",
+      "note": "moves in response to stroking; exact sensor type not disclosed"
+    },
+    {
+      "label": "Camera / Mic",
+      "value": "None",
+      "note": "confirmed absent in official specs"
+    },
+    {
+      "label": "Materials",
+      "value": "ABS/nylon body",
+      "note": "acrylic, polyester, zinc-alloy cushion"
+    },
+    {
+      "label": "Smaller sibling",
+      "value": "Petit Qoobo",
+      "note": "21 × 28 × 11 cm, ~600g, adds sound response"
+    },
+    {
+      "label": "Recognition",
+      "value": "Red Dot Design Award",
+      "note": "2019, Product Design category"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "fully mechanical — no app, no Wi-Fi/Bluetooth, no cloud account of any kind"
+    }
+  ],
+  "sourcing": "Verified against Yukai Engineering's official global store listings for Qoobo and Petit Qoobo, official press releases (including the March 2020 Series A funding announcement, the 2019 Red Dot Design Award announcement, and the Petit Qoobo crowdfunding results), the original 2017 Kickstarter campaign page, and reviews/coverage from TechCrunch, TechCrunch Japan, Engadget, Gizmodo, and Designboom. Yukai Engineering's own founding timeline is given inconsistently (informal activity from 2007, formal incorporation in 2011) across sources and is not fully resolved here. The comparison to therapy robots like Paro appears only in press commentary, not in any clinical study of Qoobo specifically, and is presented as analogy rather than verified fact. No third-party security or privacy audit of Qoobo was found; the \"no connectivity\" finding rests on the absence of any such spec across official and press sources rather than an independent audit.",
+  "manufacturerUrl": "https://globalstore.ux-xu.com/products/qoobo",
+  "pricing": {
+    "summary": "$184 for Qoobo and $148 for the smaller Petit Qoobo on Yukai Engineering's own global store. Both are up substantially from launch, when the original October 2017 Kickstarter priced early-bird Qoobo units around ¥10,000 (roughly $88–92 at the time)."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Qoobo's own specifications list no camera, no microphone-based data capture, no app, and no wireless connectivity of any kind — the only sensing is a local touch trigger that moves the tail, a genuine standout in a catalog where most companion robots are network-connected. It also won the Red Dot Design Award in 2019 (Product Design category)."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Yukai Engineering has not released a public SDK or developer API for Qoobo; the company's open developer tools (Konashi, BOCCO emo) do not cover this product. Not currently listed in Builds & Mods."
+    }
+  ]
+}

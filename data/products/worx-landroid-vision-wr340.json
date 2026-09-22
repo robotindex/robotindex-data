@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "worx-landroid-vision-wr340",
+  "slug": "product-worx-landroid-vision-wr340.html",
+  "name": "Worx Landroid Vision Cloud WR340",
+  "manufacturer": "Worx",
+  "category": "Outdoor & Yard",
+  "subcategory": "Robot Lawn Mowers",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "Worx's wire-free \"Vision Cloud\" mower, covering up to 1 acre using stereo-camera V-SLAM navigation and RTK cloud positioning — a separate line from the boundary-wire Landroid M (WR140). Self-explores and vision-maps the yard instead of requiring a perimeter wire.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "20V 5Ah Li-ion",
+      "note": "~60 min charge; runtime not disclosed"
+    },
+    {
+      "label": "Weight",
+      "value": "30.9 lbs"
+    },
+    {
+      "label": "Dimensions",
+      "value": "24.2 × 20.9 × 11.1 in"
+    },
+    {
+      "label": "Navigation",
+      "value": "Stereo camera + RTK",
+      "note": "V-SLAM, no perimeter wire"
+    },
+    {
+      "label": "Drive",
+      "value": "2WD"
+    },
+    {
+      "label": "Max Coverage",
+      "value": "1 acre"
+    },
+    {
+      "label": "Cutting",
+      "value": "8.7 in width",
+      "note": "1.57–3.54 in height, electric adjust"
+    },
+    {
+      "label": "Max Slope",
+      "value": "30% (17°)",
+      "note": "testing found inconsistency above ~20°"
+    },
+    {
+      "label": "Anti-Theft",
+      "value": "PIN + alarm + GPS",
+      "note": "\"3-in-1\" per Worx's own docs"
+    },
+    {
+      "label": "Subscription",
+      "value": "Free, no subscription",
+      "note": "Cloud RTK positioning free for mower's life, per independent review"
+    }
+  ],
+  "sourcing": "Verified against Worx's own official site and support wiki, a CES 2026 press release (PR Newswire), and independent reviews from Tom's Guide and Reviewed.com. Announced at CES 2026 (January 2026); Best Buy currently lists the WR340 as \"Coming Soon,\" yet Tom's Guide and Reviewed.com had already published hands-on reviews at time of research — likely from early-access review units — so treat broad retail availability as not yet fully confirmed despite press coverage existing. No published noise (dB) rating was found from Worx for this model. Do not confuse this wire-free Vision Cloud line with the separately-catalogued, boundary-wire Landroid M (WR140).",
+  "manufacturerUrl": "https://www.worx.com/landroid-vision.html",
+  "pricing": {
+    "summary": "Best Buy and Tom's Guide independently agree on **$2,299.99** MSRP for the WR340 (1-acre tier). Some pricing shown near the WR340 on worx.com's own site appears to actually belong to the lower-coverage WR310 (~$949–1,199, 1/4 acre) and WR320 (~$1,799, 1/2 acre) siblings in the same Vision Cloud lineup, so don't confuse those figures with the WR340's own price."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "This wire-free mower family (WR310/320/340, tiered by coverage) navigates via stereo camera with V-SLAM and RTK cloud positioning, autonomously mapping the yard without a perimeter wire; the camera also powers Vision AI obstacle detection. Independent testing: Tom's Guide found battery life limiting and slope performance inconsistent above ~20°; Reviewed.com noted debris like sticks can stall the mower."
+    },
+    {
+      "heading": "Insights",
+      "body": "Some pricing shown near the WR340 on Worx's own website actually belongs to its lower-coverage Vision Cloud siblings rather than the WR340 itself, whose MSRP is $2,299.99 per Best Buy and Tom's Guide. Independent testing from Tom's Guide also found slope performance inconsistent above roughly 20°, despite a spec sheet claiming a 30% (17°) max-slope rating."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "mtrab-landroid-cloud"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "casio-moflin",
+  "slug": "product-casio-moflin.html",
+  "name": "Casio Moflin",
+  "manufacturer": "Casio",
+  "category": "Pets & Toys",
+  "subcategory": "Robot Pets",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A palm-sized furry creature from Casio — yes, the watch and calculator company — with no eyes, face, or screen, that shifts its head and vibrates in response to handling while developing a simulated personality over time. A decade in development before Casio brought it to market, first in Japan and later in the US and UK.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "3.7V 1200mAh Li-ion",
+      "note": "~5 hr runtime; ~3.5 hr charge on included wireless bed"
+    },
+    {
+      "label": "Dimensions",
+      "value": "130 × 90 × 180 mm",
+      "note": "~260 g; charging bed ~280 g"
+    },
+    {
+      "label": "Connectivity",
+      "value": "MofLife app",
+      "note": "iOS 15+ / Android 8.0+; tracks emotional/interaction history"
+    },
+    {
+      "label": "Sensors",
+      "value": "Touch, accelerometer/gyro",
+      "note": "light sensor, microphone (tone analysis, not full speech recognition)"
+    },
+    {
+      "label": "Camera",
+      "value": "None",
+      "note": "confirmed absent"
+    },
+    {
+      "label": "Movement",
+      "value": "2-axis head tilt/rotation",
+      "note": "+ vibration; does not walk"
+    },
+    {
+      "label": "Personality",
+      "value": "~4 million configurations",
+      "note": "per Casio; develops from handling patterns"
+    },
+    {
+      "label": "Subscription",
+      "value": "None found",
+      "note": "appears to be a one-time purchase, not explicitly confirmed either way"
+    }
+  ],
+  "sourcing": "Verified against Casio's own official product and blog pages (casio.com, including \"A Decade-Long Journey Behind Moflin\"), Casio's PR Newswire launch announcement, Casio's MofLife privacy notice, and reviews from TechCrunch, TechRadar, Engadget, Notebookcheck, and BetaNews. The US/UK launch date is given inconsistently across two of Casio's own sources (September 17 vs. October 1, 2025) and is presented as unresolved. Whether Moflin's microphone retains any raw audio before converting it to \"parameterized voice data\" is not clarified in Casio's own privacy notice — flagged as a genuine documentation gap rather than a confirmed practice either way. No explicit \"no subscription\" statement was found from Casio; its absence is inferred from official materials and press coverage rather than stated outright. No direct press comparison between Moflin and Qoobo was found despite their conceptual similarity.",
+  "manufacturerUrl": "https://www.casio.com/us/moflin/",
+  "pricing": {
+    "summary": "$429 in the US (£369 in the UK), per Casio's own official pricing; it launched first in Japan on November 7, 2024 at ¥59,400 (roughly $380–400). That Japan release reportedly sold out, with press estimates of 7,000–10,000+ units sold."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Casio's own MofLife privacy notice confirms collecting motion/touch/orientation sensor data and \"parameterized voice data\" from speech but doesn't clarify whether raw audio is retained anywhere before conversion — a genuine transparency gap in Casio's own documentation, not an outside accusation."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Casio Moflin has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

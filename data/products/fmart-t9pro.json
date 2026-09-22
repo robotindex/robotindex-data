@@ -1,0 +1,93 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "fmart-t9pro",
+  "slug": "product-fmart-t9pro.html",
+  "name": "FMART T9Pro",
+  "manufacturer": "Fmart with suction mounting",
+  "category": "Cleaning & Home Care",
+  "subcategory": "Other",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A budget window-cleaning robot from Fmart with suction mounting, AI edge detection, and a physical 2.4G remote instead of an app. Ships with spare microfiber cleaning pads. Sold mainly through Amazon and Fmart's own China-market site.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Suction",
+      "value": "3,800 Pa"
+    },
+    {
+      "label": "Price",
+      "value": "Unverified",
+      "note": "third-party listing cites \"from $81\""
+    },
+    {
+      "label": "Edge Detection",
+      "value": "AI Edge Detection",
+      "note": "manufacturer's own branding"
+    },
+    {
+      "label": "Control",
+      "value": "2.4G remote",
+      "note": "no smartphone app"
+    },
+    {
+      "label": "Cleaning",
+      "value": "Ultrasonic mist spray",
+      "note": "+ microfiber pads, spares included"
+    },
+    {
+      "label": "Safety Rope",
+      "value": "Unverified",
+      "note": "third-party listings cite ~150kgf / 5m"
+    },
+    {
+      "label": "Power Backup",
+      "value": "Unverified",
+      "note": "third-party listings cite ~20 min"
+    },
+    {
+      "label": "Water Tank",
+      "value": "Unverified",
+      "note": "third-party listings cite ~20mL"
+    },
+    {
+      "label": "Subscription",
+      "value": "Not applicable",
+      "note": "no app/cloud service — 2.4G remote only"
+    }
+  ],
+  "sourcing": "Confirmed details sourced from live Amazon and eBay listing titles and fmart.com.cn, as of September 2026. Safety-rope rating, battery-backup runtime, water-tank capacity, and price come only from a single non-press, third-party spec database and are marked \"unverified\" rather than presented as confirmed manufacturer specs. No reputable tech press review of this exact model was found. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.amazon.com/s?k=FMART+T9Pro",
+  "pricing": {
+    "summary": "robotindex could not directly confirm current Amazon pricing for this listing at time of writing (Amazon blocks automated access to its product pages). A third-party spec database cites a starting price around **$81**, but this is unverified — check the live Amazon or fmart.com.cn listing for current pricing."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware — Sourcing Caveat",
+      "body": "T9Pro is a real, currently-sold product across Amazon, eBay, and Fmart's China site, but no major tech press has reviewed it. Listing titles confirm 3,800 Pa suction, \"AI Edge Detection,\" a 2.4G remote, ultrasonic-mist spray, and ten spare microfiber pads. Figures for safety-rope rating, battery-backup runtime, and water-tank capacity come only from one unreliable third-party site and are marked unverified."
+    },
+    {
+      "heading": "Insights",
+      "body": "robotindex found no recalls, lawsuits, or safety-incident reports for this product in the sources reviewed. That said, no reputable tech-press review of this exact model exists, and its key specs come only from a single non-press, third-party spec database rather than manufacturer or press sourcing."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "FMART T9Pro has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

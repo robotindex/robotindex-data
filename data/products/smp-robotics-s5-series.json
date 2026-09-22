@@ -1,0 +1,94 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "smp-robotics-s5-series",
+  "slug": "product-smp-robotics-s5-series.html",
+  "name": "SMP Robotics S5 Series",
+  "manufacturer": "SMP Robotics",
+  "category": "Security",
+  "subcategory": "Outdoor Security",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A four-wheeled, weatherproof autonomous patrol robot built around a raised camera mast, sold in \"HD\" and \"Perimeter\" configurations for restricted-area and fence-line security patrol. Route-based autonomy with central-station monitoring; sold, leased, or subscribed to on a B2B basis.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "125 kg (275 lb)",
+      "note": "S5.2, without batteries per official brochure; other S5 sub-models differ (S5.3 ranges 69–133 kg)"
+    },
+    {
+      "label": "Dimensions",
+      "value": "142 × 78 × 132 cm",
+      "note": "S5.2 series, official SMP brochure (PDF); other S5 sub-models may differ"
+    },
+    {
+      "label": "Connectivity",
+      "value": "WiFi, ONVIF",
+      "note": "integrates with Genetec, Milestone, Avigilon"
+    },
+    {
+      "label": "Navigation",
+      "value": "Route-based autonomy",
+      "note": "vision/landmark + GPS, not free-roam SLAM"
+    },
+    {
+      "label": "Mobility",
+      "value": "4-wheeled ground robot",
+      "note": "raised rotating camera mast/periscope"
+    },
+    {
+      "label": "Cameras",
+      "value": "6× HD panoramic",
+      "note": "+ PTZ and/or thermal on some configs"
+    },
+    {
+      "label": "Range / Runtime",
+      "value": "~24 km (15 mi)",
+      "note": "12+ hrs patrol per charge (mfr. figure)"
+    },
+    {
+      "label": "Speed",
+      "value": "2.5–4 mph",
+      "note": "autonomous cruising"
+    },
+    {
+      "label": "Sensing Extras",
+      "value": "Two-way audio",
+      "note": "panic button, warning lights, LED headlamp"
+    },
+    {
+      "label": "Business Model",
+      "value": "Purchase, lease, or subscription",
+      "note": "B2B / enterprise only"
+    },
+    {
+      "label": "Subscription",
+      "value": "Optional quarterly SaaS tier",
+      "note": "\"split\" OPEX path: buy hardware/basic software, then pay quarterly for autopilot/analytics/24-7 support — smprobotics.com; price quoted per deployment"
+    }
+  ],
+  "sourcing": "Verified against SMP Robotics' own site (smprobotics.com, smpsecurityrobot.com), a manufacturer spec brochure hosted via DirectIndustry, and market-listing coverage from Mordor Intelligence and SecurityInfoWatch; a 2016 IPVM trade report was only accessible in summary/paywalled form. \"Base\" as a model tier could not be confirmed as an official SMP Robotics name — HD and Perimeter are presented here as configurations of the S5 platform. PTZ zoom and thermal detection-range figures vary across the manufacturer's own pages by product generation. Dimensions, weight, and a formal IP rating were not found in any accessible source. Named enterprise customers and \"leading manufacturer\" positioning are self-reported marketing claims, not independently confirmed. No connection to Knightscope or its unrelated fountain incident.",
+  "manufacturerUrl": "https://smprobotics.com/security_robot/",
+  "pricing": {
+    "summary": "No public pricing is listed anywhere — every SMP Robotics product page (including the current S5.2 series listings) routes to a sales quote request. The manufacturer offers outright purchase, leasing, and a hardware-plus-subscription model, with terms arranged per deployment rather than published."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware — Naming Caveat",
+      "body": "\"Base\" isn't an official SMP name — HD and Perimeter are configurations of one S5 platform, not a three-tier line. Confirmed hardware: six HD panoramic cameras for 360° coverage, with PTZ zoom and thermal cameras on higher-end Picard/Argus variants. Navigation is route-based (visual landmarks, GPS, night markers), not SLAM mapping. No LiDAR, radar, or IP rating was found."
+    },
+    {
+      "heading": "Insights",
+      "body": "SMP Robotics is sometimes confused with an unrelated incident: the well-known video of a security robot falling into a fountain involves Knightscope's K5, a different company entirely, not SMP Robotics. Separately, \"Base\" is not an official SMP Robotics model name — \"HD\" and \"Perimeter\" are application-specific configurations of the same S5 platform."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "SMP Robotics has not released a public SDK, firmware repo, or developer API for the S5 Series. Not currently listed in Builds & Mods."
+    }
+  ]
+}

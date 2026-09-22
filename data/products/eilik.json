@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "eilik",
+  "slug": "product-eilik.html",
+  "name": "Eilik",
+  "manufacturer": "Energize Lab",
+  "category": "Pets & Toys",
+  "subcategory": "Robot Pets",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A stationary, egg-shaped desktop companion from Energize Lab (Shenzhen) with a pixel-style OLED face, small wiggling nub arms, and a touch/motion-driven emotion system. No camera, and no confirmed microphone-based voice AI — Eilik works fully offline out of the box, with no companion app or subscription required for its core personality.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "450mAh, USB-C",
+      "note": "runtime disputed: ~1.5 hr per official spec vs. \"8–10 hr\" per one review"
+    },
+    {
+      "label": "Dimensions",
+      "value": "108 × 105 × 133 mm",
+      "note": "230 g"
+    },
+    {
+      "label": "Connectivity",
+      "value": "None required",
+      "note": "standalone; USB-C for optional firmware updates only"
+    },
+    {
+      "label": "Sensors",
+      "value": "Touch, shock/vibration, IR lift",
+      "note": "drives emotion-state behavior"
+    },
+    {
+      "label": "Camera",
+      "value": "None",
+      "note": "confirmed absent across all sources"
+    },
+    {
+      "label": "Display",
+      "value": "1.54\" OLED, 128×64",
+      "note": "pixel-art expressions"
+    },
+    {
+      "label": "Microphone",
+      "value": "Unconfirmed",
+      "note": "manual implies a \"Talking Toy\" mode; official spec sheet lists none"
+    },
+    {
+      "label": "Actuation",
+      "value": "4× proprietary EM3 servos",
+      "note": "head, body, and arm movement"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "fully standalone; official FAQ confirms updates/content are free"
+    }
+  ],
+  "sourcing": "Verified against Energize Lab's official store and \"Our Story\" pages, the original Kickstarter campaign page and its funding totals, an official user manual hosted on ManualsLib, Hackster.io's and Yanko Design's coverage, and an Amazon product listing. Battery runtime conflicts directly between Energize Lab's own ~1.5-hour spec-sheet figure and a third-party review's claim of 8–10 hours; both are presented rather than resolved. Microphone presence is disputed: the official spec sheet lists none, but the manual's \"Talking Toy\" feature and one third-party source's \"voice detection\" mention suggest otherwise — treated here as unconfirmed, not denied. Company HQ is given as Shenzhen by Energize Lab's own site and as Hong Kong by Hackster.io; both may be accurate for different parts of the business. Founder attribution also varies by source and is not resolved here. No coverage from a major tech-press outlet (The Verge, Engadget, CNET, Tom's Guide) was found.",
+  "manufacturerUrl": "https://store.energizelab.com/products/eilik",
+  "pricing": {
+    "summary": "$139.99–$149.99 for a single unit on Energize Lab's own store, with a dual pack at $269.98–$299.98 and an optional \"Eilik AI Station\" accessory at $99–$149. No subscription of any kind is required at any price tier."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Eilik's microphone status is disputed rather than resolved: Energize Lab's own spec sheet lists none, but the user manual references a record-and-repeat \"Talking Toy\" function that implies some sound input exists, and a third-party writeup separately lists \"voice detection\" as a sensor — treated here as unconfirmed rather than flatly denied or confirmed."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Energize Lab's own support FAQ states Eilik \"does not support API and is not open-source.\" Not currently listed in Builds & Mods."
+    }
+  ]
+}

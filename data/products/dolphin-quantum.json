@@ -1,0 +1,83 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "dolphin-quantum",
+  "slug": "product-dolphin-quantum.html",
+  "name": "Dolphin Quantum",
+  "manufacturer": "Maytronics",
+  "category": "Outdoor & Yard",
+  "subcategory": "Other",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A Maytronics Dolphin robotic pool cleaner positioned just below the Dolphin Premier in the \"Best Seller\" tier, cleaning in-ground and above-ground pools up to 50 ft with a top-load filtration basket and a 2-hour cleaning cycle.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "18.3 lbs",
+      "note": "17.76 × 15.74 × 11.6 in"
+    },
+    {
+      "label": "Connectivity",
+      "value": "None",
+      "note": "no app/WiFi — that's a Sigma-tier feature"
+    },
+    {
+      "label": "Navigation",
+      "value": "Self-learning pattern",
+      "note": "not branded \"CleverClean\" like Premier"
+    },
+    {
+      "label": "Suction",
+      "value": "4,000 GPH"
+    },
+    {
+      "label": "Pool Compatibility",
+      "value": "In-ground & above-ground",
+      "note": "up to 50 ft, any shape"
+    },
+    {
+      "label": "Cleans",
+      "value": "Floor, walls, waterline",
+      "note": "two active scrubbing brushes"
+    },
+    {
+      "label": "Filtration",
+      "value": "Top-load basket",
+      "note": "Ultra-Fine kit included; Super Ultra-Fine \"S2\" optional"
+    },
+    {
+      "label": "Cycle Time",
+      "value": "2 hours",
+      "note": "weekly timer, no delay feature"
+    },
+    {
+      "label": "Subscription",
+      "value": "Free, no subscription",
+      "note": "MyDolphin Plus app"
+    }
+  ],
+  "sourcing": "Verified against Maytronics' own official store pages for the Quantum, Premier, and Sigma (maytronics.com, dolphinofficial.com). Drive mechanism (tracks vs. wheels) is not specified in official materials and could not be confirmed. Reliable independent reviews specifically of the standard Dolphin Quantum (not a \"Pro\" variant) were not found; a review describing app connectivity refers to a different SKU (\"Dolphin Quantum Pro\") and should not be read as applying to the model described here. No confirmed launch date was found, though it reads as an actively sold current model as of this research.",
+  "manufacturerUrl": "https://www.maytronics.com/en-us/store/residential-pools/best-seller-cleaners/dolphin-quantum/99996203-SPLSW.html",
+  "pricing": {
+    "summary": "Maytronics' own US store lists the Dolphin Quantum at **$1,999** — placing it below the Dolphin Premier ($2,499) and well below the flagship Dolphin Sigma ($2,999) in Maytronics' current lineup."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "Quantum covers in-ground and above-ground pools (50 ft), cleaning floor, walls, and waterline with two scrubbing brushes. Filtration is a top-load, extra-large fine-filtration basket with an included Ultra-Fine kit and optional Super Ultra-Fine \"S2,\" but no full-filter indicator. Navigation is a \"self-learning\" pattern, not Premier's \"CleverClean\" branding. No app, WiFi, or Bluetooth. A \"Quantum Pro\" review's app-connectivity claim contradicts this."
+    },
+    {
+      "heading": "Insights",
+      "body": "A review describing app/WiFi connectivity for a \"Dolphin Quantum Pro\" should not be read as applying to the standard Dolphin Quantum covered here — Maytronics' own materials specify no app, WiFi, Bluetooth, or remote control for this SKU. Reliable independent reviews specifically of the standard Quantum are otherwise thin."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Dolphin Quantum has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

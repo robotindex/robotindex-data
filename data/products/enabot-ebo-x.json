@@ -1,0 +1,87 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "enabot-ebo-x",
+  "slug": "product-enabot-ebo-x.html",
+  "name": "Enabot EBO X",
+  "manufacturer": "Enabot",
+  "category": "Security",
+  "subcategory": "Indoor Security",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "Enabot's flagship self-balancing home robot, with a 4K gimbal camera, V-SLAM room mapping, Alexa built in, and GPT-4o mini conversational AI added via later firmware. Sits well above the entry-level, non-mapping Ebo Air.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "2500mAh",
+      "note": "~2–3 hr runtime, auto-dock charging"
+    },
+    {
+      "label": "Weight",
+      "value": "~1.7 kg"
+    },
+    {
+      "label": "Dimensions",
+      "value": "168 × 168 × 218 mm"
+    },
+    {
+      "label": "Camera",
+      "value": "4K UHD, 8MP",
+      "note": "106° FOV, single-axis gimbal ±104° tilt"
+    },
+    {
+      "label": "Navigation",
+      "value": "V-SLAM mapping",
+      "note": "route memory, dToF obstacle sensors"
+    },
+    {
+      "label": "Drive",
+      "value": "Self-balancing, 2 wheels",
+      "note": "1.5 m/s, ≤15° slopes; no stairs"
+    },
+    {
+      "label": "AI",
+      "value": "GPT-4o mini chat",
+      "note": "added via firmware post-launch; face/voice recognition"
+    },
+    {
+      "label": "Smart Home",
+      "value": "Alexa built-in",
+      "note": "no confirmed Google Home/HomeKit"
+    },
+    {
+      "label": "Audio",
+      "value": "8W Harman speaker",
+      "note": "4-mic array, two-way talk"
+    },
+    {
+      "label": "Subscription",
+      "value": "Optional, not required",
+      "note": "core features (movement, live view, calling) work without one; some cloud storage/advanced features route through Enabot app services, pricing not publicly confirmed"
+    }
+  ],
+  "sourcing": "Verified against Enabot's own official site (enabot.com, store.enabot.com), a CES 2023 Innovation Award announcement (PR Newswire, Digital Trends), and independent reviews from TechRadar and Digital Camera World. Unveiled at CES 2023, making this roughly a 3.5-year-old model as of this research; its GPT-4o mini conversational feature was added via a later firmware update, not present at original launch. Price sources agree at $999 except for one lower third-party listing ($799), which is flagged rather than treated as authoritative. Both independent reviews found real execution problems (mapping reliability, app bugs, voice-command lag) despite strong camera/audio hardware — this page reports both the marketing claims and that testing gap rather than only the spec sheet.",
+  "manufacturerUrl": "https://store.enabot.com/products/ebo-x-familybot",
+  "pricing": {
+    "summary": "Enabot's own store and both independent reviews (TechRadar, Digital Camera World) agree on **$999** (£999 / roughly AU$1,470–1,699 depending on region). One third-party aggregator listed $799, which conflicts with the official and press figures and should be treated with less confidence."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "EBO X is a ball-shaped robot on two brushless self-balancing hub motors with an elevated gimbal camera (4K, 8MP, 106° FOV), climbing 15° slopes but not stairs. It uses V-SLAM with dToF obstacle-avoidance sensors, though reviewers found mapping slow and inconsistent. Privacy controls include a physical camera shutter and mic mute. Reviews also flagged a failed anti-drop safety test."
+    },
+    {
+      "heading": "Insights",
+      "body": "EBO X won a CES 2023 Innovation Award, announced via PR Newswire and Digital Trends. Independent reviews from TechRadar and Digital Camera World confirm the camera and audio hardware perform well, but both also found real execution problems — mapping reliability issues, app bugs, and voice-command lag."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Unofficial, community-built Home Assistant integration giving experimental camera and movement control over the EBO X by reverse-engineering Enabot's cloud API; not affiliated with or endorsed by Enabot."
+    }
+  ]
+}

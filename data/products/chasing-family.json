@@ -1,0 +1,79 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "chasing-family",
+  "slug": "product-chasing-family.html",
+  "name": "CHASING Underwater Drone Family",
+  "manufacturer": "Chasing Innovation",
+  "category": "Personal Drones",
+  "subcategory": "Underwater",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "Three distinct underwater ROVs from Chasing Innovation (Shenzhen) spanning very different market tiers: the Dory, an entry-level consumer selfie drone; the Gladius Mini S, a prosumer photography/videography ROV; and the M2 S (sold as Lite/Standard/Advanced accessory bundles), an entry-level industrial inspection ROV. Unlike the HOVERAir or DJI Neo families, these three don't share a physical design or lineage — they're grouped here as one company's underwater lineup, not as tiers of a single product.",
+  "specs": [
+    {
+      "label": "Positioning",
+      "value": "Dory: Consumer / selfie ROV; Gladius Mini S: Prosumer photography ROV; M2 S: Entry-level industrial ROV (inspection, survey, recovery, aquaculture)"
+    },
+    {
+      "label": "Price",
+      "value": "Dory: ~$349–499 at launch (2019) (current authoritative MSRP not confirmed); Gladius Mini S: $1,199–$1,599 (base price conflicts across retailers — unresolved); M2 S: Lite $2,499 / Standard $3,299 / Advanced $4,199 (B&H lists an apparently equivalent Advanced bundle at $3,599 — unresolved conflict)"
+    },
+    {
+      "label": "Camera",
+      "value": "Dory: 1/2.9\" CMOS, 2MP photo, 1080p@30 video, no zoom; Gladius Mini S: 12MP photo, 4K@25/30 video, 1080p up to 120fps (independent reviewers disagree sharply on real image quality — see Worth Knowing); M2 S: 1/2.3\" CMOS, 12MP photo, 4K@25/30 video, ISO 100–6400 (no optical zoom on any tier despite occasional marketing \"zoom\" language)"
+    },
+    {
+      "label": "Depth rating",
+      "value": "Dory: 15 m (49 ft); Gladius Mini S: 100 m (328 ft); M2 S: 100 m (328 ft) — identical across Lite/Standard/Advanced (a longer tether buys horizontal reach, not extra depth; one retailer (iGeobotics) mislabels this as \"200m Depth Rating,\" which conflicts with Chasing's own spec sheet)"
+    },
+    {
+      "label": "Tether / control",
+      "value": "Dory: ~15m tether to a floating Wi-Fi buoy, then ~15m Wi-Fi to phone — app only, no dedicated remote; Gladius Mini S: Direct tether (100m or 200m) to a handheld remote controller with phone/tablet mount; M2 S: Direct tether with electronic winder — 100m (Lite) or 200m (Standard/Advanced) — to a handheld remote controller"
+    },
+    {
+      "label": "Thrusters",
+      "value": "Dory: 5 (3 vertical, 2 horizontal); Gladius Mini S: 5 (2 vertical, 3 horizontal), ±45° tilt; M2 S: 8 vectored, 360° roll, ±90° tilt (most maneuverable of the three by a wide margin)"
+    },
+    {
+      "label": "Battery / runtime",
+      "value": "Dory: Fixed; ~35 min (full throttle) to 4 hrs (lights off, still water); Gladius Mini S: Dual 4800mAh cells; up to 4 hrs; non-swappable; M2 S: 97.68Wh; \"up to 4 hrs\" per Chasing vs. \"up to six hours\" per B&H — unresolved (swappable spare 200Wh battery is an Advanced-tier feature only, not standard on Lite)"
+    },
+    {
+      "label": "Weight",
+      "value": "Dory: 1.1 kg (ROV only); Gladius Mini S: 2.7 kg (ROV only); M2 S: 4.5 kg (ROV only, same across all tiers)"
+    },
+    {
+      "label": "Accessories",
+      "value": "Dory: None; Gladius Mini S: Grabber claw (~$399 separate), GoPro mount (no sonar module, no compatibility with the M2-series accessory ecosystem); M2 S: Grabber claw/arm, spare thrusters, extra floodlight, Distance Lock Sonar module (the only one of the three with a real modular accessory ecosystem)"
+    },
+    {
+      "label": "Release",
+      "value": "Dory: ~late 2019 (Kickstarter) (some retail copy says 2018 — unconfirmed); Gladius Mini S: ~early–mid 2021; M2 S: ~2023–2024 (no single authoritative launch date found)"
+    },
+    {
+      "label": "Subscription",
+      "value": "None found — the shared CHASING GO1 app (covers all three models) is free with no in-app purchases or subscription tiers listed on its App Store/Google Play page; no cloud storage or editing subscription found."
+    }
+  ],
+  "sourcing": "Specs compiled from Chasing's own product and spec pages (chasing.com), retailer listings (B&H Photo, RobotShop, iGeobotics), and independent reviews from The Low Cost Sailor (Dory), New Atlas and MakeUseOf (Gladius Mini S), and SeaBits (the predecessor plain M2, not M2 S). Flagged as unconfirmed or conflicting above: Gladius Mini S and M2 S Advanced Set base pricing, exact release dates for Gladius Mini S and M2 S, M2 S runtime (4 vs. 6 hours across sources), and whether SeaBits' M2 review's specific hardware complaints carry over to the current M2 S revision. This entry hasn't yet been cross-linked or synced to the directory listing; that's planned for a later pass.",
+  "manufacturerUrl": "https://www.chasing.com/en/",
+  "pricing": {
+    "summary": "Dory starts around **$349–$499**, Gladius Mini S around **$1,199–$1,599**, and M2 S from **$2,499 (Lite) to $4,199 (Advanced)**, per Chasing's own site and major retailers. Gladius Mini S pricing conflicts meaningfully across sources — RobotShop and MakeUseOf cite $1,199 versus New Atlas's $1,599 plus a $399 grabber claw — so that figure should be verified before quoting a single price."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Chasing's own spec sheet caps every M2 S tier at 100m/328ft depth regardless of tether length, but at least one retailer, iGeobotics, advertises the same product as \"200m Depth Rating\" — a real conflict worth catching before buying by depth rating alone. The most detailed independent review available (SeaBits) covers the predecessor plain M2, not the M2 S, and documented unresolved hardware failures including melted LEDs — a historical safety-relevant malfunction not confirmed to still affect current M2 S hardware, but worth flagging."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "CHASING Underwater Drone Family has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

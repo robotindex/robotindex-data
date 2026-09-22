@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "xpeng-iron",
+  "slug": "product-xpeng-iron.html",
+  "name": "XPeng IRON",
+  "manufacturer": "XPeng",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "pending",
+  "flags": {
+    "pending": true,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A humanoid robot from XPeng — the Chinese EV maker's robotics division, now operating as the subsidiary Dogotix — built on \"bionic muscle\" flexible actuators, a full-body synthetic skin, and a solid-state battery, sharing chips and AI models with XPeng's cars. It made headlines in November 2025 when XPeng's CEO cut open its outer shell live on stage to disprove viral claims it was a person in a suit. A pilot production line opened in September 2026, with mass production targeted by year-end and commercial deliveries in 2027 — no unit has been sold to a paying customer yet.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "Solid-state",
+      "note": "claimed industry-first for a humanoid; runtime not disclosed"
+    },
+    {
+      "label": "Weight",
+      "value": "70 kg",
+      "note": "unchanged between the 2024 original and the 2025 redesign"
+    },
+    {
+      "label": "Height",
+      "value": "178 cm",
+      "note": "unchanged between the 2024 original and the 2025 redesign"
+    },
+    {
+      "label": "Compute",
+      "value": "3× Turing chips",
+      "note": "2,250–3,000 TOPS cited inconsistently across XPeng's own materials"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "76–82 total",
+      "note": "figure varies between the Nov 2025 reveal and Sept 2026 production coverage"
+    },
+    {
+      "label": "Actuators",
+      "value": "\"Bionic muscle\"",
+      "note": "flexible actuators plus a full synthetic skin, not rigid joints alone"
+    },
+    {
+      "label": "Hand Dexterity",
+      "value": "21–22 DOF/hand",
+      "note": "XPeng calls it the industry's smallest harmonic joint design"
+    },
+    {
+      "label": "Walking Speed",
+      "value": "Not disclosed",
+      "note": "no public figure found; a Feb 2026 public demo ended in a fall"
+    },
+    {
+      "label": "Sale Model",
+      "value": "Not yet sold",
+      "note": "pilot production line only; deliveries targeted 2027"
+    }
+  ],
+  "sourcing": "Verified against XPeng's own press materials and product pages, CnEVPost, Electrek, PC Gamer, NotebookCheck, KrAsia, The Robot Report, SCMP, TechNode, Futurism, Gulf News, Parametric Architecture, Global Times, and the OECD.AI AI incidents database. Flagged as unresolved or conflicting: total degrees of freedom (82 vs. 76 across different XPeng disclosures), onboard compute (2,250 vs. 3,000 TOPS), whether a separately reported \"fifth-generation\" designation refers to the same November 2025 robot as \"next-gen IRON,\" and walking speed/battery runtime, which XPeng has not publicly disclosed at all. This entry corrects the prior \"First-Generation\" label, which is not an XPeng designation and understates that the originally reviewed 2024 robot has already been superseded by a 2025 redesign now entering production.",
+  "manufacturerUrl": "https://www.xpeng.com/robot",
+  "pricing": {
+    "summary": "No price has been announced for IRON; XPeng is targeting mass production by the end of 2026 and commercial deliveries in 2027, first to its own stores and campuses before wider release. No units have been sold, and the only named external partner is Baoshan Iron & Steel, which is field-testing it for industrial inspection."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Reported specs are inconsistent even across XPeng's own materials: total degrees of freedom have been cited as both 82 and 76, and onboard compute as both 2,250 and 3,000 TOPS. In February 2026, IRON fell during its first public demo at a Shenzhen shopping mall, after which XPeng pulled walking demonstrations in favor of a support frame."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "XPeng IRON has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

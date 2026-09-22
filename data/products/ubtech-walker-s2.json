@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "ubtech-walker-s2",
+  "slug": "product-ubtech-walker-s2.html",
+  "name": "UBTECH Walker S2",
+  "manufacturer": "UBTECH Robotics",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "An industrial humanoid from UBTECH Robotics (Shenzhen), the world's first publicly-traded humanoid-robot maker. Walker S2's headline feature is autonomous battery swapping — it navigates itself to a swap station and uses its own hands to change its battery in about 3 minutes, enabling 24/7 operation without human intervention. It's sold to enterprise customers under direct contract, not through public retail.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "Autonomous swap",
+      "note": "~3 min self-service swap; dual-bay dynamic balancing; 24/7 capable"
+    },
+    {
+      "label": "Weight",
+      "value": "Unconfirmed",
+      "note": "no single official spec sheet found; third-party figures conflict"
+    },
+    {
+      "label": "Height",
+      "value": "Unconfirmed",
+      "note": "no single official spec sheet found; third-party figures conflict"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "Unconfirmed",
+      "note": "secondary sources cite ~52 DOF but aren't verified by UBTECH directly"
+    },
+    {
+      "label": "Payload",
+      "value": "15 kg",
+      "note": "0–1.8m lifting workspace"
+    },
+    {
+      "label": "Waist",
+      "value": "±162° rotation",
+      "note": "125° pitch for deep squats/stoop-lifting"
+    },
+    {
+      "label": "Vision",
+      "value": "RGB binocular stereo",
+      "note": "self-developed, no lidar in the head unit per UBTECH"
+    },
+    {
+      "label": "AI Stack",
+      "value": "BrainNet 2.0 + Co-Agent",
+      "note": "self-developed; no named foundation-model partner confirmed"
+    },
+    {
+      "label": "Sale Model",
+      "value": "Enterprise contract",
+      "note": "no public retail price; a widely-repeated \"$80,000\" figure is unsourced"
+    }
+  ],
+  "sourcing": "Verified against UBTECH's own official Walker S2 and Walker X product pages, PR Newswire's mass-production announcement, and press coverage from CnEVPost, New Atlas, AIBusiness, Humanoids Daily, Interesting Engineering, South China Morning Post, Global Times, Investing.com, Mugglehead, Tech Times, IEEE Spectrum, and an independent analysis from MERICS (Mercator Institute for China Studies). Exact height, weight, and degrees of freedom are not confirmed by any single official UBTECH spec sheet and are flagged as unverified third-party figures rather than fact. A widely circulated \"$80,000\" price and a claim crediting UBTECH as co-developer of the 2025 Beijing half-marathon-winning robot (actually built by the separate company X-Humanoid) could not be substantiated and are not repeated here as fact. This entry's tier was updated from \"pending\" to \"featured\" based on this research, given independently corroborated commercial orders and deployments, while noting the sale model is enterprise contract rather than public retail.",
+  "manufacturerUrl": "https://www.ubtrobot.com/en/humanoid/products/walker-s2",
+  "pricing": {
+    "summary": "No public price list exists — Walker S2 is sold only via negotiated B2B contracts, not at retail. A widely repeated \"$80,000\" per-unit price seen on aggregator sites could not be traced to UBTECH or any contract disclosure and should be treated as unverified."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "A Chinese local-government source credited UBTECH as co-developer of Tiangong Ultra, winner of the 2025 Beijing humanoid half-marathon, but independent tech press consistently attributes that robot to a separate company, X-Humanoid — this catalog does not credit that milestone to Walker S2. UBTECH has not published an authoritative spec sheet giving height, weight, or degrees of freedom; the figures circulating online come from third-party aggregator sites and are inconsistent with each other."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "UBTECH publishes a real Walker S2 ROS 2 SDK document (42-DOF motor control, sensor access, C++ examples), but the SDK code itself isn't public — the document says to email UBTECH directly to obtain it, with a public download link \"planned\" for the future. Not currently listed in Builds & Mods."
+    }
+  ]
+}

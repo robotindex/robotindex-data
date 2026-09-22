@@ -1,0 +1,83 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "petoi-bittle-x",
+  "slug": "product-petoi-bittle-x.html",
+  "name": "Petoi Bittle X",
+  "manufacturer": "Petoi",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Mobile Robot Kits",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A palm-sized, 9-servo quadruped dog kit from Petoi, and the direct successor to the original Kickstarter-funded Bittle — same no-solder DIY build, upgraded to an ESP32-based \"Biboard\" controller with on-device voice control and native Raspberry Pi mounting. Runs Petoi's open-source OpenCat firmware, the same framework behind Petoi's cat-shaped Nybble Q and its newer, cheaper Quaddle line already in this catalog.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "7.4V 1000mAh Li-ion",
+      "note": "~1 hour runtime, ~1.5 hour charge via USB"
+    },
+    {
+      "label": "Weight",
+      "value": "269–353 g",
+      "note": "assembled; varies by P1S alloy vs. P1L lite servos — petoi.com official specs"
+    },
+    {
+      "label": "Dimensions",
+      "value": "19.0 × 15.3 × 10.7 cm",
+      "note": "standing — petoi.com official specs"
+    },
+    {
+      "label": "Sensors",
+      "value": "6-axis IMU",
+      "note": "MPU6050 or ICM42670; no camera included by default"
+    },
+    {
+      "label": "Controller",
+      "value": "Biboard (ESP32-WROOM-32D)",
+      "note": "520K SRAM, 16MB flash, Wi-Fi + Bluetooth built in"
+    },
+    {
+      "label": "Frame",
+      "value": "Engineering plastic"
+    },
+    {
+      "label": "Joints",
+      "value": "9 powered servos",
+      "note": "2 per leg + 1 neck; coreless \"P1S\" alloy or \"P1L\" lite"
+    },
+    {
+      "label": "Voice Control",
+      "value": "35+ commands",
+      "note": "on-device, no cloud dependency claimed; +10 custom"
+    },
+    {
+      "label": "Expansion",
+      "value": "4 Grove ports + Pi mount",
+      "note": "camera/AI vision needs a separate module or user Raspberry Pi"
+    },
+    {
+      "label": "Assembly",
+      "value": "No soldering, ~40–90 min",
+      "note": "pre-assembled option sold at a premium"
+    }
+  ],
+  "sourcing": "Verified against Petoi's official Bittle X and original Bittle product/spec pages, its Quaddle and Nybble Q pages, its \"About\" and Kickstarter history pages, and its Research Spotlight page (self-reported, treated as a starting point); the PetoiCamp/OpenCat and OpenCatEsp32-Quadruped-Robot GitHub repositories and their license files; independent reviews from Tom's Hardware, BBC Science Focus, and The Gadgeteer; Hackster.io community projects for vision/ROS/voice add-ons; an independently published paper (\"OpenMutt,\" SAGE 2025); and Petoi's own community forum threads on servo issues. Flagged as uncertain: the exact current bundling of mechanical CAD/STL files relative to the firmware repos (present but less centralized than the software); and whether Petoi's self-reported list of research institutions using Bittle has been independently verified beyond the company's own page.",
+  "manufacturerUrl": "https://www.petoi.com/products/petoi-robot-dog-bittle-x-voice-controlled",
+  "pricing": {
+    "summary": "Bittle X sells for $319 direct from Petoi in its base construction-kit configuration with lite plastic servos; alloy-servo and pre-assembled variants cost more. The separate AI Vision Module and robotic-arm attachment are priced and sold independently, so they aren't included in that base price."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Bittle X's firmware is genuinely open source under the MIT license (~5,300 GitHub stars), though its mechanical CAD/STL files have historically been distributed somewhat separately from the firmware repos rather than bundled into one unified open-hardware package."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "petoi-quaddle-opencat"
+    }
+  ]
+}

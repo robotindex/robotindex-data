@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "hatchimals-alive-mystery-hatch",
+  "slug": "product-hatchimals-alive-mystery-hatch.html",
+  "name": "Hatchimals Alive Mystery Hatch",
+  "manufacturer": "Spin Master",
+  "category": "Pets & Toys",
+  "subcategory": "Toys & Characters",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A blind-box interactive egg from Spin Master's Hatchimals franchise: cuddling, tapping, and rocking the egg builds toward a rainbow-glow, mist-effect hatch revealing one of two possible plush characters per family — the box shown is the Tigrette family, which hatches into either \"Phoenix\" (fire) or \"Frosty\" (ice). It's the 2024 relaunch of the line that was the breakout, shortage-plagued hit toy of the 2016 holiday season.",
+  "specs": [
+    {
+      "label": "Dimensions",
+      "value": "~6 × 8 × 6 in",
+      "note": "~2.25 lb; retailer-listed, line-wide figure"
+    },
+    {
+      "label": "Connectivity",
+      "value": "None",
+      "note": "no app; standalone electronic toy"
+    },
+    {
+      "label": "Mechanism",
+      "value": "Touch/motion nurture",
+      "note": "cuddle, tap, and rock to trigger hatching — not water or heat"
+    },
+    {
+      "label": "Hatch Effects",
+      "value": "Mist + rainbow glow",
+      "note": "exact mist-generation method not disclosed"
+    },
+    {
+      "label": "Sounds",
+      "value": "100+ reactions",
+      "note": "manufacturer claim; not independently audited"
+    },
+    {
+      "label": "Outcomes",
+      "value": "1 of 2 per family",
+      "note": "blind/mystery — buyer doesn't know which until it hatches"
+    },
+    {
+      "label": "Power",
+      "value": "4× AA batteries",
+      "note": "included, alkaline, user-replaceable"
+    },
+    {
+      "label": "Age Rating",
+      "value": "5+ years",
+      "note": "small-parts warning for under 3 yrs"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "standalone toy, no app required or available for this product"
+    }
+  ],
+  "sourcing": "Verified against Spin Master's official press release (via PR Newswire), Wikipedia (Hatchimals, Spin Master), the Hatchimals Fandom wiki's franchise timeline and Mystery Hatch character breakdown, Target and Walmart product/review listings, ToyWiz, TTPM and The Toy Insider reviews, an instruction-manual mirror, and CPSC's recall database, plus contemporary 2016–2017 news coverage (ABC News, CBS San Francisco) and legal-tracking sites (classaction.org, topclassactions.com) for the original Hatchimals lawsuit. Post-hatch growth-stage mechanics, the exact sensor and mist-generation technology, the \"100+ sounds\" figure, and the Tigrette retailer-exclusivity claim are manufacturer or single-source claims not independently verified, and are presented as such. No recall or lawsuit specific to this 2024 relaunch was found as of this writing.",
+  "manufacturerUrl": "https://www.spinmaster.com/en-US/brand/hatchimals",
+  "pricing": {
+    "summary": "Mystery Hatch launched October 4, 2024 at **$59.99 USD** SRP (£64.99 in the UK), confirmed by Spin Master's own press release and matched by Target and Walmart listings. Reported retailer-exclusivity for specific character families, such as Tigrette being tied to Amazon, is contradicted by at least one active Walmart listing, so buyers shouldn't assume a given character is limited to one store."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "The original 2016 Hatchimals egg drew a class-action lawsuit against Spin Master over widespread complaints of eggs failing to hatch and batteries dying; no comparable lawsuit or CPSC recall has been found for this Mystery Hatch relaunch. Some customer reviews of Mystery Hatch also describe its hatching mist effect as strong enough to potentially trigger a smoke detector."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Hatchimals Alive Mystery Hatch has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "joy-for-all-walker-squawker",
+  "slug": "product-joy-for-all-walker-squawker.html",
+  "name": "Joy for All Walker Squawker",
+  "manufacturer": "Ageless Innovation",
+  "category": "Companion & Social",
+  "subcategory": "Senior Companions",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A small animatronic bird that magnet-mounts to a walker or rollator, chirping and singing in response to touch, sound, and motion — including a \"don't forget me\" reminder song when the walker is left behind. Sold individually in Cardinal or Bluebird. Invented by 93-year-old Rita Melone.",
+  "specs": [
+    {
+      "label": "Dimensions",
+      "value": "~3.9 × 2 × 3.1 in",
+      "note": "~7.8 oz — much smaller than the Pup/Cat"
+    },
+    {
+      "label": "Form Factor",
+      "value": "Walker accessory",
+      "note": "magnetic perch mount, not a standalone pet"
+    },
+    {
+      "label": "Response",
+      "value": "ChirpBack Technology",
+      "note": "touch, light, sound, and motion sensors"
+    },
+    {
+      "label": "Signature Feature",
+      "value": "\"Don't forget me\" song",
+      "note": "chirps when the walker is left stationary/behind"
+    },
+    {
+      "label": "Movement",
+      "value": "Head + beak motion",
+      "note": "synced to chirps; no body movement"
+    },
+    {
+      "label": "Variants",
+      "value": "Cardinal or Bluebird",
+      "note": "sold separately, not as a pair"
+    },
+    {
+      "label": "Power",
+      "value": "3× AAA batteries",
+      "note": "alkaline, included"
+    },
+    {
+      "label": "Positioning",
+      "value": "Walker adherence",
+      "note": "companionship to encourage consistent walker use"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "battery-powered, no app or connectivity — Ageless Innovation FAQ"
+    }
+  ],
+  "sourcing": "Verified against Ageless Innovation's own product page and origin-story post, a 2021 Gizmodo preview, 2022 Boston Globe and ABC News/GMA profiles of inventor Rita Melone, a RehabPub feature, and retailer listings (Amazon, Walmart, Best Buy). Cardinal and Bluebird are confirmed sold separately, not as a pair, despite the marketing photo showing both. Cardinal shows out-of-stock/discontinuation signals on the official site and Best Buy as of this research; Bluebird appears more reliably available. Whether this product is included in Ageless Innovation's May 2026 \"750,000 adoptions\" milestone could not be confirmed — that announcement does not break results down by product.",
+  "manufacturerUrl": "https://joyforall.com/products/walker-accessories-walker-squawker",
+  "pricing": {
+    "summary": "$64.99 per bird direct from Ageless Innovation, and the same price at third-party retailers such as Amazon, Walmart, and Staples. Stock is uneven by color: Cardinal has shown out of stock on joyforall.com and unavailable in new condition at Best Buy, while Bluebird remains available directly."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Walker Squawker's core mechanism is a \"don't forget me\" behavior: motion sensors detect when the mobility walker it clips to has stopped moving, and the bird chirps a reminder to bring it along. That's a functional walker-compliance feature — a genuine differentiator from Ageless Innovation's other Companion Pet products, which offer no equivalent function."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Joy for All Walker Squawker has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

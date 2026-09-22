@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "ortomi-umi",
+  "slug": "product-ortomi-umi.html",
+  "name": "Ortomi Umi",
+  "manufacturer": "Ortomi",
+  "category": "Pets & Toys",
+  "subcategory": "Robot Pets",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A palm-sized companion from Ortomi, a small robotics maker in Adelaide, Australia, with ear-like antennas, a rounded base, and a small screen showing cartoon eyes and expressions. No camera or microphone in any source found — it communicates only through chirps, beeps, and animated expressions rather than speech or voice recognition.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "~10 hr",
+      "note": "one review cites up to 12 hr; hibernates up to 1 week"
+    },
+    {
+      "label": "Dimensions",
+      "value": "4.7 × 4.9 × 4 cm",
+      "note": "65 g"
+    },
+    {
+      "label": "Display",
+      "value": "Disputed",
+      "note": "third-party reviews cite a 1.47\" LCD; Ortomi's own product page doesn't mention a screen at all"
+    },
+    {
+      "label": "AI",
+      "value": "None",
+      "note": "emotion/personality simulation only, not conversational AI"
+    },
+    {
+      "label": "Camera / Mic",
+      "value": "None",
+      "note": "no source, official or third-party, mentions either"
+    },
+    {
+      "label": "Sound",
+      "value": "Chirps, beeps, boops",
+      "note": "no speech or voice recognition, per Ortomi's own copy"
+    },
+    {
+      "label": "Processor",
+      "value": "ESP32",
+      "note": "Wi-Fi used for firmware updates"
+    },
+    {
+      "label": "Charging",
+      "value": "USB-C",
+      "note": "base is a stand, not a charging dock"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "no app or account; Wi-Fi used only for optional firmware updates"
+    }
+  ],
+  "sourcing": "Verified against Ortomi's own official site (ortomi.com, including its Umi product page and About page), the Kickstarter campaign page and its funding totals, and third-party reviews from Robotic Gizmos, Gadgetify, and mia-cat.com. The single biggest flag on this page: Ortomi's own product-page copy states Umi has no screen and doesn't speak, which directly conflicts with the supplied product photo showing a screen with animated eyes and with two independent reviews describing a 1.47\" LCD display — this is presented as an unresolved contradiction, not settled either way. Price is given as $125 on Ortomi's own store and AU$185 in one review, possibly reflecting different markets or dates. Founder names are given only as first names (\"Sam and Christian\") on Ortomi's own About page, with no surnames confirmed. The 5,000+ units-sold claim is self-reported by Ortomi and not independently verified. No coverage from a major tech-press outlet was found.",
+  "manufacturerUrl": "https://ortomi.com/product/umi/",
+  "pricing": {
+    "summary": "Ortomi Umi costs $125 USD on Ortomi's own store. It's a one-time hardware purchase with no subscription of any kind, and no companion smartphone app has been confirmed to exist."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "There's an unresolved contradiction between Ortomi's own product page for Umi, which describes ear-based menu navigation with no screen and states \"they don't speak or listen,\" and the actual product: the supplied photo and two independent reviews both show a 1.47-inch LCD screen displaying animated eyes."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Ortomi Umi has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

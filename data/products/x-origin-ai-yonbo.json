@@ -1,0 +1,90 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "x-origin-ai-yonbo",
+  "slug": "product-x-origin-ai-yonbo.html",
+  "name": "X-Origin AI Yonbo",
+  "manufacturer": "X-Origin AI",
+  "category": "Companion & Social",
+  "subcategory": "Children Companions",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A wheeled, ChatGPT-powered companion robot (the \"Yonbo X1\") from X-Origin AI, with an expressive animated-face screen, homework help, storytelling, and MBTI-style personality customization. Already past crowdfunding and shipping via retail as of this research — worth revisiting whether \"pending\" still fits.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "3.2 kg",
+      "note": "official yonbo.ai spec"
+    },
+    {
+      "label": "Dimensions",
+      "value": "219 × 196 × 256 mm",
+      "note": "L × W × H, standing — official yonbo.ai spec"
+    },
+    {
+      "label": "Sensors",
+      "value": "5MP camera (off by default)",
+      "note": "4-mic array, 2×2W speakers"
+    },
+    {
+      "label": "AI",
+      "value": "Cloud, ChatGPT-powered",
+      "note": "local wake-word detection before cloud processing"
+    },
+    {
+      "label": "Status",
+      "value": "Shipping via retail",
+      "note": "past its 2025 crowdfunding stage"
+    },
+    {
+      "label": "Mobility",
+      "value": "4-wheeled base",
+      "note": "219 × 196 × 256mm, 3.2 kg"
+    },
+    {
+      "label": "Face",
+      "value": "TFT LCD, 600+ expressions",
+      "note": "articulating head/neck on angled arm"
+    },
+    {
+      "label": "Autonomy",
+      "value": "Mostly app/remote-driven",
+      "note": "no confirmed auto-patrol or auto-dock charging"
+    },
+    {
+      "label": "Hardware",
+      "value": "ARM Cortex-A55, 4GB RAM",
+      "note": "5000mAh battery, ~3.5 hr runtime"
+    },
+    {
+      "label": "Age Range",
+      "value": "4–12 years",
+      "note": "homework help, storytelling, play"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "X-Origin's own FAQ states \"0 subscription fee is required,\" despite the cloud-based, ChatGPT-powered AI backend"
+    }
+  ],
+  "sourcing": "Verified against X-Origin's own site (yonbo.ai), a USPTO trademark record, Chinese business press (36Kr, China Daily, NewsGD) on funding, BackerKit's Kickstarter tracker, a secondary blog account of the Kickstarter suspension, CES 2026 press coverage (Forbes, Engadget), a technical writeup from Hackster.io, and a firsthand user forum report. Company HQ location is inconsistent across sources (Shenzhen vs. Los Angeles). Exact Kickstarter raised amount and suspension details are secondary-sourced, not confirmed directly from Kickstarter's now-inaccessible campaign page. The flatbed/cargo-tray feature visible in this page's product photo could not be confirmed against any official spec or review and is flagged rather than described as a known feature. Marketing claims about psychological-distress detection and autonomous obstacle avoidance are treated as unverified claims, with the latter in some tension with a firsthand user report.",
+  "manufacturerUrl": "https://yonbo.ai/products/yonbo-x1",
+  "pricing": {
+    "summary": "Current retail pricing on X-Origin's own site is $799 for a single unit or $1,199 for a two-unit \"Twin Kit,\" with financing options (Affirm, Klarna, Shop Pay) offered. It's also listed at Amazon and Best Buy at similar prices, though live pricing on those retailer pages wasn't independently re-confirmed here."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "X-Origin AI's May 2025 Kickstarter campaign for the Yonbo X1 raised roughly $1.08–2 million before Kickstarter suspended it over suspected fraudulent pledges — an allegation the company has publicly disputed."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "X-Origin AI Yonbo has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "mangdang-mini-pupper-2-pro",
+  "slug": "product-mangdang-mini-pupper-2-pro.html",
+  "name": "MangDang Mini Pupper 2 Pro",
+  "manufacturer": "MangDang",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Mobile Robot Kits",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A 12-DOF quadruped robot dog kit running full ROS2 on a Raspberry Pi 4/CM4, descended from Stanford Student Robotics' open-source \"Stanford Pupper\" research platform. The Pro tier upgrades to servos with velocity and torque feedback, not just position, and pairs with an optional spinning lidar for genuine SLAM/Nav2 navigation — a step up in compute and software depth from this catalog's Petoi Bittle X, at roughly double the price once add-ons are included.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "1000mAh",
+      "note": "runtime not officially published; short per user reports"
+    },
+    {
+      "label": "Weight",
+      "value": "~450g",
+      "note": "Mini Pupper 2 platform figure (Pi 4 variant); no separate Pro-tier figure found"
+    },
+    {
+      "label": "Dimensions",
+      "value": "21 × 11 × 16.5 cm",
+      "note": "Pi 4 variant; CM4 variant is ~2.5cm shorter (14cm height)"
+    },
+    {
+      "label": "Compute",
+      "value": "Raspberry Pi 4 / CM4",
+      "note": "+ ESP32 co-processor for low-level motor/sensor I/O"
+    },
+    {
+      "label": "Camera",
+      "value": "Pi Camera v2, 8MP",
+      "note": "~62° FOV; OAK-D-Lite stereo depth camera optional"
+    },
+    {
+      "label": "Software",
+      "value": "ROS 2 Humble, Ubuntu 22.04",
+      "note": "Cartographer SLAM + Nav2; ROS1 path also documented"
+    },
+    {
+      "label": "Joints",
+      "value": "12 DOF, feedback servos",
+      "note": "Pro adds velocity + torque feedback, not just position"
+    },
+    {
+      "label": "Lidar",
+      "value": "STL-06P (optional)",
+      "note": "360° spinning DTOF lidar, ~12m range, sold separately"
+    },
+    {
+      "label": "Gait Origin",
+      "value": "Stanford Pupper lineage",
+      "note": "built on Stanford Student Robotics' open gait code"
+    },
+    {
+      "label": "Assembly",
+      "value": "Kit build, no soldering",
+      "note": "MangDang flags Pro for experienced makers specifically"
+    }
+  ],
+  "sourcing": "Verified against MangDang's official Mini Pupper 2 Pro and Mini Pupper 2 product pages, its \"About Us\" page, and both Kickstarter campaign pages (2021 original, 2022 Mini Pupper 2); the mangdangroboticsclub/QuadrupedRobot and mini_pupper_ros GitHub repositories and their license/star counts; the peer-reviewed Stanford Pupper paper (arXiv:2110.00736) and Stanford Student Robotics' own project page; the LDROBOT STL-06P lidar datasheet; the Raspberry Pi Official Magazine's independent review; and IEEE Spectrum's 2022 robot gift guide entry. Flagged as uncertain: exact battery runtime in minutes (not officially published by MangDang); the Mini Pupper 2 Pro Maker Kit's current availability, shown sold out directly from MangDang at research time; and the extent of independent peer-reviewed citation of MangDang's specific commercial kit, as opposed to the underlying Stanford Pupper research it's derived from.",
+  "manufacturerUrl": "https://mangdang.store/products/mini-pupper-2-pro-maker-kit-ai-quadruped-robot-educational-robot",
+  "pricing": {
+    "summary": "The Mini Pupper 2 Pro Maker Kit lists at $799, with MangDang's own store showing it discounted to $559 on promotion. At research time it was listed as sold out directly from MangDang, so buyers currently have to look to distributors such as RobotShop and OzRobotics."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "MangDang's core GitHub repo for Mini Pupper is genuinely open (MIT license, ~1,200 stars), with real if modest community activity — a legitimate open robotics project, not a large or fast-moving one."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "mangdang-mini-pupper-2-pro"
+    }
+  ]
+}

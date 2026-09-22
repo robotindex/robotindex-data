@@ -1,0 +1,83 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "worx-landroid-m-wr140",
+  "slug": "product-worx-landroid-m-wr140.html",
+  "name": "Worx Landroid M WR140",
+  "manufacturer": "Worx",
+  "category": "Outdoor & Yard",
+  "subcategory": "Robot Lawn Mowers",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A wire-guided robotic lawn mower from Worx's 20V Landroid M line, covering up to 1/4 acre with an offset 3-blade cutting disc for edge trimming. Requires a buried/staked perimeter wire — it does not use camera- or GPS-based wire-free navigation.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "20V 4.0Ah Li-ion",
+      "note": "90 min charge time; runtime/charge not published"
+    },
+    {
+      "label": "Weight",
+      "value": "21.2 lbs"
+    },
+    {
+      "label": "Dimensions",
+      "value": "22 × 15 × 10 in"
+    },
+    {
+      "label": "Navigation",
+      "value": "Perimeter wire",
+      "note": "590 ft wire included, no wire-free option"
+    },
+    {
+      "label": "Cutting Width",
+      "value": "7 in"
+    },
+    {
+      "label": "Cutting Height",
+      "value": "2–3.5 in",
+      "note": "manually adjustable"
+    },
+    {
+      "label": "Max Coverage",
+      "value": "Up to 1/4 acre",
+      "note": "~10,890 sq ft"
+    },
+    {
+      "label": "Max Slope",
+      "value": "20° (35% grade)"
+    },
+    {
+      "label": "Noise",
+      "value": "63 dB"
+    },
+    {
+      "label": "Subscription",
+      "value": "Free, no subscription",
+      "note": "Worx Landroid app; cloud API also used by free Home Assistant integration"
+    }
+  ],
+  "sourcing": "Verified against Worx's own official WR140 product page (worx.com), which also identifies this as a legacy SKU superseded by the newer WR147 — buyers should confirm current availability before purchase. The international equivalent is sold as \"WR140E\" / \"Landroid M1000\" on UK/EU/AU Worx sites — same core machine, different regional model suffix; do not confuse either with Landroid L (wider-cut WR147/WR150/WR153) or Landroid Vision (wire-free, camera-navigation WR310 and similar). Battery runtime per charge is not published by Worx and could not be independently confirmed. No mainstream tech-press review (The Verge, PCMag, Tom's Guide, TechRadar) covering this specific WR140/20V M-series unit was found; commonly cited \"Worx Landroid\" reviews online cover different Landroid generations (a 28V model, or the wire-free Vision Cloud WR310) and should not be read as describing this product.",
+  "manufacturerUrl": "https://www.worx.com/landroid-m-20v-cordless-robotic-lawn-mower-wr140.html",
+  "pricing": {
+    "summary": "Listed at **$1,019.99** on worx.com. Third-party retailers have historically priced this model closer to **$999–$1,099**, and Worx's own site currently flags WR140 as a discontinued SKU, so live pricing and stock should be checked at the retailer before buying."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "The Landroid M WR140 is a wire-guided mower: 590 ft of boundary wire is staked around the lawn, and the mower stays within it rather than mapping via camera or GPS, unlike Worx's separate Landroid Vision line. Cutting uses an offset three-blade disc. The spec sheet doesn't confirm Bluetooth/Wi-Fi extenders, Alexa/Google integration, a rain sensor, or anti-theft features."
+    },
+    {
+      "heading": "Insights",
+      "body": "No mainstream tech-press review specifically covers the WR140/20V M-series unit; commonly cited \"Worx Landroid\" reviews found online actually describe different generations and shouldn't be read as describing this product. Worx's own site also lists the WR140 as a discontinued SKU superseded by the newer WR147."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "mtrab-landroid-cloud"
+    }
+  ]
+}

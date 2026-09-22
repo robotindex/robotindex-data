@@ -1,0 +1,90 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "pololu-3pi-plus-2040",
+  "slug": "product-pololu-3pi-plus-2040.html",
+  "name": "Pololu 3pi+ 2040",
+  "manufacturer": "Pololu",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Classroom & Coding Kits",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A 2-wheel differential-drive robot from Pololu Corporation built around an RP2040 control board — the same chip that powers the Raspberry Pi Pico — ships MicroPython-preloaded, and is also programmable in C/C++ via the Pico SDK. Features a 5-sensor IR reflectance line-following array, front bump sensors, a 6-axis IMU plus magnetometer, a 128x64 OLED display, and 6 addressable RGB LEDs, sold across three motor-gearing tiers (Standard, Turtle, Hyper). Skews toward a college/serious-hobbyist audience rather than young children — assembly requires soldering. Note: unlike most entries in this catalog, this product's chassis is visually near-identical to Pololu's separate, Arduino-compatible 3pi+ 32U4 OLED robot, which the submitted photo actually shows — see the image caption.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "4x AAA, rechargeable NiMH recommended",
+      "note": "alkaline (6V nominal) also supported; genuinely not lithium"
+    },
+    {
+      "label": "Weight",
+      "value": "~100g",
+      "note": "assembled, without batteries; Pololu doesn't publish a combined weight including batteries"
+    },
+    {
+      "label": "Dimensions",
+      "value": "9.7 × 9.6 × 3.6 cm",
+      "note": "97mm L × 96mm W × 36mm H per Pololu's own spec page; shared chassis across Standard/Turtle/Hyper motor tiers"
+    },
+    {
+      "label": "Connectivity",
+      "value": "USB-C, no radio",
+      "note": "the bare RP2040 has no onboard Bluetooth or Wi-Fi, unlike the Pico W; the older 32U4 board instead uses Micro-B"
+    },
+    {
+      "label": "Sensors",
+      "value": "5-sensor line array + bump + IMU",
+      "note": "5 downward IR reflectance sensors, 2 front bump sensors, plus an LSM6DSO accel/gyro and LIS3MDL magnetometer (6+3-axis across two chips) via I2C"
+    },
+    {
+      "label": "Software",
+      "value": "MicroPython (preloaded) or C/C++",
+      "note": "via the Pico SDK; a third-party Arduino-compatibility library also exists. Officially MicroPython only — no confirmed official CircuitPython support"
+    },
+    {
+      "label": "Display",
+      "value": "128x64 OLED (SH1106)",
+      "note": "plus 3 user buttons, a PWM buzzer, 6 addressable RGB LEDs, 1 yellow LED, and 5 blue power-indicator LEDs"
+    },
+    {
+      "label": "Control Board",
+      "value": "RP2040, not 32U4",
+      "note": "32-bit dual-core Cortex-M0+ @ 125MHz, 264KB RAM, 16MB flash; Pololu's separate, visually near-identical 3pi+ 32U4 OLED robot uses an 8-bit ATmega32U4 instead — a completely different, older control board"
+    },
+    {
+      "label": "Chassis",
+      "value": "2-wheel diff. drive + ball caster",
+      "note": "shared chassis design across both the 2040 and 32U4 product lines"
+    },
+    {
+      "label": "Motor Tiers",
+      "value": "Standard, Turtle, or Hyper",
+      "note": "30:1 (~1.5m/s), 75:1 (~0.4m/s, long battery life), or 15:1 (~4m/s, ships with a spare gearbox since it's fast enough to damage itself)"
+    },
+    {
+      "label": "Audience",
+      "value": "College/serious hobbyist level",
+      "note": "assembly requires soldering skill per Pololu's own forum build reports; notably more technical than most robots in this subcategory"
+    }
+  ],
+  "sourcing": "Specs and history compiled from Pololu's own 3pi+ 2040 product pages, User's Guide, and published schematics/resources, the `pololu/pololu-3pi-2040-robot` GitHub repository and its license files, Pololu's own company forum (including early-adopter build reports), Pololu's About page, and academic GitHub projects referencing the robot. The board-identification finding above (32U4 vs. 2040) is drawn directly from visual inspection of this entry's own product photo, cross-checked against Pololu's official product-line documentation for both boards. Other flagged uncertainties: whether Pololu's published schematics/CAD carry any formal open-hardware license (not confirmed either way), and no independently-confirmed dedicated Hackaday coverage of this specific product was found despite a search. This entry hasn't yet been cross-linked into the rest of the Classroom & Coding Kits subcategory or synced to the directory listing; that's planned for a later pass.",
+  "manufacturerUrl": "https://www.pololu.com/category/300/3pi-plus-2040-robot",
+  "pricing": {
+    "summary": "Assembled 3pi+ 2040 kits run **$194.95** for the Standard or Turtle Edition and **$208.95** for the Hyper Edition, with unassembled kits slightly cheaper (Standard kit: $179.95) and the bare RP2040 control board alone at $74.95. Volume discounts apply at 5+ and 25+ units for classroom or lab purchasing."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "The photo attached to this listing is actually the separate 3pi+ 32U4 OLED robot (an older ATmega-based board, clearly silkscreened as such on the board and its own boot screen), not the RP2040-based 3pi+ 2040 that this entry's specs describe — both share an identical chassis, making the mix-up an easy one for a reseller or catalog to make. Pololu's own GitHub repo carries a genuine MIT license for the 3pi+ 2040's firmware, and while the company also publishes schematics and STEP models publicly, none of it carries a formal open-hardware license like CERN-OHL."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Pololu's own official example code repository for the 3pi+ 2040 robot."
+    }
+  ]
+}

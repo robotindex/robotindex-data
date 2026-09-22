@@ -1,0 +1,88 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "hf-lerobot-humanoid",
+  "slug": "product-hf-lerobot-humanoid.html",
+  "name": "Hugging Face LeRobot Humanoid",
+  "manufacturer": "Hugging Face",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "Open-source, 3D-printable bipedal research platform from Hugging Face. Currently released as a legs-only lower body for locomotion research — no torso, arms, or head yet. Anyone can print and assemble one.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Height",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Compute",
+      "value": "Raspberry Pi 5",
+      "note": "+ BNO055/BNO085 IMU, SAVVYCANFD CAN-FD adapter"
+    },
+    {
+      "label": "Software",
+      "value": "LeRobot + MJLab",
+      "note": "sim-to-real training stack"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "12 actuated",
+      "note": "2 hip-x, 2 hip-z, 4 thigh, 4 shin — 6 per leg"
+    },
+    {
+      "label": "Actuators",
+      "value": "RobStride",
+      "note": "O0 ×2 (torso), O2 ×2 (hip-z), O3 ×4 (thigh), O5 ×4 (shin)"
+    },
+    {
+      "label": "Status",
+      "value": "Experimental",
+      "note": "requires careful bring-up per HF's own docs"
+    },
+    {
+      "label": "Configuration",
+      "value": "Legs only",
+      "note": "upper body on roadmap, not yet released"
+    },
+    {
+      "label": "Materials",
+      "value": "3D-printed",
+      "note": "~75 STL parts, ~3.5kg of PLA+ filament"
+    },
+    {
+      "label": "Capabilities",
+      "value": "Standing / balancing",
+      "note": "early sim-to-real policy — dynamic walking not yet independently confirmed"
+    }
+  ],
+  "sourcing": "Specs compiled from Hugging Face's official project blog post, the huggingface/lerobot-humanoid GitHub org (hardware, design, model, runtime, and identification repos and their LICENSE files), and independent coverage from Interesting Engineering, Hackster.io, and Humanoids Daily. Height, weight, and payload remain unpublished by Hugging Face and are flagged as such rather than estimated. robotindex does not sell this product — it is a build-it-yourself open-source platform with no assembled unit available for purchase.",
+  "manufacturerUrl": "https://huggingface.co/blog/VirgileBatto/lerobot-humanoid",
+  "pricing": {
+    "summary": "Roughly **$2,500–$2,636 in parts**, depending on sourcing, shipping, and taxes — this is a bill-of-materials for a self-build, not an assembled unit anyone sells. Height, weight, and payload haven't been published by Hugging Face as of this writing; independent coverage (Interesting Engineering, Hackster, Humanoids Daily) notes the same gap rather than filling it in."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "Designed by **Virgile Batto** at Hugging Face LeRobot, this is a genuine first-party HF hardware project. It's built from ~75 3D-printed parts, RobStride brushless actuators, a Raspberry Pi 5 for compute, a BNO055/BNO085 IMU, and a SAVVYCANFD CAN-FD adapter. The hardware repo is Apache-2.0 licensed. Only the bipedal lower body has shipped; arm/torso manipulation is still on the roadmap."
+    },
+    {
+      "heading": "Insights",
+      "body": "Despite \"humanoid\" and \"robot learning\" marketing language, what's actually been demonstrated is an early sim-to-real **standing/balancing** policy, not confirmed dynamic bipedal walking across a room. Hugging Face's own team describes it as \"an experimental research platform\" where running policies on physical hardware \"still requires careful calibration, low-gain testing, and a reliable power cutoff.\""
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "huggingface-lerobot-humanoid-hardware"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "mamibot-w120-dp-wb",
+  "slug": "product-mamibot-w120-dp-wb.html",
+  "name": "Mamibot W120-DP~WB",
+  "manufacturer": "Mamibot",
+  "category": "Cleaning & Home Care",
+  "subcategory": "Other",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "Mamibot's flagship window-cleaning robot (marketed as \"iGLASSBOT W120-DP\"), using air-pressure adhesion rather than vacuum suction, with a built-in UPS backup and a mandatory safety-rope requirement in its own manual.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "1.4 kg",
+      "note": "official Mamibot product page"
+    },
+    {
+      "label": "Dimensions",
+      "value": "22.9 × 22.9 × 6.9 cm",
+      "note": "thickness confirmed by Mamibot's own site; L×W from a third-party review (testberichte.de) — lower confidence"
+    },
+    {
+      "label": "Attachment",
+      "value": "Air-pressure adhesion",
+      "note": "not vacuum suction"
+    },
+    {
+      "label": "Edge Detection",
+      "value": "Pressure + photoelectric",
+      "note": "+ gyroscope, anti-fall detection"
+    },
+    {
+      "label": "Cleaning",
+      "value": "4-nozzle spray",
+      "note": "dual-directional, constant pressure"
+    },
+    {
+      "label": "Water Tank",
+      "value": "~60 mL",
+      "note": "rated for ~20 sqm per fill"
+    },
+    {
+      "label": "Power Backup",
+      "value": "20–30 min UPS",
+      "note": "keeps unit adhered during outage"
+    },
+    {
+      "label": "Control",
+      "value": "Button + remote",
+      "note": "optional Bluetooth app"
+    },
+    {
+      "label": "Noise",
+      "value": "<75 dB",
+      "note": "manufacturer figure"
+    },
+    {
+      "label": "Subscription",
+      "value": "None required",
+      "note": "optional Bluetooth app is local-only, no cloud fee"
+    }
+  ],
+  "sourcing": "Specs sourced from Mamibot's official product page (mamibot.com/iglassbot-w120-dp) and the W120-DP's official user manual, as of September 2026. **Naming discrepancy:** robotindex could not confirm a \"~WB\" suffix anywhere in Mamibot's own materials, retail listings, or press coverage — every official and retail source refers to this product simply as \"W120-DP\" (marketed as \"iGLASSBOT W120-DP\"). \"WB\" may reflect an internal or reseller color/variant code not used publicly; specs here are for the confirmed W120-DP model. No mainstream tech-press review of this model was found. robotindex does not sell this product.",
+  "manufacturerUrl": "https://mamibot.com/iglassbot-w120-dp",
+  "pricing": {
+    "summary": "No consistent MSRP found — pricing varies by retailer (Amazon, eBay, mamibot.com/mamibotusa.com listings), so check a live listing for current price."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "Unlike most window robots, the W120-DP holds to glass via air-pressure adhesion (not vacuum suction), backed by pressure and photoelectric edge sensors, a gyroscope, and anti-fall detection. Mamibot's own user manual explicitly requires tying a safety rope to an indoor fixture before use — a manual requirement, not just a marketed accessory."
+    },
+    {
+      "heading": "Insights",
+      "body": "Despite this listing's name, Mamibot's own site, its official user manual, and all retail/press coverage refer to this product simply as the \"W120-DP\" — no \"~WB\" suffix appears anywhere in the manufacturer's own materials. It likely reflects an internal or reseller variant code rather than a real model designation."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Mamibot W120-DP~WB has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

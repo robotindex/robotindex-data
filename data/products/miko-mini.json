@@ -1,0 +1,90 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "miko-mini",
+  "slug": "product-miko-mini.html",
+  "name": "Miko Mini",
+  "manufacturer": "Miko",
+  "category": "Companion & Social",
+  "subcategory": "Children Companions",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A smaller, cheaper sibling to Miko 3 — the same wheeled, screen-faced AI companion format with a smaller non-touch display, one-way video calling, and English-only conversation, aimed at the same 5–10 age range and same Miko Max content ecosystem.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "~1 hr active use",
+      "note": "vs. ~5 hrs on Miko 3"
+    },
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Dimensions",
+      "value": "115 × 137 × 165 mm",
+      "note": "4.5 × 5.3 × 6.49 in — official Miko spec"
+    },
+    {
+      "label": "Camera",
+      "value": "Wide-angle HD",
+      "note": "one-way video calling only; physical lens slider"
+    },
+    {
+      "label": "Display",
+      "value": "~2\" non-touch screen",
+      "note": "vs. Miko 3's 4.7\" touchscreen"
+    },
+    {
+      "label": "Mobility",
+      "value": "Autonomous wheeled base",
+      "note": "same category as Miko 3, less range/finesse"
+    },
+    {
+      "label": "Language",
+      "value": "English only",
+      "note": "Miko 3 supports 8 languages"
+    },
+    {
+      "label": "Content",
+      "value": "Same Miko Max ecosystem",
+      "note": "optional subscription, same as Miko 3"
+    },
+    {
+      "label": "Age Range",
+      "value": "5–10 years",
+      "note": "same range as Miko 3, not younger-skewed"
+    },
+    {
+      "label": "Launched",
+      "value": "September 2024",
+      "note": "after Miko 3, as the budget/space-friendly option"
+    },
+    {
+      "label": "Subscription",
+      "value": "Optional",
+      "note": "Same Miko Max tier as Miko 3 — $14.99/mo or $99/yr (help.miko.ai); Miko's own pages list annual price inconsistently"
+    }
+  ],
+  "sourcing": "Verified against Miko's own site (Miko Mini product page, Miko-vs-Mini comparison page, Help Center tech specs, Miko Mini+ page), independent reviews (9to5Mac, What Katy Said, The Toy Insider's launch coverage), and the same February 2026 Senate/NBC News reporting on Miko's data-exposure incident covered on this catalog's Miko 3 page. Miko Max annual subscription pricing is inconsistent across Miko's own pages. The Miko Mini+ variant's exact spec differences from base Mini are not fully documented by the manufacturer. Whether Miko Mini units were specifically included in the exposed 2026 database is unconfirmed by any source; the senators' own testing was done on a Miko 3 unit, though Miko's parental-control response covers both models.",
+  "manufacturerUrl": "https://miko.ai/products/miko-mini",
+  "pricing": {
+    "summary": "MSRP $199, commonly discounted to $149 on Miko's own site. The optional Miko Max subscription costs $14.99/month, but its annual price is inconsistent across Miko's own pages, cited variously as $89, $99, or roughly $8.25/month equivalent."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "In February 2026, U.S. Senators sent Miko a formal letter after a publicly-exposed database of children's AI-interaction data was found; the senators' testing was done on a Miko 3 unit specifically, and no source confirms or rules out whether Miko Mini fed into the same exposed database, though Miko's resulting parental-control rollout covers both devices."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Miko Mini has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "petoi-quaddle",
+  "slug": "product-petoi-quaddle.html",
+  "name": "Petoi Quaddle",
+  "manufacturer": "Petoi",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Mobile Robot Kits",
+  "tier": "pending",
+  "flags": {
+    "pending": true,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "Petoi's cheapest, simplest quadruped — a single servo per leg (versus Bittle X's roughly nine) with wheels built directly into the foot tips, confirmed by Petoi's own founder, trading true lifted-paw walking for a rolling/gliding gait. Currently an active Kickstarter campaign, not yet shipping or available at retail.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "1800mAh, USB-C",
+      "note": "~1–1.5 hr runtime depending on tier"
+    },
+    {
+      "label": "Weight",
+      "value": "170–198 g",
+      "note": "Builder/Buddy 170–180g, Scout 198g — per press spec sheet (CNX Software); pre-shipping/provisional"
+    },
+    {
+      "label": "Dimensions",
+      "value": "11 × 7 × 7–11 cm",
+      "note": "Scout is taller (11cm) for its radar-head servo — per press spec sheet; provisional"
+    },
+    {
+      "label": "Compute",
+      "value": "ESP32-S3 \"Motion Core\"",
+      "note": "cheaper/simpler than Bittle X's Biboard; optional AI Core or Pi Zero add-on"
+    },
+    {
+      "label": "Display",
+      "value": "Blue OLED-style eyes",
+      "note": "press sources conflict on OLED vs. \"color display\" — unresolved"
+    },
+    {
+      "label": "Servos",
+      "value": "4 total, 1 per leg",
+      "note": "vs. Bittle X's ~9 — a single-motor linkage per leg, not two"
+    },
+    {
+      "label": "Feet",
+      "value": "Wheeled roller toe tips",
+      "note": "confirmed by Petoi's founder — glides/rolls rather than walks like Bittle X"
+    },
+    {
+      "label": "Sensor",
+      "value": "PIR motion sensor",
+      "note": "human/motion detection; not an ultrasonic distance sensor"
+    },
+    {
+      "label": "Body",
+      "value": "LEGO-brick-compatible shell",
+      "note": "snaps onto standard bricks; structural vs. cosmetic depth unconfirmed"
+    },
+    {
+      "label": "Tiers",
+      "value": "Builder / Buddy / Scout",
+      "note": "Buddy/Scout add AI Core voice chat; Scout adds dual IR distance sensors"
+    }
+  ],
+  "sourcing": "Specs compiled from Petoi's own Kickstarter and product pages, plus independent coverage from Hackster, Make:, and CNX Software, as of this build — Quaddle is still an active crowdfunding campaign, and final specs, pricing, and delivery timing may change before units ship.",
+  "manufacturerUrl": "https://www.petoi.com/pages/quaddle-educational-robot-kit",
+  "pricing": {
+    "summary": "Reported early-bird pricing runs roughly $99–149 for the base \"Builder\" tier, $139–219 for \"Buddy,\" and $179–269 for \"Scout,\" with Petoi's own listed MSRP figures at $149 / $219 / $269. Quaddle is still funding on Kickstarter, so treat any of these figures as provisional until the campaign closes and units actually ship."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Quaddle runs on Petoi's open, MIT-licensed [OpenCat framework](https://github.com/PetoiCamp/OpenCat), but at Kickstarter launch its own firmware and hardware files hadn't yet been published — Petoi says it intends to open-source them before shipping, so no Open Source badge applies yet."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "petoi-quaddle-opencat"
+    }
+  ]
+}

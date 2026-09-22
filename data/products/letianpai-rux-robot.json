@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "letianpai-rux-robot",
+  "slug": "product-letianpai-rux-robot.html",
+  "name": "Letianpai Rux Robot",
+  "manufacturer": "Letianpai",
+  "category": "Pets & Toys",
+  "subcategory": "Robot Pets",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A screen-faced desktop AI companion from Letianpai (乐天派), a funded Beijing hardware startup — a round emoji-style face display, a 5MP monitoring camera, and genuinely functional bipedal legs driven by six servos, running a full Android-based OS with ChatGPT integration and an open developer SDK. It's sold under several different storefront names across marketplaces, including \"QUJUSO\" on some Amazon listings — same product, not a separate brand.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "Unconfirmed",
+      "note": "sources range from ~30 min to ~5 hrs — treat with caution"
+    },
+    {
+      "label": "Weight",
+      "value": "roughly 350g",
+      "note": "per one third-party spec sheet"
+    },
+    {
+      "label": "Dimensions",
+      "value": "~12×10×15cm"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Wi-Fi + Bluetooth",
+      "note": "companion Android/iOS app"
+    },
+    {
+      "label": "Camera",
+      "value": "5MP, 115° wide",
+      "note": "used for remote monitoring and video calls"
+    },
+    {
+      "label": "Display",
+      "value": "~2.1–2.4\" round LCD",
+      "note": "sources disagree on exact size"
+    },
+    {
+      "label": "AI",
+      "value": "ChatGPT integration",
+      "note": "plus Letianpai's own \"BotLife\" personality layer"
+    },
+    {
+      "label": "Movement",
+      "value": "Bipedal, 6 servos",
+      "note": "genuinely walks on flat surfaces; has desk-edge fall detection"
+    },
+    {
+      "label": "OS",
+      "value": "Android-based",
+      "note": "open Python SDK; active firmware development on GitHub"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "companion app is free with no listed in-app purchases"
+    }
+  ],
+  "sourcing": "Verified against Letianpai's own store and product microsite, its GitHub firmware organization (including direct inspection of its core repos' GPL-2.0 license files) and Facebook page, its Xiaomi Crowdfunding and Indiegogo campaign pages, a USPTO trademark record for QUJUSO, EqualOcean's funding coverage, a 36Kr/PitchHub investor profile, and independent reviews from Impulse Gamer, mia-cat.com, OriginOfBots, RoboticHunt, and a personal blog (Docandersen). Flagged as inconsistent or unconfirmed: screen size (2.1\" vs. 2.4\" across sources), battery life (30 minutes to 5 hours depending on source), current retail price (not independently confirmed from a live Amazon listing), the company's headquarters city (Beijing per its own site vs. Shenzhen per one press source), and a promotional claim that Letianpai's CEO is \"the ninth founder of Xiaomi,\" which could not be verified. This entry corrects its prior name, which combined a reseller storefront name (QUJUSO) with the manufacturer's name as if they were a joint brand.",
+  "manufacturerUrl": "https://store.letianpai.com/products/rux-robot",
+  "pricing": {
+    "summary": "Pricing is inconsistent across channels: a Xiaomi Crowdfunding campaign listed a full price of $469 (marked down from $599) before selling out, and a third-party robotics aggregator estimates an ongoing retail range of $299–469. This catalog could not pull a live, confirmed price directly from Amazon at research time, so treat any specific price as approximate until checked against the live listing."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "This catalog's original name for this entry conflated a generic reseller storefront, \"QUJUSO,\" with the actual manufacturer; the robot's real maker is Beijing-based Letianpai, which sells the identical robot under its own name, with \"Rux\" as the robot's consistently-used real product name across every official channel. Letianpai's GitHub organization also publishes genuine GPL-2.0-licensed core firmware for the robot, confirmed against the repo's license file, earning this entry its Open Source badge."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Letianpai's own official, GPLv2-licensed open-source system ROM for GeeUI, the software platform running on the Rux Robot."
+    }
+  ]
+}

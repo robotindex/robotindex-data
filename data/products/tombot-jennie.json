@@ -1,0 +1,90 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "tombot-jennie",
+  "slug": "product-tombot-jennie.html",
+  "name": "Tombot Jennie",
+  "manufacturer": "Tombot",
+  "category": "Companion & Social",
+  "subcategory": "Senior Companions",
+  "tier": "pending",
+  "flags": {
+    "pending": true,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A realistic puppy robot developed with Jim Henson's Creature Shop, built around full-body touch sensors, voice commands, and a companion app — positioned as a more advanced alternative to simpler animatronic companion pets. Still pre-order only after seven years of development; no confirmed shipments as of this writing.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "2019 Kickstarter FAQ cited a ~7 lb prototype with a stated goal to reduce it; no confirmed final retail weight"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Sensors",
+      "value": "Full-body touch",
+      "note": "location + intensity discrimination; accelerometer"
+    },
+    {
+      "label": "Status",
+      "value": "Pre-order / waitlist",
+      "note": "company targets Fall 2026 launch, unconfirmed"
+    },
+    {
+      "label": "Form Factor",
+      "value": "Lap/tabletop puppy",
+      "note": "non-ambulatory by design"
+    },
+    {
+      "label": "Breed Design",
+      "value": "Labrador puppy",
+      "note": "yellow/golden coat; some press calls her a golden retriever"
+    },
+    {
+      "label": "Response",
+      "value": "Voice commands",
+      "note": "recorded real puppy sounds + animatronic reactions"
+    },
+    {
+      "label": "Animatronics",
+      "value": "Jim Henson's Creature Shop",
+      "note": "head/neck movement, blinking, nuzzling"
+    },
+    {
+      "label": "App",
+      "value": "Companion smartphone app",
+      "note": "naming, setup, OTA behavior updates"
+    },
+    {
+      "label": "Power",
+      "value": "Rechargeable battery",
+      "note": "~all-day charge, overnight recharge"
+    },
+    {
+      "label": "Subscription",
+      "value": "None (as announced)",
+      "note": "Inc.com reporting specifically notes no monthly fee alongside the $1,500 pre-order price; unconfirmed since the product has not shipped yet"
+    }
+  ],
+  "sourcing": "Verified against Tombot's own site and investor blog, BusinessWire funding announcements (June 2025 Series A, June 2026 Series A3), CES coverage from Reviewed.com, Tom's Guide, TechTimes, WTOP, and EIN Presswire, and an independent RoboticsBiz review/comparison. As of this research (September 2026), no independent source confirms Jennie has shipped to any customer — the company's own most recent target is a \"Fall 2026\" launch, following a pattern of missed dates back to 2020. Current pricing is unconfirmed; figures from $299 to $1,500 have been cited at different points and should not be treated as one settled number. Jennie's breed is described by Tombot as a Labrador retriever puppy, though several press outlets call her a golden retriever — this page follows the manufacturer's description while flagging the discrepancy. Any FDA/insurance-reimbursement pathway is a stated company aspiration, not a confirmed outcome.",
+  "manufacturerUrl": "https://tombot.com/",
+  "pricing": {
+    "summary": "No firm current price is published — tombot.com currently only offers a free waitlist reservation, deferring pricing to a later announcement. Quoted figures have moved considerably over time, from $299 for original 2019 Kickstarter backers to $1,000–$1,500 cited in secondary press through 2025–2026 (Inc.com specifically reporting $1,500 pre-order pricing with no monthly fee), so treat any single number as provisional rather than confirmed."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Tombot's own materials describe Jennie as a Labrador retriever puppy, but several reputable outlets (Inc.com, Tom's Guide, RoboticsBiz) describe her as a golden retriever, likely because of her golden/tan coat color — this page follows the manufacturer's description while flagging the inconsistency."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Tombot Jennie has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

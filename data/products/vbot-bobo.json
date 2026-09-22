@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "vbot-bobo",
+  "slug": "product-vbot-bobo.html",
+  "name": "Vbot BoBo",
+  "manufacturer": "Beijing startup Vbot",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Four Legs",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A quadruped family companion robot from Beijing startup Vbot (Vita Dynamics), with LiDAR, UWB positioning, depth cameras, and load-carrying/towing hardware. Sold in China as \"BoBo\" and internationally as \"SuperDog.\" Positioned by its own maker as sitting between a tool and a toy — worth reading before comparing it directly to Go2 or CyberDog 2.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "594 Wh",
+      "note": "3–5 hr runtime"
+    },
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Sensors",
+      "value": "360° LiDAR + UWB",
+      "note": "dual depth cameras, 4-mic array"
+    },
+    {
+      "label": "Compute",
+      "value": "128 TOPS onboard",
+      "note": "hybrid cloud (Qwen/MiniMax) + on-device AI"
+    },
+    {
+      "label": "Payload",
+      "value": "12 kg direct carry",
+      "note": "up to 100 kg towing"
+    },
+    {
+      "label": "Actuators",
+      "value": "Self-developed N45 motors",
+      "note": "0.4 kg each, 24.5 Nm peak torque"
+    },
+    {
+      "label": "Speed",
+      "value": "~2.0 m/s (7.2 km/h)",
+      "note": "up to 2.5 m/s (9.0 km/h) on higher tier"
+    },
+    {
+      "label": "Expansion",
+      "value": "Magnetic backplate",
+      "note": "1/4\" screw ports, tow hook; no public SDK found"
+    }
+  ],
+  "sourcing": "Verified against Vbot's own site (vbot.cn), CES 2026 and IFA 2026 press coverage (TechNode, Pandaily, Techlicious, Ubergizmo), Chinese business and trade press on the company's founding and funding (36Kr English edition, KrAsia, Yicai Global, Gasgoo, theinsight.asia), a Vbot press release on IFA 2026 sales figures (GlobeNewswire), and Crunchbase's funding-round listing. No coverage was found from The Verge, TechCrunch, Engadget, CNET, Ars Technica, IEEE Spectrum, or The Robot Report — coverage is concentrated in China-tech trade press and secondary gadget blogs, which is flagged rather than glossed over. Dimensions and weight are not published anywhere found in this research. The claim of 13,000+ units sold is company-reported and not independently audited. No public SDK or ROS support was found for any tier, including EDU configurations — this is treated as a real gap versus its \"Four Legs\" neighbors rather than an oversight in this research.",
+  "manufacturerUrl": "https://www.vbot.cn/",
+  "pricing": {
+    "summary": "China launch pricing: 9,988 RMB (~$1,380–1,400) promotional, 12,988 RMB list. European pricing at IFA 2026 was tiered: SuperDog €2,988 (~$3,000) consumer, SuperDog EDU €7,988, and SuperDog EDU-W €10,988 — a real spread from consumer to education/research-oriented configurations, similar in spirit to how Unitree tiers Go2 Air/Pro/Edu."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Unlike its \"Four Legs\" catalog neighbors (Go2, CyberDog 2, PuppyPi Pro), BoBo/SuperDog has no public SDK, ROS support, or open developer ecosystem at any tier — despite comparable hardware (LiDAR, UWB, depth cameras, 128 TOPS) — making it a closed, turnkey consumer companion rather than a programmable research platform."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Vbot BoBo has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

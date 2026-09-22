@@ -1,0 +1,100 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "unitree-go2",
+  "slug": "product-unitree-go2.html",
+  "name": "Unitree Go2",
+  "manufacturer": "Unitree",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Four Legs",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "Unitree's mainstream quadruped robot dog, shipping across four tiers (Air / Pro / X / EDU) with chin-mounted 4D LiDAR, autonomous obstacle avoidance, and an app-based control ecosystem. The EDU tier adds full SDK access and an optional Jetson Orin module for custom development.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "8,000 mAh",
+      "note": "~1–2 hr; 15,000 mAh pack option, ~2–4 hr"
+    },
+    {
+      "label": "Weight",
+      "value": "~15 kg",
+      "note": "with battery"
+    },
+    {
+      "label": "Dimensions",
+      "value": "70×31×40 cm",
+      "note": "standing; 76×31×20 cm crouched"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Wi-Fi 6, BT 5.2",
+      "note": "4G module Pro tier and up"
+    },
+    {
+      "label": "Sensors",
+      "value": "4D LiDAR",
+      "note": "chin-mounted, 360°×90–96° FOV"
+    },
+    {
+      "label": "Payload",
+      "value": "7–12 kg",
+      "note": "varies by tier"
+    },
+    {
+      "label": "DOF",
+      "value": "12",
+      "note": "3 per leg × 4 legs"
+    },
+    {
+      "label": "Max Speed",
+      "value": "Up to 5 m/s",
+      "note": "EDU tier; Air 2.5 m/s, Pro 3.5 m/s"
+    }
+  ],
+  "sourcing": "Specs sourced from Unitree's official product and shop pages (unitree.com/go2, shop.unitree.com), Unitree's original July 2023 launch release, and IEEE Spectrum's tier-by-tier coverage, as of September 2026. Max speed, payload, connectivity, and compute vary by tier — figures above reflect the specific tier noted, not a single universal spec. Go2 EDU has no public price; contact Unitree sales directly. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.unitree.com/go2",
+  "pricing": {
+    "summary": "From **$1,600** (Go2 Air); Go2 Pro is **$2,800**, Go2 X is **$4,500**, and Go2 EDU is **contact-for-price** since Unitree does not list it publicly. Specs and features vary meaningfully by tier, so treat any single quoted price or spec as tier-specific — see the comparison below.",
+    "tiers": [
+      {
+        "tier": "Go2 Air",
+        "price": "$1,600",
+        "notes": "Base config — no 4G, no follow-me mode, 6-month warranty"
+      },
+      {
+        "tier": "Go2 Pro",
+        "price": "$2,800",
+        "notes": "Adds 4G module, ISS 2.0 follow-me mode, voice function, 12-month warranty"
+      },
+      {
+        "tier": "Go2 X",
+        "price": "$4,500",
+        "notes": "Limited secondary development support"
+      },
+      {
+        "tier": "Go2 EDU",
+        "price": "Contact sales",
+        "notes": "Full developer SDK, force-sensor feet, optional Jetson Orin (40–100 TOPS)"
+      }
+    ]
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "All standard tiers ship with a chin-mounted 4D LiDAR (360°×90–96° coverage, 0.05m minimum range) for real-time obstacle avoidance and 3D mapping, paired with an HD wide-angle camera system and an onboard mic for offline voice commands. Compute is an 8-core CPU on Pro/X/EDU versus basic onboard computing on Air; EDU supports an external NVIDIA Jetson Orin module for custom AI."
+    },
+    {
+      "heading": "Insights",
+      "body": "Go2's four tiers differ far more than price: only the EDU tier includes a full developer SDK, force-sensor feet, and support for an external NVIDIA Jetson Orin module, while Air, Pro, and X ship as closed, non-developer configurations. Go2 EDU also carries no public price — Unitree quotes it only through direct sales, unlike the other tiers' published $1,600–$4,500 range."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "chvmp-champ"
+    }
+  ]
+}

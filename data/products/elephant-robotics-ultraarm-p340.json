@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "elephant-robotics-ultraarm-p340",
+  "slug": "product-elephant-robotics-ultraarm-p340.html",
+  "name": "Elephant Robotics ultraArm P340",
+  "manufacturer": "Elephant Robotics",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A 4-axis (3+1) desktop robot arm from Elephant Robotics — the same company behind this catalog's myCobot 280 — built around Arduino-compatible electronics and stepper-motor joints rather than servos. Its EasyConnect quick-change base swaps between a laser engraver, an adaptive gripper, a suction pump, or a pen holder for drawing, positioned by the company as an AI/robotics education platform rather than a general-purpose cobot. Unlike myCobot 280, it has no onboard computer — it always needs an external PC or Raspberry Pi over USB.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "2.9kg",
+      "note": "~148×210mm footprint (\"fits on an A5 sheet\"); 12V/5A power input"
+    },
+    {
+      "label": "Compute",
+      "value": "External host required",
+      "note": "PC or Raspberry Pi over USB serial — no onboard application processor, no WiFi/Bluetooth"
+    },
+    {
+      "label": "Software",
+      "value": "`pymycobot` SDK",
+      "note": "genuinely MIT-licensed (same multi-product SDK as myCobot); onboard firmware source not publicly available"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "3+1 axes",
+      "note": "base rotation + 2-joint coupled arm linkage; optional quick-change 4th wrist-rotation axis sold separately"
+    },
+    {
+      "label": "Payload",
+      "value": "650g",
+      "note": "±0.1mm rated repeatability — open-loop-style stepper motion, not closed-loop servo feedback"
+    },
+    {
+      "label": "Actuators",
+      "value": "Stepper motors",
+      "note": "Elephant Robotics' own \"silent stepping\" steppers; no third-party brand/model disclosed"
+    },
+    {
+      "label": "Controller",
+      "value": "Arduino-compatible ATmega2560",
+      "note": "16MHz, 256KB flash — a motor/IO controller, not a full onboard computer"
+    },
+    {
+      "label": "Reach",
+      "value": "340mm working radius",
+      "note": "likely the source of the \"P340\" name, though not stated explicitly by Elephant Robotics"
+    },
+    {
+      "label": "Tool Interface",
+      "value": "EasyConnect quick-change",
+      "note": "swaps between laser engraver, adaptive gripper, suction pump, and pen holder attachments"
+    }
+  ],
+  "sourcing": "Specs compiled from Elephant Robotics' official spec page and GitBook documentation, the pymycobot GitHub repository (LICENSE verified directly), RobotShop and OpenELAB reseller listings, Hackster.io and CNX Software launch coverage, and NotEnoughTech's independent review, as of this build. Several details are flagged as unconfirmed above: the exact \"P340\" naming rationale, the precise mapping of each base-panel port label to its function, current live per-bundle pricing (the official store appeared to render one price across all bundle variants in an automated check), and whether the onboard firmware itself is open source (only the host-side pymycobot SDK is confirmed MIT-licensed).",
+  "manufacturerUrl": "https://shop.elephantrobotics.com/products/ultraarm",
+  "pricing": {
+    "summary": "Elephant Robotics' own store currently lists the ultraArm P340 at **$999** (down from $1,128.99), while independent resellers price it lower — **$699** at RobotShop and **€799** at OpenELAB, both as a bare arm with accessories sold separately. Bundle-specific prices (such as the Laser Engraving Kit or Vision+Gripper kit) shown on Elephant Robotics' own site all rendered identically during an automated check, so exact per-bundle pricing should be confirmed directly before buying."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "ultraArm P340's `ultraArmP340` Python module is covered by the same genuinely MIT-licensed `pymycobot` repository used for this catalog's myCobot 280, verified directly against the GitHub LICENSE file rather than taken from marketing copy. That license covers the host-side SDK only, though — no public repository was found for the arm's onboard ATmega2560 firmware, so this catalog doesn't extend the Open Source badge to the arm's firmware or hardware design, the same partial-openness treatment applied to myCobot 280."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Elephant Robotics' own pymycobot Python SDK, genuinely MIT-licensed and verified against its GitHub LICENSE file, includes a dedicated module for host-side control of ultraArm P340; the onboard ATmega2560 firmware itself has no public repository."
+    }
+  ]
+}

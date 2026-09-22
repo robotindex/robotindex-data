@@ -1,0 +1,94 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "ecovacs-t90-pro-omni",
+  "slug": "product-ecovacs-t90-pro-omni.html",
+  "name": "Ecovacs Deebot T90 Pro Omni",
+  "manufacturer": "Ecovacs",
+  "category": "Cleaning & Home Care",
+  "subcategory": "Floors",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "Ecovacs' March 2026 flagship robot vacuum/mop, with a 27cm rotating roller mop, hot-water self-cleaning dock, and Ecovacs' own YIKO voice assistant. A published TechRadar review found real-world mapping and mopping performance fell short of its spec sheet.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "4,000 mAh",
+      "note": "~350 min mopping runtime, manufacturer figure"
+    },
+    {
+      "label": "Weight",
+      "value": "5.3 kg",
+      "note": "net robot weight, official Ecovacs spec — dock weight not included"
+    },
+    {
+      "label": "Dimensions",
+      "value": "35.3 × 35.1 × 9.5 cm",
+      "note": "width × depth × height, robot body only"
+    },
+    {
+      "label": "Navigation",
+      "value": "LiDAR",
+      "note": "+ AIVI 3D 4.0 RGB camera — see note"
+    },
+    {
+      "label": "Suction",
+      "value": "30,000 Pa",
+      "note": "~16 L/s airflow, \"Blast\" suction"
+    },
+    {
+      "label": "Price",
+      "value": "$799.99–$899.99",
+      "note": "manufacturer vs. press-reported price"
+    },
+    {
+      "label": "Mopping",
+      "value": "27cm roller mop",
+      "note": "~200 RPM, ~15mm carpet lift"
+    },
+    {
+      "label": "Mop Wash Temp",
+      "value": "75°C",
+      "note": "hot-water dock wash"
+    },
+    {
+      "label": "Charging",
+      "value": "~2.5 hrs full",
+      "note": "PowerBoost: +10% in 3 min"
+    },
+    {
+      "label": "Noise",
+      "value": "~60 dBA",
+      "note": "71–76 dBA during auto-empty, manufacturer figure"
+    },
+    {
+      "label": "Subscription",
+      "value": "Unconfirmed",
+      "note": "Core cleaning/mapping/YIKO assistant are free; one uncorroborated source cites an optional ~$2.99/mo plan for AI video patrol & extended cloud history — not verified on ecovacs.com"
+    }
+  ],
+  "sourcing": "Specs sourced from Ecovacs' own US product page (ecovacs.com) and TechRadar's hands-on review, as of September 2026. Two discrepancies between these sources are noted above rather than resolved: price ($799.99 vs. $899.99) and the described obstacle-avoidance sensor (Mini-ToF/RGB camera per Ecovacs vs. a LiDAR turret per TechRadar's review unit). Battery runtime and noise-level figures come from Ecovacs' own marketing and were not independently verified by press. A separate \"DEEBOT T90 PRO OMNI CARE\" variant also exists on ecovacs.com — do not confuse it with this model. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni",
+  "pricing": {
+    "summary": "Ecovacs' own US store lists **$799.99**, while TechRadar's review reported **$899.99** (£899 / AU$2,299) — robotindex could not resolve which reflects current list price versus a promotional or regional difference, so both are shown above pending clarification."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "Ecovacs' page describes Mini-ToF structured light plus an AIVI 3D 4.0 RGB camera for obstacle avoidance, but TechRadar's review unit had a front-mounted LiDAR turret — a discrepancy between marketing and reviewed hardware. The 27cm roller mop auto-lifts ~15mm for carpets. TechRadar's review was critical: six mapping sessions to build a usable floor plan, streaky mopping, missed pet hair."
+    },
+    {
+      "heading": "Insights",
+      "body": "Ecovacs' own product page describes the T90 Pro Omni's obstacle-avoidance sensor as Mini-ToF structured light plus an AIVI 3D 4.0 RGB camera, but TechRadar's reviewed unit had a front-mounted LiDAR turret instead — a discrepancy that couldn't be reconciled. Price is similarly inconsistent: $799.99 on Ecovacs' own store versus $899.99 in TechRadar's review."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Ecovacs Deebot T90 Pro Omni has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

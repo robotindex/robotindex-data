@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "looi",
+  "slug": "product-looi.html",
+  "name": "LOOI",
+  "manufacturer": "LOOI",
+  "category": "Pets & Toys",
+  "subcategory": "Robot Pets",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A small wheeled desktop base from TangibleFuture that turns a user's own smartphone into a companion robot: the phone mounts magnetically (MagSafe on iPhone, a bundled magnetic ring on Android) and supplies the face, camera, microphone, and speaker, while the base handles movement and charges the phone wirelessly. A genuinely novel approach — no other product in this directory works this way.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "6000mAh (base)",
+      "note": "~5 hr continuous use; ~30 days standby, per manufacturer"
+    },
+    {
+      "label": "Dimensions",
+      "value": "110 × 98 × 110 mm",
+      "note": "385 g"
+    },
+    {
+      "label": "AI",
+      "value": "ChatGPT + Gemini",
+      "note": "via the app; runs on phone compute and cloud APIs"
+    },
+    {
+      "label": "Phone mount",
+      "value": "MagSafe (iOS)",
+      "note": "magnetic ring included for Android"
+    },
+    {
+      "label": "Compatibility",
+      "value": "iOS 17+, Android 12+",
+      "note": "Snapdragon 8 Gen 1+ recommended on Android"
+    },
+    {
+      "label": "Sensors (base)",
+      "value": "Touch, ToF distance",
+      "note": "cliff/edge sensors, RGB LED bar"
+    },
+    {
+      "label": "Face/camera/mic",
+      "value": "The user's own phone",
+      "note": "base has no built-in screen, camera, or mic"
+    },
+    {
+      "label": "Charging",
+      "value": "Base: 9V/2A",
+      "note": "phone charges wirelessly on mount, 10W or 15W depending on source"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "ChatGPT/Gemini access included — described by reviewers as a one-time purchase, no subscription"
+    }
+  ],
+  "sourcing": "Verified against the official Kickstarter campaign page and its funding totals, TangibleFuture's own site (looirobot.com, including its About Us page), Hackster.io's technical coverage, an Impulse Gamer hands-on review, Inverse's coverage, and CES 2025 roundup coverage from Live Science and Geekazine, plus KrASIA's reporting connecting LOOI to the XbotPark accelerator. Company HQ is disputed: Kickstarter lists a Portland, Oregon address while Chinese trade press ties the company to XbotPark, a China-based accelerator — both are presented rather than resolved. Wireless charging wattage for the mounted phone is given as both 10W and 15W across official and Kickstarter-page sources. Base-to-phone connectivity protocol and the exact division of onboard vs. phone-based processing are not explicitly documented by the manufacturer and are inferred rather than confirmed. No subscription requirement was found, but its absence is not explicitly stated by TangibleFuture either. No review from The Verge, TechCrunch, Engadget, or CNET was found.",
+  "manufacturerUrl": "https://looirobot.com/",
+  "pricing": {
+    "summary": "LOOI costs $239 on TangibleFuture's official store. Independent sources cite meaningfully different prices depending on region and retailer, including $179 direct-from-site and roughly £140/$275 AUD on Amazon at different times, so treat the price as variable rather than fixed."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "One Inverse reporter described LOOI's always-on phone camera and microphone as \"creepy\"; TangibleFuture's claim that this data stays local on-device has no independent security audit backing it."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Independent reverse-engineering of LOOI's Bluetooth LE protocol, mapping movement, sensor, and status commands to allow control outside the official app — not an official SDK."
+    }
+  ]
+}

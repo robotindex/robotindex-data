@@ -1,0 +1,79 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "hiwonder-puppypi-pro",
+  "slug": "product-hiwonder-puppypi-pro.html",
+  "name": "Hiwonder PuppyPi Pro",
+  "manufacturer": "Hiwonder",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Four Legs",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A Raspberry Pi-powered, open-source quadruped robot kit from Hiwonder's PuppyPi line. The Pro tier adds a 2D LiDAR for SLAM mapping and autonomous navigation on top of the base platform's computer-vision and Python/ROS stack.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "2200 mAh",
+      "note": "~60 min runtime, single-source figure"
+    },
+    {
+      "label": "Weight",
+      "value": "~720 g",
+      "note": "aluminum-alloy frame"
+    },
+    {
+      "label": "Dimensions",
+      "value": "226×149×190 mm",
+      "note": "reseller-listed, not maker-confirmed directly"
+    },
+    {
+      "label": "Compute",
+      "value": "Raspberry Pi 4B",
+      "note": "4GB, on Pro tier; Pi 5 offered on other tiers"
+    },
+    {
+      "label": "Camera",
+      "value": "2-DOF HD",
+      "note": "480p wide-angle"
+    },
+    {
+      "label": "DOF",
+      "value": "8",
+      "note": "coreless servos, 2 per leg"
+    },
+    {
+      "label": "LiDAR",
+      "value": "LD19 2D",
+      "note": "~12m range, 4500Hz — Pro-tier exclusive"
+    },
+    {
+      "label": "ROS Support",
+      "value": "ROS1",
+      "note": "on Pi 4B; ROS1 & ROS2 on Pi 5 builds"
+    }
+  ],
+  "sourcing": "Specs sourced from Hiwonder's own product and blog pages (hiwonder.com), the Hiwonder/PuppyPi GitHub repo, and reseller listings (RobotShop, Tindie, ThinkRobotics) that quote manufacturer specs, as of September 2026. Dimensions, weight, and battery runtime come from reseller listings rather than a manufacturer spec sheet and are not independently corroborated elsewhere. \"PuppyPi Pro\" is one tier within Hiwonder's broader PuppyPi line rather than a fully separate product line — the LiDAR and Pi 4B pairing described here is specific to that tier. Pricing varies by retailer and bundle. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.hiwonder.com/products/puppypi",
+  "pricing": {
+    "summary": "PuppyPi Pro (with Pi 4B 4GB and LD19 LiDAR) runs **$919.99–$955.99** depending on retailer, with add-ons like a robotic-arm attachment costing extra. Hiwonder's base \"Standard\" tier, which omits the LiDAR, starts around **$589.99** at some resellers — a materially cheaper option for buyers who don't need LiDAR."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "PuppyPi ships in four tiers (Standard, Advanced, Pro, Ultimate); \"Pro\" adds an LD19 2D LiDAR for SLAM mapping and autonomous navigation. All tiers share an 8-DOF leg design, a 2-axis HD camera, an IMU, and an ultrasonic sensor, supporting recognition, line-following, multiple gaits, and stair-climbing. Hiwonder calls it open-source, but no explicit license was found in its repo."
+    },
+    {
+      "heading": "Insights",
+      "body": "PuppyPi Pro's software is maintained in an open Hiwonder/PuppyPi GitHub repository, and it supports ROS1 on its Pi 4B build and both ROS1 and ROS2 on Pi 5 builds — genuine open robotics tooling rather than a closed proprietary stack. Its dimensions, weight, and battery runtime, however, come only from reseller listings rather than a manufacturer spec sheet."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "unlicensed",
+      "note": "Official GitHub org with motion-control, computer-vision, and ROS packages for the PuppyPi line. No explicit open-source license stated in the repo. Not currently listed in Builds & Mods."
+    }
+  ]
+}

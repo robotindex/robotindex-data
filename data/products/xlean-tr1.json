@@ -1,0 +1,92 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "xlean-tr1",
+  "slug": "product-xlean-tr1.html",
+  "name": "xLean TR1",
+  "manufacturer": "xLean",
+  "category": "Cleaning & Home Care",
+  "subcategory": "Floors",
+  "tier": "pending",
+  "flags": {
+    "pending": true,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "Marketed by xLean Robotics as \"the world's first dual-form transformable floor washing robot\" — it switches between an autonomous robot vacuum/mop and a handheld stick vacuum in about a second. Crowdfunded on Kickstarter in 2026 before reaching preorder.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "14.35 lb",
+      "note": "~6.5 kg in robot mode; handheld mode is 2.02 lb (~0.9 kg) — official xLean spec"
+    },
+    {
+      "label": "Dimensions",
+      "value": "38 × 29.5 × 15.1 cm",
+      "note": "robot mode, radar up (13cm tall when retracted); official xLean spec"
+    },
+    {
+      "label": "Navigation",
+      "value": "360° LiDAR",
+      "note": "5,000+ points/sec + RGB-D camera"
+    },
+    {
+      "label": "Status",
+      "value": "Preorder",
+      "note": "early testers shipping mid/late 2026"
+    },
+    {
+      "label": "Suction",
+      "value": "17,000 Pa"
+    },
+    {
+      "label": "Roller Scrub",
+      "value": "2× 400 RPM",
+      "note": "counter-rotating mop rollers"
+    },
+    {
+      "label": "Water Tank",
+      "value": "300 mL"
+    },
+    {
+      "label": "Object Recognition",
+      "value": "400+ types",
+      "note": "per xLean's own claim"
+    },
+    {
+      "label": "Transform Time",
+      "value": "~1 second",
+      "note": "robot ↔ handheld modes"
+    },
+    {
+      "label": "Battery / Dustbin",
+      "value": "Not disclosed",
+      "note": "not published by manufacturer"
+    },
+    {
+      "label": "Subscription",
+      "value": "Unconfirmed",
+      "note": "No subscription mentioned in xLean's Kickstarter FAQ or site, but the app hasn't been reviewed in depth — product is still preorder/early-tester stage as of Sept 2026"
+    }
+  ],
+  "sourcing": "Specs sourced from xLean Robotics' own site (xlean.ai), its Kickstarter campaign page, and TechRadar's January 2026 hands-on coverage, as of September 2026. Battery life, dustbin capacity, and a firm retail price are not published by xLean and were not found in press coverage checked — these are omitted rather than estimated. As a crowdfunded, still-shipping-to-early-testers product, real-world performance and final specs may differ from what's advertised. robotindex does not sell this product.",
+  "manufacturerUrl": "https://xlean.ai/en-us",
+  "pricing": {
+    "summary": "No confirmed retail price from any source checked. xLean's Kickstarter campaign (April 21–June 20, 2026) raised **$2,112,838** from 2,019 backers against a $100,000 goal; its early-tester program used a refundable **$50** deposit rather than a full purchase price. The official site currently offers preorders with a \"Free Shipping Now\" promotion but no listed dollar amount in the sources checked — treat any specific price seen elsewhere as unverified until confirmed on xlean.ai directly."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "The TR1 switches between autonomous robot mode and manual handheld mode: a retractable LiDAR puck detaches so a wand attachment can be added, while the same roller-mop-and-vacuum system works in both. Autonomous navigation uses 360° LiDAR, an RGB-D camera, and an AI chip, with carpet detection and recognition of 400+ object types. Battery life and dustbin capacity are undisclosed."
+    },
+    {
+      "heading": "Insights",
+      "body": "xLean's Kickstarter campaign for the TR1 raised $2,112,838 from 2,019 backers against a $100,000 goal — a real, verified crowdfunding milestone, not a marketing claim. As a still-shipping, early-tester-stage product, battery life, dustbin capacity, and a firm retail price remain undisclosed."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "xLean TR1 has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

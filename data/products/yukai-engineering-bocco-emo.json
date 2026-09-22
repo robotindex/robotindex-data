@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "yukai-engineering-bocco-emo",
+  "slug": "product-yukai-engineering-bocco-emo.html",
+  "name": "Yukai Engineering BOCCO emo",
+  "manufacturer": "Yukai Engineering",
+  "category": "Companion & Social",
+  "subcategory": "Children Companions",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A round, screenless family-messaging robot from Tokyo's Yukai Engineering — the successor to the company's original 2015 BOCCO — with LED-animated eyes, a radar-based (not camera-based) presence sensor, and a companion app for voice, text, and photo messages between family members. Increasingly positioned for elder check-ins as well as latchkey-kid communication.",
+  "specs": [
+    {
+      "label": "Dimensions",
+      "value": "95 × 95 × 141 mm",
+      "note": "400 g"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Wi-Fi 2.4GHz + Bluetooth",
+      "note": "separate LTE model available, no home Wi-Fi needed"
+    },
+    {
+      "label": "Camera",
+      "value": "None",
+      "note": "confirmed absent; uses a radar sensor instead"
+    },
+    {
+      "label": "Display",
+      "value": "No screen",
+      "note": "LED-animated eyes, cheek color, antenna/body motion"
+    },
+    {
+      "label": "AI",
+      "value": "Generative-AI conversation",
+      "note": "added Aug 2026 via a paid Premium Plan; not present at 2021 launch"
+    },
+    {
+      "label": "Presence sensing",
+      "value": "Acconeer A1 radar",
+      "note": "+ illuminance, vibration, motion sensors"
+    },
+    {
+      "label": "Accessories",
+      "value": "Temp/humidity sensor",
+      "note": "door/entry sensor (sold separately)"
+    },
+    {
+      "label": "Power",
+      "value": "Wired AC adapter",
+      "note": "~6.8W; not battery-powered"
+    },
+    {
+      "label": "Subscription",
+      "value": "Optional",
+      "note": "¥1,700/mo (~$11–12) Premium Plan (added Aug 2026) unlocks generative-AI conversation, per-person voice recognition/memory, and in-app chat; base messaging/reminder features work without it"
+    }
+  ],
+  "sourcing": "Verified against Yukai Engineering's own official press releases and newsroom (ux-xu.com, including the March 2021 Japan-launch announcement and the January 2019 CES announcement), the official product site (bocco.me) and online store, Acconeer's own case study on the radar sensor used in BOCCO emo, a Japanese babytech trade outlet's coverage of the August 2026 generative-AI feature launch, and a nonprofit news outlet's reporting on Shibuya City's senior watch-over technology subsidy program. Dimensions are given slightly differently across CES-era materials (90×90×150mm) versus the current official store listing (95×95×141mm); the more recent official figure is used here. No hands-on review from a major English-language tech outlet was found, so claims about usability, English-language support, or overall reception that would normally rest on such a review are not made. The Shibuya City elder-watch program's reporting refers generically to \"Bocco\" without confirming whether that means the original 2015 device or BOCCO emo specifically. The app's \"no data collected\" privacy claim is a self-reported App Store label, not an independently audited fact.",
+  "manufacturerUrl": "https://bocco.me/",
+  "pricing": {
+    "summary": "¥52,800 tax-included on Yukai Engineering's own Japanese store for the Wi-Fi model, up from its March 2021 Japan launch price of ¥44,000 tax-included. It was listed out of stock there at the time of this research, and no confirmed US or international retail price or channel was found — this appears to be a primarily Japan-market product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "BOCCO emo won the iF Design Award 2021, an independently verifiable industry design recognition rather than a marketing claim. A nonprofit news outlet also confirms Shibuya City subsidized it as one of several elder-watch technologies for residents."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Yukai Engineering's own official Python SDK for the BOCCO emo Platform API, letting developers read sensor data and control LED/movement over a documented, token-based REST/webhook interface."
+    }
+  ]
+}

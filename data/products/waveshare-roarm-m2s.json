@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "waveshare-roarm-m2s",
+  "slug": "product-waveshare-roarm-m2s.html",
+  "name": "Waveshare RoArm-M2-S",
+  "manufacturer": "Waveshare",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A 4-DOF, ESP32-native desktop arm from Waveshare using ST3215 serial bus servos with metal internal gearing. \"S\" marks the standard-servo tier of the RoArm-M2 family, below the all-metal-case RoArm-M2-Pro. The Raspberry Pi visible in this unit's base is not a stock inclusion — Waveshare sells the arm and ESP32 driver board only, with the 40-pin header designed for a buyer-supplied Pi or Jetson.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "~826 g",
+      "note": "excluding table clamp; RoArm-M2-Pro is ~873g"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "4-DOF, 5 servos",
+      "note": "base 360°, shoulder 180° (dual-servo drive), elbow 180°, hand 135°/270°"
+    },
+    {
+      "label": "Payload",
+      "value": "0.5 kg @ 0.5 m",
+      "note": "manufacturer's own effective-payload figure"
+    },
+    {
+      "label": "Controller",
+      "value": "ESP32-WROOM-32",
+      "note": "runs web UI, ESP-NOW, JSON serial control standalone — no host computer required for basic use"
+    },
+    {
+      "label": "Servos",
+      "value": "ST3215",
+      "note": "nylon/fiberglass case, metal internal gearing, 12-bit magnetic encoder"
+    },
+    {
+      "label": "Repeatability",
+      "value": "≈ ±4 mm",
+      "note": "load-tested figure; a separate \"0.088°\" spec is the servo encoder's resolution, not arm accuracy"
+    },
+    {
+      "label": "Workspace",
+      "value": "Ø1090mm × 798mm",
+      "note": "horizontal diameter × vertical reach"
+    },
+    {
+      "label": "Compute Add-On",
+      "value": "BYO Pi / Jetson",
+      "note": "not bundled; 40-pin header + camera mount bracket are provided for one"
+    }
+  ],
+  "sourcing": "Specs compiled from Waveshare's official product page and wiki, its GitHub organization (roarm_m2, waveshare_roarm_sdk, roarm_ws_em0 — including direct inspection of each repo's LICENSE file), and retailer listings (RobotShop, RobotPiShop, ThinkRobotics, CNX Software's coverage) as of this build. Independent long-form reviews are sparse for this specific model; the Raspberry Pi shown in the submitted photo is inferred to be a buyer-added component, not a stock inclusion — no official Waveshare bundle with a Pi included was found.",
+  "manufacturerUrl": "https://www.waveshare.com/roarm-m2-s.htm",
+  "pricing": {
+    "summary": "Waveshare's own listing prices the RoArm-M2-S/M2-Pro pair at **$179.99–$299.99**; the base M2-S specifically runs roughly **$206–$260** across retailers (Amazon, AliExpress, RobotShop, RobotPiShop), with the all-metal-servo RoArm-M2-Pro upgrade running closer to **$330**. These figures cover the arm and ESP32 driver board only — no camera, no battery, and no Raspberry Pi or Jetson, all of which are separate purchases if you want the vision/ROS2 capabilities those add."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Waveshare's often-repeated \"0.088°\" precision figure is actually the servo encoder's angular resolution, not measured arm repeatability — the real, load-tested spec Waveshare's current product page lists is **±4mm**. The core ESP32 firmware and Python SDK do carry genuine OSI-approved AGPL-3.0 licenses, but the separate ROS2/MoveIt2 workspace repo ships with no license file at all."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "waveshareteam-roarm-m2"
+    }
+  ]
+}

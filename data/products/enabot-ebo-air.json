@@ -1,0 +1,82 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "enabot-ebo-air",
+  "slug": "product-enabot-ebo-air.html",
+  "name": "Enabot Ebo Air",
+  "manufacturer": "Enabot",
+  "category": "Security",
+  "subcategory": "Indoor Security",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A small, self-righting rolling home-monitoring robot with a 1080p camera, two-way audio, and AI person/pet detection. Roams and patrols manually or autonomously rather than mapping the home with LiDAR/SLAM.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "2500mAh",
+      "note": "~2–6 hr runtime, auto-dock charging"
+    },
+    {
+      "label": "Weight",
+      "value": "~310–325 g"
+    },
+    {
+      "label": "Dimensions",
+      "value": "95 × 89 × 95 mm"
+    },
+    {
+      "label": "Connectivity",
+      "value": "2.4/5GHz WiFi",
+      "note": "no Bluetooth; iOS/Android app"
+    },
+    {
+      "label": "Camera",
+      "value": "1080p @ 30fps",
+      "note": "~118° diagonal FOV, IR night vision"
+    },
+    {
+      "label": "Navigation",
+      "value": "Manual + roam/patrol",
+      "note": "no LiDAR/SLAM mapping on this model"
+    },
+    {
+      "label": "Drive",
+      "value": "Self-righting ball",
+      "note": "brushless wheel base, climbs ~6° inclines"
+    },
+    {
+      "label": "Audio",
+      "value": "Two-way talk",
+      "note": "built-in mic + speaker, WiFi"
+    },
+    {
+      "label": "Storage",
+      "value": "Local microSD",
+      "note": "32GB included, up to 256GB — no mandatory cloud"
+    }
+  ],
+  "sourcing": "Verified against Enabot's own official site (enabot.com, store.enabot.com) and independent reviews from Android Central, iMore, Digital Camera World, and TechAdvisor. Enabot now also sells newer \"Air 2,\" \"Air 2S,\" and \"Air 2 Plus\" variants — this page covers the original Ebo Air, an established, several-years-old product with a solid review track record. No LiDAR/SLAM navigation should not be confused with the pricier Ebo X, which does map the home.",
+  "manufacturerUrl": "https://store.enabot.com/products/ebo-air-familybot",
+  "pricing": {
+    "summary": "Officially listed around **$199–$229**, though Enabot's own store frequently discounts it — sale prices as low as $119 have been seen. Sources agree on the MSRP range rather than conflicting; treat sale pricing as common rather than an error."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "The Ebo Air is a self-righting, ball-shaped robot on a silent brushless-motor wheel base with anti-drop sensors. Its camera shoots 1080p/30fps (~118° FOV) with strong IR night vision. It has no LiDAR or SLAM mapping — reviewers flagged this as its weakest area, causing bumps and getting stuck. Storage defaults to local microSD rather than mandatory cloud."
+    },
+    {
+      "heading": "Insights",
+      "body": "Ebo Air stores video locally on a microSD card (32GB included, expandable to 256GB) rather than requiring a cloud subscription — a specific, sourced differentiator from many competing home-monitoring cameras. It has also built a several-years-long track record confirmed across multiple independent reviewers (Android Central, iMore, Digital Camera World, TechAdvisor)."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Enabot has not released a public SDK, firmware repo, or developer API for Ebo Air. Not currently listed in Builds & Mods."
+    }
+  ]
+}

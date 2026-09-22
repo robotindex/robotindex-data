@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "robotis-openmanipulator-x",
+  "slug": "product-robotis-openmanipulator-x.html",
+  "name": "ROBOTIS OpenMANIPULATOR-X",
+  "manufacturer": "ROBOTIS",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A research- and education-grade 4-DOF desktop arm from ROBOTIS, the South Korean maker of DYNAMIXEL smart actuators, built around 5 all-metal-geared XM430-W350-T servos rather than hobby-grade hardware. Sold as a bare mechanical arm with no bundled controller, computer, or enclosure — it's designed to be paired with a separate U2D2 interface for PC/ROS control or an OpenCR board for standalone operation. An official ROS/ROS2 reference platform with deep MoveIt and Gazebo integration, genuinely Apache-2.0 licensed.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "0.70 kg",
+      "note": "711.37g total mass, per ROBOTIS's official e-Manual"
+    },
+    {
+      "label": "Software",
+      "value": "ROS/ROS2 reference platform",
+      "note": "Apache-2.0 licensed; official MoveIt config and Gazebo simulation support"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "5 total",
+      "note": "4 arm joints + 1 gripper DOF — ROBOTIS's own phrasing, not a 6-axis arm"
+    },
+    {
+      "label": "Actuators",
+      "value": "DYNAMIXEL XM430-W350-T ×5",
+      "note": "full metal gear train, 12-bit magnetic absolute encoder, 0.25° rated backlash"
+    },
+    {
+      "label": "Controller",
+      "value": "Not included",
+      "note": "needs a separate U2D2 (PC/ROS control) or OpenCR board (standalone Arduino control)"
+    },
+    {
+      "label": "Reach",
+      "value": "380mm",
+      "note": "500g rated payload; 4.1N·m stall torque per actuator limits payload at full extension"
+    },
+    {
+      "label": "Repeatability",
+      "value": "<0.2mm (rated)",
+      "note": "ROBOTIS-published spec — a real closed-loop figure, not a hobbyist estimate"
+    },
+    {
+      "label": "Construction",
+      "value": "Machined/molded aluminum frame",
+      "note": "exposed bus cabling between joints — no enclosure included"
+    },
+    {
+      "label": "Gripper",
+      "value": "Parallel 2-finger",
+      "note": "20–75mm stroke, prismatic mimic-joint design, same XM430 actuator class"
+    },
+    {
+      "label": "Maker",
+      "value": "ROBOTIS Co., Ltd.",
+      "note": "South Korean, KOSDAQ-listed; designed as a TurtleBot3 companion manipulator"
+    }
+  ],
+  "sourcing": "Specs compiled from ROBOTIS's official e-Manual and product store listings, RobotShop and Generation Robots reseller listings, the ROBOTIS-GIT GitHub organization (LICENSE verified directly as Apache-2.0), the ROS ecosystem's own robot registry, and ROBOTIS/community forum threads, as of this build. Several details are flagged as unconfirmed above: an exact product release date, the precise meaning of the \"X\" in the name, and any specific university co-development partnership for the hardware itself — none were found in a citable primary source. This entry hasn't yet been cross-linked into the rest of the Robot Arms subcategory or synced to the directory listing; that's planned for a later pass.",
+  "manufacturerUrl": "https://www.robotis.us/openmanipulator-x-rm-x52-tnm/",
+  "pricing": {
+    "summary": "ROBOTIS's own US store and RobotShop both list the bare arm (SKU RM-X52-TNM) at **$1,629.09**, matched by Generation Robots in the EU at €1,739.56 incl. VAT. That price covers only the arm itself — a power supply, base plate, and controller interface are all sold separately, pushing a realistic working setup to roughly **$1,750–$1,900+**."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "OpenMANIPULATOR-X's software is genuinely Apache-2.0 licensed, with real ROS2 packages, a dedicated MoveIt config, and Gazebo simulation models — a substantive open-source integration, not a token wrapper. A 6-DOF configuration doesn't exist as a factory variant; it's only a user-contributed modification with a payload-capacity tradeoff flagged by ROBOTIS staff on their own forum."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "robotis-open-manipulator-x"
+    }
+  ]
+}

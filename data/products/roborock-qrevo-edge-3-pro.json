@@ -1,0 +1,94 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "roborock-qrevo-edge-3-pro",
+  "slug": "product-roborock-qrevo-edge-3-pro.html",
+  "name": "Roborock Qrevo Edge 3 Pro",
+  "manufacturer": "Roborock",
+  "category": "Cleaning & Home Care",
+  "subcategory": "Floors",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "Roborock's ultra-slim flagship robot vacuum/mop, built around a retractable LiDAR for under-furniture access, an edge-cleaning arm for wall corners, and a self-cleaning dock with hot-water mop washing and auto detergent dispensing. Announced at IFA Berlin in August 2026.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "4.96 kg",
+      "note": "robot body only, excludes dock; official Roborock spec"
+    },
+    {
+      "label": "Dimensions",
+      "value": "35.2 × 35 × 7.98 cm",
+      "note": "diameter × diameter × height, official Roborock spec"
+    },
+    {
+      "label": "Navigation",
+      "value": "RetractSense LiDAR",
+      "note": "retracts to 3.13\" body height"
+    },
+    {
+      "label": "Suction",
+      "value": "36,000 Pa",
+      "note": "HyperForce digital motor"
+    },
+    {
+      "label": "Price",
+      "value": "$1,499.99",
+      "note": "MSRP"
+    },
+    {
+      "label": "Obstacle Avoidance",
+      "value": "Reactive AI",
+      "note": "structured light + RGB cam, 300+ object types"
+    },
+    {
+      "label": "Mopping",
+      "value": "Dual spin pads",
+      "note": "~200 RPM, up to 14N pressure"
+    },
+    {
+      "label": "Mop Wash Temp",
+      "value": "Up to 212°F",
+      "note": "100°C hot-water washing"
+    },
+    {
+      "label": "Threshold Climb",
+      "value": "Up to 3.46\"",
+      "note": "AdaptiLift Chassis 3.0, double-layer"
+    },
+    {
+      "label": "Dock",
+      "value": "Auto-empty",
+      "note": "+ auto water fill/drain, mop dry, detergent"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "Cloud maps, video (camera-equipped models), and cleaning modes included with purchase — no subscription found on Roborock's app or product pages"
+    }
+  ],
+  "sourcing": "Specs sourced from Roborock's own US product page (us.roborock.com/products/roborock-qrevo-edge-3-pro), as of September 2026. This is a very recently launched model (IFA Berlin, ~August 2026) — no independent review from major outlets (The Verge, TechRadar, Tom's Guide, RTings, CNET, Wirecutter) was available at time of writing, so specs here rely on the manufacturer's own claims rather than third-party corroboration. Battery runtime/charging time, exact dB noise levels, and dustbin/water-tank capacities are not published on Roborock's official pages and are omitted rather than estimated. robotindex does not sell this product.",
+  "manufacturerUrl": "https://us.roborock.com/products/roborock-qrevo-edge-3-pro",
+  "pricing": {
+    "summary": "MSRP **$1,499.99**, per Roborock's own US store. Launched around August 2026 following its IFA Berlin announcement — expect typical early-model discounting to lag by a few months, as is standard for Roborock's flagship launches."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "The \"Edge\" naming refers to a FlexiArm Arc side brush and extending edge-mopping arm, paired with an ultra-slim 3.13\" body and a retracting LiDAR turret. Reactive AI combines structured light with an RGB camera to identify 300+ obstacle types, backed by VertiBeam lateral avoidance. The dock handles auto-emptying, water-tank refill, hot-water mop washing, hot-air drying, and detergent dispensing."
+    },
+    {
+      "heading": "Insights",
+      "body": "The Edge 3 Pro pairs an ultra-slim 3.13-inch body — thin enough to fit under low furniture with its LiDAR turret retracted — with a chassis that climbs double-layer thresholds up to 3.46 inches, a combination of low clearance and high threshold-climbing that most robot vacuums this thin can't match."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Roborock Qrevo Edge 3 Pro has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

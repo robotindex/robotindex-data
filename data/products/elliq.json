@@ -1,0 +1,90 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "elliq",
+  "slug": "product-elliq.html",
+  "name": "ElliQ",
+  "manufacturer": "Intuition Robotics",
+  "category": "Companion & Social",
+  "subcategory": "Senior Companions",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A stationary tabletop companion for older adults from Intuition Robotics — a screen-free, illuminated \"head\" unit that turns and lights up as it talks, paired with a detachable companion tablet for photos, video calls, and games. Proactively checks in rather than waiting for a wake word.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Not published",
+      "note": "no official figure found in this research; ElliQ 3 is described only as \"one-third smaller\" than ElliQ 2"
+    },
+    {
+      "label": "Connectivity",
+      "value": "WiFi",
+      "note": "no cellular capability confirmed"
+    },
+    {
+      "label": "Sensors",
+      "value": "Mic, camera, touch",
+      "note": "camera framed as motion-sensing, active on demand"
+    },
+    {
+      "label": "Form Factor",
+      "value": "Stationary, tabletop",
+      "note": "no mobility, no screen/face on the head unit"
+    },
+    {
+      "label": "Companion Screen",
+      "value": "Detachable tablet",
+      "note": "photos, video calls, games, subtitles"
+    },
+    {
+      "label": "Interaction",
+      "value": "Voice + proactive check-ins",
+      "note": "wake word \"ElliQ,\" plus unprompted prompts"
+    },
+    {
+      "label": "Care Features",
+      "value": "Reminders, wellness",
+      "note": "meds, hydration; caregiver alerts on changes"
+    },
+    {
+      "label": "Business Model",
+      "value": "Subscription, device leased",
+      "note": "not sold outright"
+    },
+    {
+      "label": "Distribution",
+      "value": "DTC + agency/Medicaid",
+      "note": "many units fully subsidized for eligible seniors"
+    },
+    {
+      "label": "Subscription",
+      "value": "Required",
+      "note": "$39–$59/mo membership + $249 one-time lease fee — elliq.com/products/membership; often subsidized via state/Medicaid programs"
+    }
+  ],
+  "sourcing": "Verified against Intuition Robotics' own site (elliq.com, including its FAQs, privacy policy, and design blog), CES 2024 coverage from TechCrunch, funding reporting from Robotics 24/7 and noCamels, and 2026 Medicaid coverage from FierceHealthcare. Pricing is genuinely inconsistent across the manufacturer's own plan pages — presented here as a rough range, not a single confirmed figure. The \"95% loneliness reduction\" statistic is state/company-reported, not an independent study. Camera privacy marketing language and the formal privacy policy's data-retention terms are both accurately represented here despite sitting in some tension with each other. Company HQ location (Tel Aviv/Ramat Gan vs. an early \"Jerusalem-based\" report) is an unresolved discrepancy in sourcing, not a factual claim this page is making either way.",
+  "manufacturerUrl": "https://elliq.com/",
+  "pricing": {
+    "summary": "Pricing is inconsistent across Intuition Robotics' own site, ranging from $249.99 up front plus $49.99/month to $59/month with no upfront fee, or $359.88/year on another listing — treat roughly $50–60/month as a rough starting range rather than a fixed price, since the device is leased as part of the subscription rather than purchased outright. Many users pay nothing directly, though, since ElliQ is distributed free to eligible seniors through state aging-agency programs and, as of March 2026, is reimbursed through Medicaid in Washington State."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "ElliQ's marketing describes its camera as behaving \"like a motion detector\" that \"does not record you\" in idle mode, activating fully only for features the user chooses, such as video calls. Intuition Robotics' own privacy policy states separately that audio/video captured during active use is retained as personal information for as long as the service is used, and for at least six years after account termination."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "ElliQ has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

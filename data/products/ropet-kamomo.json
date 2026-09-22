@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "ropet-kamomo",
+  "slug": "product-ropet-kamomo.html",
+  "name": "Ropet KAMOMO",
+  "manufacturer": "Ropet",
+  "category": "Pets & Toys",
+  "subcategory": "Robot Pets",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A palm-sized, stationary desktop companion from Ropet, with a fixed furry body, a rotating head, LCD-screen animated eyes, and a hidden nose camera for face and object recognition. KAMOMO is the current retail product line name; a companion app and Wi-Fi connect it to cloud-based conversational AI.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "~2.5–3.5 hr",
+      "note": "USB-C or charging base (Pro); not manufacturer-confirmed"
+    },
+    {
+      "label": "Dimensions",
+      "value": "~14 cm tall",
+      "note": "~0.6 kg; secondary source, not manufacturer-confirmed"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Wi-Fi + companion app",
+      "note": "iOS/Android, required for setup/customization"
+    },
+    {
+      "label": "Sensors",
+      "value": "Capacitive touch, IMU",
+      "note": "motion/pickup detection, music reactivity"
+    },
+    {
+      "label": "Camera",
+      "value": "Hidden in nose",
+      "note": "face/object recognition; resolution not disclosed"
+    },
+    {
+      "label": "Display",
+      "value": "LCD screen eyes",
+      "note": "animated expressions/reactions"
+    },
+    {
+      "label": "AI",
+      "value": "Cloud conversational AI",
+      "note": "marketed with ChatGPT at launch; current Amazon listings cite \"Gemini Chat\" instead — unresolved discrepancy"
+    },
+    {
+      "label": "Mic/Speaker",
+      "value": "Forehead mic",
+      "note": "onboard speaker for speech output"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "no paid tier found; only an optional cloud photo-to-drawing feature — core AI runs on-device"
+    }
+  ],
+  "sourcing": "Verified against the official Kickstarter campaign page and its final funding totals, Ropet's own official site (ropetai.com, including its About page), CES 2025 and launch coverage from Engadget, Hackster.io, and Forbes, a 36Kr report on Ropet's funding round, and secondary sources (HomeBotRadar, Robot Review Desk) for specs and reception not found elsewhere. Dimensions, weight, and battery life are sourced to secondary sites rather than an official Ropet spec sheet and are flagged accordingly. The product's AI backend is described inconsistently — ChatGPT at launch per Kickstarter/press, \"Gemini Chat\" per current Amazon listings — and both are presented rather than resolved. The relationship between earlier \"Ropet Basic/Pro\" naming and the current \"KAMOMO\" line is inferred from product-listing changes, not documented directly by Ropet. No full review from a major tech-press outlet (The Verge, TechCrunch, CNET, Tom's Guide) was found. Ropet's privacy claims (local processing, off-by-default cloud photos) come from the maker and affiliated review sites, not an independent audit.",
+  "manufacturerUrl": "https://ropetai.com/",
+  "pricing": {
+    "summary": "KAMOMO Pro lists around $349–$489 on Ropet's official site and Amazon, frequently discounted to roughly $339–$359 in bundles. Post-launch retail pricing shortly after the March 2025 shipping start was reported lower, at $299 (Basic) and $329 (Pro), both below current list prices."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Ropet's AI backend is inconsistently documented: it launched marketed with ChatGPT-based conversation, but current Amazon listings describe \"Gemini Chat\" instead — a genuine discrepancy across sources that isn't resolved as a full swap, a regional difference, or an update in progress."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Ropet KAMOMO has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "aibi-pocket-robot",
+  "slug": "product-aibi-pocket-robot.html",
+  "name": "Aibi Pocket Robot",
+  "manufacturer": "Living",
+  "category": "Pets & Toys",
+  "subcategory": "Robot Pets",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A small, pocket-sized AI companion from Living.AI — the same company behind EMO, elsewhere in this directory — with a screen face, front camera for face recognition, and a rotating body that docks on a round charging base. Works out of the box without an app; the app is only needed to register faces and enable ChatGPT-based conversation.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "Not manufacturer-confirmed",
+      "note": "one promotional blog's \"2.5–4 hr\" figure is unverified"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Not disclosed",
+      "note": "no official teardown or spec sheet found"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Wi-Fi",
+      "note": "required for face recognition and ChatGPT features"
+    },
+    {
+      "label": "Camera",
+      "value": "Front-facing",
+      "note": "face recognition; resolution not disclosed"
+    },
+    {
+      "label": "Display",
+      "value": "Screen face",
+      "note": "animated eyes; resolution not disclosed"
+    },
+    {
+      "label": "AI",
+      "value": "Offline voice commands",
+      "note": "+ ChatGPT integration for complex queries"
+    },
+    {
+      "label": "Mobility",
+      "value": "Rotating body/head",
+      "note": "sits on a round charging base, not mobile off-dock"
+    },
+    {
+      "label": "Charging",
+      "value": "USB-C",
+      "note": "round \"Pocket Charger\" dock sold separately (~$9)"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "ChatGPT feature included with purchase — no paid tier found on Living.AI's site or reviews"
+    }
+  ],
+  "sourcing": "Verified against Living.AI's own official site (living.ai/aibi/ and its Aibi Pocket product page), a CB Insights company profile for Living.AI's HQ/founding, the \"AIBI Pocket\" companion app's listing on Google Play, and a hands-on account from the enthusiast forum robotsaroundthehouse.com. No reputable tech-press coverage (The Verge, Engadget, CNET, Tom's Guide) was found for this product specifically. Dimensions, weight, screen resolution, camera resolution, and battery life are not published by Living.AI and are marked as such rather than estimated; a promotional blog's battery-life and price figures conflict sharply with the manufacturer's own price and are flagged as unreliable rather than used. Shipping-delay reports come from a single enthusiast forum thread, not a manufacturer statement. Search results also surfaced unrelated products and companies using the name \"Aibi\" (a fintech app, generic marketplace listings); this page covers only the screen-faced companion robot matching the photo, made by Living.AI.",
+  "manufacturerUrl": "https://living.ai/aibi/",
+  "pricing": {
+    "summary": "$249 on Living.AI's own store, also listed on Amazon and eBay through third-party resellers, as a one-time purchase with no subscription. A separate promotional blog cites $599.99–$680, which conflicts sharply with the manufacturer's own price and should be treated as unreliable/disputed."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "A separate promotional blog publishes battery-life and price figures for Aibi Pocket, but its cited price ($599–680) is so far off Living.AI's own $249 listing that it reads as unreliable rather than corroborating — a spec discrepancy worth flagging for anyone comparison shopping."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Aibi Pocket Robot has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

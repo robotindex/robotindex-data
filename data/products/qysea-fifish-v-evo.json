@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "qysea-fifish-v-evo",
+  "slug": "product-qysea-fifish-v-evo.html",
+  "name": "QYSEA FIFISH V-EVO",
+  "manufacturer": "Shenzhen QYSEA Technology",
+  "category": "Personal Drones",
+  "subcategory": "Underwater",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A six-thruster, 100m-rated underwater ROV from Shenzhen QYSEA Technology, marketed as a \"Smart Dive Companion\" for content creation, light exploration, and basic recovery. Despite QYSEA's broader FIFISH line skewing professional, V-EVO is specifically the entry-level model in QYSEA's own current lineup — it sits below V6 Expert and the industrial-flagship E-GO, and undercuts both Chasing's M2 S and Geneinno's T1 Pro on price by a wide margin.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "9000mAh / 97.2Wh",
+      "note": "marketed \"4 hours\" is a hovering/idle figure — QYSEA's own numbers put full-mobility runtime closer to 1 hour; not user-swappable"
+    },
+    {
+      "label": "Weight",
+      "value": "4.1–4.6 kg (ROV only)",
+      "note": "New Atlas reports 4.1kg; B&H's spec sheet lists 4.6kg, identical to V6 Expert's published weight — possibly a copy-paste spec error on B&H's part, unresolved"
+    },
+    {
+      "label": "Camera",
+      "value": "12MP / 4K@60fps",
+      "note": "1/2.3\" Sony CMOS, f/2.5, 166° FOV, JPEG + DNG RAW stills; no optical zoom, no 8K"
+    },
+    {
+      "label": "Depth Rating",
+      "value": "100 m (328 ft)",
+      "note": "QYSEA explicitly states this stays constant regardless of tether length — a positive contrast to a mislabeling pattern found on competitor listings"
+    },
+    {
+      "label": "Thrusters",
+      "value": "6, omnidirectional",
+      "note": "fewer than Chasing M2 S's 8, matching Geneinno T1 Pro's 6"
+    },
+    {
+      "label": "Tether",
+      "value": "100m included",
+      "note": "200m ($679) and 300m ($1,850) spools sold separately, purely for surface reach — not depth"
+    },
+    {
+      "label": "Control",
+      "value": "App + bundled remote controller",
+      "note": "optional $29.99 VR headset is a phone-holder shell using the phone's own screen and gyroscope, not an independent HD FPV feed"
+    },
+    {
+      "label": "Lighting",
+      "value": "~5,000 lumens combined",
+      "note": "two forward LEDs at 5,500K"
+    },
+    {
+      "label": "Accessories",
+      "value": "2-finger gripper arm (+$300)",
+      "note": "plus retrieval hook, prop guards (sold separately), camera mounts; no sonar, no external camera module, no GPS locator — those live one tier up on V6 Expert"
+    },
+    {
+      "label": "Subscription",
+      "value": "Free, no subscription found",
+      "note": "FIFISH app (iOS/Android) lists no in-app purchases or paid tiers; no cloud video storage or editing subscription identified for V-EVO"
+    }
+  ],
+  "sourcing": "Specs compiled from QYSEA's own product and store pages (qysea.com, store.qysea.com), B&H Photo's spec listing, and launch coverage from New Atlas and PetaPixel. Flagged as unconfirmed or conflicting above: V-EVO's exact weight (4.1kg vs. 4.6kg across sources), exact announcement date (2022 vs. April 2023), charging time (not found for this specific model), tether buoyancy, and whether V-EVO holds its own FCC equipment certification. This entry hasn't yet been cross-linked or synced to the directory listing; that's planned for a later pass.",
+  "manufacturerUrl": "https://www.qysea.com/products/fifish-v-evo/",
+  "pricing": {
+    "summary": "V-EVO launched at **$1,299** in 2023 and currently lists at **$1,399** (Standard) / **$1,699** (Arm Pack) on QYSEA's own store — a modest increase over launch pricing rather than a real conflict across sources. The announcement date itself has a minor discrepancy worth noting: QYSEA's own press page carries 2022 in its metadata while New Atlas and PetaPixel's launch coverage runs April 2023, most likely reflecting an internal announcement followed by wider press coverage the following year."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "QYSEA's own numbers show V-EVO's advertised \"4 hour\" battery life is a hovering/idle figure — full-mobility active piloting drains it closer to 1 hour, a real gap between the marketed number and real-world use. The bundled \"VR Control\" feature is similarly overstated by its name: it's a $29.99 Cardboard-style phone holder that mirrors the regular app's live feed using the phone's own gyroscope for head-tracking, not a dedicated low-latency FPV headset with its own video pipeline."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "QYSEA FIFISH V-EVO has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

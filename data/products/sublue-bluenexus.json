@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "sublue-bluenexus",
+  "slug": "product-sublue-bluenexus.html",
+  "name": "Sublue BlueNexus",
+  "manufacturer": "Sublue",
+  "category": "Outdoor & Yard",
+  "subcategory": "Other",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A cordless, tracked robotic pool cleaner from Sublue — better known for underwater scooters — using \"Geoguru\" 3D mapping and a WSLAM positioning algorithm. Originally crowdfunded, now sold in production form as \"BN Pro.\"",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "28,500 mAh",
+      "note": "~3–3.5 hr runtime, 3.5 hr charge"
+    },
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "official spec sheet not accessible"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Not published",
+      "note": "official spec sheet not accessible"
+    },
+    {
+      "label": "Connectivity",
+      "value": "WiFi app",
+      "note": "Sublue Robot App, OTA updates, scheduling"
+    },
+    {
+      "label": "Navigation",
+      "value": "Geoguru 3D mapping",
+      "note": "WSLAM algorithm, ultrasonic + infrared sensing"
+    },
+    {
+      "label": "Drive",
+      "value": "Tracked (caterpillar)",
+      "note": "dual drive motors — not simple wheels"
+    },
+    {
+      "label": "Pool Compatibility",
+      "value": "Up to ~2,150 sq ft",
+      "note": "tile, vinyl, fiberglass, concrete; optional saltwater ballast"
+    },
+    {
+      "label": "Cleans",
+      "value": "Floor, walls, waterline",
+      "note": "5 modes incl. smart mapping & remote"
+    },
+    {
+      "label": "Filtration",
+      "value": "4.5L top-load basket",
+      "note": "dual-layer, ~70–180 micron (sources vary)"
+    },
+    {
+      "label": "Subscription",
+      "value": "No subscription found",
+      "note": "unconfirmed — official app-store listing not checked directly"
+    }
+  ],
+  "sourcing": "Sourcing caveat: verified against Sublue's own official store and blog, its original Kickstarter campaign page, and third-party reseller listings — but independent, non-promotional review coverage is thin to nonexistent (a 2026 industry roundup of new robotic pool cleaners omitted Sublue entirely). The relationship between \"BlueNexus\" and the currently-sold \"BN Pro\" is inferred from product naming and listings rather than stated outright by Sublue, and should be treated as likely rather than certain. Dimensions, weight, and exact filtration micron rating vary or are missing across sources — treat specific numeric specs with more caution than an established brand like Dolphin/Maytronics.",
+  "manufacturerUrl": "https://store.sublue.com/products/bn-pro",
+  "pricing": {
+    "summary": "Pricing has moved a lot since launch: Kickstarter early-bird was around **$599**, an Indiegogo preorder listed **$649**, and current retail on Sublue's own store is **$1,399** (frequently on sale around $1,099); a European reseller lists roughly €1,450. Treat the current $1,099–$1,399 range as the relevant price today rather than the original crowdfunding figures."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware — Sourcing Caveat",
+      "body": "BlueNexus launched on Kickstarter in 2023 as Sublue's first robotic pool cleaner; the retail product is now sold as **\"BN Pro,\"** likely its rebranded successor (unconfirmed by Sublue). The tracked drive (visible red/orange rollers) is confirmed as \"caterpillar\" tracks with dual drive motors, not wheels. Independent, non-promotional coverage is thin—largely gadget-blog/PR writeups without independent testing. Dimensions and weight are unconfirmed."
+    },
+    {
+      "heading": "Insights",
+      "body": "Sublue's own filtration spec is inconsistent across sources, with the basket rated anywhere from roughly 70 to 180 microns depending on where it's checked, and physical dimensions and weight aren't published anywhere accessible. Independent, non-promotional review coverage is essentially nonexistent."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Sublue BlueNexus has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

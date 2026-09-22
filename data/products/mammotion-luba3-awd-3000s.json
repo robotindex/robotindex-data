@@ -1,0 +1,87 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "mammotion-luba3-awd-3000s",
+  "slug": "product-mammotion-luba3-awd-3000s.html",
+  "name": "Mammotion LUBA 3 AWD 3000S",
+  "manufacturer": "Mammotion",
+  "category": "Outdoor & Yard",
+  "subcategory": "Robot Lawn Mowers",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A wire-free, all-wheel-drive robotic mower from Mammotion's LUBA 3 line, combining 360° LiDAR, cloud-based RTK correction, and dual-camera AI vision for centimeter-level navigation. Genuine 4WD rated for 80% grade slopes. Launched at CES 2026.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "21.6V, up to 15Ah",
+      "note": "175–215 min runtime (source-dependent)"
+    },
+    {
+      "label": "Weight",
+      "value": "41 lbs"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Not published",
+      "note": "full dimensions not published"
+    },
+    {
+      "label": "Navigation",
+      "value": "LiDAR + NetRTK + AI vision",
+      "note": "\"Tri-Fusion\", no base station needed"
+    },
+    {
+      "label": "Drive",
+      "value": "True 4WD",
+      "note": "independent wheel motors"
+    },
+    {
+      "label": "Max Coverage",
+      "value": "0.75 acre",
+      "note": "~3,000 m² tier; ~1,700 m² per charge"
+    },
+    {
+      "label": "Cutting Height",
+      "value": "1.0–2.7 in",
+      "note": "\"S\" (Standard) variant"
+    },
+    {
+      "label": "Max Slope",
+      "value": "80% grade",
+      "note": "~38.6°"
+    },
+    {
+      "label": "Noise",
+      "value": "≤70 dB"
+    },
+    {
+      "label": "Subscription",
+      "value": "App free; 4G optional",
+      "note": "Core NetRTK/nav free via WiFi; cellular remote access is a paid add-on ($19.90/3mo or $49.90/yr) after free trial period"
+    }
+  ],
+  "sourcing": "Verified against Mammotion's own official product/blog pages (mammotion.com, us.mammotion.com) and a TechRadar review. Runtime-per-charge figures differ between Mammotion's own site (215 min) and TechRadar's tested result (175 min) — both are reported above rather than picking one. Price also differs by source ($2,799 official vs. $2,399 in the TechRadar review); confirm current price before buying. This is a brand-new model announced at CES 2026, so longer-term reliability data isn't yet available.",
+  "manufacturerUrl": "https://mammotion.com/pages/luba-3-awd-robot-lawn-mower",
+  "pricing": {
+    "summary": "Mammotion's official US site lists the LUBA 3 AWD 3000 at **$2,799**. A TechRadar review cited **$2,399** — likely a launch-promo or bundle price difference around the CES 2026 debut — so treat this as a discrepancy to double-check at checkout rather than a fixed number."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "The LUBA 3 AWD ships in 1500/3000/5000 coverage tiers, each in \"S\" (Standard) and \"H\" (High) cutting-height variants. Navigation uses Mammotion's \"Tri-Fusion\" stack: 360° LiDAR (up to 70m range), cloud-based NetRTK correction (no physical base station), and dual-camera AI vision claiming ±1cm accuracy. Four-wheel independent drive is rated for 80% grade slopes, earning it the nickname \"the Slope King.\""
+    },
+    {
+      "heading": "Insights",
+      "body": "Mammotion's claim that the LUBA 3 AWD's four independently driven wheels handle steep terrain is independently verified: TechRadar's review confirmed it manages 80%-grade slopes, nicknaming it \"the Slope King.\" That same review measured runtime at 175 minutes per charge versus the 215 minutes listed on Mammotion's own site."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Mammotion LUBA 3 AWD 3000S has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

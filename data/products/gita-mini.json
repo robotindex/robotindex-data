@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "gita-mini",
+  "slug": "product-gita-mini.html",
+  "name": "Gita Mini",
+  "manufacturer": "Piaggio Fast Forward",
+  "category": "Companion & Social",
+  "subcategory": "Mobility Helpers",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A wheeled cargo-following robot from Piaggio Fast Forward (stylized \"gitamini\" by the maker) that trails a person at up to 6 mph using onboard stereo camera and radar vision — no wearable, GPS, or cellular connection required. Carries up to 20 lb / 1,000 cubic inches of cargo.",
+  "specs": [
+    {
+      "label": "Dimensions",
+      "value": "17.9 × 16.5 × 18.9 in",
+      "note": "28 lb empty weight"
+    },
+    {
+      "label": "Cargo Capacity",
+      "value": "20 lb / 1,000 in³",
+      "note": "single top-loading compartment"
+    },
+    {
+      "label": "Top Speed",
+      "value": "6 mph",
+      "note": "auto-adjusts following distance"
+    },
+    {
+      "label": "Range / Runtime",
+      "value": "~21 miles",
+      "note": "~7 hr runtime, <2 hr recharge (Li-ion)"
+    },
+    {
+      "label": "Follow Tech",
+      "value": "Stereo camera + radar",
+      "note": "90° camera FOV, 170° radar FOV; no wearable needed"
+    },
+    {
+      "label": "Pairing",
+      "value": "Single-tap visual pairing",
+      "note": "RGB camera profiles leader's clothing to re-pair"
+    },
+    {
+      "label": "Terrain",
+      "value": "Sidewalks, gravel, grass",
+      "note": "no sand, snow, mud, or tall grass; ramps to 16% grade"
+    },
+    {
+      "label": "Curbs / Stairs",
+      "value": "Not autonomous",
+      "note": "lifted manually via built-in handles"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "mygita app used only for initial setup/registration — not needed for daily use (Piaggio Fast Forward FAQ)"
+    }
+  ],
+  "sourcing": "Verified against Piaggio Fast Forward's own site (shop page, blog, FAQs, knowledge base), Piaggio Group press releases, and press coverage including the Boston Globe (2025), RoboticsTomorrow and RoboticsAndAutomationNews (2026), Forbes' 2024 review, GeekWire, Engadget's 2021 launch coverage, and IEEE Spectrum's coverage of the original gita. gitamini's maximum follow/tracking distance is not disclosed in any source found and is omitted rather than estimated. International (non-US) availability was not explicitly confirmed or denied in sources reviewed. Piaggio Fast Forward's privacy claim about not storing identifying data is self-reported by the company, not independently audited.",
+  "manufacturerUrl": "https://piaggiofastforward.com/shop/gitamini",
+  "pricing": {
+    "summary": "Gita mini launched at $1,850 in 2021 but is now $2,475 on Piaggio Fast Forward's own shop (Spark Citron colorway), with financing as low as $104/month via Shop Pay. A Star Wars/Disney-licensed \"Grogu gitamini\" special edition costs more, at $2,875."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "gitamini eliminated the belt-worn stereo camera required by its 2019 predecessor, the original gita — it now relies solely on onboard stereo camera, radar, and RGB vision to re-identify its leader by clothing color after a brief loss of sight. Piaggio Fast Forward states it does not store data that would identify the user during pairing or tracking, though this is a self-reported claim that hasn't been independently audited."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Gita Mini has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

@@ -1,0 +1,685 @@
+{
+  "$schema": "../schema/models-data-entry.schema.json",
+  "entries": [
+    {
+      "id": "nvidia-cosmos",
+      "tab": "world-models",
+      "category": "Open",
+      "name": "NVIDIA Cosmos",
+      "desc": "World foundation model platform with a dedicated action-conditioned mode that predicts forward/inverse dynamics for robotics, camera motion, and autonomous driving.",
+      "license": "OpenMDW-1.1 (custom permissive license — not OSI-approved, but no field-of-use restrictions)",
+      "link": "https://github.com/nvidia/cosmos",
+      "access": "Open"
+    },
+    {
+      "id": "meta-vjepa2",
+      "tab": "world-models",
+      "category": "Open",
+      "name": "Meta V-JEPA 2",
+      "desc": "Self-supervised video world model; the V-JEPA 2-AC variant solves robot manipulation tasks — reaching, grasping, pick-and-place — from monocular RGB with no task-specific training.",
+      "license": "MIT / Apache-2.0",
+      "link": "https://github.com/facebookresearch/vjepa2",
+      "access": "Open"
+    },
+    {
+      "id": "deepmind-genie-3",
+      "tab": "world-models",
+      "category": "Closed",
+      "name": "Google DeepMind Genie 3",
+      "desc": "Real-time interactive world model generating explorable environments from a single text or image prompt. Described from DeepMind's own materials — there is no public source to verify this against.",
+      "license": "Proprietary — limited preview access",
+      "link": "https://deepmind.google/models/genie/",
+      "access": "Closed"
+    },
+    {
+      "id": "world-labs-marble",
+      "tab": "world-models",
+      "category": "Closed",
+      "name": "World Labs Marble",
+      "desc": "World Labs' first commercial world model, generating persistent, explorable 3D environments from text, image, or video input. Described from the vendor's own announcement — not independently verifiable.",
+      "license": "Proprietary — commercial product",
+      "link": "https://www.worldlabs.ai/blog/marble-world-model",
+      "access": "Closed"
+    },
+    {
+      "id": "mujoco",
+      "tab": "simulation-training",
+      "category": "Physics Engine",
+      "name": "MuJoCo",
+      "desc": "Contact/soft-body physics engine maintained by Google DeepMind — the reference benchmark for simulation accuracy that newer GPU engines are validated against.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/google-deepmind/mujoco",
+      "access": "Open"
+    },
+    {
+      "id": "genesis-embodied-ai",
+      "tab": "simulation-training",
+      "category": "Physics Engine",
+      "name": "Genesis",
+      "desc": "GPU-accelerated multi-physics engine (rigid body, FEM, MPM, particle-based) with a photorealistic renderer, purpose-built for robotics and embodied AI research.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/Genesis-Embodied-AI/Genesis",
+      "access": "Open"
+    },
+    {
+      "id": "bullet-physics",
+      "tab": "simulation-training",
+      "category": "Physics Engine",
+      "name": "Bullet",
+      "desc": "Long-running open-source collision detection and rigid/soft-body physics engine; the basis for PyBullet and used inside Blender and Houdini.",
+      "license": "zlib",
+      "link": "https://github.com/bulletphysics/bullet3",
+      "access": "Open"
+    },
+    {
+      "id": "nvidia-isaac-lab",
+      "tab": "simulation-training",
+      "category": "Physics Engine",
+      "name": "NVIDIA Isaac Lab",
+      "desc": "GPU-accelerated robot learning framework built on Isaac Sim, for large-scale parallel reinforcement learning and imitation learning.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/isaac-sim/IsaacSim",
+      "access": "Open"
+    },
+    {
+      "id": "project-chrono",
+      "tab": "simulation-training",
+      "category": "Physics Engine",
+      "name": "Project Chrono",
+      "desc": "Multi-physics simulation engine covering rigid/flexible bodies, granular dynamics, and fluid-structure interaction.",
+      "license": "BSD-3-Clause",
+      "link": "https://github.com/projectchrono/chrono",
+      "access": "Open"
+    },
+    {
+      "id": "stable-baselines3",
+      "tab": "simulation-training",
+      "category": "RL Training",
+      "name": "Stable-Baselines3",
+      "desc": "Reliable PyTorch implementations of core reinforcement learning algorithms (PPO, SAC, TD3, DQN) with a consistent, well-documented interface. Stable and mature — focused on maintenance over new features.",
+      "license": "MIT",
+      "link": "https://github.com/DLR-RM/stable-baselines3",
+      "access": "Open"
+    },
+    {
+      "id": "cleanrl",
+      "tab": "simulation-training",
+      "category": "RL Training",
+      "name": "CleanRL",
+      "desc": "Single-file, research-friendly reference implementations of major RL algorithms, built for readability and reproducibility rather than production abstraction.",
+      "license": "MIT",
+      "link": "https://github.com/vwxyzjn/cleanrl",
+      "access": "Open"
+    },
+    {
+      "id": "ray-rllib",
+      "tab": "simulation-training",
+      "category": "RL Training",
+      "name": "Ray RLlib",
+      "desc": "Distributed reinforcement learning library within the Ray project, used for training at a scale beyond a single machine.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/ray-project/ray",
+      "access": "Open"
+    },
+    {
+      "id": "nvidia-isaac-sim",
+      "tab": "simulation-training",
+      "category": "Synthetic Data & Sensors",
+      "name": "NVIDIA Isaac Sim",
+      "desc": "Full robot simulation platform on Omniverse with RTX and physics-based sensor models and a built-in synthetic data generation toolset (Replicator) for training perception models.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/isaac-sim/IsaacSim",
+      "access": "Open"
+    },
+    {
+      "id": "open-x-embodiment",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "Open X-Embodiment",
+      "desc": "Google DeepMind's unified cross-embodiment robot dataset, consolidating dozens of separately collected manipulation datasets into one standardized format, alongside the RT-X model checkpoints trained on it.",
+      "license": "Apache-2.0 (code) / CC-BY (data)",
+      "link": "https://github.com/google-deepmind/open_x_embodiment",
+      "access": "Open"
+    },
+    {
+      "id": "openai-vpt",
+      "tab": "datasets",
+      "category": "Gameplay / Simulated Interaction",
+      "name": "OpenAI VPT (Video PreTraining)",
+      "desc": "Contractor Minecraft gameplay recordings — video paired with action logs — that OpenAI used to train agents via behavioral cloning. Minecraft itself is Microsoft's IP, not licensed by OpenAI.",
+      "license": "MIT (code/repo); dataset freely downloadable from OpenAI's public storage",
+      "link": "https://github.com/openai/Video-Pre-Training",
+      "access": "Open"
+    },
+    {
+      "id": "google-brax",
+      "tab": "simulation-training",
+      "category": "Physics Engine",
+      "name": "Brax",
+      "desc": "Differentiable JAX-based physics engine for massively parallel simulation on accelerator hardware. Worth flagging: the project's own maintainers now recommend MuJoCo Playground for new physics-simulation work — only the training component of Brax is still actively maintained.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/google/brax",
+      "access": "Open"
+    },
+    {
+      "id": "robotlocomotion-drake",
+      "tab": "simulation-training",
+      "category": "Physics Engine",
+      "name": "Drake",
+      "desc": "Model-based design and verification toolkit from MIT/Toyota Research Institute — C++ dynamical-systems modeling, numerical integration, and optimization tools for robotics, broader than a pure physics engine.",
+      "license": "BSD-3-Clause",
+      "link": "https://github.com/RobotLocomotion/drake",
+      "access": "Open"
+    },
+    {
+      "id": "pytorch-torchrl",
+      "tab": "simulation-training",
+      "category": "RL Training",
+      "name": "TorchRL",
+      "desc": "PyTorch-native reinforcement learning toolkit built around the TensorDict primitive, which passes structured data across environments, replay buffers, and policies through a shared interface.",
+      "license": "MIT",
+      "link": "https://github.com/pytorch/rl",
+      "access": "Open"
+    },
+    {
+      "id": "haosulab-maniskill",
+      "tab": "simulation-training",
+      "category": "Synthetic Data & Sensors",
+      "name": "ManiSkill",
+      "desc": "GPU-parallelized robot simulation and manipulation benchmark built on SAPIEN, capable of 30,000+ FPS synthetic visual data collection on a single GPU.",
+      "license": "Apache-2.0 (framework) / CC BY-NC 4.0 (asset library)",
+      "link": "https://github.com/haosulab/ManiSkill",
+      "access": "Open"
+    },
+    {
+      "id": "rail-berkeley-bridgedata-v2",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "BridgeData V2",
+      "desc": "60,096 real-world manipulation trajectories across 24 environments and 13 skills, collected on a low-cost WidowX 250 arm — built to study generalization across tasks and environments.",
+      "license": "MIT (original code/repo) / OpenMDW-1.1 (NVIDIA's LeRobot-format conversion of the data)",
+      "link": "https://github.com/rail-berkeley/bridge_data_v2",
+      "access": "Open"
+    },
+    {
+      "id": "etched-oasis",
+      "tab": "world-models",
+      "category": "Open",
+      "name": "Oasis",
+      "desc": "Interactive world model from Decart and Etched using a diffusion transformer to generate real-time, playable gameplay frame-by-frame from keyboard input — no traditional game engine involved.",
+      "license": "MIT",
+      "link": "https://github.com/etched-ai/open-oasis",
+      "access": "Open"
+    },
+    {
+      "id": "yvanyin-drivingworld",
+      "tab": "world-models",
+      "category": "Open",
+      "name": "DrivingWorld",
+      "desc": "Video-GPT-style world model for autonomous driving, generating high-fidelity, controllable future driving video and ego-state predictions beyond 40 seconds.",
+      "license": "MIT",
+      "link": "https://github.com/YvanYin/DrivingWorld",
+      "access": "Open"
+    },
+    {
+      "id": "wayve-gaia",
+      "tab": "world-models",
+      "category": "Closed",
+      "name": "Wayve GAIA-3",
+      "desc": "Wayve's generative world model for autonomous driving, now at GAIA-3 (15B parameters, evolved from the original 2023 GAIA-1) — used internally to simulate safety-critical driving scenarios and evaluate vehicle policies before real-world deployment.",
+      "license": "Proprietary — internal/commercial, not publicly accessible",
+      "link": "https://wayve.ai/thinking/gaia-3/",
+      "access": "Closed"
+    },
+    {
+      "id": "google-language-table",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "Language-Table",
+      "desc": "Human-collected robot manipulation dataset pairing natural-language instructions with tabletop block-rearrangement demonstrations, plus a matching simulated benchmark environment for open-vocabulary language-conditioned control.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/google-research/language-table",
+      "access": "Open"
+    },
+    {
+      "id": "robonet",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "RoboNet",
+      "desc": "~162,000 manipulation trajectories (15 million frames) collected across 7 different robot platforms (Sawyer, Baxter, WidowX, Franka, Kuka, Fetch, and a Google robot) at 4 research labs, built to study cross-robot generalization.",
+      "license": "CC BY 4.0 (data) — code separately MIT",
+      "link": "https://github.com/SudeepDasari/RoboNet",
+      "access": "Open"
+    },
+    {
+      "id": "abc-130k",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "ABC-130K",
+      "desc": "130,703 teleoperated bimanual manipulation episodes (~3,590 hours) across 195 tasks, collected on dual-arm 6-DoF robot stations by Amazon FAR, UC Berkeley, and collaborators, released with the \"Scalable Behavior Cloning\" paper.",
+      "license": "Apache-2.0 (bundles some restricted third-party checkpoints under separate terms)",
+      "link": "https://github.com/amazon-far/abc",
+      "access": "Open"
+    },
+    {
+      "id": "mobile-aloha",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "Mobile ALOHA",
+      "desc": "Stanford's mobile-base bimanual teleoperation platform and household manipulation demonstrations (cooking, cleaning, furniture tasks), extending the original ALOHA hardware to a mobile robot.",
+      "license": "MIT",
+      "link": "https://github.com/MarkFzp/mobile-aloha",
+      "access": "Open"
+    },
+    {
+      "id": "core4d",
+      "tab": "datasets",
+      "category": "Human Motion Capture",
+      "name": "CORE4D",
+      "desc": "4D human-human-object interaction dataset — two people collaboratively rearranging objects, captured via motion capture for future human-robot-interaction research. Not robot data itself.",
+      "license": "CC BY 4.0",
+      "link": "https://github.com/leolyliu/CORE4D-Instructions",
+      "access": "Open"
+    },
+    {
+      "id": "mosaic-humanoid",
+      "tab": "datasets",
+      "category": "Human Motion Capture",
+      "name": "MOSAIC",
+      "desc": "BAAI's large motion bank for humanoid whole-body motion tracking and teleoperation, blending optical and inertial mocap with generated motions, retargeted to the Unitree G1.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/BAAI-Humanoid/MOSAIC",
+      "access": "Open"
+    },
+    {
+      "id": "phuma",
+      "tab": "datasets",
+      "category": "Human Motion Capture",
+      "name": "PHUMA",
+      "desc": "KAIST's physics-filtered humanoid locomotion dataset, retargeting large-scale human motion capture to Unitree G1/H1-2 while correcting the physical artifacts naive retargeting introduces.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/DAVIAN-Robotics/PHUMA",
+      "access": "Open"
+    },
+    {
+      "id": "mimicgen",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "MimicGen",
+      "desc": "NVIDIA and UT Austin's data-generation system that synthesizes large demonstration datasets from a small number of human demos via object-centric transform-and-replay; released sets cover 48,000+ demonstrations across 12 manipulation tasks.",
+      "license": "NVIDIA Source Code License (code) / CC BY 4.0 (data)",
+      "link": "https://github.com/NVlabs/mimicgen",
+      "access": "Open"
+    },
+    {
+      "id": "dexmimicgen",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "DexMimicGen",
+      "desc": "Extends MimicGen's automated data-generation approach to bimanual dexterous-hand manipulation tasks.",
+      "license": "NVIDIA Source Code License (code) / CC BY 4.0 (data)",
+      "link": "https://github.com/NVlabs/dexmimicgen",
+      "access": "Open"
+    },
+    {
+      "id": "robocasa",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "RoboCasa / RoboCasa365",
+      "desc": "Large-scale simulation of everyday household tasks for generalist robots; RoboCasa365 expands the original 120-kitchen-scene release to 365 LLM-guided tasks, 2,500+ scenes, and 2,000+ hours of human and generated robot demonstrations.",
+      "license": "MIT (code) / CC BY 4.0 (assets & data)",
+      "link": "https://github.com/robocasa/robocasa",
+      "access": "Open"
+    },
+    {
+      "id": "egomimic",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "EgoMimic",
+      "desc": "Georgia Tech's method and dataset pairing Project Aria egocentric human video with matched bimanual robot teleoperation demonstrations for cross-domain imitation learning.",
+      "license": "MIT",
+      "link": "https://github.com/SimarKareer/EgoMimic",
+      "access": "Open"
+    },
+    {
+      "id": "egoverse",
+      "tab": "datasets",
+      "category": "Egocentric Human Video",
+      "name": "EgoVerse",
+      "desc": "A growing egocentric human demonstration dataset for robot learning (1,362 hours, 80,000 episodes across 1,965 tasks), aggregating Project Aria captures, ALOHA teleoperation, and industry data partners.",
+      "license": "MIT",
+      "link": "https://github.com/GaTech-RL2/EgoVerse",
+      "access": "Open"
+    },
+    {
+      "id": "grail-nvidia",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "GRAIL",
+      "desc": "NVIDIA's synthetic data-generation pipeline producing physics-validated 4D human-object-interaction trajectories retargeted to the Unitree G1, covering pick-up, whole-body manipulation, sitting, and terrain traversal.",
+      "license": "Apache-2.0 (dataset outputs) / NVIDIA non-commercial license (code)",
+      "link": "https://github.com/NVlabs/GRAIL",
+      "access": "Open"
+    },
+    {
+      "id": "furniturebench",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "FurnitureBench",
+      "desc": "KAIST CLVR lab's long-horizon furniture-assembly manipulation benchmark on a real Franka arm (plus an Isaac-Gym simulated counterpart), with 200+ hours of teleoperation data.",
+      "license": "MIT",
+      "link": "https://github.com/clvrai/furniture-bench",
+      "access": "Open"
+    },
+    {
+      "id": "maniparena",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "ManipArena",
+      "desc": "A real-robot bimanual manipulation benchmark (20 tasks spanning execution reasoning, semantic reasoning, and mobile manipulation) from the CVPR 2026 Embodied AI Workshop; raw data hosted on Hugging Face in LeRobot format, with the benchmark spec and harness in the linked repo.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/maniparena/maniparena-repo",
+      "access": "Open"
+    },
+    {
+      "id": "unidex",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "UniDex",
+      "desc": "A robot foundation suite for universal dexterous-hand control, including 50,000+ trajectories across 8 dexterous hands retargeted from human egocentric video via human-in-the-loop retargeting.",
+      "license": "MIT",
+      "link": "https://github.com/unidex-ai/UniDex",
+      "access": "Open"
+    },
+    {
+      "id": "mimicplay",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "MimicPlay",
+      "desc": "Stanford and NVIDIA's hierarchical imitation-learning framework that trains a high-level planner on cheap unlabeled human \"play\" data and a low-level controller on a small teleoperated robot dataset.",
+      "license": "MIT",
+      "link": "https://github.com/j96w/MimicPlay",
+      "access": "Open"
+    },
+    {
+      "id": "umi",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "Universal Manipulation Interface (UMI)",
+      "desc": "A portable, robot-agnostic handheld gripper and data pipeline that turns in-the-wild human manipulation demonstrations into robot policies without a physical robot present during collection.",
+      "license": "MIT",
+      "link": "https://github.com/real-stanford/universal_manipulation_interface",
+      "access": "Open"
+    },
+    {
+      "id": "robomimic",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "robomimic",
+      "desc": "Stanford ARISE Initiative's framework and datasets (proficient-human, multi-human, and machine-generated demonstrations) for studying offline learning from robot manipulation data, spanning tasks like Lift, Can, Square, and Transport.",
+      "license": "MIT",
+      "link": "https://github.com/ARISE-Initiative/robomimic",
+      "access": "Open"
+    },
+    {
+      "id": "calvin",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "CALVIN",
+      "desc": "University of Freiburg's benchmark for language-conditioned long-horizon manipulation — 24 hours of simulated teleoperated \"play\" data across 4 tabletop environments with over 20,000 language directives.",
+      "license": "MIT",
+      "link": "https://github.com/mees/calvin",
+      "access": "Open"
+    },
+    {
+      "id": "maniskill2",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "ManiSkill2",
+      "desc": "SAPIEN-powered simulated manipulation benchmark with 4,000,000+ demonstration frames across 20 skill families and 2,000+ objects; the original ManiSkill2 repo has since merged into the unified ManiSkill codebase linked here.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/haosulab/ManiSkill",
+      "access": "Open"
+    },
+    {
+      "id": "roboarena",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "RoboArena",
+      "desc": "A distributed, real-world evaluation system for generalist robot policies built on a standardized DROID-based platform (Franka arm, Robotiq gripper, ZED cameras); episode data released as periodic dated snapshots on Hugging Face.",
+      "license": "MIT",
+      "link": "https://github.com/robo-arena/roboarena",
+      "access": "Open"
+    },
+    {
+      "id": "less-tactile",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "LESS (Local Encoder for Spatial Sensing)",
+      "desc": "Technion's tactile-imaging dataset — 800+ hours of poke and palpation trajectories collected with a Franka arm and a gel-based tactile sensor on soft phantoms, paired with MRI ground truth for internal-structure reconstruction.",
+      "license": "MIT (code) / CC BY 4.0 (data)",
+      "link": "https://github.com/zoharri/LESS",
+      "access": "Open"
+    },
+    {
+      "id": "egohumanoid-sample",
+      "tab": "datasets",
+      "category": "Egocentric Human Video",
+      "name": "EgoHumanoid (sample)",
+      "desc": "OpenDriveLab's sample release pairing egocentric human demonstrations (PICO VR, ZED Mini) with a smaller Unitree G1 teleoperation subset, used to co-train a VLA policy for humanoid loco-manipulation.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/OpenDriveLab/EgoHumanoid",
+      "access": "Open"
+    },
+    {
+      "id": "ph2d",
+      "tab": "datasets",
+      "category": "Egocentric Human Video",
+      "name": "PH2D",
+      "desc": "\"Physical Human-Humanoid Data\" — egocentric human task demonstrations (Apple Vision Pro, Meta Quest 3) paired with real and simulated Unitree H1 teleoperation data, used to train the Human Action Transformer.",
+      "license": "MIT",
+      "link": "https://github.com/RogerQi/human-policy",
+      "access": "Open"
+    },
+    {
+      "id": "robodojo",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "RoboDojo",
+      "desc": "A unified sim-and-real benchmark for generalist robot manipulation policies, spanning 42 Isaac Sim tasks and 18 real-world tasks across three robot embodiments.",
+      "license": "MIT",
+      "link": "https://github.com/RoboDojo-Benchmark/RoboDojo",
+      "access": "Open"
+    },
+    {
+      "id": "g1-moves",
+      "tab": "datasets",
+      "category": "Human Motion Capture",
+      "name": "G1 Moves",
+      "desc": "60 motion-capture-to-Unitree-G1-retargeted clips (dance and karate choreography) with exported RL policies.",
+      "license": "Not specified on the repo — the Hugging Face data release is CC BY 4.0",
+      "link": "https://github.com/experientialtech/g1-moves",
+      "access": "Open"
+    },
+    {
+      "id": "fmb",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "Functional Manipulation Benchmark (FMB)",
+      "desc": "UC Berkeley RAIL's benchmark for diverse, contact-rich manipulation — 22,550 demonstrations of single- and multi-stage assembly tasks.",
+      "license": "CC BY 4.0 (data, per the project page) — no separate license declared for the repo code",
+      "link": "https://github.com/rail-berkeley/fmb",
+      "access": "Open"
+    },
+    {
+      "id": "robocoin",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "RoboCOIN",
+      "desc": "BAAI/FlagOpen's open bimanual manipulation dataset spanning 15 robot platforms, 421 tasks, and 180,000+ demonstrations, with roughly two-thirds of platforms being half- or full-humanoid embodiments.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/FlagOpen/RoboCOIN",
+      "access": "Open"
+    },
+    {
+      "id": "openhlm-data",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "OpenHLM-data",
+      "desc": "Training data for whole-body humanoid loco-manipulation on the Unitree G1, combining teleoperation and human-motion-capture pipelines; raw data hosted on Hugging Face, with conversion code and pipelines in the linked repo.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/OpenHLM-project/OpenHLM",
+      "access": "Open"
+    },
+    {
+      "id": "psi-data",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "Ψ0 / psi-data",
+      "desc": "Training data (real-world task demos, simulated data, pretraining data) behind Ψ0, an open foundation model for universal humanoid loco-manipulation; raw data hosted on Hugging Face, with code and loaders in the linked repo.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/physical-superintelligence-lab/Psi0",
+      "access": "Open"
+    },
+    {
+      "id": "humanoid-everyday",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "Humanoid Everyday",
+      "desc": "Unitree G1/H1 demonstrations across roughly 260 everyday household tasks (RGB, depth, and LiDAR at 30Hz, ~500GB); raw data hosted on Hugging Face, with dataloader and conversion code in the linked repo.",
+      "license": "MIT",
+      "link": "https://github.com/physical-superintelligence-lab/Humanoid-Everyday",
+      "access": "Open"
+    },
+    {
+      "id": "touch-and-go",
+      "tab": "datasets",
+      "category": "Egocentric Human Video",
+      "name": "Touch and Go",
+      "desc": "~13,900 human touches (246,000 paired vision-tactile frames) across ~3,971 real-world objects, captured in the wild with a GelSight tactile sensor for learning cross-modal vision-touch representations.",
+      "license": "CC BY 4.0",
+      "link": "https://github.com/fredfyyang/Touch-and-Go",
+      "access": "Open"
+    },
+    {
+      "id": "cmu-mocap",
+      "tab": "datasets",
+      "category": "Human Motion Capture",
+      "name": "CMU Motion Capture Database",
+      "desc": "One of the oldest and most widely used motion-capture datasets in existence — 2,605 motion sequences across 6 categories from 140+ subjects, maintained by the CMU Graphics Lab on its own server since before GitHub existed.",
+      "license": "Free for research and commercial use (CMU's own terms); citation of NSF EIA-0196217 requested, not required",
+      "link": "http://mocap.cs.cmu.edu/",
+      "access": "Open"
+    },
+    {
+      "id": "rt-1",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "RT-1",
+      "desc": "Google DeepMind's foundational robotics transformer dataset — roughly 130,000 real-robot episodes across 700+ tasks collected on 13 EDR robots, later folded into Open X-Embodiment. No dataset-owned GitHub repo; the data lives in a Google Cloud Storage bucket, and the GitHub repo (google-research/robotics_transformer) is model code only.",
+      "license": "Not separately stated by RT-1's own release; distributed as part of Open X-Embodiment (CC-BY data / Apache-2.0 code)",
+      "link": "https://robotics-transformer1.github.io/",
+      "access": "Open"
+    },
+    {
+      "id": "molmoact-dataset",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "MolmoAct Dataset",
+      "desc": "Ai2's real-world manipulation dataset behind MolmoAct — 10,689 trajectories on a single-arm Franka across 93 tasks (7,730 home trajectories, 2,959 tabletop trajectories), collected in-house and released in LeRobot format.",
+      "license": "Apache-2.0",
+      "link": "https://huggingface.co/datasets/allenai/MolmoAct-Dataset",
+      "access": "Open"
+    },
+    {
+      "id": "molmoact2-bimanual-yam",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "MolmoAct2 Bimanual YAM Dataset",
+      "desc": "Ai2's bimanual manipulation dataset for MolmoAct2 — roughly 34,500 demonstrations (720+ hours) across 28+ tasks on a bimanual YAM robot platform.",
+      "license": "Apache-2.0",
+      "link": "https://huggingface.co/datasets/allenai/MolmoAct2-BimanualYAM-Dataset",
+      "access": "Open"
+    },
+    {
+      "id": "molmoact2-so100-101",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "MolmoAct2 SO-100/101 Dataset",
+      "desc": "Ai2's community-sourced manipulation dataset for MolmoAct2 — 38,059 episodes (19.8M frames, ~184 hours) curated and quality-gated from 1,222 public LeRobot repos contributed by 377 users on SO-100/SO-101 arms.",
+      "license": "Apache-2.0",
+      "link": "https://huggingface.co/datasets/allenai/MolmoAct2-SO100_101-Dataset",
+      "access": "Open"
+    },
+    {
+      "id": "robomind-2",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "RoboMIND 2.0",
+      "desc": "A large Chinese cross-embodiment manipulation dataset — 310,000+ bimanual trajectories across 6 embodiments (including a TienKung humanoid) and 739 tasks.",
+      "license": "Apache-2.0 (per the dataset's metadata tag; the release itself ships with a near-empty card, so this is the license the org has applied rather than a detailed license clause)",
+      "link": "https://huggingface.co/datasets/x-humanoid-robomind/RoboMIND2.0",
+      "access": "Open"
+    },
+    {
+      "id": "unitree-unifolm-wbt",
+      "tab": "datasets",
+      "category": "Human Motion Capture",
+      "name": "Unitree UnifoLM-WBT",
+      "desc": "Unitree's whole-body teleoperation dataset for the G1 humanoid, released as a collection of task-specific Hugging Face repos rather than one unified dataset artifact.",
+      "license": "Apache-2.0",
+      "link": "https://huggingface.co/collections/unitreerobotics/unifolm-wbt-dataset",
+      "access": "Open"
+    },
+    {
+      "id": "nvidia-groot-x-embodiment-sim",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "NVIDIA GR00T X-Embodiment Sim",
+      "desc": "NVIDIA's simulated post-training dataset for GR00T N1 — roughly 425,000 trajectories (1.91TB) spanning cross-embodiment bimanual manipulation, humanoid tabletop manipulation, robot-arm kitchen manipulation, and Unitree G1 loco-manipulation.",
+      "license": "CC-BY-4.0",
+      "link": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim",
+      "access": "Open"
+    },
+    {
+      "id": "omniretarget",
+      "tab": "datasets",
+      "category": "Human Motion Capture",
+      "name": "OmniRetarget",
+      "desc": "A human-motion-to-humanoid retargeting dataset for the Unitree G1 — about 4 hours of publicly released motion (object-interaction, terrain, and combined scenarios); the LAFAN1 source motions it also draws on can't be redistributed, so they're excluded from the public release.",
+      "license": "MIT",
+      "link": "https://huggingface.co/datasets/omniretarget/OmniRetarget_Dataset",
+      "access": "Open"
+    },
+    {
+      "id": "teach",
+      "tab": "datasets",
+      "category": "Gameplay / Simulated Interaction",
+      "name": "TEACh",
+      "desc": "Amazon's dataset of human-human interactive dialogues collected to complete household tasks inside the AI2-THOR simulator — one person plays a sighted \"Commander\" who can see the task, the other a \"Follower\" who executes it, producing paired dialogue, egocentric observations, and action sequences for training embodied agents that can both act and converse about the task.",
+      "license": "Code: MIT; images: Apache-2.0; dataset: CDLA-Sharing-1.0 (share-alike applies to redistributing the data itself, not to models trained on it)",
+      "link": "https://github.com/alexa/teach",
+      "access": "Open"
+    },
+    {
+      "id": "alfred",
+      "tab": "datasets",
+      "category": "Gameplay / Simulated Interaction",
+      "name": "ALFRED",
+      "desc": "A benchmark pairing natural-language instructions and egocentric vision with expert action sequences for long-horizon household tasks in AI2-THOR, including irreversible state changes (e.g. a sliced apple can't be unsliced) that make it harder to game than simpler simulated-instruction benchmarks.",
+      "license": "MIT",
+      "link": "https://github.com/askforalfred/alfred",
+      "access": "Open"
+    },
+    {
+      "id": "roboturk",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "RoboTurk",
+      "desc": "Stanford's crowdsourced teleoperation platform and dataset — remote workers control a real Sawyer robot arm through a web/gamified interface to produce long-horizon manipulation demonstrations (block-stacking, laundry layout, tower creation), scaling data collection beyond what a single lab can teleoperate in person.",
+      "license": "MIT",
+      "link": "https://github.com/RoboTurk-Platform/roboturk_real_dataset",
+      "access": "Open"
+    }
+  ]
+}

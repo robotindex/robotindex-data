@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "agility-robotics-digit-5",
+  "slug": "product-agility-robotics-digit-5.html",
+  "name": "Agility Robotics Digit 5",
+  "manufacturer": "Agility Robotics",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "The fifth generation of Agility Robotics' warehouse-and-logistics humanoid, unveiled September 15, 2026 as a near-total redesign: human-like forward-bending knees replace the bird-inspired reverse-knee legs Digit has used since 2017, payload rises to 50 lb, and a fast-charge battery targets a 10:1 run-to-charge ratio for roughly 20 hours of daily work. It isn't shipping yet — early access starts in H1 2027 — and every Digit currently working at a customer site today is still the prior Digit 4.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "90 min runtime",
+      "note": "9 min fast recharge; ~10:1 run-to-charge ratio claimed"
+    },
+    {
+      "label": "Weight",
+      "value": "284 lb (129 kg)",
+      "note": "roughly double Digit 4's ~140 lb"
+    },
+    {
+      "label": "Height",
+      "value": "5'11\" (1.81m)",
+      "note": "up from ~5'9\" on Digit 4"
+    },
+    {
+      "label": "Compute",
+      "value": "NVIDIA IGX Thor",
+      "note": "plus NVIDIA Halos safety framework; degrees of freedom unconfirmed by Agility"
+    },
+    {
+      "label": "Payload",
+      "value": "50 lb (22.7 kg)",
+      "note": "+40% over Digit 4's 35 lb"
+    },
+    {
+      "label": "Reach",
+      "value": "7.2 ft (2.2m)",
+      "note": "overhead reach"
+    },
+    {
+      "label": "Legs",
+      "value": "Human-like knees",
+      "note": "replaces the bird-inspired reverse-knee design Digit used since 2017"
+    },
+    {
+      "label": "Hands",
+      "value": "Two-finger gripper",
+      "note": "not a dexterous humanoid hand — true of every Digit generation"
+    },
+    {
+      "label": "Availability",
+      "value": "Announced, not shipping",
+      "note": "early access H1 2027; general availability late 2027"
+    }
+  ],
+  "sourcing": "Verified against Agility's own Digit 5 announcement and product page, PR Newswire, The Robot Report (\"The Evolution of Digit\" retrospective and its Digit 5 legs/battery/safety coverage), GeekWire, Forbes, TechRepublic, Businesswire's SPAC merger announcement, Contrary Research, TechCrunch's 2024 layoffs reporting, an independent SEC-filing analysis (digidai.github.io), and Automate.org. Flagged as lower-confidence or unconfirmed: the reported ~$400M/~$1.8B Series C figures; a ~16 degrees-of-freedom figure cited only by a third-party aggregator; the $8,500/month RaaS rate and ~$250,000 purchase price, both analyst estimates rather than Agility-confirmed pricing; and the \"$300M+ in orders\" headline, which traces to one conditional, related-party contract rather than diversified demand. This entry's tier remains \"pending\" because Digit 5 itself has not shipped to any customer as of this research.",
+  "manufacturerUrl": "https://www.agilityrobotics.com/solutions/digit-5",
+  "pricing": {
+    "summary": "No public price exists for Digit 5, or for any Digit generation — Agility sells only through negotiated enterprise contracts, generally structured as Robots-as-a-Service (RaaS) rather than a purchase. Analyst estimates for the RaaS rate on the prior Digit 4 generation cluster around $8,500 per robot per month, and a roughly $250,000 one-time purchase price was reported for an early Digit unit around 2020, but neither figure is confirmed by Agility for Digit 5."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "TechCrunch reported Amazon's Digit pilots \"ended without announced next steps\" around a round of Agility layoffs, and Agility's own 2026 SPAC filings describe Amazon only as \"an active pilot partner,\" not a paying customer — treat any claim that Amazon is a current Digit customer with caution. Agility's claim of being \"the first humanoid to pass an OSHA-recognized safety evaluation\" is also real but narrower than it sounds — it covers only a site-specific Digit 4 field test, not Digit 5 or any finalized industry safety standard."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Agility Robotics Digit 5 has not released a public SDK, firmware repo, or developer API; the only related public code found is a third-party ROS 2 workspace that installs a private \"agility-pysdk\" wheel to talk to Agility's own JSON API — not an official SDK or resource. Not currently listed in Builds & Mods."
+    }
+  ]
+}

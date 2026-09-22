@@ -1,0 +1,86 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "husqvarna-automower-450x",
+  "slug": "product-husqvarna-automower-450x.html",
+  "name": "Husqvarna Automower 450X",
+  "manufacturer": "Husqvarna",
+  "category": "Outdoor & Yard",
+  "subcategory": "Robot Lawn Mowers",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A premium wire-guided robotic mower from Husqvarna's X-line, covering up to 1.25 acres with GPS-assisted navigation, GPS theft tracking, and Alexa/Google Home support. Boundary wire plus GPS-assist — not a wire-free EPOS unit.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "10Ah Li-Ion",
+      "note": "~4.5 hr runtime, 60 min charge"
+    },
+    {
+      "label": "Weight",
+      "value": "30.6 lbs"
+    },
+    {
+      "label": "Dimensions",
+      "value": "28.3 × 22 × 12.2 in"
+    },
+    {
+      "label": "Navigation",
+      "value": "Boundary wire + GPS",
+      "note": "not wire-free EPOS"
+    },
+    {
+      "label": "Max Coverage",
+      "value": "1.25 acres",
+      "note": "±20%"
+    },
+    {
+      "label": "Cutting Width",
+      "value": "9.45 in",
+      "note": "(24 cm)"
+    },
+    {
+      "label": "Cutting Height",
+      "value": "0.8–2.4 in",
+      "note": "electrically adjustable"
+    },
+    {
+      "label": "Max Slope",
+      "value": "45%",
+      "note": "15% at boundary wire"
+    },
+    {
+      "label": "Noise",
+      "value": "59 dB(A)"
+    },
+    {
+      "label": "Subscription",
+      "value": "Free, no subscription",
+      "note": "Automower Connect app; GPS tracking included"
+    }
+  ],
+  "sourcing": "Verified against Husqvarna's own official 450X product pages (US/Canada) and an independent Trusted Reviews review. The 450X is a wire-guided model with GPS-assist for efficiency and theft tracking — it is not a wire-free EPOS mower, and should not be confused with the separately-sold \"450X NERA\" (adds an optional EPOS wire-free module) or with Husqvarna's newer entry-tier \"iQ\" series. Pricing varies noticeably by retailer/market and by whether professional installation is bundled; Husqvarna's own site was treated as authoritative.",
+  "manufacturerUrl": "https://www.husqvarna.com/us/robotic-lawn-mowers/automower-450x-with-installation-service/",
+  "pricing": {
+    "summary": "Husqvarna's own Canadian site lists an MSRP of **$4,299.99** for the 450X. Some third-party retailers advertise a \"450X EPOS\" bundle in the $2,999–$3,500 range, which appears to be a different or older SKU rather than the current model, so buyers should confirm the exact SKU and treat Husqvarna's own site as authoritative."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "The 450X combines a physical boundary wire with GPS-assisted navigation, plus GPS theft tracking, GeoFence alerts, and PIN protection. It's IPX4-rated, using a \"Weather Timer\" that adjusts mowing frequency to grass growth, with Alexa/Google Home app connectivity. Reviewers praised slope handling but noted its razor-blade cutter doesn't mulch leaves or twigs, and professional installation is nearly mandatory."
+    },
+    {
+      "heading": "Insights",
+      "body": "The 450X is a wire-guided model with GPS-assist for efficiency and anti-theft tracking, not a wire-free EPOS mower — it shouldn't be confused with the separately-sold \"450X NERA\" or Husqvarna's newer entry-tier \"iQ\" series. Husqvarna's own Canadian site lists an MSRP of $4,299.99, while some third-party retailers advertise a \"450X EPOS\" bundle at $2,999–$3,500 that appears to be a different or older SKU."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Husqvarna Automower 450X has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

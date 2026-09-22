@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "hiwonder-mentorpi-t1",
+  "slug": "product-hiwonder-mentorpi-t1.html",
+  "name": "Hiwonder MentorPi T1",
+  "manufacturer": "Hiwonder",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Mobile Robot Kits",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A Raspberry Pi 5, ROS2 Humble tracked robot with a genuine structured-light depth camera and 2D LiDAR for SLAM — the tank-tread member of Hiwonder's MentorPi family, alongside the Ackermann-steered A1 and Mecanum-wheel M1. A real, budget-tier alternative to TurtleBot4 or Yahboom ROSMASTER for the same use case, at roughly half to a third of TurtleBot4's price.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "Li-ion, ~7.4V",
+      "note": "exact capacity not published for T1; ~1 hr charge time"
+    },
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Compute",
+      "value": "Raspberry Pi 5",
+      "note": "sold bare or with 2/4/8/16GB RAM; STM32 sub-controller handles motors"
+    },
+    {
+      "label": "Software",
+      "value": "ROS2 Humble, Nav2/SLAM",
+      "note": "+ YOLOv11 vision and an LLM/voice \"embodied AI\" layer"
+    },
+    {
+      "label": "Chassis",
+      "value": "Aluminum, tank tread",
+      "note": "rubber tracks; exact dimensions/weight/payload undocumented by Hiwonder"
+    },
+    {
+      "label": "Depth Camera",
+      "value": "Hiwonder Aurora930 Pro",
+      "note": "genuine structured-light RGB-D, 640×400 @12fps, 0.3–3m range"
+    },
+    {
+      "label": "LiDAR",
+      "value": "Hiwonder \"COIN-D6\"",
+      "note": "2D SLAM lidar; no independent datasheet found — specs unverified"
+    },
+    {
+      "label": "2nd Camera",
+      "value": "Mono USB, 640×480",
+      "note": "170° FOV; used for line-following/color-tracking demos"
+    },
+    {
+      "label": "Kit Tiers",
+      "value": "Starter / Standard / Advanced",
+      "note": "differ in accessories; price scales with tier and Pi RAM"
+    }
+  ],
+  "sourcing": "Specs compiled from Hiwonder's own product and documentation pages and GitHub repository as of this build. The LiDAR's exact range/accuracy specs and the T1 chassis's dimensions, weight, and payload capacity were not independently verifiable — confirm before purchase.",
+  "manufacturerUrl": "https://www.hiwonder.com/products/mentorpi-t1",
+  "pricing": {
+    "summary": "Hiwonder's own site lists a base configuration from $329.99; RobotShop carries a Starter Kit (Pi 5, 4GB) at $599.99 up to a Standard Kit (Pi 5, 16GB) at $977.99, with an Advanced tier also listed on Amazon. Realistic buy-in for a functional kit runs roughly $600–$1,000 depending on configuration — well under TurtleBot4's current $1,500–$2,000+ price range for a comparable ROS2/SLAM/depth-camera setup, and in the same bracket as Yahboom ROSMASTER."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Hiwonder's MentorPi GitHub repository contains real, substantial ROS2 packages (SLAM, navigation, YOLO vision), but it has no LICENSE file, so no Open Source badge is applied here — the same situation as this catalog's Yahboom ROSMASTER entry. A published review of the sibling A1 chassis, which shares the same electronics and software stack, found its unit shipped with a default firmware configuration that didn't match the ordered variant and required manual reconfiguration, a plausible risk worth watching for on T1 as well."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Hiwonder's official GitHub repo ships substantial ROS2 packages (SLAM, navigation, YOLO vision) for MentorPi, though it carries no LICENSE file."
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "sunflower-labs-bee-hive",
+  "slug": "product-sunflower-labs-bee-hive.html",
+  "name": "Sunflower Labs (The Bee + Hive)",
+  "manufacturer": "Sunflower Labs",
+  "category": "Security",
+  "subcategory": "Outdoor Security",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "An autonomous residential drone-in-a-box security system: ground sensors (\"Sunflowers\") detect motion/vibration and trigger a fully autonomous drone (\"Bee\") to launch from its dock (\"Hive\"), fly to investigate, and stream live video — no pilot needed.",
+  "specs": [
+    {
+      "label": "Camera",
+      "value": "1920×1080 @ 25fps",
+      "note": "50°(v)/100°(h) FOV; optional thermal on newer hardware"
+    },
+    {
+      "label": "Flight",
+      "value": "Fully autonomous",
+      "note": "GPS/RTK-guided, no pilot input needed"
+    },
+    {
+      "label": "Flight Time",
+      "value": "~15 min",
+      "note": "+ 5 min reserve; ~1:2 recharge ratio"
+    },
+    {
+      "label": "Obstacle Avoidance",
+      "value": "Ultrasonic",
+      "note": "rated to 6m"
+    },
+    {
+      "label": "Range",
+      "value": "Up to 600m",
+      "note": "from the Hive dock"
+    },
+    {
+      "label": "Wind Tolerance",
+      "value": "9 m/s sustained",
+      "note": "14 m/s gusts"
+    },
+    {
+      "label": "Hive Requirements",
+      "value": "110/220V power",
+      "note": "+ wired ~6Mbps internet"
+    },
+    {
+      "label": "Sensor Range",
+      "value": "~20 ft/unit",
+      "note": "per \"Sunflower\" ground sensor"
+    },
+    {
+      "label": "Bee Weight",
+      "value": "1.56 kg",
+      "note": "battery included; sunflower-labs.com/specs"
+    },
+    {
+      "label": "Bee Dimensions",
+      "value": "28 × 28 × 21 cm",
+      "note": "body only; 48 × 48 × 21 cm with propeller guards"
+    },
+    {
+      "label": "Hive Weight",
+      "value": "35 kg",
+      "note": "dock unit; sunflower-labs.com/specs"
+    },
+    {
+      "label": "Hive Dimensions",
+      "value": "86 × 80 × 80 cm",
+      "note": "closed; 98 × 80 × 63 cm when open"
+    },
+    {
+      "label": "Subscription",
+      "value": "None confirmed",
+      "note": "only a usage-based ~$4–7/hr flight-operating cost is documented; no separate cloud-storage subscription found"
+    }
+  ],
+  "sourcing": "Verified against Sunflower Labs' own official site (sunflower-labs.com) and funding/regulatory press releases (BusinessWire, 2020 and 2025), plus independent hands-on coverage from TechCrunch and Engadget. This is an actively shipping, expanding product — Sunflower Labs reported more than doubling its customer base and 10x-ing autonomous patrol volume in the year before its November 2025 raise, with deployments across North America, Europe, Japan, Australia, and Argentina — not a demo-only pilot phase, despite the \"New & Pending\" tag reflecting that it hasn't yet been given its own detailed comparison against mainstream consumer security products in this catalog.",
+  "manufacturerUrl": "https://www.sunflower-labs.com/",
+  "pricing": {
+    "summary": "Originally launched in 2020 at **$9,950** hardware plus a $999 deposit. Pricing is now quote-based through an online property-configuration tool rather than a fixed number, with reported ongoing operating costs of roughly $4–7 per hour of active drone flight, plus an 8–12 week installation process — reflecting its positioning as a premium, estate-scale system rather than an off-the-shelf consumer product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "As of November 2025, Sunflower Labs holds a nationwide, performance-based FAA waiver covering roughly 99% of the US that permits beyond-visual-line-of-sight flight, operation over people and vehicles, and low-visibility flight without needing per-site approval — a significant upgrade from the case-by-case Part 107 waivers the system previously required."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Sunflower Labs has not released a public SDK, firmware repo, or developer API for The Bee + Hive. Not currently listed in Builds & Mods."
+    }
+  ]
+}

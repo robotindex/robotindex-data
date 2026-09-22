@@ -1,0 +1,90 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "pollen-robotics-reachy-mini",
+  "slug": "product-pollen-robotics-reachy-mini.html",
+  "name": "Pollen Robotics Reachy Mini",
+  "manufacturer": "Pollen Robotics",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Classroom & Coding Kits",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A stationary desktop AI/robotics development platform from Pollen Robotics (acquired by Hugging Face in April 2025), built around a 6-DOF head with 2 animated antennas and ±160° body rotation. Ships as a self-assembly kit in two variants: a tethered \"Lite\" (Raspberry Pi CM4 compute lives on your own computer) and a standalone \"Wireless\" with onboard CM4 compute, Wi-Fi, and battery power. Programmed via an open Python/JavaScript SDK, with a Hugging Face-hosted app store offering 200+ community-built behaviors. Launched July 2025; no legs or wheels, unlike Pollen's newer bipedal Microduck.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "1.5 kg",
+      "note": "per Seeed Studio's official Reachy Mini documentation"
+    },
+    {
+      "label": "Dimensions",
+      "value": "28 × 16 cm (H × W)",
+      "note": "~23cm tall in \"sleep mode\"; no official depth figure published"
+    },
+    {
+      "label": "Sensors",
+      "value": "Camera, 4-mic array, speaker",
+      "note": "Pi Camera Module 2 w/ 16mm fisheye lens per an independent teardown; Wireless adds an onboard IMU; mic count on Lite is inconsistently reported across sources (2 vs. 4)"
+    },
+    {
+      "label": "Compute",
+      "value": "Raspberry Pi CM4 (Wireless)",
+      "note": "confirmed via Pollen's own store pages and an independent teardown; some secondary press incorrectly cites Pi 4 or Pi 5"
+    },
+    {
+      "label": "Software",
+      "value": "Apache 2.0 SDK",
+      "note": "Python + JavaScript SDKs, verified genuinely open via the GitHub LICENSE file; LeRobot integration exists only as an unmerged, stale pull request as of this writing, not a shipped feature"
+    },
+    {
+      "label": "Movement",
+      "value": "6-DOF head + 2 antennas",
+      "note": "plus ±160° full-body rotation, 9 servo motors total; stationary desktop unit only, no legs or wheels"
+    },
+    {
+      "label": "Body",
+      "value": "~28cm tall, ~1.5kg",
+      "note": "~23cm in \"sleep mode\"; ~16cm wide"
+    },
+    {
+      "label": "Variants",
+      "value": "Lite vs. Wireless",
+      "note": "Lite is tethered by USB-C to a host Mac/Linux computer for power and all compute; Wireless has its own onboard compute, Wi-Fi, and battery"
+    },
+    {
+      "label": "Assembly",
+      "value": "Self-assembly kit, ~2-3hrs",
+      "note": "no soldering or 3D printing required; a reviewer found setup less \"utterly trivial\" in practice than launch marketing claimed"
+    },
+    {
+      "label": "Hardware openness",
+      "value": "Promised, incomplete",
+      "note": "marketed as \"open source everything\" including hardware, but an open, unanswered Nov 2025 GitHub issue states mechanical/CAD files aren't yet fully released"
+    },
+    {
+      "label": "Apps",
+      "value": "200+ community apps",
+      "note": "via a Hugging Face-hosted app store (May 2026) from 150+ creators, incl. a Conversation app that one reviewer found auto-connects to OpenAI's API without explicit consent, in tension with HF's \"no data stored by default\" claim"
+    }
+  ],
+  "sourcing": "Specs and history compiled from Hugging Face's own launch blog and app-store announcement, Pollen Robotics' own product and store pages, the `pollen-robotics/reachy_mini` GitHub repository (including its LICENSE file and open issue tracker), an independent technical hands-on (Jeff Geerling), and comparison/review coverage (Autonomous.ai, The Bot Scout, VentureBeat, Seeed Studio). Several details are flagged as unconfirmed above: the exact date pricing rose from launch levels, precise current mic count on the Lite variant, the exact license terms on whatever hardware files Pollen has released, and the current merge status of LeRobot integration (an open pull request, not yet shipped, as of this check). This entry hasn't yet been cross-linked into the rest of the Classroom & Coding Kits subcategory; it was already present in the directory listing prior to this pass, so no directory.js/directory.html edit was needed here.",
+  "manufacturerUrl": "https://pollen-robotics.com/reachy-mini/",
+  "pricing": {
+    "summary": "Reachy Mini launched in July 2025 at **$299** for the Lite and **$449** for the Wireless variant, but current pricing on Hugging Face's and Pollen's own pages has since risen to **$399** and **$499** respectively (€350/€435 on Pollen's EU store). It's sold directly by Pollen (EU/UK and US/Canada stores) and through Seeed Studio as an alternate distributor."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Reachy Mini's software is genuinely open source (Apache 2.0), but the \"open source everything\" hardware claim isn't yet delivered — the launch blog listed hardware release details as \"coming soon,\" and an unanswered November 2025 GitHub issue notes mechanical 3D-print files remain incomplete. A review by hardware reviewer Jeff Geerling also flagged that its built-in Conversation app auto-connects to OpenAI's API by default without explicit user consent — in tension with Hugging Face's claim that the robot doesn't store or transmit personal data by default."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Pollen Robotics' official Apache 2.0-licensed SDK (Python and JavaScript) for Reachy Mini, verified against its GitHub LICENSE file."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "agilex-piper",
+  "slug": "product-agilex-piper.html",
+  "name": "AgileX PiPER",
+  "manufacturer": "AgileX Robotics",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A fully assembled, manufactured 6-axis desktop arm from AgileX Robotics — a Shenzhen company better known for mobile robot platforms like Scout and Ranger, now expanding into embodied-AI manipulator hardware. Sits between hobbyist kits like SO-101 and true industrial cobots: closed mechanical design with a genuinely open-source Python SDK and ROS driver on top, aimed at teleoperation, data collection, and imitation-learning research (ACT, Diffusion Policy) rather than factory-floor automation.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "4.2 kg",
+      "note": "arm only, per AgileX's official product page"
+    },
+    {
+      "label": "Software",
+      "value": "`piper_sdk` + `piper_ros`",
+      "note": "both genuinely MIT-licensed; ROS1 Noetic confirmed, ROS2 claimed by AgileX but not independently verified in the repo"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "6 axes",
+      "note": "consistent across official spec sheet and manual"
+    },
+    {
+      "label": "Payload",
+      "value": "1.5kg",
+      "note": "a reseller listing showing 1kg appears stale/inconsistent with official specs"
+    },
+    {
+      "label": "Actuators",
+      "value": "Not disclosed",
+      "note": "AgileX doesn't publish servo brand/model or backlash figures — a real transparency gap"
+    },
+    {
+      "label": "Controller",
+      "value": "External host required",
+      "note": "CAN bus native, USB via CAN adapter; no onboard compute — BYO PC or Jetson"
+    },
+    {
+      "label": "Reach",
+      "value": "626mm",
+      "note": "one US reseller lists 615mm — treat the official spec/manual figure as authoritative"
+    },
+    {
+      "label": "Repeatability",
+      "value": "±0.1mm (official)",
+      "note": "a third-party blog claims ±0.05mm — unverified, treat the official figure as authoritative"
+    },
+    {
+      "label": "Construction",
+      "value": "Manufactured aluminum",
+      "note": "closed mechanical design, not an open-hardware kit"
+    },
+    {
+      "label": "End Effector",
+      "value": "Parallel 2-finger gripper",
+      "note": "0–70mm opening, 40N clamp force; a separate force-feedback teleop gripper also exists"
+    }
+  ],
+  "sourcing": "Specs compiled from AgileX's official product page and user manual, Génération Robots' EU listing, the piper_sdk and piper_ros GitHub repositories (LICENSE files verified directly), an independent arXiv teleoperation paper, and a third-party SDK-wrapper repo's integration notes. Several details are flagged as unconfirmed or conflicting above: repeatability (official ±0.1mm vs. a third-party ±0.05mm claim), reach/payload/weight (one US reseller's figures conflict with official specs), full ROS2 support (vendor-claimed, not independently verified), actuator brand/model (never disclosed), and current price (ranges from $1,999 official to $3,990+ via some US resellers). This entry hasn't yet been cross-linked into the rest of the Robot Arms subcategory or synced to the directory listing; that's planned for a later pass.",
+  "manufacturerUrl": "https://global.agilex.ai/products/piper",
+  "pricing": {
+    "summary": "AgileX's own global store lists the arm at **$1,999** (about €2,000 ex-VAT via Génération Robots in the EU), sold arm-only with compute (a PC or NVIDIA Jetson) bring-your-own. US resellers (usrobotstore, Silicon Valley Robotics Center) charge $3,990–$3,999 for the same product — likely import/distribution markup rather than a different variant — and 2025 press cited a $2,499 launch price, so the figure varies meaningfully by source."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "PiPER is a fully assembled, closed-hardware arm — AgileX doesn't publish its actuators' brand, model, or backlash specs — while the software layer (`piper_sdk`, `piper_ros`) carries verified MIT licenses, though the ROS2-compatibility claim is vendor-stated rather than independently confirmed; this catalog's Open Source badge covers only that SDK/ROS layer."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "AgileX's own official Python SDK for controlling the PiPER arm, published under its GitHub organization."
+    }
+  ]
+}

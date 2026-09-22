@@ -1,0 +1,90 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "tamagotchi-uni",
+  "slug": "product-tamagotchi-uni.html",
+  "name": "Tamagotchi Uni",
+  "manufacturer": "Bandai",
+  "category": "Pets & Toys",
+  "subcategory": "Toys & Characters",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A wrist-worn, color-screen virtual pet from Bandai and the first Tamagotchi with genuine Wi-Fi connectivity, letting owners' characters interact with other Uni owners worldwide through an online hub called the Tamaverse rather than requiring two devices to be physically near each other. The unit shown is the Sanrio Characters special edition, themed around Hello Kitty's 50th anniversary with My Melody, Kuromi, and Chococat.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "Built-in rechargeable",
+      "note": "USB-C, ~90 min charge; ~2–3 days per charge (range: 1.5 days–1.5 weeks across sources)"
+    },
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "no official figure found in this research; Bandai's manual and major retailers omit it"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Not published",
+      "note": "one retailer's 120×110×70mm figure appears to be packaging size, not the device — not used"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Wi-Fi (2.4GHz only)",
+      "note": "no 5/6GHz, captive-portal, or enterprise networks"
+    },
+    {
+      "label": "Sensors",
+      "value": "Motion/accelerometer",
+      "note": "powers a step-tracking \"Tama Walk\" feature"
+    },
+    {
+      "label": "Display",
+      "value": "Color LCD",
+      "note": "exact size/resolution not published by Bandai"
+    },
+    {
+      "label": "Form Factor",
+      "value": "Wrist-worn",
+      "note": "watch-style strap; interchangeable bands sold separately"
+    },
+    {
+      "label": "Controls",
+      "value": "Physical buttons",
+      "note": "no touchscreen, despite one aggregator's claim otherwise"
+    },
+    {
+      "label": "App",
+      "value": "None confirmed",
+      "note": "no dedicated companion app found; connects directly over Wi-Fi"
+    },
+    {
+      "label": "Mic/Camera",
+      "value": "None",
+      "note": "no microphone or camera on this model"
+    },
+    {
+      "label": "Subscription",
+      "value": "Optional DLC, no subscription",
+      "note": "base Tamaverse play is free; extra Tamaverse \"ticket\" areas sold individually (~£5/area) via Bandai's Tamaverse Ticket Shop"
+    }
+  ],
+  "sourcing": "Verified against Bandai's own official Tamagotchi site (US series/uni page, FAQ, Sanrio edition news posts and product page, Privacy Policy, and Terms of Use for the Uni toy line), Wikipedia's Tamagotchi article, Smithsonian Magazine's franchise history, the Tamagotchi Fandom Wiki, and reviews from GamesHub, T3, Out to Lunch, and Engadget. Exact screen size/resolution, device-only weight and dimensions, JPY and non-US Sanrio-edition pricing, and whether a companion app exists at all are not confirmed by any source found. Battery life is reported inconsistently (roughly 1.5 days to 1.5 weeks depending on source); ~2–3 days per charge is presented as the best-supported figure. Bandai's own product page states online security support ended July 13, 2026 — a date already past as of this writing — and what that means for current functionality is unresolved. Japan Toy Awards and Nikkei award claims come from retailer listings, not a verified primary source. A Mozilla \"*Privacy Not Included\" review of this product could not be retrieved and its conclusions are not represented here.",
+  "manufacturerUrl": "https://tamagotchi-official.com/us/series/uni/",
+  "pricing": {
+    "summary": "The base Tamagotchi Uni retails for **$59.99 USD / £69.99 UK / AU$129.95**, while the Sanrio Characters edition shown here carries roughly a $10 premium at **$69.99 USD** per Bandai's own US product page. Beyond the device price, additional Tamaverse locations are sold as paid downloadable content (around £5.20 per area), though there's no subscription fee for base online play."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Bandai's own product page states **\"Security support ending: July 13, 2026\"** — a date that has already passed as of this writing — and no source confirms whether that means online/Tamaverse features have fully shut down, been scaled back, or continue with unpatched security. On privacy, Bandai states it does not collect the in-game nickname a child chooses, but the product's parental-consent mechanism is a passive, assumed-consent clause in its Terms of Use rather than an active verifiable-consent flow, and no COPPA-compliance claim was found in official materials."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Tamagotchi Uni has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

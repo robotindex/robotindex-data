@@ -1,0 +1,94 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "miko-3",
+  "slug": "product-miko-3.html",
+  "name": "Miko 3",
+  "manufacturer": "Miko",
+  "category": "Companion & Social",
+  "subcategory": "Children Companions",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A wheeled, screen-faced AI companion robot for kids ages 5–10, with a cloud-based LLM backend for conversation, STEM/educational content, two-way video calling, and a parental-control app. Base functions are free; a premium content library requires a Miko Max subscription.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "~1 kg (2 lbs)",
+      "note": "official Miko spec, unpacked from box"
+    },
+    {
+      "label": "Dimensions",
+      "value": "15.2 × 14 × 22 cm",
+      "note": "6.3 × 5.5 × 8.67 in — official Miko spec"
+    },
+    {
+      "label": "Camera",
+      "value": "HD wide-angle",
+      "note": "face recognition + two-way video calling"
+    },
+    {
+      "label": "Display",
+      "value": "4.7\" touchscreen face",
+      "note": "animated eyes, no arms/limbs"
+    },
+    {
+      "label": "AI",
+      "value": "Cloud LLM-backed",
+      "note": "Google Gemini reported; Azure also referenced"
+    },
+    {
+      "label": "Mobility",
+      "value": "Autonomous wheeled base",
+      "note": "time-of-flight + odometric sensors"
+    },
+    {
+      "label": "Content",
+      "value": "STEM, games, stories",
+      "note": "free base library + paid Miko Max tier"
+    },
+    {
+      "label": "Parental Controls",
+      "value": "Companion app",
+      "note": "screen-time limits, app locks, progress reports"
+    },
+    {
+      "label": "Age Range",
+      "value": "5–10 years",
+      "note": "some retailers list 4+ or up to 12"
+    },
+    {
+      "label": "Privacy Claims",
+      "value": "COPPA, kidSAFE+",
+      "note": "see caveats — 2026 data-exposure incident"
+    },
+    {
+      "label": "Subscription",
+      "value": "Optional",
+      "note": "Miko Max: $14.99/mo or $99/yr for licensed content/full learning apps — help.miko.ai; base conversation/AI free"
+    }
+  ],
+  "sourcing": "Verified against Miko's own site (product page, About Us, Miko Max page, Help Center), a Google Cloud customer case study on Miko's AI backend, independent reviews (The Gadgeteer, The Toy Insider), Indian business press (Inc42, The Ken), and NBC News' February 2026 reporting on the Senate letter regarding Miko's data-exposure incident. Total funding, valuation, and units-sold figures vary across sources and should be treated as approximate. Miko Max subscription pricing has also varied across the sources checked. The February 2026 privacy incident is independently reported and Senate-documented, not a company claim, and sits in tension with Miko's own \"no voice recordings stored\" statement.",
+  "manufacturerUrl": "https://miko.ai/products/miko-3",
+  "pricing": {
+    "summary": "MSRP is $299, frequently discounted — seen as low as $249 on Miko's own site and $189.99 at Costco. The optional Miko Max subscription, needed to unlock licensed content and full learning apps, currently lists at $14.99/month or $89/year, though an independent 2025 review cited a notably higher $99–$180/year range, so treat exact subscription pricing as subject to change."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware — Company, AI, and a Privacy Incident Worth Knowing",
+      "body": "Miko 3 runs on a cloud backend confirmed by Google to use Gemini models for child-facing responses and hallucination screening. In February 2026, U.S. Senators sent Miko a formal letter after reports found it had left a database of AI-generated child responses publicly accessible online, exposing names, interests, and emotional states. Miko's CEO disputed the \"breach\" framing."
+    },
+    {
+      "heading": "Insights",
+      "body": "In February 2026, U.S. Senators Marsha Blackburn and Richard Blumenthal sent Miko a formal letter after NBC News reporting found the company had left a database of AI-generated responses to children publicly accessible online, exposing children's names, stated interests, emotional states, and usage patterns. Miko's CEO publicly disputed the \"breach\" framing but did not directly rebut the exposed-database finding."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Miko 3 has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

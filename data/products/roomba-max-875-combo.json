@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "roomba-max-875-combo",
+  "slug": "product-roomba-max-875-combo.html",
+  "name": "Roomba Max 875 Combo",
+  "manufacturer": "iRobot",
+  "category": "Cleaning & Home Care",
+  "subcategory": "Floors",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "iRobot's most powerful Roomba to date, and the first flagship launched since the company's 2025–2026 bankruptcy and acquisition. Notably switches from iRobot's traditional camera-based navigation to dual-line LiDAR, paired with a self-washing, hot-water dock.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "12.01 lb",
+      "note": "~5.45 kg — robot body only, excludes AutoWash dock; official iRobot spec"
+    },
+    {
+      "label": "Dimensions",
+      "value": "36 × 35.6 × 9.98 cm",
+      "note": "14.17 × 14.02 × 3.93 in; climbs thresholds up to 3.5cm — official iRobot spec"
+    },
+    {
+      "label": "Navigation",
+      "value": "ClearView Pro",
+      "note": "dual-line LiDAR — a shift from iRobot's usual camera nav"
+    },
+    {
+      "label": "Suction",
+      "value": "35,000 Pa",
+      "note": "SealForce tech, iRobot's highest ever"
+    },
+    {
+      "label": "Price",
+      "value": "$1,199",
+      "note": "MSRP"
+    },
+    {
+      "label": "Obstacle Avoidance",
+      "value": "PrecisionVision AI",
+      "note": "300+ object types"
+    },
+    {
+      "label": "Mopping",
+      "value": "PowerSpin Max",
+      "note": "44% larger roller, 300 RPM, 18N pressure"
+    },
+    {
+      "label": "Mop Pre-Treatment",
+      "value": "ThermaMist",
+      "note": "heated-mist pre-treat + DriLift carpet avoidance"
+    },
+    {
+      "label": "Dock",
+      "value": "AutoWash",
+      "note": "176°F mop wash, 131°F dry, StayClean dispensing"
+    },
+    {
+      "label": "Subscription",
+      "value": "None (confirmed for this model)",
+      "note": "iRobot's legacy \"Select\" hardware-subscription ($14.99–$29.99/mo) closed to new customers in 2024 and isn't offered for this Sept 2026 launch; core app mapping/scheduling remain free"
+    }
+  ],
+  "sourcing": "Specs sourced from iRobot's own September 2, 2026 press release (media.irobot.com) and Engadget's launch coverage, as of September 2026. Battery runtime, charging time, dustbin/water-tank capacities, and noise level (dB) were not stated in either source and are omitted rather than estimated. iRobot's ownership changed via Chapter 11 bankruptcy and a January 2026 sale to Shenzhen Picea Robotics — noted above since it's directly relevant to buyers evaluating this brand. robotindex does not sell this product.",
+  "manufacturerUrl": "https://media.irobot.com/2026-09-02-iRobot-Redefines-Hands-Free-Cleaning-with-its-Most-Powerful-Robot-Ever,-the-Roomba-R-Max-875-Combo",
+  "pricing": {
+    "summary": "MSRP **$1,199**. Announced September 2, 2026, available immediately at irobot.com with wider North American retail rolling out later that month, alongside a lower-tier \"Roomba Plus 678 Combo.\""
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "The Max 875 Combo replaces iRobot's usual camera-based vSLAM with \"ClearView Pro\" dual-line LiDAR and PrecisionVision AI, claiming 300+ obstacle types. PowerSpin Max roller mop is 44% larger, spinning at 300 RPM with 18N pressure, plus ThermaMist stain pre-treatment and carpet auto-lift. AutoWash dock self-empties, washes, and dries the mop. Battery, capacity, and noise figures are unpublished."
+    },
+    {
+      "heading": "Insights",
+      "body": "**Important context for this listing:** iRobot filed prepackaged Chapter 11 bankruptcy on December 16, 2025, and completed a court-supervised sale on January 23, 2026 to **Shenzhen Picea Robotics** — its own former contract manufacturer and largest creditor — with Nasdaq shares delisted and no equity for prior shareholders. The Max 875 Combo is the first flagship launched under this new ownership: buyers are now purchasing from a Chinese-owned subsidiary of iRobot's former manufacturing partner, not the original Nasdaq-listed company."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "iRobot has not released a public SDK, firmware repo, or developer API for the Roomba Max 875 Combo. Its newer V4 protocol is explicitly not yet supported by dorita980 (the LAN-control library cataloged in Builds & Mods, which covers Roomba 600 series through Combo 10 Max), and the Roomba-MQTT-Integration project targets only older offline 600/700/800 models. Not currently listed in Builds & Mods."
+    }
+  ]
+}

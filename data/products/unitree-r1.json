@@ -1,0 +1,78 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "unitree-r1",
+  "slug": "product-unitree-r1.html",
+  "name": "Unitree R1",
+  "manufacturer": "Unitree",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "Compact, lightweight humanoid from Unitree, sold in AIR, Standard, and EDU configurations spanning hobbyist to research/development budgets. Smaller and far cheaper than the G1, aimed at education and secondary development.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "~1 hr",
+      "note": "quick-release smart battery"
+    },
+    {
+      "label": "Weight",
+      "value": "~25–29 kg",
+      "note": "varies by configuration"
+    },
+    {
+      "label": "Height",
+      "value": "1.21 m",
+      "note": "~1230mm footprint height"
+    },
+    {
+      "label": "Connectivity",
+      "value": "WiFi 6",
+      "note": "+ Bluetooth 5.2"
+    },
+    {
+      "label": "Compute",
+      "value": "8-core CPU",
+      "note": "EDU adds Jetson Orin NX, 40 TOPS"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "20–40",
+      "note": "AIR: 20 · Standard: 26 · EDU: up to 40 w/ hands"
+    },
+    {
+      "label": "Arm Payload",
+      "value": "~2 kg",
+      "note": "EDU configuration"
+    },
+    {
+      "label": "Warranty",
+      "value": "12 months",
+      "note": "EDU configuration"
+    }
+  ],
+  "sourcing": "Specs sourced from Unitree's official R1 product page and cross-checked against RoboStore's EDU listing, as of September 2026. robotindex does not sell this product — pricing shown is for reference and may vary by configuration and retailer.",
+  "manufacturerUrl": "https://www.unitree.com/R1/",
+  "pricing": {
+    "summary": "From **$4,900** (AIR). Standard configuration is $5,900; EDU (with Jetson Orin NX and optional dexterous hands) runs around $15,950 per retailer listings — Unitree's own site lists EDU as contact-for-price."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "Base AIR: monocular camera, 20 DOF. Standard/EDU add a binocular depth camera, 2-DOF waist, 2-DOF head (26 DOF total, up to 40 with EDU's optional dexterous hand). All variants include a 4-mic array, stereo speakers, joint encoders, and PMSM joint motors with air cooling. EDU adds an NVIDIA Jetson Orin NX for onboard AI compute. No 3D LiDAR included."
+    },
+    {
+      "heading": "Insights",
+      "body": "No recalls, lawsuits, safety incidents, or data-privacy reports were found for the Unitree R1 in the sources reviewed here."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "unitree-sdk2-python"
+    }
+  ]
+}

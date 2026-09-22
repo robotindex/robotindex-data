@@ -1,0 +1,88 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "lymow-one",
+  "slug": "product-lymow-one.html",
+  "name": "Lymow One / Lymow One Plus 10A",
+  "manufacturer": "Lymow",
+  "category": "Outdoor & Yard",
+  "subcategory": "Robot Lawn Mowers",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A tank-tread (not wheeled) robotic mower from Lymow, a startup founded by former SharkNinja robot-vacuum engineers. Originally crowdfunded on Kickstarter, now shipping commercially. Wire-free RTK-GNSS + camera navigation, claimed 45°/100% slope capability.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "35.2V 15Ah LiFePO4",
+      "note": "~3 hr runtime"
+    },
+    {
+      "label": "Weight",
+      "value": "~78 lbs"
+    },
+    {
+      "label": "Dimensions",
+      "value": "~29.5 × 23.6 × 12.6 in",
+      "note": "IPX6"
+    },
+    {
+      "label": "Navigation",
+      "value": "RTK-GNSS + AI camera",
+      "note": "wire-free, no LiDAR"
+    },
+    {
+      "label": "Drive",
+      "value": "Rubber tank treads",
+      "note": "not wheels — unusual for this category"
+    },
+    {
+      "label": "Max Coverage",
+      "value": "1.73 acres/day",
+      "note": "~0.56–0.57 acre per charge"
+    },
+    {
+      "label": "Cutting",
+      "value": "16 in width",
+      "note": "1.2–4.0 in height, dual SK5 steel blades"
+    },
+    {
+      "label": "Max Slope",
+      "value": "45° / 100%",
+      "note": "manufacturer claim; testers confirmed ~30°"
+    },
+    {
+      "label": "Noise",
+      "value": "60–74 dB(A)",
+      "note": "eco/standard/turbo modes, per PCWorld testing"
+    },
+    {
+      "label": "Subscription",
+      "value": "Free, no subscription",
+      "note": "Local RTK base station included; maker confirms no mandatory fees"
+    }
+  ],
+  "sourcing": "Verified against Lymow's own official site and Kickstarter page, plus independent hands-on reviews from Tom's Guide and PCWorld, and coverage from New Atlas, Yanko Design, Notebookcheck, and PR Newswire. Lymow is a young company (founded 2022) that moved from crowdfunding to commercial retail — company-reported unit-shipped figures are self-reported and unverified. Pricing varies by source and appears promo-dependent. A cutting-width discrepancy exists between the CES 2024 press preview (21 in) and the shipped spec sheet (16 in). Claimed max slope (45°/100%) exceeds what independent testers actually observed (~30°).",
+  "manufacturerUrl": "https://www.lymow.com/products/lymow-one-plus-robotic-lawn-mower",
+  "pricing": {
+    "summary": "Pricing is fluid and promo-dependent: Lymow's own site lists the One Plus around **$2,799 (10A charger) / $2,599 (5A charger)** on sale against a regular price of $3,199/$2,999, while other outlets cite anywhere from $2,699 to $3,199. Treat any single figure as a snapshot rather than a fixed MSRP."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "The tank-tread drive is Lymow One's defining feature, built for rough, sloped terrain. Obstacle avoidance combines an AI camera (claimed 25+ object types) with 5 ultrasonic sensors and 2 Hall sensors. A CES 2024 press release cited a 21-inch cutting width, but the shipped spec sheet lists 16 inches — an unresolved discrepancy between early marketing and the production unit."
+    },
+    {
+      "heading": "Insights",
+      "body": "Lymow advertises a maximum climbing slope of 45° (100% grade) for the One/One Plus, but independent hands-on testing from Tom's Guide and PCWorld found it actually manages slopes of roughly 30° — a real gap between the marketed spec and tested performance. Its rubber tank-tread drive is independently confirmed as the genuine differentiator behind that traction."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Lymow One / Lymow One Plus 10A has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

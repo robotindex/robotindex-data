@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "learning-resources-botley-2",
+  "slug": "product-learning-resources-botley-2.html",
+  "name": "Learning Resources Botley 2.0",
+  "manufacturer": "Learning Resources",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Classroom & Coding Kits",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A fully screen-free, app-free coding robot for young children (ages 5+) from Learning Resources. Sequences of up to 150 steps in 6 directions are built entirely on a handheld infrared remote and beamed to the robot with one button — no phone, tablet, or reading required. Supports basic If/Then conditional logic via a front object-detection sensor and repeat loops, plus a line-following sensor. The 2020 successor to 2018's original Botley, adding light-up \"night vision\" eyes, sound effects, 16 hidden secret-code transformations, and 4-robot multiplayer racing.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "5x AAA (not rechargeable)",
+      "note": "3 in the robot, 2 in the remote; batteries not included; multiple reviewers wished for rechargeable cells instead"
+    },
+    {
+      "label": "Dimensions",
+      "value": "~6.1in × 8.1in × 6.1in",
+      "note": "per Learning Resources' own listing; one independent review measured a larger 9.1 × 9.1 × 6.2in — an unresolved discrepancy, likely packaging vs. robot-only"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Infrared (one-way)",
+      "note": "remote-to-robot only; no Bluetooth, no app pairing, no two-way wireless"
+    },
+    {
+      "label": "Sensors",
+      "value": "Object detection + line follower",
+      "note": "front OD sensor for collision-avoidance/If-Then logic; downward line sensor; one independent reviewer reported their unit's line sensor failing after a few days, another reported none"
+    },
+    {
+      "label": "Programming",
+      "value": "Remote-only, no screen",
+      "note": "up to 150 steps in 6 directions (incl. 45° turns), built on a handheld IR remote, then beamed to the robot by pressing TRANSMIT"
+    },
+    {
+      "label": "Logic",
+      "value": "If/Then + repeat loops",
+      "note": "conditional branching via the front object-detection sensor, on top of linear step sequencing — notable for a toy pitched this young"
+    },
+    {
+      "label": "2.0 additions",
+      "value": "Light-up eyes, sound, multiplayer",
+      "note": "vs. original 2018 Botley: night-vision light-up eyes, sound effects, 16 hidden secret-code transformations, a \"Botley Says\" memory game, up to 4-robot racing, detachable arms"
+    },
+    {
+      "label": "Included",
+      "value": "Remote, arms, 40 coding cards",
+      "note": "plus ~77-78 piece obstacle/tile activity set depending on SKU; step count and core sensors are unchanged from the original Botley, not increased in \"2.0\""
+    },
+    {
+      "label": "Age Range",
+      "value": "5+ (no upper growth path)",
+      "note": "reviewers note that once a child outgrows physical-sequence programming, there's no built-in path to text/app-based coding on this same device"
+    }
+  ],
+  "sourcing": "Specs and history compiled from the Botley 2.0 product manual, Learning Resources' own product page, independent reviews (The Gadgeteer, MacSources, Mumsnet, teachyourkidscode.com), a contemporaneous hands-on preview of the original 2018 Botley (techagekids.com), launch coverage (Romper), and recent (2026) news coverage of Learning Resources' tariff lawsuit (CBS News, US News). Several details are flagged as unconfirmed above: an exact dimensions conflict between Learning Resources' own listing and an independent review's measurement, the original Botley's standalone-robot launch price, the exact release day for Botley 2.0 (month/quarter is confirmed, not the day), and the precise corporate relationship between Learning Resources, hand2mind, and Educational Insights. This entry hasn't yet been cross-linked into the rest of the Classroom & Coding Kits subcategory or synced to the directory listing; that's planned for a later pass.",
+  "manufacturerUrl": "https://www.learningresources.com/item-botleyr-the-coding-robot-2",
+  "pricing": {
+    "summary": "Botley 2.0 launched in 2020 at **$64.99** for the robot and remote alone, or **$84.99** for the full Activity Set bundle, and is sold direct, on Amazon, Target, Walmart, and specialty retailers. Learning Resources' own site and Target now list the Activity Set at **$79.99** — slightly below the 2020 bundle price, possibly reflecting a smaller piece count on the current SKU (77 pieces versus 78)."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "There is no GitHub repository, SDK, API, or documented IR protocol for Botley anywhere, and no community reverse-engineering project exists either, so this catalog applies no Open Source badge to it. Learning Resources, Botley's family-owned maker, became nationally notable in early 2026 when CEO Rick Woldenberg was the named plaintiff in a lawsuit against the Trump administration's tariff policy that reached a landmark ruling — a notable current fact about the company, though unrelated to Botley itself."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Learning Resources Botley 2.0 has not released a public SDK, firmware repo, or developer API — it's a screen-free coding toy with no app or digital component. Not currently listed in Builds & Mods."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "ecovacs-winbot-w2-pro-omni",
+  "slug": "product-ecovacs-winbot-w2-pro-omni.html",
+  "name": "ECOVACS WINBOT W2 PRO Omni",
+  "manufacturer": "Ecovacs",
+  "category": "Cleaning & Home Care",
+  "subcategory": "Other",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A suction-mounted window-cleaning robot with a safety tether and edge-detection sensors for frameless glass. The Pro tier's cord-connected station is a portable power pack that lets it charge while actively cleaning, rather than a water-refill dock.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "4,500 mAh",
+      "note": "~100–110 min runtime per charge"
+    },
+    {
+      "label": "Weight",
+      "value": "1.6 kg",
+      "note": "±0.1kg, robot unit only; portable power station weighs 5.5kg separately — official Ecovacs spec"
+    },
+    {
+      "label": "Dimensions",
+      "value": "27.1 × 27.1 × 7.7 cm",
+      "note": "L × W × H, official Ecovacs spec sheet"
+    },
+    {
+      "label": "Navigation",
+      "value": "WIN-SLAM 4.0",
+      "note": "7 modes: edge, spot, zone, deep, fast..."
+    },
+    {
+      "label": "Suction",
+      "value": "5,500 Pa max"
+    },
+    {
+      "label": "Price",
+      "value": "$499.99–$699.99",
+      "note": "listed vs. MSRP — see note"
+    },
+    {
+      "label": "Safety Tether",
+      "value": "~100kg rated",
+      "note": "three-layer composite cable + carabiner"
+    },
+    {
+      "label": "Cleaning",
+      "value": "Triple/6-nozzle spray",
+      "note": "dual microfiber pads, 260×251mm"
+    },
+    {
+      "label": "Power-Loss Backup",
+      "value": "~30 min",
+      "note": "prevents falls if power/suction fails"
+    },
+    {
+      "label": "Noise",
+      "value": "63–76 dB",
+      "note": "varies by mode"
+    },
+    {
+      "label": "Subscription",
+      "value": "None required",
+      "note": "free ECOVACS HOME app; no cloud fee found"
+    }
+  ],
+  "sourcing": "Specs sourced from Ecovacs' own US product page (ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2-pro-omni), TechRadar's review, and Tom's Guide's coverage, as of September 2026. Price is reported inconsistently ($499.99 vs. $699.99) across the sources checked — both are shown rather than picking one arbitrarily. No formal safety certification (e.g., UL) was found referenced for this model. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2-pro-omni",
+  "pricing": {
+    "summary": "Ecovacs.com and Amazon list **$499.99**, while TechRadar cites a **$699.99** ($699.99 / AU$999) MSRP — robotindex could not resolve whether this reflects a standing promotional price or a regional/timing difference, so both figures are shown pending clarification."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "The W2 Pro Omni attaches with up to 5,500 Pa suction and a tether rated to ~100kg via carabiner backup. Edge detection uses optocoupler/spherical sensors (claimed 0.2s response) plus bumpers for framed windows. Unlike Deebot \"Omni\" vacuum stations, this Winbot's dock isn't a water-refill/pad-washing station — it's a portable power pack that lets the Pro charge continuously while cleaning."
+    },
+    {
+      "heading": "Insights",
+      "body": "Price for the W2 Pro Omni is reported inconsistently across sources: Ecovacs' own store and Amazon list $499.99, while TechRadar cites a $699.99 MSRP. It's unclear whether this reflects a standing promotional price or a regional/timing difference."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "ECOVACS WINBOT W2 PRO Omni has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

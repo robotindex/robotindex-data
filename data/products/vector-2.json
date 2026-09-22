@@ -1,0 +1,92 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "vector-2",
+  "slug": "product-vector-2.html",
+  "name": "Vector 2.0",
+  "manufacturer": "Digital Dream Labs",
+  "category": "Pets & Toys",
+  "subcategory": "Robot Pets",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A small tank-tracked desktop companion with animated color eyes and camera-based face recognition, originally created by Anki before its 2019 shutdown and now sold by Digital Dream Labs (Pittsburgh, PA), which acquired Anki's Cozmo/Vector IP later that year. Core personality and navigation run on-device; voice commands and cloud AI require an ongoing subscription.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "Li-ion, replaceable",
+      "note": "~30% longer runtime than original Anki Vector, per DDL"
+    },
+    {
+      "label": "Weight",
+      "value": "0.16 kg",
+      "note": "per robotsguide.com; figure is for the original Vector chassis DDL's 2.0 reuses, not DDL-republished"
+    },
+    {
+      "label": "Dimensions",
+      "value": "10 × 6 × 7 cm",
+      "note": "L×W×H, same caveat as weight above"
+    },
+    {
+      "label": "Connectivity",
+      "value": "2.4GHz Wi-Fi",
+      "note": "cloud connection needed for voice features"
+    },
+    {
+      "label": "Sensors",
+      "value": "IR/ToF laser scanner",
+      "note": "cliff sensors, capacitive touch, 6-axis IMU"
+    },
+    {
+      "label": "Compute",
+      "value": "Qualcomm Snapdragon quad-core",
+      "note": "~1.2GHz per one source; on-device SLAM/nav"
+    },
+    {
+      "label": "Camera",
+      "value": "~2MP, 120° FOV",
+      "note": "face recognition; MP figure single-sourced to a press release"
+    },
+    {
+      "label": "Display",
+      "value": "Color IPS \"eyes\"",
+      "note": "animated expressions; exact resolution not republished by DDL"
+    },
+    {
+      "label": "Mobility",
+      "value": "Tank-tread chassis",
+      "note": "self-docking charger"
+    },
+    {
+      "label": "Audio",
+      "value": "Beamforming 4-mic array",
+      "note": "onboard speaker"
+    },
+    {
+      "label": "Subscription",
+      "value": "Optional",
+      "note": "$11.99/mo or $99.99/yr for \"Hey Vector\" wake-word + new content/animations — Digital Dream Labs, confirmed current"
+    }
+  ],
+  "sourcing": "Verified against The Robot Report's coverage of the Anki asset acquisition and Vector 2.0 relaunch, the original \"Vector Unleashed!\" Kickstarter campaign page, PR Newswire and Robotics 24/7 coverage of the October 2022 international shipping launch, a Wevolver-hosted spec sheet, Digital Dream Labs' own knowledge-base and security/privacy FAQ pages, DDL's current storefront at anki.bot, and reputable-press coverage (CBS News Pittsburgh, TribLive, Hoodline) of the Pennsylvania Attorney General's September 2024 lawsuit against DDL. Camera resolution, processor clock speed, and exact display resolution are single-sourced to a press release or third-party spec aggregator rather than an independent teardown, and are flagged accordingly. This directory's own listing note (\"$9.99/mo\") reflects a subscription price DDL has since raised twice, most recently to $11.99/mo or $99.99/yr — the note is stale and should be updated. No independent security audit of DDL's on-device/cloud data-handling claims was found. No review of Vector 2.0 specifically from a major outlet (The Verge, Engadget, CNET) was found.",
+  "manufacturerUrl": "https://anki.bot/products/vector-robot",
+  "pricing": {
+    "summary": "Currently listed at $199.99 (black) / $219.99 (pink) on DDL's own storefront (anki.bot). Voice commands and cloud AI require a separate subscription, currently $11.99/month or $99.99/year per robot per DDL's own knowledge base — **this supersedes the $9.99/mo figure in this directory's own listing note**, which DDL has since raised twice; without a subscription, Vector can still move and react but has no wake-word (\"Hey Vector\") voice commands."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "On September 18, 2024, Pennsylvania's Attorney General sued Digital Dream Labs, alleging it failed to deliver roughly 14,000 prepaid orders (including Vector 2.0) placed between November 2020 and January 2024, totaling more than $4 million, and sought restitution, civil penalties, and a ban on future prepayment schemes — a reputable-press-corroborated legal action against the company selling this exact product, not a rumor."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "wire-pod-vector-bypass"
+    },
+    {
+      "buildsModsId": "wire-pod-vector-bypass"
+    }
+  ]
+}

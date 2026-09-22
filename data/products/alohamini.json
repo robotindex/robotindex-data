@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "alohamini",
+  "slug": "product-alohamini.html",
+  "name": "AlohaMini",
+  "manufacturer": "Independent contributors (Hugging Face LeRobot community)",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Mobile Robot Kits",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A bimanual teleoperation and imitation-learning research rig, not a navigation robot — the mobile base and lift exist to position two arms for pick-and-place manipulation, controlled by physically puppeteering a matching leader arm. Built by independent makers on Hugging Face's LeRobot ecosystem (SO-ARM100 arms, a LeKiwi-derived base), not by Stanford/Berkeley's original ALOHA team or Trossen Robotics, despite the shared name.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "2× 12V 11,200mAh Li-ion",
+      "note": "AlohaMini2 spec"
+    },
+    {
+      "label": "Weight",
+      "value": "~16 kg",
+      "note": "Pro/Edu tier, per AlohaMini's official site; DIY kit is ~13.5kg"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Not published",
+      "note": "no official L×W×H figure found in this research"
+    },
+    {
+      "label": "Compute",
+      "value": "Raspberry Pi 5",
+      "note": "swappable for Jetson Orin Nano or any USB3 SBC"
+    },
+    {
+      "label": "Software",
+      "value": "LeRobot fork",
+      "note": "ACT, Diffusion Policy, Pi-0.5, SmolVLA — data collection, not a pre-trained robot"
+    },
+    {
+      "label": "Arms",
+      "value": "Bimanual, leader + follower",
+      "note": "AM-ARM200, 6+1 DOF each; Feetech STS3215/STS3095 bus servos"
+    },
+    {
+      "label": "Mobile Base",
+      "value": "3× omni-wheel, 3D-printed",
+      "note": "up to 70kg load rating (current AlohaMini2 generation)"
+    },
+    {
+      "label": "Lift",
+      "value": "Motorized vertical column",
+      "note": "up to 30kg capacity (AlohaMini2)"
+    },
+    {
+      "label": "Cameras",
+      "value": "5× 720p USB",
+      "note": "front, back, chest, dual wrist"
+    },
+    {
+      "label": "Control",
+      "value": "Physical leader-arm teleoperation",
+      "note": "a human puppeteers a matching arm — not joystick-driven"
+    }
+  ],
+  "sourcing": "Specs compiled from the AlohaMini GitHub repository, its published bill of materials, and the project's own site as of this build. Manufacturer legal-entity claims and pricing outside the project's own BOM were not independently verifiable — confirm before purchase.",
+  "manufacturerUrl": "https://www.alohamini.com/",
+  "pricing": {
+    "summary": "Pricing is scattered across sources: a DIY self-build from the project's own published bill of materials runs roughly $950–$1,100 in parts, and the project's own site lists assembled \"Pro\" tiers from $1,499 up to $2,699 for the 6-DOF version. A pre-built unit sold through third-party reseller PartaBot at $1,099 is currently out of stock/preorder-only, so that cheaper path isn't presently available."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "AlohaMini is an independent open-source project — not built by Stanford/Berkeley's ALOHA research team or Trossen Robotics — assembled from Hugging Face LeRobot community hardware (TheRobotStudio's SO-ARM100 arm design and a LeKiwi-derived base), with real CAD, bill of materials, and code published under Apache-2.0. A separate claim of TechCrunch coverage and Hugging Face leadership endorsement, seen on one reseller's page, could not be verified anywhere else and isn't repeated here."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "liyiteng-alohamini"
+    }
+  ]
+}

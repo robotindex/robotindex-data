@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "noetix-bumi",
+  "slug": "product-noetix-bumi.html",
+  "name": "Noetix Bumi",
+  "manufacturer": "Chinese startup Noetix Robotics",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "Ultra-low-cost humanoid from Chinese startup Noetix Robotics, aimed squarely at education and home use. Announced at under $1,400 — among the cheapest bipedal humanoids to reach market.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "1–2 hrs",
+      "note": "48V, 3.5Ah+ pack"
+    },
+    {
+      "label": "Weight",
+      "value": "12 kg",
+      "note": "~26.5 lb"
+    },
+    {
+      "label": "Height",
+      "value": "94 cm",
+      "note": "~3.1 ft"
+    },
+    {
+      "label": "Programming",
+      "value": "Drag & Drop",
+      "note": "graphical, beginner-friendly"
+    },
+    {
+      "label": "Interaction",
+      "value": "Voice",
+      "note": "built-in voice interaction"
+    },
+    {
+      "label": "Movement",
+      "value": "Walk · Balance · Dance",
+      "note": "per manufacturer demos"
+    }
+  ],
+  "sourcing": "Specs sourced from TechNode's and Interesting Engineering's coverage of Noetix's October 2025 announcement, as of September 2026. robotindex does not sell this product — pricing and availability are per Noetix's own preorder terms and third-party retailers, and may vary by region.",
+  "manufacturerUrl": "https://www.noetixrobotics.com",
+  "pricing": {
+    "summary": "**¥9,998 (~$1,370)** at announcement — among the cheapest full bipedal humanoids on the market. Preorders opened around China's Nov–Dec 2025 shopping festivals; by 2026 it's listed as available through JD.com and a handful of international resellers, though robotindex hasn't independently confirmed direct-to-consumer shipping outside China."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "Built with **lightweight composite materials** and a self-developed motion control system to hit its price point. Noetix has published limited technical detail beyond battery and dimensions — no official DOF count, camera specs, or compute hardware has been disclosed. The robot ships with an **open programming interface**, alongside a drag-and-drop graphical tool for younger users."
+    },
+    {
+      "heading": "Insights",
+      "body": "Announced at ¥9,998 (~$1,370), Bumi is among the cheapest full bipedal humanoids to reach market, per TechNode and Interesting Engineering's coverage of its October 2025 announcement — a concrete price point that meaningfully undercuts most category peers. Noetix has disclosed no official DOF count, camera specs, or compute hardware to contextualize that price."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "No public SDK or firmware repository has been released. Noetix provides its own graphical programming tool instead. Not currently listed in Builds & Mods."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "dreame-x60-max-ultra-complete",
+  "slug": "product-dreame-x60-max-ultra-complete.html",
+  "name": "Dreame X60 Max Ultra Complete",
+  "manufacturer": "Dreame",
+  "category": "Cleaning & Home Care",
+  "subcategory": "Floors",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "Dreame's CES 2026 flagship robot vacuum/mop — an ultra-slim body with dual-camera AI obstacle avoidance, retractable edge-cleaning arms, and a fully automated dock that empties, refills, washes, and dries itself. Replaces the X50 Ultra as Dreame's top-tier model.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "6,400 mAh",
+      "note": "9%→80% fast charge in ~80 min"
+    },
+    {
+      "label": "Weight",
+      "value": "4.7 kg",
+      "note": "10.36 lb — robot body only, excludes dock; official Dreame spec"
+    },
+    {
+      "label": "Dimensions",
+      "value": "35 × 35 × 7.95 cm",
+      "note": "diameter × diameter × height, LiDAR retracted (10.3cm raised) — slimmest in the X series"
+    },
+    {
+      "label": "Navigation",
+      "value": "VersaLift DToF LiDAR",
+      "note": "+ dual 120° AI cameras w/ LED"
+    },
+    {
+      "label": "Suction",
+      "value": "35,000 Pa",
+      "note": "~75% stronger than X50 Ultra, per Dreame"
+    },
+    {
+      "label": "Price",
+      "value": "$1,699.99",
+      "note": "MSRP; $1,614.99 member price"
+    },
+    {
+      "label": "Obstacle Avoidance",
+      "value": "280+ object types",
+      "note": "per Dreame's own claim"
+    },
+    {
+      "label": "Mopping",
+      "value": "Omni-scrub pads",
+      "note": "thermal heating, 10.5mm carpet lift"
+    },
+    {
+      "label": "Mop Wash Temp",
+      "value": "Up to 212°F",
+      "note": "100°C self-wash"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "App mapping, obstacle avoidance & scheduling included free; Dreame's \"Membership\" is a points-based purchase-discount program, not a feature paywall"
+    }
+  ],
+  "sourcing": "Specs sourced from Dreame's own US product page (dreametech.com), TechRadar's CES 2026 coverage, Android Authority's review, and RTINGS' review listing, as of September 2026. Noise level (dB) and exact battery runtime in minutes are not published by Dreame and could not be confirmed from the reviews checked — treat \"several hours\" as Dreame/press's own general characterization rather than a hard figure. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.dreametech.com/products/x60-max-ultra-complete-robot-vacuum",
+  "pricing": {
+    "summary": "MSRP **$1,699.99** ($1,614.99 with Dreame's membership discount), per Dreame's own US store. Unveiled at CES 2026 (January), with preorders opening immediately after; UK/AU pricing was listed as \"TBC\" at launch, with TechRadar estimating roughly £1,265 / AU$2,540."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "Navigation pairs VersaLift DToF LiDAR with dual 120° AI cameras and an LED for low-light detection, covering 280+ obstacle types. Omni-scrub mop pads self-wash at up to 212°F and lift 10.5mm for carpets; retractable side arms extend 1.57\" for edge cleaning. Threshold crossing reaches 3.47\" via a stilt-leg mechanism. The dock auto-empties (3.2L bag) and auto-fills/drains water (4.2L/3.0L)."
+    },
+    {
+      "heading": "Insights",
+      "body": "At 3.13 inches tall, the X60 Max Ultra Complete is Dreame's slimmest X-series body yet — a specific, measurable design differentiator. Dreame also claims 35,000 Pa suction, about 75% stronger than the outgoing X50 Ultra, though that figure comes from the manufacturer and wasn't independently verified."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Dreame X60 Max Ultra Complete has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

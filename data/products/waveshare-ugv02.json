@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "waveshare-ugv02",
+  "slug": "product-waveshare-ugv02.html",
+  "name": "Waveshare UGV02",
+  "manufacturer": "Waveshare",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Mobile Robot Kits",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A bare 6-wheel/4WD aluminum chassis with an ESP32 motion controller — no Raspberry Pi, Jetson, or camera included at its $149.99 base price. The pan-tilt camera and Picatinny-style rail visible in this photo are Waveshare's separately-sold add-on module, not part of the base kit; built up this way, it approximates Waveshare's own pricier, pre-integrated \"UGV Rover\" kit.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "3× 18650 Li-ion",
+      "note": "not included; ~45 min runtime, ~1.5 hr charge"
+    },
+    {
+      "label": "Weight",
+      "value": "2 kg",
+      "note": "bare aluminum chassis, no host computer/battery — waveshare.com official specs"
+    },
+    {
+      "label": "Dimensions",
+      "value": "25.2 × 23.0 × 9.4 cm",
+      "note": "waveshare.com official specs"
+    },
+    {
+      "label": "Compute",
+      "value": "ESP32 driver only",
+      "note": "Pi, Jetson Nano/Orin, or Sunrise X3 as host — none included"
+    },
+    {
+      "label": "Software",
+      "value": "ROS2 (Humble)-capable",
+      "note": "on a Pi/Jetson host; bare ESP32 uses JSON over serial/HTTP"
+    },
+    {
+      "label": "Drive",
+      "value": "4× DC geared motor, 4WD",
+      "note": "6 wheels, 4 driven; skid-steer, zero-radius turn"
+    },
+    {
+      "label": "Chassis",
+      "value": "Aluminum, 6-wheel",
+      "note": "4kg payload rated"
+    },
+    {
+      "label": "Speed / Climb",
+      "value": "0.05–1.3 m/s",
+      "note": "22° max incline, ~40mm obstacle clearance"
+    },
+    {
+      "label": "Included Rails",
+      "value": "2× aluminum extension rail",
+      "note": "generic mounting — not the Picatinny rail shown here"
+    },
+    {
+      "label": "Camera / Pan-Tilt",
+      "value": "Not included on base kit",
+      "note": "this photo shows Waveshare's separate 2-axis add-on module"
+    }
+  ],
+  "sourcing": "Specs compiled from Waveshare's official product page, wiki, and GitHub repositories as of this build. The pictured unit's exact configuration (bare chassis plus the separate pan-tilt camera module) and the \"fill light\" vs. infrared question were not independently re-verified against this specific physical unit — confirm before purchase.",
+  "manufacturerUrl": "https://www.waveshare.com/ugv02.htm",
+  "pricing": {
+    "summary": "The bare UGV02 chassis lists at $149.99 direct from Waveshare (RobotShop and OpenELAB carry it for somewhat more, $170.65 and €209 respectively), and the pan-tilt camera module shown mounted in this photo sells separately for $109.99. Bought as two pieces, that's roughly $260 before adding a host computer — in the same range as Waveshare's own pre-integrated \"UGV Rover\" kit ($244.99–$486.99), which is essentially this same build sold assembled with a Raspberry Pi included."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Software across Waveshare's ESP32 firmware and Raspberry Pi control-stack repos is genuinely GPL-3.0, a real OSI-approved open-source license, unlike several other kits in this subcategory. The light beside the camera is documented only as a visible-spectrum LED fill light for low-light shooting — no official spec describes true infrared or night-vision capability, despite how it may look in photos."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "waveshareteam-ugv-rpi"
+    }
+  ]
+}

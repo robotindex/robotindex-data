@@ -1,0 +1,93 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "eufy-omni-c28",
+  "slug": "product-eufy-omni-c28.html",
+  "name": "Eufy Omni C28",
+  "manufacturer": "Anker",
+  "category": "Cleaning & Home Care",
+  "subcategory": "Floors",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "Anker's Eufy-brand robot vacuum/mop with iPath 2.0 LiDAR navigation, a self-cleaning HydroJet roller mop, and a 5-in-1 Omni Station dock that empties, refills, and dries itself — positioned as a value flagship without the extending side-brush or hot-water mop wash found on pricier rivals.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "~216 min",
+      "note": "~1,191 sq ft per charge, lab-tested"
+    },
+    {
+      "label": "Weight",
+      "value": "~5 kg",
+      "note": "robot only, per Expert Reviews hands-on test — not listed on eufy.com's own spec page"
+    },
+    {
+      "label": "Dimensions",
+      "value": "35 × 32.7 × 13.1 cm",
+      "note": "per Expert Reviews; VacuumWars separately measured height at 11.2cm — figures conflict, verify before publishing"
+    },
+    {
+      "label": "Navigation",
+      "value": "iPath 2.0",
+      "note": "LiDAR turret + front line-laser sensor"
+    },
+    {
+      "label": "Suction",
+      "value": "15,000 Pa"
+    },
+    {
+      "label": "Price",
+      "value": "$799.99",
+      "note": "MSRP; often discounted to ~$500–530"
+    },
+    {
+      "label": "Mopping",
+      "value": "HydroJet roller",
+      "note": "270 RPM, ~10.8mm carpet lift"
+    },
+    {
+      "label": "Mop Pressure",
+      "value": "~9.8N",
+      "note": "~1kg downward force"
+    },
+    {
+      "label": "Dock",
+      "value": "5-in-1 Omni Station",
+      "note": "auto-empty, fill/drain, wash, dry"
+    },
+    {
+      "label": "Capacities",
+      "value": "3L / 2.2L / 8L",
+      "note": "dust bag / clean water / wastewater"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "App and cloud-map features are free; optional cross-category \"Eufy Plus Membership\" (shipping/loyalty perks) isn't required and isn't vacuum-specific"
+    }
+  ],
+  "sourcing": "Specs sourced from Eufy's own product page (eufy.com/products/t211a110, model T211A110), Tom's Guide's April 2026 review, and VacuumWars' May 2026 review and launch coverage, as of September 2026. Noise level (dB) and dock charging time are not published by Eufy and were not found in either review. This model omits a hot-water mop wash, detergent dispenser, and extendable side brush — features present on some competing docks in this category — noted here so it isn't assumed to match pricier rivals spec-for-spec. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.eufy.com/products/t211a110",
+  "pricing": {
+    "summary": "MSRP **$799.99** per eufy.com, though both reviews checked note it's frequently discounted to around **$500–530** in practice. Launched in the US around late February 2026."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "Navigation uses Eufy's iPath 2.0 (LiDAR plus a front line-laser sensor), which reviewers call more basic than AI-camera systems on pricier rivals. The HydroJet self-cleaning roller mop lifts to avoid carpets, paired with anti-tangle DuoSpiral brushes. The 5-in-1 Omni Station auto-empties, refills water, and washes/dries the mop, but lacks a side brush, hot-water wash, or detergent dispenser some rivals offer."
+    },
+    {
+      "heading": "Insights",
+      "body": "Despite its 15,000 Pa suction and HydroJet mop roller, the Omni C28 omits a hot-water mop wash, detergent dispenser, and extendable side brush — features present on some competing docks in this price class. Noise level and dock charging time also aren't published by Eufy and weren't found in independent reviews."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Eufy Omni C28 has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

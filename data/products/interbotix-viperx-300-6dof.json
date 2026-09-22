@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "interbotix-viperx-300-6dof",
+  "slug": "product-interbotix-viperx-300-6dof.html",
+  "name": "Interbotix ViperX-300 6DOF",
+  "manufacturer": "Trossen Robotics",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "Trossen Robotics' largest X-Series research manipulator — a 6-DOF, DYNAMIXEL-servo arm with a 750mm reach and 750g payload, built around ROS/ROS 2 packages, MoveIt motion planning, and Gazebo simulation support.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Software",
+      "value": "ROS / ROS 2",
+      "note": "MoveIt, Gazebo, Python API"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "6 DOF",
+      "note": "9 total servos"
+    },
+    {
+      "label": "Payload",
+      "value": "750g",
+      "note": "at 50% extension"
+    },
+    {
+      "label": "Actuators",
+      "value": "DYNAMIXEL XM540-W270",
+      "note": "+ XM430-W350 (wrist/gripper)"
+    },
+    {
+      "label": "Reach",
+      "value": "750mm",
+      "note": "1500mm tip-to-tip span"
+    },
+    {
+      "label": "Repeatability",
+      "value": "1mm",
+      "note": "accuracy 5–8mm"
+    },
+    {
+      "label": "Gripper Range",
+      "value": "42–116mm",
+      "note": "XM430-W350 servo"
+    },
+    {
+      "label": "Design",
+      "value": "Modular, repairable",
+      "note": "3D-printable end-effectors, open CAD"
+    }
+  ],
+  "sourcing": "Specs sourced from Trossen Robotics' official product page (trossenrobotics.com/viperx-300) and its X-Series arm documentation (docs.trossenrobotics.com, vx300s specification page), including the full per-joint servo table. **Status:** as of this research, Trossen's own store lists the ViperX 300 S as sold out (\"KIT-VIPX300-6DOF-OLD\" in their SKU) with a note that a new-generation product line has replaced it and is available for pre-order — pricing here reflects the last listed price for this (now legacy) unit, not a current one. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.trossenrobotics.com/viperx-300",
+  "pricing": {
+    "summary": "Last listed at $6,742.95 on Trossen Robotics' own store before going out of stock — treat this as a historical rather than current price. The listing is marked sold out, with a notice that a \"new generation\" product line is available for pre-order as a replacement; no public specs or pricing for that successor were found, and Trossen directs interested buyers to contact sales directly."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "The ViperX-300 6DOF runs on 9 DYNAMIXEL smart servos — seven XM540-W270 units for waist, shoulder, elbow, wrist-angle, and forearm-roll, plus two XM430-W350 units for wrist rotation and the parallel gripper — at 4096-position resolution over a 1Mbps bus. Trossen ships full URDFs, MoveIt configs, and Gazebo support; the same stack powers ALOHA's bimanual teleoperation arms."
+    },
+    {
+      "heading": "Insights",
+      "body": "The ViperX 300 6DOF ships with open CAD files and 3D-printable end-effectors, and Trossen documents its complete per-joint servo specs — a level of openness and repairability uncommon among comparable robotic arms. It also carries full ROS and ROS 2 support (MoveIt, Gazebo, Python API)."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Trossen Robotics' own official ROS/ROS 2 packages for the X-Series arm family, including the ViperX-300 — used as the follower-arm platform in Stanford's open-source ALOHA teleoperation system."
+    }
+  ]
+}

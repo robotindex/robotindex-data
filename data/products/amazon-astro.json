@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "amazon-astro",
+  "slug": "product-amazon-astro.html",
+  "name": "Amazon Astro",
+  "manufacturer": "Amazon",
+  "category": "Security",
+  "subcategory": "Indoor Security",
+  "tier": "pending",
+  "flags": {
+    "pending": true,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "Amazon's two-wheeled home robot with a periscope camera and touchscreen \"face,\" offering patrol/monitoring, person recognition, and Alexa integration. Invitation-only since its 2021 launch — it has never left that phase in five years.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "9.35 kg (20.6 lb)"
+    },
+    {
+      "label": "Dimensions",
+      "value": "42.4 × 25.0 × 44.0 cm",
+      "note": "16.7 × 9.8 × 17.3 in; charging dock adds 28.0 × 26.4 × 12.7 cm, 1.75 kg"
+    },
+    {
+      "label": "Compute",
+      "value": "2× Qualcomm QCS605",
+      "note": "+ SDA660, Amazon AZ1 Neural Edge chip"
+    },
+    {
+      "label": "Camera",
+      "value": "Periscope + bezel",
+      "note": "~42\" extending arm, 132° FOV, 5MP front + 1080p IR periscope"
+    },
+    {
+      "label": "Display",
+      "value": "10.1\" touchscreen",
+      "note": "1280×800, animated \"face\""
+    },
+    {
+      "label": "Drive",
+      "value": "2 wheels + caster",
+      "note": "SLAM-style mapping; no stairs, can't open doors"
+    },
+    {
+      "label": "Cargo",
+      "value": "Rear bin",
+      "note": "up to ~4.4 lb item delivery"
+    },
+    {
+      "label": "Subscription",
+      "value": "Ring Protect Pro",
+      "note": "free trial; paid plan needed for full patrol features"
+    },
+    {
+      "label": "Charging",
+      "value": "Self-docking",
+      "note": "runtime hours not confirmed by Amazon"
+    },
+    {
+      "label": "Availability",
+      "value": "Invite-only",
+      "note": "never expanded beyond \"Day 1 Edition\" since 2021"
+    }
+  ],
+  "sourcing": "Verified against Amazon's own official announcements (aboutamazon.com, press.aboutamazon.com) and independent coverage from CNBC, Fortune, Bloomberg, Wired, TechCrunch, GeekWire, The Robot Report, Tom's Guide, and a May 2026 market roundup (The Gadgeteer) confirming current availability status. Pricing has risen over time from its $999.99 launch price; treat the $1,599 figure as the most current invite price found. \"Astro for Business\" (a separate security-guard variant) was discontinued in July 2024 and should not be confused with the still-available consumer Astro covered here.",
+  "manufacturerUrl": "https://www.aboutamazon.com/news/devices/amazon-astro-2022",
+  "pricing": {
+    "summary": "Launched at **$999.99** in September 2021 as introductory \"Day 1 Edition\" pricing. The invite price has since risen — The Robot Report cited $1,449.99, and a May 2026 roundup lists the current invite price at **$1,599** — likely reflecting increases over time rather than a source conflict."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Amazon's commercial \"Astro for Business\" security variant was discontinued and its units remotely bricked in July 2024 — a shutdown sometimes mistaken for the end of Astro altogether. The separate consumer Astro remains for sale as of a May 2026 market roundup, still invite-only roughly five years after its 2021 launch."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Amazon has not released a public SDK, firmware repo, or developer API for Astro; an early SDK was piloted only with a handful of university partners, and the related Astro for Business program was discontinued in 2024. Not currently listed in Builds & Mods."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "ecovacs-winbot-mini",
+  "slug": "product-ecovacs-winbot-mini.html",
+  "name": "ECOVACS WINBOT Mini",
+  "manufacturer": "Ecovacs",
+  "category": "Cleaning & Home Care",
+  "subcategory": "Other",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "Ecovacs' most compact window-cleaning robot, announced at CES 2025 — about 30% thinner and 37% smaller than its predecessor, aimed at small windows and apartments rather than the large-window, multi-scene positioning of the W2 Pro Omni.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "2.9 lb",
+      "note": "215×215×55mm"
+    },
+    {
+      "label": "Suction",
+      "value": "7,500 Pa max",
+      "note": "3,200 Pa while moving"
+    },
+    {
+      "label": "Price",
+      "value": "$239.99",
+      "note": "MSRP; seen at $199.99 promo"
+    },
+    {
+      "label": "Edge Detection",
+      "value": "0.02s response",
+      "note": "optocoupler sensor, min. 3mm frame height"
+    },
+    {
+      "label": "Safety Tether",
+      "value": "1,900N rated",
+      "note": "3.3m nylon/latex"
+    },
+    {
+      "label": "Cleaning",
+      "value": "4-nozzle spray",
+      "note": "10μm ultrasonic atomization, 60mL tank"
+    },
+    {
+      "label": "Power Backup",
+      "value": "30 min",
+      "note": "with alarm on power/suction loss"
+    },
+    {
+      "label": "Control",
+      "value": "App + remote",
+      "note": "ECOVACS HOME app, close-range Bluetooth"
+    },
+    {
+      "label": "Subscription",
+      "value": "None required",
+      "note": "free ECOVACS HOME app; no cloud fee found"
+    }
+  ],
+  "sourcing": "Specs sourced from Ecovacs' own US product page (ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini), Ecovacs' CES 2025 press release (via PR Newswire), and Ecovacs' own CES campaign page, as of September 2026. No published noise-level (dB) figure was found. No major tech-press outlet appears to have published an independent review of this specific model. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini",
+  "pricing": {
+    "summary": "MSRP **$239.99**, seen discounted to around **$199.99** in promotions, per Ecovacs' own US store. Sold via ecovacs.com, Amazon, and Walmart, with orders shipping in about two weeks per the manufacturer's site."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "The Mini attaches with up to 7,500 Pa suction (3,200 Pa while moving) and detects frameless-glass edges via an optocoupler sensor claimed at 0.02-second response, needing a 3mm minimum frame. A 3.3m tether rated to 1,900N backs the mount, plus a 30-minute battery backup if power/suction fails. Four ultrasonic nozzles and WIN-SLAM path planning give a claimed 99.5% surface coverage."
+    },
+    {
+      "heading": "Insights",
+      "body": "The Mini backs its suction mount with a 3.3m nylon/latex tether rated to 1,900N of tensile strength and detects frameless-glass edges via an optocoupler sensor with a claimed 0.02-second response time — specific, sourced engineering figures rather than generic marketing claims. No major tech-press outlet appears to have published an independent review of this specific model."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "ECOVACS WINBOT Mini has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

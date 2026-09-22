@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "turtlebot4",
+  "slug": "product-turtlebot4.html",
+  "name": "TurtleBot4",
+  "manufacturer": "Clearpath Robotics",
+  "category": "Security",
+  "subcategory": "Maker / DIY Security Platforms",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "An open-source ROS 2 reference robot built by Clearpath Robotics on an iRobot Create 3 base, with a Raspberry Pi 4B, RPLIDAR A1M8, and a Luxonis OAK-D depth camera. It's the standard teaching and research platform for the ROS ecosystem, not a purpose-built security product — its presence in this subcategory reflects what hobbyists build on top of it (indoor mapping, patrol, and monitoring projects), not how Clearpath or Open Robotics market it.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "3.9 kg (Standard)",
+      "note": "3.3 kg for the Lite variant"
+    },
+    {
+      "label": "Dimensions",
+      "value": "351 × 339 × 341 mm",
+      "note": "Lite: 192 × 339 × 341mm (shorter, no tower)"
+    },
+    {
+      "label": "Compute",
+      "value": "Raspberry Pi 4B",
+      "note": "onboard SBC; community notes it can bottleneck heavier perception loads"
+    },
+    {
+      "label": "Camera",
+      "value": "OAK-D-Pro / OAK-D-Lite",
+      "note": "Standard vs. Lite variant, respectively"
+    },
+    {
+      "label": "Software",
+      "value": "ROS 2 Humble → Jazzy",
+      "note": "Jazzy Jalisco support added Oct. 2024"
+    },
+    {
+      "label": "Base",
+      "value": "iRobot Create 3",
+      "note": "differential drive, cliff and bump sensors, dock-and-charge"
+    },
+    {
+      "label": "Lidar",
+      "value": "RPLIDAR A1M8",
+      "note": "360°, ~12m range"
+    },
+    {
+      "label": "Battery Life",
+      "value": "~2.5–4 hrs",
+      "note": "varies by variant and workload"
+    },
+    {
+      "label": "Speed",
+      "value": "0.31–0.46 m/s",
+      "note": "inherited from the Create 3 base"
+    },
+    {
+      "label": "Variants",
+      "value": "Standard & Lite",
+      "note": "tower/sensor payload vs. no-tower, budget config"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "fully open ROS 2 platform; no cloud/SaaS tier tied to the hardware"
+    }
+  ],
+  "sourcing": "Verified against Clearpath Robotics' official TurtleBot4 product pages and datasheets, the OSRF/Open Robotics TurtleBot4 documentation and ROS 2 Jazzy release notes, RobotShop and Generation Robots pricing listings, Luxonis's OAK-D-Pro/Lite product specs, iRobot's Create 3 documentation, ROS Discourse community threads, and Clearpath's published University of Waterloo case study. Flagged as uncertain or unresolved: the precise organizational relationship between OSRF (nonprofit, still stewards ROS/TurtleBot) and OSRC (commercial arm acquired by Alphabet's Intrinsic in Dec. 2022) going forward, which no single source fully clarifies; and the \"Security\" framing itself, which this catalog could not verify against any official Clearpath or OSRF source and traces to a single non-authoritative article rather than manufacturer positioning.",
+  "manufacturerUrl": "https://clearpathrobotics.com/turtlebot-4/",
+  "pricing": {
+    "summary": "RobotShop lists current reference pricing of $2,575 for the Standard configuration and $1,572 for Lite — up sharply from the 2022 launch MSRPs of $1,750 and $1,095, increases of roughly 47% and 44% respectively. Both variants are sold through Clearpath directly and through robotics distributors like RobotShop and Generation Robots; pricing should be treated as a reference point rather than a live quote, since component costs (particularly the OAK-D camera line) have shifted since launch."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Every official Clearpath and OSRF source describes TurtleBot4 as an open-source ROS 2 education and research reference platform for universities and developers — not a security product; the \"camera patrol\" framing found elsewhere traces to a single non-authoritative content-farm article, not manufacturer messaging (any DIY patrol use is a hobbyist adaptation, not an out-of-box capability). Community threads also note the onboard Raspberry Pi 4B can become a real bottleneck when running SLAM, the depth camera, and Nav2 navigation simultaneously, which is why many labs pair it with an external companion computer for heavier workloads."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "turtlebot-turtlebot4"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "zeroth-m1",
+  "slug": "product-zeroth-m1.html",
+  "name": "Zeroth M1",
+  "manufacturer": "Zeroth Robotics",
+  "category": "Companion & Social",
+  "subcategory": "General Companions",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A small bipedal home companion robot that switches between slow walking and a faster wheeled base, with LiDAR mapping, fall detection, and voice-controlled conversation. Made by Zeroth Robotics, the US/Western brand of Chinese company Suzhou JoyIn Intelligent Technology, which debuted the lineup at CES 2026.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "~2 hr runtime",
+      "note": "80% charge in ~1 hr on the dock"
+    },
+    {
+      "label": "Weight",
+      "value": "~6.2 lb robot",
+      "note": "+ ~3.1 lb mobility base, ~6.2 lb dock"
+    },
+    {
+      "label": "Height",
+      "value": "~15 in body",
+      "note": "up to ~19.5–20 in with base/arms extended (sources vary)"
+    },
+    {
+      "label": "Sensors",
+      "value": "LDS LiDAR, iToF depth",
+      "note": "vision camera, IMU, 3-mic array (16 ft pickup)"
+    },
+    {
+      "label": "AI",
+      "value": "Voice + app control",
+      "note": "conversational AI; a specific model/engine is not confirmed"
+    },
+    {
+      "label": "Status",
+      "value": "Pre-order, US debut Jan 2026",
+      "note": "general shipping targeted ~April 2026"
+    },
+    {
+      "label": "Mobility",
+      "value": "Bipedal walk + wheeled base",
+      "note": "0.05 m/s walking, 0.6 m/s wheeled; can follow autonomously"
+    },
+    {
+      "label": "Features",
+      "value": "Fall detection",
+      "note": "medication reminders, scam-call awareness, kids' learning support"
+    },
+    {
+      "label": "Subscription",
+      "value": "Not disclosed",
+      "note": "no subscription mentioned in launch coverage or reviews found; the underlying AI model/engine itself is also unconfirmed by Zeroth, per this page's Insights section"
+    }
+  ],
+  "sourcing": "Verified against Zeroth's own site (zeroth0.com product and about pages), a January 2026 PR Newswire launch announcement (syndicated via Yahoo Finance/Morningstar), independent press coverage from Hot Hardware, Digital Trends, Yanko Design, DesignRush, and The AI Insider, a spec-aggregator listing (HouseBots), a Chinese-financial-press-sourced funding writeup (MLQ News) corroborated in outline by CNBC headline coverage of Ant Group's humanoid-robot investments, and Crunchbase/Chinese-language background on the founding team. Height and weight figures vary slightly across sources depending on configuration measured. Pricing has moved across press coverage ($2,399–$2,999) with $2,499 being the current official figure. The claimed Gemini AI integration, COO/CTO ECOVACS backgrounds, and company-reported pre-order/revenue figures are each single-sourced and not independently confirmed.",
+  "manufacturerUrl": "https://www.zeroth0.com/products/m1",
+  "pricing": {
+    "summary": "Current official price on Zeroth's own store is $2,499, though CES 2026 launch coverage cited pre-order figures ranging from $2,399 to $2,899 (one outlet reporting a $2,999 standard MSRP). The same hardware reportedly sells domestically in China, under the JoyIn brand, for roughly ¥10,000 (~$1,500) — a notable gap between the Chinese and US price."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "A single review site describes the M1 as \"Gemini-powered,\" but neither Zeroth's own site nor its launch press release confirms which conversational AI model or engine the robot actually uses, so this claim is presented as unconfirmed rather than fact."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Zeroth M1 has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

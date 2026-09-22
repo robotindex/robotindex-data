@@ -1,0 +1,83 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "enabot-rola-mini",
+  "slug": "product-enabot-rola-mini.html",
+  "name": "Enabot ROLA Mini",
+  "manufacturer": "Enabot",
+  "category": "Security",
+  "subcategory": "Indoor Security",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A small, self-righting rolling camera robot with a 2K night-vision camera, two-way audio, and a physical call button — built and marketed by Enabot primarily as a pet-monitoring device, with one recurring marketing line about elder care but no dedicated senior-specific hardware or software.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "~2–3 weeks/charge",
+      "note": "per independent reviewer testing"
+    },
+    {
+      "label": "Weight",
+      "value": "530g"
+    },
+    {
+      "label": "Dimensions",
+      "value": "116 × 116 × 110 mm",
+      "note": "mid-size in Enabot's lineup"
+    },
+    {
+      "label": "Camera",
+      "value": "2K QHD, 137° FOV",
+      "note": "night vision, H.265"
+    },
+    {
+      "label": "Mobility",
+      "value": "Tracked rolling robot",
+      "note": "self-righting \"tumbler\" design"
+    },
+    {
+      "label": "Audio",
+      "value": "Two-way + call button",
+      "note": "one-touch instant voice connection"
+    },
+    {
+      "label": "Detection",
+      "value": "Motion recognition",
+      "note": "person/pet triggers auto-clips; no SLAM mapping"
+    },
+    {
+      "label": "Storage",
+      "value": "microSD (up to 256GB)",
+      "note": "+ optional Cloud+ subscription"
+    },
+    {
+      "label": "Product Line",
+      "value": "Enabot \"PetTech\"",
+      "note": "not the \"FamilyBot\"/EBO security line"
+    }
+  ],
+  "sourcing": "Verified against Enabot's own store pages (ROLA Mini, ROLA PetPal, EBO Air, EBO X), retailer listings (Target, Best Buy, Home Depot, B&H), and independent reviews (The AU Review, ToolSmarts.ca). Two things are flagged for reconsideration rather than stated as settled: the \"New & Pending\" tag looks inconsistent with a product that has shipped continuously since late 2024, and the \"Senior Companions\" categorization rests on a single reused marketing sentence in Enabot's own materials rather than a dedicated senior-care feature — EBO X, already catalogued under Security, has the more substantive elder-care claim (a named fall-alert feature). No independent review discusses ROLA Mini as a senior-monitoring product; all treat it as a pet camera.",
+  "manufacturerUrl": "https://store.enabot.com/products/rola-mini-familybot",
+  "pricing": {
+    "summary": "Listed at $169 direct from Enabot, with periodic promotional pricing seen around $139; a UK launch price of £149 was also reported. It's stocked at Target, Best Buy, Home Depot, B&H, Chewy, and other major retailers — a normal, broadly-distributed retail SKU rather than a pre-order or crowdfunded item (see the caveat below on the \"New & Pending\" tag)."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware — Category Fit Worth Questioning",
+      "body": "Enabot markets ROLA Mini under its pet-focused \"PetTech\" line, not the elder-care \"FamilyBot\" line, and independent reviews treat it purely as a pet camera; its only elder-care claim is one boilerplate marketing sentence, with no fall detection or medication reminders, raising doubts about its \"Senior Companions\" listing. Hardware includes a self-righting tumbler design, tracked-wheel mobility, and a call-button two-way-audio feature."
+    },
+    {
+      "heading": "Insights",
+      "body": "ROLA Mini is marketed under Enabot's \"Senior Companions\" category, but no independent review — including The AU Review and ToolSmarts.ca — evaluates it as a senior-monitoring device; all treat it strictly as a pet camera. Its \"New & Pending\" listing tag is also inconsistent with a product that has shipped continuously since late 2024."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Enabot has not released a public SDK, firmware repo, or developer API for ROLA Mini. Not currently listed in Builds & Mods."
+    }
+  ]
+}

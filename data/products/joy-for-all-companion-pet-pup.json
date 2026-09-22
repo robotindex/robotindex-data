@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "joy-for-all-companion-pet-pup",
+  "slug": "product-joy-for-all-companion-pet-pup.html",
+  "name": "Joy for All Companion Pet Pup",
+  "manufacturer": "Ageless Innovation",
+  "category": "Companion & Social",
+  "subcategory": "Senior Companions",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A stationary, lifelike golden-retriever-look animatronic companion from Ageless Innovation (the independent company that spun off Hasbro's \"Joy for All\" brand), built around touch and sound response, a soothing internal heartbeat, and barking — marketed for senior loneliness and dementia/Alzheimer's care.",
+  "specs": [
+    {
+      "label": "Dimensions",
+      "value": "~15.2 × 9 × 10.1 in",
+      "note": "~3.9 lb"
+    },
+    {
+      "label": "Form Factor",
+      "value": "Stationary companion",
+      "note": "no mobility; sits in place"
+    },
+    {
+      "label": "Movement",
+      "value": "Head, body, tail",
+      "note": "lifelike motion, no walking"
+    },
+    {
+      "label": "Response",
+      "value": "Touch + sound (BarkBack)",
+      "note": "barks when spoken to or petted"
+    },
+    {
+      "label": "Signature Feature",
+      "value": "Soothing heartbeat",
+      "note": "felt when held/petted"
+    },
+    {
+      "label": "Variants",
+      "value": "Golden, Freckled",
+      "note": "coat-color options of this same dog"
+    },
+    {
+      "label": "Power",
+      "value": "4× C batteries",
+      "note": "alkaline, included; runtime not disclosed"
+    },
+    {
+      "label": "Positioning",
+      "value": "Senior loneliness care",
+      "note": "marketed for dementia/Alzheimer's contexts"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "battery-powered, no app or connectivity — Ageless Innovation FAQ"
+    }
+  ],
+  "sourcing": "Verified against Ageless Innovation's and Joy for All's own sites, retailer listings (Amazon, Walmart, Best Buy), an independent 2024 TechCrunch feature on state loneliness programs, a peer-reviewed study in the Journals of Gerontology (run with AARP/UnitedHealth Group), and an independent critical review from The Senior List. The brand's spinoff from Hasbro is confirmed as May 2018, not 2021. Pricing and stock status are genuinely inconsistent across the manufacturer's own site and retailers as of this research. Ageless Innovation's \"more than a dozen clinical studies\" claim is a company statement; only one specific independent study was verified here. Battery runtime is not disclosed by the manufacturer.",
+  "manufacturerUrl": "https://joyforall.com/products/companion-pet-pup",
+  "pricing": {
+    "summary": "Pricing runs roughly $140–$180 depending on retailer, with Ageless Innovation's own site listing $179.99 and Best Buy as low as $139.99. Availability is inconsistent right now — Ageless Innovation shows the dog out of stock direct from the manufacturer, and Best Buy flags its lower-priced listing as no longer available in new condition."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "An independent peer-reviewed study in the Journals of Gerontology: Series B (run with AARP and UnitedHealth Group) used Joy for All companion pets and found the greatest benefit for the most isolated, previously pet-owning seniors. Ageless Innovation's own marketing claims \"more than a dozen clinical studies\" support the line, but only this one specific study was independently confirmed."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Joy for All Companion Pet Pup has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

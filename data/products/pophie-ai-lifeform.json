@@ -1,0 +1,75 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "pophie-ai-lifeform",
+  "slug": "product-pophie-ai-lifeform.html",
+  "name": "Pophie(AI Lifeform)",
+  "manufacturer": "InsBotics Technology",
+  "category": "Pets & Toys",
+  "subcategory": "Robot Pets",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A stationary, plush-shelled desktop companion from InsBotics Technology (Singapore, with an R&D center in Beijing), marketed under its own tagline \"a true AI Lifeform.\" Two TFT-LCD eyes and a body-mounted camera track faces and gestures via 360° rotation; interchangeable animal-print outfits (tiger and leopard shown here) snap over a plain shell. Conversational AI beyond a small daily allowance requires a paid subscription.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "4000mAh",
+      "note": "~1 hr untethered; ~2 hr charge; designed to stay docked"
+    },
+    {
+      "label": "Dimensions",
+      "value": "130 × 145 × 155 mm",
+      "note": "865 g"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Wi-Fi only",
+      "note": "no Bluetooth mentioned; \"edge-cloud\" AI architecture"
+    },
+    {
+      "label": "Camera",
+      "value": "Wide-angle",
+      "note": "face/gesture tracking via body rotation; resolution not disclosed"
+    },
+    {
+      "label": "Eyes/Movement",
+      "value": "2 TFT-LCD eyes",
+      "note": "2 RGB LEDs, 5 stepper motors, 360° body rotation"
+    },
+    {
+      "label": "Audio/Sensors",
+      "value": "Dual-mic array",
+      "note": "sound-source localization, 8 touch sensors, IMU"
+    },
+    {
+      "label": "Languages",
+      "value": "11 at launch",
+      "note": "per manufacturer"
+    },
+    {
+      "label": "AI access",
+      "value": "Subscription-gated",
+      "note": "free tier limited to 10 min/day of voice + vision"
+    }
+  ],
+  "sourcing": "Verified against the official Kickstarter campaign page, Pophie's own official site and press kit (pophie.com), Pophie's official shop listing, and PR Newswire's release as syndicated by Yahoo Finance and regional business press. No independent hands-on review from a major tech-press outlet was found — all specs and claims here trace back to the manufacturer or its own press materials, not third-party verification. The Kickstarter campaign's final raised amount is given inconsistently between the Kickstarter page itself (S$556,606) and Pophie's own press release (US$439,275), and both are presented rather than reconciled. The founder's name is given differently across two of the maker's own sources (\"Tang Qi\" vs. \"Joey Tang\"). Camera resolution and the specific AI processor are not disclosed anywhere found. Pophie's privacy claim (\"visible eye-state indicators\") is a single unverified press-release line, not an independently audited practice.",
+  "manufacturerUrl": "https://pophie.com/",
+  "pricing": {
+    "summary": "$399 for the base unit on Pophie's official store, with interchangeable plush outfits (Tiger and Leopard confirmed at $45 each; Panda, Cotton Candy, Kitty, Sage, Sky Blue, Violet, and Pinecone also listed) sold separately — most hardware and accessories showed as sold out at the time of this research. The May–June 2026 Kickstarter campaign (\"Pophie: A True AI Lifeform\") was a \"Project We Love\" with 1,168 backers against a S$15,000 goal; the final raised amount is given inconsistently across sources — the Kickstarter page itself shows S$556,606 while Pophie's own PR Newswire release states US$439,275 — which may reflect currency conversion or different snapshot times rather than a true conflict, but the two figures don't reconcile cleanly and are presented as given."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Full conversational AI is not included with the $399 hardware purchase: the free tier caps voice-and-vision interaction at 10 minutes a day, with a Standard ($10/month) or Pro ($20/month) subscription required to unlock more. The battery is rated for only about one hour of untethered use on its 4000mAh cell, and Pophie's own materials describe it as designed to stay on its charging dock rather than be carried around."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Pophie (AI Lifeform) has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

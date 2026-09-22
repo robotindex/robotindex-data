@@ -1,0 +1,79 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "figure-03",
+  "slug": "product-figure-03.html",
+  "name": "Figure 03",
+  "manufacturer": "Figure AI",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "Figure AI's third-generation humanoid, redesigned with soft washable textiles, upgraded palm cameras and tactile hands, and a faster-charging battery. Currently deployed in enterprise pilots, including BMW's Spartanburg plant, running on Figure's Helix vision-language-action model.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "2.3 kWh",
+      "note": "~5 hr runtime at peak"
+    },
+    {
+      "label": "Weight",
+      "value": "61 kg",
+      "note": "~134 lb"
+    },
+    {
+      "label": "Height",
+      "value": "5'8\"",
+      "note": "figure.ai lists 5'8\"; some press cites 5'6\" (1.7m)"
+    },
+    {
+      "label": "Compute",
+      "value": "Not disclosed",
+      "note": "no onboard chip publicly named"
+    },
+    {
+      "label": "Payload",
+      "value": "20 kg",
+      "note": "~44 lb"
+    },
+    {
+      "label": "DOF",
+      "value": "60 total",
+      "note": "20 per hand, per announcement coverage"
+    },
+    {
+      "label": "Walking Speed",
+      "value": "1.2 m/s",
+      "note": "max, ~2.6 mph"
+    },
+    {
+      "label": "Charging",
+      "value": "2 kW wireless",
+      "note": "inductive fast-charge, active cooling"
+    }
+  ],
+  "sourcing": "Specs sourced from Figure AI's own product and announcement pages (figure.ai/figure, figure.ai/news/introducing-figure-03, figure.ai/news/f-03-battery-development, figure.ai/news/f-03-at-bmw), cross-checked against Wikipedia and TechRadar as of September 2026. Figure's own page lists height as 5'8\", while some press coverage cites 5'6\" — both are noted above. Onboard compute/chip is not publicly disclosed by Figure. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.figure.ai/figure",
+  "pricing": {
+    "summary": "Figure 03 has no public price and is **not sold to consumers** — it's deployed only through enterprise/industrial agreements such as BMW's. CEO Brett Adcock has floated a rough **~$600/month** home-leasing concept for late 2026, but Figure has given no confirmed consumer price or delivery timeline."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "Figure 03 doubles vision frame rate, quarters latency, and widens each camera's field of view 60%. Each hand has an embedded palm camera and fingertip tactile sensors sensing forces as low as 3 grams, with softer adaptive fingertips for grasping. The exterior uses soft, washable textiles. Its battery is the first humanoid pack certified to UN38.3 and UL2271."
+    },
+    {
+      "heading": "Insights",
+      "body": "Figure 03 units are already deployed at BMW Group's Spartanburg, SC plant (arrived June 2026), performing parts sequencing, picking, and heavy cart-pulling using Figure's Helix 02 vision-language-action model — a real production deployment, not just an announcement. Figure has stated capacity of up to 12,000 units/year, but production and deployment figures beyond BMW have not been independently verified."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Figure 03 has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

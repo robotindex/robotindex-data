@@ -1,0 +1,75 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "yahboom-dofbot",
+  "slug": "product-yahboom-dofbot.html",
+  "name": "Yahboom DOFBOT",
+  "manufacturer": "Yahboom",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A 6-axis desktop robot arm kit built around a single-board computer (Jetson Nano in the version pictured) and an onboard camera, marketed for AI vision education — color/gesture/face tracking, object detection, and pick-and-place demos taught through Yahboom's own Python/OpenCV/ROS curriculum. Sold as one product family across several compute-board variants rather than a single fixed SKU.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "~1,256g assembled",
+      "note": "requires 12V/5A power supply"
+    },
+    {
+      "label": "Compute",
+      "value": "Jetson Nano 4GB",
+      "note": "this SKU only — Yahboom sells separate Raspberry Pi (DOFBOT-Pi) and Jetson Orin Nano (DOFBOT Pro) variants"
+    },
+    {
+      "label": "Camera",
+      "value": "0.3MP, 30fps",
+      "note": "wide-angle, manual focus — a VGA-class sensor behind the \"AI vision\" marketing"
+    },
+    {
+      "label": "Software",
+      "value": "Python 3 + ROS (Noetic)",
+      "note": "OpenCV, YOLOv5, MediaPipe referenced in course materials"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "6 total",
+      "note": "5 arm joints (servos 1–5, base rotation hidden at the mount) + 1 gripper axis (servo 6)"
+    },
+    {
+      "label": "Payload",
+      "value": "~500g vertical",
+      "note": "~200g fully extended — third-party spec, not on Yahboom's own sheet"
+    },
+    {
+      "label": "Actuators",
+      "value": "Serial bus servos",
+      "note": "5× 15kg·cm + 1× 6kg·cm gripper servo; exact branded model number not published"
+    },
+    {
+      "label": "Reach",
+      "value": "~350mm span",
+      "note": "working radius under ~30cm (third-party spec)"
+    }
+  ],
+  "sourcing": "Specs compiled from Yahboom's own product and GitHub pages for the Jetson Nano DOFBOT, independent hardware coverage from CNX Software (payload, reach, weight, camera resolution), and NVIDIA's official Jetson product lifecycle page (Jetson Nano EOL status), as of this build. Exact servo model/part number, precise release date, and current third-party (Amazon/RobotShop) pricing could not be independently confirmed and are described only in general terms above. \"Open source\" is Yahboom's own marketing language, not a confirmed license grant — the GitHub repos have no LICENSE file.",
+  "manufacturerUrl": "https://category.yahboom.net/products/dofbot-jetson_nano",
+  "pricing": {
+    "summary": "Listed at **$339** on Yahboom's own store for the Jetson Nano version pictured here (the Raspberry Pi–based DOFBOT-Pi runs $329), though independent 2023 coverage (CNX Software) cited a wider $289–$481 range depending on which compute board is bundled. It's also resold on Amazon, RobotShop, Newegg, and OpenELAB, but current third-party pricing wasn't independently verifiable, so treat Yahboom's own listed price as the more reliable figure."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Despite \"open source\" language in Yahboom's marketing, the Jetson Nano DOFBOT's GitHub repo carries no LICENSE file and shows no published releases — no Open Source badge is applied here. Payload, reach, and repeatability figures come from independent hardware coverage rather than Yahboom's own spec sheet, and haven't been corroborated by a second source."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Yahboom's official GitHub repo for the Jetson Nano DOFBOT has real, actively-committed Python/ROS code, though it carries no LICENSE file, so usage rights are not formally granted."
+    }
+  ]
+}

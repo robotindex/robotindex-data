@@ -1,0 +1,864 @@
+{
+  "$schema": "../schema/directory.schema.json",
+  "categories": [
+    {
+      "category": "Humanoid & General Purpose",
+      "subcategories": [
+        {
+          "name": "Two Legs",
+          "items": [
+            {
+              "name": "Unitree G1",
+              "tier": "featured",
+              "productId": "unitree-g1"
+            },
+            {
+              "name": "1X NEO",
+              "tier": "featured",
+              "productId": "1x-neo"
+            },
+            {
+              "name": "Unitree R1",
+              "tier": "pending",
+              "productId": "unitree-r1"
+            },
+            {
+              "name": "Noetix Bumi",
+              "tier": "pending",
+              "productId": "noetix-bumi"
+            },
+            {
+              "name": "SuperDroid Robots Rocky Lite",
+              "tier": "pending",
+              "productId": "superdroid-rocky-lite"
+            },
+            {
+              "name": "Hugging Face LeRobot Humanoid",
+              "tier": "featured",
+              "productId": "hf-lerobot-humanoid",
+              "openSource": true
+            },
+            {
+              "name": "K-Scale Z-Bot / K-Bot",
+              "tier": "pending",
+              "productId": "kscale-zbot-kbot",
+              "openSource": true
+            },
+            {
+              "name": "Fauna Sprout",
+              "tier": "pending",
+              "productId": "fauna-sprout",
+              "pending": true
+            },
+            {
+              "name": "XPeng IRON",
+              "tier": "pending",
+              "productId": "xpeng-iron",
+              "pending": true
+            },
+            {
+              "name": "Tesla Optimus",
+              "tier": "pending",
+              "productId": "tesla-optimus"
+            },
+            {
+              "name": "Agility Robotics Digit 5",
+              "tier": "pending",
+              "productId": "agility-robotics-digit-5"
+            },
+            {
+              "name": "Boston Dynamics Atlas (Electric)",
+              "tier": "pending",
+              "productId": "boston-dynamics-atlas-electric"
+            },
+            {
+              "name": "Figure 03",
+              "tier": "featured",
+              "productId": "figure-03"
+            },
+            {
+              "name": "Tiangong Ultra",
+              "tier": "pending",
+              "productId": "tiangong-ultra"
+            },
+            {
+              "name": "UBTECH Walker S2",
+              "tier": "featured",
+              "productId": "ubtech-walker-s2"
+            }
+          ]
+        },
+        {
+          "name": "Four Legs",
+          "items": [
+            {
+              "name": "Unitree Go2",
+              "tier": "featured",
+              "productId": "unitree-go2"
+            },
+            {
+              "name": "Xiaomi CyberDog 2",
+              "tier": "featured",
+              "productId": "xiaomi-cyberdog2",
+              "openSource": true
+            },
+            {
+              "name": "Luwu Dynamics XGO Mini 2",
+              "tier": "featured",
+              "productId": "luwu-xgo-mini2"
+            },
+            {
+              "name": "Hiwonder PuppyPi Pro",
+              "tier": "featured",
+              "productId": "hiwonder-puppypi-pro"
+            },
+            {
+              "name": "Vbot BoBo",
+              "tier": "pending",
+              "productId": "vbot-bobo"
+            }
+          ]
+        },
+        {
+          "name": "Wheeled / Mobile Base",
+          "items": [
+            {
+              "name": "Sunday Robotics Memo",
+              "tier": "pending",
+              "productId": "sunday-robotics-memo",
+              "pending": true
+            },
+            {
+              "name": "ugo Nova",
+              "tier": "pending",
+              "productId": "ugo-nova",
+              "pending": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Companion & Social",
+      "subcategories": [
+        {
+          "name": "Senior Companions",
+          "items": [
+            {
+              "name": "ElliQ",
+              "tier": "featured",
+              "productId": "elliq"
+            },
+            {
+              "name": "Joy for All Companion Pet Pup",
+              "tier": "featured",
+              "productId": "joy-for-all-companion-pet-pup"
+            },
+            {
+              "name": "Joy for All Orange Tabby Cat",
+              "tier": "featured",
+              "productId": "joy-for-all-orange-tabby-cat"
+            },
+            {
+              "name": "Joy for All Walker Squawker",
+              "tier": "featured",
+              "productId": "joy-for-all-walker-squawker"
+            },
+            {
+              "name": "Tombot Jennie",
+              "tier": "pending",
+              "productId": "tombot-jennie",
+              "pending": true
+            }
+          ]
+        },
+        {
+          "name": "Children Companions",
+          "items": [
+            {
+              "name": "Miko 3",
+              "tier": "featured",
+              "productId": "miko-3"
+            },
+            {
+              "name": "Miko Mini",
+              "tier": "featured",
+              "productId": "miko-mini"
+            },
+            {
+              "name": "ROYBI Robot",
+              "tier": "featured",
+              "productId": "roybi-robot"
+            },
+            {
+              "name": "X-Origin AI Yonbo",
+              "tier": "pending",
+              "productId": "x-origin-ai-yonbo"
+            },
+            {
+              "name": "Curio",
+              "tier": "pending",
+              "productId": "curio-interactive-ai-toys"
+            },
+            {
+              "name": "Yukai Engineering BOCCO emo",
+              "tier": "featured",
+              "productId": "yukai-engineering-bocco-emo"
+            }
+          ]
+        },
+        {
+          "name": "Mobility Helpers",
+          "items": [
+            {
+              "name": "Gita Mini",
+              "tier": "featured",
+              "productId": "gita-mini"
+            },
+            {
+              "name": "Mondo Robotics Beni",
+              "tier": "pending",
+              "productId": "mondo-robotics-beni",
+              "pending": true
+            },
+            {
+              "name": "Sentigent Rovar X3",
+              "tier": "pending",
+              "productId": "sentigent-rovar-x3"
+            },
+            {
+              "name": "temi V3",
+              "tier": "pending",
+              "productId": "temi-v3"
+            }
+          ]
+        },
+        {
+          "name": "General Companions",
+          "items": [
+            {
+              "name": "Zeroth M1",
+              "tier": "pending",
+              "productId": "zeroth-m1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Robot Arms",
+      "subcategories": [
+        {
+          "name": "",
+          "items": [
+            {
+              "name": "SO-101",
+              "tier": "featured",
+              "productId": "so-101",
+              "openSource": true
+            },
+            {
+              "name": "Elephant Robotics myCobot 280",
+              "tier": "featured",
+              "productId": "elephant-robotics-mycobot-280",
+              "openSource": true
+            },
+            {
+              "name": "Waveshare RoArm-M2-S",
+              "tier": "featured",
+              "productId": "waveshare-roarm-m2s",
+              "openSource": true
+            },
+            {
+              "name": "Annin Robotics AR4",
+              "tier": "featured",
+              "productId": "annin-robotics-ar4"
+            },
+            {
+              "name": "Yahboom DOFBOT",
+              "tier": "featured",
+              "productId": "yahboom-dofbot"
+            },
+            {
+              "name": "Elephant Robotics ultraArm P340",
+              "tier": "featured",
+              "productId": "elephant-robotics-ultraarm-p340",
+              "openSource": true
+            },
+            {
+              "name": "WLKATA Mirobot Education Kit",
+              "tier": "featured",
+              "productId": "wlkata-mirobot",
+              "openSource": true
+            },
+            {
+              "name": "ROBOTIS OpenMANIPULATOR-X",
+              "tier": "pending",
+              "productId": "robotis-openmanipulator-x",
+              "openSource": true
+            },
+            {
+              "name": "Arctos Robotics Arm",
+              "tier": "pending",
+              "productId": "arctos-robotics-arm",
+              "openSource": true
+            },
+            {
+              "name": "AgileX PiPER",
+              "tier": "pending",
+              "productId": "agilex-piper"
+            },
+            {
+              "name": "Interbotix ViperX-300 6DOF",
+              "tier": "featured",
+              "productId": "interbotix-viperx-300-6dof"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Personal Drones",
+      "subcategories": [
+        {
+          "name": "Flying",
+          "items": [
+            {
+              "name": "HOVERAir X1 Family",
+              "tier": "featured",
+              "productId": "hoverair-x1-family"
+            },
+            {
+              "name": "DJI Neo Family",
+              "tier": "featured",
+              "productId": "dji-neo-family"
+            }
+          ]
+        },
+        {
+          "name": "Underwater",
+          "items": [
+            {
+              "name": "CHASING Underwater Drone Family",
+              "tier": "featured",
+              "productId": "chasing-family"
+            },
+            {
+              "name": "Geneinno T1 Pro",
+              "tier": "featured",
+              "productId": "geneinno-t1-pro"
+            },
+            {
+              "name": "QYSEA FIFISH V-EVO",
+              "tier": "featured",
+              "productId": "qysea-fifish-v-evo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Pets & Toys",
+      "subcategories": [
+        {
+          "name": "Robot Pets",
+          "items": [
+            {
+              "name": "Sony Aibo",
+              "tier": "featured",
+              "productId": "sony-aibo"
+            },
+            {
+              "name": "EMO",
+              "tier": "featured",
+              "productId": "emo"
+            },
+            {
+              "name": "Loona",
+              "tier": "featured",
+              "productId": "loona"
+            },
+            {
+              "name": "Vector 2.0",
+              "tier": "featured",
+              "productId": "vector-2"
+            },
+            {
+              "name": "Eilik",
+              "tier": "featured",
+              "productId": "eilik"
+            },
+            {
+              "name": "Aibi Pocket Robot",
+              "tier": "featured",
+              "productId": "aibi-pocket-robot"
+            },
+            {
+              "name": "LOOI",
+              "tier": "featured",
+              "productId": "looi"
+            },
+            {
+              "name": "Yukai Engineering Qoobo",
+              "tier": "featured",
+              "productId": "yukai-engineering-qoobo"
+            },
+            {
+              "name": "Casio Moflin",
+              "tier": "featured",
+              "productId": "casio-moflin"
+            },
+            {
+              "name": "Weilan BabyAlpha A2",
+              "tier": "pending",
+              "productId": "weilan-babyalpha-a2"
+            },
+            {
+              "name": "Letianpai Rux Robot",
+              "tier": "pending",
+              "productId": "letianpai-rux-robot",
+              "openSource": true
+            },
+            {
+              "name": "Ropet KAMOMO",
+              "tier": "pending",
+              "productId": "ropet-kamomo"
+            },
+            {
+              "name": "Pophie (AI Lifeform)",
+              "tier": "pending",
+              "productId": "pophie-ai-lifeform"
+            },
+            {
+              "name": "Ortomi Umi",
+              "tier": "pending",
+              "productId": "ortomi-umi"
+            },
+            {
+              "name": "Hengbot Sirius",
+              "tier": "pending",
+              "productId": "hengbot-sirius",
+              "pending": true
+            }
+          ]
+        },
+        {
+          "name": "Toys & Characters",
+          "items": [
+            {
+              "name": "Little Live Pets My Walking Penguin",
+              "tier": "featured",
+              "productId": "little-live-pets-my-walking-penguin"
+            },
+            {
+              "name": "Tamagotchi Uni",
+              "tier": "featured",
+              "productId": "tamagotchi-uni"
+            },
+            {
+              "name": "Hatchimals Alive Mystery Hatch",
+              "tier": "featured",
+              "productId": "hatchimals-alive-mystery-hatch"
+            },
+            {
+              "name": "WowWee Fingerlings",
+              "tier": "featured",
+              "productId": "wowwee-fingerlings"
+            },
+            {
+              "name": "Bitzee Magicals",
+              "tier": "pending",
+              "productId": "bitzee-magicals"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Cleaning & Home Care",
+      "subcategories": [
+        {
+          "name": "Floors",
+          "items": [
+            {
+              "name": "Roborock Qrevo Edge 3 Pro",
+              "tier": "featured",
+              "productId": "roborock-qrevo-edge-3-pro"
+            },
+            {
+              "name": "Dreame X60 Max Ultra Complete",
+              "tier": "featured",
+              "productId": "dreame-x60-max-ultra-complete"
+            },
+            {
+              "name": "Ecovacs Deebot T90 Pro Omni",
+              "tier": "featured",
+              "productId": "ecovacs-t90-pro-omni"
+            },
+            {
+              "name": "Eufy Omni C28",
+              "tier": "featured",
+              "productId": "eufy-omni-c28"
+            },
+            {
+              "name": "Roborock Saros 20 Flow",
+              "tier": "pending",
+              "productId": "roborock-saros-20-flow"
+            },
+            {
+              "name": "Roomba Max 875 Combo",
+              "tier": "pending",
+              "productId": "roomba-max-875-combo"
+            },
+            {
+              "name": "xLean TR1",
+              "tier": "pending",
+              "productId": "xlean-tr1",
+              "pending": true
+            }
+          ]
+        },
+        {
+          "name": "Other",
+          "items": [
+            {
+              "name": "ECOVACS WINBOT W2 PRO Omni",
+              "tier": "featured",
+              "productId": "ecovacs-winbot-w2-pro-omni"
+            },
+            {
+              "name": "FMART T9Pro",
+              "tier": "featured",
+              "productId": "fmart-t9pro"
+            },
+            {
+              "name": "ECOVACS WINBOT Mini",
+              "tier": "pending",
+              "productId": "ecovacs-winbot-mini"
+            },
+            {
+              "name": "HAUSHOF Window Cleaner Robot",
+              "tier": "pending",
+              "productId": "haushof-window-cleaner-robot"
+            },
+            {
+              "name": "Mamibot W120-DP-WB",
+              "tier": "pending",
+              "productId": "mamibot-w120-dp-wb"
+            },
+            {
+              "name": "Whisker Litter-Robot 4",
+              "tier": "featured",
+              "productId": "whisker-litter-robot-4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Outdoor & Yard",
+      "subcategories": [
+        {
+          "name": "Robot Lawn Mowers",
+          "items": [
+            {
+              "name": "Worx Landroid M WR140",
+              "tier": "featured",
+              "productId": "worx-landroid-m-wr140"
+            },
+            {
+              "name": "Husqvarna Automower 450X",
+              "tier": "featured",
+              "productId": "husqvarna-automower-450x"
+            },
+            {
+              "name": "Mammotion LUBA 3 AWD 3000S",
+              "tier": "featured",
+              "productId": "mammotion-luba3-awd-3000s"
+            },
+            {
+              "name": "Segway Navimow i105N",
+              "tier": "featured",
+              "productId": "segway-navimow-i105n"
+            },
+            {
+              "name": "Lymow One",
+              "tier": "pending",
+              "productId": "lymow-one"
+            },
+            {
+              "name": "Worx Landroid Vision Cloud WR340",
+              "tier": "pending",
+              "productId": "worx-landroid-vision-wr340"
+            }
+          ]
+        },
+        {
+          "name": "Other",
+          "items": [
+            {
+              "name": "Dolphin Premier",
+              "tier": "featured",
+              "productId": "dolphin-premier"
+            },
+            {
+              "name": "Dolphin Quantum",
+              "tier": "featured",
+              "productId": "dolphin-quantum"
+            },
+            {
+              "name": "Clear Robotics Clear UV",
+              "tier": "featured",
+              "productId": "clear-robotics-clear-uv"
+            },
+            {
+              "name": "Yarbo Core",
+              "tier": "pending",
+              "productId": "yarbo-core"
+            },
+            {
+              "name": "Sublue BlueNexus",
+              "tier": "pending",
+              "productId": "sublue-bluenexus"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Security",
+      "subcategories": [
+        {
+          "name": "Indoor Security",
+          "items": [
+            {
+              "name": "Enabot Ebo Air",
+              "tier": "featured",
+              "productId": "enabot-ebo-air"
+            },
+            {
+              "name": "Enabot EBO X",
+              "tier": "featured",
+              "productId": "enabot-ebo-x"
+            },
+            {
+              "name": "Enabot ROLA Mini",
+              "tier": "pending",
+              "productId": "enabot-rola-mini"
+            },
+            {
+              "name": "Moorebot Scout",
+              "tier": "featured",
+              "productId": "moorebot-scout",
+              "openSource": true
+            },
+            {
+              "name": "Amazon Astro",
+              "tier": "pending",
+              "productId": "amazon-astro",
+              "pending": true
+            }
+          ]
+        },
+        {
+          "name": "Outdoor Security",
+          "items": [
+            {
+              "name": "SMP Robotics S5 Series",
+              "tier": "featured",
+              "productId": "smp-robotics-s5-series"
+            },
+            {
+              "name": "Sunflower Labs (The Bee + Hive)",
+              "tier": "pending",
+              "productId": "sunflower-labs-bee-hive"
+            },
+            {
+              "name": "Ascento Guard",
+              "tier": "pending",
+              "productId": "ascento-guard"
+            }
+          ]
+        },
+        {
+          "name": "Maker / DIY Security Platforms",
+          "items": [
+            {
+              "name": "TurtleBot4",
+              "tier": "pending",
+              "productId": "turtlebot4",
+              "openSource": true
+            },
+            {
+              "name": "Waveshare UGV Rover",
+              "tier": "pending",
+              "productId": "waveshare-ugv-rover",
+              "openSource": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Educational & Hobbyist",
+      "subcategories": [
+        {
+          "name": "Mobile Robot Kits",
+          "items": [
+            {
+              "name": "SunFounder PiCar-X",
+              "tier": "featured",
+              "productId": "sunfounder-picar-x",
+              "openSource": true
+            },
+            {
+              "name": "Yahboom ROSMASTER",
+              "tier": "featured",
+              "productId": "yahboom-rosmaster"
+            },
+            {
+              "name": "Waveshare JetRacer",
+              "tier": "featured",
+              "productId": "waveshare-jetracer",
+              "openSource": true
+            },
+            {
+              "name": "Petoi Bittle X",
+              "tier": "featured",
+              "productId": "petoi-bittle-x",
+              "openSource": true
+            },
+            {
+              "name": "MangDang Mini Pupper 2 Pro",
+              "tier": "featured",
+              "productId": "mangdang-mini-pupper-2-pro",
+              "openSource": true
+            },
+            {
+              "name": "ELEGOO Smart Robot Car Kit V4",
+              "tier": "featured",
+              "productId": "elegoo-smart-robot-car-v4"
+            },
+            {
+              "name": "SunFounder GalaxyRVR",
+              "tier": "pending",
+              "productId": "sunfounder-galaxyrvr",
+              "openSource": true
+            },
+            {
+              "name": "Adeept RaspTank Pro",
+              "tier": "pending",
+              "productId": "adeept-rasptank-pro"
+            },
+            {
+              "name": "Freenove 4WD Smart Car Kit",
+              "tier": "pending",
+              "productId": "freenove-4wd-smart-car-kit"
+            },
+            {
+              "name": "Waveshare UGV02",
+              "tier": "pending",
+              "productId": "waveshare-ugv02",
+              "openSource": true
+            },
+            {
+              "name": "Petoi Quaddle",
+              "tier": "pending",
+              "productId": "petoi-quaddle",
+              "pending": true
+            },
+            {
+              "name": "Hiwonder MentorPi T1",
+              "tier": "pending",
+              "productId": "hiwonder-mentorpi-t1"
+            },
+            {
+              "name": "AlohaMini",
+              "tier": "pending",
+              "productId": "alohamini",
+              "openSource": true
+            },
+            {
+              "name": "LeKiwi",
+              "tier": "pending",
+              "productId": "lekiwi",
+              "openSource": true
+            },
+            {
+              "name": "Linorobot2",
+              "tier": "pending",
+              "productId": "linorobot2",
+              "openSource": true
+            }
+          ]
+        },
+        {
+          "name": "Classroom & Coding Kits",
+          "items": [
+            {
+              "name": "LEGO Education SPIKE Prime",
+              "tier": "featured",
+              "productId": "lego-education-spike-prime"
+            },
+            {
+              "name": "Sphero BOLT+",
+              "tier": "featured",
+              "productId": "sphero-bolt-plus"
+            },
+            {
+              "name": "DJI RoboMaster S1",
+              "tier": "featured",
+              "productId": "dji-robomaster-s1"
+            },
+            {
+              "name": "Makeblock mBot2",
+              "tier": "featured",
+              "productId": "makeblock-mbot2"
+            },
+            {
+              "name": "Learning Resources Botley 2.0",
+              "tier": "featured",
+              "productId": "learning-resources-botley-2"
+            },
+            {
+              "name": "Learning Resources Code & Go Robot Mouse",
+              "tier": "featured",
+              "productId": "learning-resources-code-and-go-robot-mouse"
+            },
+            {
+              "name": "Microduck",
+              "tier": "pending",
+              "productId": "microduck"
+            },
+            {
+              "name": "Pollen Robotics Reachy Mini",
+              "tier": "featured",
+              "productId": "pollen-robotics-reachy-mini",
+              "openSource": true
+            },
+            {
+              "name": "Thames & Kosmos Coding Chameleon",
+              "tier": "pending",
+              "productId": "thames-kosmos-coding-chameleon"
+            },
+            {
+              "name": "Pololu 3pi+ 2040",
+              "tier": "pending",
+              "productId": "pololu-3pi-plus-2040"
+            },
+            {
+              "name": "RoboLink CoDrone EDU",
+              "tier": "pending",
+              "productId": "robolink-codrone-edu"
+            },
+            {
+              "name": "Otto DIY Maker Kit",
+              "tier": "featured",
+              "productId": "otto-diy-maker-kit"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

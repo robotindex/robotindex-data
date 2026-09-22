@@ -1,0 +1,99 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "hoverair-x1-family",
+  "slug": "product-hoverair-x1-family.html",
+  "name": "HOVERAir X1 Family",
+  "manufacturer": "Zero Zero Robotics",
+  "category": "Personal Drones",
+  "subcategory": "Flying",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A three-tier line of palm-sized, propeller-caged, self-flying camera drones from Zero Zero Robotics (Beijing) — HOVERAir X1 (base), X1 PRO, and X1 PROMAX. All three launch, follow, and land themselves with no manual flight-stick skill required; they differ mainly in camera/sensor size, video resolution, flight time, transmission range, storage, and rear-facing obstacle sensing. Covered here as one family page rather than three separate entries, since the design and core self-flying feature set are shared across all three.",
+  "specs": [
+    {
+      "label": "MSRP",
+      "value": "X1: $299; X1 PRO: $499; X1 PROMAX: $699"
+    },
+    {
+      "label": "Weight",
+      "value": "X1: 125 g; X1 PRO: 191.5 g (reported 191.5–192g across official pages); X1 PROMAX: 192.5 g (reported 192–192.5g across official pages)"
+    },
+    {
+      "label": "Photo / Sensor",
+      "value": "X1: 12MP, 1/2.7\" CMOS (90° FOV, f/2.4); X1 PRO: 12MP, 1/2\" CMOS (104° FOV); X1 PROMAX: 48MP capable (12MP also available), 1/1.3\" CMOS (107° FOV — largest sensor, best low-light of the three, but still noisy per independent reviews)"
+    },
+    {
+      "label": "Video",
+      "value": "X1: 2.7K@30, 1080p@60, 1080p@30 HDR; X1 PRO: 4K@60/50/30/25/24, 2.7K@60, 1080p@120/100 slow-mo (HDR support on PRO not confirmed by any source found); X1 PROMAX: 8K@30, 4K@120/100 slow-mo, 10-bit HLG (independent review: HLG mode \"falls short of true HDR,\" no true flat/Log profile — JPEG-only stills, no RAW on any tier)"
+    },
+    {
+      "label": "Gimbal / Stabilization",
+      "value": "X1: 1-axis mechanical + EIS (one review describes it as 2-axis, conflicting with the official spec — unresolved); X1 PRO: 2-axis mechanical + EIS (\"SmoothCapture 2.0\"); X1 PROMAX: 2-axis mechanical + EIS (\"SmoothCapture 2.0\")"
+    },
+    {
+      "label": "Obstacle sensing",
+      "value": "X1: None; X1 PRO: Rear-facing ToF proximity only (independent hands-on review: \"not very effective in practice,\" not reliable against branches); X1 PROMAX: Rear-facing ToF + CV proximity (better than PRO per reviews, but still no 360° protection)"
+    },
+    {
+      "label": "Flight time",
+      "value": "X1: 11.5 min (reviewer-measured ~9–10 min real-world); X1 PRO: 16 min; X1 PROMAX: 16 min (shorter than DJI Flip's 31 min per Tom's Guide)"
+    },
+    {
+      "label": "Max auto-follow speed",
+      "value": "X1: 25 km/h (~15.5 mph); X1 PRO: 42 km/h (~26 mph); X1 PROMAX: 42 km/h (~26 mph)"
+    },
+    {
+      "label": "Transmission range",
+      "value": "X1: ~30 m via app; X1 PRO: ~500 m via app, ~1 km with optional Beacon accessory; X1 PROMAX: ~500 m via app, ~1 km with optional Beacon accessory"
+    },
+    {
+      "label": "Wind resistance",
+      "value": "X1: Level 4 (7.9 m/s); X1 PRO: Level 5 (10.7 m/s); X1 PROMAX: Level 5 (10.7 m/s)"
+    },
+    {
+      "label": "Storage",
+      "value": "X1: 32GB built-in, no microSD; X1 PRO: 32GB built-in + microSD to 1TB; X1 PROMAX: 64GB built-in + microSD to 1TB"
+    },
+    {
+      "label": "Battery",
+      "value": "X1: 1050 mAh, ~35 min charge; X1 PRO: 1920 mAh, ~45 min charge; X1 PROMAX: 1920 mAh, ~45 min charge"
+    },
+    {
+      "label": "Folded size",
+      "value": "X1: 86 × 127 × 31 mm; X1 PRO: 105 × 149 × 34 mm; X1 PROMAX: 105 × 149 × 34 mm"
+    },
+    {
+      "label": "GPS",
+      "value": "None on any tier — positioning is Visual Inertial Odometry (VIO) + downward Time-of-Flight sensor. Tom's Guide flags possible signal/position instability at altitude as a result."
+    },
+    {
+      "label": "FAA status",
+      "value": "All three are under the FAA's 250g threshold (well under, not borderline) — no registration/Remote ID needed for recreational flying. Any commercial/business use still requires registration and Remote ID regardless of weight; PRO and PROMAX ship with Standard Remote ID built in for that case."
+    },
+    {
+      "label": "Subscription",
+      "value": "None — the Hover X1 app is free, and HOVERAir states media is stored locally on the drone and downloaded directly to the phone, with \"no cloud storage or access to your media unless you specifically decide to share it.\" No subscription tier for storage or editing was found."
+    }
+  ],
+  "sourcing": "Specs compiled from HOVERAir's own comparison guide and support articles (hoverair.com, us.hoverair.com, support.hoverair.com), and independent reviews from TechRadar (base X1), Tom's Guide and Maison du Drone (PRO/PROMAX), and Space.com (PROMAX). Flagged as unconfirmed or conflicting above: the base X1's gimbal axis count (official spec vs. one review), whether X1 PRO supports HDR video, exact PRO/PROMAX obstacle-sensor count and placement beyond \"rear-facing,\" the company's total lifetime funding, and founder name spellings. Reviews from The Verge, PCMag, TechCrunch, and DPReview specifically were not located and should not be assumed to exist without direct verification. This entry hasn't yet been cross-linked or synced to the directory listing; that's planned for a later pass.",
+  "manufacturerUrl": "https://hoverair.com/blogs/guide/x1-x1-pro-or-x1-promax-a-complete-guide-to-picking-the-right-hoverair-camera",
+  "pricing": {
+    "summary": "Current official MSRPs are **$299** (X1), **$499** (X1 PRO), and **$699** (X1 PROMAX), per HOVERAir's own comparison guide. Combo kits bundling a case and extra battery cost more than the standalone body price."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "HOVERAir markets PRO and PROMAX as adding collision sensing over the sensor-less base X1, but a detailed independent hands-on review found PRO's rear-only ToF sensors \"not very effective in practice\" and unable to reliably avoid branches even at low speed, with PROMAX's added sensor described as better but still offering no 360° protection. Separately, in May 2026 the FCC blocked Zero Zero Robotics' newest product, the HOVERAir AQUA, from equipment authorization as part of an expansion of its \"Covered List\" targeting Chinese-made drones over data-security concerns — that block doesn't apply to the X1/PRO/PROMAX line, which keeps its earlier authorizations, but it signals rising US regulatory scrutiny of this manufacturer."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "HOVERAir X1 Family has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

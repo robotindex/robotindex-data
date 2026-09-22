@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "boston-dynamics-atlas-electric",
+  "slug": "product-boston-dynamics-atlas-electric.html",
+  "name": "Boston Dynamics Atlas (Electric)",
+  "manufacturer": "Boston Dynamics",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A fully electric humanoid robot from Boston Dynamics, unveiled April 17, 2024, one day after the company retired its famous hydraulic Atlas. Custom electric actuators give it a deliberately non-human range of motion — most visibly in its viral \"getting up\" sequence, where it folds its legs beside its ribs before standing. It's an R&D and pilot-deployment platform developed with Hyundai, Boston Dynamics' own majority owner, rather than a robot available for general purchase.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "~4 hours",
+      "note": "can autonomously dock and swap its own battery"
+    },
+    {
+      "label": "Weight",
+      "value": "90 kg",
+      "note": "per current spec sheet; unclear if unchanged since 2024 reveal"
+    },
+    {
+      "label": "Height",
+      "value": "1.9 m",
+      "note": "per current spec sheet; unclear if unchanged since 2024 reveal"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "56 DOF",
+      "note": "up from ~28 on the earlier hydraulic Atlas"
+    },
+    {
+      "label": "Payload",
+      "value": "50 kg peak",
+      "note": "30 kg sustained; 2.3 m reach"
+    },
+    {
+      "label": "Actuators",
+      "value": "Custom electric",
+      "note": "planetary roller screws + neodymium magnets, in-house design"
+    },
+    {
+      "label": "Hands",
+      "value": "3-fingered",
+      "note": "compliant grasping; interchangeable end-effectors described, not itemized"
+    },
+    {
+      "label": "Environmental",
+      "value": "IP67",
+      "note": "-20°C to 40°C operating range"
+    },
+    {
+      "label": "Control Modes",
+      "value": "Autonomous, teleop, tablet",
+      "note": "public demos to date have run under teleoperation"
+    }
+  ],
+  "sourcing": "Verified against Boston Dynamics' own official blog posts (the April 2024 \"Electric New Era for Atlas\" announcement, the August 2025 Large Behavior Models post with Toyota Research Institute, and CES 2026 production announcements), its product page, Wikipedia (Atlas, Boston Dynamics), and reporting from TechCrunch, IEEE Spectrum, Engadget, The Robot Report, and Interesting Engineering. Whether Atlas should still be labeled pure \"R&D/testing, not commercially sold\" is presented as an open, evolving question rather than settled fact, given Boston Dynamics' own 2026 statements about committed production units. Several commonly cited specs (56 DOF, exact dimensions, payload figures) trace to the current product page and CES 2026 materials rather than a clearly dated 2024 spec sheet, and a claim that CNET named Atlas \"Best Robot\" of CES 2026 could not be independently confirmed against a primary CNET source.",
+  "manufacturerUrl": "https://bostondynamics.com/products/atlas/",
+  "pricing": {
+    "summary": "No public price has ever been disclosed — Atlas is not sold commercially, having been developed and piloted exclusively with Hyundai (Boston Dynamics' own majority owner since 2021) for automotive-manufacturing tasks. Originally targeted for \"proof of technology testing\" as early as 2025, full plant deployment at Hyundai has since slipped to 2028 (with additional customers not planned until 2027), so it remains unavailable for purchase well beyond the original timeline."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "A common assumption that Atlas runs primarily on reinforcement learning doesn't match Boston Dynamics' own most detailed technical disclosure: a joint effort with Toyota Research Institute on \"Large Behavior Models\" describes imitation learning from teleoperated human demonstrations — using a roughly 450-million-parameter diffusion transformer — as the current core method for manipulation, with reinforcement learning described as a future direction rather than what's running today."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Boston Dynamics Atlas (Electric) has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

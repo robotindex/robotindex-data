@@ -1,0 +1,78 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "tiangong-ultra",
+  "slug": "product-tiangong-ultra.html",
+  "name": "Tiangong Ultra",
+  "manufacturer": "X-Humanoid",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A running-optimized humanoid from X-Humanoid — formally the Beijing Innovation Center of Humanoid Robotics, a state-backed consortium founded in 2023 and organized/managed by UBTECH alongside Xiaomi Robotics and government-linked partners. It is not a UBTECH product, despite frequent misattribution. Tiangong Ultra won the world's first humanoid half-marathon in April 2025 and ran a sub-9-second 100m sprint in August 2026, but only about nine units have ever been delivered, all to universities and research partners — it isn't commercially sold.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "55 kg"
+    },
+    {
+      "label": "Height",
+      "value": "180 cm"
+    },
+    {
+      "label": "Sensors",
+      "value": "Dual LiDAR + IMU",
+      "note": "satellite positioning; no camera confirmed in running configuration"
+    },
+    {
+      "label": "Half-Marathon",
+      "value": "2h 40m",
+      "note": "~7–8 km/h pace over 21km; 3 battery swaps"
+    },
+    {
+      "label": "100m Sprint",
+      "value": "8.64 sec",
+      "note": "2026 World Humanoid Robot Games; beats Usain Bolt's 9.58s"
+    },
+    {
+      "label": "Top Speed",
+      "value": "Unconfirmed",
+      "note": "12 km/h spec sheet vs. ~40 km/h implied sprint pace — sources don't reconcile"
+    },
+    {
+      "label": "AI Stack",
+      "value": "HuiSi KaiWu",
+      "note": "plus open-sourced RoboMIND dataset, built with Peking University"
+    },
+    {
+      "label": "Units Delivered",
+      "value": "~9 total",
+      "note": "to universities and research/secondary-development partners only"
+    },
+    {
+      "label": "Sale Model",
+      "value": "Not commercially sold",
+      "note": "pilot/demonstration phase; no public retail price"
+    }
+  ],
+  "sourcing": "Verified against X-Humanoid's own site, Global Times, Sina Finance and thepaper.cn (Chinese-language reporting on the Innovation Center's founding shareholders and UBTECH's managing role), SCMP, Mike Kalil's independent industry blog, Caixin Global, TechNode, RoboAtlas, Scientific American, TechTimes, Newscord, The Diplomat, the Jamestown Foundation, CGTN, and Malay Mail. Flagged as uncertain: whether \"Beijing Humanoid Robot Innovation Center\" is formally identical to the Chinese \"national-local co-built\" designation is inferred from consistent usage rather than confirmed by one bilingual source; Tiangong 1.0's unveiling date is given as both April and May 4, 2024 across sources; top-speed figures conflict depending on running mode (endurance vs. sprint) and aren't reconciled by any single source; and headlines describing the half-marathon win as \"beating the human world record\" appear to conflate it with the later, separate 100m sprint record. This entry corrects the prior note's implicit UBTECH association — Tiangong Ultra is an X-Humanoid product, and UBTECH's role is as founding/managing shareholder of the consortium behind it, not as the robot's manufacturer.",
+  "manufacturerUrl": "https://www.x-humanoid.com",
+  "pricing": {
+    "summary": "Tiangong Ultra is not commercially sold and has no retail price; per RoboAtlas, only about nine units have ever been delivered, all to universities and research or secondary-development partners, with X-Humanoid describing it as being in a pilot/demonstration phase rather than general sale. A confusingly similarly-named robot, \"Tiangong Walker,\" is a separate UBTECH-branded product priced around RMB 299,000 (~$41,300), and X-Humanoid's own \"Tian Yi 2.0\" runs about $49,000 — neither price applies to Tiangong Ultra itself."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Tiangong Ultra is made by X-Humanoid (a state-backed consortium jointly owned by UBTECH, Xiaomi Robotics, and two government entities), not by UBTECH itself, despite UBTECH being the founding/managing shareholder and some press attributing its results to UBTECH. Its widely covered 2025 half-marathon win took 2 hours 40 minutes (roughly 7–8 km/h, well slower than the elite human record of ~57 minutes) using three battery swaps, while its later 100m sprint record (8.64 seconds, beating Usain Bolt) is real but came at an event where independent scientists found only about 38% of entrants ran fully autonomously, prompting MIT's Rodney Brooks to call such races a \"publicity stunt.\""
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Tiangong Ultra has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

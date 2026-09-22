@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "ugo-nova",
+  "slug": "product-ugo-nova.html",
+  "name": "ugo Nova",
+  "manufacturer": "ugo Inc.",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Wheeled / Mobile Base",
+  "tier": "pending",
+  "flags": {
+    "pending": true,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A dual-arm \"semi-humanoid\" from ugo Inc., a Tokyo-based robotics company — a humanoid head, torso, and two 7-axis arms mounted on an omnidirectional Mecanum-wheel base rather than legs. Announced September 16, 2026, Nova is built as a hybrid teleoperation-and-AI-inference platform for manufacturing and logistics work, collecting demonstration data for \"physical AI\" foundation models while also running trained models on the same hardware. Mass production is planned for 2027; it isn't sold or priced yet.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "~6 hrs runtime",
+      "note": "LiFePO4, 50.6V/22Ah; ~2.5 hr recharge on standard AC100V"
+    },
+    {
+      "label": "Weight",
+      "value": "~100 kg"
+    },
+    {
+      "label": "Height",
+      "value": "126–162 cm",
+      "note": "adjustable, folded to fully extended"
+    },
+    {
+      "label": "Compute",
+      "value": "NVIDIA Jetson Thor",
+      "note": "on-device inference; 100Hz arm control loop"
+    },
+    {
+      "label": "Locomotion",
+      "value": "Mecanum 4-wheel",
+      "note": "omnidirectional; 0.4–3.6 km/h; ~5° slope, ~1cm step capability"
+    },
+    {
+      "label": "Arms",
+      "value": "22 DOF total",
+      "note": "dual 7-axis arms + 2-finger gripper each; 843mm reach, 4kg/arm payload"
+    },
+    {
+      "label": "Autonomy",
+      "value": "Hybrid",
+      "note": "bilateral-controller/VR teleoperation for data collection, plus on-device AI inference"
+    },
+    {
+      "label": "Sale Model",
+      "value": "Not yet available",
+      "note": "mass production planned 2027; no price disclosed"
+    }
+  ],
+  "sourcing": "Verified against ugo Inc.'s own product and announcement pages (ugo.plus), Dempa Times, Humanoid Robotics Technology, Robotics Registry, J-Startup's official company listing, Dealroom.co's funding coverage, itbusinesstoday, Ainos's press release, Crunchbase, KGAP+, Japan Up Close's 2019 coverage of Mira Robotics, and a CEO interview on note.com. Flagged as uncertain: the exact month of ugo's most recent funding round (April per Robotics Registry, June per Dealroom); the specific ugo robot model referenced in a 2025 Ainos sensor partnership (not specified as Nova); and, most importantly, that nearly all technical specifications for Nova trace back to ugo's own materials rather than independent testing, since the robot was announced only days before this research. This entry corrects its prior placement in the \"Two Legs\" subcategory — ugo Nova runs on a wheeled base, not legs.",
+  "manufacturerUrl": "https://ugo.plus/ai/ugo-nova/",
+  "pricing": {
+    "summary": "No price has been disclosed. ugo Nova was announced September 16, 2026 as a newly-specified, funded production program — with an industrial design partner (GK Kyoto) and a committed 2027 mass-production date — but it has not shipped to any customer and no pilot deployments have been named for Nova specifically. ugo's older product line (ugo mini, Ex, Pro, and the TS security-robot series) is already commercialized on a Robots-as-a-Service model, with the ugo mini alone reportedly exceeding 100 units shipped since its 2025 launch, but none of that pricing or deployment history applies to Nova."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "This entry was originally filed under this catalog's bipedal \"Two Legs\" section — a mistake, now corrected. ugo's own product materials describe Nova as a \"semi-humanoid\" robot with a humanoid head, torso, and dual arms mounted on a four-wheel Mecanum omnidirectional base, not legs, and no ugo product, past or present, has ever used bipedal locomotion."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "ugo Nova has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

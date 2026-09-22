@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "sunday-robotics-memo",
+  "slug": "product-sunday-robotics-memo.html",
+  "name": "Sunday Robotics Memo",
+  "manufacturer": "Sunday Robotics",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Wheeled / Mobile Base",
+  "tier": "pending",
+  "flags": {
+    "pending": true,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A wheeled, soft-shelled domestic robot from Sunday Robotics — dual arms on a mobile base rather than a bipedal build, trained from home-collected human demonstrations captured with the company's wearable Skill Capture Glove rather than teleoperation.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Form Factor",
+      "value": "Wheeled base",
+      "note": "dual arms, no legs"
+    },
+    {
+      "label": "Reach",
+      "value": "Ground to ~7 ft",
+      "note": "typical operating height ~4 ft"
+    },
+    {
+      "label": "Shell",
+      "value": "Soft silicone",
+      "note": "no sharp corners"
+    },
+    {
+      "label": "Safety",
+      "value": "Compliant control",
+      "note": "passively stable if powered off"
+    },
+    {
+      "label": "Speed",
+      "value": "~50% human pace",
+      "note": "software-limited"
+    },
+    {
+      "label": "Training Method",
+      "value": "Skill Capture Glove",
+      "note": "learns from human demonstration, not teleop"
+    },
+    {
+      "label": "Demonstrated Tasks",
+      "value": "Dishes, espresso, sock folding",
+      "note": "company-shown capabilities"
+    },
+    {
+      "label": "Manufacturing Cost",
+      "value": "~$20,000/unit",
+      "note": "current hand-built cost, per company"
+    }
+  ],
+  "sourcing": "Specs, training method, and pricing sourced from Sunday Robotics' own site (sunday.ai) as of September 2026. This is a pre-launch product: no unit has shipped, no consumer price is set, and the manufacturing cost, task list, and timeline above are the company's own claims rather than independently reviewed or third-party tested figures. Filed here under Humanoid & General Purpose · Other since it's a general-purpose domestic manipulation robot on a wheeled base rather than a bipedal humanoid, which doesn't fit this category's existing Two Legs / Four Legs subcategories. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.sunday.ai/",
+  "pricing": {
+    "summary": "Not yet for sale, with no consumer retail price announced. Sunday Robotics states each hand-built unit currently costs roughly $20,000 to manufacture and expects volume production to cut that by more than half."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "Memo is a dual-arm manipulator on a wheeled base, wrapped in a soft silicone shell for compliant control — it can be pushed aside mid-task and stays upright if powered off. Arms extend to ~7 feet (typically ~4 feet), with movement capped at half human speed. Training uses a wearable \"Skill Capture Glove\" worn by home-based \"Memory Developers,\" not teleoperation."
+    },
+    {
+      "heading": "Insights",
+      "body": "Unlike approaches that rely on teleoperation or lab-based rigs, Memo is trained via a wearable \"Skill Capture Glove\" that a network of at-home demonstrators wear to record everyday hand movements, extracted directly into the robot's onboard AI. As a pre-launch product, its ~$20,000-per-unit manufacturing cost and demonstrated task list are Sunday Robotics' own claims, not yet independently verified."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Sunday Robotics Memo has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

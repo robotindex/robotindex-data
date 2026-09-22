@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "segway-navimow-i105n",
+  "slug": "product-segway-navimow-i105n.html",
+  "name": "Segway Navimow i105N",
+  "manufacturer": "The entry model in Segway",
+  "category": "Outdoor & Yard",
+  "subcategory": "Robot Lawn Mowers",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "The entry model in Segway's wire-free \"i Series,\" using EFLS 2.0 (RTK GPS fused with camera-based VSLAM) to navigate without a boundary wire or base station. Covers up to 0.125 acre — the smallest yard size in the i Series lineup.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "21.6V, 2.6Ah",
+      "note": "~60 min runtime, 90 min charge"
+    },
+    {
+      "label": "Weight",
+      "value": "~24 lbs"
+    },
+    {
+      "label": "Dimensions",
+      "value": "~21.5 × 15.1 × 11.2 in"
+    },
+    {
+      "label": "Navigation",
+      "value": "EFLS 2.0",
+      "note": "RTK GPS + VSLAM camera, no wire/base station"
+    },
+    {
+      "label": "Max Coverage",
+      "value": "0.125 acre",
+      "note": "~500 m², up to 0.15 acre by shape"
+    },
+    {
+      "label": "Cutting Width",
+      "value": "7.1 in"
+    },
+    {
+      "label": "Cutting Height",
+      "value": "2.0–3.6 in",
+      "note": "manually adjustable"
+    },
+    {
+      "label": "Max Slope",
+      "value": "30%",
+      "note": "10% at boundaries; real-world testing found struggles above ~16°"
+    },
+    {
+      "label": "Noise",
+      "value": "58 dB(A)"
+    },
+    {
+      "label": "Subscription",
+      "value": "App free; 4G optional",
+      "note": "Core RTK/VSLAM nav free via WiFi; Access+ 4G module renews at $32.9/yr after 1 free year"
+    }
+  ],
+  "sourcing": "Verified against Segway's own official Navimow site (navimow.com, navimow.segway.com) and independent reviews from Consumer Reports, Top Ten Reviews, Android Police, and PCWorld (the latter covering the closely-related i110N). The \"N\" in \"i105N\" is a North American regional SKU designator, not a feature tier — the identical-hardware EU model is called \"i105E.\" Slope rating is a manufacturer ceiling; at least one review of a related i-series model found real-world performance degraded above roughly 16° despite the 30% (~17°) spec. Price differs between Segway's current listing ($799) and an older Top Ten Reviews figure (~$999) — treat $799 as current.",
+  "manufacturerUrl": "https://navimow.com/products/navimow-i105",
+  "pricing": {
+    "summary": "Currently listed at **$799** on navimow.com and Home Depot. Top Ten Reviews cites a figure of $999–$1,000, which may reflect an earlier price point or a different bundle — $799 is Segway's current listed price."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "Navigation uses **EFLS 2.0** (RTK GPS fused with a 140° VSLAM camera) for centimeter-level positioning without a boundary wire. \"VisionFence\" obstacle avoidance uses the same camera claiming 150+ object types, though reviewers found path precision imperfect, occasionally leaving unmowed strips. A separate ~$150 4G module is required for remote monitoring and anti-theft/GPS tracking; base connectivity is Bluetooth/Wi-Fi only."
+    },
+    {
+      "heading": "Insights",
+      "body": "Segway rates the i105N to climb slopes up to 30% (about 17°), but independent testing of a closely related i-series model found real-world performance degrading above roughly 16° — near the advertised ceiling rather than safely under it. Price citations also diverge: Segway's own current listing and Home Depot show $799, while an older Top Ten Reviews figure cited $999–$1,000."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Segway Navimow i105N has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

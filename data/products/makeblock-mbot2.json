@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "makeblock-mbot2",
+  "slug": "product-makeblock-mbot2.html",
+  "name": "Makeblock mBot2",
+  "manufacturer": "Makeblock",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Classroom & Coding Kits",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A 2-wheel differential-drive coding robot from Makeblock (Shenzhen) built around the \"CyberPi\" controller — an ESP32-based board with a built-in color display, speaker, microphone, RGB LEDs, and its own light/gyro/accelerometer sensors. The metal-chassis kit adds dual ultrasonic \"eye\" sensors and a quad RGB line-following sensor. Programmed in mBlock (Scratch-derived blocks progressing to real Python/MicroPython or Arduino C++), marketed for ages 8+. Also sold under the name \"mBot Neo\" in some markets — same hardware, different branding.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "2500mAh Li-ion",
+      "note": "~5hr runtime, ~1hr charge, per Makeblock/reseller spec sheets; exact board housing the cell (CyberPi vs. mBot2 shield) is described slightly inconsistently across Makeblock's own documentation"
+    },
+    {
+      "label": "Dimensions",
+      "value": "~180mm L × 130mm W × 90mm H",
+      "note": "package weight ~2.5lb; independently-measured robot-only weight not found"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Bluetooth + Wi-Fi (2.4GHz)",
+      "note": "independent review reports unstable direct-Bluetooth on Windows PCs, often needing the included USB dongle for reliable use"
+    },
+    {
+      "label": "Sensors",
+      "value": "Ultrasonic \"eyes\" + quad RGB",
+      "note": "2 front ultrasonic distance sensors; 4-channel line/color sensor; plus CyberPi's own light sensor, gyroscope, accelerometer, mic"
+    },
+    {
+      "label": "Software",
+      "value": "mBlock 5 (proprietary)",
+      "note": "Scratch-derived blocks progressing to Python/MicroPython or Arduino C++; built on open-source Scratch components but mBlock 5 itself isn't published as source"
+    },
+    {
+      "label": "Drive",
+      "value": "2-wheel differential, metal chassis",
+      "note": "2 encoder DC motors, 1-200 RPM, ≤5° turn accuracy, ≤2% distance deviation; max ~20cm/s"
+    },
+    {
+      "label": "Controller",
+      "value": "CyberPi (ESP32-WROVER-B)",
+      "note": "dual-core 240MHz, 8MB flash + 8MB PSRAM; built-in 1.44in color display, speaker, mic, 5 RGB LEDs, joystick"
+    },
+    {
+      "label": "Expansion",
+      "value": "2 encoder + 2 DC motor ports",
+      "note": "plus 4 servo ports, 2 LED-strip ports, 2 Arduino-module ports, and an mBuild port for 10+ additional smart modules"
+    },
+    {
+      "label": "Age Range",
+      "value": "8+ (Makeblock's listing)",
+      "note": "reviewers note real independent use skews closer to middle-school age without adult/curriculum guidance"
+    }
+  ],
+  "sourcing": "Specs and history compiled from Makeblock's own product page, help center, and open-source/CyberPi documentation, Makeblock's GitHub repositories (mBlock 4, CyberPi-Library-for-Arduino) and their LICENSE files, a third-party official-looking spec sheet (Robotix), retailer confirmation (B&H Photo), Wikipedia and a Fast Company profile on Makeblock's company history and funding, and independent reviews (whatihavelearnedteaching.com, True Aim Education, mia-cat.com) plus a third-party mBot2-vs-SPIKE-Prime comparison. Several details are flagged as unconfirmed above: the original mBot2 launch date and launch-era price, an independently-measured robot-only weight, a minor inconsistency in which board physically houses the battery, whether the GitHub Arduino-library firmware exactly matches shipping production firmware, and any Makeblock-specific tariff/export-control impact on pricing (none found despite a dedicated search). This entry hasn't yet been cross-linked into the rest of the Classroom & Coding Kits subcategory or synced to the directory listing; that's planned for a later pass.",
+  "manufacturerUrl": "https://www.makeblock.com/products/buy-mbot2",
+  "pricing": {
+    "summary": "Makeblock's current list price for a single mBot2 is **$149.99** (shown against a \"regular\" price of $177.99), confirmed independently at the same price by B&H Photo. Classroom multi-packs are also sold at **$1,199.99** for 6 units and **$2,399.99** for 12."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Makeblock's open-source claim only partly holds up: the CyberPi controller's hardware and embedded firmware are genuinely open (CERN-OHL-P v2 and GPLv3, respectively), but mBlock 5 — the actual software most owners use — has no public source repository and ships only as compiled installers, so this catalog doesn't apply a blanket Open Source badge."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Makeblock's official, GPLv3-licensed Arduino library for the CyberPi controller board that powers mBot2, verified against its GitHub LICENSE file; the mBlock 5 app most owners actually use ships only as closed-source installers."
+    }
+  ]
+}

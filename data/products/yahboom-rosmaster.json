@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "yahboom-rosmaster",
+  "slug": "product-yahboom-rosmaster.html",
+  "name": "Yahboom ROSMASTER",
+  "manufacturer": "Yahboom",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Mobile Robot Kits",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A family of ROS/ROS2 educational and research robot kits from Yahboom, spanning eight active models — from the $300 Ackermann-steered A1 up to the $1,400+ M3 Pro with a 6-DOF arm and dual lidar. This catalog entry represents the whole ROSMASTER line as one product family rather than eight separate pages; the photo shown is specifically the base ROSMASTER X3, a mecanum-drive SLAM/navigation kit.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "~1.5 hrs runtime",
+      "note": "6000mAh pack; short next to some competitors per reviewers"
+    },
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "varies by model across the 8-SKU lineup; no reliable single figure found in this research"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Not published",
+      "note": "varies by model across the 8-SKU lineup; no reliable single figure found in this research"
+    },
+    {
+      "label": "Sensors",
+      "value": "2D/3D lidar + depth camera",
+      "note": "YDLidar or \"SLAM A1\" lidar; Astra/Astra Pro depth camera"
+    },
+    {
+      "label": "Compute",
+      "value": "RPi 4B/5 → Jetson Orin NX",
+      "note": "each model offers multiple compute-board tiers"
+    },
+    {
+      "label": "Software",
+      "value": "ROS 2 Humble",
+      "note": "older X3 also supports ROS1 Melodic; Nav2 + Cartographer SLAM"
+    },
+    {
+      "label": "Drive",
+      "value": "Ackermann or Mecanum",
+      "note": "varies by model — A1/R2/R2L steer, X3/M1/M3 are omnidirectional"
+    },
+    {
+      "label": "Lineup",
+      "value": "8 active models",
+      "note": "A1, M1, R2, R2L, X3, X3 Plus, M3, M3 Pro"
+    },
+    {
+      "label": "Arm Option",
+      "value": "6-DOF, 2 SKUs only",
+      "note": "X3 Plus and M3 Pro add a robotic arm; base X3/M3 do not"
+    },
+    {
+      "label": "Price Range",
+      "value": "$300 – $2,000+",
+      "note": "A1 cheapest; M3 Pro's top configuration most expensive"
+    }
+  ],
+  "sourcing": "Verified against Yahboom's official ROSMASTER collection page and individual product pages for A1, M1, R2, R2L, X3, X3 Plus, M3, and M3 Pro; the YahboomTechnology GitHub organization and per-model repositories (including star/fork counts and Nav2/Cartographer configuration files); DOFBOT's separate official product page and GitHub repo (confirming it is not part of the ROSMASTER line); independent educator AutomaticAddison's public Nav2 tutorial repo built on a physical ROSMASTER X3; a university robotics club's (AIRclub-UdeSA) public coursework repos; a hobbyist-robotics forum thread discussing Yahboom's documentation and support quality; and RobotShop and OpenELAB distributor/education listings. Flagged as uncertain: R2L's exact standalone price (not separately listed at research time); precise top-configuration pricing for X3 Plus and M3 Pro once every compute-board option is factored in; and whether any ROSMASTER repository carries a formal open-source license, which this catalog could not confirm from the repos' visible files.",
+  "manufacturerUrl": "https://category.yahboom.net/collections/rosmaster_robot",
+  "pricing": {
+    "summary": "Pricing spans the widest range of any single entry in this catalog, because it covers eight distinct SKUs: ROSMASTER A1 from $299.90, M1 from $349.90, R2 around $655, X3 around $659, M3 from $779.90 (list $1,809.90), X3 Plus from $1,229 (list $1,729), and M3 Pro from $1,444 (list $2,034) — with R2L positioned as a stripped-down, lower-cost variant of R2 not separately listed at a fixed price. Sold through Yahboom's own storefront (category.yahboom.net, primary source for current pricing), RobotShop, Amazon, and AliExpress, with per-model pricing that swings further depending on which compute board (Raspberry Pi 5 vs. a top-tier Jetson Orin NX Super module) is selected at checkout."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Each ROSMASTER model has a real, actively-starred GitHub repository under Yahboom's official organization, but license files are not clearly present in these repos, so this entry is not tagged open source — the code is public but not formally licensed."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Yahboom's official GitHub repo for ROSMASTER X3 has real Nav2/Cartographer code with meaningful community activity (~99 stars), though it carries no LICENSE file, so usage rights are not formally granted."
+    }
+  ]
+}

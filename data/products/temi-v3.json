@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "temi-v3",
+  "slug": "product-temi-v3.html",
+  "name": "temi V3",
+  "manufacturer": "Robotemi",
+  "category": "Companion & Social",
+  "subcategory": "Mobility Helpers",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A wheeled, self-navigating telepresence robot from Robotemi (temi) with a 13.3\" touchscreen, LiDAR-based autonomous mapping, and two-way video calling. Launched in 2022 and now sold mainly through business and healthcare channels rather than as a home consumer product.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "Up to 8 hr runtime",
+      "note": "manufacturer figure, not independently verified"
+    },
+    {
+      "label": "Dimensions",
+      "value": "~100 × 35 × 45 cm",
+      "note": "~12 kg (26 lb)"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Wi-Fi 5, Bluetooth 5.1",
+      "note": "optional 4G/5G cellular model"
+    },
+    {
+      "label": "Navigation",
+      "value": "360° LiDAR + depth cameras",
+      "note": "proprietary \"ROBOX\" SLAM, zero-turn-radius base"
+    },
+    {
+      "label": "Display",
+      "value": "13.3\" touchscreen",
+      "note": "1920×1080, auto-tilts -15° to +55° to face you"
+    },
+    {
+      "label": "Status",
+      "value": "Shipping since Oct 2022",
+      "note": "sold mainly through enterprise/B2B resellers"
+    },
+    {
+      "label": "Mobility",
+      "value": "Two 50W BLDC motors",
+      "note": "~1 m/s top speed, autonomous docking/charging"
+    },
+    {
+      "label": "Audio/Video",
+      "value": "13MP camera, 4-mic array",
+      "note": "two-way video calling / telepresence"
+    },
+    {
+      "label": "Subscription",
+      "value": "Required (channel-dependent)",
+      "note": "US resellers sell a \"temi Pro\" software subscription (~$2,499/3-yr, auto-renews to lifetime) as required per unit for full functionality; a Japanese distributor instead sells only via annual license (¥1.69–1.8M/yr) rather than outright purchase"
+    }
+  ],
+  "sourcing": "Verified against Robotemi's own site (robotemi.com), enterprise reseller listings (RobotLAB, Displays2Go, Useabot), a Japanese distributor's product and pricing pages (hapi-robo, robotemi.jp), McAfee's 2020 vulnerability disclosure and corroborating security-press coverage, and business press on Robocore's funding and growth (SCMP, HKSTP, HKTDC, Forbes references via secondary coverage). No dedicated hands-on review of temi V3 specifically was found from major tech-review outlets — most V3-era coverage is company/business press rather than product reviews, which is itself flagged as a gap. Total cumulative funding, the exact leadership timeline (Wolf → Goren → Lim), and battery/navigation-accuracy figures are pieced together from partial or manufacturer-only sources and are not independently confirmed. Pricing varies by thousands of dollars depending on region, reseller, and purchase-vs-subscription model, with no single authoritative price published by the manufacturer.",
+  "manufacturerUrl": "https://www.robotemi.com/",
+  "pricing": {
+    "summary": "Pricing is inconsistent and not transparently published by the manufacturer: US reseller RobotLAB lists an outright purchase price starting around $4,499 or a lease at roughly $125/month over 36 months, while a Japanese distributor instead sells temi V3 on an annual license model (about ¥1.69M/year Wi-Fi or ¥1.8M/year cellular). Robotemi's own site lists no price at all, just \"in stock.\""
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "**Security history:** in March 2020, McAfee's Advanced Threat Research disclosed four CVEs in temi's software, including hard-coded credentials and an authentication bypass that could let an attacker remotely take control of a robot's camera and calling functions with no authentication — a legitimate concern for a mobile device with a camera and mic placed in homes and care facilities. temi patched the issues within about four months (July 2020), and no newer vulnerability disclosures have been found since."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "temi's own official Android-based developer SDK for programming movement, navigation, and app functionality on temi robots."
+    }
+  ]
+}

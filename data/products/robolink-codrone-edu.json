@@ -1,0 +1,90 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "robolink-codrone-edu",
+  "slug": "product-robolink-codrone-edu.html",
+  "name": "RoboLink CoDrone EDU",
+  "manufacturer": "Robolink",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Classroom & Coding Kits",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A 54.8g caged quadcopter from Robolink built for real dual-language programming: Blockly for Robolink block coding progressing to genuine Python via the official `codrone-edu` package. Carries 7+ onboard sensors (accelerometer, gyroscope, barometer, front and bottom time-of-flight range sensors, optical flow, dual RGB color sensors) but no camera. Controlled over a proprietary 2.4GHz RF link — not Bluetooth or Wi-Fi — via an included physical Smart Controller with its own telemetry LCD, supporting up to 10 drones flying simultaneously without interference. Marketed for grades 6-10 (ages 12+), used as the official drone in REC Foundation's Aerial Drone Competition.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "3.7V/530mAh Li-ion, 7-8min flight",
+      "note": "~60min charge via a dual charger; 2 batteries ship per kit"
+    },
+    {
+      "label": "Weight",
+      "value": "54.8g",
+      "note": "with battery installed, drone only; well under the FAA's 250g registration threshold — per Robolink's official spec sheet"
+    },
+    {
+      "label": "Dimensions",
+      "value": "13.9 × 13.9 × 3.5 cm",
+      "note": "138.8 × 138.5 × 34.8mm per Robolink's official spec sheet; drone only, excludes the included Smart Controller"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Proprietary 2.4GHz RF",
+      "note": "not Bluetooth or Wi-Fi — the discontinued 2016-era CoDrone Pro/Lite predecessor used Bluetooth 4.0, a common source of confusion; supports 10 drones flying simultaneously, ~50m line-of-sight range"
+    },
+    {
+      "label": "Sensors",
+      "value": "7+, but no camera",
+      "note": "accelerometer, gyroscope, barometer, front + bottom time-of-flight range sensors, optical flow (position hold), dual RGB color sensors, temperature; camera arrives only on the unreleased CoDrone EDU Plus, not this model"
+    },
+    {
+      "label": "Software",
+      "value": "Blockly → real Python",
+      "note": "official `codrone-edu` PyPI package; Scratch and Swift Playgrounds are both explicitly listed as unsupported by Robolink's own compatibility docs, despite being commonly assumed"
+    },
+    {
+      "label": "Controller",
+      "value": "Included Smart Controller",
+      "note": "128x64 telemetry LCD, 4 programmable RGB LEDs, powered by 2 AA batteries or Micro-USB; tablets are explicitly not compatible since the system needs a wired computer connection"
+    },
+    {
+      "label": "Propeller Cage",
+      "value": "Full enclosure",
+      "note": "color-coded red/black props for CW/CCW pairing"
+    },
+    {
+      "label": "Calculator Support",
+      "value": "TI-Nspire CX II",
+      "note": "a Texas Instruments partnership lets students program the drone directly from a graphing calculator"
+    },
+    {
+      "label": "Age/Grade",
+      "value": "Grades 6-10 (ages 12+)",
+      "note": "REC Foundation's Aerial Drone Competition, which uses this drone, spans grades 4-12 more broadly"
+    },
+    {
+      "label": "Indoor Safety",
+      "value": "No FAA registration needed",
+      "note": "under the 250g threshold, exempt from Remote ID; FAA rules generally don't apply to purely indoor flight, which is how this product is designed to be used"
+    }
+  ],
+  "sourcing": "Specs and history compiled from Robolink's own product page, technical specification sheet, and compatibility/help documentation, the `codrone-edu` PyPI package listing and its linked GitHub repositories, Robolink's Kickstarter campaign pages (2016 and 2022), REC Foundation partnership announcements, a Texas Instruments integration announcement, and independent reviews (The Drone Girl, EDGEucating, STEM Kit Review) plus an REC Foundation best-practices document on classroom drone durability. Several details are flagged as unconfirmed above: the specific open-source license (if any) covering Robolink's public GitHub repos, and the precise legal status of a classroom teacher's FAA recreational-flyer classification versus Part 107 requirements, which wasn't fully resolved in available sources. This entry hasn't yet been cross-linked into the rest of the Classroom & Coding Kits subcategory or synced to the directory listing; that's planned for a later pass.",
+  "manufacturerUrl": "https://www.robolink.com/products/codrone-edu",
+  "pricing": {
+    "summary": "A single CoDrone EDU kit runs **$249.00** direct from Robolink, with classroom bundles scaling from a **$3,599** 12-pack up to a **$5,399** 18-pack. Professional-development training is sold as a separate add-on, not bundled into these base classroom prices."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "This catalog withholds an Open Source badge because although Robolink publishes the drone's Python SDK and Blockly code publicly (via GitHub and PyPI), none of those repos carries a clear license file — so \"source is public\" is confirmed but \"open-source-licensed\" isn't, and the flight-controller firmware itself remains closed. It also connects over a proprietary 2.4GHz RF link rather than Bluetooth, despite Bluetooth being commonly assumed from the earlier, discontinued CoDrone Pro/Lite."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Robolink's official Python SDK source for CoDrone EDU, also published to PyPI as the codrone-edu package; the specific open-source license covering the repo isn't clearly stated."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "hengbot-sirius",
+  "slug": "product-hengbot-sirius.html",
+  "name": "Hengbot Sirius",
+  "manufacturer": "Hengbot",
+  "category": "Pets & Toys",
+  "subcategory": "Robot Pets",
+  "tier": "pending",
+  "flags": {
+    "pending": true,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A programmable, four-legged AI robot dog from Hengbot, built around an aerospace-grade alloy skeleton, 14 motorized joints, an 8MP camera for face tracking, and a cloud-connected multimodal AI system that is marketed to develop a \"personality\" through use. Evolved from an earlier in-house prototype called \"Sparky.\"",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "2250mAh",
+      "note": "~40–60 min active use; USB-C ~30W, not self-charging"
+    },
+    {
+      "label": "Dimensions",
+      "value": "~250–270mm L",
+      "note": "~1 kg; exact figures conflict between secondary sources, no primary spec sheet found"
+    },
+    {
+      "label": "Sensors",
+      "value": "6-axis IMU, ToF",
+      "note": "plus joint encoders/temp; no SLAM or mapping"
+    },
+    {
+      "label": "Camera",
+      "value": "8MP",
+      "note": "face tracking; no depth/stereo camera, no lidar"
+    },
+    {
+      "label": "AI",
+      "value": "Cloud-collaborative AI",
+      "note": "LLM backend disputed across sources — see below"
+    },
+    {
+      "label": "Actuation",
+      "value": "14 DoF",
+      "note": "Hengbot \"Neurocore\" joints — 12 leg + 2 head"
+    },
+    {
+      "label": "Mic/Speaker",
+      "value": "Array mic",
+      "note": "8Ω 2W speaker; 1.8\" LCD face screen"
+    },
+    {
+      "label": "Processor",
+      "value": "D-Robotics RDK X3",
+      "note": "~5 TOPS edge AI compute"
+    },
+    {
+      "label": "Subscription",
+      "value": "None found",
+      "note": "no paid tier mentioned by Hengbot or reviewers — product still waitlist-only, not yet in open retail"
+    }
+  ],
+  "sourcing": "Verified against Hengbot's own site (including its Sirius product page, waitlist page, About page, and Terms & Conditions), the Kickstarter campaign page and a fulfillment update, PitchBook's company profile, Chinese-language founding/funding coverage (ichongqing.info, jnexpert.com, zidonghua.com.cn), and press coverage from TechRadar, Gizmodo, Interesting Engineering, CNX Software, Podfeet (CES 2025), and Yanko Design (IFA 2026). Company headquarters (Chongqing vs. Shenzhen), exact body dimensions, the underlying LLM backend, and — most significantly — whether AI processing is cloud-based or local are all inconsistently reported across sources and are presented as open discrepancies rather than resolved. A claim that a firmware update bricked some units comes from a single secondary review and is not independently confirmed. Current retail availability (waitlist-only) is inferred from Hengbot's live site rather than an explicit company statement.",
+  "manufacturerUrl": "https://hengbot.com/pages/hengbot-sirius-ai-dog-robot",
+  "pricing": {
+    "summary": "Hengbot's own site currently lists Sirius at a retail price of **$1,299 USD**, following a Kickstarter campaign where early-bird tiers ran around $859 (PRO Edition) to $1,059 (EDU Edition). As of this writing the site only offers a \"join the waitlist\" signup rather than a checkout, and some backer orders are still stuck on shipping issues, so Sirius isn't yet in open retail availability."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Hengbot's own press materials and an independent TechRadar hands-on describe Sirius as using a \"cloud-collaborative\" architecture with cloud-stored personality profiles and voice processing via third-party LLMs, while a separate review claims the opposite — local-only voice processing with no cloud data collection — and Hengbot's public Terms & Conditions page doesn't resolve which is accurate. Independent sources also conflict on Sirius's exact body dimensions."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Hengbot's own official documentation for Sirius, covering a Python SDK and WebSocket API for controlling the robot's movement and behavior."
+    }
+  ]
+}

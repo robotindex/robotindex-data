@@ -1,0 +1,93 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "whisker-litter-robot-4",
+  "slug": "product-whisker-litter-robot-4.html",
+  "name": "Whisker Litter-Robot 4",
+  "manufacturer": "Whisker",
+  "category": "Cleaning & Home Care",
+  "subcategory": "Other",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "Whisker's self-cleaning, app-connected litter box for cats 3–25 lbs — laser- and weight-based automatic waste separation, per-cat weight tracking, and a customizable cleaning cycle, built around the company's SafeCat/Omnisense sensor system.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "24 lbs",
+      "note": "empty"
+    },
+    {
+      "label": "Dimensions",
+      "value": "22\" × 27\" footprint",
+      "note": "29.5\" tall"
+    },
+    {
+      "label": "Connectivity",
+      "value": "2.4GHz WiFi only",
+      "note": "iOS / Android app"
+    },
+    {
+      "label": "Cat Weight Range",
+      "value": "3–25 lbs",
+      "note": "up to 4 cats in one household"
+    },
+    {
+      "label": "Entryway",
+      "value": "15.75\" × 15.75\"",
+      "note": "cat entrance opening"
+    },
+    {
+      "label": "Detection",
+      "value": "SafeCat / Omnisense",
+      "note": "lasers, weight sensors, anti-obstruction"
+    },
+    {
+      "label": "Weight Tracking",
+      "value": "SmartScale",
+      "note": "per-cat, via app"
+    },
+    {
+      "label": "Cleaning Cycle",
+      "value": "3–30 min delay",
+      "note": "customizable, QuietSift noise reduction"
+    },
+    {
+      "label": "Waste Drawer",
+      "value": "Up to 8 days",
+      "note": "between emptying"
+    },
+    {
+      "label": "Power",
+      "value": "15V DC",
+      "note": "fully assembled"
+    },
+    {
+      "label": "Subscription",
+      "value": "Optional — Whisker+",
+      "note": "$7.99/mo or $79.90/yr; core app features (self-cleaning, weight-ID, alerts) are free"
+    }
+  ],
+  "sourcing": "Specs and pricing sourced from Whisker's official product page (whisker.com/litter-robot-4) and its Litter-Robot 4 vs. 5 comparison post, cross-checked against PetSmart and Best Buy retail listings, as of September 2026. The Litter-Robot 4 remains actively sold alongside the newer Litter-Robot 5 and 5 Pro, not discontinued. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.whisker.com/litter-robot-4",
+  "pricing": {
+    "summary": "$699 MSRP, per whisker.com — matched at the same price on PetSmart and Best Buy. Whisker also sells the newer Litter-Robot 5 ($799) and Litter-Robot 5 Pro ($899) alongside it; the 4 has not been discontinued."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "Litter-Robot 4 uses Whisker's SafeCat System with Omnisense Detection — lasers, weight sensors, and anti-obstruction technology — to prevent the cleaning cycle from running while a cat is inside or nearby. SmartScale logs each cat's weight to identify individual cats in multi-cat households. Note: it requires 2.4GHz WiFi specifically; Whisker's spec sheet states the 5GHz band is not supported."
+    },
+    {
+      "heading": "Insights",
+      "body": "The Litter-Robot 4's SmartScale system weighs each cat at every visit, letting the companion app track and distinguish up to four individual cats sharing one unit by weight alone — a specific multi-cat identification capability most single-sensor automatic litter boxes lack. Whisker's own spec sheet also states the unit requires 2.4GHz Wi-Fi specifically, since the 5GHz band isn't supported."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "digiovanni-esphome-litter-robot"
+    }
+  ]
+}

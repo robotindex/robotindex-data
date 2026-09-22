@@ -1,0 +1,78 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "luwu-xgo-mini2",
+  "slug": "product-luwu-xgo-mini2.html",
+  "name": "Luwu Dynamics XGO Mini 2",
+  "manufacturer": "Luwu Dynamics",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Four Legs",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A Raspberry Pi Compute Module 4-powered hobbyist/educational quadruped with a built-in 3-DOF arm and gripper, a small animated-face display, and a Python/ROS SDK. Originally funded on Kickstarter as \"XGO 2, the world's first Raspberry Pi robotic dog with an arm.\"",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "3500 mAh",
+      "note": "~2 hr runtime, single-source review"
+    },
+    {
+      "label": "Weight",
+      "value": "915 g"
+    },
+    {
+      "label": "Dimensions",
+      "value": "270×150×180 mm",
+      "note": "reseller-listed, not maker-confirmed directly"
+    },
+    {
+      "label": "Compute",
+      "value": "Raspberry Pi CM4",
+      "note": "quad-core Cortex-A72, 1.5GHz"
+    },
+    {
+      "label": "Camera",
+      "value": "5MP",
+      "note": "+ 6-axis IMU, mic"
+    },
+    {
+      "label": "Display",
+      "value": "2.0\" IPS",
+      "note": "320×240, animated face"
+    },
+    {
+      "label": "DOF",
+      "value": "15 total",
+      "note": "12 leg + 3-DOF head-mounted arm"
+    },
+    {
+      "label": "Gripper Reach",
+      "value": "2.5–5.5 cm",
+      "note": "opening range"
+    }
+  ],
+  "sourcing": "Specs sourced from New Atlas's hands-on coverage of the Kickstarter campaign, the manufacturer's own site (xgorobot.com), and reseller ELECFREAKS' spec sheet, as of September 2026. The manufacturer's English name appears inconsistently across sources as \"Luwu Dynamics\" and \"Luwu Intelligence Technology\" — both refer to the same Harbin-based company; robotindex found no credible link between this company and the separate firm Elephant Robotics. Dimensions, weight, and DOF come from a reseller listing rather than Luwu's own spec sheet, and battery runtime is from a single hands-on review. This product has also been marketed as \"XGO 2\" and \"XGO-Mini2\" across different materials — treat these as the same lineage rather than distinct products. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.xgorobot.com/en/xgo2.html",
+  "pricing": {
+    "summary": "Kickstarter early-bird pricing was **$749** for the Mini config (vs. a stated $1,398 post-campaign retail price) and $449 for a stripped-down Lite variant (vs. $898 retail). Current retail pricing on Luwu's own store may differ from these launch figures — check xgorobot.com for live pricing."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "Built around a Raspberry Pi Compute Module 4, the XGO Mini 2 pairs 12 leg-joint DOF with a 3-DOF arm and gripper for grasping and carrying objects. A 5MP camera and onboard AI support object, face, and gesture recognition and voice interaction; a 6-axis IMU handles balance. Luwu markets it as open hardware/software, though unverified in full scope."
+    },
+    {
+      "heading": "Insights",
+      "body": "The XGO Mini 2 replaces the head found on typical robot-dog kits with a 3-DOF arm and gripper, letting it detect, grasp, lift, drag, and carry small objects in addition to walking — an unusual manipulation capability for this category. It's built around a Raspberry Pi Compute Module 4 with a 5MP camera, 6-axis IMU, and onboard AI for object/face/gesture recognition."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Luwu Dynamics' own official Python SDK for motion control and AI-module access on the XGO robot dog line, including the Mini 2."
+    }
+  ]
+}

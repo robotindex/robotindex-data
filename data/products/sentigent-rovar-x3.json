@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "sentigent-rovar-x3",
+  "slug": "product-sentigent-rovar-x3.html",
+  "name": "Sentigent Rovar X3",
+  "manufacturer": "Suzhou",
+  "category": "Companion & Social",
+  "subcategory": "Mobility Helpers",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "An outdoor follow-you companion robot from Suzhou, China-based startup Sentigent Technology, shown publicly at CES 2026. A compact two-wheeled (\"DuoRover,\" the company's own term) robot with off-road-style wheels and an articulating camera head, aimed at family walks, camping, and outdoor play rather than indoor chores. Not yet available for purchase.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "~6 hr claimed",
+      "note": "single-sourced, not independently verified"
+    },
+    {
+      "label": "Weight",
+      "value": "~15 kg",
+      "note": "reported, unconfirmed by an official spec sheet"
+    },
+    {
+      "label": "Height",
+      "value": "~40–45 cm tall"
+    },
+    {
+      "label": "Compute",
+      "value": "Black Sesame \"Aura\" module",
+      "note": "on-device vision inference, per partnership reporting"
+    },
+    {
+      "label": "Status",
+      "value": "Pre-production",
+      "note": "shown at CES 2026; mass production targeted H2 2026"
+    },
+    {
+      "label": "Mobility",
+      "value": "Two-wheeled \"DuoRover\"",
+      "note": "off-road tires; grass, gravel, pavement, small steps, shallow streams claimed"
+    },
+    {
+      "label": "Perception",
+      "value": "Cameras + lidar",
+      "note": "face ID, appearance re-ID, and gait recognition claimed for person-tracking"
+    },
+    {
+      "label": "Features",
+      "value": "Follow-me, moment capture",
+      "note": "fetch/hide-and-seek style interactive games claimed"
+    },
+    {
+      "label": "IP / Payload Rating",
+      "value": "Not disclosed",
+      "note": "no official durability or capacity spec found"
+    },
+    {
+      "label": "Subscription",
+      "value": "Not disclosed",
+      "note": "pre-production; company has no working storefront or spec sheet, and no subscription is mentioned in any available sourcing"
+    }
+  ],
+  "sourcing": "Verified against Sentigent's own site (sentigent.ai/sentigent.com), CES 2026 wire-service photo captions syndicated via Yahoo News, Daily Sabah, and Taipei Times, Chinese business press (36Kr English edition, TMTPost English-language founder interview, a Suzhou/Wuzhong district local news outlet), and startup-data aggregators (Tracxn, Preqin). No article about this product was found on the primary domains of The Verge, TechCrunch, Engadget, CNET, or Ars Technica, and that gap is noted rather than papered over. Dimensions, weight, battery life, terrain capability, and the \"$5,000 target\" price are single- or dual-sourced from secondary aggregator coverage and a founder interview rather than an official spec sheet, and should be treated as reported, not confirmed. The company's own website does not disclose its founders, funding, or headquarters.",
+  "manufacturerUrl": "https://sentigent.ai/",
+  "pricing": {
+    "summary": "No confirmed retail price exists yet. Founder Wang Tao has cited a target of \"under $5,000\" in an interview — this is a stated aspiration for the eventual production unit, not a published or confirmed price, and should be treated as preliminary."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Sentigent's own site omits founder names, funding details, and its HQ location entirely and has no working storefront or spec sheet, so the specifications listed above are drawn from Chinese-language secondary sources and wire-service photo captions rather than confirmed by the company directly, and should be treated as preliminary rather than confirmed."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Sentigent Rovar X3 has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

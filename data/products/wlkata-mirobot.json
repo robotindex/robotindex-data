@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "wlkata-mirobot",
+  "slug": "product-wlkata-mirobot.html",
+  "name": "WLKATA Mirobot Education Kit",
+  "manufacturer": "WLKATA",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A compact 6-axis desktop robot arm styled after full-size industrial arms like the ABB IRB 6700, built around stepper-motor joints and an Arduino-based controller. Sold in an \"Education Kit\" configuration bundling a pen holder, pneumatic and servo grippers, and in-house STEM curriculum materials. Originally crowdfunded on Kickstarter as an \"open-source\" arm in 2019, though the actual arm firmware is now proprietary — only its PC-side Python SDK carries a genuine open-source license.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "1.5kg",
+      "note": "~22cm tall; aluminum alloy + ABS construction"
+    },
+    {
+      "label": "Software",
+      "value": "WLKATA Studio + Python SDK",
+      "note": "current SDK is genuinely MIT-licensed; the arm's own firmware is proprietary"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "6 axes",
+      "note": "6 rotational joints + a separate gripper open/close axis — a true 6-axis arm"
+    },
+    {
+      "label": "Payload",
+      "value": "250g rated / 400g max",
+      "note": "some resellers list 450g max — minor discrepancy across retailers"
+    },
+    {
+      "label": "Actuators",
+      "value": "Stepper motors + reducers",
+      "note": "open-loop steppers on all 6 joints — no motor brand/model disclosed"
+    },
+    {
+      "label": "Controller",
+      "value": "Arduino 2560 (ATmega2560)",
+      "note": "motion controller only, not a standalone computer; USB/WiFi/Bluetooth/RS485"
+    },
+    {
+      "label": "Reach",
+      "value": "~315mm radius",
+      "note": "~630mm horizontal workspace diameter; figures vary slightly by reseller spec sheet"
+    },
+    {
+      "label": "Repeatability",
+      "value": "±0.2mm (claimed)",
+      "note": "manufacturer figure; no independent backlash/precision teardown found"
+    },
+    {
+      "label": "Kit Contents",
+      "value": "Education Kit ($1,680)",
+      "note": "arm, pen holder, servo + pneumatic grippers, calibration board, bundled curriculum"
+    }
+  ],
+  "sourcing": "Specs compiled from WLKATA's official product and spec pages, RobotShop, Oz Robotics, and Geyer Instructional listings, WLKATA's GitHub organization (LICENSE files verified directly for both the Python SDK and the Firmware repo), and independent commentary (the0x00.dev, RenderHub). Several details are flagged as unconfirmed above: WLKATA's own founder/corporate-structure claims, the exact meaning of the base-joint \"M6\" sticker, whether the base Mirobot (as opposed to its MiroMAX successor) actually speaks Modbus over its RS485 connection, and current live Amazon pricing. The Open Source badge here covers WLKATA's current Python SDK only, not the arm's proprietary firmware.",
+  "manufacturerUrl": "https://www.wlkata.com/products/wlkata-best-6-axis-stem-educational-robot-arm-kit",
+  "pricing": {
+    "summary": "WLKATA's own store lists the Education Kit configuration pictured here at **$1,680**, matched by RobotShop and Geyer Instructional (Oz Robotics discounts it to roughly **$1,613**), with a Professional Kit tier adding a wireless Bluetooth teach pendant for **$1,776–$1,850**. Add-on modules are sold separately and can add thousands more, from an AI Vision Set ($890) up to an OpenCV Advanced Vision Suite ($4,990), so the base price alone understates full cost for many use cases."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Despite being marketed and sold as \"open source\" — including in current reseller listings — WLKATA's own firmware repository states outright, \"Proprietary firmware. All rights reserved by WLKATA\"; only the separate PC-side Python SDK genuinely carries an MIT license, not the arm's firmware or hardware design."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "WLKATA's own genuinely open-source, PC-side Python SDK for controlling Mirobot; the arm's onboard firmware itself is proprietary."
+    }
+  ]
+}

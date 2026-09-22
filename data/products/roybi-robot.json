@@ -1,0 +1,94 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "roybi-robot",
+  "slug": "product-roybi-robot.html",
+  "name": "ROYBI Robot",
+  "manufacturer": "ROYBI",
+  "category": "Companion & Social",
+  "subcategory": "Children Companions",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A stationary, screenless educational companion for ages 3–7, built around a pre-authored lesson library (500+ lessons) for language learning (English plus Spanish, French, and Mandarin) and basic STEM — a scripted, curriculum-driven design rather than open-ended AI conversation. Current company activity and stock availability are uncertain as of this research.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "~8 hours",
+      "note": "per manufacturer"
+    },
+    {
+      "label": "Weight",
+      "value": "Not confidently published",
+      "note": "retailer listings conflict (0.19 kg vs. 0.9 kg) — no official ROYBI figure found"
+    },
+    {
+      "label": "Dimensions",
+      "value": "~8.9 × 6.4 × 17.8 cm",
+      "note": "per Mumzworld retailer listing — not independently confirmed by ROYBI's own site"
+    },
+    {
+      "label": "Camera",
+      "value": "1080p HD",
+      "note": "facial recognition/photos; no confirmed live video calling"
+    },
+    {
+      "label": "Form Factor",
+      "value": "Stationary, screenless",
+      "note": "no wheels; sits on a charging cradle"
+    },
+    {
+      "label": "Content Model",
+      "value": "Scripted curriculum",
+      "note": "500+ lessons, not open-ended LLM chat"
+    },
+    {
+      "label": "Languages",
+      "value": "English, Spanish, French, Mandarin",
+      "note": "started as English/Mandarin only in 2021"
+    },
+    {
+      "label": "Privacy Hardware",
+      "value": "2 included lens covers",
+      "note": "physical camera privacy"
+    },
+    {
+      "label": "Age Range",
+      "value": "3–7 years",
+      "note": "younger focus than Miko's 5–10"
+    },
+    {
+      "label": "Company Status",
+      "value": "Uncertain",
+      "note": "no confirmed 2025–2026 activity found"
+    },
+    {
+      "label": "Subscription",
+      "value": "None required",
+      "note": "$149 base price includes all 500+ lessons; app has historically offered optional $2.99 per-lesson-pack IAPs, not a required recurring fee"
+    }
+  ],
+  "sourcing": "Verified against ROYBI's own store and product materials, The Robot Report, EdSurge, CES.tech, a January 2021 company press release, a 2024 Talk Business & Politics piece on the company's Arkansas expansion, independent reviews (New Literacies, rachelbustin.com, Best Buy Canada), and retailer listings (Walmart, a liquidation retailer). Founding year, HQ city, and seed-round investor identities are inconsistent or undisclosed across sources. No Toyota/Toyota AI Ventures investment was corroborated anywhere and should be treated as unconfirmed. Whether a subscription is currently required for any content tier is not fully settled. Most significantly: no confirmed company or product news from 2025–2026 was found, and the product is currently out of stock across every retail channel checked — this is flagged directly rather than presented as an actively thriving product.",
+  "manufacturerUrl": "https://roybi.world/",
+  "pricing": {
+    "summary": "Officially listed at $149 on ROYBI's own store (roybi.world), though that listing currently shows sold out, and Walmart's listing is also out of stock. A liquidation retailer has been clearing remaining units at a steep discount against a cited $207 retail reference price."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware — Company Status Worth Flagging",
+      "body": "ROYBI runs on a pre-authored curriculum (500+ lessons, ~70 categories) with machine-learning personalization for pacing, not open-ended AI chat. Language claims have expanded from \"first bilingual\" (English/Chinese) to four languages. Worth flagging: no confirmed news since August 2024, and it's sold out at ROYBI's store and Walmart, with a liquidator discounting inventory — no confirmed shutdown, but unclear if shipping."
+    },
+    {
+      "heading": "Insights",
+      "body": "Despite a plausible-sounding association, no source confirms any Toyota or Toyota AI Ventures investment in ROYBI — this should be treated as unconfirmed rather than fact."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "ROYBI Robot has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

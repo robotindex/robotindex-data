@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "sphero-bolt-plus",
+  "slug": "product-sphero-bolt-plus.html",
+  "name": "Sphero BOLT+",
+  "manufacturer": "Sphero",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Classroom & Coding Kits",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A sealed, ball-shaped coding robot from Sphero built around a 128×128-pixel color LCD screen (with 650+ built-in graphics/animations) and a full inertial sensor suite — gyroscope, accelerometer, magnetometer, ambient light sensor, and 4 infrared emitters/receivers for robot-to-robot awareness. Programmed via the free Sphero Edu app in Draw, Block, or Text (JavaScript/Python) modes, aimed at grades 3–10. The 2024 successor to the original Sphero BOLT, which Sphero still sells alongside it at a lower price.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "\"All-day\" (mAh unpublished)",
+      "note": "Sphero markets all-day life but doesn't publish a capacity figure; original BOLT was independently measured at 1,250mAh (~2hrs driving / ~5-6hrs light coding)"
+    },
+    {
+      "label": "Dimensions",
+      "value": "2.87in × 2.87in × 2.87in",
+      "note": "≈73mm diameter; same sealed polycarbonate shell as original BOLT"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Bluetooth LE",
+      "note": "exact BLE version not published by Sphero for BOLT or BOLT+"
+    },
+    {
+      "label": "Sensors",
+      "value": "Gyro, accelerometer, magnetometer",
+      "note": "plus ambient light sensor and 4 IR emitters/receivers for ~4m robot-to-robot awareness; motion sensed via IMU + internal motor encoders, not wheel odometry (sealed sphere)"
+    },
+    {
+      "label": "Software",
+      "value": "Sphero Edu app (proprietary)",
+      "note": "Draw, Block (Scratch-style), and Text (JavaScript/Python) modes; includes an \"Explain My Program\" AI code-explainer feature"
+    },
+    {
+      "label": "Display",
+      "value": "128×128-px color LCD",
+      "note": "replaces original BOLT's 8×8 LED matrix; 650+ graphics/animations; includes a matrix emulator for backward compatibility with old BOLT lessons"
+    },
+    {
+      "label": "Processor",
+      "value": "Single dual-core SoC",
+      "note": "replaces original BOLT's separate drive/Bluetooth processors; Sphero credits it with better driving response and power management"
+    },
+    {
+      "label": "Charging",
+      "value": "Qi wireless charging",
+      "note": "with automatic shutoff; replaces original BOLT's proprietary inductive dock + micro-USB"
+    },
+    {
+      "label": "Water Resistance",
+      "value": "Marketed \"waterproof shell\"",
+      "note": "no certified IP rating published; an independent review of original BOLT explicitly notes \"no IPX rating\""
+    },
+    {
+      "label": "Age/Grade",
+      "value": "Grades 3–10 (ages 8+)",
+      "note": "marketed as \"scalable\" from beginner block coding through Python"
+    }
+  ],
+  "sourcing": "Specs and history compiled from Sphero's own BOLT+ and BOLT product pages, Sphero's official \"BOLT+ vs BOLT\" comparison and launch press release, Sphero support documentation, independent hands-on reviews (NYC Tech Mommy, NerdBot, The Geek Church, and earlier Tom's Hardware/Gadget Explained coverage of the original BOLT), Wikipedia's Sphero company history, and contemporaneous tech-press coverage (TechCrunch, AppleInsider, TechSpot) of Sphero's 2018 layoffs and 2020 leadership change. Several details are flagged as unconfirmed above: BOLT+'s exact Bluetooth version, its published battery capacity in mAh, a certified IP water-resistance rating, its independently-measured weight, and its exact announcement date (sources split between June and August 2024). This entry hasn't yet been cross-linked into the rest of the Classroom & Coding Kits subcategory or synced to the directory listing; that's planned for a later pass.",
+  "manufacturerUrl": "https://sphero.com/products/sphero-bolt-plus",
+  "pricing": {
+    "summary": "Sphero's list price for a single BOLT+ unit is **$199.00** direct from sphero.com, with a classroom \"Power Pack\" of 15 robots running **$3,499.00**. The original Sphero BOLT remains available at a lower **$179.00**, with a trade-in program offering up to $70 off per BOLT traded in for classrooms upgrading."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "This catalog applies no Open Source badge to BOLT+: its firmware, Bluetooth protocol, and Sphero Edu app are all proprietary and closed-source. Sphero does publish genuinely MIT-licensed SDKs, but only for its unrelated RVR/RVR+ robot line — not for BOLT or BOLT+ — and the closest open alternative, the community-built spherov2.py library, is unofficial and unconfirmed against BOLT+'s updated hardware."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Sphero BOLT+ has not released a public SDK, firmware repo, or developer API — Sphero's genuinely MIT-licensed official SDKs cover only its separate RVR/RVR+ line. Not currently listed in Builds & Mods."
+    }
+  ]
+}

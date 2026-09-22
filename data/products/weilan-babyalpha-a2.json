@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "weilan-babyalpha-a2",
+  "slug": "product-weilan-babyalpha-a2.html",
+  "name": "Weilan BabyAlpha A2",
+  "manufacturer": "Weilan",
+  "category": "Pets & Toys",
+  "subcategory": "Robot Pets",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A quadruped companion robot from Weilan, a Chinese robotics company (Nanjing) better known for the faster, more industrial AlphaDog line. BabyAlpha A2 pairs a cartoon dog face with animated screen eyes on a walking four-legged body, GPT-4o-based conversation, and a camera for photos, video calls, and home patrol — pitched at families rather than developers, alongside a separate headless \"DevQ\" SKU for the latter.",
+  "specs": [
+    {
+      "label": "Dimensions",
+      "value": "Not confirmed for A2",
+      "note": "a forum figure (~585×298×558mm, ~8.5kg) may describe an earlier model instead"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Companion app",
+      "note": "Wi-Fi assumed, not explicitly confirmed for A2"
+    },
+    {
+      "label": "Camera",
+      "value": "Present",
+      "note": "photos, video calls, home patrol; resolution not disclosed"
+    },
+    {
+      "label": "AI",
+      "value": "GPT-4o conversation",
+      "note": "one backer reports it loses context after ~30 min"
+    },
+    {
+      "label": "Expressions",
+      "value": "100+ expressions",
+      "note": "40+ \"biomimetic\" movements, per Weilan"
+    },
+    {
+      "label": "Speed",
+      "value": "Not disclosed",
+      "note": "Weilan claims \"1.5–2x\" its predecessor with no absolute figure"
+    },
+    {
+      "label": "Variants",
+      "value": "Standard + DevQ",
+      "note": "DevQ is a headless, developer-oriented SKU with open interfaces"
+    },
+    {
+      "label": "Battery/DOF",
+      "value": "Not disclosed",
+      "note": "no official figures found for either"
+    },
+    {
+      "label": "Subscription",
+      "value": "None currently",
+      "note": "WEILAN FAQ: no subscription fee for A2 today; future paid OTA features would be disclosed in advance"
+    }
+  ],
+  "sourcing": "Verified against the Kickstarter campaign page and its funding totals, Weilan's own PR Newswire launch materials, regional press coverage (Jordan Times, Inceptive Mind) of Weilan and its earlier AlphaDog line, and an enthusiast forum (RobotsAroundTheHouse) tracking backer shipping status and early impressions. Company HQ is given as Nanjing by regional press while the Kickstarter listing itself gives a Los Angeles creator location — presented as unresolved rather than picked. Camera resolution, exact dimensions/weight, degrees of freedom, and battery life could not be confirmed specifically for the A2; a forum-sourced spec sheet may describe an earlier, related model instead and is not reported as A2 fact here. Shipping status suggests this listing's \"pending\" tag may be outdated — backers report receiving units as early as December 2024 — though it remains unavailable through general retail. No coverage from a major tech-press outlet was found, and no privacy/security reporting specific to this product or company was found.",
+  "manufacturerUrl": "https://www.kickstarter.com/projects/weilan/babyalpha-a2",
+  "pricing": {
+    "summary": "Kickstarter pledge tiers ran from about $1,099 for the headless DevQ SKU to about $1,199 for the standard version with the animated head, though these figures should be treated as approximate rather than a confirmed retail price list. No official Weilan storefront or Amazon listing was found; secondary sales now appear only on eBay through resellers."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Most core specs — camera resolution, dimensions, weight, degrees of freedom, and battery life — could not be confirmed from any credible source for the A2 specifically; a spec sheet found on one enthusiast forum may actually describe an earlier, different model, so these figures are flagged as unconfirmed rather than reported as fact."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Weilan BabyAlpha A2 has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

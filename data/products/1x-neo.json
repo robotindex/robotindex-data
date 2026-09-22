@@ -1,0 +1,79 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "1x-neo",
+  "slug": "product-1x-neo.html",
+  "name": "1X NEO",
+  "manufacturer": "1X Technologies",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "Home humanoid from 1X Technologies (backed by OpenAI), built with a soft, tendon-driven body designed to operate safely around people and learn household chores through 1X's Redwood AI model.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "4 hrs",
+      "note": "842 Wh, self-charging"
+    },
+    {
+      "label": "Weight",
+      "value": "66 lb",
+      "note": "~30 kg"
+    },
+    {
+      "label": "Height",
+      "value": "5'6\"",
+      "note": "~168 cm"
+    },
+    {
+      "label": "Compute",
+      "value": "Nvidia Jetson Thor",
+      "note": "up to 2070 FP4 TFLOPS"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "70+",
+      "note": "44 in hands alone"
+    },
+    {
+      "label": "Walking Speed",
+      "value": "1.4 m/s",
+      "note": "6.2 m/s running"
+    },
+    {
+      "label": "Lift Capacity",
+      "value": "154 lb",
+      "note": "18 lb per-arm payload"
+    },
+    {
+      "label": "Noise Level",
+      "value": "22 dB",
+      "note": "tendon-driven actuators"
+    }
+  ],
+  "sourcing": "Specs sourced from 1X Technologies' official NEO page and cross-checked against TechCrunch/Yahoo News coverage of the December 2025 pricing announcement, as of September 2026. robotindex does not sell this product — pricing and availability are per 1X's own preorder terms and may change.",
+  "manufacturerUrl": "https://www.1x.tech/discover/neo-home-robot",
+  "pricing": {
+    "summary": "**$20,000**, secured via a $200 refundable preorder deposit. US shipments are targeted for 2026, with international rollout not planned until 2027, so it isn't yet available to buy outright."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "Built around **tendon-driven actuators** (not rigid gearboxes) for high backdrivability (~95%) and quiet operation. Perception uses **dual 8.85MP 90Hz stereo fisheye cameras**, 4 beamforming microphones, and body-wide IMUs. The soft 3D-lattice polymer shell under a washable nylon suit is designed to keep head injury criterion (HIC) under 250 and avoid joint pinch points. Hands are IP68; body IP44."
+    },
+    {
+      "heading": "Insights",
+      "body": "NEO uses tendon-driven actuators rather than the rigid gearboxes common in competing humanoids, tied to a measurable ~22 dB operating noise level and ~95% backdrivability. That's a genuine mechanical differentiator reflected in the spec sheet itself, not just marketing prose."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "1X's in-house vision-language-action model for learning household tasks. Closed platform — no public SDK or firmware repo yet. Not currently listed in Builds & Mods."
+    }
+  ]
+}

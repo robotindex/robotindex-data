@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "sony-aibo",
+  "slug": "product-sony-aibo.html",
+  "name": "Sony Aibo",
+  "manufacturer": "Sony",
+  "category": "Pets & Toys",
+  "subcategory": "Robot Pets",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "Sony's current-generation robot dog (ERS-1000), relaunched in 2018 after the original 1999–2006 line was discontinued. Twenty-two degrees of freedom, OLED eyes, SLAM-based room mapping, and cloud-based \"personality growth\" that requires an ongoing subscription to fully use.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "~2 hr runtime",
+      "note": "~3 hr recharge on dock"
+    },
+    {
+      "label": "Dimensions",
+      "value": "~180 × 293 × 305 mm",
+      "note": "~2.2 kg"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Wi-Fi + built-in LTE",
+      "note": "SIM slot for mobile connectivity away from home"
+    },
+    {
+      "label": "Sensors",
+      "value": "2 cameras, ToF sensor",
+      "note": "4-mic array, touch sensors on head/chin/back/paws"
+    },
+    {
+      "label": "Compute",
+      "value": "64-bit quad-core CPU",
+      "note": "~14W power draw"
+    },
+    {
+      "label": "Navigation",
+      "value": "SLAM room mapping",
+      "note": "dual 6-axis gyro/accelerometer"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "22 axes",
+      "note": "head, mouth, neck, waist, legs, ears, tail"
+    },
+    {
+      "label": "Eyes",
+      "value": "2 OLED displays",
+      "note": "expressive animated eyes"
+    },
+    {
+      "label": "Subscription",
+      "value": "Required for full features",
+      "note": "aibo AI Cloud Plan, $300/yr (3 yrs included with new unit) — us.aibo.com"
+    }
+  ],
+  "sourcing": "Verified against Sony's own official aibo site (us.aibo.com, including its spec, AI-features, and store pages) and Sony's February 2024 press release (via PR Newswire), Sony's official March 2025 system software update announcement (info.aibo.com), AFP wire coverage of the June 2026 Japan sales discontinuation (syndicated via the Japan Times, RTÉ, CP24, Malay Mail, Bangkok Post), and reviews/retrospectives from TechRadar, Tom's Guide, and Engadget/TechCrunch launch coverage. The current exact US price is unconfirmed — Sony's Feb 2024 release states $2,899.99 while multiple mid-2026 wire reports cite \"over $3,000,\" and this discrepancy is presented rather than resolved. The two-tone brown-and-white colorway shown in this page's photo matches Sony's \"Kinako\" edition (Japan, Aug 2024); its US availability could not be confirmed and it may be a Japan-market-only color. An enthusiast-forum-only \"Cocoa Chiffon\" edition was not corroborated by any Sony source and is omitted from this page. No dedicated review from The Verge, Wired, or Ars Technica was found and none is cited. Sony's claims about facial/voice recognition scale and personality development are presented as manufacturer statements, not independently verified facts.",
+  "manufacturerUrl": "https://us.aibo.com/",
+  "pricing": {
+    "summary": "Sony's own February 2024 US press release for the Espresso edition lists $2,899.99 as the suggested retail price — essentially flat versus the original 2018 US launch price of $2,899. However, multiple wire-service reports from mid-2026 describe current US pricing as \"over $3,000,\" which doesn't cleanly reconcile with Sony's own figure, so the live current price should be checked directly on us.aibo.com."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "**The subscription requirement is real and is the single most consistently criticized aspect of aibo**: Sony's own site states an aibo AI Cloud Plan subscription is required for most core features — personality development, cloud memory backup, and app-based photo/remote access — and reviewers have also raised privacy concerns about the continuous cloud upload of in-home video and audio this requires. Sony's claims that aibo recognizes up to 100 faces, learns 50+ voice commands, and develops a distinct \"personality\" are manufacturer marketing statements, not claims independently verified by third-party testing."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Sony's own official developer program for the current aibo (ERS-1000), offering a free-to-join web API and a visual-programming tool for building aibo-linked services."
+    }
+  ]
+}

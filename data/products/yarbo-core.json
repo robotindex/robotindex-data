@@ -1,0 +1,93 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "yarbo-core",
+  "slug": "product-yarbo-core.html",
+  "name": "Yarbo Core",
+  "manufacturer": "Yarbo",
+  "category": "Outdoor & Yard",
+  "subcategory": "Other",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A modular, tank-tread outdoor robot base unit (the \"Y40 Core\") that does no yard work on its own — it accepts quick-swap attachment modules for mowing, snow blowing, leaf blowing, and trimming, sold separately.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "Removable pack",
+      "note": "~4 hr runtime; wireless auto-dock + wired charger"
+    },
+    {
+      "label": "Weight",
+      "value": "~61 kg (134 lb)",
+      "note": "base unit; per Wellbots/AutomationHub/TheRobotDirect listings, not confirmed by Yarbo's own site"
+    },
+    {
+      "label": "Dimensions",
+      "value": "67 × 56 × 51 cm",
+      "note": "base unit only, excludes attachment modules; per retailer listings, not confirmed by Yarbo's own site"
+    },
+    {
+      "label": "Connectivity",
+      "value": "WiFi app control",
+      "note": "optional 4G add-on for remote access"
+    },
+    {
+      "label": "Navigation",
+      "value": "RTK-GPS + stereo vision",
+      "note": "IMU/odometry; local \"Data Center\" base station"
+    },
+    {
+      "label": "Drive",
+      "value": "Rubber tank treads",
+      "note": "up to 70% (35°) slope; ~0.6 m/s"
+    },
+    {
+      "label": "Concept",
+      "value": "Modular base only",
+      "note": "requires a separately-sold attachment to do any work"
+    },
+    {
+      "label": "Towing",
+      "value": "500 lbs capacity"
+    },
+    {
+      "label": "Safety",
+      "value": "Camera + radar",
+      "note": "6 HD cameras, ultrasonic sensing, \"Gentle Contact\" mode"
+    },
+    {
+      "label": "Noise",
+      "value": "Not published",
+      "note": "official spec pages do not confirm dB"
+    },
+    {
+      "label": "Subscription",
+      "value": "Core app free",
+      "note": "\"Yarbo Care\" is a separate, still-evolving support/warranty add-on, not a nav paywall"
+    }
+  ],
+  "sourcing": "Verified against Yarbo's own official site (yarbo.com) and Kickstarter/funding coverage (PR Newswire), plus an independent Tom's Guide hands-on review. Physical dimensions, weight, battery voltage, and a dB noise rating were not confirmed from accessible official sources and are marked as unpublished rather than estimated. Cybernews' independent reporting on the company's actual China ties (via Hanyang Tech, Shenzhen) and a disclosed security/backdoor flaw is included because it materially affects how the brand should be evaluated, separate from hardware performance. Do not confuse this Y-series \"Core\" with Yarbo's separate, newer \"M Series,\" which launched its own crowdfunding campaign with different pricing.",
+  "manufacturerUrl": "https://www.yarbo.com/products/yarbo-core",
+  "pricing": {
+    "summary": "The Core base unit alone lists at **$3,999** (0% APR financing advertised at ~$333/mo), consistent across yarbo.com and third-party retailers. Individual attachment modules are sold separately — Lawn Mower Pro ~$2,000, Snow Blower Gen 2 ~$2,200, leaf Blower ~$1,100, Trimmer package ~$1,300 — so a real-world working setup (Core plus one or more modules) typically runs **$6,000–$8,000** per reviewer estimates, well above the base sticker price."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "\"Core\" is the Y40 base chassis — tracked drive, motor, battery, navigation computer, sensors — needing a quick-swap module to work. Navigation combines RTK-GPS, stereo vision, IMU, and odometry via a local RTK base station, plus six HD cameras and ultrasonic radar. Tom's Guide praised cut quality and obstacle avoidance but found setup took \"an entire weekend.\""
+    },
+    {
+      "heading": "Insights",
+      "body": "Yarbo presents itself as a Ronkonkoma, New York-based company, but independent reporting from Cybernews found it's tied to Shenzhen-based Hanyang Tech, China. That same reporting disclosed a security/backdoor flaw in Yarbo's product line — worth knowing for anyone evaluating the brand's data-privacy posture, separate from how well the hardware itself performs."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Yarbo has announced an \"Open Platform\" strategy with a planned SDK and API, but as of this writing that program is not yet released (targeted for early 2027) and Yarbo has not released a public SDK, firmware repo, or developer API for Core. Not currently listed in Builds & Mods."
+    }
+  ]
+}

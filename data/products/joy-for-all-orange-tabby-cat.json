@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "joy-for-all-orange-tabby-cat",
+  "slug": "product-joy-for-all-orange-tabby-cat.html",
+  "name": "Joy for All Orange Tabby Cat",
+  "manufacturer": "Ageless Innovation",
+  "category": "Companion & Social",
+  "subcategory": "Senior Companions",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A stationary, lifelike orange-and-white companion cat from Ageless Innovation — purrs and \"meows\" to touch and sound, with a vibrating \"VibraPurr\" response to petting. Sibling product to the Companion Pet Pup, aimed at the same senior loneliness and dementia-care market.",
+  "specs": [
+    {
+      "label": "Dimensions",
+      "value": "~15.2 × 9 × 10.1 in",
+      "note": "~3.9 lb (per mfr., same spec as the dog)"
+    },
+    {
+      "label": "Form Factor",
+      "value": "Stationary companion",
+      "note": "no mobility; reclining pose"
+    },
+    {
+      "label": "Response",
+      "value": "Purring + \"meowing\"",
+      "note": "touch and sound sensors, no BarkBack-style brand name"
+    },
+    {
+      "label": "Signature Feature",
+      "value": "VibraPurr",
+      "note": "vibrating purr on head/back petting"
+    },
+    {
+      "label": "Behaviors",
+      "value": "Rolls for tummy pets",
+      "note": "auto-sleep after inactivity, wakes on touch"
+    },
+    {
+      "label": "Variants",
+      "value": "Orange Tabby (this one)",
+      "note": "also Silver With White Mitts, Tuxedo"
+    },
+    {
+      "label": "Power",
+      "value": "4× C batteries",
+      "note": "alkaline; life \"varies,\" ~3 mo. per reviewer estimates"
+    },
+    {
+      "label": "Positioning",
+      "value": "Senior loneliness care",
+      "note": "dementia/Alzheimer's marketing, same as Pup"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "battery-powered, no app or connectivity — Ageless Innovation FAQ"
+    }
+  ],
+  "sourcing": "Verified against Ageless Innovation's own site and FAQ, retailer listings and reviews (Amazon, Walmart, Best Buy), and category-wide press on Ageless Innovation's state and healthcare partnerships. No cat-specific breakout exists for state-program adoption stats — those figures are category-wide, not cat-versus-dog. The cat's heartbeat feature is corroborated by a third-party retailer rather than directly confirmed on the primary manufacturer product page. Battery life (~3 months) is an unofficial reviewer estimate, not a manufacturer figure. Dimensions/weight are identical to the Companion Pet Pup per the manufacturer's own FAQ despite the different sculpted pose.",
+  "manufacturerUrl": "https://joyforall.com/products/companion-cats",
+  "pricing": {
+    "summary": "Ageless Innovation's own site lists $159.99 for Orange Tabby. Retailers run lower and less consistently in stock — Walmart and Best Buy have both shown $124.99, with Walmart currently out of stock and Best Buy's listing marked \"no longer available in new condition.\" Treat pricing as roughly $125–$160 depending on retailer and current stock, similar in pattern to the Companion Pet Pup but running somewhat lower."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Ageless Innovation's own FAQ states this cat shares identical published dimensions and weight with the Companion Pet Pup (15.24 × 9.02 × 10.12 in., 3.9 lb), despite the two toys having very different sculpted poses. That's a real, manufacturer-stated figure worth treating with some skepticism, since it more plausibly reflects a shared packaging spec than an actual to-scale body measurement for the cat."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Joy for All Orange Tabby Cat has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

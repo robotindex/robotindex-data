@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "sunfounder-galaxyrvr",
+  "slug": "product-sunfounder-galaxyrvr.html",
+  "name": "SunFounder GalaxyRVR",
+  "manufacturer": "SunFounder",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Mobile Robot Kits",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A 6-wheel Mars-rover-styled kit from SunFounder with genuine rocker-bogie suspension — the same working geometry NASA's Curiosity and Perseverance rovers use, not just a cosmetic 6-wheel arrangement. Unlike SunFounder's own PiCar-X, this runs on an Arduino Uno-class board with a bolted-on ESP32-CAM for WiFi FPV streaming, not a Raspberry Pi — skid-steered like a real rover, with no onboard computer vision.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "2× 18650 Li-ion (7.4V)",
+      "note": "~90–130 min runtime"
+    },
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Sensors",
+      "value": "Ultrasonic + 2× IR",
+      "note": "obstacle avoidance; no IMU, no light sensor"
+    },
+    {
+      "label": "Camera",
+      "value": "ESP32-CAM, FPV only",
+      "note": "WiFi video streaming to app — no onboard AI vision"
+    },
+    {
+      "label": "Drive",
+      "value": "6-wheel skid-steer",
+      "note": "all 6 wheels driven; left/right motor banks, no steering linkage"
+    },
+    {
+      "label": "Controller",
+      "value": "Arduino Uno-class",
+      "note": "+ separate ESP32-CAM add-on for WiFi/FPV"
+    },
+    {
+      "label": "Suspension",
+      "value": "Rocker-bogie, 6-wheel",
+      "note": "genuine NASA-style geometry, not a cosmetic look-alike"
+    },
+    {
+      "label": "Solar Panel",
+      "value": "Functional, 6V/660mA",
+      "note": "~7.2 hr theoretical full charge; unverified in the field"
+    },
+    {
+      "label": "Assembly",
+      "value": "300+ parts, ~3.5 hrs",
+      "note": "no soldering required; reviewers call it finicky"
+    }
+  ],
+  "sourcing": "Verified against SunFounder's official GalaxyRVR product page and full course documentation (including the rocker-bogie mechanism lesson and the Mars-rover-history lesson); the sunfounder/galaxy-rvr GitHub repository and its firmware source, license, and star/commit activity; independent reviews from CNX Software, The Gadgeteer, and kevsrobots.com; an independent developer's blog covering firmware-flashing friction and the Arduino Uno's memory limitations; and Amazon, AliExpress, and eBay listings for pricing and availability. Flagged as uncertain: real-world solar-panel charging performance, which is a genuine spec but was not independently measured by any reviewer found in this research; and current stock availability, since SunFounder's own store showed it sold out at points during research.",
+  "manufacturerUrl": "https://www.sunfounder.com/products/sunfounder-galaxyrvr-mars-rover-kit",
+  "pricing": {
+    "summary": "GalaxyRVR lists at $129.99 direct from SunFounder — about 44% more than PiCar-X's ~$89.99 base price. It's sold through SunFounder's own store (shown sold out at points during research, suggesting intermittent stock issues), Amazon, AliExpress, and eBay, with no evidence of a crowdfunding campaign; it appears to have launched as a direct catalog product like SunFounder's other kits."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "GalaxyRVR's firmware is genuinely open source (GPL-3.0) but far less mature than SunFounder's own PiCar-X codebase, with roughly 15 stars versus picar-x's stronger community traction. SunFounder's claimed roughly 7.2-hour full solar charge time hasn't been independently measured by any reviewer in this research, so treat that figure as unverified rather than disproven."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "SunFounder's own GPL-3.0-licensed firmware repository for GalaxyRVR."
+    }
+  ]
+}

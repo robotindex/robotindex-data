@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "elegoo-smart-robot-car-v4",
+  "slug": "product-elegoo-smart-robot-car-v4.html",
+  "name": "ELEGOO Smart Robot Car Kit V4",
+  "manufacturer": "Elegoo",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Mobile Robot Kits",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "An Arduino Uno-compatible, 4WD skid-steer car kit — the true beginner's entry point in this subcategory, at roughly a third of the price of anything else built here so far. No Raspberry Pi, no Python, no ROS: it's programmed in Arduino C/C++, drives by differential wheel speed rather than Ackermann or mecanum steering, and its bundled ESP32 camera streams raw FPV video for phone-based driving rather than running any onboard computer vision.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "18650 Li-ion",
+      "note": "holder included; cells NOT included — buy separately"
+    },
+    {
+      "label": "Weight",
+      "value": "1.23 kg",
+      "note": "per retailer (eBay) listing data; not published on ELEGOO's own site"
+    },
+    {
+      "label": "Dimensions",
+      "value": "20 × 17.8 × 15.2 cm",
+      "note": "~8 × 7 × 6 in, per retailer listing data; not confirmed by ELEGOO directly"
+    },
+    {
+      "label": "Sensors",
+      "value": "HC-SR04 on SG90 servo",
+      "note": "pan-only ultrasonic sweep; IR line-tracking array"
+    },
+    {
+      "label": "Camera",
+      "value": "ESP32-WROVER-B, FPV",
+      "note": "raw WiFi video stream to the app — no onboard vision processing"
+    },
+    {
+      "label": "Drive",
+      "value": "4WD skid-steer",
+      "note": "4 independent DC gear motors, differential turning — no Ackermann"
+    },
+    {
+      "label": "Controller",
+      "value": "Uno R3-compatible",
+      "note": "ATmega328P; ELEGOO-branded, not official Arduino LLC"
+    },
+    {
+      "label": "Motor Driver",
+      "value": "L298N-family",
+      "note": "integrated on ELEGOO's stacked \"Smart Car Shield\""
+    },
+    {
+      "label": "Control Modes",
+      "value": "IR, Bluetooth app, autonomous",
+      "note": "line-tracking and obstacle-avoidance demo modes included"
+    },
+    {
+      "label": "Assembly",
+      "value": "No soldering",
+      "note": "keyed XH2.54 connectors reduce wiring mistakes vs. V3"
+    }
+  ],
+  "sourcing": "Verified against ELEGOO's official V4.0 (With Camera) product pages (US and EU storefronts) and its official V4.0 and legacy V3.0/V2.0/V1.0 tutorial blog posts; ELEGOO's \"About\" page; its official GitHub repository for this kit, including its archived status, lack of a license file, and an unanswered licensing issue; Amazon and Micro Center listings; independent reviews from Teach Your Kids Code and The New Stack; an Arduino Forum troubleshooting thread on a common power-related failure mode; and ELEGOO's aggregate Trustpilot rating. Flagged as uncertain: exact current Amazon review volume and star rating (not independently retrievable at research time); and whether every currently-sold V4.0 unit ships with the ESP32 camera bundled by default, since ELEGOO has at points sold camera-less and camera-equipped variants under overlapping naming — this catalog's photo and specs describe the camera-equipped configuration.",
+  "manufacturerUrl": "https://us.elegoo.com/products/elegoo-smart-robot-car-kit-v-4-0",
+  "pricing": {
+    "summary": "ELEGOO's own store lists the V4.0 (With Camera) kit at $75.99, the lowest price in this subcategory, and it's also sold on Amazon, Micro Center, and other resellers. A screwdriver and tools are included, but 18650 battery cells are not, so the car can't run until batteries are sourced separately."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "The Smart Robot Car Kit V4.0 has the weakest open-source story in this subcategory: ELEGOO's GitHub repo ships zipped code with no license file, an unanswered licensing question, and is now archived, so no Open Source badge is applied here."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "ELEGOO's own GitHub repo for this kit ships code as zipped downloads with no license file and is now archived, so most ongoing development activity happens in third-party community forks instead."
+    }
+  ]
+}

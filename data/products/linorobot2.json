@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "linorobot2",
+  "slug": "product-linorobot2.html",
+  "name": "Linorobot2",
+  "manufacturer": "Linorobot (open-source project)",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Mobile Robot Kits",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A ROS2 software and micro-ROS firmware framework for building DIY mobile robots — not a fixed robot with a bill of materials the way most entries here are. Builders bring their own chassis and a supported menu of microcontrollers, motor drivers, LiDARs, and cameras; the pictured unit is a lab-built Mecanum-wheel robot running Linorobot2 on hardware its own builder sourced and assembled.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "bring-your-own-chassis framework — no fixed robot to weigh"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Not published",
+      "note": "bring-your-own-chassis framework — depends entirely on builder's design"
+    },
+    {
+      "label": "Compute",
+      "value": "Raspberry Pi-class SBC",
+      "note": "community builds also use other Linux SBCs (e.g. Radxa ROCK 5C)"
+    },
+    {
+      "label": "Software",
+      "value": "ROS2 Humble/Jazzy, Nav2 + SLAM",
+      "note": "Gazebo simulation designed to mirror the physical robot"
+    },
+    {
+      "label": "Type",
+      "value": "ROS2 software + firmware",
+      "note": "not a fixed robot design — bring your own chassis"
+    },
+    {
+      "label": "Drive Support",
+      "value": "Diff, skid-steer, Mecanum",
+      "note": "this build uses Mecanum wheels; framework covers multiple layouts"
+    },
+    {
+      "label": "MCU",
+      "value": "ESP32 family or Pi Pico",
+      "note": "micro-ROS firmware layer; Teensy support now deprecated"
+    },
+    {
+      "label": "LiDAR",
+      "value": "RPLIDAR, LD06/LD19, YDLIDAR",
+      "note": "2D SLAM; this unit's spinning sensor matches the supported class"
+    },
+    {
+      "label": "Cameras / IMU",
+      "value": "RealSense, ZED, OAK-D + IMUs",
+      "note": "bring-your-own from a supported component menu"
+    },
+    {
+      "label": "E-Stop / QR Tag",
+      "value": "Not part of the spec",
+      "note": "almost certainly this builder's own lab safety/inventory additions"
+    }
+  ],
+  "sourcing": "Specs compiled from the Linorobot2 GitHub repositories, project site, and third-party community/technical write-ups as of this build. Because this is a bring-your-own-hardware framework, exact specs and cost depend entirely on the builder's own component choices — the figures here describe the supported range, not one fixed configuration.",
+  "manufacturerUrl": "https://linorobot.org/",
+  "pricing": {
+    "summary": "There is no official reference cost, because Linorobot2 is a framework rather than a product with a bill of materials; a widely-cited community estimate puts a minimal electronics-only configuration at roughly $131, excluding the chassis, motors, wheels, compute board, battery, and any LiDAR or depth camera. A complete build like the one pictured, with a metal enclosure, Mecanum wheels, spinning LiDAR, and a compute SBC, would run well beyond that figure — likely several hundred to over a thousand dollars depending entirely on the components a builder chooses."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "The Linorobot2 project itself is genuinely open source (Apache-2.0, ~1,000 GitHub stars, actively maintained)."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "linorobot-linorobot2"
+    }
+  ]
+}

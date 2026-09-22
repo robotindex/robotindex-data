@@ -1,0 +1,75 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "kscale-zbot-kbot",
+  "slug": "product-kscale-zbot-kbot.html",
+  "name": "K-Scale Z-Bot / K-Bot",
+  "manufacturer": "K-Scale Labs",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "Two open-source humanoids from K-Scale Labs: Z-Bot, a $999 entry-level hobbyist platform, and K-Bot, a full-size $9,000–$11,000 personal robot. Both ship with open hardware and software stacks for developers.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "~34 kg",
+      "note": "~77 lb — K-Bot only; Z-Bot's weight not published"
+    },
+    {
+      "label": "Height",
+      "value": "1.4 m",
+      "note": "~4'7\" — K-Bot only; Z-Bot's height not published"
+    },
+    {
+      "label": "Sensors",
+      "value": "RGB + stereo",
+      "note": "ultra-wide vision, farfield mics"
+    },
+    {
+      "label": "Status",
+      "value": "Public alpha",
+      "note": "per K-Scale's own GitHub repo"
+    },
+    {
+      "label": "Payload (K-Bot)",
+      "value": "~10 kg",
+      "note": "~22 lb"
+    },
+    {
+      "label": "Battery (K-Bot)",
+      "value": "~4 hrs"
+    },
+    {
+      "label": "Hardware License",
+      "value": "CERN-OHL-S"
+    },
+    {
+      "label": "Software License",
+      "value": "GPL v3"
+    }
+  ],
+  "sourcing": "Specs sourced from Interesting Engineering's coverage of K-Bot's November 2025 initial release and K-Scale Labs' own GitHub repository, as of September 2026. Pricing for K-Bot has been reported inconsistently across sources ($8,999–$10,999) — treat the figure above as approximate. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.kscale.dev/kbot",
+  "pricing": {
+    "summary": "Z-Bot is **$999**, while K-Bot runs roughly **$9,000–$11,000** depending on when it's priced, with a $100 refundable deposit for early reservations. Full autonomy is only a stated future goal — K-Scale has projected it for around 2028 — with initial units shipping in a more limited, app-controlled state."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "K-Bot ships with an **RGB camera and stereo vision** for an ultra-wide field of view, farfield microphones with stereo speakers, and a modular, upgradable sensor and compute suite with swappable end effectors. Both K-Bot and Z-Bot share K-Scale's open-source stack, with hardware released under CERN-OHL-S and software under GPL v3."
+    },
+    {
+      "heading": "Insights",
+      "body": "K-Bot and Z-Bot ship under genuinely open licenses — hardware under CERN-OHL-S and software under GPL v3 — with K-Scale's own repositories publicly available on GitHub. That's a real openness commitment in a humanoid-robot category where most competitors keep both hardware and firmware closed, though K-Scale's own repo currently labels the release status \"public alpha.\""
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "kscalelabs-kbot"
+    }
+  ]
+}

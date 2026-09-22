@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "lekiwi",
+  "slug": "product-lekiwi.html",
+  "name": "LeKiwi",
+  "manufacturer": "SIGRobotics (University of Illinois)",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Mobile Robot Kits",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A single-arm mobile manipulation rig from a University of Illinois student robotics group, built around Hugging Face's SO-ARM101 arm on a 3-omni-wheel holonomic \"kiwi drive\" base. Deeply integrated as a native robot type in the official `lerobot` Python package — a teleoperation/data-collection platform for training imitation-learning policies, not a navigation robot, and the design AlohaMini's own bimanual mobile base borrows from.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "12V Li-ion pack or USB-PD bank",
+      "note": "runtime undocumented; one vendor kit ships a 5,600mAh pack"
+    },
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Compute",
+      "value": "Raspberry Pi 5",
+      "note": "swappable for any 5V PC/laptop; ZeroMQ networking, no ROS"
+    },
+    {
+      "label": "Camera",
+      "value": "Not standard across all kits",
+      "note": "some vendor kits include one, others sell it separately — none visible on this unit"
+    },
+    {
+      "label": "Software",
+      "value": "Native `lerobot` robot type",
+      "note": "Apache-2.0; ZeroMQ host/client architecture"
+    },
+    {
+      "label": "Locomotion",
+      "value": "3-omni-wheel \"kiwi drive\"",
+      "note": "full holonomic motion; Feetech STS3215 bus servo per wheel"
+    },
+    {
+      "label": "Arm",
+      "value": "SO-ARM101, 6-DOF",
+      "note": "same design shared across the LeRobot hardware family"
+    },
+    {
+      "label": "Gripper",
+      "value": "Stock 2-finger parallel",
+      "note": "PincOpen (Pollen Robotics) is a documented but non-default upgrade"
+    },
+    {
+      "label": "Control",
+      "value": "Leader-arm teleop + keyboard drive",
+      "note": "a second SO-100/101 arm puppeteers this one; WASD drives the base"
+    }
+  ],
+  "sourcing": "Specs compiled from the LeKiwi GitHub repository, Hugging Face's official documentation, and vendor listings as of this build. Pricing, dimensions, weight, payload, and camera inclusion vary by vendor kit and were not fully standardizable — confirm the specific SKU before purchase.",
+  "manufacturerUrl": "https://huggingface.co/docs/lerobot/lekiwi",
+  "pricing": {
+    "summary": "No single official bill-of-materials total is published; reseller WowRobo (via OpenELAB) sells the omni-drive base alone for €302.85 without a Raspberry Pi, or €474.25 with a Pi 5 (4GB) included, with the SO-ARM101 arm shipping separately for typically $100–$250 depending on servo grade. Extrapolating a full self-build (base, arm, Pi, camera, battery) likely lands somewhere in the $400–$700+ range, though that's an estimate rather than a sourced figure."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "LeKiwi's hardware and software are genuinely open under Apache-2.0, with an active if niche community (~1,400 GitHub stars)."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "sigrobotics-lekiwi"
+    }
+  ]
+}

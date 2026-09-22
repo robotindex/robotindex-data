@@ -1,0 +1,83 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "clear-robotics-clear-uv",
+  "slug": "product-clear-robotics-clear-uv.html",
+  "name": "Clear Robotics Clear UV",
+  "manufacturer": "Clear Robotics",
+  "category": "Outdoor & Yard",
+  "subcategory": "Other",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A tread-driven robotic pool cleaner from Clear Robotics with a built-in UV-C lamp that disinfects water as it cycles through the unit — marketed as a supplement to, not a replacement for, chlorine/chemical maintenance. Covers in-ground pools up to 50 ft.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "27.6 lbs",
+      "note": "19.1 × 18.7 × 13.5 in; heavier than most rivals"
+    },
+    {
+      "label": "Drive",
+      "value": "Twin tread motors",
+      "note": "+ twin pump motors, 4 motors total"
+    },
+    {
+      "label": "Suction",
+      "value": "8,500 GPH"
+    },
+    {
+      "label": "Pool Compatibility",
+      "value": "In-ground, up to 50 ft",
+      "note": "2.5–16.4 ft depth; not for above-ground"
+    },
+    {
+      "label": "Cleans",
+      "value": "Floor, walls, waterline",
+      "note": "every cycle"
+    },
+    {
+      "label": "Sanitizing",
+      "value": "Built-in UV-C lamp",
+      "note": "headline feature — supplements chemicals"
+    },
+    {
+      "label": "Filtration",
+      "value": "\"UltraFilter\"",
+      "note": "1-micron / 180-micron dual precision"
+    },
+    {
+      "label": "Cycle Modes",
+      "value": "6 modes",
+      "note": "Fast 1hr / Regular 2hr / Ultra 3hr / Floor / Waterline / Custom"
+    },
+    {
+      "label": "Subscription",
+      "value": "Free, no subscription",
+      "note": "Clear app — no IAPs, no ads per maker"
+    }
+  ],
+  "sourcing": "Sourcing caveat: beyond Clear Robotics' own official site (clearrobot.com), independent coverage was limited to pool-industry review sites, at least one of which is also an authorized reseller — no mainstream tech or consumer press coverage was found. Company background (founders, founding date, funding) could not be verified from any source. \"Clear Robotics\" also names an unrelated autonomous-ship startup — the two companies should not be conflated. Pricing and specs above are consistent across the sources found, but given the limited independent verification, treat this listing with more caution than an established brand like Dolphin/Maytronics.",
+  "manufacturerUrl": "https://www.clearrobot.com/clear-uv/",
+  "pricing": {
+    "summary": "Listed at **$1,999** (discounted from a $2,999 list price) on Clear Robotics' own site, consistent with independent listings, as a one-time hardware purchase with no subscription. A UV-less sibling model, the \"Clear S,\" costs about $250 less, so buyers should confirm which variant a quoted price refers to."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware — Sourcing Caveat",
+      "body": "Navigation uses an onboard gyroscope and accelerometer (no camera-based SLAM), with coverage improving after 2–3 cycles. Connectivity runs through the Clear app (iOS/Android) via Bluetooth/WiFi, with cloud sync, a virtual joystick, scheduling, and water-temperature monitoring. Caution: an unrelated Hong Kong \"Clear Robotics\"/\"Clearbot\" autonomous-ship startup shares this name — don't confuse them; this company's background (founder, funding) is largely undisclosed."
+    },
+    {
+      "heading": "Insights",
+      "body": "This pool-cleaning \"Clear Robotics\" has no connection to an unrelated autonomous-ship startup that also uses the \"Clear Robotics\"/\"Clearbot\" name. Independent coverage of the Clear UV itself is limited to pool-industry trade sites, with no mainstream tech or consumer-press review found."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Clear Robotics Clear UV has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

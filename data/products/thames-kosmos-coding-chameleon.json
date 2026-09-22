@@ -1,0 +1,90 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "thames-kosmos-coding-chameleon",
+  "slug": "product-thames-kosmos-coding-chameleon.html",
+  "name": "Thames & Kosmos Coding Chameleon",
+  "manufacturer": "Thames & Kosmos",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Classroom & Coding Kits",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "Officially \"My Robotic Pet: Coding Chameleon\" — a 133-piece, self-assembled (3-4 hour build) chameleon robot from Thames & Kosmos, programmed entirely with physical action cards rather than an app or screen. Its color sensor drives a camouflage color-change display, an IR sensor triggers an automatically-firing, tether-retracting tongue at detected objects in \"Wild Mode,\" and a \"Pet Mode\" responds to gestures/touch. Despite marketing copy describing only \"articulated leg joints for realistic movement,\" the actual unit's underside clearly shows two wheels doing the real work of locomotion, with the legs animating for show. Winner of the toy industry's 2026 \"Educational Toy of the Year\" award.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "4x AAA (not included)",
+      "note": "one secondary academic gift-guide source states 2x AAA, contradicting every retailer and the manufacturer's own listing — treat 4x AAA as correct"
+    },
+    {
+      "label": "Weight",
+      "value": "~770g (1.7 lb)",
+      "note": "packaged weight per multiple retailer listings (Exploratorium Store, PlayMatters Toys); not listed on Thames & Kosmos's own product page"
+    },
+    {
+      "label": "Dimensions",
+      "value": "25.4 × 27.9 × 11.9 cm",
+      "note": "10 × 11 × 4.7 in. packaged/box dimensions; the assembled model itself is separately described as ~15in long"
+    },
+    {
+      "label": "Sensors",
+      "value": "Color + infrared",
+      "note": "color sensor drives a camouflage/color-change display; IR sensor detects nearby objects and triggers the tongue-firing mechanism in autonomous \"Wild Mode\""
+    },
+    {
+      "label": "Build",
+      "value": "133-piece self-assembly kit",
+      "note": "~15in long, 3-4hr build with a 48-page manual and QR-linked video help; distinct from every pre-assembled robot elsewhere in this catalog"
+    },
+    {
+      "label": "Locomotion",
+      "value": "2 wheels, not just legs",
+      "note": "marketing describes only \"articulated leg joints for realistic movement\" with no mention of wheels; this unit's own photo clearly shows two drive wheels under the belly doing the actual work"
+    },
+    {
+      "label": "Programming",
+      "value": "Physical action cards, no app",
+      "note": "Coding Mode sequences movements from included cards; genuinely screen-free, distinct from remote-based (Botley) or button-on-body (Bee-Bot/Code & Go) unplugged coding toys elsewhere in this subcategory"
+    },
+    {
+      "label": "Modes",
+      "value": "Coding, Wild, Pet",
+      "note": "card-sequenced movement; autonomous camouflage/prey-stalking; and a touch/gesture-responsive companion mode"
+    },
+    {
+      "label": "Actuated Parts",
+      "value": "Eyes, jaw, legs, tongue",
+      "note": "exact motor count not published by Thames & Kosmos or any retailer checked"
+    },
+    {
+      "label": "Age Range",
+      "value": "8+ (adult help for build)",
+      "note": "some listings market it up to age 12+; independent build without adult supervision recommended closer to 12"
+    },
+    {
+      "label": "Award",
+      "value": "2026 TOTY Educational Toy of the Year",
+      "note": "toy-industry award (Toy Association, voted by retailers/media), not an academic pedagogy assessment"
+    }
+  ],
+  "sourcing": "Specs and history compiled from Thames & Kosmos' own product page and store listing, retailer listings (Target, Fat Brain Toys, STEMfinity, Growing Tree Toys, Walmart), independent reviews (The Toy Insider, Play On Words, Purdue University's INSPIRE engineering gift guide), the Toy Association's 2026 TOTY Award announcement, and Wikipedia on Thames & Kosmos and its German parent company Kosmos. The wheels-vs-legs locomotion detail above is drawn directly from visual inspection of this entry's own product photo, not from any official source, since every retailer and manufacturer description describes only leg-based movement with no mention of wheels; the official assembly manual PDF was not accessible to independently resolve this further. Other flagged uncertainties: the exact number of motors/actuators (not published anywhere), a single conflicting battery-count source (2xAAA vs. the more consistent 4xAAA), and the exact release date (marketed only as \"Fall 2025,\" no specific day found). This entry hasn't yet been cross-linked into the rest of the Classroom & Coding Kits subcategory or synced to the directory listing; that's planned for a later pass.",
+  "manufacturerUrl": "https://thamesandkosmos.com/products/my-robotic-pet-coding-chameleon",
+  "pricing": {
+    "summary": "Thames & Kosmos lists the Coding Chameleon at an MSRP of **$54.95** direct from its own store. It's widely and heavily discounted elsewhere though — Target and Walmart both list it around **$27.49-$29.99**, roughly half of MSRP."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Every official and retail source (Thames & Kosmos, Target, Fat Brain Toys) describes the chameleon's movement as \"articulated leg joints for realistic movement\" with no mention of wheels — but this entry's own product photo clearly shows two wheels on the underside doing the actual locomotion, with the legs only animating for visual effect."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Thames & Kosmos Coding Chameleon has not released a public SDK, firmware repo, or developer API — programming is done entirely with physical cards, with no app or digital component at all. Not currently listed in Builds & Mods."
+    }
+  ]
+}

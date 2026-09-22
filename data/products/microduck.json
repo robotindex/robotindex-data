@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "microduck",
+  "slug": "product-microduck.html",
+  "name": "Microduck",
+  "manufacturer": "Pollen Robotics",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Classroom & Coding Kits",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A 25cm, ~780g bipedal duck-shaped robot from Pollen Robotics (acquired by Hugging Face in April 2025), built for hands-on reinforcement-learning education. Ships with 7 pre-trained behaviors (walk, crouch, sit, self-right, kick a ball, roller-skate on included wheels, quack), and its full RL training pipeline is public: policies are trained in MuJoCo with PPO across thousands of parallel simulated ducks, then exported to ONNX and deployed to the real robot's Rockchip RK3566 SoC. Announced August 27, 2026 at $399; still pre-order only as of this writing, with demand already pushing new orders past the original before-Christmas-2026 delivery target.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "NP-F550 2600mAh, ~1hr",
+      "note": "removable camera-style battery; charger/spares sold separately in a $39 Charger Pack"
+    },
+    {
+      "label": "Weight",
+      "value": "780g",
+      "note": "per Pollen Robotics' own store listing; marketing materials round this to \"under 800g\""
+    },
+    {
+      "label": "Dimensions",
+      "value": "25 cm tall × 14 cm wide",
+      "note": "per Pollen Robotics' official store page and press kit; no depth figure published"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Wi-Fi + Bluetooth",
+      "note": "pre-launch design docs flag unresolved security concerns: a default Bluetooth pairing PIN of 000000 with unencrypted provisioning, and an unfinished camera-in-use indicator"
+    },
+    {
+      "label": "Sensors",
+      "value": "Camera, 8x8 ToF LiDAR, 2 IMUs",
+      "note": "plus mic/speaker and 2 NFC antennas; basic locomotion policies use joint/body state, not camera input — the ball-kicking demo is explicitly \"ball-blind\""
+    },
+    {
+      "label": "Compute",
+      "value": "Rockchip RK3566, 1GB RAM",
+      "note": "quad-core Cortex-A55 up to 1.8GHz, Mali-G52 GPU, ~1 TOPS NPU, 32GB storage; the same chip's stock jumped ~15% on Microduck's launch demand, a supply-chain story, not an export-control one"
+    },
+    {
+      "label": "Software",
+      "value": "Apache 2.0 (software only)",
+      "note": "Rust control daemons + a separate MuJoCo/PPO RL training repo are genuinely open; hardware CAD/schematics/BOM are NOT published, and Pollen has reportedly asked media not to call this \"open-source hardware\""
+    },
+    {
+      "label": "Status",
+      "value": "Pre-order only",
+      "note": "announced/opened Aug 27, 2026; 10,000+ orders within days pushed new orders to a reported 4-6 month wait, past the original before-Christmas-2026 target for later buyers"
+    },
+    {
+      "label": "Actuation",
+      "value": "15 DOF, Dynamixel servos",
+      "note": "XL330-M288-T units visible/labeled in unit photos; Pollen hasn't published an official actuator BOM since the hardware itself isn't open-sourced"
+    },
+    {
+      "label": "Included",
+      "value": "Robot, battery, gamepad",
+      "note": "base $399 kit ships with 7 pre-trained behaviors ready to use with no coding required; roller-skate wheels/ball/laser pointer are a separate $39 Accessory Pack, spares/compute credit a separate $119 Dev Pack"
+    }
+  ],
+  "sourcing": "Specs and history compiled from Pollen Robotics' own product page, blog, and store listing, the GitHub repos `pollen-robotics/microduck` and `pollen-robotics/microduck_rl` and their LICENSE files, Hugging Face's own acquisition announcement blog post, an independent teardown/analysis (kokasync Substack, kingy.ai) explicitly noting it had not tested a shipping unit, launch coverage (TechCrunch, New Atlas, CNX Software, Axios) and market-reaction coverage (CNBC and its mirrors) of the Rockchip stock move. Several details are flagged as unconfirmed above: the exact pre-order opening date (Aug 27 vs. a single Aug 31 source), a single-sourced 14cm width figure, the acquisition price (undisclosed everywhere), and a secondary, inaccessible state-media report that may frame the Rockchip angle more geopolitically than the business-press coverage does. This entry hasn't yet been cross-linked into the rest of the Classroom & Coding Kits subcategory or synced to the directory listing; that's planned for a later pass.",
+  "manufacturerUrl": "https://pollen-robotics.com/microduck/",
+  "pricing": {
+    "summary": "Microduck launched at **$399** (€340) for the base robot, battery, USB-C cable, and gamepad. As of this writing no units have been confirmed as actually delivered despite over 10,000 pre-orders, and new orders are quoted at a 4-6 month wait."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Microduck's control software and RL training stack are genuinely open source (Apache 2.0), but the hardware itself has no published CAD, schematics, or bill of materials — Pollen Robotics has reportedly asked media not to call it \"open-source hardware.\" Design documentation has also flagged an unresolved security concern from before launch: Bluetooth pairing defaults to an unencrypted connection with a 000000 PIN."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Pollen Robotics' own official open-source repository for Microduck, the duck-like biped robot it developed alongside Hugging Face."
+    }
+  ]
+}

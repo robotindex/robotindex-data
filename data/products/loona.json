@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "loona",
+  "slug": "product-loona.html",
+  "name": "Loona",
+  "manufacturer": "KEYi Technology",
+  "category": "Pets & Toys",
+  "subcategory": "Robot Pets",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "An AI petbot from KEYi Technology (Beijing) with an animated LCD face, light-up articulating ears, and a four-wheeled base that can lift into two-wheel \"standing\" poses for fluid, arm-like motion rather than a true walking gait. A 2022 Kickstarter breakout hit, now shipping with ChatGPT-based conversation added via firmware update.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "1350mAh Li-ion",
+      "note": "~2 hr continuous play; auto-return to dock"
+    },
+    {
+      "label": "Dimensions",
+      "value": "8.3 × 6.8 × 6.8 in",
+      "note": "~2.42 lb"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Dual-band Wi-Fi",
+      "note": "companion app required (iOS/Android)"
+    },
+    {
+      "label": "Compute",
+      "value": "5 TOPS (disputed)",
+      "note": "Cortex-M4 co-proc + DSP; one press release cites 54 TOPS instead"
+    },
+    {
+      "label": "Camera",
+      "value": "720p RGB + 3D ToF",
+      "note": "navigation, face/object detection"
+    },
+    {
+      "label": "Display",
+      "value": "2.4\" LCD face",
+      "note": "animated expressions"
+    },
+    {
+      "label": "Mobility",
+      "value": "4-wheel base",
+      "note": "self-balancing 2-wheel \"stand\" poses; does not walk"
+    },
+    {
+      "label": "Audio",
+      "value": "4-mic array",
+      "note": "2W speaker"
+    },
+    {
+      "label": "Subscription",
+      "value": "None (currently)",
+      "note": "GPT-4o chat included free today; KEYi has flagged possible future cloud-cost pricing"
+    }
+  ],
+  "sourcing": "Verified against KEYi Technology's own official site (keyirobot.com, including its about-us and Loona spec pages), the original Kickstarter campaign page and its funding total, TechCrunch's launch coverage and hands-on review, Engadget's coverage, New Atlas's coverage, and a fan-site's documentation of the October 2022 Digital Dream Labs DMCA claim (not covered by major tech press and not resolved by any court ruling found). Loona's onboard processor is described inconsistently — KEYi's own spec page states 5 TOPS while a 2022 PR Newswire release states \"54 trillion calculations/sec\" — and both figures are presented rather than resolved. Launch-year retail price varies $269–$500 across sources depending on whether the figure is an early-bird pledge, planned retail, or later list price. Total company funding (a reported ~$14–15M round) comes from a single trade-press source and is not independently corroborated. No third-party security audit of Loona's camera/data handling was found.",
+  "manufacturerUrl": "https://keyirobot.com/products/petbot",
+  "pricing": {
+    "summary": "Loona costs $499 (list $529) on KEYi's own store. ChatGPT-based conversation is included at no extra charge via firmware update, but no independent source confirms whether that comes with any usage cap, so its \"unlimited, no subscription\" framing rests mainly on KEYi's own materials."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "In October 2022, Digital Dream Labs (owner of Anki's Cozmo/Vector IP) filed a DMCA claim alleging Loona's design copied Cozmo/Vector, temporarily pulling its Kickstarter campaign — no lawsuit or ruling followed, so this remains a disputed, unadjudicated allegation."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "KEYi Tech has not shipped the SDK it promised during Loona's crowdfunding campaign; programming is limited to the Blockly-style interface in the Hello Loona app. Not currently listed in Builds & Mods."
+    }
+  ]
+}

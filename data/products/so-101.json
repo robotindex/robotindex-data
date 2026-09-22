@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "so-101",
+  "slug": "product-so-101.html",
+  "name": "SO-101",
+  "manufacturer": "The Robot Studio",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A 3D-printed, 6-joint desktop robot arm designed by The Robot Studio in collaboration with Hugging Face, built around low-cost Feetech bus servos. Used in matched leader/follower pairs for teleoperated imitation-learning research — a human demonstrates a task by hand-guiding the leader arm while the follower's motions and camera feed are logged as training data. The current flagship of this arm family, directly succeeding SO-100: the leader arm now ships with naturally lower-torque, factory-backdrivable servo variants, eliminating SO-100's gear-pulling modification entirely.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Software",
+      "value": "Hugging Face `lerobot`",
+      "note": "Apache-2.0; trains ACT, SmolVLA, and other imitation-learning policies"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "6 total",
+      "note": "5 arm joints (base, shoulder, elbow, wrist pitch, wrist roll) + 1 gripper axis"
+    },
+    {
+      "label": "Payload",
+      "value": "~500g (est.)",
+      "note": "third-party estimate — no official payload, reach, or repeatability spec published"
+    },
+    {
+      "label": "Actuators",
+      "value": "Feetech STS3215",
+      "note": "follower keeps standard 1/345 gearing (or a 12V/30kg·cm \"Pro\" variant); leader uses factory lower-torque ratios instead — no more gear-pulling"
+    },
+    {
+      "label": "Status",
+      "value": "Current flagship",
+      "note": "supersedes SO-100, whose own docs are now marked deprecated"
+    },
+    {
+      "label": "Construction",
+      "value": "FDM 3D-printed",
+      "note": "PLA/PLA+; individual per-part STL files (vs. SO-100's print trays); revised wiring addresses a joint-3 disconnection issue"
+    },
+    {
+      "label": "Teleop Method",
+      "value": "Leader/follower pair",
+      "note": "leader ships naturally backdrivable out of the box — no servo disassembly needed, unlike SO-100"
+    },
+    {
+      "label": "Host Interface",
+      "value": "Waveshare Bus Servo Adapter",
+      "note": "required USB-C-to-servo-bus board, visible at this arm's base; needs its own separate DC power input"
+    },
+    {
+      "label": "Creator",
+      "value": "The Robot Studio",
+      "note": "Rob Knight; kit manufacturing now also involves Seeed Studio, WowRobo, and PartaBot"
+    }
+  ],
+  "sourcing": "Specs compiled from the official TheRobotStudio/SO-ARM100 GitHub repository (including its README, BOM tables, per-model STL folders, and LICENSE file), Hugging Face's official LeRobot documentation for SO-101, Seeed Studio's kit listings, and independent coverage (TechCrunch, ThinkRobotics, OpenELAB, DeepWiki) as of this build. SO-101 supersedes SO-100 directly, so this page replaces what was previously this catalog's standalone SO-100 entry — SO-100 is now described here as SO-101's predecessor. Exact per-joint leader-servo gear ratios and reach/payload figures vary slightly or are unofficial across sources; see Worth Knowing above for specifics. Pricing varies by sourcing method (raw BOM vs. assembled kit) — see Reference Price above.",
+  "manufacturerUrl": "https://huggingface.co/docs/lerobot/so101",
+  "pricing": {
+    "summary": "Pricing is essentially unchanged from SO-100: the project's own bill-of-materials still prices a complete leader+follower teleoperation pair at roughly **$230** in parts, while Seeed Studio sells electronics-only kits at **$220** for the standard version or **$240** for a \"Pro\" variant. Fully assembled kits from resellers are reported anywhere from roughly $100 to $500 depending on assembly level and shipping/tariffs — a wide range that isn't consistently corroborated across sources, so treat the top end cautiously."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "SO-101 isn't a Hugging Face design any more than SO-100 was — both come from Rob Knight of The Robot Studio, with Hugging Face's role limited to software integration via its `lerobot` library, not the hardware itself. Reach and payload figures commonly quoted around 500mm and 500g are third-party estimates only; neither Hugging Face nor the GitHub repo publishes official reach, payload, or repeatability figures for SO-100 or SO-101."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "so-101-arm100"
+    }
+  ]
+}

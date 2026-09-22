@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "freenove-4wd-smart-car-kit",
+  "slug": "product-freenove-4wd-smart-car-kit.html",
+  "name": "Freenove 4WD Smart Car Kit",
+  "manufacturer": "Freenove",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Mobile Robot Kits",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A Raspberry Pi Pico (RP2040) microcontroller car — the cheapest and least capable of Freenove's three overlapping 4WD car families, not to be confused with Freenove's own Raspberry Pi SBC or Arduino siblings of nearly the same name. No camera, no vision processing, and it's programmed in Arduino C++ rather than MicroPython despite the Pico branding.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "2× 18650 Li-ion",
+      "note": "not included"
+    },
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Not published",
+      "note": "no official figure found in this research"
+    },
+    {
+      "label": "Sensors",
+      "value": "Ultrasonic + 3-ch IR line array",
+      "note": "ultrasonic shares one pan-servo mount with the LED matrix"
+    },
+    {
+      "label": "Compute",
+      "value": "RP2040 (Pico / Pico W)",
+      "note": "dual-core Cortex-M0+; no OS, no vision"
+    },
+    {
+      "label": "Display",
+      "value": "LED dot-matrix",
+      "note": "Freenove's docs list 8×8; the panel pictured reads wider — worth confirming on your unit"
+    },
+    {
+      "label": "Drive",
+      "value": "4× DC gear motor",
+      "note": "4-wheel skid-steer, no Ackermann"
+    },
+    {
+      "label": "Model",
+      "value": "FNK0089",
+      "note": "sold in 3 SKUs: no board / with Pico / with Pico W"
+    },
+    {
+      "label": "Remote",
+      "value": "IR keypad",
+      "note": "drives the car directly, no coding required"
+    },
+    {
+      "label": "RGB LEDs",
+      "value": "8× WS2812",
+      "note": "addressable, daisy-chained"
+    }
+  ],
+  "sourcing": "Specs compiled from Freenove's own store listing and documentation site for FNK0089 as of this build. Independent Amazon review data and the LED matrix's exact pixel count on this specific unit were not directly verifiable — confirm before purchase.",
+  "manufacturerUrl": "https://store.freenove.com/products/fnk0089",
+  "pricing": {
+    "summary": "FNK0089 lists at $44.99 with no compute board, $49.99 with a Raspberry Pi Pico included, or $54.99 with a Pico W (needed for any WiFi/app control) — direct from Freenove's own store, with matching Amazon listings for each configuration. That makes it the cheapest kit in this subcategory, well under ELEGOO's $75.99 Arduino-class car and SunFounder PiCar-X's ~$89.99."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Freenove's GitHub repository for this kit is real, browsable source, but it's licensed CC BY-NC-SA 3.0 — a Creative Commons license whose non-commercial clause is not OSI-approved as open source, so no Open Source badge applies here despite the code being public. The pan-tilt LED-matrix panel in this product's photo also reads visually wider than the single 8×8 module Freenove's own documentation describes for this SKU, a spec discrepancy worth confirming against your specific unit."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Freenove's own GitHub repo for this Pico/RP2040 kit (FNK0089) is real, browsable source code, but it's licensed CC BY-NC-SA 3.0 — a non-commercial license, not an OSI-approved open-source one."
+    }
+  ]
+}

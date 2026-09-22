@@ -1,0 +1,70 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "annin-robotics-ar4",
+  "slug": "product-annin-robotics-ar4.html",
+  "name": "Annin Robotics AR4",
+  "manufacturer": "Chris Annin",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A 6-axis DIY robot arm kit designed by Chris Annin, a solo Idaho-based robotics systems engineer with 26 years of industrial automation experience — not a robotics company. Built around machined aluminum structural parts (the blue \"AR4\" covers in this photo are cosmetic 3D-printed pieces) and six NEMA stepper motors. Marketed as \"open source,\" but Annin's own license explicitly bars commercial use and redistribution, so this catalog does not award it the Open Source badge.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "~27 lb (12.25 kg)"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "6-axis"
+    },
+    {
+      "label": "Payload",
+      "value": "4.15 lb (1.9 kg)"
+    },
+    {
+      "label": "Actuators",
+      "value": "6× NEMA stepper motors",
+      "note": "integrated encoders; driven by a Teensy 4.1 — no servos on the main joints"
+    },
+    {
+      "label": "Reach",
+      "value": "26 in (67 cm)"
+    },
+    {
+      "label": "Repeatability",
+      "value": "0.3 mm (stated)",
+      "note": "one secondary source lists 0.5mm — independent testing found real-world backlash beyond either figure"
+    },
+    {
+      "label": "Structure",
+      "value": "Machined aluminum",
+      "note": "26 CNC parts; blue covers are cosmetic 3D-printed pieces, not structural"
+    },
+    {
+      "label": "End Effector",
+      "value": "Servo or pneumatic gripper",
+      "note": "driven by a separate Arduino Nano/Mega, not the Teensy"
+    }
+  ],
+  "sourcing": "Specs compiled from Annin Robotics' official site, FAQ, and downloads page (including direct inspection of its license agreement PDF and the ar4-hmi GitHub repo's license), Hackaday and Hackster.io independent coverage, and the independent ycheng517/ar4_ros_driver repository. Repeatability and payload figures are manufacturer-stated; independent testing found real-world precision affected by backlash and non-functional closed-loop correction. Confirm current kit pricing and motor sourcing before purchase, since motors are bought separately from a third-party supplier.",
+  "manufacturerUrl": "https://anninrobotics.com/robot-kits/",
+  "pricing": {
+    "summary": "The core \"Combo Kit\" (structural parts, hardware, core electronics — no motors) starts at **$1,189**, but motors/drivers ($750–800 from StepperOnline) and a gripper ($74.50–$139) push a complete build to roughly **$2,000**, per Chris Annin's own forum estimate, independently matched by a Hackster.io reviewer. Unlike ready-to-use arms, this total requires the buyer to do a genuine assembly, wiring, and calibration project — it isn't an out-of-the-box unit."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Although the AR4 is marketed as \"open source,\" its actual license agreement explicitly prohibits commercial use, resale of parts or derivatives, and redistribution without written permission — restrictions that fail the Open Source Definition, so this catalog does not apply its Open Source badge here. An independent Hackster.io reviewer who built one found the marketed closed-loop encoder correction isn't actually functioning in practice, producing jittery motion and backlash beyond the arm's stated 0.3mm repeatability spec."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "annin-robotics-ar4"
+    }
+  ]
+}

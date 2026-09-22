@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "geneinno-t1-pro",
+  "slug": "product-geneinno-t1-pro.html",
+  "name": "Geneinno T1 Pro",
+  "manufacturer": "Shenzhen Geneinno Technology",
+  "category": "Personal Drones",
+  "subcategory": "Underwater",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A tethered, six-thruster underwater ROV from Shenzhen Geneinno Technology, positioned above consumer photography drones and into light-industrial territory — hull and pier inspection, aquaculture monitoring, search and recovery, and underwater filming, alongside recreational use. Rated to 175m depth with a real accessory ecosystem (gripper arm, external camera, 360° scanning sonar, water-quality sensor), putting it closer in market position to Chasing's M2-series than to Chasing's consumer Dory or Gladius Mini S.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "9000mAh / 97.2Wh",
+      "note": "4 hrs standard, up to 8 hrs with optional external battery pack; ~3 hr charge"
+    },
+    {
+      "label": "Weight",
+      "value": "~11 lbs (ROV only)",
+      "note": "retailer-sourced figure, not manufacturer-confirmed; full package with case/accessories runs ~32.5 lbs"
+    },
+    {
+      "label": "Camera",
+      "value": "12MP / 4K UHD",
+      "note": "1/2.3\" CMOS, f/2.5, 160° FOV, no zoom despite \"Pro\" branding; 1080p live preview feed"
+    },
+    {
+      "label": "Depth Rating",
+      "value": "175 m (574 ft)",
+      "note": "a retailer listing this as \"200m depth\" is conflating it with the optional 200m tether length — confirmed 175m on the manufacturer spec sheet"
+    },
+    {
+      "label": "Thrusters",
+      "value": "6 (4 vertical + 2 lateral)",
+      "note": "optional add-on lateral thruster module available for extra sideways control"
+    },
+    {
+      "label": "Tether",
+      "value": "150m or 200m options",
+      "note": "tethers to a floating wireless relay buoy; buoy talks to the tablet controller wirelessly"
+    },
+    {
+      "label": "Control",
+      "value": "Touchscreen tablet (included)",
+      "note": "Bluetooth game-style controller supported for \"professional operation\"; no confirmed HDMI output"
+    },
+    {
+      "label": "Storage",
+      "value": "128GB onboard",
+      "note": "fixed, no expansion slot found in any spec sheet"
+    },
+    {
+      "label": "Accessories",
+      "value": "Gripper arm, external camera, sonar",
+      "note": "360° \"Omni Scan Sonar,\" water-quality sensor, laser scaler — a real modular ecosystem, not just cosmetic add-ons"
+    },
+    {
+      "label": "Subscription",
+      "value": "Free, no subscription found",
+      "note": "Geneinno app (iOS/Android) lists no in-app purchases or paid tiers; no cloud video storage or editing subscription identified for T1 Pro"
+    }
+  ],
+  "sourcing": "Specs compiled from Geneinno's official user manual PDF, B&H Photo's product listings, and launch coverage from New Atlas and DeeperBlue. Flagged as unconfirmed or conflicting above: current MSRP (wide spread across retailers), the LA-vs-Shenzhen headquarters discrepancy, several accessory prices sourced from a single retailer, whether the internal battery is user-swappable, and whether reliability complaints found for the base T1 carry over to the T1 Pro's current hardware revision. The \"Geneinno Point\" product line and any DJI partnership were investigated and found to be unsupported by any source — both excluded from this page. This entry hasn't yet been cross-linked or synced to the directory listing; that's planned for a later pass.",
+  "manufacturerUrl": "https://geneinno.com/",
+  "pricing": {
+    "summary": "The T1 Pro launched around **$2,999** in 2020, but current retail pricing is scattered rather than settled on one figure, realistically ranging from about $2,200 to $3,300 depending on tether length and bundle. A $4,099 listing at B&H Photo is flagged there as a low-stock special order and looks like an outlier rather than typical pricing."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "There is no Geneinno \"Point\" product line despite claims sometimes made about this brand — the real lineup is Poseidon, Titan/T1, T1 Pro, and the separate S1-series sea scooters. There is also no DJI–Geneinno partnership or DJI underwater drone; the only DJI connection found in any source is an analyst's loose market comparison, not an actual corporate relationship."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Geneinno T1 Pro has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "dji-robomaster-s1",
+  "slug": "product-dji-robomaster-s1.html",
+  "name": "DJI RoboMaster S1",
+  "manufacturer": "DJI or major retailers",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Classroom & Coding Kits",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A build-it-yourself, tank-like educational robot from DJI running on four omnidirectional Mecanum wheels, with a 2-axis stabilized gimbal carrying a 5MP FPV camera and a dual-mode blaster (non-toxic gel beads or infrared) for AI-assisted combat games. Programmed via Scratch 3.0 or Python through the official RoboMaster app, with 31 onboard sensors driving vision features like gesture, line-following, and marker recognition. Launched in 2019 at $499; DJI wound down its entire education robotics line in late 2023/early 2024, and the S1 is no longer sold new by DJI or major retailers.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "~30-35 min runtime",
+      "note": "exact mAh/voltage capacity not published by DJI in any source checked"
+    },
+    {
+      "label": "Weight",
+      "value": "3.3 kg",
+      "note": "per DJI's own manual/spec sheet; one Tom's Hardware review instead lists 3.5kg (7.6lb) — treating DJI's own figure as authoritative"
+    },
+    {
+      "label": "Dimensions",
+      "value": "32 × 24 × 27 cm",
+      "note": "320 × 240 × 270mm (L×W×H) per DJI's official spec sheet"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Wi-Fi Direct or Router mode",
+      "note": "Direct mode is single-controller only; Router mode enables multiplayer battles between multiple S1 units on the same network"
+    },
+    {
+      "label": "Sensors",
+      "value": "31 onboard sensors",
+      "note": "incl. 6 hit-detection sensors in the armor panels, IMU, wide-IR array for combat detection; DJI's own granular sensor-by-sensor spec table wasn't accessible to confirm every type"
+    },
+    {
+      "label": "Camera",
+      "value": "5MP, 120° FOV",
+      "note": "live FPV feed capped at 720p/30fps per DJI's own spec sheet; some press coverage at launch said 1080p — unresolved discrepancy"
+    },
+    {
+      "label": "Software",
+      "value": "RoboMaster app (proprietary)",
+      "note": "Scratch 3.0 block coding progressing to Python via \"DIY Programming Lab\"; a separate Apache-2.0 Python SDK exists but is officially targeted at the RoboMaster EP, not S1"
+    },
+    {
+      "label": "Drive",
+      "value": "4 Mecanum wheels",
+      "note": "true omnidirectional movement (strafe, diagonal, in-place rotation) via 4 brushless motors with ESCs; ~8mph top speed"
+    },
+    {
+      "label": "Status",
+      "value": "Discontinued",
+      "note": "no longer sold new by DJI or major retailers as of DJI's 2023-2024 education-line wind-down; existing units still get DJI after-sales support"
+    },
+    {
+      "label": "Gimbal",
+      "value": "2-axis (pitch/yaw)",
+      "note": "pitch approx. -20° to +35°, yaw ±250°; carries the camera and blaster together, no roll axis"
+    },
+    {
+      "label": "Blaster",
+      "value": "Gel bead + infrared",
+      "note": "≥6mm non-toxic water-absorbing beads at ≥20m/s, ~430-bead magazine; separate IR beam mode for laser-tag-style play with no projectiles"
+    },
+    {
+      "label": "Age Range",
+      "value": "Not clearly published",
+      "note": "one secondary source says 8+; DJI's own materials give no numeric minimum; reviewers recommend adult supervision under 14 given complexity and blaster elements"
+    }
+  ],
+  "sourcing": "Specs and history compiled from DJI's own product announcement, programming guide, and support page, a DJI product manual excerpt (via ManualsLib), DJI's RoboMaster-SDK GitHub repository and its LICENSE/README/issue tracker, retailer listings (B&H, a Japanese reseller), independent reviews (Tom's Hardware, Gearbrain, Pocket-lint), and 2023-2025 tech-press coverage (DroneDJ, UAV Coach, CNN, Tom's Hardware) of DJI's education-line wind-down and separate drone-related US regulatory actions. Several details are flagged as unconfirmed above: the exact processor/chip (never publicly disclosed by DJI), precise battery capacity and dimensions/weight (not found in any accessible source), a firm numeric minimum age, the live-feed resolution discrepancy (720p per DJI spec vs. 1080p in some launch press), the parts-count discrepancy across listings (46 vs. 107), and whether DJI's Apache-2.0 SDK reliably works with S1 hardware in practice. This entry hasn't yet been cross-linked into the rest of the Classroom & Coding Kits subcategory or synced to the directory listing; that's planned for a later pass.",
+  "manufacturerUrl": "https://www.dji.com/robomaster-s1",
+  "pricing": {
+    "summary": "DJI launched the RoboMaster S1 in June 2019 at **$499**, its only official price point. It has since been discontinued — DJI's own store and B&H Photo both list it as unavailable — so it can now only be found on secondary/resale markets, with price depending on used-unit condition and accessory completeness."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "DJI's genuinely Apache-2.0-licensed `RoboMaster-SDK` is built for the related RoboMaster EP, not the S1, and multiple unresolved GitHub issues (including one reporting the S1 refusing the SDK's connection) mean it isn't confirmed to reliably work with this specific product — so no Open Source badge is applied here."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "DJI's official GPL-3.0 Python SDK, built primarily for the RoboMaster EP; DJI says most examples also work on S1, though multiple open GitHub issues report unreliable or refused connections from S1 hardware."
+    }
+  ]
+}

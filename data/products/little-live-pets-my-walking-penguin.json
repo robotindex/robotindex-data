@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "little-live-pets-my-walking-penguin",
+  "slug": "product-little-live-pets-my-walking-penguin.html",
+  "name": "Little Live Pets My Walking Penguin",
+  "manufacturer": "Moose Toys",
+  "category": "Pets & Toys",
+  "subcategory": "Toys & Characters",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A battery-powered animatronic plush penguin (\"Waddles\") from Moose Toys' Little Live Pets line, sold with a feeding-fish accessory and a walking leash. It's not a smart or AI-driven robot — it's a reactive, single-state electromechanical toy: petting its head or feeding it the included fish triggers wing-flapping, head-bobbing, waddling, and one of 25+ built-in sounds. Little Live Pets is a large, long-running character line rather than a one-off — it spans dozens of animatronic pets and sub-lines beyond this penguin, including Gotta Go Flamingo, Scruff-A-Luvs, Lil Dippers, Zoogooz, My Puppy's Home, My Walking Pony, and My Magical Dragon.",
+  "specs": [
+    {
+      "label": "Dimensions",
+      "value": "~20 × 16 × 13cm",
+      "note": "~0.45kg; single UK-retailer source, not cross-verified"
+    },
+    {
+      "label": "Connectivity",
+      "value": "None",
+      "note": "no app, Bluetooth, or Wi-Fi — standalone toy"
+    },
+    {
+      "label": "Movement",
+      "value": "Walks, flaps, bobs",
+      "note": "with or without leash; internal leg/wheel mechanism unconfirmed"
+    },
+    {
+      "label": "Accessories",
+      "value": "Fish, leash, manual",
+      "note": "feeding fish triggers eating sounds/burps"
+    },
+    {
+      "label": "Sounds",
+      "value": "25+ reactions",
+      "note": "giggling, sneezing, burping, penguin calls"
+    },
+    {
+      "label": "Materials",
+      "value": "Plush + plastic",
+      "note": "fabric shell over electromechanical frame"
+    },
+    {
+      "label": "Power",
+      "value": "3× AA batteries",
+      "note": "included; user-replaceable, not rechargeable"
+    },
+    {
+      "label": "Age Rating",
+      "value": "5+ years",
+      "note": "leash/small-parts warning for under 18 months"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "standalone toy, no app or connectivity of any kind"
+    }
+  ],
+  "sourcing": "Verified against Moose Toys' own product and recall pages, Moose Toys' Little Live Pets brand page and the separate littlelivepetsbrand.com microsite, Wikipedia (Moose Toys, Bindeez), retailer listings (Amazon, Walmart, John Lewis, Argos, ToyWiz), the UK Toy Retailers Association's official DreamToys 2024 listing, a RocknRollerBaby parenting-blog review, CPSC's 2017 recall notice, and toy-trade coverage (The Toy Universe, The Toy Book, The Toy Coach). Moose Toys' founding story, the brand's exact launch year, current US retail price, release date, product dimensions, the internal walking mechanism, and Mama Surprise's brand affiliation are all inconsistently reported or single-sourced and are presented as open items rather than resolved. Cited review ratings come from an automated summary of a retailer listing, not a direct read of the underlying reviews. This is the first item cataloged in the new Toys & Characters subcategory, so related items above are drawn from the broader Pets & Toys category rather than direct subcategory siblings.",
+  "manufacturerUrl": "https://www.moosetoys.com/products/little-live-pets-my-pet-penguin",
+  "pricing": {
+    "summary": "Pricing is inconsistent across retailers: US street prices observed range from about **$29.99 to $34.99**, while the official UK RRP is **£24.99** (independently matched by a UK parenting-blog review). A $19.99 figure appearing on one automated read of Moose Toys' own US product page doesn't match any other US source and is likely an extraction error rather than the real US MSRP."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Waddles earned a genuine, independently verifiable honor: a spot on the UK Toy Retailers Association's official DreamToys 2024 Top 20 list. Beyond that, no durability, shedding, or reliability complaints turned up in the sources reviewed, though that reads as thin coverage for a lower-profile SKU rather than a confirmed clean track record."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Little Live Pets My Walking Penguin has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

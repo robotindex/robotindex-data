@@ -1,0 +1,77 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "superdroid-rocky-lite",
+  "slug": "product-superdroid-rocky-lite.html",
+  "name": "SuperDroid Robots Rocky Lite",
+  "manufacturer": "SuperDroid Robots",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "US-built, built-to-order biped from SuperDroid Robots. \"Lite\" uses a sheet-metal chassis with exposed wiring instead of the production Rocky's machined aluminum body, but shares identical actuators and electronics.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "48V",
+      "note": "lithium battery system"
+    },
+    {
+      "label": "Weight",
+      "value": "~45 kg"
+    },
+    {
+      "label": "Height",
+      "value": "~1.58 m",
+      "note": "~1.11 m at pelvis"
+    },
+    {
+      "label": "Compute",
+      "value": "Raspberry Pi CM5"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "22",
+      "note": "waist ×2, legs ×12, arms ×8"
+    },
+    {
+      "label": "High-Torque Joints",
+      "value": "120 N·m peak",
+      "note": "×16 modules, 40 N·m rated"
+    },
+    {
+      "label": "Compact Joints",
+      "value": "14 N·m peak",
+      "note": "×6 modules, 5 N·m rated"
+    },
+    {
+      "label": "Chassis",
+      "value": "Sheet metal",
+      "note": "vs. machined aluminum on standard Rocky"
+    }
+  ],
+  "sourcing": "Specs sourced from SuperDroid Robots' own product page for the Rocky biped, as of September 2026. robotindex does not sell this product — pricing is built-to-order and only available through the manufacturer's own configurator.",
+  "manufacturerUrl": "https://www.superdroidrobots.com/product/humanoid-robot-biped",
+  "pricing": {
+    "summary": "Built to order — SuperDroid Robots does not list a fixed price and instead quotes through its own configuration tool. The Lite variant is positioned as the lower-cost entry point into the Rocky platform, using a simpler chassis while keeping the same actuators and electronics as the full production model."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "Joints use **quasi-direct-drive actuators** with no external gearbox: 16 high-torque modules (120 N·m peak, up to 200 rpm) across the legs and waist, plus 6 compact modules (14 N·m peak, up to 315 rpm) for finer joints. Each actuator carries dual 14-bit encoders, backed by a torso-mounted IMU for balance. Networking covers Ethernet, WiFi, Bluetooth, and a CAN bus."
+    },
+    {
+      "heading": "Insights",
+      "body": "Rocky Lite uses the same 120 N·m quasi-direct-drive actuators and electronics as SuperDroid's full production Rocky biped, cutting cost mainly through a simpler sheet-metal chassis in place of machined aluminum. It remains built-to-order, with pricing available only through SuperDroid's own configurator rather than a published retail price."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "SuperDroid Robots has not published a public SDK or firmware repository for Rocky/Rocky Lite. Not currently listed in Builds & Mods."
+    }
+  ]
+}

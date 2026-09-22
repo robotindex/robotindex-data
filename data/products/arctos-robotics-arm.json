@@ -1,0 +1,79 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "arctos-robotics-arm",
+  "slug": "product-arctos-robotics-arm.html",
+  "name": "Arctos Robotics Arm",
+  "manufacturer": "Arctos Robotics",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A rounded, organic-styled 6-axis desktop arm built from 168 3D-printed PLA parts around NEMA stepper motors and cycloidal/planetary gearboxes — a solo-maker project first published in 2023, and this catalog's closest sibling to Annin Robotics AR4 in concept. Sold as separate CAD-file and hardware-kit purchases you print and assemble yourself, in open-loop (Arduino/GRBL) or closed-loop (CAN bus, magnetic encoders) versions. Its firmware and ROS integration are genuinely open source; its CAD files and premium control software are not.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "~10kg",
+      "note": "single-source figure; ~80–100hrs print time, 15–25hrs assembly"
+    },
+    {
+      "label": "Software",
+      "value": "Arctos Studio + ROS/ROS2",
+      "note": "firmware and ROS packages genuinely GPL/MIT/Apache; Studio Pro tier and CAD files are paid, not open"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "6 axes",
+      "note": "consistent across every source and hardware revision"
+    },
+    {
+      "label": "Payload",
+      "value": "1–2kg",
+      "note": "figures vary across official pages and hardware revisions; not fully reconciled"
+    },
+    {
+      "label": "Actuators",
+      "value": "NEMA 23 + NEMA 17 steppers",
+      "note": "cycloidal gearboxes (shoulder/elbow, ~1:150) + planetary gearboxes (wrist); DS3225 servo gripper"
+    },
+    {
+      "label": "Controller",
+      "value": "Arduino Mega 2560 (open-loop)",
+      "note": "6-axis GRBL fork + A4988/DRV8825 drivers; closed-loop tier adds CAN bus + magnetic encoders"
+    },
+    {
+      "label": "Reach",
+      "value": "600mm (current spec)",
+      "note": "one reseller lists ~400mm for an older/smaller variant — treat 600mm as current"
+    },
+    {
+      "label": "Repeatability",
+      "value": "Not published",
+      "note": "no tolerance figure disclosed anywhere found — unlike AR4, which publishes 0.3mm"
+    },
+    {
+      "label": "Construction",
+      "value": "3D-printed PLA",
+      "note": "168 printed parts, 30% infill; PLA has lower heat resistance/creep tolerance than AR4's PETG"
+    }
+  ],
+  "sourcing": "Specs compiled from Arctos Robotics' official site and shop pages, its GitHub organization (LICENSE files verified directly for the firmware, ROS1, ROS2, and CLMD repos), RobotShop and West3D reseller listings, and independent coverage (Hackaday, Hackster.io). Several details are flagged as unconfirmed above: the founder's identity and company structure, any crowdfunding history (none found), reach/payload/weight figures that vary across official pages and hardware revisions, repeatability (not published), and whether the CAD files' original CC BY-NC-ND terms still apply to the current paid version. This entry hasn't yet been cross-linked into the rest of the Robot Arms subcategory or synced to the directory listing; that's planned for a later pass.",
+  "manufacturerUrl": "https://arctosrobotics.com/",
+  "pricing": {
+    "summary": "Arctos sells the design in pieces rather than one box: CAD files alone run **€49.95**, a hardware kit (motors, electronics, fasteners — you print the plastic parts yourself) has listed at **$299.99** via West3D, and RobotShop lists a more complete closed-loop kit at **$559.00**, with Arctos's own marketing citing an overall $326–$393 range depending on tier. The $299.99 West3D hardware kit is currently sold out, so buyers may need the pricier closed-loop option or another listed tier instead."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Arctos's \"open source robotic arm\" claim only partly holds up: the GRBL firmware fork (GPLv3) and ROS1/ROS2 packages (MIT/Apache-2.0) are genuinely open, but the mechanical CAD files are a paid product (€49.95, originally released under a CC BY-NC-ND license that forbids derivatives) and the Arctos Studio control software is proprietary freemium — so this catalog's badge covers only the firmware and ROS integration."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "arctos-robotics-arm"
+    }
+  ]
+}

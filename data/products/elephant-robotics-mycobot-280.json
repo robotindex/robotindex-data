@@ -1,0 +1,73 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "elephant-robotics-mycobot-280",
+  "slug": "product-elephant-robotics-mycobot-280.html",
+  "name": "Elephant Robotics myCobot 280",
+  "manufacturer": "Shenzhen-based Elephant Robotics",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A small, assembled 6-axis desktop cobot from Shenzhen-based Elephant Robotics, sold across several interchangeable compute modules. The pictured unit is the M5Stack variant, identifiable by the built-in color screen in its base. \"280\" refers to its 280mm working radius, not a base diameter or payload figure — this is an education/research desktop arm, not an industrial-duty machine.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "~800–850 g",
+      "note": "varies slightly by compute variant"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "6-axis"
+    },
+    {
+      "label": "Payload",
+      "value": "250 g",
+      "note": "education/desktop class, not industrial-duty"
+    },
+    {
+      "label": "Actuators",
+      "value": "Steel-geared servos",
+      "note": "12-bit magnetic encoders — smart bus servos, not harmonic-drive joints"
+    },
+    {
+      "label": "Reach",
+      "value": "280 mm",
+      "note": "the source of the \"280\" name, not a base diameter"
+    },
+    {
+      "label": "Repeatability",
+      "value": "±0.5 mm",
+      "note": "manufacturer-stated; an order of magnitude looser than industrial cobots"
+    },
+    {
+      "label": "Compute (pictured)",
+      "value": "M5Stack ESP32",
+      "note": "built-in 2\" color screen; Pi, Jetson Nano, RDK X5, and Arduino variants also sold"
+    },
+    {
+      "label": "Stated Duty Cycle",
+      "value": "500 hours",
+      "note": "manufacturer's own working-lifespan spec"
+    }
+  ],
+  "sourcing": "Specs compiled from Elephant Robotics' official shop listings, spec sheets, and GitBook documentation, its GitHub organization (pymycobot, mycobot_ros, mycobot_ros2), and independent reviews (The Gadgeteer, Raspberry Pi's official magazine, CNX Software) as of this build. The on-screen graphics visible in the submitted photo are inferred to be a stock M5Stack demo display rather than a confirmed myCobot-specific programming interface — no official source verifies otherwise. Confirm current pricing and variant availability before purchase, and note that the Jetson Nano compute variant depends on an NVIDIA module now declared end-of-life.",
+  "manufacturerUrl": "https://shop.elephantrobotics.com/collections/mycobot-280",
+  "pricing": {
+    "summary": "Elephant Robotics' own shop prices myCobot 280 from $599 (Arduino) to $849 (Jetson Nano) depending on the onboard compute module, with the pictured M5Stack variant at $649 and a bundled accessory kit at $1,417.97. The arm and servo hardware are identical across all five variants — only the compute module changes, so that choice is what actually drives the price difference."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "This catalog's Open Source badge covers only the software layer here: Elephant Robotics' Python SDK and ROS/ROS2 packages are genuinely MIT- and BSD-3-Clause-licensed, but the arm's own controller firmware ships as closed binaries and no hardware CAD or schematics are published. That makes myCobot 280 a closed, assembled hardware product with an open software stack layered on top."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "elephant-robotics-mycobot-280"
+    }
+  ]
+}

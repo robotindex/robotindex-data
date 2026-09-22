@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "learning-resources-code-and-go-robot-mouse",
+  "slug": "product-learning-resources-code-and-go-robot-mouse.html",
+  "name": "Learning Resources Code & Go Robot Mouse",
+  "manufacturer": "Learning Resources",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Classroom & Coding Kits",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A screen-free coding toy for young children (ages 4+) built around \"Colby,\" a mouse-shaped robot programmed entirely with color-coded directional buttons on its own body — no separate remote, no app. Sequences of up to 40 fixed 5-inch/90-degree steps are built and executed directly on the mouse, which is purely open-loop with no obstacle sensing beyond a magnetic nose switch that detects an included cheese piece. The 83-piece Activity Set builds a double-sided maze from included walls and tunnels. Released in 2016, this predates Botley as one of the earlier mainstream \"unplugged\" coding toys, and shares its core on-body-button mechanic with the earlier UK-made Bee-Bot.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "3x AAA (not rechargeable)",
+      "note": "not included; Learning Resources separately sells a rechargeable version of the mouse as its own SKU"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Mouse ~4in long",
+      "note": "boxed set 3.15in x 16.3in x 12.62in; independently-measured weight not found in any source checked"
+    },
+    {
+      "label": "Programming",
+      "value": "Buttons on the robot itself",
+      "note": "no separate remote, unlike Botley or Bee-Bot's own tablet-paired sibling Blue-Bot; forward, back, left, right, Go, Clear, plus an extra action button"
+    },
+    {
+      "label": "Memory",
+      "value": "Up to 40 steps",
+      "note": "an independent reviewer reports practical accuracy drift beginning around step 8-9 due to mechanical/motor imprecision, even though the buffer holds far more"
+    },
+    {
+      "label": "Movement",
+      "value": "Fixed 5in steps, 90° turns",
+      "note": "purely open-loop/dead-reckoning; no obstacle-detection sensors at all — the only sensing is a magnetic nose reed switch that triggers on the included cheese piece"
+    },
+    {
+      "label": "Editing",
+      "value": "No step-by-step editing",
+      "note": "a programming mistake requires clearing and rebuilding the entire sequence rather than fixing a single step, per an independent review"
+    },
+    {
+      "label": "Included",
+      "value": "83 pieces",
+      "note": "mouse, 16 maze-grid tiles (20in x 20in double-sided board), 22 walls, 3 tunnels, 30 coding cards, 10 activity cards, 1 magnetic cheese piece, activity guide"
+    },
+    {
+      "label": "Lights/Sound",
+      "value": "Yes, incl. idle \"personality\"",
+      "note": "illuminated eyes, squeak/chirp sounds, random idle animations; low battery disables the Go button and triggers a warning beep"
+    },
+    {
+      "label": "Age Range",
+      "value": "4+ (younger than Botley)",
+      "note": "reviewers peg the sweet spot at ages 4-6; kids 7+ with prior coding exposure reportedly find it \"too basic\" within weeks"
+    }
+  ],
+  "sourcing": "Specs and history compiled from the Code & Go Robot Mouse user manual, Learning Resources' own product and coding-hub pages, independent reviews (Tech Age Kids, Mumsnet, Good Play Guide, Stemigo), and background on Bee-Bot from TTS Group and Terrapin Software's own product pages. Several details are flagged as unconfirmed above: the exact 2016 launch month/day and original launch price, an independently-measured weight for the mouse or boxed set, and Bee-Bot's exact launch year (understood only to predate this product by roughly a decade, not independently pinned down). Two commonly-recalled accessory names — a \"Costume Set\" and a simplified \"Junior\" version — could not be found in Learning Resources' current or historical catalog and are likely misattributed to a different product line; they are not included in this entry's specs. This entry hasn't yet been cross-linked into the rest of the Classroom & Coding Kits subcategory or synced to the directory listing; that's planned for a later pass.",
+  "manufacturerUrl": "https://www.learningresources.com/item-code-gor-robot-mouse-activity-set",
+  "pricing": {
+    "summary": "Learning Resources' current direct price for the full 83-piece Activity Set is **$71.99**, or **$39.99** for a standalone mouse with no maze kit. Rechargeable-battery versions of both the standalone mouse ($49.99) and full Activity Set ($89.99) are also sold alongside the original AAA-battery versions, so the exact price depends on which variant a buyer picks."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "This catalog applies no Open Source badge here: with no app, Bluetooth, or wireless pairing of any kind on this product, there's no SDK, API, or protocol for a community to even reverse-engineer in the first place. An independent hands-on review also documents a real spec-accuracy gap: despite a nominal 40-step program memory, the mouse's dead-reckoning movement can drift off course starting around step 8-9."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Learning Resources Code & Go Robot Mouse has not released a public SDK, firmware repo, or developer API — it's a screen-free coding toy with no app or digital component. Not currently listed in Builds & Mods."
+    }
+  ]
+}

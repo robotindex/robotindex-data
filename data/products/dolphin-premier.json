@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "dolphin-premier",
+  "slug": "product-dolphin-premier.html",
+  "name": "Dolphin Premier",
+  "manufacturer": "Maytronics",
+  "category": "Outdoor & Yard",
+  "subcategory": "Other",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A track-driven robotic pool cleaner from Maytronics' Dolphin line, scanning and mapping in-ground pools up to 50 ft with \"CleverClean\" navigation, dual scrubbing brushes, and a bottom-load multi-media filtration system.",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "~20 lbs dry",
+      "note": "16.7 × 16.1 × 10.1 in"
+    },
+    {
+      "label": "Connectivity",
+      "value": "None",
+      "note": "manual start button, no app/WiFi"
+    },
+    {
+      "label": "Navigation",
+      "value": "CleverClean",
+      "note": "scans & maps pool, adapts to obstacles"
+    },
+    {
+      "label": "Drive",
+      "value": "Dual tracks",
+      "note": "4,500 GPH suction"
+    },
+    {
+      "label": "Pool Compatibility",
+      "value": "In-ground, up to 50 ft",
+      "note": "vinyl, fiberglass, concrete, tile"
+    },
+    {
+      "label": "Cleans",
+      "value": "Floor, walls, waterline",
+      "note": "steps not officially claimed"
+    },
+    {
+      "label": "Filtration",
+      "value": "Bottom-load, multi-media",
+      "note": "fine/ultra-fine to ~2 microns"
+    },
+    {
+      "label": "Cycle Time",
+      "value": "~3 hours",
+      "note": "weekly timer, 2–3 cleanings/week"
+    },
+    {
+      "label": "Subscription",
+      "value": "Free, no subscription",
+      "note": "MyDolphin Plus app"
+    }
+  ],
+  "sourcing": "Verified against Maytronics' own official store pages (maytronics.com, dolphinofficial.com) and an independent Bob Vila review. Price differs sharply between Maytronics' own current listing ($2,499) and retailer pricing cited by Bob Vila ($1,299–$1,397) — confirm current price at a specific retailer before buying. Navigation is officially named \"CleverClean\"; a conflicting \"SmartNav\" name appears on at least one third-party listing and should not be treated as authoritative. Steps are not explicitly claimed as a cleaned surface in Maytronics' own marketing copy, despite floor/wall/waterline cleaning being confirmed.",
+  "manufacturerUrl": "https://www.maytronics.com/en-us/store/residential-pools/best-seller-cleaners/dolphin-premier/99996339-SPL.html",
+  "pricing": {
+    "summary": "Maytronics' own current US store lists the Dolphin Premier at **$2,499**, while an independent Bob Vila review cites retailer pricing of **$1,299–$1,397** — a large gap worth flagging prominently and checking against a live retailer before buying, rather than treating either figure as fixed."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "The Premier uses **CleverClean** navigation to scan the pool and adapt to obstacles — Maytronics' current official name, though some older/third-party sources call it \"SmartNav.\" It's track-driven with dual scrubbing brushes and 4,500 GPH suction, using a bottom-load, interchangeable filter system (bag plus fine/ultra-fine cartridges, down to ~2 microns). No app, Bluetooth, or WiFi; manual start with weekly timer."
+    },
+    {
+      "heading": "Insights",
+      "body": "Maytronics' own materials consistently name the Premier's navigation system \"CleverClean,\" but at least one third-party listing and an older review call it \"SmartNav\" instead. Separately, Maytronics' current price ($2,499) differs sharply from retailer pricing cited in an independent Bob Vila review ($1,299–$1,397)."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Dolphin Premier has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

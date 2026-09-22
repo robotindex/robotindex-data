@@ -1,0 +1,83 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "mondo-robotics-beni",
+  "slug": "product-mondo-robotics-beni.html",
+  "name": "Mondo Robotics Beni",
+  "manufacturer": "Mondo Robotics",
+  "category": "Companion & Social",
+  "subcategory": "Mobility Helpers",
+  "tier": "pending",
+  "flags": {
+    "pending": true,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A small, all-terrain autonomous camera robot on wheels that follows you and films 4K highlight reels, from Palo Alto/Shenzhen startup Mondo Robotics. Funded on Kickstarter for roughly 96× its goal; not a mobility-assistance or telepresence device despite its placement here — see the note below.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "~1.5 hr per battery",
+      "note": "swappable; up to ~4.5 hr with two spares"
+    },
+    {
+      "label": "Weight",
+      "value": "3.86 lb (1.75 kg)"
+    },
+    {
+      "label": "Dimensions",
+      "value": "8.5 × 7.1 × 7.1 in"
+    },
+    {
+      "label": "Camera",
+      "value": "4K@30fps",
+      "note": "also 3K@60, 1080p@100; 32GB internal + microSD"
+    },
+    {
+      "label": "AI",
+      "value": "On-device subject tracking",
+      "note": "auto-edits highlight reels; no internet required for core follow/film"
+    },
+    {
+      "label": "Mobility",
+      "value": "All-terrain wheels",
+      "note": "clears ~10 in obstacles, self-rights if tipped"
+    },
+    {
+      "label": "Top Speed",
+      "value": "~18 mph",
+      "note": "flagged by a reviewer as a real safety consideration near people/pets"
+    },
+    {
+      "label": "Control",
+      "value": "Autonomous follow",
+      "note": "+ wristwatch-style \"Pilot Mode\" motion controller"
+    },
+    {
+      "label": "Manipulation",
+      "value": "None",
+      "note": "camera + wheels only — no arm or gripper"
+    },
+    {
+      "label": "Subscription",
+      "value": "None disclosed",
+      "note": "core follow/film runs fully offline; optional cloud AI-editing feature, no pricing/tier announced — mondorobotics.com"
+    }
+  ],
+  "sourcing": "Verified against Mondo Robotics' own site (mondorobotics.com, including its About Us page) and Kickstarter campaign page, South China Morning Post's profile of co-founder Shuo Yang's move from Tesla's Optimus program, corroborating coverage from Interesting Engineering and Yahoo News, and product coverage from PetaPixel, Designboom, and Robotics and Automation News. The claim that The Verge found the autonomous-following feature unreliable in hands-on testing is relayed via a secondary source (PhotoWorkout's synthesis); the original Verge piece was not independently loaded and should be checked directly before being cited as a firsthand Verge finding. No confirmed institutional funding round was found in searches of Crunchbase, PitchBook, or Tracxn — funding claims beyond the Kickstarter raise and standard Chinese company-registration capital are unconfirmed. The company's \"concept stage April 2025\" self-description and SCMP's \"legally established January 2025\" are treated as complementary (incorporation vs. product-concept kickoff) rather than contradictory.",
+  "manufacturerUrl": "https://www.mondorobotics.com/",
+  "pricing": {
+    "summary": "Kickstarter early-bird pricing ran roughly $499–$600 depending on tier and campaign date, with a planned standard retail price of $799. The Kickstarter campaign has already closed, and backer units are slated to ship in October 2026 — weeks from this writing — so the robot isn't yet broadly available at retail."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Secondary reporting describes The Verge testing a unit and finding the flagship autonomous-following feature unreliable in practice — clipping corners and bumping into walls and feet. Notebookcheck separately raised a safety concern about the kinetic energy and legal ambiguity of operating an ~18 mph wheeled robot around bystanders and pets."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Mondo Robotics Beni has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

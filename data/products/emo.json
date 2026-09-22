@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "emo",
+  "slug": "product-emo.html",
+  "name": "EMO",
+  "manufacturer": "Living",
+  "category": "Pets & Toys",
+  "subcategory": "Robot Pets",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A palm-sized AI desktop companion from Living.AI (Living Technology, Shenzhen), built around an animated LED face, a wide-angle camera with face recognition, and a 4-microphone array. It rolls on a small wheeled base rather than walking, docks on a wireless-charging \"Skateboard\" pad, and is a one-time hardware purchase with no mandatory subscription.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "2–6 hr (disputed)",
+      "note": "Wi-Fi setup required; Bluetooth audio out"
+    },
+    {
+      "label": "Weight",
+      "value": "~250 g",
+      "note": "single unverified source"
+    },
+    {
+      "label": "Dimensions",
+      "value": "~94 × 118 × 66 mm",
+      "note": "per user caliper measurement; not an official spec sheet figure"
+    },
+    {
+      "label": "Sensors",
+      "value": "ToF distance, 4 drop sensors",
+      "note": "6-axis gyro/accelerometer, light sensor, head touch sensor"
+    },
+    {
+      "label": "Compute",
+      "value": "1.2 TOPS NPU",
+      "note": "per Hackster.io; runs onboard image/sound/sensor models"
+    },
+    {
+      "label": "Camera",
+      "value": "HD wide-angle",
+      "note": "face recognition, up to 10 people"
+    },
+    {
+      "label": "Display",
+      "value": "Front LED face",
+      "note": "1,000+ expressions cited; resolution not disclosed"
+    },
+    {
+      "label": "Microphones",
+      "value": "4-mic array",
+      "note": "far-field, directional sound localization"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "no mandatory subscription currently; cloud AI features could change per third-party reviews"
+    }
+  ],
+  "sourcing": "Verified against Living.AI's own official site (living.ai, including its EMO and EMO Go Home product pages), Hackster.io's technical coverage of EMO's onboard neural compute, Kicktraq's archived record of the original Kickstarter campaign, the CourtListener-hosted opinion in Digital Dream Labs, Inc. v. Living Technology (Shenzhen) Co. (W.D. Pa., Feb. 2022), and the Mozilla Foundation's 2025 \"Nothing Personal\" toy privacy/security report. Dimensions and weight come from a single user forum measurement and a single secondary-source figure respectively, not an official spec sheet, and are flagged as low-confidence. Battery life is reported inconsistently across sources (figures ranging 2–6 hours) with no official manufacturer number found, so it's presented as a disputed range. Screen resolution is not publicly disclosed by Living.AI and is omitted rather than estimated. Pricing above $279 (white colorway, EMO Go Home tiers, standalone Home Station price) comes from a third-party retailer's guide, not confirmed directly on living.ai. No review from a major independent tech outlet (The Verge, Engadget, CNET, TechCrunch, Wired) was found; claims about personality, expressiveness, and recognition accuracy are manufacturer statements, not independently verified.",
+  "manufacturerUrl": "https://living.ai/",
+  "pricing": {
+    "summary": "$279 for the standard black EMO (robot, headphones, and wireless-charging \"Skateboard\" base) on Living.AI's own store, with a white variant and an \"EMO Go Home\" bundle including a \"Home Station\" dock (from $369) also listed. Those higher tiers and the white colorway's price come from a third-party retailer's buying guide rather than being confirmed directly on living.ai, so treat them as less certain."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Digital Dream Labs, which owns Vector/Cozmo's IP, sued Living Technology for copyright and trademark infringement over EMO's similarity to those robots (W.D. Pa., case 2:20-cv-01500); a February 2022 ruling dismissed some claims but let the audiovisual-copyright and trademark claims proceed, and no final outcome has been confirmed since, so the case remains unresolved. A 2025 Mozilla Foundation toy-safety report separately flagged EMO for a conditional voice-injection vulnerability, insecure local storage of recorded photos and video, and inadequate disclosure of what it collects — real concerns for a device with an always-available camera and microphone in the home."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "The SDK teased during EMO's original Kickstarter campaign was never released; Living.AI has stated it has no current plans to open-source EMO or ship a developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "bitzee-magicals",
+  "slug": "product-bitzee-magicals.html",
+  "name": "Bitzee Magicals",
+  "manufacturer": "Spin Master",
+  "category": "Pets & Toys",
+  "subcategory": "Toys & Characters",
+  "tier": "pending",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A screen-free digital pet from Spin Master, housed in a hinged, jewel-box-style case. Instead of an LCD, a thin strip of color LEDs flaps rapidly up and down, using a persistence-of-vision effect to make an 8-bit character appear to float inside the case. Magicals is a mythical-creature-themed edition of the original 2023 Bitzee, adding a gem-collecting mechanic, potions, and 20 collectible characters (up from 15 in the base line).",
+  "specs": [
+    {
+      "label": "Weight",
+      "value": "0.37 lb (~168 g)",
+      "note": "per Kohl's retail listing"
+    },
+    {
+      "label": "Dimensions",
+      "value": "5.1 × 5.9 × 7.6 cm",
+      "note": "2.01 × 2.32 × 2.99 in, per Kohl's retail listing"
+    },
+    {
+      "label": "Connectivity",
+      "value": "None confirmed",
+      "note": "a marketing website exists; no companion app or unit-to-unit link found"
+    },
+    {
+      "label": "Display",
+      "value": "Flapping LED strip",
+      "note": "persistence-of-vision effect; no LCD/OLED; pixel count undisclosed"
+    },
+    {
+      "label": "Case",
+      "value": "Hinged jewel-box",
+      "note": "not a charging dock despite appearance"
+    },
+    {
+      "label": "Characters",
+      "value": "20 total",
+      "note": "up from 15 in base Bitzee; gem-unlock system"
+    },
+    {
+      "label": "Interactivity",
+      "value": "Touch, swipe, tilt, shake",
+      "note": "plus an on-device \"Magic Wand\" gesture"
+    },
+    {
+      "label": "Power",
+      "value": "3× AA batteries",
+      "note": "replaceable; not rechargeable, no wireless charging"
+    },
+    {
+      "label": "Battery Life",
+      "value": "~2–4 weeks",
+      "note": "typical use; shorter with heavy play, per one detailed review"
+    },
+    {
+      "label": "Age Rating",
+      "value": "5+ years",
+      "note": "contains magnets and flashing lights — see warnings below"
+    }
+  ],
+  "sourcing": "Verified against Spin Master's official Bitzee brand pages and hosted instruction sheet, Spin Master's Bitzee Help Center, the play.bitzee.com marketing site, trade coverage (The Toy Insider, aNb Media, Toy World Magazine, Toys n Playthings), a TTPM review, Today's Parent, Gizmodo's technical explainer on the display mechanism, and multiple retailer listings (Kohl's, Walmart, Meijer, and others) cross-checked for price, dimensions, and materials. The meaning of \"3-in-1\" on Magicals packaging, its exact release date, current retail price, and whether Magicals itself earned any Toy of the Year recognition are not confirmed by any source found and are presented as open questions rather than fact. The interior tray visible in product photos is not a charger — the device runs on replaceable AA batteries per the official instruction sheet.",
+  "manufacturerUrl": "https://www.spinmaster.com/en-US/brand/bitzee",
+  "pricing": {
+    "summary": "Pricing is inconsistent across retailers, reported anywhere from $17.99–$24.99 on clearance/sale to a more typical $29.99–$34.99, up to $42.99–$48.99 at some specialty stores. This spread likely reflects normal retail markup and discounting rather than an official price change, and sits in the same broad range as the original Bitzee's August 2023 launch price of $29.99."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "The original 2023 Bitzee did win a genuine \"Toy of the Year\" award from the UK's Toy Industry Awards (BTHA/Toy Retailers Association, January 2024), but no evidence was found that Magicals specifically earned that same recognition. A related sub-line, Bitzee Mystical, separately uses its own \"Toy of the Year 2024\" badge in marketing whose exact basis wasn't independently confirmed."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Bitzee Magicals has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}
