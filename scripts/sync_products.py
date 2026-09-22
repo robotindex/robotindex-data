@@ -380,7 +380,10 @@ def classify_firmware_community(soup, repo_to_entries, product_id, product_name)
             continue
         if link:
             href = link.get("href", "")
-            if "builds-mods.html" in href:
+            # The live site's internal links used to be "builds-mods.html?...";
+            # it's since moved to extension-less URLs ("/builds-mods?..."),
+            # so match on the page name alone, not the old ".html" suffix.
+            if "builds-mods" in href:
                 m = re.search(r"[?&]repo=([^&]+)", href)
                 if m:
                     repo_url = unquote(m.group(1)).rstrip("/").lower()
@@ -678,5 +681,4 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
-
 
