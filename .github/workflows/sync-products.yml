@@ -28,6 +28,9 @@ jobs:
       - name: Validate the freshly extracted data
         run: python scripts/validate_products.py
 
+      - name: Validate the product <-> builds-mods cross-link graph
+        run: python scripts/validate_crosslinks.py
+
       - name: Check for changes
         id: diff
         run: |
@@ -50,13 +53,20 @@ jobs:
 
             This ran `scripts/sync_products.py` (fetches directory.html
             and every product page, re-parses the same way the original
-            manual extraction did) and `scripts/validate_products.py`
-            (schema + orphan checks), both of which passed before this PR
-            was opened. Review the diff below -- pay particular attention
-            to any `manufacturer` field on a product that's new since the
-            last sync, since that field is inferred from page text/domain
-            heuristics and a genuinely new product won't be in the
-            hand-verified overrides table yet.
+            manual extraction did), `scripts/validate_products.py`
+            (schema + orphan checks), and `scripts/validate_crosslinks.py`
+            (every product's firmwareCommunity buildsModsId resolves to a
+            real, distinct builds-mods.json entry), all of which passed
+            before this PR was opened. Review the diff below -- pay
+            particular attention to any `manufacturer` field on a product
+            that's new since the last sync, since that field is inferred
+            from page text/domain heuristics and a genuinely new product
+            won't be in the hand-verified overrides table yet. Also worth
+            a second look: any `firmwareCommunity` entry the sync's run
+            log flagged as "picked ... by name match" -- that's a repo
+            shared by more than one Builds & Mods entry, resolved
+            automatically by matching product/entry names, and worth
+            confirming it picked the right one.
           branch: auto/sync-products
           delete-branch: true
           labels: automated-sync
