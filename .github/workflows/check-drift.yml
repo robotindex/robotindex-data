@@ -1,0 +1,53 @@
+name: Check for content drift
+
+on:
+  schedule:
+    - cron: "0 7 * * 1" # Mondays 07:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check for drift
+        id: check
+        run: |
+          set +e
+          python scripts/check_drift.py > /tmp/drift_output.txt 2>&1
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          cat /tmp/drift_output.txt
+
+      - name: Open or update issue if drift detected
+        if: steps.check.outputs.exit_code == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open \
+            --search "Directory/product snapshot has drifted in:title" \
+            --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            echo "Open drift issue #$existing already exists -- adding a comment instead of a duplicate."
+            gh issue comment "$existing" --repo "$GITHUB_REPOSITORY" --body-file /tmp/drift_output.txt
+          else
+            gh issue create \
+              --repo "$GITHUB_REPOSITORY" \
+              --title "Directory/product snapshot has drifted from the live site" \
+              --body-file /tmp/drift_output.txt
+          fi
+
+      - name: Fail if fetch errors occurred
+        if: steps.check.outputs.exit_code == '2'
+        run: |
+          echo "check_drift.py hit fetch errors -- see the 'Check for drift' step's log above." >&2
+          exit 1
