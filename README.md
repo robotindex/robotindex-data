@@ -30,7 +30,8 @@ schema/
                              file's comments for how it works.
   sync-products.yml         Scheduled workflow (every ~2 days, offset from sync-data.yml, plus
                              manual dispatch) that re-extracts directory.json and every
-                             products/<id>.json from the live site's HTML and opens a PR if
+                             products/<id>.json from the live site's HTML, validates both the
+                             records and the product<->builds-mods link graph, and opens a PR if
                              anything changed. See scripts/sync_products.py for how it works.
 scripts/
   validate_data.py          Validates builds-mods.json / models-data.json against their schemas.
@@ -40,6 +41,14 @@ scripts/
                              record and vice versa (no orphans in either direction). Run by the
                              sync-products workflow, and by hand after editing either the
                              directory or a product record.
+  validate_crosslinks.py    Validates the product <-> builds-mods.json link graph: every
+                             buildsModsId a product's firmwareCommunity array references
+                             actually exists in builds-mods.json, and no product references the
+                             same buildsModsId twice. Doesn't overlap with validate_products.py
+                             (schema/orphans) or validate_data.py (builds-mods.json's own
+                             schema) -- this is the one that catches the link graph itself going
+                             stale. Run by the sync-products workflow, and by hand after editing
+                             a product's firmwareCommunity or renaming a builds-mods.json id.
   sync_products.py          Fetches directory.html and every product-*.html page from the live
                              site and re-derives directory.json + products/*.json from them. Run
                              by the sync-products workflow; can also be run by hand with
@@ -56,6 +65,7 @@ The directory/product extraction is mechanical — `sync_products.py` parses the
 - **`pricing.tiers`** is populated only where the live page has an explicit tier-price table (currently just `unitree-go2`); every other multi-tier product's pricing is folded into the prose `pricing.summary` instead of broken out structurally.
 - **A page that 404s** (a directory item pointing at a not-yet-live product page) is skipped with a warning rather than failing the sync; its existing record, if any, is left untouched until the page goes live.
 - **A product removed from the live directory** isn't auto-deleted here — `validate_products.py` will flag its now-orphaned record for a human to remove by hand.
+- **A repo shared by more than one `builds-mods.json` entry** (two distinct editorial rows citing the same project, see the `id` note in the schema table below) is resolved by repo + `tab`, then — only if that's still ambiguous — by matching the product's own name against each candidate entry's name. When that resolves cleanly it's still logged as a review flag in the sync's run log, since it was picked heuristically; when it can't be resolved at all, the link is left as `not-listed` with a note explaining the ambiguity, rather than guessing. `scripts/validate_crosslinks.py` separately checks that no product ends up referencing the same `buildsModsId` twice and that every reference resolves to a real entry.
 
 None of this is invisible — `sourcing` on every record still carries the citation/caveat text from the live page, so a reader always sees what was and wasn't independently confirmed.
 
@@ -128,6 +138,12 @@ python3 scripts/validate_products.py
 ```
 
 Both scripts additionally flag duplicate `id` values, and `validate_products.py` also flags orphaned records or dangling `productId` references — things schema validation alone won't catch.
+
+If you touched a product's `firmwareCommunity` array or renamed/removed a `builds-mods.json` id, also run `scripts/validate_crosslinks.py` — it checks that every `buildsModsId` a product references actually exists and isn't referenced twice by the same product, which the two schema-focused scripts above don't check:
+
+```bash
+python3 scripts/validate_crosslinks.py
+```
 
 Also worth checking before opening a manual PR:
 - Every `repo` / `link` actually resolves (no typos, no dead links).
