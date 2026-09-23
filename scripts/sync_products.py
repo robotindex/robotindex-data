@@ -131,6 +131,34 @@ def fetch_ok(url):
         return None
 
 
+def url_for(base, href):
+    """Join base + href without producing a double slash. href from the
+    DIRECTORY array is an absolute, extensionless, leading-slash path
+    (e.g. "/product-unitree-g1") as of the site's canonical-URL policy;
+    this also tolerates a bare relative form ("product-unitree-g1") in
+    case that ever shows up again."""
+    return base + href if href.startswith("/") else f"{base}/{href}"
+
+
+def href_to_pid(href):
+    """Derive the bare product id (e.g. "unitree-g1") from a DIRECTORY
+    array href, regardless of which shape it's in. Current shape is an
+    absolute, extensionless path ("/product-unitree-g1"); the old shape
+    was a bare relative filename ("product-unitree-g1.html"). Handling
+    both means a future href-format change doesn't silently break this
+    the same way the leading-slash/no-extension switch just did -- that
+    change fed straight into a slice that only stripped "product-" and
+    ".html" when both were present in exactly that position, so every
+    href fell through unstripped instead of raising anywhere near the
+    actual cause."""
+    pid = href.lstrip("/")
+    if pid.startswith("product-"):
+        pid = pid[len("product-"):]
+    if pid.endswith(".html"):
+        pid = pid[: -len(".html")]
+    return pid
+
+
 # ---------------------------------------------------------------- markdown
 
 def inline_to_md(node):
@@ -273,7 +301,7 @@ def build_directory_and_map(categories):
             sub_out = {"name": sub.get("name", ""), "items": []}
             for item in sub.get("items", []):
                 href = item["href"]
-                pid = href[len("product-"):-len(".html")] if href.startswith("product-") and href.endswith(".html") else href
+                pid = href_to_pid(href)
                 item_out = {
                     "name": item["name"],
                     "tier": item["tier"],
@@ -547,7 +575,7 @@ def extract_sourcing(soup):
 
 def process_product(href, html_text, meta, repo_to_entries):
     soup = BeautifulSoup(html_text, "html.parser")
-    pid = href[len("product-"):-len(".html")]
+    pid = href_to_pid(href)
 
     h1 = soup.find("h1")
     name = h1.get_text(strip=True) if h1 else meta["name"]
@@ -584,7 +612,7 @@ def process_product(href, html_text, meta, repo_to_entries):
     record = {
         "$schema": "../../schema/product.schema.json",
         "id": pid,
-        "slug": href,
+        "slug": href.lstrip("/"),
         "name": name,
         "manufacturer": manufacturer or "Unknown",
         "category": meta["category"],
@@ -621,7 +649,7 @@ def main():
     base = args.base_url.rstrip("/")
 
     try:
-        directory_html = fetch(f"{base}/directory.html")
+        directory_html = fetch(f"{base}/directory")
         categories = parse_directory_array(directory_html)
     except Exception as e:
         print(f"FATAL: could not fetch/parse directory.html: {e}", file=sys.stderr)
@@ -650,7 +678,7 @@ def main():
     os.makedirs(PRODUCTS_DIR, exist_ok=True)
     ok = 0
     for href, meta in sorted(dir_map.items()):
-        page_html = fetch_ok(f"{base}/{href}")
+        page_html = fetch_ok(url_for(base, href))
         if page_html is None:
             continue
         try:
@@ -681,4 +709,3 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
-

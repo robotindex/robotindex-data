@@ -33,7 +33,11 @@
                     "additionalProperties": false,
                     "properties": {
                       "name": { "type": "string", "description": "Display name, as shown in the directory listing." },
-                      "tier": { "type": "string", "enum": ["featured", "pending"] },
+                      "tier": {
+                        "type": "string",
+                        "enum": ["featured", "new", "under-review"],
+                        "description": "Mirrors product.schema.json's tier field for the same product; see that schema for the promotion rule. Kept as a duplicate value here (rather than only in data/products/<id>.json) because the directory listing is regenerated straight from directory.html and needs to render tabs/badges without opening every product record."
+                      },
                       "productId": {
                         "type": "string",
                         "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
