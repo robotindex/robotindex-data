@@ -15,8 +15,8 @@
     },
     "slug": {
       "type": "string",
-      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*\\.html$",
-      "description": "Generated page filename, e.g. 'product-unitree-go2.html'. Kept separate from id so the URL can change (renames, restructuring) without breaking references that use id."
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Extensionless page path, e.g. 'product-unitree-go2' — this is the site's canonical URL form (see netlify.toml's redirects and every canonical/og:url tag). The generated file on disk is still <slug>.html; strip or add that suffix at the point a filename vs. a URL is actually needed, but never store '.html' in this field itself, since every href, canonical tag, sitemap entry, and crosslink card is built directly from it. Kept separate from id so the URL can change (renames, restructuring) without breaking references that use id."
     },
     "name": { "type": "string", "description": "Display name, e.g. 'Unitree Go2'." },
     "manufacturer": { "type": "string", "description": "Company or project name, e.g. 'Unitree Robotics'." },
@@ -25,8 +25,8 @@
     "subcategory": { "type": "string", "description": "Directory subcategory, e.g. 'Four Legs'." },
     "tier": {
       "type": "string",
-      "enum": ["featured", "pending"],
-      "description": "Editorial confidence/completeness tier shown as the product-meta badge. 'pending' = newly added or thinner sourcing; matches today's directory.js tier field."
+      "enum": ["featured", "new", "under-review"],
+      "description": "Stepped review status shown as the product-meta badge; matches today's directory.js tier field. 'under-review' = added under 30 days ago, or availability still unconfirmed. 'new' = 30+ days since add date, with availability confirmed — promotion is rule-based (see the post-date field, once added). 'featured' is always a manual editorial call, never automatic. Distinct from flags.pending: a shipped, long-available product can still be tier=new if it just cleared the 30-day window, and flags.pending can be true on a tier=new record if the 30-day clock ran out before availability was reconfirmed — that combination should be treated as a signal to recheck the record, not as a contradiction to silently resolve either way."
     },
     "flags": {
       "type": "object",
