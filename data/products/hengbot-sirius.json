@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "hengbot-sirius",
-  "slug": "product-hengbot-sirius.html",
+  "slug": "product-hengbot-sirius",
   "name": "Hengbot Sirius",
   "manufacturer": "Hengbot",
   "category": "Pets & Toys",
   "subcategory": "Robot Pets",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": true,
     "openSource": false,

@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "fmart-t9pro",
-  "slug": "product-fmart-t9pro.html",
+  "slug": "product-fmart-t9pro",
   "name": "FMART T9Pro",
   "manufacturer": "Fmart with suction mounting",
   "category": "Cleaning & Home Care",

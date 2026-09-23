@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "unitree-r1",
-  "slug": "product-unitree-r1.html",
+  "slug": "product-unitree-r1",
   "name": "Unitree R1",
   "manufacturer": "Unitree",
   "category": "Humanoid & General Purpose",
   "subcategory": "Two Legs",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,

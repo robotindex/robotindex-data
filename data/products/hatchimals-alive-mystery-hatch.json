@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "hatchimals-alive-mystery-hatch",
-  "slug": "product-hatchimals-alive-mystery-hatch.html",
+  "slug": "product-hatchimals-alive-mystery-hatch",
   "name": "Hatchimals Alive Mystery Hatch",
   "manufacturer": "Spin Master",
   "category": "Pets & Toys",

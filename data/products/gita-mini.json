@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "gita-mini",
-  "slug": "product-gita-mini.html",
+  "slug": "product-gita-mini",
   "name": "Gita Mini",
   "manufacturer": "Piaggio Fast Forward",
   "category": "Companion & Social",

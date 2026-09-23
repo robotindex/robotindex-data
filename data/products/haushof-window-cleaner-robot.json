@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "haushof-window-cleaner-robot",
-  "slug": "product-haushof-window-cleaner-robot.html",
+  "slug": "product-haushof-window-cleaner-robot",
   "name": "HAUSHOF Window Cleaner Robot",
   "manufacturer": "HAUSHOF",
   "category": "Cleaning & Home Care",
   "subcategory": "Other",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,

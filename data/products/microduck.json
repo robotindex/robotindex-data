@@ -1,15 +1,15 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "microduck",
-  "slug": "product-microduck.html",
+  "slug": "product-microduck",
   "name": "Microduck",
   "manufacturer": "Pollen Robotics",
   "category": "Educational & Hobbyist",
   "subcategory": "Classroom & Coding Kits",
-  "tier": "pending",
+  "tier": "featured",
   "flags": {
     "pending": false,
-    "openSource": false,
+    "openSource": true,
     "closedPlatform": false
   },
   "description": "A 25cm, ~780g bipedal duck-shaped robot from Pollen Robotics (acquired by Hugging Face in April 2025), built for hands-on reinforcement-learning education. Ships with 7 pre-trained behaviors (walk, crouch, sit, self-right, kick a ball, roller-skate on included wheels, quack), and its full RL training pipeline is public: policies are trained in MuJoCo with PPO across thousands of parallel simulated ducks, then exported to ONNX and deployed to the real robot's Rockchip RK3566 SoC. Announced August 27, 2026 at $399; still pre-order only as of this writing, with demand already pushing new orders past the original before-Christmas-2026 delivery target.",

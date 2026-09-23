@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "elephant-robotics-mycobot-280",
-  "slug": "product-elephant-robotics-mycobot-280.html",
+  "slug": "product-elephant-robotics-mycobot-280",
   "name": "Elephant Robotics myCobot 280",
   "manufacturer": "Shenzhen-based Elephant Robotics",
   "category": "Robot Arms",

@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "elephant-robotics-ultraarm-p340",
-  "slug": "product-elephant-robotics-ultraarm-p340.html",
+  "slug": "product-elephant-robotics-ultraarm-p340",
   "name": "Elephant Robotics ultraArm P340",
   "manufacturer": "Elephant Robotics",
   "category": "Robot Arms",

@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "tombot-jennie",
-  "slug": "product-tombot-jennie.html",
+  "slug": "product-tombot-jennie",
   "name": "Tombot Jennie",
   "manufacturer": "Tombot",
   "category": "Companion & Social",
   "subcategory": "Senior Companions",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": true,
     "openSource": false,

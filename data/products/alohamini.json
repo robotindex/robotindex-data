@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "alohamini",
-  "slug": "product-alohamini.html",
+  "slug": "product-alohamini",
   "name": "AlohaMini",
   "manufacturer": "Independent contributors (Hugging Face LeRobot community)",
   "category": "Educational & Hobbyist",
   "subcategory": "Mobile Robot Kits",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": true,

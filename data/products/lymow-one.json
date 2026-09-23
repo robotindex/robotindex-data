@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "lymow-one",
-  "slug": "product-lymow-one.html",
+  "slug": "product-lymow-one",
   "name": "Lymow One / Lymow One Plus 10A",
   "manufacturer": "Lymow",
   "category": "Outdoor & Yard",
   "subcategory": "Robot Lawn Mowers",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,

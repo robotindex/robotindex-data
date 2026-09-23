@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "xlean-tr1",
-  "slug": "product-xlean-tr1.html",
+  "slug": "product-xlean-tr1",
   "name": "xLean TR1",
   "manufacturer": "xLean",
   "category": "Cleaning & Home Care",
   "subcategory": "Floors",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": true,
     "openSource": false,

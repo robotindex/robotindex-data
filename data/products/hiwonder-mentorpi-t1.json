@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "hiwonder-mentorpi-t1",
-  "slug": "product-hiwonder-mentorpi-t1.html",
+  "slug": "product-hiwonder-mentorpi-t1",
   "name": "Hiwonder MentorPi T1",
   "manufacturer": "Hiwonder",
   "category": "Educational & Hobbyist",
   "subcategory": "Mobile Robot Kits",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,

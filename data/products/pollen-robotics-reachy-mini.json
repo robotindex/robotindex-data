@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "pollen-robotics-reachy-mini",
-  "slug": "product-pollen-robotics-reachy-mini.html",
+  "slug": "product-pollen-robotics-reachy-mini",
   "name": "Pollen Robotics Reachy Mini",
   "manufacturer": "Pollen Robotics",
   "category": "Educational & Hobbyist",
@@ -70,7 +70,7 @@
       "note": "via a Hugging Face-hosted app store (May 2026) from 150+ creators, incl. a Conversation app that one reviewer found auto-connects to OpenAI's API without explicit consent, in tension with HF's \"no data stored by default\" claim"
     }
   ],
-  "sourcing": "Specs and history compiled from Hugging Face's own launch blog and app-store announcement, Pollen Robotics' own product and store pages, the `pollen-robotics/reachy_mini` GitHub repository (including its LICENSE file and open issue tracker), an independent technical hands-on (Jeff Geerling), and comparison/review coverage (Autonomous.ai, The Bot Scout, VentureBeat, Seeed Studio). Several details are flagged as unconfirmed above: the exact date pricing rose from launch levels, precise current mic count on the Lite variant, the exact license terms on whatever hardware files Pollen has released, and the current merge status of LeRobot integration (an open pull request, not yet shipped, as of this check). This entry hasn't yet been cross-linked into the rest of the Classroom & Coding Kits subcategory; it was already present in the directory listing prior to this pass, so no directory.js/directory.html edit was needed here.",
+  "sourcing": "Specs and history compiled from Hugging Face's own launch blog and app-store announcement, Pollen Robotics' own product and store pages, the `pollen-robotics/reachy_mini` GitHub repository (including its LICENSE file and open issue tracker), an independent technical hands-on (Jeff Geerling), and comparison/review coverage (Autonomous.ai, The Bot Scout, VentureBeat, Seeed Studio). Several details are flagged as unconfirmed above: the exact date pricing rose from launch levels, precise current mic count on the Lite variant, the exact license terms on whatever hardware files Pollen has released, and the current merge status of LeRobot integration (an open pull request, not yet shipped, as of this check). This entry hasn't yet been cross-linked into the rest of the Classroom & Coding Kits subcategory; it was already present in the directory listing prior to this pass, so no directory.js/directory edit was needed here.",
   "manufacturerUrl": "https://pollen-robotics.com/reachy-mini/",
   "pricing": {
     "summary": "Reachy Mini launched in July 2025 at **$299** for the Lite and **$449** for the Wireless variant, but current pricing on Hugging Face's and Pollen's own pages has since risen to **$399** and **$499** respectively (€350/€435 on Pollen's EU store). It's sold directly by Pollen (EU/UK and US/Canada stores) and through Seeed Studio as an alternate distributor."

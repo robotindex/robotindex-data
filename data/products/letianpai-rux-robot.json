@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "letianpai-rux-robot",
-  "slug": "product-letianpai-rux-robot.html",
+  "slug": "product-letianpai-rux-robot",
   "name": "Letianpai Rux Robot",
   "manufacturer": "Letianpai",
   "category": "Pets & Toys",
   "subcategory": "Robot Pets",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": true,

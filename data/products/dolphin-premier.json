@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "dolphin-premier",
-  "slug": "product-dolphin-premier.html",
+  "slug": "product-dolphin-premier",
   "name": "Dolphin Premier",
   "manufacturer": "Maytronics",
   "category": "Outdoor & Yard",

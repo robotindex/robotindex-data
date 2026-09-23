@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "segway-navimow-i105n",
-  "slug": "product-segway-navimow-i105n.html",
+  "slug": "product-segway-navimow-i105n",
   "name": "Segway Navimow i105N",
   "manufacturer": "The entry model in Segway",
   "category": "Outdoor & Yard",

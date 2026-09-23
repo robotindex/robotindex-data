@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "robolink-codrone-edu",
-  "slug": "product-robolink-codrone-edu.html",
+  "slug": "product-robolink-codrone-edu",
   "name": "RoboLink CoDrone EDU",
   "manufacturer": "Robolink",
   "category": "Educational & Hobbyist",
   "subcategory": "Classroom & Coding Kits",
-  "tier": "pending",
+  "tier": "featured",
   "flags": {
     "pending": false,
     "openSource": false,

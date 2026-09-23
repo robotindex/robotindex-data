@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "hf-lerobot-humanoid",
-  "slug": "product-hf-lerobot-humanoid.html",
+  "slug": "product-hf-lerobot-humanoid",
   "name": "Hugging Face LeRobot Humanoid",
   "manufacturer": "Hugging Face",
   "category": "Humanoid & General Purpose",
@@ -83,6 +83,9 @@
   "firmwareCommunity": [
     {
       "buildsModsId": "huggingface-lerobot-humanoid-hardware"
+    },
+    {
+      "buildsModsId": "huggingface-lerobot-humanoid"
     }
   ]
 }

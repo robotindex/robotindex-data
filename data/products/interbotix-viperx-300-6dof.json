@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "interbotix-viperx-300-6dof",
-  "slug": "product-interbotix-viperx-300-6dof.html",
+  "slug": "product-interbotix-viperx-300-6dof",
   "name": "Interbotix ViperX-300 6DOF",
   "manufacturer": "Trossen Robotics",
   "category": "Robot Arms",

@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "ecovacs-t90-pro-omni",
-  "slug": "product-ecovacs-t90-pro-omni.html",
+  "slug": "product-ecovacs-t90-pro-omni",
   "name": "Ecovacs Deebot T90 Pro Omni",
   "manufacturer": "Ecovacs",
   "category": "Cleaning & Home Care",

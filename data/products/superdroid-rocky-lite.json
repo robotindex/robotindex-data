@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "superdroid-rocky-lite",
-  "slug": "product-superdroid-rocky-lite.html",
+  "slug": "product-superdroid-rocky-lite",
   "name": "SuperDroid Robots Rocky Lite",
   "manufacturer": "SuperDroid Robots",
   "category": "Humanoid & General Purpose",
   "subcategory": "Two Legs",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,

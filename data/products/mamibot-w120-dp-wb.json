@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "mamibot-w120-dp-wb",
-  "slug": "product-mamibot-w120-dp-wb.html",
-  "name": "Mamibot W120-DP~WB",
+  "slug": "product-mamibot-w120-dp-wb",
+  "name": "Mamibot W120-DP",
   "manufacturer": "Mamibot",
   "category": "Cleaning & Home Care",
   "subcategory": "Other",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -65,7 +65,7 @@
       "note": "optional Bluetooth app is local-only, no cloud fee"
     }
   ],
-  "sourcing": "Specs sourced from Mamibot's official product page (mamibot.com/iglassbot-w120-dp) and the W120-DP's official user manual, as of September 2026. **Naming discrepancy:** robotindex could not confirm a \"~WB\" suffix anywhere in Mamibot's own materials, retail listings, or press coverage — every official and retail source refers to this product simply as \"W120-DP\" (marketed as \"iGLASSBOT W120-DP\"). \"WB\" may reflect an internal or reseller color/variant code not used publicly; specs here are for the confirmed W120-DP model. No mainstream tech-press review of this model was found. robotindex does not sell this product.",
+  "sourcing": "Specs sourced from Mamibot's official product page (mamibot.com/iglassbot-w120-dp) and the W120-DP's official user manual, as of September 2026. Also marketed as \"iGLASSBOT W120-DP.\" No mainstream tech-press review of this model was found. robotindex does not sell this product.",
   "manufacturerUrl": "https://mamibot.com/iglassbot-w120-dp",
   "pricing": {
     "summary": "No consistent MSRP found — pricing varies by retailer (Amazon, eBay, mamibot.com/mamibotusa.com listings), so check a live listing for current price."
@@ -77,13 +77,13 @@
     },
     {
       "heading": "Insights",
-      "body": "Despite this listing's name, Mamibot's own site, its official user manual, and all retail/press coverage refer to this product simply as the \"W120-DP\" — no \"~WB\" suffix appears anywhere in the manufacturer's own materials. It likely reflects an internal or reseller variant code rather than a real model designation."
+      "body": "Mamibot markets this model simply as the W120-DP (also branded \"iGLASSBOT W120-DP\") across its own site, user manual, and all retail listings — no \"-WB\" or similar suffix appears in any official or retail source."
     }
   ],
   "firmwareCommunity": [
     {
       "status": "closed-platform",
-      "note": "Mamibot W120-DP~WB has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+      "note": "Mamibot W120-DP has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
     }
   ]
 }

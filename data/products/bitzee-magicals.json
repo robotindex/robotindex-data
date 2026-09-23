@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "bitzee-magicals",
-  "slug": "product-bitzee-magicals.html",
+  "slug": "product-bitzee-magicals",
   "name": "Bitzee Magicals",
   "manufacturer": "Spin Master",
   "category": "Pets & Toys",
   "subcategory": "Toys & Characters",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,

@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "turtlebot4",
-  "slug": "product-turtlebot4.html",
+  "slug": "product-turtlebot4",
   "name": "TurtleBot4",
   "manufacturer": "Clearpath Robotics",
   "category": "Security",
   "subcategory": "Maker / DIY Security Platforms",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": true,

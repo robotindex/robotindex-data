@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "clear-robotics-clear-uv",
-  "slug": "product-clear-robotics-clear-uv.html",
+  "slug": "product-clear-robotics-clear-uv",
   "name": "Clear Robotics Clear UV",
   "manufacturer": "Clear Robotics",
   "category": "Outdoor & Yard",

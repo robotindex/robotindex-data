@@ -18,17 +18,17 @@
             },
             {
               "name": "Unitree R1",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "unitree-r1"
             },
             {
               "name": "Noetix Bumi",
-              "tier": "pending",
+              "tier": "new",
               "productId": "noetix-bumi"
             },
             {
               "name": "SuperDroid Robots Rocky Lite",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "superdroid-rocky-lite"
             },
             {
@@ -39,35 +39,35 @@
             },
             {
               "name": "K-Scale Z-Bot / K-Bot",
-              "tier": "pending",
+              "tier": "new",
               "productId": "kscale-zbot-kbot",
               "openSource": true
             },
             {
               "name": "Fauna Sprout",
-              "tier": "pending",
+              "tier": "new",
               "productId": "fauna-sprout",
               "pending": true
             },
             {
               "name": "XPeng IRON",
-              "tier": "pending",
+              "tier": "new",
               "productId": "xpeng-iron",
               "pending": true
             },
             {
               "name": "Tesla Optimus",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "tesla-optimus"
             },
             {
               "name": "Agility Robotics Digit 5",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "agility-robotics-digit-5"
             },
             {
               "name": "Boston Dynamics Atlas (Electric)",
-              "tier": "pending",
+              "tier": "new",
               "productId": "boston-dynamics-atlas-electric"
             },
             {
@@ -77,7 +77,7 @@
             },
             {
               "name": "Tiangong Ultra",
-              "tier": "pending",
+              "tier": "new",
               "productId": "tiangong-ultra"
             },
             {
@@ -113,7 +113,7 @@
             },
             {
               "name": "Vbot BoBo",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "vbot-bobo"
             }
           ]
@@ -123,13 +123,13 @@
           "items": [
             {
               "name": "Sunday Robotics Memo",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "sunday-robotics-memo",
               "pending": true
             },
             {
               "name": "ugo Nova",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "ugo-nova",
               "pending": true
             }
@@ -165,7 +165,7 @@
             },
             {
               "name": "Tombot Jennie",
-              "tier": "pending",
+              "tier": "new",
               "productId": "tombot-jennie",
               "pending": true
             }
@@ -191,12 +191,12 @@
             },
             {
               "name": "X-Origin AI Yonbo",
-              "tier": "pending",
+              "tier": "new",
               "productId": "x-origin-ai-yonbo"
             },
             {
               "name": "Curio",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "curio-interactive-ai-toys"
             },
             {
@@ -216,18 +216,18 @@
             },
             {
               "name": "Mondo Robotics Beni",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "mondo-robotics-beni",
               "pending": true
             },
             {
               "name": "Sentigent Rovar X3",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "sentigent-rovar-x3"
             },
             {
               "name": "temi V3",
-              "tier": "pending",
+              "tier": "new",
               "productId": "temi-v3"
             }
           ]
@@ -237,7 +237,7 @@
           "items": [
             {
               "name": "Zeroth M1",
-              "tier": "pending",
+              "tier": "new",
               "productId": "zeroth-m1"
             }
           ]
@@ -292,20 +292,21 @@
             },
             {
               "name": "ROBOTIS OpenMANIPULATOR-X",
-              "tier": "pending",
+              "tier": "featured",
               "productId": "robotis-openmanipulator-x",
               "openSource": true
             },
             {
               "name": "Arctos Robotics Arm",
-              "tier": "pending",
+              "tier": "featured",
               "productId": "arctos-robotics-arm",
               "openSource": true
             },
             {
               "name": "AgileX PiPER",
-              "tier": "pending",
-              "productId": "agilex-piper"
+              "tier": "featured",
+              "productId": "agilex-piper",
+              "openSource": true
             },
             {
               "name": "Interbotix ViperX-300 6DOF",
@@ -409,33 +410,33 @@
             },
             {
               "name": "Weilan BabyAlpha A2",
-              "tier": "pending",
+              "tier": "new",
               "productId": "weilan-babyalpha-a2"
             },
             {
               "name": "Letianpai Rux Robot",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "letianpai-rux-robot",
               "openSource": true
             },
             {
               "name": "Ropet KAMOMO",
-              "tier": "pending",
+              "tier": "new",
               "productId": "ropet-kamomo"
             },
             {
               "name": "Pophie (AI Lifeform)",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "pophie-ai-lifeform"
             },
             {
               "name": "Ortomi Umi",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "ortomi-umi"
             },
             {
               "name": "Hengbot Sirius",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "hengbot-sirius",
               "pending": true
             }
@@ -466,7 +467,7 @@
             },
             {
               "name": "Bitzee Magicals",
-              "tier": "pending",
+              "tier": "new",
               "productId": "bitzee-magicals"
             }
           ]
@@ -501,17 +502,17 @@
             },
             {
               "name": "Roborock Saros 20 Flow",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "roborock-saros-20-flow"
             },
             {
               "name": "Roomba Max 875 Combo",
-              "tier": "pending",
+              "tier": "new",
               "productId": "roomba-max-875-combo"
             },
             {
               "name": "xLean TR1",
-              "tier": "pending",
+              "tier": "new",
               "productId": "xlean-tr1",
               "pending": true
             }
@@ -532,17 +533,17 @@
             },
             {
               "name": "ECOVACS WINBOT Mini",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "ecovacs-winbot-mini"
             },
             {
               "name": "HAUSHOF Window Cleaner Robot",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "haushof-window-cleaner-robot"
             },
             {
-              "name": "Mamibot W120-DP-WB",
-              "tier": "pending",
+              "name": "Mamibot W120-DP",
+              "tier": "under-review",
               "productId": "mamibot-w120-dp-wb"
             },
             {
@@ -581,13 +582,13 @@
               "productId": "segway-navimow-i105n"
             },
             {
-              "name": "Lymow One",
-              "tier": "pending",
+              "name": "Lymow One / Lymow One Plus 10A",
+              "tier": "under-review",
               "productId": "lymow-one"
             },
             {
               "name": "Worx Landroid Vision Cloud WR340",
-              "tier": "pending",
+              "tier": "new",
               "productId": "worx-landroid-vision-wr340"
             }
           ]
@@ -612,12 +613,12 @@
             },
             {
               "name": "Yarbo Core",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "yarbo-core"
             },
             {
               "name": "Sublue BlueNexus",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "sublue-bluenexus"
             }
           ]
@@ -642,7 +643,7 @@
             },
             {
               "name": "Enabot ROLA Mini",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "enabot-rola-mini"
             },
             {
@@ -653,7 +654,7 @@
             },
             {
               "name": "Amazon Astro",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "amazon-astro",
               "pending": true
             }
@@ -669,12 +670,12 @@
             },
             {
               "name": "Sunflower Labs (The Bee + Hive)",
-              "tier": "pending",
+              "tier": "new",
               "productId": "sunflower-labs-bee-hive"
             },
             {
               "name": "Ascento Guard",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "ascento-guard"
             }
           ]
@@ -684,13 +685,13 @@
           "items": [
             {
               "name": "TurtleBot4",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "turtlebot4",
               "openSource": true
             },
             {
               "name": "Waveshare UGV Rover",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "waveshare-ugv-rover",
               "openSource": true
             }
@@ -740,52 +741,52 @@
             },
             {
               "name": "SunFounder GalaxyRVR",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "sunfounder-galaxyrvr",
               "openSource": true
             },
             {
               "name": "Adeept RaspTank Pro",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "adeept-rasptank-pro"
             },
             {
               "name": "Freenove 4WD Smart Car Kit",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "freenove-4wd-smart-car-kit"
             },
             {
               "name": "Waveshare UGV02",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "waveshare-ugv02",
               "openSource": true
             },
             {
               "name": "Petoi Quaddle",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "petoi-quaddle",
               "pending": true
             },
             {
               "name": "Hiwonder MentorPi T1",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "hiwonder-mentorpi-t1"
             },
             {
               "name": "AlohaMini",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "alohamini",
               "openSource": true
             },
             {
               "name": "LeKiwi",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "lekiwi",
               "openSource": true
             },
             {
               "name": "Linorobot2",
-              "tier": "pending",
+              "tier": "under-review",
               "productId": "linorobot2",
               "openSource": true
             }
@@ -826,8 +827,9 @@
             },
             {
               "name": "Microduck",
-              "tier": "pending",
-              "productId": "microduck"
+              "tier": "featured",
+              "productId": "microduck",
+              "openSource": true
             },
             {
               "name": "Pollen Robotics Reachy Mini",
@@ -837,23 +839,25 @@
             },
             {
               "name": "Thames & Kosmos Coding Chameleon",
-              "tier": "pending",
+              "tier": "featured",
               "productId": "thames-kosmos-coding-chameleon"
             },
             {
               "name": "Pololu 3pi+ 2040",
-              "tier": "pending",
-              "productId": "pololu-3pi-plus-2040"
+              "tier": "featured",
+              "productId": "pololu-3pi-plus-2040",
+              "openSource": true
             },
             {
               "name": "RoboLink CoDrone EDU",
-              "tier": "pending",
+              "tier": "featured",
               "productId": "robolink-codrone-edu"
             },
             {
               "name": "Otto DIY Maker Kit",
               "tier": "featured",
-              "productId": "otto-diy-maker-kit"
+              "productId": "otto-diy-maker-kit",
+              "openSource": true
             }
           ]
         }

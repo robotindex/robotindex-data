@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "ascento-guard",
-  "slug": "product-ascento-guard.html",
+  "slug": "product-ascento-guard",
   "name": "Ascento Guard",
   "manufacturer": "Ascento",
   "category": "Security",
   "subcategory": "Outdoor Security",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,

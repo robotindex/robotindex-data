@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "sony-aibo",
-  "slug": "product-sony-aibo.html",
+  "slug": "product-sony-aibo",
   "name": "Sony Aibo",
   "manufacturer": "Sony",
   "category": "Pets & Toys",

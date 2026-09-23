@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "waveshare-ugv-rover",
-  "slug": "product-waveshare-ugv-rover.html",
+  "slug": "product-waveshare-ugv-rover",
   "name": "Waveshare UGV Rover",
   "manufacturer": "Waveshare",
   "category": "Security",
   "subcategory": "Maker / DIY Security Platforms",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": true,

@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "yahboom-rosmaster",
-  "slug": "product-yahboom-rosmaster.html",
+  "slug": "product-yahboom-rosmaster",
   "name": "Yahboom ROSMASTER",
   "manufacturer": "Yahboom",
   "category": "Educational & Hobbyist",

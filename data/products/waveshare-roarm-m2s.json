@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "waveshare-roarm-m2s",
-  "slug": "product-waveshare-roarm-m2s.html",
+  "slug": "product-waveshare-roarm-m2s",
   "name": "Waveshare RoArm-M2-S",
   "manufacturer": "Waveshare",
   "category": "Robot Arms",

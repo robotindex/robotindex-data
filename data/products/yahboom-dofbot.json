@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "yahboom-dofbot",
-  "slug": "product-yahboom-dofbot.html",
+  "slug": "product-yahboom-dofbot",
   "name": "Yahboom DOFBOT",
   "manufacturer": "Yahboom",
   "category": "Robot Arms",

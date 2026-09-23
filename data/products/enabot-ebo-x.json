@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "enabot-ebo-x",
-  "slug": "product-enabot-ebo-x.html",
+  "slug": "product-enabot-ebo-x",
   "name": "Enabot EBO X",
   "manufacturer": "Enabot",
   "category": "Security",

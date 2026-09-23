@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "sublue-bluenexus",
-  "slug": "product-sublue-bluenexus.html",
+  "slug": "product-sublue-bluenexus",
   "name": "Sublue BlueNexus",
   "manufacturer": "Sublue",
   "category": "Outdoor & Yard",
   "subcategory": "Other",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,

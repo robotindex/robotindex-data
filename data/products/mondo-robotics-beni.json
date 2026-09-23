@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "mondo-robotics-beni",
-  "slug": "product-mondo-robotics-beni.html",
+  "slug": "product-mondo-robotics-beni",
   "name": "Mondo Robotics Beni",
   "manufacturer": "Mondo Robotics",
   "category": "Companion & Social",
   "subcategory": "Mobility Helpers",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": true,
     "openSource": false,

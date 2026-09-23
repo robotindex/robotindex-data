@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "x-origin-ai-yonbo",
-  "slug": "product-x-origin-ai-yonbo.html",
+  "slug": "product-x-origin-ai-yonbo",
   "name": "X-Origin AI Yonbo",
   "manufacturer": "X-Origin AI",
   "category": "Companion & Social",
   "subcategory": "Children Companions",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,

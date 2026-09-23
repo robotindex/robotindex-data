@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "yukai-engineering-qoobo",
-  "slug": "product-yukai-engineering-qoobo.html",
+  "slug": "product-yukai-engineering-qoobo",
   "name": "Yukai Engineering Qoobo",
   "manufacturer": "Yukai Engineering",
   "category": "Pets & Toys",

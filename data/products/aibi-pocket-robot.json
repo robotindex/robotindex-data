@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "aibi-pocket-robot",
-  "slug": "product-aibi-pocket-robot.html",
+  "slug": "product-aibi-pocket-robot",
   "name": "Aibi Pocket Robot",
   "manufacturer": "Living",
   "category": "Pets & Toys",

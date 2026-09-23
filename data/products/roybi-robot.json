@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "roybi-robot",
-  "slug": "product-roybi-robot.html",
+  "slug": "product-roybi-robot",
   "name": "ROYBI Robot",
   "manufacturer": "ROYBI",
   "category": "Companion & Social",

@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "geneinno-t1-pro",
-  "slug": "product-geneinno-t1-pro.html",
+  "slug": "product-geneinno-t1-pro",
   "name": "Geneinno T1 Pro",
   "manufacturer": "Shenzhen Geneinno Technology",
   "category": "Personal Drones",

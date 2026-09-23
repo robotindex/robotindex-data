@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "smp-robotics-s5-series",
-  "slug": "product-smp-robotics-s5-series.html",
+  "slug": "product-smp-robotics-s5-series",
   "name": "SMP Robotics S5 Series",
   "manufacturer": "SMP Robotics",
   "category": "Security",

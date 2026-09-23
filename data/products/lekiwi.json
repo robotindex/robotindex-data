@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "lekiwi",
-  "slug": "product-lekiwi.html",
+  "slug": "product-lekiwi",
   "name": "LeKiwi",
   "manufacturer": "SIGRobotics (University of Illinois)",
   "category": "Educational & Hobbyist",
   "subcategory": "Mobile Robot Kits",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": true,

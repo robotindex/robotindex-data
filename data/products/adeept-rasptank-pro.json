@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "adeept-rasptank-pro",
-  "slug": "product-adeept-rasptank-pro.html",
+  "slug": "product-adeept-rasptank-pro",
   "name": "Adeept RaspTank Pro",
   "manufacturer": "Adeept",
   "category": "Educational & Hobbyist",
   "subcategory": "Mobile Robot Kits",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,

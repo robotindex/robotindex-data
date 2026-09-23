@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "waveshare-ugv02",
-  "slug": "product-waveshare-ugv02.html",
+  "slug": "product-waveshare-ugv02",
   "name": "Waveshare UGV02",
   "manufacturer": "Waveshare",
   "category": "Educational & Hobbyist",
   "subcategory": "Mobile Robot Kits",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": true,
