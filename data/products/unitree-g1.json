@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "unitree-g1",
-  "slug": "product-unitree-g1.html",
+  "slug": "product-unitree-g1",
   "name": "Unitree G1",
   "manufacturer": "Hangzhou-based Unitree Robotics",
   "category": "Humanoid & General Purpose",

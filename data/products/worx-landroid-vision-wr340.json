@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "worx-landroid-vision-wr340",
-  "slug": "product-worx-landroid-vision-wr340.html",
+  "slug": "product-worx-landroid-vision-wr340",
   "name": "Worx Landroid Vision Cloud WR340",
   "manufacturer": "Worx",
   "category": "Outdoor & Yard",
   "subcategory": "Robot Lawn Mowers",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,

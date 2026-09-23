@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "dji-robomaster-s1",
-  "slug": "product-dji-robomaster-s1.html",
+  "slug": "product-dji-robomaster-s1",
   "name": "DJI RoboMaster S1",
   "manufacturer": "DJI or major retailers",
   "category": "Educational & Hobbyist",

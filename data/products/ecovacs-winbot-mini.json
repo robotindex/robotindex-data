@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "ecovacs-winbot-mini",
-  "slug": "product-ecovacs-winbot-mini.html",
+  "slug": "product-ecovacs-winbot-mini",
   "name": "ECOVACS WINBOT Mini",
   "manufacturer": "Ecovacs",
   "category": "Cleaning & Home Care",
   "subcategory": "Other",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,

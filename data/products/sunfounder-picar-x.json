@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "sunfounder-picar-x",
-  "slug": "product-sunfounder-picar-x.html",
+  "slug": "product-sunfounder-picar-x",
   "name": "SunFounder PiCar-X",
   "manufacturer": "SunFounder",
   "category": "Educational & Hobbyist",

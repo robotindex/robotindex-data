@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "xiaomi-cyberdog2",
-  "slug": "product-xiaomi-cyberdog2.html",
+  "slug": "product-xiaomi-cyberdog2",
   "name": "Xiaomi CyberDog 2",
   "manufacturer": "Xiaomi",
   "category": "Humanoid & General Purpose",

@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "learning-resources-code-and-go-robot-mouse",
-  "slug": "product-learning-resources-code-and-go-robot-mouse.html",
+  "slug": "product-learning-resources-code-and-go-robot-mouse",
   "name": "Learning Resources Code & Go Robot Mouse",
   "manufacturer": "Learning Resources",
   "category": "Educational & Hobbyist",

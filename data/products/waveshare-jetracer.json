@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "waveshare-jetracer",
-  "slug": "product-waveshare-jetracer.html",
+  "slug": "product-waveshare-jetracer",
   "name": "Waveshare JetRacer",
   "manufacturer": "Waveshare",
   "category": "Educational & Hobbyist",

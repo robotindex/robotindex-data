@@ -4,40 +4,30 @@
   "slug": "product-tesla-optimus",
   "name": "Tesla Optimus",
   "manufacturer": "Tesla",
-  "manufacturerUrl": "https://www.tesla.com/en_eu/AI",
   "category": "Humanoid & General Purpose",
   "subcategory": "Two Legs",
   "tier": "under-review",
   "flags": {
-    "pending": true,
+    "pending": false,
     "openSource": false,
     "closedPlatform": true
   },
   "description": "Tesla's general-purpose bipedal humanoid, developed in-house for factory work and eventual home/consumer use. Not yet for sale — still in limited internal deployment at Tesla facilities.",
-  "image": {
-    "src": "images/tesla-optimus.jpg",
-    "alt": "Tesla Optimus",
-    "credit": "Tesla (official)"
-  },
   "specs": [
-    {
-      "label": "Height",
-      "value": "5'8\"",
-      "note": "~173 cm, Gen 2 baseline"
-    },
     {
       "label": "Weight",
       "value": "~125 lb",
       "note": "~57 kg, Gen 2 baseline; further reduced on later builds"
     },
     {
-      "label": "Hand DOF",
-      "value": "22",
-      "note": "Gen 3 hand, up from 11 on Gen 2"
+      "label": "Height",
+      "value": "5'8\"",
+      "note": "~173 cm, Gen 2 baseline"
     },
     {
-      "label": "Neck DOF",
-      "value": "2"
+      "label": "Compute",
+      "value": "AI5 chip",
+      "note": "planned for production units"
     },
     {
       "label": "Payload",
@@ -50,9 +40,13 @@
       "note": "planetary roller screw design"
     },
     {
-      "label": "Compute",
-      "value": "AI5 chip",
-      "note": "planned for production units"
+      "label": "Hand DOF",
+      "value": "22",
+      "note": "Gen 3 hand, up from 11 on Gen 2"
+    },
+    {
+      "label": "Neck DOF",
+      "value": "2"
     },
     {
       "label": "Current Build",
@@ -60,15 +54,25 @@
       "note": "V3 reveal repeatedly delayed as of Sept 2026"
     }
   ],
+  "sourcing": "Specs reflect the last officially confirmed generation (Optimus Gen 2 / v2.3) per Tesla's own announcements and reporting from Electrek and The Robot Report; Gen 3 (\"V3\") has been previewed but not fully detailed as of September 2026, per Electrek and Wikipedia's sourced summary. robotindex does not sell this product — Optimus is not currently available for purchase.",
+  "manufacturerUrl": "https://www.tesla.com/en_eu/AI",
   "pricing": {
-    "summary": "No confirmed retail price. Elon Musk has floated a rough estimate around $20,000–$30,000 for a future consumer version, but Tesla has not published official pricing. Musk has said Optimus could go on sale to outside buyers in the second half of 2027 — commercial availability has not begun."
+    "summary": "No confirmed retail price exists yet; Elon Musk has floated a rough estimate around **$20,000–$30,000** for a future consumer version. Musk has said Optimus could go on sale to outside buyers in the second half of 2027, but commercial availability has not begun."
   },
-  "editorial": [],
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "Built around **Tesla-designed actuators**, including planetary roller screw actuators. The Gen 2 hand added tactile sensors across 11 fingertip DOF (a 2024 hand raised that to 22), plus a 2-DOF neck and foot force/torque sensing for balance. Public demos have drawn scrutiny over how much behavior was autonomous versus teleoperated; robotindex hasn't independently verified Tesla's claims."
+    },
+    {
+      "heading": "Insights",
+      "body": "The specs shown here reflect Optimus Gen 2 (v2.3), the last generation Tesla has fully detailed; a next-generation \"V3\" has been previewed but its full reveal has been repeatedly delayed as of September 2026. Optimus also isn't yet for sale — Musk has floated a rough $20,000–$30,000 consumer price, but it's unconfirmed."
+    }
+  ],
   "firmwareCommunity": [
     {
       "status": "closed-platform",
       "note": "Tesla has not released a public SDK, firmware repo, or developer API for Optimus. Not currently listed in Builds & Mods."
     }
-  ],
-  "sourcing": "Specs reflect the last officially confirmed generation (Optimus Gen 2 / v2.3) per Tesla's own announcements and reporting from Electrek and The Robot Report; Gen 3 (\"V3\") has been previewed but not fully detailed as of September 2026, per Electrek and Wikipedia's sourced summary. robotindex does not sell this product — Optimus is not currently available for purchase."
+  ]
 }

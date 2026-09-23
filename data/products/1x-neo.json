@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "1x-neo",
-  "slug": "product-1x-neo.html",
+  "slug": "product-1x-neo",
   "name": "1X NEO",
   "manufacturer": "1X Technologies",
   "category": "Humanoid & General Purpose",

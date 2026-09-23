@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "casio-moflin",
-  "slug": "product-casio-moflin.html",
+  "slug": "product-casio-moflin",
   "name": "Casio Moflin",
   "manufacturer": "Casio",
   "category": "Pets & Toys",

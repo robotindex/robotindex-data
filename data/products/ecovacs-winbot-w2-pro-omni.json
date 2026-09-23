@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "ecovacs-winbot-w2-pro-omni",
-  "slug": "product-ecovacs-winbot-w2-pro-omni.html",
+  "slug": "product-ecovacs-winbot-w2-pro-omni",
   "name": "ECOVACS WINBOT W2 PRO Omni",
   "manufacturer": "Ecovacs",
   "category": "Cleaning & Home Care",

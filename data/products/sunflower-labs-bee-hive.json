@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "sunflower-labs-bee-hive",
-  "slug": "product-sunflower-labs-bee-hive.html",
+  "slug": "product-sunflower-labs-bee-hive",
   "name": "Sunflower Labs (The Bee + Hive)",
   "manufacturer": "Sunflower Labs",
   "category": "Security",
   "subcategory": "Outdoor Security",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,

@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "curio-interactive-ai-toys",
-  "slug": "product-curio-interactive-ai-toys.html",
+  "slug": "product-curio-interactive-ai-toys",
   "name": "Curio",
   "manufacturer": "Curio Interactive",
   "category": "Companion & Social",
   "subcategory": "Children Companions",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,

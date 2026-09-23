@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "luwu-xgo-mini2",
-  "slug": "product-luwu-xgo-mini2.html",
+  "slug": "product-luwu-xgo-mini2",
   "name": "Luwu Dynamics XGO Mini 2",
   "manufacturer": "Luwu Dynamics",
   "category": "Humanoid & General Purpose",

@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "makeblock-mbot2",
-  "slug": "product-makeblock-mbot2.html",
+  "slug": "product-makeblock-mbot2",
   "name": "Makeblock mBot2",
   "manufacturer": "Makeblock",
   "category": "Educational & Hobbyist",

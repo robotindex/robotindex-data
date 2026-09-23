@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "ugo-nova",
-  "slug": "product-ugo-nova.html",
+  "slug": "product-ugo-nova",
   "name": "ugo Nova",
   "manufacturer": "ugo Inc.",
   "category": "Humanoid & General Purpose",
   "subcategory": "Wheeled / Mobile Base",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": true,
     "openSource": false,

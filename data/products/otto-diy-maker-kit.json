@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "otto-diy-maker-kit",
-  "slug": "product-otto-diy-maker-kit.html",
+  "slug": "product-otto-diy-maker-kit",
   "name": "Otto DIY Maker Kit",
   "manufacturer": "OttoDIY",
   "category": "Educational & Hobbyist",
@@ -9,7 +9,7 @@
   "tier": "featured",
   "flags": {
     "pending": false,
-    "openSource": false,
+    "openSource": true,
     "closedPlatform": false
   },
   "description": "A small bipedal, mostly 3D-printed walking robot built around an Arduino Nano, 4 SG90 micro servos (2 hip, 2 ankle), and an HC-SR04 ultrasonic sensor doubling as its face. Programmed via \"Otto Blockly\" (a Blockly-derived block coding app that generates real Arduino C/C++) or directly in Arduino IDE/MicroPython. Sold either as a full kit with pre-printed body parts or an electronics-only \"Maker Kit\" for owners of their own 3D printer, who print the free, open STL files themselves. Descends from a documented lineage: Kevin Biagini's \"BoB the Biped\" → BQ's Zowi (Spain) → creator Camilo Parra Palacio's \"Tito\" → Otto, first launched via a 2017 Kickstarter.",

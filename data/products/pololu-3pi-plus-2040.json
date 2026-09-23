@@ -1,15 +1,15 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "pololu-3pi-plus-2040",
-  "slug": "product-pololu-3pi-plus-2040.html",
+  "slug": "product-pololu-3pi-plus-2040",
   "name": "Pololu 3pi+ 2040",
   "manufacturer": "Pololu",
   "category": "Educational & Hobbyist",
   "subcategory": "Classroom & Coding Kits",
-  "tier": "pending",
+  "tier": "featured",
   "flags": {
     "pending": false,
-    "openSource": false,
+    "openSource": true,
     "closedPlatform": false
   },
   "description": "A 2-wheel differential-drive robot from Pololu Corporation built around an RP2040 control board — the same chip that powers the Raspberry Pi Pico — ships MicroPython-preloaded, and is also programmable in C/C++ via the Pico SDK. Features a 5-sensor IR reflectance line-following array, front bump sensors, a 6-axis IMU plus magnetometer, a 128x64 OLED display, and 6 addressable RGB LEDs, sold across three motor-gearing tiers (Standard, Turtle, Hyper). Skews toward a college/serious-hobbyist audience rather than young children — assembly requires soldering. Note: unlike most entries in this catalog, this product's chassis is visually near-identical to Pololu's separate, Arduino-compatible 3pi+ 32U4 OLED robot, which the submitted photo actually shows — see the image caption.",

@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "yarbo-core",
-  "slug": "product-yarbo-core.html",
+  "slug": "product-yarbo-core",
   "name": "Yarbo Core",
   "manufacturer": "Yarbo",
   "category": "Outdoor & Yard",
   "subcategory": "Other",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,

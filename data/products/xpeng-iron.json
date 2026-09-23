@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "xpeng-iron",
-  "slug": "product-xpeng-iron.html",
+  "slug": "product-xpeng-iron",
   "name": "XPeng IRON",
   "manufacturer": "XPeng",
   "category": "Humanoid & General Purpose",
   "subcategory": "Two Legs",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": true,
     "openSource": false,

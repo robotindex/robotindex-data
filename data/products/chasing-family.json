@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "chasing-family",
-  "slug": "product-chasing-family.html",
+  "slug": "product-chasing-family",
   "name": "CHASING Underwater Drone Family",
   "manufacturer": "Chasing Innovation",
   "category": "Personal Drones",

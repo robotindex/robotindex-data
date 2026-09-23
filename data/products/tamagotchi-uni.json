@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "tamagotchi-uni",
-  "slug": "product-tamagotchi-uni.html",
+  "slug": "product-tamagotchi-uni",
   "name": "Tamagotchi Uni",
   "manufacturer": "Bandai",
   "category": "Pets & Toys",

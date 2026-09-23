@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "kscale-zbot-kbot",
-  "slug": "product-kscale-zbot-kbot.html",
+  "slug": "product-kscale-zbot-kbot",
   "name": "K-Scale Z-Bot / K-Bot",
   "manufacturer": "K-Scale Labs",
   "category": "Humanoid & General Purpose",
   "subcategory": "Two Legs",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": true,

@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "ortomi-umi",
-  "slug": "product-ortomi-umi.html",
+  "slug": "product-ortomi-umi",
   "name": "Ortomi Umi",
   "manufacturer": "Ortomi",
   "category": "Pets & Toys",
   "subcategory": "Robot Pets",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,

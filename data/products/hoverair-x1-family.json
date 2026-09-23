@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "hoverair-x1-family",
-  "slug": "product-hoverair-x1-family.html",
+  "slug": "product-hoverair-x1-family",
   "name": "HOVERAir X1 Family",
   "manufacturer": "Zero Zero Robotics",
   "category": "Personal Drones",

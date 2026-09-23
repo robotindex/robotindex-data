@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "miko-3",
-  "slug": "product-miko-3.html",
+  "slug": "product-miko-3",
   "name": "Miko 3",
   "manufacturer": "Miko",
   "category": "Companion & Social",

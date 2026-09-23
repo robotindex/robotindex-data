@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "noetix-bumi",
-  "slug": "product-noetix-bumi.html",
+  "slug": "product-noetix-bumi",
   "name": "Noetix Bumi",
   "manufacturer": "Chinese startup Noetix Robotics",
   "category": "Humanoid & General Purpose",
   "subcategory": "Two Legs",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,

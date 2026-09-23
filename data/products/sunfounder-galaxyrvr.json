@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "sunfounder-galaxyrvr",
-  "slug": "product-sunfounder-galaxyrvr.html",
+  "slug": "product-sunfounder-galaxyrvr",
   "name": "SunFounder GalaxyRVR",
   "manufacturer": "SunFounder",
   "category": "Educational & Hobbyist",
   "subcategory": "Mobile Robot Kits",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": true,

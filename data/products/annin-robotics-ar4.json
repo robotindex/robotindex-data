@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "annin-robotics-ar4",
-  "slug": "product-annin-robotics-ar4.html",
+  "slug": "product-annin-robotics-ar4",
   "name": "Annin Robotics AR4",
   "manufacturer": "Chris Annin",
   "category": "Robot Arms",

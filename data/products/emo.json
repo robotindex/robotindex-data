@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "emo",
-  "slug": "product-emo.html",
+  "slug": "product-emo",
   "name": "EMO",
   "manufacturer": "Living",
   "category": "Pets & Toys",

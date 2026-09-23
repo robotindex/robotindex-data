@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "lego-education-spike-prime",
-  "slug": "product-lego-education-spike-prime.html",
+  "slug": "product-lego-education-spike-prime",
   "name": "LEGO Education SPIKE Prime",
   "manufacturer": "LEGO Education",
   "category": "Educational & Hobbyist",

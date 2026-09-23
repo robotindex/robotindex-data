@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "enabot-ebo-air",
-  "slug": "product-enabot-ebo-air.html",
+  "slug": "product-enabot-ebo-air",
   "name": "Enabot Ebo Air",
   "manufacturer": "Enabot",
   "category": "Security",

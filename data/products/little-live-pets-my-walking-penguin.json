@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "little-live-pets-my-walking-penguin",
-  "slug": "product-little-live-pets-my-walking-penguin.html",
+  "slug": "product-little-live-pets-my-walking-penguin",
   "name": "Little Live Pets My Walking Penguin",
   "manufacturer": "Moose Toys",
   "category": "Pets & Toys",

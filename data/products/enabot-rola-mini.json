@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "enabot-rola-mini",
-  "slug": "product-enabot-rola-mini.html",
+  "slug": "product-enabot-rola-mini",
   "name": "Enabot ROLA Mini",
   "manufacturer": "Enabot",
   "category": "Security",
   "subcategory": "Indoor Security",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,

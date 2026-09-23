@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "robotis-openmanipulator-x",
-  "slug": "product-robotis-openmanipulator-x.html",
+  "slug": "product-robotis-openmanipulator-x",
   "name": "ROBOTIS OpenMANIPULATOR-X",
   "manufacturer": "ROBOTIS",
   "category": "Robot Arms",
   "subcategory": "",
-  "tier": "pending",
+  "tier": "featured",
   "flags": {
     "pending": false,
     "openSource": true,

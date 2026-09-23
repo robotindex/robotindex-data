@@ -1,15 +1,15 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "agilex-piper",
-  "slug": "product-agilex-piper.html",
+  "slug": "product-agilex-piper",
   "name": "AgileX PiPER",
   "manufacturer": "AgileX Robotics",
   "category": "Robot Arms",
   "subcategory": "",
-  "tier": "pending",
+  "tier": "featured",
   "flags": {
     "pending": false,
-    "openSource": false,
+    "openSource": true,
     "closedPlatform": false
   },
   "description": "A fully assembled, manufactured 6-axis desktop arm from AgileX Robotics — a Shenzhen company better known for mobile robot platforms like Scout and Ranger, now expanding into embodied-AI manipulator hardware. Sits between hobbyist kits like SO-101 and true industrial cobots: closed mechanical design with a genuinely open-source Python SDK and ROS driver on top, aimed at teleoperation, data collection, and imitation-learning research (ACT, Diffusion Policy) rather than factory-floor automation.",

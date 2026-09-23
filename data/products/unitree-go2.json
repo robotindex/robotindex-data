@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "unitree-go2",
-  "slug": "product-unitree-go2.html",
+  "slug": "product-unitree-go2",
   "name": "Unitree Go2",
   "manufacturer": "Unitree",
   "category": "Humanoid & General Purpose",

@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "miko-mini",
-  "slug": "product-miko-mini.html",
+  "slug": "product-miko-mini",
   "name": "Miko Mini",
   "manufacturer": "Miko",
   "category": "Companion & Social",

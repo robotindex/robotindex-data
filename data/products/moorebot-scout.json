@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "moorebot-scout",
-  "slug": "product-moorebot-scout.html",
+  "slug": "product-moorebot-scout",
   "name": "Moorebot Scout",
   "manufacturer": "Moorebot",
   "category": "Security",

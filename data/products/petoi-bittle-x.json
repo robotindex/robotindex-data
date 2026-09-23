@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "petoi-bittle-x",
-  "slug": "product-petoi-bittle-x.html",
+  "slug": "product-petoi-bittle-x",
   "name": "Petoi Bittle X",
   "manufacturer": "Petoi",
   "category": "Educational & Hobbyist",

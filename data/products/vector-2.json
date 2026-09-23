@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "vector-2",
-  "slug": "product-vector-2.html",
+  "slug": "product-vector-2",
   "name": "Vector 2.0",
   "manufacturer": "Digital Dream Labs",
   "category": "Pets & Toys",

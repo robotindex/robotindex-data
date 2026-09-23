@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "elliq",
-  "slug": "product-elliq.html",
+  "slug": "product-elliq",
   "name": "ElliQ",
   "manufacturer": "Intuition Robotics",
   "category": "Companion & Social",

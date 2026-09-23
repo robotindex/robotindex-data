@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "wlkata-mirobot",
-  "slug": "product-wlkata-mirobot.html",
+  "slug": "product-wlkata-mirobot",
   "name": "WLKATA Mirobot Education Kit",
   "manufacturer": "WLKATA",
   "category": "Robot Arms",

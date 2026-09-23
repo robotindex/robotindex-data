@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "linorobot2",
-  "slug": "product-linorobot2.html",
+  "slug": "product-linorobot2",
   "name": "Linorobot2",
   "manufacturer": "Linorobot (open-source project)",
   "category": "Educational & Hobbyist",
   "subcategory": "Mobile Robot Kits",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": true,

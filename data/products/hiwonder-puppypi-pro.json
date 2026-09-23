@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "hiwonder-puppypi-pro",
-  "slug": "product-hiwonder-puppypi-pro.html",
+  "slug": "product-hiwonder-puppypi-pro",
   "name": "Hiwonder PuppyPi Pro",
   "manufacturer": "Hiwonder",
   "category": "Humanoid & General Purpose",

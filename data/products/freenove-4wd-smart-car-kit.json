@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "freenove-4wd-smart-car-kit",
-  "slug": "product-freenove-4wd-smart-car-kit.html",
+  "slug": "product-freenove-4wd-smart-car-kit",
   "name": "Freenove 4WD Smart Car Kit",
   "manufacturer": "Freenove",
   "category": "Educational & Hobbyist",
   "subcategory": "Mobile Robot Kits",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,

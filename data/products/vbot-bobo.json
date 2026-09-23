@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "vbot-bobo",
-  "slug": "product-vbot-bobo.html",
+  "slug": "product-vbot-bobo",
   "name": "Vbot BoBo",
   "manufacturer": "Beijing startup Vbot",
   "category": "Humanoid & General Purpose",
   "subcategory": "Four Legs",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,

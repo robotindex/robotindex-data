@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "figure-03",
-  "slug": "product-figure-03.html",
+  "slug": "product-figure-03",
   "name": "Figure 03",
   "manufacturer": "Figure AI",
   "category": "Humanoid & General Purpose",

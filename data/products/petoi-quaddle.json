@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "petoi-quaddle",
-  "slug": "product-petoi-quaddle.html",
+  "slug": "product-petoi-quaddle",
   "name": "Petoi Quaddle",
   "manufacturer": "Petoi",
   "category": "Educational & Hobbyist",
   "subcategory": "Mobile Robot Kits",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": true,
     "openSource": false,
