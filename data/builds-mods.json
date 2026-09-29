@@ -16,13 +16,6 @@
       "repo": "https://github.com/huggingface/lerobot-humanoid-hardware"
     },
     {
-      "id": "kscalelabs-kbot",
-      "tab": "opensource",
-      "name": "K-Scale Z-Bot / K-Bot",
-      "desc": "DIY open-source humanoid — no vendor currently sells an assembled unit.",
-      "repo": "https://github.com/kscalelabs/kbot"
-    },
-    {
       "id": "mirobotics-cyberdog-ros2",
       "tab": "opensource",
       "name": "Xiaomi CyberDog 2",
@@ -32,16 +25,9 @@
     {
       "id": "petoi-bittle-x-opencat",
       "tab": "opensource",
-      "name": "Petoi Bittle X",
-      "desc": "Built on the OpenCat open-source quadruped framework.",
-      "repo": "https://github.com/PetoiCamp/OpenCat"
-    },
-    {
-      "id": "petoi-quaddle-opencat",
-      "tab": "opensource",
-      "name": "Petoi Quaddle",
-      "desc": "Also built on the OpenCat open-source framework.",
-      "repo": "https://github.com/PetoiCamp/OpenCat"
+      "name": "Petoi Bittle X V2",
+      "desc": "Runs OpenCatEsp32, the ESP32/BiBoard branch of Petoi's OpenCat quadruped framework.",
+      "repo": "https://github.com/PetoiCamp/OpenCatEsp32-Quadruped-Robot"
     },
     {
       "id": "mangdang-mini-pupper-2-pro",
@@ -144,8 +130,8 @@
     {
       "id": "chvmp-champ",
       "tab": "configs",
-      "name": "CHAMP Locomotion Profiles for Unitree Go2",
-      "desc": "Community-tuned gait/locomotion config profiles adapting the CHAMP quadruped controller to Go2 hardware.",
+      "name": "CHAMP Quadruped Control Framework",
+      "desc": "Open-source ROS framework for building quadruped robots and developing new control algorithms, with pre-configured robots including Anymal, MIT Mini Cheetah, and Spot. Targets ROS 1 (Melodic).",
       "repo": "https://github.com/chvmp/champ"
     },
     {
@@ -203,6 +189,48 @@
       "name": "Unitree SDK2 (unitree_sdk2_python)",
       "desc": "Official local control SDK for Unitree Go2 and G1, built on CycloneDDS — no vendor app required.",
       "repo": "https://github.com/unitreerobotics/unitree_sdk2_python"
+    },
+    {
+      "id": "unitree-sdk2",
+      "tab": "firmware",
+      "name": "Unitree SDK2 (C++)",
+      "desc": "Official C++ local control SDK for Unitree's humanoid and quadruped robots, the native counterpart to unitree_sdk2_python.",
+      "repo": "https://github.com/unitreerobotics/unitree_sdk2"
+    },
+    {
+      "id": "unitree-ros2",
+      "tab": "firmware",
+      "name": "Unitree ROS2",
+      "desc": "Official ROS2 packages and bringup configs for Unitree robots, built on top of the SDK2 control layer.",
+      "repo": "https://github.com/unitreerobotics/unitree_ros2"
+    },
+    {
+      "id": "unitree-mujoco",
+      "tab": "firmware",
+      "name": "Unitree MuJoCo",
+      "desc": "Official MuJoCo simulation environment for Unitree robots, used for testing control code before deploying to hardware.",
+      "repo": "https://github.com/unitreerobotics/unitree_mujoco"
+    },
+    {
+      "id": "unitree-rl-lab",
+      "tab": "firmware",
+      "name": "Unitree RL Lab",
+      "desc": "Official reinforcement-learning training framework for Unitree robots, covering locomotion policy training and sim-to-real deployment.",
+      "repo": "https://github.com/unitreerobotics/unitree_rl_lab"
+    },
+    {
+      "id": "stack-chan",
+      "tab": "opensource",
+      "name": "stack-chan/stack-chan",
+      "desc": "Official open-source firmware, remote-control firmware, and mobile app source for the Stack-chan desktop robot platform, co-developed by M5Stack and the Stack-chan community.",
+      "repo": "https://github.com/stack-chan/stack-chan"
+    },
+    {
+      "id": "stackchan-kai",
+      "tab": "firmware",
+      "name": "stackchan-kai",
+      "desc": "Independent, clean-slate Rust firmware for the M5Stack CoreS3 Stack-chan — no_std, built on Embassy, with no cloud dependency.",
+      "repo": "https://github.com/andymai/stackchan-kai"
     },
     {
       "id": "aibohack-rcode",
@@ -273,6 +301,90 @@
       "name": "GELLO",
       "desc": "A low-cost, general-purpose teleoperation controller from Stanford's IRIS lab — a 3D-printed, DYNAMIXEL-servo leader arm that mirrors a follower arm's joints 1:1 for intuitive demonstration collection across Franka, UR, xArm, and other manipulators. Hardware (STL files, BOM, build instructions) lives in a companion repo linked from this one.",
       "repo": "https://github.com/wuphilipp/gello_software"
+    },
+    {
+      "id": "elephant-robotics-ultraarm-p340",
+      "tab": "opensource",
+      "name": "Elephant Robotics ultraArm P340",
+      "desc": "Elephant Robotics' own pymycobot Python SDK, genuinely MIT-licensed and verified against its GitHub LICENSE file, includes a dedicated module for host-side control of ultraArm P340; the onboard ATmega2560 firmware itself has no public repository.",
+      "repo": "https://github.com/elephantrobotics/pymycobot"
+    },
+    {
+      "id": "wlkata-mirobot",
+      "tab": "opensource",
+      "name": "WLKATA Mirobot Education Kit",
+      "desc": "WLKATA's own genuinely open-source, MIT-licensed, PC-side Python SDK for controlling Mirobot; the arm's onboard firmware itself is proprietary.",
+      "repo": "https://github.com/wlkata/WLKATA-Python-SDK-wlkatapython"
+    },
+    {
+      "id": "agilex-piper",
+      "tab": "opensource",
+      "name": "AgileX PiPER",
+      "desc": "AgileX's own official, MIT-licensed Python SDK for controlling the PiPER arm, published under its GitHub organization.",
+      "repo": "https://github.com/agilexrobotics/piper_sdk"
+    },
+    {
+      "id": "letianpai-rux-robot-geeui-rom",
+      "tab": "opensource",
+      "name": "Letianpai Rux Robot",
+      "desc": "Letianpai's own official, GPLv2-licensed open-source system ROM for GeeUI, the software platform running on the Rux Robot.",
+      "repo": "https://github.com/Letianpai-Robot/GeeUI_ROM"
+    },
+    {
+      "id": "moorebot-scout",
+      "tab": "opensource",
+      "name": "Moorebot Scout",
+      "desc": "Moorebot's own official open-source repository for Scout, covering its recognition and extension-framework code (confirmed MIT-licensed); the robot's core communication layer itself stays closed for security reasons.",
+      "repo": "https://github.com/Pilot-Labs-Dev/Scout-open-source"
+    },
+    {
+      "id": "sunfounder-picar-x",
+      "tab": "opensource",
+      "name": "SunFounder PiCar-X",
+      "desc": "SunFounder's own official Python library repository for PiCar-X.",
+      "repo": "https://github.com/sunfounder/picar-x"
+    },
+    {
+      "id": "waveshare-jetracer",
+      "tab": "opensource",
+      "name": "Waveshare JetRacer",
+      "desc": "Waveshare's own GitHub fork of NVIDIA's original open-source JetRacer project, adapted for its pre-assembled AI Kit hardware.",
+      "repo": "https://github.com/waveshare/jetracer"
+    },
+    {
+      "id": "sunfounder-galaxyrvr",
+      "tab": "opensource",
+      "name": "SunFounder GalaxyRVR",
+      "desc": "SunFounder's own GPL-3.0-licensed firmware repository for GalaxyRVR.",
+      "repo": "https://github.com/sunfounder/galaxy-rvr"
+    },
+    {
+      "id": "pollen-robotics-microduck",
+      "tab": "opensource",
+      "name": "Microduck",
+      "desc": "Pollen Robotics' own official open-source repository for Microduck, the duck-like biped robot it developed alongside Hugging Face.",
+      "repo": "https://github.com/pollen-robotics/microduck"
+    },
+    {
+      "id": "pollen-robotics-reachy-mini",
+      "tab": "opensource",
+      "name": "Pollen Robotics Reachy Mini",
+      "desc": "Pollen Robotics' official Apache 2.0-licensed SDK (Python and JavaScript) for Reachy Mini, verified against its GitHub LICENSE file.",
+      "repo": "https://github.com/pollen-robotics/reachy_mini"
+    },
+    {
+      "id": "pololu-3pi-2040-robot",
+      "tab": "opensource",
+      "name": "Pololu 3pi+ 2040",
+      "desc": "Pololu's own official, MIT-licensed example code repository for the 3pi+ 2040 robot.",
+      "repo": "https://github.com/pololu/pololu-3pi-2040-robot"
+    },
+    {
+      "id": "blossom-social-robot",
+      "tab": "opensource",
+      "name": "Blossom",
+      "desc": "Handcrafted open-source social robot (Cornell HRC2/interaction-lab) built from a 3D-printed frame, tensile cable-driven motion, and a soft knit shell — the hardware platform an affective-interaction pipeline like AffectLoop can run on top of. MIT-licensed.",
+      "repo": "https://github.com/hrc2/blossom-public"
     }
   ]
 }
