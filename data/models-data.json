@@ -192,6 +192,16 @@
       "access": "Open"
     },
     {
+      "id": "niantic-spatial-places-library",
+      "tab": "simulation-training",
+      "category": "Synthetic Data & Sensors",
+      "name": "Niantic Spatial Places Library (real-to-sim scenes)",
+      "desc": "Real-world captured warehouse and street environments delivered as simulation-ready USDZ (Gaussian splat plus aligned collision mesh) for Isaac Sim, Isaac Lab, and other OpenUSD simulators. Four sample scenes are openly licensed; the full 100-scene library requires a paid plan.",
+      "license": "CC-BY-4.0 (4 sample scenes) / full Places Library proprietary, plan-based, terms not published",
+      "link": "https://huggingface.co/datasets/NianticSpatial/real2sim-sample-usdz-scenes",
+      "access": "Open"
+    },
+    {
       "id": "rail-berkeley-bridgedata-v2",
       "tab": "datasets",
       "category": "Robot Manipulation",
@@ -680,6 +690,376 @@
       "license": "MIT",
       "link": "https://github.com/RoboTurk-Platform/roboturk_real_dataset",
       "access": "Open"
+    },
+    {
+      "id": "nvidia-graspgenx",
+      "tab": "models",
+      "category": "Manipulation Models",
+      "name": "NVIDIA GraspGenX",
+      "desc": "Cross-embodiment 6-DOF grasp generation model: one network conditioned on a gripper's swept volume, generalizing to grippers unseen in training. Trained on 2B+ simulated grasps across 32 procedural grippers; full training dataset not yet released.",
+      "license": "Apache-2.0 (code) / NVIDIA Open Model License (checkpoints)",
+      "link": "https://github.com/NVlabs/GraspGenX",
+      "access": "Open"
+    },
+    {
+      "id": "nvidia-gr00t",
+      "tab": "models",
+      "category": "Manipulation Models",
+      "name": "NVIDIA Isaac GR00T (N1.7)",
+      "desc": "NVIDIA's open humanoid/cross-embodiment VLA foundation model; N1.7 adds 20K hours of EgoScale human video to pretraining. Pairs with the GR00T X-Embodiment Sim dataset already in the catalog.",
+      "license": "Apache-2.0 (code) / NVIDIA Open Model License (weights), README states N1.7 is commercially licensable",
+      "link": "https://github.com/NVIDIA/Isaac-GR00T",
+      "access": "Open"
+    },
+    {
+      "id": "octo",
+      "tab": "models",
+      "category": "Manipulation Models",
+      "name": "Octo",
+      "desc": "Berkeley's open generalist transformer policy trained on Open X-Embodiment; designed to be fine-tuned to new robots, sensors, and action spaces.",
+      "license": "MIT",
+      "link": "https://github.com/octo-models/octo",
+      "access": "Open"
+    },
+    {
+      "id": "rdt-1b",
+      "tab": "models",
+      "category": "Manipulation Models",
+      "name": "RDT-1B (Robotics Diffusion Transformer)",
+      "desc": "Tsinghua's 1B-parameter diffusion foundation model for bimanual manipulation.",
+      "license": "MIT (code, weights, and data per the README)",
+      "link": "https://github.com/thu-ml/RoboticsDiffusionTransformer",
+      "access": "Open"
+    },
+    {
+      "id": "diffusion-policy",
+      "tab": "models",
+      "category": "Manipulation Models",
+      "name": "Diffusion Policy",
+      "desc": "Columbia/Stanford's visuomotor policy that generates robot actions via denoising diffusion; a widely used baseline for imitation learning.",
+      "license": "MIT",
+      "link": "https://github.com/real-stanford/diffusion_policy",
+      "access": "Open"
+    },
+    {
+      "id": "act-aloha",
+      "tab": "models",
+      "category": "Manipulation Models",
+      "name": "ACT (Action Chunking with Transformers)",
+      "desc": "Imitation-learning policy behind ALOHA bimanual manipulation; predicts chunks of future actions for smooth fine-grained control.",
+      "license": "MIT",
+      "link": "https://github.com/tonyzhaozh/act",
+      "access": "Open"
+    },
+    {
+      "id": "sensevoice",
+      "tab": "models",
+      "category": "Affective & Social Interaction",
+      "name": "SenseVoice (FunAudioLLM)",
+      "desc": "Speech recognition model that also tags emotion and non-speech audio events (laughter, applause) in the same pass — the perception half of an empathetic pipeline, hearing what was said and how it was said in one model.",
+      "license": "MIT (code) / FunASR Model License (weights) — license text (Section 2.1) grants use/copy/modify/share with attribution and no explicit commercial carve-out, but multiple open GitHub issues (FunAudioLLM/SenseVoice #279, #286, #334) show developers still seeking an explicit maintainer confirmation",
+      "link": "https://github.com/QwenAudio/SenseVoice",
+      "access": "Open"
+    },
+    {
+      "id": "cosyvoice",
+      "tab": "models",
+      "category": "Affective & Social Interaction",
+      "name": "CosyVoice (FunAudioLLM)",
+      "desc": "Text-to-speech model accepting natural-language instructions for emotion, style, and speaking rate — the expressive half of the pipeline, turning a generated empathetic reply into speech that sounds like it.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/QwenAudio/CosyVoice",
+      "access": "Open"
+    },
+    {
+      "id": "emotivoice",
+      "tab": "models",
+      "category": "Affective & Social Interaction",
+      "name": "EmotiVoice (NetEase Youdao)",
+      "desc": "Multi-voice, prompt-controlled emotional TTS engine with 2,000+ voices and explicit emotion tags — a fully commercially-licensed alternative to CosyVoice for expressive speech output.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/netease-youdao/EmotiVoice",
+      "access": "Open"
+    },
+    {
+      "id": "kyutai-moshi",
+      "tab": "models",
+      "category": "Affective & Social Interaction",
+      "name": "Moshi (Kyutai)",
+      "desc": "Full-duplex spoken-dialogue foundation model that listens and speaks simultaneously rather than turn-by-turn, built on the Mimi streaming neural audio codec — relevant here because it can react mid-utterance instead of waiting for a conversational pause.",
+      "license": "MIT / Apache-2.0 (code) / CC BY 4.0 (weights)",
+      "link": "https://github.com/kyutai-labs/moshi",
+      "access": "Open"
+    },
+    {
+      "id": "retico",
+      "tab": "models",
+      "category": "Affective & Social Interaction",
+      "name": "Retico",
+      "desc": "Incremental spoken-dialogue framework for chaining perception, reasoning, and generation modules with sub-utterance streaming latency — the integration layer an empathetic pipeline (perceive emotion → condition an LLM → express matching speech/motion) is typically built on, rather than a model itself.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/retico-team/retico",
+      "access": "Open"
+    },
+    {
+      "id": "empathetic-dialogues",
+      "tab": "models",
+      "category": "Affective & Social Interaction",
+      "name": "EmpatheticDialogues (Meta)",
+      "desc": "25k crowd-sourced conversations grounded in a speaker's described emotional situation, tagged with one of 32 emotion labels — a widely-used benchmark for training empathetic dialogue models. Non-commercial license: cannot train a product intended for commercial deployment on this data.",
+      "license": "CC BY-NC 4.0",
+      "link": "https://github.com/facebookresearch/EmpatheticDialogues",
+      "access": "Open"
+    },
+    {
+      "id": "esconv",
+      "tab": "models",
+      "category": "Affective & Social Interaction",
+      "name": "ESConv (Tsinghua)",
+      "desc": "Emotional-support conversation dataset with annotated support strategies (e.g. reflection, reframing) exchanged between a help-seeker and a supporter — used to train dialogue systems that go beyond acknowledging distress. Non-commercial license.",
+      "license": "CC BY-NC 4.0",
+      "link": "https://github.com/thu-coai/Emotional-Support-Conversation",
+      "access": "Open"
+    },
+    {
+      "id": "meld",
+      "tab": "models",
+      "category": "Affective & Social Interaction",
+      "name": "MELD",
+      "desc": "Multimodal (text, audio, video) emotion-labeled dialogue dataset built from Friends TV series clips — used for multi-party emotion recognition in conversation rather than dyadic chat. Copyleft license; underlying video clips are third-party TV footage, not independently cleared for commercial reuse.",
+      "license": "GPL-3.0",
+      "link": "https://github.com/declare-lab/MELD",
+      "access": "Open"
+    },
+    {
+      "id": "dreamerv3",
+      "tab": "world-models",
+      "category": "Open",
+      "name": "DreamerV3",
+      "desc": "General world-model-based RL algorithm that masters diverse domains — Atari, DMLab, Minecraft diamond collection, real robot locomotion — using a single fixed set of hyperparameters rather than per-domain tuning.",
+      "license": "MIT",
+      "link": "https://github.com/danijar/dreamerv3",
+      "access": "Open"
+    },
+    {
+      "id": "tdmpc2",
+      "tab": "world-models",
+      "category": "Open",
+      "name": "TD-MPC2",
+      "desc": "Model-based RL algorithm pairing a learned latent world model with local trajectory optimization (MPC); a single set of hyperparameters scales across 100+ continuous-control tasks spanning multiple simulation domains and embodiments.",
+      "license": "MIT",
+      "link": "https://github.com/nicklashansen/tdmpc2",
+      "access": "Open"
+    },
+    {
+      "id": "skywork-matrix-game",
+      "tab": "world-models",
+      "category": "Open",
+      "name": "Skywork Matrix-Game",
+      "desc": "Interactive world model generating real-time, controllable game-style video (720p at 40 FPS with the 5B-parameter model) with minute-long memory consistency; Matrix-Game 3.0 is released fully open — code, weights, and technical report.",
+      "license": "MIT",
+      "link": "https://github.com/SkyworkAI/Matrix-Game",
+      "access": "Open"
+    },
+    {
+      "id": "1x-world-model",
+      "tab": "world-models",
+      "category": "Closed",
+      "name": "1X World Model",
+      "desc": "1X's world model for its EVE/NEO humanoids, trained on real robot data to predict how environments evolve in response to actions — object interactions, deformable materials, long-horizon tasks. The model itself is not released; 1X separately open-sourced 100+ hours of tokenized robot video and a GENIE-based baseline/challenge repo (Apache-2.0) for others to train competing world models against a held-out test set, but that is not the production model.",
+      "license": "Proprietary (model) / Apache-2.0 (challenge dataset + baseline code)",
+      "link": "https://www.1x.tech/discover/1x-world-model",
+      "access": "Closed"
+    },
+    {
+      "id": "newton-physics",
+      "tab": "simulation-training",
+      "category": "Physics Engine",
+      "name": "Newton Physics",
+      "desc": "GPU-accelerated physics simulation engine built on NVIDIA Warp, developed jointly by NVIDIA, Google DeepMind, and Disney Research as an open, roboticist-focused successor in the MuJoCo/Isaac lineage.",
+      "license": "Apache-2.0 (code) / CC-BY-4.0 (docs)",
+      "link": "https://github.com/newton-physics/newton",
+      "access": "Open"
+    },
+    {
+      "id": "mujoco-playground",
+      "tab": "simulation-training",
+      "category": "Physics Engine",
+      "name": "MuJoCo Playground",
+      "desc": "Google DeepMind's open-source library of GPU-accelerated MuJoCo (MJX) environments for robot learning and sim-to-real transfer, spanning manipulation and locomotion benchmark tasks.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/google-deepmind/mujoco_playground",
+      "access": "Open"
+    },
+    {
+      "id": "gazebo",
+      "tab": "simulation-training",
+      "category": "Physics Engine",
+      "name": "Gazebo (gz-sim)",
+      "desc": "The current generation of Gazebo (formerly \"Ignition Gazebo\"), the long-running open-source robotics simulator providing physics, rendering, and sensor models — 16+ years of development, and the default simulator across most ROS/ROS 2 tutorials and projects.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/gazebosim/gz-sim",
+      "access": "Open"
+    },
+    {
+      "id": "webots",
+      "tab": "simulation-training",
+      "category": "Physics Engine",
+      "name": "Webots",
+      "desc": "Cyberbotics' robot simulator, open-sourced under Apache-2.0 in 2018 after two decades as a commercial product; includes a full physics engine, sensor/actuator models, and a library of ready-made robot models.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/cyberbotics/webots",
+      "access": "Open"
+    },
+    {
+      "id": "habitat-sim",
+      "tab": "simulation-training",
+      "category": "Synthetic Data & Sensors",
+      "name": "Habitat-Sim",
+      "desc": "Meta AI's high-performance 3D simulator for embodied AI research, rendering photorealistic indoor scenes at thousands of frames per second for navigation and interaction task training.",
+      "license": "MIT",
+      "link": "https://github.com/facebookresearch/habitat-sim",
+      "access": "Open"
+    },
+    {
+      "id": "omnigibson-behavior",
+      "tab": "simulation-training",
+      "category": "Synthetic Data & Sensors",
+      "name": "OmniGibson (BEHAVIOR-1K)",
+      "desc": "Stanford's simulation platform built on NVIDIA Omniverse/Isaac Sim, now published under the BEHAVIOR-1K project name, targeting 1,000 everyday household activities as embodied-AI benchmark tasks.",
+      "license": "MIT",
+      "link": "https://github.com/StanfordVL/BEHAVIOR-1K",
+      "access": "Open"
+    },
+    {
+      "id": "robosuite",
+      "tab": "simulation-training",
+      "category": "Synthetic Data & Sensors",
+      "name": "robosuite",
+      "desc": "Modular MuJoCo-based simulation framework and benchmark suite for robot manipulation research from the ARISE Initiative (Stanford/UT Austin); underlies several of the demonstration datasets and imitation-learning baselines elsewhere on this page.",
+      "license": "MIT",
+      "link": "https://github.com/ARISE-Initiative/robosuite",
+      "access": "Open"
+    },
+    {
+      "id": "lerobot",
+      "tab": "simulation-training",
+      "category": "RL Training",
+      "name": "LeRobot",
+      "desc": "Hugging Face's end-to-end robot learning library — imitation learning, RL training, and dataset tooling in one framework — used to train and evaluate several of the manipulation policies (Diffusion Policy, ACT) tracked elsewhere on this page.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/huggingface/lerobot",
+      "access": "Open"
+    },
+    {
+      "id": "rsl-rl",
+      "tab": "simulation-training",
+      "category": "RL Training",
+      "name": "RSL-RL",
+      "desc": "ETH Zurich Robotic Systems Lab's fast, minimal PPO-based RL training library, widely used to train legged-robot locomotion policies in simulation (commonly paired with Isaac Lab); now co-maintained with NVIDIA.",
+      "license": "BSD-3-Clause",
+      "link": "https://github.com/leggedrobotics/rsl_rl",
+      "access": "Open"
+    },
+    {
+      "id": "droid",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "DROID",
+      "desc": "Distributed Robot Interaction Dataset — 76,000 real-robot manipulation trajectories (350 hours) collected across 564 scenes and 86 tasks by 50 data collectors across 13 institutions in North America, Europe, and Asia; built specifically for policy generalization across environments and robots rather than a single lab's setup.",
+      "license": "CC BY 4.0",
+      "link": "https://github.com/droid-dataset/droid",
+      "access": "Open"
+    },
+    {
+      "id": "agibot-world",
+      "tab": "datasets",
+      "category": "Robot Manipulation",
+      "name": "AgiBot World",
+      "desc": "Large-scale bimanual manipulation dataset from AgiBot (Zhiyuan Robotics) — IROS 2025 Best Paper Award Finalist — 1,003,672 trajectories in the full Beta release (a curated 92,214-trajectory Alpha subset also available) across 100+ replicated real-life scenarios on multiple robot platforms (AgiBot G1 dual-arm, AgileX Cobot Magic/ALOHA, dual Franka arms). Non-commercial, share-alike license.",
+      "license": "CC BY-NC-SA 4.0",
+      "link": "https://github.com/OpenDriveLab/AgiBot-World",
+      "access": "Open"
+    },
+    {
+      "id": "openvla",
+      "tab": "models",
+      "category": "Manipulation Models",
+      "name": "OpenVLA",
+      "desc": "7B-parameter open vision-language-action model from Stanford, UC Berkeley, and Toyota Research Institute, trained on 970K trajectories from the Open X-Embodiment dataset; a widely used baseline and fine-tuning starting point for robot manipulation policies.",
+      "license": "MIT (code) / Llama 2 Community License (base model weights)",
+      "link": "https://github.com/openvla/openvla",
+      "access": "Open"
+    },
+    {
+      "id": "openpi",
+      "tab": "models",
+      "category": "Manipulation Models",
+      "name": "openpi (π0 / π0-FAST / π0.5)",
+      "desc": "Physical Intelligence's open release of its π0 flow-based VLA, the π0-FAST autoregressive variant, and π0.5 — base checkpoints trained on Physical Intelligence's own robot data, plus fine-tuned checkpoints for the ALOHA and DROID platforms.",
+      "license": "Apache-2.0",
+      "link": "https://github.com/Physical-Intelligence/openpi",
+      "access": "Open"
+    },
+    {
+      "id": "rt-2",
+      "tab": "models",
+      "category": "Manipulation Models",
+      "name": "RT-2",
+      "desc": "Google DeepMind's vision-language-action model, casting robot actions as text tokens co-trained with internet-scale vision-language data; no code, weights, or checkpoints have been publicly released — described here from DeepMind's own paper and project page only.",
+      "license": "Proprietary — no public code or weights release",
+      "link": "https://robotics-transformer2.github.io/",
+      "access": "Closed"
+    },
+    {
+      "id": "gemini-robotics",
+      "tab": "models",
+      "category": "Manipulation Models",
+      "name": "Gemini Robotics (ER 2 / Robotics 2)",
+      "desc": "Google DeepMind's robotics model family: Gemini Robotics-ER 2, an embodied-reasoning vision-language model for spatial planning, is available to developers via the Gemini API in Google AI Studio. Gemini Robotics 2, the vision-language-action model that converts that reasoning into motor control, is restricted to a 100+-partner trusted-tester program and not otherwise publicly available.",
+      "license": "Proprietary — ER 2 is accessible via the Gemini API; the action-control model (Robotics 2) is trusted-tester only",
+      "link": "https://deepmind.google/models/gemini-robotics/",
+      "access": "Closed"
+    },
+    {
+      "id": "1x-redwood",
+      "tab": "models",
+      "category": "Manipulation Models",
+      "name": "1X Redwood",
+      "desc": "1X's onboard vision-language-action model for its NEO Gamma humanoid: a 160M-parameter transformer fusing language embeddings, vision tokens, and proprioception, decoding actions via diffusion policy at ~5Hz on NEO's embedded GPU. Trained on teleoperated and autonomous episodes from EVE and NEO gathered from 1X offices and employee homes. Distinct from the 1X World Model already listed under World Models — Redwood is the robot-control policy, not the environment-prediction model.",
+      "license": "Proprietary",
+      "link": "https://www.1x.tech/discover/redwood-ai",
+      "access": "Closed"
+    },
+    {
+      "id": "figure-helix",
+      "tab": "models",
+      "category": "Manipulation Models",
+      "name": "Figure Helix (Helix 02 / Helix 2.5)",
+      "desc": "Figure's dual-system VLA for its humanoids: a 7B-parameter System 2 vision-language model for scene/language understanding paired with an 80M-parameter System 1 visuomotor policy running at 200Hz, controlling a 35-DOF upper body from a single shared set of weights. Helix 2.5 adds “Index” pretraining for zero-shot generalization to unseen homes — Figure reports a 56% task-success rate tidying rooms, folding towels, and making beds across 30 previously unseen Bay Area residences with no on-site data collection or fine-tuning, versus 9% when trained from scratch without Index pretraining.",
+      "license": "Proprietary (System 2 is built on open-weight VLM components per Figure's own description; Helix itself has not been released)",
+      "link": "https://www.figure.ai/news/helix",
+      "access": "Closed"
+    },
+    {
+      "id": "pi-0-7",
+      "tab": "models",
+      "category": "Manipulation Models",
+      "name": "π0.7 (Physical Intelligence)",
+      "desc": "Physical Intelligence's successor to its open π0/π0.5 models, trained with context conditioning on heterogeneous data — demonstrations, suboptimal or failed autonomous rollouts, and non-robot sources — to make it steerable toward different task strategies via rich contextual prompts. Physical Intelligence reports emergent zero-shot cross-embodiment generalization, including laundry folding and espresso-machine operation matching specialized reinforcement-learning models. No code or weights have been released; kept as a separate entry from the open openpi (π0 / π0-FAST / π0.5) release already in the catalog.",
+      "license": "Proprietary — no public code or weights release",
+      "link": "https://www.pi.website/blog/pi07",
+      "access": "Closed"
+    },
+    {
+      "id": "runway-gwm-robotics",
+      "tab": "world-models",
+      "category": "Closed",
+      "name": "Runway GWM Robotics",
+      "desc": "The robotics variant of Runway's GWM-1 general world model: an autoregressive video-generation model (built on Gen-4.5) that simulates robot manipulation outcomes frame-by-frame in real time, controllable by robot commands. Runway sells it as a product for policy evaluation, synthetic training-data generation, and pre-deployment simulation, and has published a comparison testing 8 RoboArena policies on a Franka Emika Panda arm: simulated and real-world policy rankings correlated at 0.95 (Pearson) across 1,450 simulated rollouts and 16,000+ human ratings.",
+      "license": "Proprietary",
+      "link": "https://runway.com/research/introducing-runway-gwm-1",
+      "access": "Closed"
     }
   ]
 }
