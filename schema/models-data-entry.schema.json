@@ -26,9 +26,10 @@
       "enum": [
         "world-models",
         "simulation-training",
+        "models",
         "datasets"
       ],
-      "description": "Which top-level tab this renders under."
+      "description": "Which top-level tab this renders under. 'models' was added once Manipulation Models and Affective & Social Interaction outgrew the datasets tab \u2014 a tab labelled Datasets holding things that are not datasets is the kind of misclassification this index exists to avoid."
     },
     "category": {
       "type": "string",
@@ -38,12 +39,14 @@
         "Physics Engine",
         "RL Training",
         "Synthetic Data & Sensors",
+        "Manipulation Models",
+        "Affective & Social Interaction",
         "Robot Manipulation",
         "Egocentric Human Video",
         "Gameplay / Simulated Interaction",
         "Human Motion Capture"
       ],
-      "description": "Sub-grouping within a tab. world-models entries must be 'Open' or 'Closed' \u2014 this is the load-bearing distinction on this page, since a 'Closed' entry is described from a vendor's own materials, not verified against source the way everything in Builds & Mods is."
+      "description": "Sub-grouping within a tab. world-models entries must be 'Open' or 'Closed' \u2014 this is the load-bearing distinction on this page, since a 'Closed' entry is described from a vendor's own materials, not verified against source the way everything in Builds & Mods is. 'Manipulation Models' and 'Affective & Social Interaction' belong to the 'models' tab; the emotion corpora (EmpatheticDialogues, ESConv, MELD) stay under 'datasets' because they are datasets."
     },
     "access": {
       "type": "string",
@@ -51,7 +54,7 @@
         "Open",
         "Closed"
       ],
-      "description": "Whether this entry can be checked against real public source material (Open) or is described only from a vendor's own claims (Closed). For world-models entries this always matches `category` and is shown via the page's Open/Closed columns. For simulation-training and datasets entries \u2014 where every entry so far has a real, disclosed license even when gated or restrictive \u2014 it's shown as a small prefix on the license badge instead, so the same trust distinction stays visible without a second set of columns."
+      "description": "Whether this entry can be checked against real public source material (Open) or is described only from a vendor's own claims (Closed). For world-models entries this always matches `category` and is shown via the page's Open/Closed columns. For simulation-training, models and datasets entries \u2014 where every entry so far has a real, disclosed license even when gated or restrictive \u2014 it's shown as a small prefix on the license badge instead, so the same trust distinction stays visible without a second set of columns. Note this field answers 'can it be checked', not 'can it be used commercially': ManiSkill is Open here while its asset library is CC BY-NC."
     },
     "name": {
       "type": "string"
@@ -61,12 +64,21 @@
     },
     "license": {
       "type": "string",
-      "description": "Plain-language license/access status. Not gated to OSI licenses the way Builds & Mods' opensource tab is \u2014 but must be accurate: 'Proprietary', 'Gated \u2014 approval required', 'CC BY-NC 4.0', 'MIT', a specific custom license name, etc. Never left vague when the real answer is a restriction."
+      "description": "Plain-language license/access status. Not gated to OSI licenses the way Builds & Mods' opensource tab is \u2014 but must be accurate: 'Proprietary', 'Gated \u2014 approval required', 'CC BY-NC 4.0', 'MIT', a specific custom license name, etc. Never left vague when the real answer is a restriction. Split terms are stated in full \u2014 'Apache-2.0 (code) / CC BY-NC 4.0 (asset library)' \u2014 because the GitHub API only reports the root LICENSE file and will under-report a restriction that applies to the part most people actually want."
     },
     "link": {
       "type": "string",
       "format": "uri",
       "description": "Canonical source. A GitHub/Codeberg repo when one exists (Open world models, Simulation & Training, most Datasets); a vendor's own product/docs page when it doesn't (Closed world models, gated datasets like Ego4D)."
+    },
+    "sourcing": {
+      "type": "string",
+      "description": "Where the license and description came from, and what could not be confirmed. Optional for now so existing entries stay valid, but intended to become required once backfilled \u2014 every product record already carries one, and the absence of it here is the main reason this half of the index reads as a list rather than a verified index. Say what actually happened: 'Licence read from the repo's LICENSE file via the GitHub API (2026-09-28)' is honest; 'verified' is not, unless someone read it."
+    },
+    "verifiedOn": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO date the sourcing note was last checked. Separate from the prose so staleness can be queried rather than read. Licenses get changed and repos get archived; an undated license claim is worthless within a year."
     }
   }
 }
