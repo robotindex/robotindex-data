@@ -1,0 +1,103 @@
+name: Harvest sources
+
+# Two jobs that need network access this repo has and a local sandbox does not:
+# the Hugging Face robotics tag, and GitHub repo metadata for maintenance status.
+#
+# Both write artifacts for review. Neither touches data/.
+#
+# Manual trigger, because this is a research pass rather than a scheduled sync.
+
+on:
+  workflow_dispatch:
+    inputs:
+      min_downloads:
+        description: "Hugging Face download floor (monthly)"
+        default: "500"
+      pages:
+        description: "HF pages to walk (100 per page)"
+        default: "30"
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Hugging Face robotics tag
+        run: |
+          python scripts/harvest_hf.py \
+            --min-downloads "${{ github.event.inputs.min_downloads || '500' }}" \
+            --pages "${{ github.event.inputs.pages || '30' }}" \
+            --out /tmp/hf-candidates.csv \
+            | tee /tmp/hf.log
+
+      - name: GitHub maintenance status for indexed entries
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python - <<'EOF' | tee /tmp/maint.log
+          import json,os,re,csv,time,urllib.request,datetime
+          tok=os.environ["GITHUB_TOKEN"]
+          H={"User-Agent":"robotindex","Accept":"application/vnd.github+json",
+             "Authorization":f"Bearer {tok}"}
+          urls=set()
+          for f in ("data/models-data.json","data/builds-mods.json"):
+              try: d=json.load(open(f))
+              except Exception: continue
+              for e in (d.get("entries") if isinstance(d,dict) else d) or []:
+                  for k in ("link","repo"):
+                      u=e.get(k) or ""
+                      m=re.match(r"https://github\.com/([^/]+/[^/#?]+)",u)
+                      if m: urls.add(m.group(1).removesuffix(".git"))
+          print(f"{len(urls)} GitHub repos to check")
+          today=datetime.date.today()
+          out=[]
+          for i,p in enumerate(sorted(urls)):
+              try:
+                  r=json.load(urllib.request.urlopen(
+                      urllib.request.Request(f"https://api.github.com/repos/{p}",headers=H),timeout=25))
+              except Exception as e:
+                  out.append({"repo":p,"status":"error","detail":str(e)[:60]}); continue
+              pushed=(r.get("pushed_at") or "")[:10]
+              age=(today-datetime.date.fromisoformat(pushed)).days if pushed else None
+              status=("archived" if r.get("archived") else
+                      "active" if age is not None and age<=90 else
+                      "slowing" if age is not None and age<=365 else "stale")
+              out.append({"repo":p,"status":status,"pushed":pushed,"days_since":age,
+                          "stars":r.get("stargazers_count"),
+                          "license":(r.get("license") or {}).get("spdx_id") or "",
+                          "open_issues":r.get("open_issues_count")})
+              time.sleep(0.12)
+          with open("/tmp/maintenance.csv","w",newline="",encoding="utf-8") as fh:
+              w=csv.DictWriter(fh,fieldnames=["repo","status","pushed","days_since","stars","license","open_issues","detail"])
+              w.writeheader(); w.writerows(out)
+          import collections
+          print(dict(collections.Counter(o["status"] for o in out)))
+          nolic=[o for o in out if o.get("license") in ("","NOASSERTION")]
+          print(f"no usable licence: {len(nolic)} of {len(out)}")
+          for o in sorted([x for x in out if x.get("status") in ("stale","archived")],
+                          key=lambda x:x.get("days_since") or 0, reverse=True)[:20]:
+              print(f"  {o['status']:<9} {o.get('days_since','?'):>5}d  {o['repo']}")
+          EOF
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: harvest
+          path: |
+            /tmp/hf-candidates.csv
+            /tmp/maintenance.csv
+            /tmp/hf.log
+            /tmp/maint.log
+
+      - name: Summary
+        run: |
+          {
+            echo '## Hugging Face'
+            echo '```'; cat /tmp/hf.log; echo '```'
+            echo '## Maintenance'
+            echo '```'; cat /tmp/maint.log; echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
