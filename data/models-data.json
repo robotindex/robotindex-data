@@ -746,7 +746,7 @@
       "tab": "models",
       "category": "Manipulation Models",
       "name": "ACT (Action Chunking with Transformers)",
-      "desc": "Imitation-learning policy behind ALOHA bimanual manipulation; predicts chunks of future actions for smooth fine-grained control.",
+      "desc": "Imitation-learning policy behind ALOHA and Mobile ALOHA bimanual manipulation; predicts chunks of future actions for smooth fine-grained control.",
       "license": "MIT",
       "link": "https://github.com/tonyzhaozh/act",
       "access": "Open"
