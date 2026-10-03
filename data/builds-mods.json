@@ -82,7 +82,7 @@
       "id": "liyiteng-alohamini",
       "tab": "opensource",
       "name": "AlohaMini",
-      "desc": "Open-source 3D-printable dual-arm mobile robot, LeRobot-native.",
+      "desc": "Open-source 3D-printable dual-arm mobile robot inspired by ALOHA's bimanual leader/follower design, LeRobot-native.",
       "repo": "https://github.com/liyiteng/AlohaMini"
     },
     {
@@ -385,6 +385,41 @@
       "name": "Blossom",
       "desc": "Handcrafted open-source social robot (Cornell HRC2/interaction-lab) built from a 3D-printed frame, tensile cable-driven motion, and a soft knit shell — the hardware platform an affective-interaction pipeline like AffectLoop can run on top of. MIT-licensed.",
       "repo": "https://github.com/hrc2/blossom-public"
+    },
+    {
+      "id": "franka-libfranka",
+      "tab": "firmware",
+      "name": "libfranka",
+      "desc": "Official C++ library for real-time, 1 kHz torque control of Franka research robots (Panda and FR3). Apache-2.0.",
+      "repo": "https://github.com/frankarobotics/libfranka"
+    },
+    {
+      "id": "franka-ros",
+      "tab": "firmware",
+      "name": "franka_ros",
+      "desc": "Official ROS/ROS2 integration for Franka research robots, including MoveIt2 support and URDF models.",
+      "repo": "https://github.com/frankarobotics/franka_ros"
+    },
+    {
+      "id": "tonyzhaozh-aloha",
+      "tab": "opensource",
+      "name": "ALOHA (tonyzhaozh/aloha)",
+      "desc": "A low-cost, two-armed robot setup from Stanford. A person drives two small \"leader\" arms, and two \"follower\" arms copy the movements — built to collect demonstrations for training robots on fine, two-handed tasks. Official hardware build guide and ROS-based data-collection/teleoperation codebase. MIT-licensed. See also Mobile ALOHA (MarkFzp/mobile-aloha), which adds a wheeled base for whole-room tasks.",
+      "repo": "https://github.com/tonyzhaozh/aloha"
+    },
+    {
+      "id": "markfzp-mobile-aloha",
+      "tab": "opensource",
+      "name": "Mobile ALOHA (MarkFzp/mobile-aloha)",
+      "desc": "Adds a wheeled mobile base to the ALOHA bimanual arm setup, so the same leader/follower teleoperation can collect demonstrations for whole-room tasks like cooking, cleaning, and navigating around furniture. MIT-licensed.",
+      "repo": "https://github.com/MarkFzp/mobile-aloha"
+    },
+    {
+      "id": "tonyzhaozh-act",
+      "tab": "opensource",
+      "name": "ACT (tonyzhaozh/act)",
+      "desc": "Official implementation of ACT (Action Chunking with Transformers), the imitation-learning algorithm developed alongside ALOHA. MIT-licensed.",
+      "repo": "https://github.com/tonyzhaozh/act"
     }
   ]
 }
