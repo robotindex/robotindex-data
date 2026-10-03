@@ -89,7 +89,6 @@ EMBODIMENT = [
     (r"\btiago\b|pal robotics",                                 "PAL TIAGo"),
     (r"\bpiper\b[^.]{0,20}(arm|robot)",                         "AgileX PiPER"),
     (r"\bumi\b[^.]{0,30}(gripper|handheld|data|interface)",     "UMI (handheld)"),
-    (r"\barx\b[^.]{0,15}(arm|r5|x5)",                           "ARX"),
     (r"\bgalaxea\b|\br1 pro\b",                                 "Galaxea"),
     (r"\bdobot\b",                                              "Dobot"),
     (r"\bmycobot\b|elephant robotics",                          "myCobot"),
@@ -99,6 +98,50 @@ EMBODIMENT = [
      r"\baria glasses\b|first-person video",                    "none — human video"),
     (r"\bmocap\b|motion capture|\bvicon\b|\boptitrack\b",       "none — motion capture"),
 ]
+
+# LeRobot writes a robot_type field into every dataset card's info.json block.
+# It is a structured value rather than prose, so it beats pattern-matching: a
+# card reading "robot_type": "h1" is unambiguous, whereas a bare "h1" in text
+# could be anything. Checked before the prose patterns.
+ROBOT_TYPE = re.compile(r'"robot_type"\s*:\s*"([^"]+)"', re.I)
+
+ROBOT_TYPE_MAP = [
+    (r"^h1",                                   "Unitree H1"),
+    (r"^h2",                                   "Unitree H2"),
+    (r"^g1",                                   "Unitree G1"),
+    (r"^go2",                                  "Unitree Go2"),
+    (r"panda|franka",                          "Franka Panda"),
+    (r"^so[_-]?10[01]|^so_follower|^biso101|lekiwi", "SO-100/101"),
+    (r"^ur5|^ur10|^ur\b|universal",            "UR5"),
+    (r"piper|agilex|cobot_magic",              "AgileX PiPER"),
+    (r"aloha|trossen",                         "ALOHA"),
+    (r"widowx",                                "WidowX"),
+    (r"viperx",                                "Trossen ViperX"),
+    (r"xarm|ufactory",                         "xArm"),
+    (r"galaxea",                               "Galaxea"),
+    (r"mycobot|elephant",                      "myCobot"),
+    (r"kinova|jaco",                           "Kinova Jaco"),
+    (r"^kuka|iiwa",                            "Kuka"),
+    (r"stretch",                               "Hello Robot Stretch"),
+    (r"reachy",                                "Pollen Reachy"),
+    (r"agibot|genie",                          "AgiBot"),
+    (r"^yam",                                  "YAM"),
+    (r"fourier|^gr-?1",                        "Fourier GR-1"),
+]
+
+
+def from_robot_type(text):
+    """Pull embodiment from any robot_type fields in the card. Returns [] if none."""
+    out = []
+    for v in ROBOT_TYPE.findall(text or ""):
+        v = v.lower().strip()
+        for pat, label in ROBOT_TYPE_MAP:
+            if re.search(pat, v):
+                if label not in out:
+                    out.append(label)
+                break
+    return out
+
 
 # Hugging Face tags that name hardware directly. A declared tag is stronger
 # evidence than a phrase in prose, so these are checked first and recorded
@@ -136,7 +179,15 @@ def fetch_readme(rid, token=None, timeout=25):
 
 
 def find_embodiment(tags, text):
-    """Return (list of robots, how it was determined). Tags beat prose."""
+    """Return (list of robots, how it was determined).
+
+    Order matters: a declared robot_type or tag is evidence the publisher set
+    deliberately; a phrase in prose is an inference we made.
+    """
+    rt = from_robot_type(text)
+    if rt:
+        return rt, "robot_type"
+
     from_tags = []
     for t in tags:
         v = TAG_MAP.get(t.lower().strip())
@@ -252,7 +303,8 @@ def add_embodiment(kept, token, use_readme):
         text = fetch_readme(k["id"], token)
         emb, how = find_embodiment([], text)
         k["embodiment"] = "; ".join(emb)
-        k["embodiment_source"] = "readme" if emb else ""
+        k["embodiment_source"] = ("readme-robot_type" if how == "robot_type"
+                                  else "readme" if emb else "")
         time.sleep(0.12)
         if i % 100 == 0:
             print(f"  ...readme {i}/{len(kept)}", file=sys.stderr)
