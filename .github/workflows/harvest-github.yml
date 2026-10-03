@@ -2,10 +2,11 @@ name: Harvest GitHub
 
 # A full pass over robotics repositories on GitHub.
 #
-# Separate from harvest-sources.yml because it takes around half an hour: the
+# Separate from harvest-sources.yml because it takes around two hours: the
 # search API caps a query at 1,000 results and allows 30 requests a minute, so
-# 27 topics are each split into calendar-quarter slices of creation date — 756
-# queries, paced to stay under the limit.
+# 78 topics plus 7 qualified pairs are each split into calendar-quarter slices
+# of creation date back to 2015 — 4,080 queries, paced to stay under the limit,
+# then a README fetch per surviving repo to resolve embodiment.
 #
 # Monthly rather than weekly for the same reason. Repo stars and commit dates
 # move slowly enough that a month is a reasonable sampling interval, and the
@@ -23,7 +24,7 @@ on:
         default: "50"
       since:
         description: "First year of creation dates"
-        default: "2020"
+        default: "2015"
       owner_cap:
         description: "Max repos kept per owner"
         default: "10"
@@ -38,7 +39,7 @@ concurrency:
 jobs:
   harvest:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 330
     steps:
       - uses: actions/checkout@v4
 
@@ -56,7 +57,7 @@ jobs:
           mkdir -p data/history
           python scripts/harvest_gh.py \
             --min-stars "${{ github.event.inputs.min_stars || '50' }}" \
-            --since "${{ github.event.inputs.since || '2020' }}" \
+            --since "${{ github.event.inputs.since || '2015' }}" \
             --owner-cap "${{ github.event.inputs.owner_cap || '10' }}" \
             --out "data/history/gh-${STAMP}.csv" \
             | tee /tmp/gh.log
