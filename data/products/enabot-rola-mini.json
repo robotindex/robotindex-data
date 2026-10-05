@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "enabot-rola-mini",
-  "slug": "product-enabot-rola-mini.html",
+  "slug": "product-enabot-rola-mini",
   "name": "Enabot ROLA Mini",
   "manufacturer": "Enabot",
   "category": "Security",
   "subcategory": "Indoor Security",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -62,16 +62,16 @@
   "sourcing": "Verified against Enabot's own store pages (ROLA Mini, ROLA PetPal, EBO Air, EBO X), retailer listings (Target, Best Buy, Home Depot, B&H), and independent reviews (The AU Review, ToolSmarts.ca). Two things are flagged for reconsideration rather than stated as settled: the \"New & Pending\" tag looks inconsistent with a product that has shipped continuously since late 2024, and the \"Senior Companions\" categorization rests on a single reused marketing sentence in Enabot's own materials rather than a dedicated senior-care feature — EBO X, already catalogued under Security, has the more substantive elder-care claim (a named fall-alert feature). No independent review discusses ROLA Mini as a senior-monitoring product; all treat it as a pet camera.",
   "manufacturerUrl": "https://store.enabot.com/products/rola-mini-familybot",
   "pricing": {
-    "summary": "Listed at $169 direct from Enabot, with periodic promotional pricing seen around $139; a UK launch price of £149 was also reported. It's stocked at Target, Best Buy, Home Depot, B&H, Chewy, and other major retailers — a normal, broadly-distributed retail SKU rather than a pre-order or crowdfunded item (see the caveat below on the \"New & Pending\" tag)."
+    "summary": "Listed at $169 direct from Enabot, with periodic promotional pricing seen around $139; a UK launch price of £149 was also reported. It's stocked at Target, Best Buy, Home Depot, B&H, Chewy, Amazon, and other major retailers — a normal, broadly-distributed retail SKU rather than a pre-order or crowdfunded item (see the caveat below on the \"New & Pending\" tag)."
   },
   "editorial": [
     {
-      "heading": "Sensors & Hardware — Category Fit Worth Questioning",
+      "heading": "Category Fit",
       "body": "Enabot markets ROLA Mini under its pet-focused \"PetTech\" line, not the elder-care \"FamilyBot\" line, and independent reviews treat it purely as a pet camera; its only elder-care claim is one boilerplate marketing sentence, with no fall detection or medication reminders, raising doubts about its \"Senior Companions\" listing. Hardware includes a self-righting tumbler design, tracked-wheel mobility, and a call-button two-way-audio feature."
     },
     {
       "heading": "Insights",
-      "body": "ROLA Mini is marketed under Enabot's \"Senior Companions\" category, but no independent review — including The AU Review and ToolSmarts.ca — evaluates it as a senior-monitoring device; all treat it strictly as a pet camera. Its \"New & Pending\" listing tag is also inconsistent with a product that has shipped continuously since late 2024."
+      "body": "ROLA Mini is marketed under Enabot's \"Senior Companions\" category, but no independent review — including The AU Review and ToolSmarts.ca — evaluates it as a senior-monitoring device; all treat it strictly as a pet camera."
     }
   ],
   "firmwareCommunity": [

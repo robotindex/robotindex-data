@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "hoverair-x1-family",
-  "slug": "product-hoverair-x1-family.html",
+  "slug": "product-hoverair-x1-family",
   "name": "HOVERAir X1 Family",
   "manufacturer": "Zero Zero Robotics",
   "category": "Personal Drones",
@@ -79,7 +79,7 @@
       "value": "None — the Hover X1 app is free, and HOVERAir states media is stored locally on the drone and downloaded directly to the phone, with \"no cloud storage or access to your media unless you specifically decide to share it.\" No subscription tier for storage or editing was found."
     }
   ],
-  "sourcing": "Specs compiled from HOVERAir's own comparison guide and support articles (hoverair.com, us.hoverair.com, support.hoverair.com), and independent reviews from TechRadar (base X1), Tom's Guide and Maison du Drone (PRO/PROMAX), and Space.com (PROMAX). Flagged as unconfirmed or conflicting above: the base X1's gimbal axis count (official spec vs. one review), whether X1 PRO supports HDR video, exact PRO/PROMAX obstacle-sensor count and placement beyond \"rear-facing,\" the company's total lifetime funding, and founder name spellings. Reviews from The Verge, PCMag, TechCrunch, and DPReview specifically were not located and should not be assumed to exist without direct verification. This entry hasn't yet been cross-linked or synced to the directory listing; that's planned for a later pass.",
+  "sourcing": "Specs compiled from HOVERAir's own comparison guide and support articles (hoverair.com, us.hoverair.com, support.hoverair.com), independent reviews from TechRadar (base X1), Tom's Guide and Maison du Drone (PRO/PROMAX), and Space.com (PROMAX), and coverage of the separate AQUA model's May 28, 2026 global launch and US FCC block (DroneXL, T3, RedSharkNews, Notebookcheck, TechTimes). Flagged as unconfirmed or conflicting above: the base X1's gimbal axis count (official spec vs. one review), whether X1 PRO supports HDR video, exact PRO/PROMAX obstacle-sensor count and placement beyond \"rear-facing,\" the company's total lifetime funding, and founder name spellings. Reviews from The Verge, PCMag, TechCrunch, and DPReview specifically were not located and should not be assumed to exist without direct verification.",
   "manufacturerUrl": "https://hoverair.com/blogs/guide/x1-x1-pro-or-x1-promax-a-complete-guide-to-picking-the-right-hoverair-camera",
   "pricing": {
     "summary": "Current official MSRPs are **$299** (X1), **$499** (X1 PRO), and **$699** (X1 PROMAX), per HOVERAir's own comparison guide. Combo kits bundling a case and extra battery cost more than the standalone body price."
@@ -87,7 +87,7 @@
   "editorial": [
     {
       "heading": "Insights",
-      "body": "HOVERAir markets PRO and PROMAX as adding collision sensing over the sensor-less base X1, but a detailed independent hands-on review found PRO's rear-only ToF sensors \"not very effective in practice\" and unable to reliably avoid branches even at low speed, with PROMAX's added sensor described as better but still offering no 360° protection. Separately, in May 2026 the FCC blocked Zero Zero Robotics' newest product, the HOVERAir AQUA, from equipment authorization as part of an expansion of its \"Covered List\" targeting Chinese-made drones over data-security concerns — that block doesn't apply to the X1/PRO/PROMAX line, which keeps its earlier authorizations, but it signals rising US regulatory scrutiny of this manufacturer."
+      "body": "HOVERAir markets PRO and PROMAX as adding collision sensing over the sensor-less base X1, but a detailed independent hands-on review found PRO's rear-only ToF sensors \"not very effective in practice\" and unable to reliably avoid branches even at low speed, with PROMAX's added sensor described as better but still offering no 360° protection. Separately, Zero Zero Robotics launched a distinct, separate model — the waterproof HOVERAir AQUA — in over 50 countries on May 28, 2026, following a CES 2026 preview. The FCC blocked AQUA specifically from US equipment authorization around the same launch window, as part of an expansion of its \"Covered List\" targeting Chinese-made drones over data-security concerns, so AQUA is not sold in the US; that block doesn't apply to the X1/PRO/PROMAX line covered on this page, which keeps its earlier US authorizations, but it signals rising US regulatory scrutiny of this manufacturer."
     }
   ],
   "firmwareCommunity": [

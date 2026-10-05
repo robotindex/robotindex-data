@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "kuka-kr-series",
+  "slug": "product-kuka-kr-series",
+  "name": "KUKA KR Series",
+  "manufacturer": "KUKA",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "KUKA's **KR family** of six-axis industrial robot arms, from **KUKA** of Augsburg, Germany, owned by China's Midea Group since 2016–2017 (full ownership since November 2022). The line runs from the 4 kg **KR AGILUS** to the 1,300 kg **KR titan**, used for welding, handling, assembly, machine loading, and palletizing in automotive, aerospace, and general manufacturing. Programmed in KRL or the no-code iiQKA.OS. **Industrial equipment sold through integrators, not a consumer product.**",
+  "specs": [
+    {
+      "label": "Series",
+      "value": "7 KR lines",
+      "note": "AGILUS, CYBERTECH nano, CYBERTECH, IONTEC, QUANTEC, FORTEC, titan"
+    },
+    {
+      "label": "Payload",
+      "value": "4–1,300 kg",
+      "note": "AGILUS 4–11; CYBERTECH 8–35; QUANTEC 120–300; titan 750–1,300"
+    },
+    {
+      "label": "Axes",
+      "value": "6",
+      "note": "Articulated arm"
+    },
+    {
+      "label": "Reach (CYBERTECH)",
+      "value": "1.6–2.0 m",
+      "note": "1,612–2,013 mm"
+    },
+    {
+      "label": "Repeatability",
+      "value": "±0.03 mm",
+      "note": "CYBERTECH; ~±0.05 mm across the line (third party)"
+    },
+    {
+      "label": "Protection",
+      "value": "IP65 / IP67",
+      "note": "CYBERTECH wrist; variants for clean room, foundry, food"
+    },
+    {
+      "label": "Controller",
+      "value": "KR C5",
+      "note": "KR C5-2; runs iiQKA.OS"
+    },
+    {
+      "label": "Programming",
+      "value": "KRL / iiQKA.OS",
+      "note": "Proprietary language or no-code interface"
+    },
+    {
+      "label": "Mounting",
+      "value": "Floor, wall, ceiling",
+      "note": "CYBERTECH; varies by series"
+    }
+  ],
+  "sourcing": "Verified against KUKA's industrial-robots overview and KR CYBERTECH page (kuka.com), Wikipedia's KUKA entry, and a Standard Bots comparison article, as of October 2026. Flagged as uncertain: KUKA publishes no pricing, so the $25,000 to $120,000+ range is a third-party estimate; the CYBERTECH payload is 8–22 kg on KUKA's overview page and 8–35 kg on the family page, which reflects newer 25 and 35 kg variants; the plus-or-minus 0.05 mm repeatability is a general third-party figure while the plus-or-minus 0.03 mm is KUKA's own CYBERTECH number; revenue and headcount are Wikipedia's 2025 figures. The supplied image shows an orange KR-style arm with a multi-finger gripper block, but the exact model was not identified, and it is shown as representative of the family. Product image: KUKA. The image already had a white background.",
+  "manufacturerUrl": "https://www.kuka.com/en-us/products/robotics-systems/industrial-robots",
+  "pricing": {
+    "summary": "KUKA publishes **no prices**; quotes come through KUKA and its integrators. A third-party comparison article estimates KUKA industrial robots at about **$25,000 to $120,000+** depending on payload, with entry-level KR AGILUS arms around **$25,000–$35,000**. That is an unverified estimate for the bare arm, and a working cell with controller, tooling, safety, and integration costs substantially more. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "KUKA introduced the Famulus in 1973, billed as the first industrial robot with six electromechanically driven axes, and has been owned by Midea since 2016, when the Chinese appliance maker bought it for about €4.5 billion. In 2025 it employed roughly 14,500 people and reported about €3.9 billion in revenue. This page covers the KR family as a whole; KUKA also sells collaborative arms (LBR iiwa at 7–14 kg and LBR iisy at 3–15 kg), SCARA, and delta robots that are not covered here. Industrial arms sit at the edge of robotindex's consumer, hobbyist, and research scope, in the same corner as Franka Panda and Universal Robots UR5. The Open Source badge does not apply: KUKA's hardware and KRL software are proprietary."
+    }
+  ]
+}

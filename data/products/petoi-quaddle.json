@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "petoi-quaddle",
-  "slug": "product-petoi-quaddle.html",
+  "slug": "product-petoi-quaddle",
   "name": "Petoi Quaddle",
   "manufacturer": "Petoi",
   "category": "Educational & Hobbyist",
   "subcategory": "Mobile Robot Kits",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": true,
     "openSource": false,
@@ -73,12 +73,13 @@
   "editorial": [
     {
       "heading": "Insights",
-      "body": "Quaddle runs on Petoi's open, MIT-licensed [OpenCat framework](https://github.com/PetoiCamp/OpenCat), but at Kickstarter launch its own firmware and hardware files hadn't yet been published — Petoi says it intends to open-source them before shipping, so no Open Source badge applies yet."
+      "body": "Quaddle's ESP32-S3 firmware is built on Petoi's OpenCat lineage — closer to the ESP32/BiBoard-based OpenCatEsp32 than to the original OpenCat repo — but at Kickstarter launch it hasn't been published. Petoi says it intends to open-source the code before the product ships, so no Open Source badge applies yet."
     }
   ],
   "firmwareCommunity": [
     {
-      "buildsModsId": "petoi-quaddle-opencat"
+      "status": "not-listed",
+      "note": "Petoi says Quaddle's ESP32-S3 firmware — an upgraded OpenCat branch — will be open-sourced before delivery. Not currently listed in Builds & Mods."
     }
   ]
 }

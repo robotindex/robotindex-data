@@ -1,0 +1,81 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "franka-panda",
+  "slug": "product-franka-panda",
+  "name": "Franka Panda",
+  "manufacturer": "Munich-based Franka Emika",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "under-review",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A 7-axis, torque-sensing collaborative research arm from Munich-based Franka Emika, launched in 2017 at $10,500 — a price that undercut comparable research manipulators by roughly 3x and made it one of the most widely deployed arms in academic robotics. Every joint carries a torque sensor, enabling compliant, force-sensitive motion via the 1 kHz Franka Control Interface (FCI). **No longer sold:** Franka Emika's 2023 insolvency led to its reorganization as Franka Robotics, which withdrew the Panda in favor of its near-identical successor, the Franka Research 3.",
+  "specs": [
+    {
+      "label": "Degrees of Freedom",
+      "value": "7-axis"
+    },
+    {
+      "label": "Payload",
+      "value": "3 kg"
+    },
+    {
+      "label": "Reach",
+      "value": "855 mm"
+    },
+    {
+      "label": "Repeatability",
+      "value": "±0.1 mm",
+      "note": "ISO 9283 test conditions"
+    },
+    {
+      "label": "Weight",
+      "value": "~17.8 kg",
+      "note": "arm only, excludes control box"
+    },
+    {
+      "label": "Max Speed",
+      "value": "2 m/s",
+      "note": "end-effector"
+    },
+    {
+      "label": "Control",
+      "value": "FCI, 1 kHz",
+      "note": "real-time torque control"
+    },
+    {
+      "label": "Force Sensing",
+      "value": "<0.05 N",
+      "note": "torque sensor in every joint"
+    },
+    {
+      "label": "Safety",
+      "value": "ISO 10218 / ISO TS 15066",
+      "note": "collision detection"
+    }
+  ],
+  "sourcing": "Specs verified against RoboZaps' Franka Emika Panda specifications and status record, AntonRobots' Franka Research 3 review (which explicitly distinguishes the current FR3 from the older \"Franka Robotics Robot\"/FER/Panda), Franka Robotics' own company page (franka.de/company), The Robot Report's September 2023 insolvency coverage, and Quartz's original 2017 launch article, as of September 2026. Original launch price is confirmed at $10,500/€9,900 by Quartz; a later ~$17,000 figure from another source is presented alongside it rather than resolved. Franka's insolvency, the Agile Robots acquisition, and the Panda's formal withdrawal from sale are corroborated across The Robot Report, franka.de, and AntonRobots. libfranka and franka_ros are confirmed Apache-2.0 and maintained under the official frankarobotics GitHub organization. Tagged Under Review and Discontinued because it is a discontinued, no-longer-sold product — not because its specs or software ecosystem are unconfirmed. robotindex does not sell this product.",
+  "manufacturerUrl": "https://franka.de/",
+  "pricing": {
+    "summary": "Launched in 2017 at **$10,500** (€9,900) per Quartz's contemporary coverage — pitched explicitly against competing research arms that \"start around $30,000.\" At least one later source describes list pricing rising to roughly $17,000 by 2018 as the lineup matured; both figures are shown here rather than treated as a single confirmed number. The Panda has since been withdrawn from sale entirely — Franka Robotics' current lineup sells only the successor Franka Research 3 (around $29,000–$30,000 through distributors such as Clearpath Robotics), and any Panda unit available today is secondhand, remaining distributor inventory, or an existing lab installation. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "This catalog's Open Source badge covers only the software layer here: libfranka (the C++ real-time control library) and franka_ros / franka_ros2 (the official ROS/ROS2 integration, with MoveIt2 support) are genuinely Apache-2.0-licensed and maintained on GitHub under the frankarobotics organization. But the arm's own hardware — its joint actuators, control-box electronics, and mechanical design — has no published CAD, schematics, or open firmware. That makes the Panda, like several other assembled arms in this catalog, a closed hardware product with an open software stack layered on top; it does not carry this catalog's Open Source badge. **Franka Emika filed for insolvency on September 1, 2023**, citing irreconcilable shareholder disagreements after investor talks stalled; the company was subsequently acquired by Agile Robots AG and reorganized as Franka Robotics. Franka Robotics has formally withdrawn the Panda from its product line and ended its software support, positioning the visually and mechanically similar Franka Research 3 as the direct successor — current Franka documentation explicitly notes that instructions written for the Panda \"do not apply directly\" to a current FR3, despite the strong family resemblance. Because of its low relative price and torque-sensing hardware, the Panda became something close to a default platform in manipulation research through the late 2010s and early 2020s — a large installed base remains in active use in university and industrial labs even though new units are no longer sold."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Official C++ library for real-time, 1 kHz torque control of Franka research robots (Panda and FR3). Apache-2.0."
+    },
+    {
+      "status": "not-listed",
+      "note": "Official ROS/ROS2 integration for Franka research robots, including MoveIt2 support and URDF models."
+    }
+  ]
+}

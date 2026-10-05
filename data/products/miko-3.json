@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "miko-3",
-  "slug": "product-miko-3.html",
+  "slug": "product-miko-3",
   "name": "Miko 3",
   "manufacturer": "Miko",
   "category": "Companion & Social",
@@ -77,7 +77,7 @@
   },
   "editorial": [
     {
-      "heading": "Sensors & Hardware — Company, AI, and a Privacy Incident Worth Knowing",
+      "heading": "Company, AI, and a Privacy Incident",
       "body": "Miko 3 runs on a cloud backend confirmed by Google to use Gemini models for child-facing responses and hallucination screening. In February 2026, U.S. Senators sent Miko a formal letter after reports found it had left a database of AI-generated child responses publicly accessible online, exposing names, interests, and emotional states. Miko's CEO disputed the \"breach\" framing."
     },
     {

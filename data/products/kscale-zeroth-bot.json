@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "kscale-zeroth-bot",
+  "slug": "product-kscale-zeroth-bot",
+  "name": "K-Scale Zeroth Bot",
+  "manufacturer": "Github",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "under-review",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A small **open-source, 3D-printable humanoid** from **K-Scale Labs**, announced in November 2024 as the **Zeroth-01** after a hackathon project and later sold for pre-order as the **Z-Bot** at **$999**. It has **18 motorised joints**, a **1080p camera**, a dual-core **RISC-V** board, an LED face screen, a microphone and speaker, and a Python SDK with reinforcement-learning walking in simulation. K-Scale Labs **shut down in November 2025**; the designs and code stay public.",
+  "specs": [
+    {
+      "label": "Joints",
+      "value": "18",
+      "note": "5 per leg, 4 per arm"
+    },
+    {
+      "label": "Processor",
+      "value": "Dual-core RISC-V",
+      "note": "On-board"
+    },
+    {
+      "label": "Camera",
+      "value": "1080p",
+      "note": "Wide field of view"
+    },
+    {
+      "label": "Other Sensors",
+      "value": "IMU + mic",
+      "note": "6-axis IMU, microphone, speaker"
+    },
+    {
+      "label": "Face",
+      "value": "LED screen",
+      "note": "Animated eyes"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Wi-Fi",
+      "note": "Integrated"
+    },
+    {
+      "label": "Control",
+      "value": "Python / voice",
+      "note": "PyKOS; voice and gesture teaching"
+    },
+    {
+      "label": "Simulation",
+      "value": "K-Sim",
+      "note": "MuJoCo, IsaacSim, Genesis"
+    },
+    {
+      "label": "Build Cost",
+      "value": "~$350",
+      "note": "Bill of materials, project repository"
+    },
+    {
+      "label": "Pre-order Price",
+      "value": "$999",
+      "note": "Z-Bot; orders cancelled"
+    },
+    {
+      "label": "Licence",
+      "value": "MIT + CERN-OHL",
+      "note": "Reported; see notes"
+    },
+    {
+      "label": "Status",
+      "value": "Company closed",
+      "note": "K-Scale, November 2025"
+    }
+  ],
+  "sourcing": "Verified against the zeroth-robotics GitHub repositories (zeroth-bot and the kscalelabs components), K-Scale Labs' launch post on X, Circuit Digest and Robotic Gizmos write-ups, Interesting Engineering's Z-Bot report, and Mike Kalil's articles on K-Scale's shutdown, as of October 2026. Flagged as uncertain: height, weight and battery capacity were not found; the 18-joint count comes from Circuit Digest (5 per leg, 4 per arm); $350 is a bill-of-materials figure and $999 a pre-order price, so no current price exists; the licence is MIT in the repository while one report says hardware CERN-OHL-S-2.0 and software MIT and also calls them non-commercial, which could not be reconciled; the Discontinued status rests on K-Scale's shutdown, not on a product notice; and the photo is a promotional render with its orange studio background removed.",
+  "manufacturerUrl": "https://github.com/zeroth-robotics/zeroth-bot",
+  "pricing": {
+    "summary": "There is **no current price** because K-Scale Labs no longer sells the robot. The project repository gives a build cost starting around **$350** for the parts, K-Scale took pre-orders for the Z-Bot at **$999**, and a Kickstarter listing described it as under $1,000. K-Scale cancelled its pre-orders and refunded deposits when it closed. Anyone building one prints the parts and sources the actuators and electronics themselves. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "The Zeroth Bot began as a hackathon project at **K-Scale Labs** in 2024 and was announced on 12 November 2024 as the **Zeroth-01**, a roughly $350 DIY humanoid with reinforcement-learning walking, vision, audio and torque-controlled joints. K-Scale later offered it as the **Z-Bot** at $999 alongside its larger **K-Bot** ($8,999), then shut down in **November 2025** after failing to find a lead investor, cancelling pre-orders and refunding deposits. Its founder said the hardware and software for the K-Bot and Zeroth Bot were released publicly, hardware under CERN-OHL-S-2.0 and software under MIT, while the GitHub repository lists an MIT licence and calls the project fully open source; because the sources disagree on whether a non-commercial licence applies, this page carries the **Open Source badge** on the repository's stated licence and flags the discrepancy. This is a different robot from the [Zeroth M1](/product-zeroth-m1), a closed home companion."
+    }
+  ]
+}

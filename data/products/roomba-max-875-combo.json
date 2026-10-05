@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "roomba-max-875-combo",
-  "slug": "product-roomba-max-875-combo.html",
+  "slug": "product-roomba-max-875-combo",
   "name": "Roomba Max 875 Combo",
   "manufacturer": "iRobot",
   "category": "Cleaning & Home Care",
   "subcategory": "Floors",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,

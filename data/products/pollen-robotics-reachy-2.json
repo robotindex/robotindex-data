@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "pollen-robotics-reachy-2",
+  "slug": "product-pollen-robotics-reachy-2",
+  "name": "Pollen Robotics Reachy 2",
+  "manufacturer": "Orbita parallel actuators",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Wheeled / Mobile Base",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A wheeled, dual-arm humanoid research robot from **Pollen Robotics** of Bordeaux, France, acquired by Hugging Face in April 2025. Two **7-DOF arms** built from Orbita parallel actuators, a **3-DOF neck** with motorized antennas, parallel grippers, and a manually height-adjustable torso sit on an optional **omnidirectional lidar base**. It is programmed through ROS 2 or a Python SDK, supports VR teleoperation, and integrates with Hugging Face's LeRobot. Aimed at labs doing embodied-AI and human-robot-interaction research, not at home users.",
+  "specs": [
+    {
+      "label": "Degrees of Freedom",
+      "value": "17",
+      "note": "2 × 7-DOF arms + 3-DOF neck; grippers and antennas extra"
+    },
+    {
+      "label": "Arms",
+      "value": "2 × 7 DOF",
+      "note": "Orbita 2D (shoulder, elbow) + Orbita 3D (wrist)"
+    },
+    {
+      "label": "Payload",
+      "value": "~3 kg",
+      "note": "Per arm"
+    },
+    {
+      "label": "Height",
+      "value": "136–166 cm",
+      "note": "Manually adjustable"
+    },
+    {
+      "label": "Weight",
+      "value": "~50 kg",
+      "note": "Full robot; base ~25 kg"
+    },
+    {
+      "label": "Compute",
+      "value": "Bedrock V3000",
+      "note": "SolidRun fanless CPU PC; AI runs on your own computer"
+    },
+    {
+      "label": "Sensing",
+      "value": "Stereo + depth",
+      "note": "Head stereo cameras, torso RGB-D, mics, lidar on base"
+    },
+    {
+      "label": "Battery",
+      "value": "8–10 h",
+      "note": "24 V base battery; runtime differs by source"
+    },
+    {
+      "label": "Chassis",
+      "value": "Omni base",
+      "note": "Three omniwheels with lidar (optional)"
+    }
+  ],
+  "sourcing": "Verified against Pollen Robotics' Reachy 2 product page, its documentation specs page (docs.pollen-robotics.com), its GitHub repositories (reachy2_core, reachy2-sdk), the Hugging Face acquisition post, and third-party spec sheets (RoboZaps, Anton Robots, Maxon, Robots Guide, DeepLearning.AI), as of October 2026. Flagged as uncertain: battery runtime is \"up to 8 hours\" on two spec sheets and \"around 10 hours\" in the Hugging Face-era press coverage; DOF is 17 on one spec sheet and 18 on another, which appears to count a base axis, so 17 is used; gripper opening of about 100 mm and force of 10 N nominal / 50 N peak come from a single third-party review and are not shown above. The Open Source badge rests on Pollen's own page stating open hardware under Apache 2.0, which was not independently confirmed in a CAD repository; one third-party aggregator describes hardware open-sourcing as planned rather than done, so treat the hardware claim as manufacturer-stated. The image shows the dual-arm mobile-base configuration; the mobile base and arm count are optional. Product image: Pollen Robotics. The floating third-party logo and watermark on the supplied image were removed; the Pollen logos on the robot itself were left in place.",
+  "manufacturerUrl": "https://pollen-robotics.com/reachy-2/",
+  "pricing": {
+    "summary": "Hugging Face's April 2025 announcement lists Reachy 2 at **$70,000**, ordered by emailing Pollen's sales address. At the October 2024 launch, coverage reported **$75,000** for the full robot with mobile base and **$38,000** for a stationary one-arm model; those figures are secondary and may be out of date. Pollen sells modular configurations (one arm or two, with or without the mobile base), so the final price depends on the setup, and current quotes should be requested directly. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Reachy 2 launched in October 2024 as the successor to the original Reachy (2019/2021/2023 generations). It is built around Pollen's in-house Orbita actuators, which place two or three motors in a parallel mechanism so a single joint moves on 2 or 3 axes. Early adopters include Cornell University and Carnegie Mellon University. Since the Hugging Face acquisition, Reachy 2 has been supported in LeRobot for data recording, training, and evaluation. The Open Source badge is applied because Pollen describes both the hardware design and the software as open: the ROS 2 stack, Python SDK, and core repositories are Apache 2.0 on GitHub. The robot is a research-grade, $70,000-class product, so its place in this directory is the high end of the wheeled humanoid category; compare it with Galaxea R1 Pro, which has a similar price and layout but closed hardware."
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "sphero-bolt-plus",
-  "slug": "product-sphero-bolt-plus.html",
+  "slug": "product-sphero-bolt-plus",
   "name": "Sphero BOLT+",
   "manufacturer": "Sphero",
   "category": "Educational & Hobbyist",

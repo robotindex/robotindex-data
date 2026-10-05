@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "whisker-litter-robot-4",
-  "slug": "product-whisker-litter-robot-4.html",
+  "slug": "product-whisker-litter-robot-4",
   "name": "Whisker Litter-Robot 4",
   "manufacturer": "Whisker",
   "category": "Cleaning & Home Care",
   "subcategory": "Other",
-  "tier": "featured",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -70,10 +70,10 @@
       "note": "$7.99/mo or $79.90/yr; core app features (self-cleaning, weight-ID, alerts) are free"
     }
   ],
-  "sourcing": "Specs and pricing sourced from Whisker's official product page (whisker.com/litter-robot-4) and its Litter-Robot 4 vs. 5 comparison post, cross-checked against PetSmart and Best Buy retail listings, as of September 2026. The Litter-Robot 4 remains actively sold alongside the newer Litter-Robot 5 and 5 Pro, not discontinued. robotindex does not sell this product.",
+  "sourcing": "Specs and pricing sourced from Whisker's official product page (whisker.com/litter-robot-4) and its Litter-Robot 4 vs. 5 comparison post, cross-checked against PetSmart and Best Buy retail listings, and Whisker's October 2025 press release announcing the EVO/5/5 Pro line (pre-orders October 21, 2025; shipping began November 3, 2025), as of September 2026. The Litter-Robot 4 remains actively sold alongside the newer EVO, 5, and 5 Pro models, not discontinued. Moved from Featured to Under Review because it's no longer Whisker's top model in the line — the 5 and 5 Pro have taken that position. robotindex does not sell this product.",
   "manufacturerUrl": "https://www.whisker.com/litter-robot-4",
   "pricing": {
-    "summary": "$699 MSRP, per whisker.com — matched at the same price on PetSmart and Best Buy. Whisker also sells the newer Litter-Robot 5 ($799) and Litter-Robot 5 Pro ($899) alongside it; the 4 has not been discontinued."
+    "summary": "$699 MSRP, per whisker.com — matched at the same price on PetSmart and Best Buy. Whisker launched a full next-generation line in October–November 2025 that now sells alongside the 4: Litter-Robot EVO ($599, a simplified/entry model), Litter-Robot 5 ($799), and Litter-Robot 5 Pro ($899, adds dual AI cameras with facial recognition and WasteID waste-type detection). The 4 remains Whisker's mid-tier holdover rather than a discontinued model."
   },
   "editorial": [
     {
@@ -82,7 +82,7 @@
     },
     {
       "heading": "Insights",
-      "body": "The Litter-Robot 4's SmartScale system weighs each cat at every visit, letting the companion app track and distinguish up to four individual cats sharing one unit by weight alone — a specific multi-cat identification capability most single-sensor automatic litter boxes lack. Whisker's own spec sheet also states the unit requires 2.4GHz Wi-Fi specifically, since the 5GHz band isn't supported."
+      "body": "The Litter-Robot 4's SmartScale system weighs each cat at every visit, letting the companion app track and distinguish up to four individual cats sharing one unit by weight alone — a specific multi-cat identification capability most single-sensor automatic litter boxes lack. Whisker's own spec sheet also states the unit requires 2.4GHz Wi-Fi specifically, since the 5GHz band isn't supported. With the EVO/5/5 Pro line now the current lineup, the 4 sits as the known-quantity middle option — one reviewer who'd run a 4 for three years used it as the baseline when testing the 5, noting it may be worth sticking with the 4 until the 5's newer features (like dual-camera WasteID) are fully proven out."
     }
   ],
   "firmwareCommunity": [

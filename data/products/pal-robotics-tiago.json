@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "pal-robotics-tiago",
+  "slug": "product-pal-robotics-tiago",
+  "name": "PAL Robotics TIAGo",
+  "manufacturer": "Pal Robotics",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Wheeled / Mobile Base",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A configurable **mobile manipulator** from **PAL Robotics** of Barcelona, built for research and assistance work and introduced in **2015**. A **54 cm round base** carries a torso that lifts **35 cm**, a head with an **RGB-D camera**, and no arm, one **7-DoF arm** or two (**TIAGo++**), each lifting about **3 kg**. The base can be differential or omnidirectional, it runs **ROS** on an Intel i5 or i7, and PAL sells it by quote rather than at a listed price.",
+  "specs": [
+    {
+      "label": "Price",
+      "value": "On request",
+      "note": "TIAGo++ ~€90,000 at 2019 launch"
+    },
+    {
+      "label": "Height",
+      "value": "110–145 cm",
+      "note": "Torso lift adjusts"
+    },
+    {
+      "label": "Base",
+      "value": "Ø 54 cm",
+      "note": "Differential or omnidirectional"
+    },
+    {
+      "label": "Torso Lift",
+      "value": "35 cm",
+      "note": "Stroke"
+    },
+    {
+      "label": "Arm",
+      "value": "7 DoF",
+      "note": "87 cm reach; 92 cm on TIAGo++"
+    },
+    {
+      "label": "Arm Payload",
+      "value": "3 kg",
+      "note": "Without end-effector"
+    },
+    {
+      "label": "Arms",
+      "value": "0, 1 or 2",
+      "note": "TIAGo++ is dual-arm"
+    },
+    {
+      "label": "Battery",
+      "value": "36 V 20 Ah",
+      "note": "4–5 h; 8–10 h with two"
+    },
+    {
+      "label": "Compute",
+      "value": "i5 or i7",
+      "note": "8 or 16 GB RAM"
+    },
+    {
+      "label": "Software",
+      "value": "ROS",
+      "note": "Ubuntu LTS, real-time kernel"
+    },
+    {
+      "label": "Head",
+      "value": "RGB-D",
+      "note": "2-DoF pan-tilt"
+    },
+    {
+      "label": "Introduced",
+      "value": "2015",
+      "note": "TIAGo++ in 2019, Pro in 2023"
+    }
+  ],
+  "sourcing": "Verified against PAL Robotics' TIAGo product page (pal-robotics.com), its TIAGo datasheet and PAL OS 25.01 hardware documentation, its company timeline, The Robot Report's TIAGo++ launch article, and a September 2026 report on the TIAGo Pro Arm, as of October 2026. Flagged as uncertain: PAL publishes no price and the €90,000 figure is a 2019 launch estimate for the TIAGo++; weight is 70 kg on the datasheet but 60 kg for the Lite in the documentation, and top speed is 1.5 m/s on the datasheet but 1 m/s in the documentation; the documentation also summarises the arm as 4 DoF with a 3-DoF wrist while the datasheet and product page say 7 DoF, so the 7-DoF figure is used; arm reach is 87 cm for TIAGo and 92 cm for TIAGo++; the photo shows a dual-arm TIAGo++ and the specs cover the family; and TIAGo Pro is a separate, newer line not described in detail here.",
+  "manufacturerUrl": "https://pal-robotics.com/robot/tiago/",
+  "pricing": {
+    "summary": "PAL Robotics **does not publish a price** for TIAGo and sells each robot by quote, since the base, arms, grippers, computer and software packages are all configurable. The only figure found is for the dual-arm **TIAGo++**, which The Robot Report put at roughly **€90,000** (about $100,000) at its June 2019 launch, with the final cost varying by configuration. Treat that as a historical reference, not a current price. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "TIAGo is one of the most widely used research mobile manipulators in Europe: PAL says it has been in service for more than nine years, in 27 countries and about 40 collaborative research projects. It launched in 2015, the dual-arm **TIAGo++** followed in 2019, and in 2023 PAL added **TIAGo Base** and the professional **TIAGo Pro**; in September 2026 it introduced a standalone **TIAGo Pro Arm** for manipulation and physical-AI research. The family is built on **ROS** with open simulation models and tutorials, but the robot itself is a commercial, quote-only product, so this page does not carry the Open Source badge. The robot in the photo is a dual-arm TIAGo++ with two parallel grippers, each holding a cup."
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "sunday-robotics-memo",
-  "slug": "product-sunday-robotics-memo.html",
+  "slug": "product-sunday-robotics-memo",
   "name": "Sunday Robotics Memo",
   "manufacturer": "Sunday Robotics",
   "category": "Humanoid & General Purpose",
   "subcategory": "Wheeled / Mobile Base",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": true,
     "openSource": false,

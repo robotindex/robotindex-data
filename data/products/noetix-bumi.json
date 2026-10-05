@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "noetix-bumi",
-  "slug": "product-noetix-bumi.html",
+  "slug": "product-noetix-bumi",
   "name": "Noetix Bumi",
   "manufacturer": "Chinese startup Noetix Robotics",
   "category": "Humanoid & General Purpose",
   "subcategory": "Two Legs",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -45,7 +45,7 @@
       "note": "per manufacturer demos"
     }
   ],
-  "sourcing": "Specs sourced from TechNode's and Interesting Engineering's coverage of Noetix's October 2025 announcement, as of September 2026. robotindex does not sell this product — pricing and availability are per Noetix's own preorder terms and third-party retailers, and may vary by region.",
+  "sourcing": "Specs sourced from TechNode's and Interesting Engineering's coverage of Noetix's October 2025 announcement, plus Caixin Global, Gasgoo, and The Standard's coverage of Noetix's March 2026 Series B raise, as of September 2026. robotindex does not sell this product — pricing and availability are per Noetix's own preorder terms and third-party retailers, and may vary by region.",
   "manufacturerUrl": "https://www.noetixrobotics.com",
   "pricing": {
     "summary": "**¥9,998 (~$1,370)** at announcement — among the cheapest full bipedal humanoids on the market. Preorders opened around China's Nov–Dec 2025 shopping festivals; by 2026 it's listed as available through JD.com and a handful of international resellers, though robotindex hasn't independently confirmed direct-to-consumer shipping outside China."
@@ -57,7 +57,7 @@
     },
     {
       "heading": "Insights",
-      "body": "Announced at ¥9,998 (~$1,370), Bumi is among the cheapest full bipedal humanoids to reach market, per TechNode and Interesting Engineering's coverage of its October 2025 announcement — a concrete price point that meaningfully undercuts most category peers. Noetix has disclosed no official DOF count, camera specs, or compute hardware to contextualize that price."
+      "body": "Announced at ¥9,998 (~$1,370), Bumi is among the cheapest full bipedal humanoids to reach market, per TechNode and Interesting Engineering's coverage of its October 2025 announcement — a concrete price point that meaningfully undercuts most category peers. Noetix has disclosed no official DOF count, camera specs, or compute hardware to contextualize that price. Noetix Robotics itself is well capitalized: on March 2, 2026 it closed a Series B round of nearly ¥1 billion (~$146M) — its ninth financing round overall — led by Chendao Capital (affiliated with battery maker CATL), with CAS Investment Management and Unity Ventures also participating. That's company-level funding rather than money tied to Bumi specifically, but it's a relevant signal for a budget product line's staying power."
     }
   ],
   "firmwareCommunity": [

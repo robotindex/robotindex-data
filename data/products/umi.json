@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "umi",
+  "slug": "product-umi",
+  "name": "UMI (Universal Manipulation Interface)",
+  "manufacturer": "Lumos",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A handheld parallel-jaw gripper with a wrist-mounted camera, from a **Stanford, Columbia and Toyota Research Institute** team (RSS 2024). A person records manipulation demonstrations anywhere, with no robot present, and the captured motion trains policies that transfer across robot arms. The open design costs about **$800** to build, and commercial UMI-style systems from Lumos, Trossen, AgileX and others now sell the same idea ready-made. Not a robot itself: it is the data-collection and teaching layer for one.",
+  "specs": [
+    {
+      "label": "Type",
+      "value": "Handheld gripper",
+      "note": "Parallel jaw, wrist camera, no robot needed to record"
+    },
+    {
+      "label": "Original Build Cost",
+      "value": "~$800",
+      "note": "3D-printed gripper plus GoPro; vendor-blog figure"
+    },
+    {
+      "label": "Original Camera",
+      "value": "GoPro",
+      "note": "~155° fisheye lens, side mirrors for depth cues"
+    },
+    {
+      "label": "Tracking",
+      "value": "Visual-inertial SLAM",
+      "note": "GoPro IMU in the original design"
+    },
+    {
+      "label": "Supported Arms",
+      "value": "UR5/UR5e, Franka",
+      "note": "ARX X5 via related repos"
+    },
+    {
+      "label": "Lumos FastUMI Pro",
+      "value": "88 mm stroke",
+      "note": "2 kg max grip, 635–780 g, 200 Hz output"
+    },
+    {
+      "label": "Lumos Tracking",
+      "value": "0.1% drift",
+      "note": "Vision-only SLAM; ~1 mm with optional VIVE Tracker"
+    },
+    {
+      "label": "Software",
+      "value": "MIT-licensed",
+      "note": "SLAM pipeline, diffusion-policy training and deployment code"
+    }
+  ],
+  "sourcing": "Verified against the UMI project site and arXiv paper (2402.10329), the real-stanford GitHub repository (MIT license), Lumos Robotics' FastUMI Pro and Go product pages, Trossen Robotics' description of its TRumi system, the Robotics Center of Silicon Valley's UMI listing, and an AgileX explainer, as of October 2026. Flagged as uncertain: the roughly $800 build cost is a vendor-blog figure, not stated on the project site; the $1,250 price is one reseller's UMI-compatible product, not an official UMI price; the repository contains code and a hardware guide link but no CAD files, so the hardware's openness depends on the external guide; the image is a Lumos-branded commercial unit, and the exact FastUMI model pictured was not confirmed. Tagged New as a newly added listing and Open Source for the original design only. robotindex does not sell this product.",
+  "manufacturerUrl": "https://umi-gripper.github.io/",
+  "pricing": {
+    "summary": "Building the original Stanford design costs about **$800** by one vendor's estimate, since the gripper is 3D-printed around a GoPro. Ready-made options run higher: the Robotics Center of Silicon Valley lists a **UMI-compatible gripper for $1,250** (gripper, camera, mounting hardware and calibration board). Lumos Robotics (FastUMI Pro, plus the FastUMI Go backpack compute unit), Trossen Robotics (TRumi) and AgileX (Pika Pro) publish no prices and route buyers to sales. Treat every figure here as an estimate rather than an official price. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "UMI's contribution is the interface rather than a robot: a hand-held gripper, a fisheye wrist camera and inside-out tracking let people collect bimanual, dynamic and long-horizon demonstrations in the field, and the paper reports zero-shot generalization to new environments and objects with policies that run on different arms. The Open Source badge applies to the original design. The GitHub repository is MIT-licensed and covers the SLAM pipeline, diffusion-policy training and real-world deployment code, while the hardware is documented in a published guide rather than as CAD files in the repository. The commercial products are separate: Lumos's FastUMI Pro adds a ToF depth camera, four SLAM cameras and an optional VIVE Tracker, and a companion FastUMI Go unit supplies compute in a backpack, but these are sold as closed products. Vendors also point to known limits: setups built by hand suffer calibration effort and sensor drift, and moving a policy to a new arm still needs kinematic feasibility filtering and latency matching. This listing is unrelated to the Ortomi Umi companion robot elsewhere in this catalog."
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "figure-03",
-  "slug": "product-figure-03.html",
+  "slug": "product-figure-03",
   "name": "Figure 03",
   "manufacturer": "Figure AI",
   "category": "Humanoid & General Purpose",
   "subcategory": "Two Legs",
-  "tier": "featured",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -55,10 +55,10 @@
       "note": "inductive fast-charge, active cooling"
     }
   ],
-  "sourcing": "Specs sourced from Figure AI's own product and announcement pages (figure.ai/figure, figure.ai/news/introducing-figure-03, figure.ai/news/f-03-battery-development, figure.ai/news/f-03-at-bmw), cross-checked against Wikipedia and TechRadar as of September 2026. Figure's own page lists height as 5'8\", while some press coverage cites 5'6\" — both are noted above. Onboard compute/chip is not publicly disclosed by Figure. robotindex does not sell this product.",
+  "sourcing": "Moved from Featured to Under Review because there's no public order path — it's a real, well-documented product, just not yet buyable. Specs sourced from Figure AI's own product and announcement pages (figure.ai/figure, figure.ai/news/introducing-figure-03, figure.ai/news/f-03-battery-development, figure.ai/news/f-03-at-bmw), cross-checked against Wikipedia and TechRadar as of September 2026. Figure's own page lists height as 5'8\", while some press coverage cites 5'6\" — both are noted above. Onboard compute/chip is not publicly disclosed by Figure. robotindex does not sell this product.",
   "manufacturerUrl": "https://www.figure.ai/figure",
   "pricing": {
-    "summary": "Figure 03 has no public price and is **not sold to consumers** — it's deployed only through enterprise/industrial agreements such as BMW's. CEO Brett Adcock has floated a rough **~$600/month** home-leasing concept for late 2026, but Figure has given no confirmed consumer price or delivery timeline."
+    "summary": "Figure 03 has no public price and is **not sold to consumers** — there is no public order path at all. It's deployed only through selected commercial relationships such as BMW's. CEO Brett Adcock has floated a rough **~$600/month** home-leasing concept for late 2026, but Figure has given no confirmed consumer price or delivery timeline; any home use so far has been limited alpha/demonstration testing on Figure's own end, not a formal consumer beta program someone could sign up for."
   },
   "editorial": [
     {

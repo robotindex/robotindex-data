@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "rethink-robotics-sawyer",
+  "slug": "product-rethink-robotics-sawyer",
+  "name": "Rethink Robotics Sawyer",
+  "manufacturer": "Rethinkrobotics",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "under-review",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A seven-axis collaborative arm from **Rethink Robotics**, introduced in **2015** as the smaller, more precise companion to the two-armed Baxter. Sawyer carries **4 kg** with **1,260 mm** of reach, has an animated-face display, an embedded wrist camera, and a quick-change gripper, and is taught by physically guiding the arm through a task. Rethink shut down in **October 2018**, HAHN Group bought its assets, and a refreshed **BLACK Edition** followed in 2019. **Listed as discontinued.**",
+  "specs": [
+    {
+      "label": "Degrees of Freedom",
+      "value": "7",
+      "note": "Series-elastic joints on the original model"
+    },
+    {
+      "label": "Payload",
+      "value": "4 kg",
+      "note": "Maximum"
+    },
+    {
+      "label": "Reach",
+      "value": "1,260 mm",
+      "note": "Maximum"
+    },
+    {
+      "label": "Accuracy",
+      "value": "±0.1 mm",
+      "note": "Task accuracy per Rethink"
+    },
+    {
+      "label": "Weight",
+      "value": "~19 kg",
+      "note": "Third-party site"
+    },
+    {
+      "label": "Tool Speed",
+      "value": "1–1.5 m/s",
+      "note": "1 m/s original; 1.5 m/s Black Edition"
+    },
+    {
+      "label": "Software",
+      "value": "Intera",
+      "note": "Train by demonstration; ROS compatible"
+    },
+    {
+      "label": "Sensing",
+      "value": "Force + camera",
+      "note": "Joint force sensing and a Cognex wrist camera"
+    },
+    {
+      "label": "Safety",
+      "value": "ISO 10218-1",
+      "note": "PLd Category 3"
+    }
+  ],
+  "sourcing": "Verified against Rethink Robotics' Sawyer page (rethinkrobotics.com/sawyer), Wikipedia's Rethink Robotics entry, The Robot Report's coverage of the Sawyer BLACK Edition, and Robots Guide's spec entry, as of October 2026. Flagged as uncertain: the Discontinued status could not be confirmed, since Rethink's own page describes Sawyer as an active, globally shipping product; the $34,900 price and 19 kg weight come from one third-party site; the 1 m/s original tool speed is implied by the Black Edition's 'up from 1 m/s' wording; the 2024 relaunch is from Wikipedia only. The image shows the original red Sawyer, not the Black Edition. Product image: Rethink Robotics. The image already had a white background; a stray mark in one corner was removed.",
+  "manufacturerUrl": "https://www.rethinkrobotics.com/sawyer",
+  "pricing": {
+    "summary": "Rethink lists no public price and directs buyers to configure a cobot and request a quote. Robots Guide gives **$34,900** as the reference price, a single third-party figure. Because the original red Sawyer is listed here as discontinued, remaining units are likely second-hand or refurbished. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Rethink was founded in 2008 by Rodney Brooks, who also co-founded iRobot, and Ann Whittaker, and released the Baxter in 2012 before Sawyer in 2015. The company ceased operations in October 2018, and HAHN Group acquired its patents, trademarks, and Intera software; a BLACK Edition with reworked actuators for better precision, a faster 1.5 m/s tool speed, and quieter operation was announced in October 2019 under a new CEO. Wikipedia reports that Rethink Robotics GmbH shut down in August 2024 and that the brand reappeared in September 2024 with new cobot and mobile-robot products. Rethink's website still describes Sawyer as shipping, so this page's Discontinued status reflects the site editor's designation for the original model, not a notice from the company. Sawyer's use of series-elastic actuators gave it safe, compliant motion but limited precision, which the Black Edition was meant to address. The Open Source badge does not apply: Sawyer is proprietary, though it works with ROS."
+    }
+  ]
+}

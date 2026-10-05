@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "little-live-pets-my-walking-penguin",
-  "slug": "product-little-live-pets-my-walking-penguin.html",
+  "slug": "product-little-live-pets-my-walking-penguin",
   "name": "Little Live Pets My Walking Penguin",
   "manufacturer": "Moose Toys",
   "category": "Pets & Toys",
@@ -60,7 +60,7 @@
       "note": "standalone toy, no app or connectivity of any kind"
     }
   ],
-  "sourcing": "Verified against Moose Toys' own product and recall pages, Moose Toys' Little Live Pets brand page and the separate littlelivepetsbrand.com microsite, Wikipedia (Moose Toys, Bindeez), retailer listings (Amazon, Walmart, John Lewis, Argos, ToyWiz), the UK Toy Retailers Association's official DreamToys 2024 listing, a RocknRollerBaby parenting-blog review, CPSC's 2017 recall notice, and toy-trade coverage (The Toy Universe, The Toy Book, The Toy Coach). Moose Toys' founding story, the brand's exact launch year, current US retail price, release date, product dimensions, the internal walking mechanism, and Mama Surprise's brand affiliation are all inconsistently reported or single-sourced and are presented as open items rather than resolved. Cited review ratings come from an automated summary of a retailer listing, not a direct read of the underlying reviews. This is the first item cataloged in the new Toys & Characters subcategory, so related items above are drawn from the broader Pets & Toys category rather than direct subcategory siblings.",
+  "sourcing": "Verified against Moose Toys' own product and recall pages, Moose Toys' Little Live Pets brand page and the separate littlelivepetsbrand.com microsite, Wikipedia (Moose Toys, Bindeez), retailer listings (Amazon, Walmart, John Lewis, Argos, ToyWiz), the UK Toy Retailers Association's official DreamToys 2024 listing, a RocknRollerBaby parenting-blog review, CPSC's 2017 recall notice, and toy-trade coverage (The Toy Universe, The Toy Book, The Toy Coach). This entry's release date is now resolved as 2024, based on retailer-listing timestamps and its DreamToys 2024 inclusion — earlier drafts had left it as an open item, which was a mistake; note also that the CPSC's 2017 recall notice cited above concerns a different, earlier Little Live Pets product, not this Walking Penguin SKU. Moose Toys' founding story, the brand's exact launch year, current US retail price, product dimensions, the internal walking mechanism, and Mama Surprise's brand affiliation remain inconsistently reported or single-sourced and are presented as open items rather than resolved. Cited review ratings come from an automated summary of a retailer listing, not a direct read of the underlying reviews. This is the first item cataloged in the new Toys & Characters subcategory, so related items above are drawn from the broader Pets & Toys category rather than direct subcategory siblings.",
   "manufacturerUrl": "https://www.moosetoys.com/products/little-live-pets-my-pet-penguin",
   "pricing": {
     "summary": "Pricing is inconsistent across retailers: US street prices observed range from about **$29.99 to $34.99**, while the official UK RRP is **£24.99** (independently matched by a UK parenting-blog review). A $19.99 figure appearing on one automated read of Moose Toys' own US product page doesn't match any other US source and is likely an extraction error rather than the real US MSRP."
@@ -68,7 +68,7 @@
   "editorial": [
     {
       "heading": "Insights",
-      "body": "Waddles earned a genuine, independently verifiable honor: a spot on the UK Toy Retailers Association's official DreamToys 2024 Top 20 list. Beyond that, no durability, shedding, or reliability complaints turned up in the sources reviewed, though that reads as thin coverage for a lower-profile SKU rather than a confirmed clean track record."
+      "body": "Waddles is a 2024 release, not an older product — it debuted alongside its DreamToys 2024 Top 20 nod (a genuine, independently verifiable honor from the UK Toy Retailers Association) and appears on US and UK retailer listings only from 2024 onward. Beyond that, no durability, shedding, or reliability complaints turned up in the sources reviewed, though that reads as thin coverage for a lower-profile SKU rather than a confirmed clean track record."
     }
   ],
   "firmwareCommunity": [

@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "xiaomi-cyberdog2",
-  "slug": "product-xiaomi-cyberdog2.html",
+  "slug": "product-xiaomi-cyberdog2",
   "name": "Xiaomi CyberDog 2",
   "manufacturer": "Xiaomi",
   "category": "Humanoid & General Purpose",
   "subcategory": "Four Legs",
-  "tier": "featured",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": true,
@@ -54,7 +54,7 @@
       "note": "~5.8 km/h"
     }
   ],
-  "sourcing": "Specs sourced from IEEE Spectrum's Robots Guide, TechNode's coverage of the August 2023 China launch, a TechInsights hardware teardown, TechCrunch's MWC 2024 report, and Xiaomi's own cyberdog_ros2 GitHub repo, as of September 2026. \"Open Source\" here refers specifically to the published ROS 2 SDK (Apache 2.0) — it is a partial release, not fully open hardware or firmware, and some software modules remain closed-source. Battery life (~1.5 hr) is single-sourced. No verified official international retail price exists; the ~$3,000 figure some outlets cite reflects reseller markup, not an Xiaomi list price. robotindex does not sell this product.",
+  "sourcing": "",
   "manufacturerUrl": "https://github.com/MiRoboticsLab/cyberdog_ros2",
   "pricing": {
     "summary": "Launched in China at **¥12,999 (~$1,780–1,800)** in August 2023. Xiaomi has not opened an official international sales channel — a **~$3,000** price reported at MWC 2024 reflects import/reseller markup rather than an official global retail price. robotindex could not verify a live official price for buyers outside China."
@@ -66,7 +66,7 @@
     },
     {
       "heading": "Insights",
-      "body": "CyberDog 2's \"open source\" branding refers specifically to Xiaomi's published ROS 2 SDK (Apache 2.0) — a partial release, not open hardware or firmware, with modules like Xiaoai voice-assistant integration shipping closed-source and disabled by default. No verified official international retail price exists either."
+      "body": "CyberDog 2's \"open source\" branding refers specifically to Xiaomi's published ROS 2 SDK (Apache 2.0) — a partial release, not open hardware or firmware, with modules like Xiaoai voice-assistant integration shipping closed-source and disabled by default. No verified official international retail price exists either. The most recent international sighting found is a July 2025 first-time Brazil showcase at the Eletrolar Show — over a year old as of this writing — with no newer product news surfacing since; treat this listing as increasingly stale pending confirmation of any 2026 activity."
     }
   ],
   "firmwareCommunity": [

@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "looi",
-  "slug": "product-looi.html",
+  "slug": "product-looi",
   "name": "LOOI",
   "manufacturer": "LOOI",
   "category": "Pets & Toys",

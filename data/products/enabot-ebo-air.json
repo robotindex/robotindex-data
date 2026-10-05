@@ -1,8 +1,8 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "enabot-ebo-air",
-  "slug": "product-enabot-ebo-air.html",
-  "name": "Enabot Ebo Air",
+  "slug": "product-enabot-ebo-air",
+  "name": "Enabot EBO Air 2",
   "manufacturer": "Enabot",
   "category": "Security",
   "subcategory": "Indoor Security",
@@ -12,20 +12,22 @@
     "openSource": false,
     "closedPlatform": true
   },
-  "description": "A small, self-righting rolling home-monitoring robot with a 1080p camera, two-way audio, and AI person/pet detection. Roams and patrols manually or autonomously rather than mapping the home with LiDAR/SLAM.",
+  "description": "A small, self-righting rolling home-monitoring robot with a 2K camera (current EBO Air 2 generation; the original Air, still pictured here, shipped with 1080p), two-way audio, and AI person/pet detection. Roams and patrols manually or autonomously rather than mapping the home with LiDAR/SLAM.",
   "specs": [
     {
       "label": "Battery",
-      "value": "2500mAh",
-      "note": "~2–6 hr runtime, auto-dock charging"
+      "value": "2450mAh (Air 2)",
+      "note": "4–7 hr runtime, 2–3 hr charge; original Air was 2500mAh/~2–6 hr"
     },
     {
       "label": "Weight",
-      "value": "~310–325 g"
+      "value": "~310–325 g",
+      "note": "original Air figure; Air 2 not independently confirmed"
     },
     {
       "label": "Dimensions",
-      "value": "95 × 89 × 95 mm"
+      "value": "95 × 89 × 95 mm",
+      "note": "original Air figure"
     },
     {
       "label": "Connectivity",
@@ -34,18 +36,18 @@
     },
     {
       "label": "Camera",
-      "value": "1080p @ 30fps",
-      "note": "~118° diagonal FOV, IR night vision"
+      "value": "2K, 2304×1296 (Air 2)",
+      "note": "137° FOV, IR night vision; original Air was 1080p/~118° FOV"
     },
     {
       "label": "Navigation",
       "value": "Manual + roam/patrol",
-      "note": "no LiDAR/SLAM mapping on this model"
+      "note": "no LiDAR/SLAM mapping on this model line"
     },
     {
       "label": "Drive",
       "value": "Self-righting ball",
-      "note": "brushless wheel base, climbs ~6° inclines"
+      "note": "wire-free, 20–55 cm/s, climbs up to 4° slopes (Air 2 spec)"
     },
     {
       "label": "Audio",
@@ -58,19 +60,19 @@
       "note": "32GB included, up to 256GB — no mandatory cloud"
     }
   ],
-  "sourcing": "Verified against Enabot's own official site (enabot.com, store.enabot.com) and independent reviews from Android Central, iMore, Digital Camera World, and TechAdvisor. Enabot now also sells newer \"Air 2,\" \"Air 2S,\" and \"Air 2 Plus\" variants — this page covers the original Ebo Air, an established, several-years-old product with a solid review track record. No LiDAR/SLAM navigation should not be confused with the pricier Ebo X, which does map the home.",
-  "manufacturerUrl": "https://store.enabot.com/products/ebo-air-familybot",
+  "sourcing": "Verified against Enabot's own official site (enabot.com, store.enabot.com) and independent reviews from Android Central, iMore, Digital Camera World, and TechAdvisor, which cover the original Ebo Air's established track record. This entry's display name and lead specs (price, camera resolution, mobility) were updated to the current EBO Air 2, confirmed via Enabot's own EBO Air 2 product page, Home Depot, and Best Buy listings ($149 regular $199, 2K/2304×1296, 137° FOV). Enabot also sells a further \"Air 2 Plus\" step-up and, historically, an \"Air 2S\" variant. Chewy's own listing for the original (non-\"2\") Air reads \"Discontinued,\" while it is still listed for sale on Enabot's own site and Amazon as of this check — an inconsistency worth flagging rather than resolving one way. No LiDAR/SLAM navigation should not be confused with the pricier Ebo X, which does map the home.",
+  "manufacturerUrl": "https://store.enabot.com/products/ebo-air-2-familybot",
   "pricing": {
-    "summary": "Officially listed around **$199–$229**, though Enabot's own store frequently discounts it — sale prices as low as $119 have been seen. Sources agree on the MSRP range rather than conflicting; treat sale pricing as common rather than an error."
+    "summary": "Enabot's own store lists the current **EBO Air 2** at **$149** (regularly $199), in Dove White, Jay Blue, or Robin Pink. The original Ebo Air covered in earlier versions of this entry was officially listed around $199–$229, with sale prices as low as $119 — that older model's availability is now mixed (see the note below), so treat the Air 2 pricing above as the current reference figure."
   },
   "editorial": [
     {
       "heading": "Sensors & Hardware",
-      "body": "The Ebo Air is a self-righting, ball-shaped robot on a silent brushless-motor wheel base with anti-drop sensors. Its camera shoots 1080p/30fps (~118° FOV) with strong IR night vision. It has no LiDAR or SLAM mapping — reviewers flagged this as its weakest area, causing bumps and getting stuck. Storage defaults to local microSD rather than mandatory cloud."
+      "body": "The EBO Air 2 is a self-righting, ball-shaped robot on a silent brushless-motor wheel base with anti-drop sensors, moving wire-free at 20–55 cm/s and climbing slopes up to 4°. Its camera shoots 2K (2304×1296, 137° FOV) with IR night vision — an upgrade from the original Air's 1080p/~118° FOV sensor. It has no LiDAR or SLAM mapping — reviewers flagged this as the original's weakest area, causing bumps and getting stuck, and nothing suggests Air 2 changed that. Storage defaults to local microSD rather than mandatory cloud."
     },
     {
       "heading": "Insights",
-      "body": "Ebo Air stores video locally on a microSD card (32GB included, expandable to 256GB) rather than requiring a cloud subscription — a specific, sourced differentiator from many competing home-monitoring cameras. It has also built a several-years-long track record confirmed across multiple independent reviewers (Android Central, iMore, Digital Camera World, TechAdvisor)."
+      "body": "The original Ebo Air has been succeeded by the EBO Air 2 — this entry now tracks the Air 2 as Enabot's current model, adding Air 2 Plus (AI chat mode via GPT/Gemini) as a further step up. Air 2 stores video locally on a microSD card (32GB included, expandable to 256GB) rather than requiring a cloud subscription — a specific, sourced differentiator from many competing home-monitoring cameras — carrying forward the original's several-years-long track record confirmed across multiple independent reviewers (Android Central, iMore, Digital Camera World, TechAdvisor). Availability signals for the original Air specifically are mixed — Chewy lists it as discontinued, while it remains listed on Enabot's own store and Amazon — so a buyer encountering \"Ebo Air\" listings should confirm which generation they're actually looking at."
     }
   ],
   "firmwareCommunity": [

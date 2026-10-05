@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "sunflower-labs-bee-hive",
-  "slug": "product-sunflower-labs-bee-hive.html",
+  "slug": "product-sunflower-labs-bee-hive",
   "name": "Sunflower Labs (The Bee + Hive)",
   "manufacturer": "Sunflower Labs",
   "category": "Security",
   "subcategory": "Outdoor Security",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -80,7 +80,7 @@
       "note": "only a usage-based ~$4–7/hr flight-operating cost is documented; no separate cloud-storage subscription found"
     }
   ],
-  "sourcing": "Verified against Sunflower Labs' own official site (sunflower-labs.com) and funding/regulatory press releases (BusinessWire, 2020 and 2025), plus independent hands-on coverage from TechCrunch and Engadget. This is an actively shipping, expanding product — Sunflower Labs reported more than doubling its customer base and 10x-ing autonomous patrol volume in the year before its November 2025 raise, with deployments across North America, Europe, Japan, Australia, and Argentina — not a demo-only pilot phase, despite the \"New & Pending\" tag reflecting that it hasn't yet been given its own detailed comparison against mainstream consumer security products in this catalog.",
+  "sourcing": "Verified against Sunflower Labs' own official site (sunflower-labs.com, including its dedicated industrial page) and funding/regulatory press releases (BusinessWire, UASweekly, AUVSI; 2020, 2025, and May 2026), plus independent hands-on coverage from TechCrunch and Engadget. This is an actively shipping, expanding product — Sunflower Labs reported more than doubling its customer base and 10x-ing autonomous patrol volume in the year before its November 2025 raise, with deployments across North America, Europe, Japan, Australia, and Argentina — not a demo-only pilot phase, despite the \"New & Pending\" tag reflecting that it hasn't yet been given its own detailed comparison against mainstream consumer security products in this catalog. Sunflower Labs is increasingly emphasizing industrial and commercial deployments (rail yards, factories, data centers, corporate security scaling to dozens of drones per site) alongside its original residential product; its own site still markets and sells to homeowners as of this writing, so a \"moved to commercial/industrial instead of home\" framing is not fully supported — it reads as an added focus, not a replacement.",
   "manufacturerUrl": "https://www.sunflower-labs.com/",
   "pricing": {
     "summary": "Originally launched in 2020 at **$9,950** hardware plus a $999 deposit. Pricing is now quote-based through an online property-configuration tool rather than a fixed number, with reported ongoing operating costs of roughly $4–7 per hour of active drone flight, plus an 8–12 week installation process — reflecting its positioning as a premium, estate-scale system rather than an off-the-shelf consumer product."
@@ -88,7 +88,7 @@
   "editorial": [
     {
       "heading": "Insights",
-      "body": "As of November 2025, Sunflower Labs holds a nationwide, performance-based FAA waiver covering roughly 99% of the US that permits beyond-visual-line-of-sight flight, operation over people and vehicles, and low-visibility flight without needing per-site approval — a significant upgrade from the case-by-case Part 107 waivers the system previously required."
+      "body": "As of November 2025, Sunflower Labs holds a nationwide, performance-based FAA waiver covering roughly 99% of the US that permits beyond-visual-line-of-sight flight, operation over people and vehicles, and low-visibility flight without needing per-site approval — a significant upgrade from the case-by-case Part 107 waivers the system previously required. In May 2026, Sunflower Labs received a further FAA approval letting a single operator control up to six autonomous drones at once, and it raised a $16M Series B (led by Sequoia) to scale into industrial and commercial sites — rail yards, factories, data centers — alongside its original residential product; Argentina's largest security provider, Securion, is expanding a deployment for corporate clients from 2 drones to 40. The company's own current site still lists and sells the residential system this entry covers, so this is best read as Sunflower Labs broadening into enterprise/industrial customers rather than exiting the home market."
     }
   ],
   "firmwareCommunity": [

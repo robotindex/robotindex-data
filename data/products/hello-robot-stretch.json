@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "hello-robot-stretch",
+  "slug": "product-hello-robot-stretch",
+  "name": "Hello Robot Stretch 3",
+  "manufacturer": "Hello Robot",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Wheeled / Mobile Base",
+  "tier": "under-review",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A lightweight **wheeled mobile manipulator** from **Hello Robot** of California: a small two-wheel base, a tall mast, and a **telescoping arm that rides up and down the mast** to reach from floor to countertop height. Stretch 3 launched in **February 2024** at **$24,950**, weighs about **24.5 kg**, carries **2 kg**, and runs **ROS 2 and Python**. It is widely used in research on household manipulation. Hello Robot has since released **Stretch 4** and states Stretch 3 is **no longer sold directly**.",
+  "specs": [
+    {
+      "label": "Launch Price",
+      "value": "$24,950",
+      "note": "February 2024; Stretch 4 is $29,950"
+    },
+    {
+      "label": "Weight",
+      "value": "24.5 kg",
+      "note": "54 lb"
+    },
+    {
+      "label": "Dimensions",
+      "value": "33 × 34 × 141 cm",
+      "note": "13 × 13.4 × 55.5 in"
+    },
+    {
+      "label": "Payload",
+      "value": "2 kg",
+      "note": "4.4 lb"
+    },
+    {
+      "label": "Arm Extension",
+      "value": "52 cm",
+      "note": "Stretch RE figure; Stretch 3 not confirmed"
+    },
+    {
+      "label": "Lift Range",
+      "value": "110 cm",
+      "note": "Stretch RE figure; Stretch 3 not confirmed"
+    },
+    {
+      "label": "Runtime",
+      "value": "2–5 h",
+      "note": "5 h light CPU use, 2 h heavy"
+    },
+    {
+      "label": "Compute",
+      "value": "Intel NUC 12",
+      "note": "Core i5-1240P, 12 cores; WiFi 6E"
+    },
+    {
+      "label": "Wrist",
+      "value": "DexWrist 3",
+      "note": "Pitch and roll; quick-change tool mount"
+    },
+    {
+      "label": "Cameras",
+      "value": "RealSense D435if + D405",
+      "note": "Head and wrist depth; 140° wide RGB camera"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "7 + gripper + head",
+      "note": "2 base, 1 lift, 1 arm, 3 wrist"
+    },
+    {
+      "label": "Software",
+      "value": "ROS 2 / Python",
+      "note": "Ubuntu 22.04; calibrated URDF"
+    }
+  ],
+  "sourcing": "Verified against Hello Robot's Stretch 3 product page (hello-stretch3.com), its purchase page (hello-robot.com/purchase), The Robot Report and Automated Warehouse launch coverage, Tegakari's Stretch 3 and Stretch RE write-ups, the Stretch design paper (arXiv 2109.10892), and Stretch 4 coverage (Business Wire, IEEE Spectrum), as of October 2026. Flagged as uncertain: the Stretch 3 hardware guide returned a 404, so the 52 cm arm extension and 110 cm lift range come from the 2020 Stretch RE listing and the design paper (which gives a 71 cm reach from the base) and may differ on Stretch 3; the Discontinued status rests on Hello Robot's purchase-page statement that Stretch 3 is no longer sold directly, not an end-of-life notice; one retailer lists 30 kg against the official 24.5 kg; Robots Guide's Stretch entry (46 kg, 160 cm, $29,950, 8 hours) appears to describe Stretch 4 and was not used; the licence of the code was not confirmed; and the pictured robot was identified as a Stretch 3 from its visible head camera and wrist design, and the photo shows only the mast, arm and head.",
+  "manufacturerUrl": "https://hello-robot.com/",
+  "pricing": {
+    "summary": "Stretch 3 launched at **$24,950**, with the gripper, DexWrist 3, sensor head, onboard computer and software included. Hello Robot no longer sells it: its purchase page lists only **Stretch 4 at $29,950** and states Stretch 3 is no longer sold directly, with no upgrade path from Stretch 3 or earlier. Any remaining units would be second-hand. The Dex Teleop Kit and charging dock were sold separately. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Hello Robot was founded by **Aaron Edsinger** (CEO) and **Charlie Kemp** (CTO), and the original Stretch Research Edition shipped in 2020 at about $20,000. Stretch 3 doubled onboard compute over Stretch 2 with the NUC 12, made DexWrist 3 standard, added a wrist-mounted RealSense D405 for eye-in-hand manipulation, and introduced Gripper 3, which opens 40% wider and carries ArUco markers on the fingertips. Its differential-drive base turns before it translates; **Stretch 4**, announced May 12, 2026, replaced it with an omnidirectional base, a Jetson Orin NX option, two hemispherical lidars and a redesigned head, with arm, lift and base running at twice the speed and 10% more reach. The code is public on GitHub, and the repository states its licensing is set per subdirectory and the software is intended for use with Stretch robots. The README does not mention published hardware design files, so this page carries **no Open Source badge**. Datasets recorded on Stretch robots appear on Hugging Face (see the analytics pages); the robot pictured is identified as a Stretch 3 from its head camera and wrist design."
+    }
+  ]
+}

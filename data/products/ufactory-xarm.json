@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "ufactory-xarm",
+  "slug": "product-ufactory-xarm",
+  "name": "UFACTORY xArm Series",
+  "manufacturer": "Ufactory",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A family of lightweight collaborative arms from **UFACTORY**, aimed at research, education and light automation. Three arms share a 700 mm reach and ±0.1 mm repeatability: **xArm 5 Lite** (5 axes, about $5,750), **xArm 6** (6 axes, 5 kg, about $8,850) and **xArm 7** (7 axes, about $10,450). UFACTORY also sells the **Lite 6** desktop arm (about $3,300–$3,500) and the longer-reach **UFACTORY 850**. The software is open, with a BSD-licensed Python SDK and ROS packages; the arms are not.",
+  "specs": [
+    {
+      "label": "Models",
+      "value": "5",
+      "note": "xArm 5 Lite, xArm 6, xArm 7, Lite 6, 850"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "5, 6 or 7",
+      "note": "xArm 5 Lite 5; xArm 6, Lite 6 and 850 6; xArm 7 7"
+    },
+    {
+      "label": "Payload",
+      "value": "3–5 kg",
+      "note": "xArm 5 Lite 3 kg; xArm 6 5 kg; xArm 7 3.5 kg; Lite 6 only 0.6 kg"
+    },
+    {
+      "label": "Reach",
+      "value": "700 mm",
+      "note": "xArm 5/6/7; 850 mm on the 850, 440 mm on the Lite 6"
+    },
+    {
+      "label": "Repeatability",
+      "value": "±0.1 mm",
+      "note": "xArm 5/6/7; ±0.02 mm on the 850, 0.5 mm on the Lite 6"
+    },
+    {
+      "label": "Weight",
+      "value": "12.2–14 kg",
+      "note": "xArm 6 12.2 kg; xArm 7 14 kg; Lite 6 7.2 kg"
+    },
+    {
+      "label": "Build",
+      "value": "Carbon fiber",
+      "note": "Per reseller descriptions of the xArm 5 Lite"
+    },
+    {
+      "label": "Software",
+      "value": "Python, ROS",
+      "note": "ROS 2, C/C++ and Python APIs"
+    }
+  ],
+  "sourcing": "Verified against UFACTORY's US store listing for the Lite 6 (which also lists xArm 5/6/7 and 850 specs), reseller listings (Top3DShop, Generation Robots, RoboDK, SprutCAM, robotsourced.com), a Hackster report on the Lite 6 Kickstarter, and UFACTORY's official xArm-Developer GitHub organization (xArm Python SDK, BSD-3-Clause), as of October 2026. UFACTORY's own store (store.ufactory.cc) could not be fetched, so nothing was read from it directly. Flagged as uncertain: sources disagree on the xArm 5 Lite payload (3 kg on UFACTORY's US store and robotsourced.com, 5 kg on Top3DShop; 3 kg is used) and on the Lite 6 (600 g and 0.5 mm on UFACTORY's US store versus 1 kg and 0.2 mm in a 2019 Kickstarter report, which is not treated as current); prices mix the US store with reseller listings; and the image shows a white xArm-style arm that was not matched to a specific model. The image background was cleaned to pure white to match the page frame. Tagged New as a newly added listing. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.ufactory.cc/",
+  "pricing": {
+    "summary": "Prices come from resellers and UFACTORY's US store and vary by region and date. Rough figures: **Lite 6** about $3,300–$3,500, **xArm 5 Lite** about $5,750–$5,800, **xArm 6** about $8,850, **UFACTORY 850** about $9,850–$9,900 and **xArm 7** about $10,450–$10,500. A European reseller lists the xArm at €6,360 including VAT. Grippers and accessories are typically extra. UFACTORY's own store could not be read directly, so these are not official prices. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "The xArm is a low-cost alternative to traditional cobots: UFACTORY's earlier Kickstarter priced the six-axis xArm at $4,999, and the later Lite 6 campaign offered a desktop arm to early backers for $1,199, compared with the $35,000-plus that arms like the UR5e command. The trade-offs are payload and finish. The Lite 6 carries only 600 g, and the xArm 5 Lite has five axes, which limits complex orientations. This catalog's Open Source badge does not apply: UFACTORY's official xArm-Developer GitHub organization publishes a BSD-3-Clause Python SDK (supporting the 850, xArm 5/6/7 and Lite 6) plus ROS and ROS 2 packages, but the repositories contain no hardware designs, so the arms are closed commercial products with an open software layer. The xArm 7 adds a redundant seventh axis for reaching around obstacles, and the 850 is the precision option at ±0.02 mm."
+    }
+  ]
+}

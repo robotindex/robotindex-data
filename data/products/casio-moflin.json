@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "casio-moflin",
-  "slug": "product-casio-moflin.html",
+  "slug": "product-casio-moflin",
   "name": "Casio Moflin",
   "manufacturer": "Casio",
   "category": "Pets & Toys",
@@ -63,7 +63,7 @@
   "editorial": [
     {
       "heading": "Insights",
-      "body": "Casio's own MofLife privacy notice confirms collecting motion/touch/orientation sensor data and \"parameterized voice data\" from speech but doesn't clarify whether raw audio is retained anywhere before conversion — a genuine transparency gap in Casio's own documentation, not an outside accusation."
+      "body": "Casio's own MofLife privacy notice confirms collecting motion/touch/orientation sensor data and \"parameterized voice data\" from speech but doesn't clarify whether raw audio is retained anywhere before conversion — a genuine transparency gap in Casio's own documentation."
     }
   ],
   "firmwareCommunity": [

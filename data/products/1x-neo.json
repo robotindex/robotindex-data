@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "1x-neo",
-  "slug": "product-1x-neo.html",
+  "slug": "product-1x-neo",
   "name": "1X NEO",
   "manufacturer": "1X Technologies",
   "category": "Humanoid & General Purpose",
   "subcategory": "Two Legs",
-  "tier": "featured",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -55,10 +55,10 @@
       "note": "tendon-driven actuators"
     }
   ],
-  "sourcing": "Specs sourced from 1X Technologies' official NEO page and cross-checked against TechCrunch/Yahoo News coverage of the December 2025 pricing announcement, as of September 2026. robotindex does not sell this product — pricing and availability are per 1X's own preorder terms and may change.",
+  "sourcing": "Specs sourced from 1X Technologies' official NEO page and cross-checked against TechCrunch/Yahoo News coverage of the December 2025 pricing announcement, plus later reporting (Interesting Engineering) on the April 2026 full-production milestone and its internal-only allocation, as of September 2026. Moved from Featured to Under Review because no customer has actually received a unit yet — it's a real, well-documented product, just not yet buyable. robotindex does not sell this product — pricing and availability are per 1X's own preorder terms and may change.",
   "manufacturerUrl": "https://www.1x.tech/discover/neo-home-robot",
   "pricing": {
-    "summary": "**$20,000**, secured via a $200 refundable preorder deposit. US shipments are targeted for 2026, with international rollout not planned until 2027, so it isn't yet available to buy outright."
+    "summary": "**$20,000**, secured via a $200 refundable preorder deposit, plus a $499/month software subscription. US shipments are targeted for 2026, with international rollout not planned until 2027, so it isn't yet available to buy outright. No customer has actually received a unit as of this writing: 1X's factory reached full production capacity in April 2026, but that output is currently going to 1X's own internal R&D and home-testing fleets rather than to buyers, with customer shipments planned to begin later in 2026, starting with early-access preorder holders ahead of a wider rollout."
   },
   "editorial": [
     {

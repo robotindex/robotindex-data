@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "elegoo-smart-robot-car-v4",
-  "slug": "product-elegoo-smart-robot-car-v4.html",
+  "slug": "product-elegoo-smart-robot-car-v4",
   "name": "ELEGOO Smart Robot Car Kit V4",
   "manufacturer": "Elegoo",
   "category": "Educational & Hobbyist",

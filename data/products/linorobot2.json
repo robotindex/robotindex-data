@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "linorobot2",
-  "slug": "product-linorobot2.html",
+  "slug": "product-linorobot2",
   "name": "Linorobot2",
   "manufacturer": "Linorobot (open-source project)",
   "category": "Educational & Hobbyist",
   "subcategory": "Mobile Robot Kits",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": true,
@@ -65,7 +65,7 @@
       "note": "almost certainly this builder's own lab safety/inventory additions"
     }
   ],
-  "sourcing": "Specs compiled from the Linorobot2 GitHub repositories, project site, and third-party community/technical write-ups as of this build. Because this is a bring-your-own-hardware framework, exact specs and cost depend entirely on the builder's own component choices — the figures here describe the supported range, not one fixed configuration.",
+  "sourcing": "Specs compiled from the Linorobot2 GitHub repositories, project site, and third-party community/technical write-ups as of this build. Because this is a bring-your-own-hardware framework, exact specs and cost depend entirely on the builder's own component choices — the figures here describe the supported range, not one fixed configuration. Continued activity confirmed via a May 2026 \"Show and tell\" community build (GitHub Discussion #220) demonstrating ROS 2 Jazzy support on a Radxa ROCK 5C — a user showcase rather than an official maintainer announcement, but real evidence the project is still in active use.",
   "manufacturerUrl": "https://linorobot.org/",
   "pricing": {
     "summary": "There is no official reference cost, because Linorobot2 is a framework rather than a product with a bill of materials; a widely-cited community estimate puts a minimal electronics-only configuration at roughly $131, excluding the chassis, motors, wheels, compute board, battery, and any LiDAR or depth camera. A complete build like the one pictured, with a metal enclosure, Mecanum wheels, spinning LiDAR, and a compute SBC, would run well beyond that figure — likely several hundred to over a thousand dollars depending entirely on the components a builder chooses."
@@ -73,7 +73,7 @@
   "editorial": [
     {
       "heading": "Insights",
-      "body": "The Linorobot2 project itself is genuinely open source (Apache-2.0, ~1,000 GitHub stars, actively maintained)."
+      "body": "The Linorobot2 project itself is genuinely open source (Apache-2.0, ~1,000 GitHub stars, actively maintained). Moved from Under Review to a live listing: community builds continue to surface as recently as May 2026, including one running current ROS 2 Jazzy on a Radxa ROCK 5C, confirming the project is still active rather than stalled — the earlier Under Review status reflected a categorization question (framework vs. fixed product), not a doubt about whether it's still alive."
     }
   ],
   "firmwareCommunity": [

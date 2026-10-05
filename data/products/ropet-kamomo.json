@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "ropet-kamomo",
-  "slug": "product-ropet-kamomo.html",
+  "slug": "product-ropet-kamomo",
   "name": "Ropet KAMOMO",
   "manufacturer": "Ropet",
   "category": "Pets & Toys",
   "subcategory": "Robot Pets",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,

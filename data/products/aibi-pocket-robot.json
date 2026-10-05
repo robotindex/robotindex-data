@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "aibi-pocket-robot",
-  "slug": "product-aibi-pocket-robot.html",
+  "slug": "product-aibi-pocket-robot",
   "name": "Aibi Pocket Robot",
   "manufacturer": "Living",
   "category": "Pets & Toys",
@@ -68,7 +68,7 @@
   "editorial": [
     {
       "heading": "Insights",
-      "body": "A separate promotional blog publishes battery-life and price figures for Aibi Pocket, but its cited price ($599–680) is so far off Living.AI's own $249 listing that it reads as unreliable rather than corroborating — a spec discrepancy worth flagging for anyone comparison shopping."
+      "body": "A separate promotional blog publishes battery-life and price figures for Aibi Pocket, but its cited price ($599–680) is so far off Living.AI's own $249 listing that it reads as unreliable rather than corroborating."
     }
   ],
   "firmwareCommunity": [

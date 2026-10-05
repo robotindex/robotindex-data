@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "elephant-robotics-ultraarm-p340",
-  "slug": "product-elephant-robotics-ultraarm-p340.html",
+  "slug": "product-elephant-robotics-ultraarm-p340",
   "name": "Elephant Robotics ultraArm P340",
   "manufacturer": "Elephant Robotics",
   "category": "Robot Arms",
@@ -73,8 +73,7 @@
   ],
   "firmwareCommunity": [
     {
-      "status": "not-listed",
-      "note": "Elephant Robotics' own pymycobot Python SDK, genuinely MIT-licensed and verified against its GitHub LICENSE file, includes a dedicated module for host-side control of ultraArm P340; the onboard ATmega2560 firmware itself has no public repository."
+      "buildsModsId": "elephant-robotics-ultraarm-p340"
     }
   ]
 }

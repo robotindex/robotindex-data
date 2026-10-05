@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "dobot-x-trainer",
+  "slug": "product-dobot-x-trainer",
+  "name": "Dobot X-Trainer",
+  "manufacturer": "Dobot Robots",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A **dual-arm teleoperation kit** from **Dobot** for collecting robot-learning data. An operator drives two **Dobot Nova 2** arms through two **master hands** while the system records trajectories and camera views in AI-ready formats. Each arm has **625 mm** of reach and **±0.05 mm** repeatability, with wrist and global cameras and an open API. Dobot opened pre-orders in **April 2024** and does not publish a price; resellers list it at roughly **£18,700** or **€33,400** including VAT.",
+  "specs": [
+    {
+      "label": "Arms",
+      "value": "2 × Nova 2",
+      "note": "6-axis collaborative arms"
+    },
+    {
+      "label": "Reach",
+      "value": "625 mm",
+      "note": "Per arm; 1,200 mm across both arms per retailers"
+    },
+    {
+      "label": "Payload",
+      "value": "2 kg",
+      "note": "3 kg dual-arm; retailer listings"
+    },
+    {
+      "label": "Repeatability",
+      "value": "±0.05 mm",
+      "note": "Dobot"
+    },
+    {
+      "label": "Teleoperation",
+      "value": "Master hands ×2",
+      "note": "Leader-follower; VR and keyboard via Dobot GitHub"
+    },
+    {
+      "label": "Cameras",
+      "value": "2 wrist + 1 global",
+      "note": "One retailer lists an Intel D405"
+    },
+    {
+      "label": "Motion Interface",
+      "value": "25 Hz",
+      "note": "Dobot"
+    },
+    {
+      "label": "Data Capture",
+      "value": "HDF5, 30 Hz",
+      "note": "Three-camera RGB; LeRobot-compatible"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "14",
+      "note": "Across both arms, plus grippers; Dobot GitHub"
+    },
+    {
+      "label": "Safety",
+      "value": "ISO 15066",
+      "note": "5-level collision detection; retailer listing"
+    },
+    {
+      "label": "Max Speed",
+      "value": "1.6 m/s",
+      "note": "Retailer listing"
+    },
+    {
+      "label": "Announced",
+      "value": "April 2024",
+      "note": "Pre-orders opened 2 April 2024"
+    }
+  ],
+  "sourcing": "Verified against Dobot's X-Trainer announcement (dobot-robots.com), Dobot's GitHub repositories (embodied-dobot/x-trainer, Dobot-Arm/dobot_xtrainer), How To Robot's launch article, and retailer listings (Scan UK, Rapid Online, Funduino Shop, DigiKey), as of October 2026. Flagged as uncertain: Dobot's own product pages returned errors or were blocked, so specs come from the announcement, GitHub and retailers; no official price exists and the two prices quoted are single-retailer figures in different currencies, both including VAT; the 2 kg / 3 kg payload, 1.6 m/s speed, ISO 15066 and Intel D405 details come from retail listings; the 14 DoF figure comes from Dobot's GitHub README; weight and dimensions were not found; the picture appears to show the operator-side master hand, not a Nova 2 follower arm, which could not be confirmed; and the lightweight-base and no-arms variants were not priced or compared.",
+  "manufacturerUrl": "https://www.dobot-robots.com/insights/news/dobot-x-trainer.html",
+  "pricing": {
+    "summary": "Dobot does not publish a price. **Scan UK** lists the kit with two Nova 2 arms at **£18,687.98 including VAT** and in stock; **Funduino Shop** lists **€33,390 including VAT** with a 21-business-day delivery time; **Rapid Online** shows price on application. Each is a single reseller figure, and they differ widely. Other listings sell the platform without the Nova arms, and a lightweight-base edition also exists; those prices were not retrieved. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "X-Trainer is aimed at the data bottleneck in robot learning: it records an operator's demonstrations on real arms so the data can train imitation-learning and vision-language-action policies. Dobot says it cuts training time by 70% and that a simple task such as dishwashing can be learned in about two hours; these are Dobot's own claims. Beyond the master-hand rig, Dobot's GitHub repositories add VR teleoperation (Quest 3 and PICO 4), keyboard control, and capture in HDF5 compatible with LeRobot, and a dataset repository exists on Hugging Face. The repositories are open source (BSD-3-Clause for `embodied-dobot/x-trainer`, GPL-3.0 for `Dobot-Arm/dobot_xtrainer`), but the arms, master hands and cameras are commercial hardware, so this page carries **no Open Source badge**. The arms are Dobot's Nova 2, which RobotShop lists as an entry-level six-axis collaborative arm."
+    }
+  ]
+}

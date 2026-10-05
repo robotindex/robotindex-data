@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "moorebot-scout",
-  "slug": "product-moorebot-scout.html",
+  "slug": "product-moorebot-scout",
   "name": "Moorebot Scout",
   "manufacturer": "Moorebot",
   "category": "Security",
   "subcategory": "Indoor Security",
-  "tier": "featured",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": true,
@@ -63,25 +63,24 @@
       "note": "local storage (onboard flash/FTP-NAS) always free; cloud storage & push notifications need a monthly sub after a 3-month free trial — price not published"
     }
   ],
-  "sourcing": "Verified against Moorebot's own official site and FAQ (moorebot.com), the original Kickstarter campaign, Hackster.io's launch coverage, independent developer/enthusiast reports (We Speak IoT), and direct inspection of Pilot Labs' official open-source control-layer repo (confirmed MIT license) and the separate third-party community ROS driver project (confirmed Apache-2.0, confirmed unaffiliated). This page reports both the manufacturer's marketing claims and the independently-reported gap between those claims and real-world SLAM/ROS 2 functionality, since that gap is material to anyone evaluating this as a security device rather than a hobbyist toy. No mainstream tech-press review was found for this product.",
+  "sourcing": "Verified against Moorebot's own official site and FAQ (moorebot.com), the original Kickstarter campaign, Hackster.io's launch coverage, independent developer/enthusiast reports (We Speak IoT), and direct inspection of Pilot Labs' official open-source control-layer repo (confirmed MIT license) and the separate third-party community ROS driver project (confirmed Apache-2.0, confirmed unaffiliated). This page reports both the manufacturer's marketing claims and the independently-reported gap between those claims and real-world SLAM/ROS 2 functionality, since that gap is material to anyone evaluating this as a security device rather than a hobbyist toy. No mainstream tech-press review was found for this product. Moved to Under Review because the original Scout is sold out on Moorebot's own store and the company's homepage now foregrounds newer Scout E/Zeus/Hugo products — checked against Moorebot's own site as of this writing, including a May 2025 EU clearance promotion for Scout E.",
   "manufacturerUrl": "https://www.moorebot.com/products/moorebot-scout",
   "pricing": {
     "summary": "Officially listed at **$199.99** (down from $219.99) on Moorebot's own site, which currently shows the product as sold out; also sold through Amazon, Best Buy, and Walmart."
   },
   "editorial": [
     {
-      "heading": "Sensors & Hardware — Claims vs. Reality",
+      "heading": "Claims vs. Reality",
       "body": "The drive system is as advertised: four Mecanum wheels give true omnidirectional movement, clearing 15mm obstacles and 25° slopes. But marketing overstates the rest: it implies SLAM-style autonomous mapping, yet independent developer reports say full SLAM was never shipped — the robot only records rough pre-driven paths. Marketing also suggests ROS 2 support, but Moorebot's FAQ confirms only ROS 1."
     },
     {
       "heading": "Insights",
-      "body": "Moorebot markets Scout's navigation as SLAM-style autonomous mapping with 24/7 patrol capability, but independent developer reports confirm true SLAM was never shipped — it only follows rough pre-driven paths and often fails to find its own charging dock. Marketing also implies full ROS 2 access, but Moorebot's own FAQ confirms the platform runs ROS 1, not ROS 2."
+      "body": "Moorebot markets Scout's navigation as SLAM-style autonomous mapping with 24/7 patrol capability, but independent developer reports confirm true SLAM was never shipped — it only follows rough pre-driven paths and often fails to find its own charging dock. Marketing also implies full ROS 2 access, but Moorebot's own FAQ confirms the platform runs ROS 1, not ROS 2. The original Scout is also showing signs of being wound down: it's listed sold out directly on Moorebot's own site, and as of this writing (checked against a May 2025 EU clearance promotion, code 40OFFEU202505) Moorebot's homepage has shifted top billing to a newer \"Scout E\" model plus separate Zeus and Hugo product lines. None of this changes the hardware/software facts above, but it's reason enough to flag continued availability and support as uncertain rather than assume business-as-usual."
     }
   ],
   "firmwareCommunity": [
     {
-      "status": "not-listed",
-      "note": "Moorebot's own official open-source repository for Scout, covering its recognition and extension-framework code (the robot's core communication layer itself stays closed for security reasons)."
+      "buildsModsId": "moorebot-scout"
     }
   ]
 }

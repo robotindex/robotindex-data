@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "agibot-a2",
+  "slug": "product-agibot-a2",
+  "name": "AgiBot A2",
+  "manufacturer": "AgiBot",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "Humanoid family from AgiBot (Zhiyuan Robotics), a Shanghai company founded February 2023 by former Huawei engineers Deng Taihua and Peng Zhihui. Three current configurations: **A2 Lite** ($44,560, no perception sensors), **A2 Ultra** (sensor-equipped, dexterous hands), and **A2-W** (a wheeled industrial variant for manufacturing floors). A standard, off-the-shelf A2 unit set a Guinness World Record in November 2025 for the longest journey walked by a humanoid robot — 106.286 km from Suzhou to Shanghai.",
+  "specs": [
+    {
+      "label": "Variants",
+      "value": "3",
+      "note": "A2 Lite, A2 Ultra, A2-W"
+    },
+    {
+      "label": "Height",
+      "value": "169 cm",
+      "note": "163 cm for A2-W (wheeled)"
+    },
+    {
+      "label": "Weight",
+      "value": "~63–69 kg",
+      "note": "230 kg for A2-W (wheeled chassis)"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "~23–42",
+      "note": "Lite 23, Ultra 42, A2-W 22"
+    },
+    {
+      "label": "Single-Arm Payload",
+      "value": "1.5–5 kg",
+      "note": "Lite 1.5kg, Ultra 2kg rated, A2-W 5kg"
+    },
+    {
+      "label": "Battery",
+      "value": "14.4 Ah",
+      "note": "2 kWh hot-swappable on A2-W"
+    },
+    {
+      "label": "Max Speed",
+      "value": "0.8 m/s",
+      "note": "Lite/Ultra walking; A2-W speed not published"
+    },
+    {
+      "label": "Sensors",
+      "value": "Varies by tier",
+      "note": "Lite: none; Ultra: LiDAR+cameras; A2-W: 360° LiDAR+4 cams+2 force sensors"
+    }
+  ],
+  "sourcing": "Verified against AgiBot's own sites — agibot.com/products/A2_W for the wheeled variant, and store.agibot.com/products/a2-lite and /a2-ultra for the bipedal variants — plus Wikipedia's AgiBot company entry and independent news coverage of the Guinness World Record walk (Global Times, Hong Kong Free Press, Jerusalem Post, Heise Online), as of October 2026. Flagged as uncertain: A2 Ultra's listed $999,999.00 price is treated here as a contact-sales placeholder, not a real figure, since no independent source corroborates it as an actual transaction price. A2-W has no published price. The Guinness record was set using the standard bipedal A2 (per AgiBot's own description), not the wheeled A2-W pictured on this page — the A2-W image was the one available at the time of writing; it is clearly labeled as such above. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.agibot.com/",
+  "pricing": {
+    "summary": "**A2 Lite** is **$44,560** direct from AgiBot's own store — no perception sensors, a soft prosthetic (non-dexterous) hand, 1.5kg single-arm payload. **A2 Ultra** adds LiDAR, cameras, and dexterous hands, but AgiBot's store currently lists it at a literal $999,999.00 — almost certainly a contact-sales placeholder rather than a real retail price, so treat it as \"price on request\" rather than a fixed figure. **A2-W**, the wheeled industrial variant built for flexible manufacturing (loading/unloading, terminal plugging, logistics transport), has no published price at all; AgiBot directs manufacturing customers to its sales team. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "In November 2025, AgiBot set a Guinness World Record for the \"longest journey walked by a humanoid robot\": a single A2 unit covered 106.286 km from Jinji Lake in Suzhou to the Bund in Shanghai, crossing a mix of asphalt, tiled pavement, bridges, tactile paving, and slopes. AgiBot's senior vice president Wang Chuang stated the robot used was \"a standard, mass-produced commercial unit with no customized modifications,\" and separately noted the company shipped over 1,000 A2 units in 2025 — framing the walk as a demonstration of production-line reliability rather than a one-off lab prototype. This catalog's Open Source badge does not apply to the A2 family: AgiBot's open-source humanoid line is the separate X1 (full-stack open, with public reinforcement-learning training code on GitHub), while A2/A2 Lite/A2 Ultra/A2-W are closed commercial products. AgiBot (legally AGIBOT Innovation (Shanghai) Technology Co., Ltd., also referred to as Zhiyuan Robotics) also publishes AgiBot World, a large-scale open bimanual-manipulation dataset built across several robot platforms including its own hardware, listed separately in this catalog's Models & Datasets section."
+    }
+  ]
+}

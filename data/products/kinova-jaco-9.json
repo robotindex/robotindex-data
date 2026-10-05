@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "kinova-jaco-9",
+  "slug": "product-kinova-jaco-9",
+  "name": "Kinova JACO",
+  "manufacturer": "Kinovarobotics",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "under-review",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A carbon-fiber, **six-axis arm with a three-finger hand** from **Kinova** of Quebec, Canada, first introduced in **2009** as an arm that mounts on a wheelchair so users can feed themselves, and later sold as a research manipulator. It has **9 degrees of freedom** counting the gripper: six in the arm plus three in the fingers. At about **5 kg** with **90 cm** of reach and a payload of roughly **1.6–2.6 kg**, it was a widely used lab and assistive arm. **Listed as discontinued.**",
+  "specs": [
+    {
+      "label": "Degrees of Freedom",
+      "value": "9",
+      "note": "6-axis arm + 3-finger gripper"
+    },
+    {
+      "label": "Payload",
+      "value": "1.6–2.6 kg",
+      "note": "Continuous; 1.6 kg at 6 DOF per Kinova-linked sources"
+    },
+    {
+      "label": "Reach",
+      "value": "90 cm",
+      "note": "985 mm on Gen2 spherical-wrist and 7-DOF versions"
+    },
+    {
+      "label": "Weight",
+      "value": "~5.2 kg",
+      "note": "4.4–5.4 kg by source and version"
+    },
+    {
+      "label": "Max Speed",
+      "value": "20 cm/s",
+      "note": "Linear"
+    },
+    {
+      "label": "Power",
+      "value": "25 W avg",
+      "note": "100 W peak, 5 W standby, 24 V DC"
+    },
+    {
+      "label": "Gripper",
+      "value": "3-finger",
+      "note": "Underactuated; about 40 N grip force"
+    },
+    {
+      "label": "Materials",
+      "value": "Carbon fiber",
+      "note": "Aluminum actuators, IPX2 weather resistance"
+    },
+    {
+      "label": "Software",
+      "value": "C++ API / ROS",
+      "note": "Windows and Linux; 100 Hz and 500 Hz control levels"
+    }
+  ],
+  "sourcing": "Verified against Kinova's JACO product page (kinovarobotics.com), retailer listings (Clearpath/Rockwell, Top3DShop), Wikipedia's Kinova entry, and spec summaries (Robots Guide, Anton Robots, Robots in Search, Wevolver), as of October 2026. Flagged as uncertain: the discontinued status is the site editor's designation and could not be confirmed from Kinova, since a 2026 review still describes JACO as an active assistive product and Top3DShop and Clearpath still list the Gen2 arm; Kinova's product page returned no specifications when fetched; payload is 1.6 kg continuous at 6 DOF in some sources and 2.6 kg on the Gen2 research listing, weight ranges from 4.4 to 5.7 kg and reach is 900 mm or 985 mm depending on version; the 9 DoF figure is Robots Guide's count of six arm joints plus three finger joints; the $50,000 price is from that single source and is dated. The Class I correction is from one review and was not checked against the FDA record. The image shows the six-axis arm with a three-finger hand and Kinova's logo on the base, consistent with the JACO line; the exact generation is not identified. Product image: Kinova. The image already had a white background.",
+  "manufacturerUrl": "https://www.kinovarobotics.com/product/jaco",
+  "pricing": {
+    "summary": "Kinova does not publish a current price. Robots Guide lists the research version at **$50,000** including a case, joystick, mounting kit, and software, which is an older reference figure. Resellers direct buyers to request a quote. Because the arm is listed here as discontinued, any remaining units are likely refurbished or second-hand. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Kinova was founded in 2006 by Charles Deguire and Louis-Joseph L'Écuyer, inspired by a wheelchair-mounted manipulator an uncle had built, and introduced JACO in 2009. The arm was refreshed as JACO2 (also called Gen2), sold in 4-DOF and 6-DOF versions and later 7-DOF with a spherical wrist, with two- or three-finger grippers. Kinova's newer Gen3 line is its research and development platform, and sources describe it as separate from JACO rather than a direct successor. This page is marked **Discontinued** by the site editor; no Kinova end-of-life notice was found, some sources still list the JACO or Gen2 as available, and Kinova still markets JACO as an assistive arm, so the status may apply to a specific generation. A US FDA Class I correction for fire and burn risk applied to some JACO units. Hobbyists will find JACO's price and age out of reach; it remains common in university labs. The Open Source badge does not apply: the arm is proprietary, though it works with ROS."
+    }
+  ]
+}

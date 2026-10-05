@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "agility-robotics-digit-5",
-  "slug": "product-agility-robotics-digit-5.html",
+  "slug": "product-agility-robotics-digit-5",
   "name": "Agility Robotics Digit 5",
   "manufacturer": "Agility Robotics",
   "category": "Humanoid & General Purpose",
   "subcategory": "Two Legs",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,

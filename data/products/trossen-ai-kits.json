@@ -1,0 +1,78 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "trossen-ai-kits",
+  "slug": "product-trossen-ai-kits",
+  "name": "Trossen AI Kits (ALOHA)",
+  "manufacturer": "Trossenrobotics",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "Trossen Robotics' current commercial bimanual kit lineup, built on the WidowX AI arm and the ALOHA 2 hardware design. Trossen's own site says it plainly: **\"ALOHA is now Trossen AI.\"** The earlier ALOHA-branded ViperX-based kits (Aloha Stationary, Aloha Solo) are discontinued; this lineup — Stationary AI, Mobile AI, Solo AI, and the standalone WidowX AI arm — replaces them, built to order with an average production time of 2-3 weeks.",
+  "specs": [
+    {
+      "label": "Arm",
+      "value": "WidowX AI",
+      "note": "shared across the lineup"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "6 + 1 gripper",
+      "note": "per arm"
+    },
+    {
+      "label": "Reach",
+      "value": "700 mm",
+      "note": "per arm"
+    },
+    {
+      "label": "Payload",
+      "value": "1.5 kg",
+      "note": "per arm"
+    },
+    {
+      "label": "Repeatability",
+      "value": "1 mm"
+    },
+    {
+      "label": "Cameras",
+      "value": "3-4x",
+      "note": "Intel RealSense D405, by kit"
+    },
+    {
+      "label": "Production Time",
+      "value": "2-3 weeks",
+      "note": "average, built to order"
+    },
+    {
+      "label": "Lineup Launched",
+      "value": "2025",
+      "note": "as Trossen AI"
+    }
+  ],
+  "sourcing": "Verified directly against Trossen Robotics' own current product pages: trossenrobotics.com/ai (lineup overview, \"ALOHA IS NOW TROSSEN AI\"), /stationary-ai ($23,995.95; 2-3 week production time), /mobile-ai ($33,695.95 / $40,025.80; ACT/ACT++ guarantee quote), /widowx-ai ($4,545.95 / $4,685.95 / $4,995.95; 1.5kg payload, 700mm reach, 1mm repeatability), and the discontinuation banners on /aloha-stationary and /aloha-solo, as of October 2026. Solo AI pricing from the /ai lineup overview page. Pi0/Pi0.5 support confirmed via Trossen's OpenPI integration posts. Octo compatibility is explicitly NOT claimed here — Trossen's content ties Octo to the general LeRobot ecosystem rather than to its own hardware by name, unlike its direct ACT/ACT++ and Pi0/Pi0.5 statements. Tagged New because this is a newly added Directory listing for Trossen's current, actively-sold, directly-priced product lineup — not a research platform of uncertain availability. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.trossenrobotics.com/ai",
+  "pricing": {
+    "summary": "Four configurations, all built to order: **Stationary AI** (fixed two-arm bimanual workstation) is **$23,995.95**. **Mobile AI** (the same arm pairing on a wheeled base) is **$33,695.95** without a laptop or **$40,025.80** with one included. **Solo AI** (single-arm field data-collection kit) ranges **$11,385.95-$23,995.95** depending on configuration. The standalone **WidowX AI** arm sells individually at **$4,545.95** (base), **$4,685.95** (leader), or **$4,995.95** (follower). All prices and the 2-3 week average production time are taken directly from Trossen's own product pages. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "This catalog's Open Source badge is not applied here: unlike the original Stanford ALOHA project this lineup descends from, the WidowX AI arm and the rest of the current Trossen AI hardware are Trossen's own closed commercial products, not published as open hardware. Trossen explicitly guarantees that the computers sold with this hardware are \"optimized and guaranteed to support model training and/or evaluation for ACT/ACT++ trained models,\" and separately documents Pi0/Pi0.5 training and fine-tuning through its OpenPI integration. Trossen's own marketing discusses Octo and other foundation models in the context of the broader LeRobot ecosystem, but — unlike its ACT/ACT++ and Pi0/Pi0.5 statements — none of its pages directly claim Trossen AI hardware itself is Octo-compatible, so that claim is left out here pending a clearer first-party statement. **Rebrand context:** Trossen's original ALOHA-branded kits were built around Interbotix's ViperX-300 and WidowX-250 arms; both the Aloha Stationary and Aloha Solo product pages now carry a \"THIS PRODUCT HAS BEEN DISCONTINUED\" notice pointing buyers to this Trossen AI lineup instead. The standalone Interbotix ViperX-300 6DOF arm — listed elsewhere in this directory — carries the same discontinuation notice on Trossen's site, which is worth factoring in when that listing is next reviewed."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "The original open-source hardware design and data-collection/teleoperation codebase this lineup descends from. MIT-licensed."
+    },
+    {
+      "status": "not-listed",
+      "note": "Adds a wheeled mobile base to the same bimanual arm pairing, the open-source precedent for this lineup's Mobile AI kit. MIT-licensed."
+    }
+  ]
+}

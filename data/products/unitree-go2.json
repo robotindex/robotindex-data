@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "unitree-go2",
-  "slug": "product-unitree-go2.html",
+  "slug": "product-unitree-go2",
   "name": "Unitree Go2",
   "manufacturer": "Unitree",
   "category": "Humanoid & General Purpose",
@@ -55,10 +55,10 @@
       "note": "EDU tier; Air 2.5 m/s, Pro 3.5 m/s"
     }
   ],
-  "sourcing": "Specs sourced from Unitree's official product and shop pages (unitree.com/go2, shop.unitree.com), Unitree's original July 2023 launch release, and IEEE Spectrum's tier-by-tier coverage, as of September 2026. Max speed, payload, connectivity, and compute vary by tier — figures above reflect the specific tier noted, not a single universal spec. Go2 EDU has no public price; contact Unitree sales directly. robotindex does not sell this product.",
+  "sourcing": "Specs sourced from Unitree's official product and shop pages (unitree.com/go2, shop.unitree.com), Unitree's original July 2023 launch release, and IEEE Spectrum's tier-by-tier coverage, as of September 2026. Max speed, payload, connectivity, and compute vary by tier — figures above reflect the specific tier noted, not a single universal spec. Go2 EDU has no public price; contact Unitree sales directly. The 2026 price cuts and Go2 Air's current standing as Unitree's cheapest product are corroborated by RoboZaps, Anton Robots, and Robot Price Index coverage. robotindex does not sell this product.",
   "manufacturerUrl": "https://www.unitree.com/go2",
   "pricing": {
-    "summary": "From **$1,600** (Go2 Air); Go2 Pro is **$2,800**, Go2 X is **$4,500**, and Go2 EDU is **contact-for-price** since Unitree does not list it publicly. Specs and features vary meaningfully by tier, so treat any single quoted price or spec as tier-specific — see the comparison below.",
+    "summary": "From **$1,600** (Go2 Air); Go2 Pro is **$2,800**, Go2 X is **$4,500**, and Go2 EDU is **contact-for-price** since Unitree does not list it publicly. Unitree cut prices across the Go2 line during 2026; at $1,600, Go2 Air is now the cheapest robot Unitree sells. Specs and features vary meaningfully by tier, so treat any single quoted price or spec as tier-specific — see the comparison below.",
     "tiers": [
       {
         "tier": "Go2 Air",
@@ -94,7 +94,19 @@
   ],
   "firmwareCommunity": [
     {
-      "buildsModsId": "chvmp-champ"
+      "buildsModsId": "unitree-sdk2-python"
+    },
+    {
+      "buildsModsId": "unitree-sdk2"
+    },
+    {
+      "buildsModsId": "unitree-ros2"
+    },
+    {
+      "buildsModsId": "unitree-mujoco"
+    },
+    {
+      "buildsModsId": "unitree-rl-lab"
     }
   ]
 }

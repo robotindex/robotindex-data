@@ -1,0 +1,79 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "egoscience-cubie",
+  "slug": "product-egoscience-cubie",
+  "name": "EgoScience Cubie",
+  "manufacturer": "Egodai",
+  "category": "Pets & Toys",
+  "subcategory": "Robot Pets",
+  "tier": "under-review",
+  "flags": {
+    "pending": true,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A palm-sized, stackable desktop companion robot from EgoScience with two expression screens and no built-in camera by design — it reads the room entirely through sound (voice, ambient noise, keyboard typing, laughter) and a desk-edge sensor. Funded on Kickstarter in April–May 2026; shipping to backers hasn't started yet.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "Not manufacturer-confirmed",
+      "note": "no published capacity or runtime figure"
+    },
+    {
+      "label": "Dimensions",
+      "value": "91 × 91 × 94 mm",
+      "note": "W × D × H, per third-party review"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Wi-Fi 6, BT 5.2",
+      "note": "single-source figure"
+    },
+    {
+      "label": "Camera",
+      "value": "None",
+      "note": "excluded intentionally, for privacy"
+    },
+    {
+      "label": "Display",
+      "value": "Dual screens",
+      "note": "face/eyes + message-bubble screen"
+    },
+    {
+      "label": "Mobility",
+      "value": "5 DOF",
+      "note": "single-source figure"
+    },
+    {
+      "label": "AI",
+      "value": "Offline local agent",
+      "note": "+ optional ChatGPT / Gemini / Claude"
+    },
+    {
+      "label": "Subscription",
+      "value": "None found",
+      "note": "cloud LLM features included; no paid tier disclosed"
+    }
+  ],
+  "sourcing": "Specs sourced from EgoScience's Kickstarter campaign page and FAQ, egodai.com, and secondary coverage from Homecrux, GizmoCrowd, and Mia's Cubie review, as of September 2026. The campaign is run under the Kickstarter creator account \"egodai,\" which the project itself brands as \"EgoScience\" — both names refer to the same product. Weight is only published as a regulatory ceiling (\"under 2 kg / 4.4 lbs\"), not a measured figure, and is omitted from the specs above rather than stated as exact. No offer/price schema is included on this page: the Kickstarter campaign has ended, there is no open retail listing, and EgoScience's own FAQ confirms the shipping timeline is unresolved. robotindex does not sell this product.",
+  "manufacturerUrl": "https://egodai.com/",
+  "pricing": {
+    "summary": "Kickstarter pledge tiers ran from **$179** (Super Early Bird — includes a charging dock, three top hats, keycaps, and three character packs) up to $249 (Special Finish edition) and $399 (two-unit bundle), plus roughly $15 shipping depending on region. The campaign closed May 30, 2026 having raised $833,514 from 4,175 backers against a $10,000 goal, but Cubie has no general retail listing yet — it's backer-only for now, and units haven't shipped."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "Cubie stacks two small displays — one showing a chat-bubble \"speech\" readout, the other an animated pair of eyes — on a body that EgoScience describes as offering 5 degrees of freedom, with desk-edge detection to keep it from driving off the table. It has no built-in camera; environmental awareness comes entirely from audio, recognizing voice commands, ambient sound, keyboard typing, laughter, and game audio to infer context. A built-in \"Local Agent\" chip handles this offline, while an optional connection layers in ChatGPT, Gemini, or Claude for more complex conversation. Multiple units can also communicate with each other over audio. Connectivity is Wi-Fi 6 and Bluetooth 5.2, and it charges on an included dock (a metal-finish dock is a paid upgrade)."
+    },
+    {
+      "heading": "Insights",
+      "body": "EgoScience says it left out a built-in camera specifically for privacy, relying on audio alone to sense its surroundings — a deliberate trade-off compared to camera-equipped desktop companions elsewhere in this category. Separately, the original delivery estimate (July 2026) has already passed as of this writing: EgoScience's own Kickstarter FAQ says the shipping timeline is being reassessed over EMC compliance work on the dual-screen display and a motor-batch validation issue, with no revised date published in the sources checked here."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "EgoScience Cubie has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

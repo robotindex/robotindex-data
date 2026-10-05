@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "ascento-guard",
-  "slug": "product-ascento-guard.html",
+  "slug": "product-ascento-guard",
   "name": "Ascento Guard",
   "manufacturer": "Ascento",
   "category": "Security",
   "subcategory": "Outdoor Security",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -70,7 +70,7 @@
       "note": "remote human alert triage included in the hourly rental — no separate monitoring tier"
     }
   ],
-  "sourcing": "Verified against Ascento's own official site (ascento.ai), TechCrunch and Forbes launch coverage, and The Robot Report's Guard and Guard 2.0 coverage. Company funding/status information is only confirmed through 2024 reporting; no 2025–2026 update was found. \"Watchlist\" could not be confirmed as an Ascento product or customer name and should not be treated as accurate. Do not confuse this B2B \"Ascento Guard\" security robot with \"Ascento Pro,\" a similarly-descended but separately-sold research/education robot from a different company (MYBOTSHOP).",
+  "sourcing": "Verified against Ascento's own official site (ascento.ai), Forbes and RoboticsTomorrow launch coverage, and The Robot Report's Guard and Guard 2.0 coverage. On rechecking, the most recent independently-dated evidence found is the September 2023 $4.3M funding round and Guard 2.0 launch — no 2024, 2025, or 2026 update was found anywhere, a correction from an earlier, less precise \"through 2024\" note here. \"Watchlist\" could not be confirmed as an Ascento product or customer name and should not be treated as accurate. Do not confuse this B2B \"Ascento Guard\" security robot with \"Ascento Pro,\" a similarly-descended but separately-sold research/education robot from a different company (MYBOTSHOP).",
   "manufacturerUrl": "https://ascento.ai/",
   "pricing": {
     "summary": "Ascento Guard is not sold as a purchasable product with a listed MSRP — it's leased through a robot-as-a-service model at an hourly rate to business customers, with pricing arranged per contract rather than published publicly."
@@ -82,7 +82,7 @@
     },
     {
       "heading": "Insights",
-      "body": "The name \"Watchlist,\" sometimes associated with Ascento, is not an actual Ascento product or confirmed customer. Ascento Guard should also not be confused with \"Ascento Pro,\" a similarly-descended but separately-sold research/education robot from a different company (MYBOTSHOP)."
+      "body": "The name \"Watchlist,\" sometimes associated with Ascento, is not an actual Ascento product or confirmed customer. Ascento Guard should also not be confused with \"Ascento Pro,\" a similarly-descended but separately-sold research/education robot from a different company (MYBOTSHOP). No public activity has surfaced since the September 2023 funding round and Guard 2.0 launch — over two years stale as of this check, which is why this remains Under Review rather than Featured."
     }
   ],
   "firmwareCommunity": [

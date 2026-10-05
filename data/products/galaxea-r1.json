@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "galaxea-r1",
+  "slug": "product-galaxea-r1",
+  "name": "Galaxea R1 Series",
+  "manufacturer": "Galaxea Dynamics",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Wheeled / Mobile Base",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A wheeled, dual-arm humanoid family from **Galaxea AI** (Galaxea Dynamics), a Suzhou startup founded September 2023 by former Waymo and Momenta engineer Jiyang Gao and Stanford/Berkeley-trained roboticist Huazhe Xu. Three variants share a three-wheel steering chassis and height-adjustable torso: **R1 Lite** ($39,999, 6-DOF arms), the original **R1** (24 DOF), and **R1 Pro** ($69,999, 7-DOF arms, 10 kg dual-arm payload). Built for research, teleoperation data collection, and industrial pick-and-place — not for home use.",
+  "specs": [
+    {
+      "label": "Variants",
+      "value": "3",
+      "note": "R1 Lite, R1, R1 Pro"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "23–26",
+      "note": "Lite 23, R1 24, Pro 26"
+    },
+    {
+      "label": "Arms",
+      "value": "6 or 7 DOF",
+      "note": "6-DOF on Lite/R1; 7-DOF on Pro"
+    },
+    {
+      "label": "Payload",
+      "value": "3–10 kg",
+      "note": "Lite 3 kg rated; R1 5 kg @ 0.5 m; Pro 7 kg rated, 10 kg max"
+    },
+    {
+      "label": "Weight",
+      "value": "96–126 kg",
+      "note": "Lite 96 kg; Pro 126 kg with battery"
+    },
+    {
+      "label": "Vertical Reach",
+      "value": "0–2 m",
+      "note": "Height-adjustable torso; R1 arm reach 70 cm (86 cm with gripper)"
+    },
+    {
+      "label": "Compute",
+      "value": "Orin 32GB",
+      "note": "R1 Pro: Jetson AGX Orin, 200 TOPS; R1 Lite: Core i9-12900HK"
+    },
+    {
+      "label": "Chassis",
+      "value": "3-wheel steering",
+      "note": "Omnidirectional vector drive"
+    }
+  ],
+  "sourcing": "Verified against Galaxea's own store (galaxea-dynamics.com product and collection pages), Galaxea's R1 user guide, its OpenGalaxea GitHub repository (GalaxeaVLA), and a third-party Galaxea company profile, as of October 2026. Flagged as uncertain: the original R1 is absent from Galaxea's store and its $49,999 price comes only from a reseller; R1 Pro's weight is 126 kg on Galaxea's page but 96 kg on one third-party aggregator, which matches the R1 Lite figure and looks like a mix-up, so Galaxea's figure is used; R1 payload is 5 kg at 0.5 m in the user guide while a reseller lists 3.5 kg per arm / 10 kg combined, which matches R1 Pro's spec, so the user guide figure is used. Battery capacity and R1/R1 Lite runtime were not found in any fetched source (one aggregator reports 3 hours and 5.4 km/h for R1 Pro, not confirmed by Galaxea). The image supplied shows a wheeled dual-arm humanoid consistent with the R1 family but was not matched to a specific variant. Tagged New as a newly added listing. robotindex does not sell this product.",
+  "manufacturerUrl": "https://galaxea-dynamics.com/",
+  "pricing": {
+    "summary": "**R1 Lite** is **$39,999** and **R1 Pro** is **$69,999** on Galaxea's own store. The R1 Lite page adds that it is not currently available for direct purchase and directs business and education buyers to contact Galaxea. The original **R1** does not appear on Galaxea's store at all; the only price found is **$49,999** from a third-party reseller, so treat that figure as unconfirmed. Galaxea's store also lists a \"Kengo\" robot at a literal $999,999.00, almost certainly a contact-sales placeholder, not a real price. Education discounts and bulk pricing are handled by email. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Galaxea launched the R1 Pro and R1 Lite in late 2024 alongside the previously released R1, positioning the line as a research and data-collection platform, with isomorphic and VR teleoperation built in. The company has raised roughly $210 million from more than 30 investors including Meituan, IDG Capital, and Baidu Ventures, with a reported $700 million valuation as of August 2025. This catalog's Open Source badge does not apply: Galaxea's OpenGalaxea GitHub organization publishes the G0.5 vision-language-action model (weights, training and inference code, with deployment guides for R1 Lite and R1 Pro), a simulation repo, and a 500-hour open-world manipulation dataset, but the G0.5 license permits non-commercial use only, and no hardware designs are released. The robot itself is a closed commercial product."
+    }
+  ]
+}

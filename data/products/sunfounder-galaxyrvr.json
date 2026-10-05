@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "sunfounder-galaxyrvr",
-  "slug": "product-sunfounder-galaxyrvr.html",
+  "slug": "product-sunfounder-galaxyrvr",
   "name": "SunFounder GalaxyRVR",
   "manufacturer": "SunFounder",
   "category": "Educational & Hobbyist",
   "subcategory": "Mobile Robot Kits",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": true,
@@ -78,8 +78,7 @@
   ],
   "firmwareCommunity": [
     {
-      "status": "not-listed",
-      "note": "SunFounder's own GPL-3.0-licensed firmware repository for GalaxyRVR."
+      "buildsModsId": "sunfounder-galaxyrvr"
     }
   ]
 }

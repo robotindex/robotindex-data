@@ -1,0 +1,88 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "unitree-h1",
+  "slug": "product-unitree-h1",
+  "name": "Unitree H1 / H1-2",
+  "manufacturer": "Unitree",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "under-review",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "Unitree's first full-size humanoid (launched 2023), built for locomotion and research rather than consumers. The original H1 is about 180 cm and 47 kg with simple 4-DOF arms, and carries Unitree's claimed 3.3 m/s humanoid speed record. The H1-2 revision is heavier (about 70 kg) and trades top speed (under 2 m/s) for 7-DOF arms that can carry real loads and take dexterous hands. Still sold, but Unitree's cheaper H2 ($29,900) now sits above it in the lineup as the newer full-size humanoid.",
+  "specs": [
+    {
+      "label": "Height",
+      "value": "~180 cm (H1)",
+      "note": "~178 cm (H1-2)"
+    },
+    {
+      "label": "Weight",
+      "value": "~47 kg (H1)",
+      "note": "~70 kg (H1-2), with battery"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "H1: 5/leg + 4/arm",
+      "note": "H1-2: 27 total — 6/leg, 7/arm, 1 waist"
+    },
+    {
+      "label": "Speed",
+      "value": "3.3 m/s (H1)",
+      "note": "<2 m/s (H1-2) — H1 figure is Unitree's own claimed record"
+    },
+    {
+      "label": "Battery",
+      "value": "864 Wh",
+      "note": "15 Ah, 67.2V max; quick-swap — runtime disputed, see Insights"
+    },
+    {
+      "label": "Compute",
+      "value": "Intel i5 + i7",
+      "note": "configuration disputed between sources, see Insights"
+    },
+    {
+      "label": "Sensors",
+      "value": "3D LiDAR + depth cam",
+      "note": "360° depth perception"
+    },
+    {
+      "label": "Arm Payload",
+      "value": "H1-2: ~7 kg rated",
+      "note": "~21 kg peak; not specified for original H1"
+    },
+    {
+      "label": "Hands",
+      "value": "Optional",
+      "note": "H1-2 supports Dex5-1 or other dexterous hands"
+    }
+  ],
+  "sourcing": "Specs verified against Unitree's official H1/H1-2 product and shop pages as of September 2026, cross-checked against third-party spec aggregator humanoid.guide. Flagged as uncertain: H1-2's exact battery runtime and compute configuration (sources disagree, see Insights), H1-2's real-world street price (dealer quotes range roughly $112,000–$128,900), and whether the 3.3 m/s speed figure is an independently certified record or simply Unitree's own claim. Moved from Featured to Under Review because H1/H1-2 is effectively legacy in practice — H1-2 delisted/sold out at resellers per RoboZaps, H1 absent from the 2026 Spring Festival Gala lineup, and an unconfirmed-by-Unitree March 2026 EOL claim from a U.S. distributor — even though Unitree has not issued an official discontinuation notice and the H1 remains store-listed. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.unitree.com/h1",
+  "pricing": {
+    "summary": "Unitree's own store lists the H1 at **$90,000** but labels it \"contact us for the real price,\" so treat that as a quote anchor rather than a checkout price — customs duties aren't included. U.S. dealer quotes seen for this page run roughly $99,900 for H1 and, for H1-2, anywhere from about $112,000 to $128,900 depending on the reseller — a wide enough spread that no single H1-2 number should be treated as reliable. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "H1-2's battery runtime is stated directly by at least one third-party spec aggregator as roughly 2 hours per charge, but Unitree's own page doesn't state a runtime figure at all — so that \"2 hours\" is a reseller/aggregator estimate, not a manufacturer spec, and shouldn't be read as more precise than it is. Compute is similarly unsettled: some sources describe the platform as running a dual Intel i5 (system) + i7 (user development) setup, while others describe H1-2 specifically as a single Intel i7-1265U — it's not clear whether these describe different variants, a running change, or one source simply being wrong. Unitree launched a cheaper H2 model in 2026 at $29,900, positioning it above H1/H1-2 in the current lineup despite the lower price — H1/H1-2 remains sold but is no longer Unitree's newest full-size humanoid. By mid-to-late 2026, H1/H1-2 looks effectively wound down rather than merely superseded: the H1-2 variant is delisted and sold out at the resellers RoboZaps tracks, the H1 was absent from Unitree's lineup at the 2026 Spring Festival Gala (replaced on stage by G1 units and the H2), and at least one U.S. distributor states the H1 reached end-of-life in March 2026 — though Unitree itself has not published an official EOL date, and the H1 remains listed (quote-only) on Unitree's own store as of mid-2026."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "unitree-sdk2"
+    },
+    {
+      "buildsModsId": "unitree-ros2"
+    },
+    {
+      "buildsModsId": "unitree-mujoco"
+    },
+    {
+      "buildsModsId": "unitree-rl-lab"
+    }
+  ]
+}

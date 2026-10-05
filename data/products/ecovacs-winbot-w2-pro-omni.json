@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "ecovacs-winbot-w2-pro-omni",
-  "slug": "product-ecovacs-winbot-w2-pro-omni.html",
+  "slug": "product-ecovacs-winbot-w2-pro-omni",
   "name": "ECOVACS WINBOT W2 PRO Omni",
   "manufacturer": "Ecovacs",
   "category": "Cleaning & Home Care",
   "subcategory": "Other",
-  "tier": "featured",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -69,7 +69,7 @@
       "note": "free ECOVACS HOME app; no cloud fee found"
     }
   ],
-  "sourcing": "Specs sourced from Ecovacs' own US product page (ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2-pro-omni), TechRadar's review, and Tom's Guide's coverage, as of September 2026. Price is reported inconsistently ($499.99 vs. $699.99) across the sources checked — both are shown rather than picking one arbitrarily. No formal safety certification (e.g., UL) was found referenced for this model. robotindex does not sell this product.",
+  "sourcing": "Specs sourced from Ecovacs' own US product page (ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2-pro-omni), TechRadar's review, and Tom's Guide's coverage, as of September 2026. Price is reported inconsistently ($499.99 vs. $699.99) across the sources checked — both are shown rather than picking one arbitrarily. The W2S OMNI and W3 OMNI successor models are confirmed via 9to5Google and Ecovacs' own current product pages. No formal safety certification (e.g., UL) was found referenced for this model. Moved from Featured to Under Review because it's no longer Ecovacs' top window-cleaning model — the W2S OMNI and W3 OMNI have taken that position. robotindex does not sell this product.",
   "manufacturerUrl": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2-pro-omni",
   "pricing": {
     "summary": "Ecovacs.com and Amazon list **$499.99**, while TechRadar cites a **$699.99** ($699.99 / AU$999) MSRP — robotindex could not resolve whether this reflects a standing promotional price or a regional/timing difference, so both figures are shown pending clarification."
@@ -81,7 +81,7 @@
     },
     {
       "heading": "Insights",
-      "body": "Price for the W2 Pro Omni is reported inconsistently across sources: Ecovacs' own store and Amazon list $499.99, while TechRadar cites a $699.99 MSRP. It's unclear whether this reflects a standing promotional price or a regional/timing difference."
+      "body": "Price for the W2 Pro Omni is reported inconsistently across sources: Ecovacs' own store and Amazon list $499.99, while TechRadar cites a $699.99 MSRP. It's unclear whether this reflects a standing promotional price or a regional/timing difference. Ecovacs has since introduced the newer W2S OMNI and W3 OMNI models, which now lead the window-robot line — the W2 Pro Omni covered here is a step behind Ecovacs' current flagship window cleaners."
     }
   ],
   "firmwareCommunity": [

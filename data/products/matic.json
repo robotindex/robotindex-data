@@ -1,0 +1,99 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "matic",
+  "slug": "product-matic",
+  "name": "Matic",
+  "manufacturer": "Maticrobots",
+  "category": "Cleaning & Home Care",
+  "subcategory": "Floors",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A robot vacuum/mop that navigates with 5 RGB-infrared cameras and an on-device NVIDIA Jetson Orin running long-term SLAM instead of LiDAR — all mapping and cleaning data stays on the robot and inside the home network. Sold direct-only with a 6-month return window; the dock is charging-only, with no auto-empty, mop-wash, or water-refill.",
+  "specs": [
+    {
+      "label": "Navigation",
+      "value": "5 cameras + SLAM",
+      "note": "RGB-infrared cameras, no LiDAR; on-device NVIDIA Jetson Orin"
+    },
+    {
+      "label": "Suction",
+      "value": "8.11 kPa",
+      "note": "sealed suction, per RobotVacHub's independent test"
+    },
+    {
+      "label": "Battery",
+      "value": "~2.5 hr vacuum",
+      "note": "~3 hr mopping; auto-returns to dock and resumes when depleted"
+    },
+    {
+      "label": "Dimensions",
+      "value": "11 × 9.4 × 7.8 in",
+      "note": "body; cleaning head adds 4.1 × 9.4 × 3.0 in"
+    },
+    {
+      "label": "Weight",
+      "value": "Not published",
+      "note": "not listed by Matic or found in reviews checked"
+    },
+    {
+      "label": "Price",
+      "value": "$1,495",
+      "note": "one robot + one dock; raised from $1,245 effective Sept 9, 2026 — see note below"
+    },
+    {
+      "label": "Dock",
+      "value": "Charging only",
+      "note": "no auto-empty, mop-wash, or water-refill"
+    },
+    {
+      "label": "Water Tank",
+      "value": "600 mL",
+      "note": "~800–1,300 sq ft per fill, sources vary"
+    },
+    {
+      "label": "Noise",
+      "value": "50–55 dB",
+      "note": "50dB patrolling, 52dB mopping, 55dB vacuuming"
+    },
+    {
+      "label": "Sales Channel",
+      "value": "Direct only",
+      "note": "maticrobots.com; 1-year limited warranty applies only to direct purchases"
+    },
+    {
+      "label": "Trial",
+      "value": "6-month return",
+      "note": "free shipping and returns, except Alaska/Hawaii"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "Matic ran a $125/mo rental plan from 2023 before switching to purchase-only pricing"
+    }
+  ],
+  "sourcing": "Specs sourced from Matic's own product and FAQ pages (maticrobots.com/product, support.maticrobots.com/frequently-asked-questions), Vacuum Wars' hands-on review, and RobotVacHub's review, as of September 2026. Price was checked directly against maticrobots.com/product on the date this page was written and against independent reporting of the change: Matic raised its base price from $1,245 to $1,495 effective September 9, 2026 due to rising component costs — this is a price increase, not a discount lapsing, and some review coverage published before the change date still shows the superseded $1,245 figure. Robot weight is not published by Matic and was not found in either review checked. Water-tank coverage area is given inconsistently across sources (~800 sq ft on Matic's own page vs. ~1,300 sq ft per the FAQ) and is noted here rather than resolved in one direction. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.maticrobots.com/product",
+  "pricing": {
+    "summary": "Base configuration (one robot, one dock) is **$1,495** as of this writing. Matic raised its price from $1,245 to $1,495 effective **September 9, 2026**, citing rising costs for memory and other components — a genuine increase, not a temporary discount lapsing, and several secondary write-ups published just before or around the change date still show the old $1,245 figure. Multi-dock and two-robot bundles run from $1,593 up to $2,990."
+  },
+  "editorial": [
+    {
+      "heading": "Privacy & Navigation",
+      "body": "Where most flagship robot vacuums use LiDAR turrets, Matic navigates entirely on cameras: 5 RGB-infrared cameras feeding an onboard NVIDIA Jetson Orin that runs long-term SLAM mapping and recognizes people, pets, and kids for collision avoidance. Matic states that audio and video data \"never leaves your home\" — processing is on-device, and any network communication stays inside the home network rather than a vendor cloud. This local-only approach is the main reason the product fits this site's focus, though independent reviews note the tradeoff: navigation runs noticeably slower than LiDAR-based competitors (RobotVacHub measured 227 minutes for a run other flagships complete in roughly 60)."
+    },
+    {
+      "heading": "Insights",
+      "body": "The dock is charging-only — no auto-empty, no mop-washing, no water-refill — which independent reviewers describe as the single most-cited complaint given the flagship price point. Matic previously sold a $125/month rental subscription starting in 2023 before discontinuing it in favor of the current purchase-only model with a 6-month return window. Robot weight is not published by Matic and wasn't found in either review checked."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Matic has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

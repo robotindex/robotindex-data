@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "interbotix-viperx-300-6dof",
-  "slug": "product-interbotix-viperx-300-6dof.html",
+  "slug": "product-interbotix-viperx-300-6dof",
   "name": "Interbotix ViperX-300 6DOF",
   "manufacturer": "Trossen Robotics",
   "category": "Robot Arms",
   "subcategory": "",
-  "tier": "featured",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -60,7 +60,7 @@
       "note": "3D-printable end-effectors, open CAD"
     }
   ],
-  "sourcing": "Specs sourced from Trossen Robotics' official product page (trossenrobotics.com/viperx-300) and its X-Series arm documentation (docs.trossenrobotics.com, vx300s specification page), including the full per-joint servo table. **Status:** as of this research, Trossen's own store lists the ViperX 300 S as sold out (\"KIT-VIPX300-6DOF-OLD\" in their SKU) with a note that a new-generation product line has replaced it and is available for pre-order — pricing here reflects the last listed price for this (now legacy) unit, not a current one. robotindex does not sell this product.",
+  "sourcing": "Specs sourced from Trossen Robotics' official product page (trossenrobotics.com/viperx-300) and its X-Series arm documentation (docs.trossenrobotics.com, vx300s specification page), including the full per-joint servo table. Moved from Featured to Under Review on a rechecked basis: Trossen's own store now lists the original 6DOF kit under SKU \"KIT-VIPX300-6DOF-OLD\" (sold out), and even its follow-on, the \"ViperX 300 S,\" is itself now labeled a \"legacy arm\" and also shown sold out, with a further, still-unnamed new-generation line available only for pre-order. No public specs or pricing for that newest generation were found; Trossen directs interested buyers to contact sales directly. Pricing above reflects the last listed price for the (now doubly-superseded) unit this entry covers, not a current one. robotindex does not sell this product.",
   "manufacturerUrl": "https://www.trossenrobotics.com/viperx-300",
   "pricing": {
     "summary": "Last listed at $6,742.95 on Trossen Robotics' own store before going out of stock — treat this as a historical rather than current price. The listing is marked sold out, with a notice that a \"new generation\" product line is available for pre-order as a replacement; no public specs or pricing for that successor were found, and Trossen directs interested buyers to contact sales directly."

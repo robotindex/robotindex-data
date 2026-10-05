@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "loona",
-  "slug": "product-loona.html",
+  "slug": "product-loona",
   "name": "Loona",
   "manufacturer": "KEYi Technology",
   "category": "Pets & Toys",

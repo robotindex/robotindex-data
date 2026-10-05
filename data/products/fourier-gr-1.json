@@ -1,0 +1,65 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "fourier-gr-1",
+  "slug": "product-fourier-gr-1",
+  "name": "Fourier GR-1",
+  "manufacturer": "Fourier",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "under-review",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "Fourier's first general-purpose humanoid — from the Shanghai company (founded 2015, better known for rehabilitation exoskeletons before expanding into humanoids in 2019). GR-1 achieved bipedal walking in 2022 and was unveiled publicly at the July 2023 World Artificial Intelligence Conference in Shanghai, with an initial target of 100 units distributed mainly to universities and AI labs for research rather than sold commercially. **No longer sold:** GR-1 does not appear in Fourier's current lineup, having been superseded by the taller, higher-DOF GR-2 (2024) and GR-3 (2025).",
+  "specs": [
+    {
+      "label": "Height",
+      "value": "165 cm"
+    },
+    {
+      "label": "Weight",
+      "value": "55 kg"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "40"
+    },
+    {
+      "label": "Max Walking Speed",
+      "value": "5 km/h"
+    },
+    {
+      "label": "Payload",
+      "value": "Up to 50 kg",
+      "note": "Manufacturer claim — see note below"
+    },
+    {
+      "label": "Peak Torque",
+      "value": "300 N·m",
+      "note": "Hip motors"
+    },
+    {
+      "label": "Actuators",
+      "value": "Electric",
+      "note": "Not hydraulic"
+    },
+    {
+      "label": "Status",
+      "value": "Discontinued",
+      "note": "No longer in Fourier's current lineup"
+    }
+  ],
+  "sourcing": "Verified against Wikipedia's Fourier company entry, New Atlas's original July 2023 GR-1 coverage, The Robot Report's July 2024 rebrand coverage, and a 2026 third-party specs/pricing review (RoboZaps), as of October 2026. Flagged as uncertain: no official Fourier retail price for GR-1 exists; the widely-cited \"$149,000+\" figure is an aggregator estimate. Several third-party distributor listings (americansatellite.us and similarly-branded storefronts) explicitly mark GR-1 \"DISCONTINUED\" and \"Out of stock,\" and it is absent from Fourier's current own site — but Wikipedia's framing is succession by the GR-2/GR-3 rather than a formal discontinuation notice from Fourier itself, so both framings are presented rather than picking one. The 50kg payload figure is a manufacturer spec-sheet claim, notably close to the robot's own 55kg body weight, and is not independently verified here. Tagged Under Review and Discontinued because this is a no-longer-sold product with no official current pricing or lineup presence — not because its core specs are unconfirmed. robotindex does not sell this product.",
+  "manufacturerUrl": "https://fourierintelligence.com/",
+  "pricing": {
+    "summary": "Fourier never published an official retail price for GR-1 — it was distributed only through quote-only arrangements to universities and AI research labs, not sold commercially off a price list. A \"$149,000+\" figure circulates widely online, but that is a third-party aggregator estimate, not a confirmed Fourier number, so it is not treated as a real price here. For reference, GR-1's successors carry distributor list prices around **$125,000** (GR-2) and **$119,995** (GR-3) at outlets such as americansatellite.us — those figures aren't official Fourier pricing either, but they're the closest available signal for where this lineup sits today. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Development began in 2019, the same year Fourier (then \"Fourier Intelligence\") decided to expand beyond its original rehabilitation-robotics business — the company had launched the Fourier X1 walking-assist exoskeleton in 2017 and deployed rehab devices into hundreds of hospitals worldwide. GR-1 reached bipedal walking in 2022 and was shown publicly at WAIC Shanghai in July 2023; some coverage has billed it as the \"world's first mass-produced humanoid robot,\" a marketing-style claim worth treating with some skepticism given the small, research-focused production run (100 units targeted for 2023) rather than true mass manufacturing. In July 2024, Fourier Intelligence split into two entities — Fourier, continuing humanoid robotics, and Fourier Rehab, spun off to focus on exoskeletons and rehabilitation devices. GR-1 continued to receive updates under the new Fourier entity (a vision system for real-time mapping and obstacle avoidance was added by mid-2024) before being superseded that September by the GR-2 (175cm, 63kg, 53 DOF, swappable battery, 3kg per-arm payload), and again in August 2025 by the GR-3, now described as Fourier's current flagship care-and-companion robot. This catalog does not apply an Open Source badge to GR-1: no public hardware or software release for it was found."
+    }
+  ]
+}

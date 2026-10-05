@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "zeroth-m1",
-  "slug": "product-zeroth-m1.html",
+  "slug": "product-zeroth-m1",
   "name": "Zeroth M1",
   "manufacturer": "Zeroth Robotics",
   "category": "Companion & Social",
   "subcategory": "General Companions",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,
