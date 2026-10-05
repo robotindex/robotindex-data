@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "sharpa-north",
+  "slug": "product-sharpa-north",
+  "name": "Sharpa North",
+  "manufacturer": "Sharpa",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Wheeled / Mobile Base",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A full-body humanoid from **Sharpa**, the Singapore-headquartered robotics company behind the SharpaWave dexterous hand, unveiled at **CES 2026** as its first autonomous full-body robot. Sharpa lists **67 degrees of freedom**, of which **44** are in two tactile-sensing hands, on a **wheeled platform**. A vision-tactile-language-action model called CraftNet drives it. Aimed at service work in hotels, retail, and food and beverage, manufacturing and assembly, and research, not at home use. Inquiry-only.",
+  "specs": [
+    {
+      "label": "Degrees of Freedom",
+      "value": "67",
+      "note": "Sharpa's figure; Humanoids Daily lists 63"
+    },
+    {
+      "label": "Hands",
+      "value": "2 × 22 DOF",
+      "note": "SharpaWave tactile hands, 44 DOF total"
+    },
+    {
+      "label": "Tactile Sensing",
+      "value": "240×240",
+      "note": "Array at 180 fps, 20 ms latency (hand spec page)"
+    },
+    {
+      "label": "Hand Weight",
+      "value": "1.3 kg",
+      "note": "Each; grip force 150 N, fingertip force 20 N"
+    },
+    {
+      "label": "Height",
+      "value": "160 cm",
+      "note": "Third-party site only"
+    },
+    {
+      "label": "Weight",
+      "value": "90 kg",
+      "note": "Third-party site only"
+    },
+    {
+      "label": "Battery",
+      "value": "8 h",
+      "note": "Third-party site only"
+    },
+    {
+      "label": "Compute",
+      "value": "Jetson Thor",
+      "note": "Linux, ROS 2; third-party site only"
+    },
+    {
+      "label": "Software",
+      "value": "CraftNet VTLA",
+      "note": "Three-layer model, about 100 / 10 / 1 Hz"
+    }
+  ],
+  "sourcing": "Verified against Sharpa's North page (sharpa.com/pages/north), its SharpaWave hand page, its CES 2026 announcement, and press coverage (KrASIA, Humanoids Daily, Mike Kalil), as of October 2026. Flagged as uncertain: Sharpa's North page has no spec table, so the arm, neck, waist, payload, and chassis details were not found; total DOF is 67 on Sharpa's page and 63 at Humanoids Daily, and 67 is used; height, weight, battery, compute, and price come from a single third-party site (humanoid.guide) and are unconfirmed; hand figures such as the 20 N fingertip force are from Sharpa's SharpaWave page, which also lists a lower-spec variant, and which variant North uses is not stated; one outlet quotes 30 N fingertip force, which matches the sensing range rather than the force rating. The supplied image shows North on a plain white base with no wheels visible, so the wheeled description comes from press. Funding is in RMB (a CoinEx headline that gives dollars is wrong). Product image: Sharpa. The supplied image had a transparent background, which was set to white.",
+  "manufacturerUrl": "https://www.sharpa.com/pages/north",
+  "pricing": {
+    "summary": "Sharpa publishes **no price**; the North page offers only an enquiry form. One third-party site lists **$130,000** and describes the robot as inquiry-based and at prototype stage, but that figure is unverified and may be a placeholder. Humanoids Daily separately reports about $50,000 per SharpaWave hand, also unverified, while another outlet says hand pricing is undisclosed. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Sharpa was founded in 2024 and is led by co-founders with a Hesai (lidar) background, including Li Yifan, Xiang Shaoqing, and Sun Kai. It announced a financing of more than **RMB 4.5 billion** (about US$668 million) at a roughly RMB 22 billion (about US$3.3 billion) post-money valuation on September 3, 2026, with Alibaba, Tencent, Meituan, and JD.com among the investors. At CES 2026 it demonstrated ping-pong and card handling and four days of autonomous operation. Reported deployments include container handling at an A*STAR port and a Dairy Queen outlet in Shanghai running a 55-step ice-cream workflow, though the restaurant source does not itself name the robot as North. Sharpa launched a separate robot, D01, at IROS 2026, which this page does not cover. The Open Source badge does not apply: nothing suggests open hardware or software."
+    }
+  ]
+}

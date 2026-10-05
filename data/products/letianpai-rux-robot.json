@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "letianpai-rux-robot",
-  "slug": "product-letianpai-rux-robot.html",
+  "slug": "product-letianpai-rux-robot",
   "name": "Letianpai Rux Robot",
   "manufacturer": "Letianpai",
   "category": "Pets & Toys",
   "subcategory": "Robot Pets",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": true,
@@ -77,8 +77,7 @@
   ],
   "firmwareCommunity": [
     {
-      "status": "not-listed",
-      "note": "Letianpai's own official, GPLv2-licensed open-source system ROM for GeeUI, the software platform running on the Rux Robot."
+      "buildsModsId": "letianpai-rux-robot-geeui-rom"
     }
   ]
 }

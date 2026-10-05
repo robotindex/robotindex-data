@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "mangdang-mini-pupper-2-pro",
-  "slug": "product-mangdang-mini-pupper-2-pro.html",
+  "slug": "product-mangdang-mini-pupper-2-pro",
   "name": "MangDang Mini Pupper 2 Pro",
   "manufacturer": "MangDang",
   "category": "Educational & Hobbyist",
@@ -12,7 +12,7 @@
     "openSource": true,
     "closedPlatform": false
   },
-  "description": "A 12-DOF quadruped robot dog kit running full ROS2 on a Raspberry Pi 4/CM4, descended from Stanford Student Robotics' open-source \"Stanford Pupper\" research platform. The Pro tier upgrades to servos with velocity and torque feedback, not just position, and pairs with an optional spinning lidar for genuine SLAM/Nav2 navigation — a step up in compute and software depth from this catalog's Petoi Bittle X, at roughly double the price once add-ons are included.",
+  "description": "A 12-DOF quadruped robot dog kit running full ROS2 on a Raspberry Pi 4/CM4, descended from Stanford Student Robotics' open-source \"Stanford Pupper\" research platform. The Pro tier upgrades to servos with velocity and torque feedback, not just position, and pairs with an optional spinning lidar for genuine SLAM/Nav2 navigation — a step up in compute and software depth from this catalog's Petoi Bittle X V2, at roughly double the price once add-ons are included.",
   "specs": [
     {
       "label": "Battery",

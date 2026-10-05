@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "boston-dynamics-atlas-electric",
-  "slug": "product-boston-dynamics-atlas-electric.html",
+  "slug": "product-boston-dynamics-atlas-electric",
   "name": "Boston Dynamics Atlas (Electric)",
   "manufacturer": "Boston Dynamics",
   "category": "Humanoid & General Purpose",
   "subcategory": "Two Legs",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,

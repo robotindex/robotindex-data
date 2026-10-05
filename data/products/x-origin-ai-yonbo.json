@@ -1,18 +1,18 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "x-origin-ai-yonbo",
-  "slug": "product-x-origin-ai-yonbo.html",
+  "slug": "product-x-origin-ai-yonbo",
   "name": "X-Origin AI Yonbo",
   "manufacturer": "X-Origin AI",
   "category": "Companion & Social",
   "subcategory": "Children Companions",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,
     "closedPlatform": true
   },
-  "description": "A wheeled, ChatGPT-powered companion robot (the \"Yonbo X1\") from X-Origin AI, with an expressive animated-face screen, homework help, storytelling, and MBTI-style personality customization. Already past crowdfunding and shipping via retail as of this research — worth revisiting whether \"pending\" still fits.",
+  "description": "A wheeled, ChatGPT-powered companion robot (the \"Yonbo X1\") from X-Origin AI, with an expressive animated-face screen, homework help, storytelling, and MBTI-style personality customization. Already past crowdfunding and shipping via retail as of this research.",
   "specs": [
     {
       "label": "Weight",

@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "dolphin-premier",
-  "slug": "product-dolphin-premier.html",
+  "slug": "product-dolphin-premier",
   "name": "Dolphin Premier",
   "manufacturer": "Maytronics",
   "category": "Outdoor & Yard",
@@ -63,7 +63,7 @@
   "sourcing": "Verified against Maytronics' own official store pages (maytronics.com, dolphinofficial.com) and an independent Bob Vila review. Price differs sharply between Maytronics' own current listing ($2,499) and retailer pricing cited by Bob Vila ($1,299–$1,397) — confirm current price at a specific retailer before buying. Navigation is officially named \"CleverClean\"; a conflicting \"SmartNav\" name appears on at least one third-party listing and should not be treated as authoritative. Steps are not explicitly claimed as a cleaned surface in Maytronics' own marketing copy, despite floor/wall/waterline cleaning being confirmed.",
   "manufacturerUrl": "https://www.maytronics.com/en-us/store/residential-pools/best-seller-cleaners/dolphin-premier/99996339-SPL.html",
   "pricing": {
-    "summary": "Maytronics' own current US store lists the Dolphin Premier at **$2,499**, while an independent Bob Vila review cites retailer pricing of **$1,299–$1,397** — a large gap worth flagging prominently and checking against a live retailer before buying, rather than treating either figure as fixed."
+    "summary": "Maytronics' own current US store lists the Dolphin Premier at **$2,499**, while an independent Bob Vila review cites retailer pricing of **$1,299–$1,397**. That gap is large enough that either figure should be checked against a live retailer rather than treated as fixed."
   },
   "editorial": [
     {

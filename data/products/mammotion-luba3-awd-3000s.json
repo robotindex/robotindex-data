@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "mammotion-luba3-awd-3000s",
-  "slug": "product-mammotion-luba3-awd-3000s.html",
+  "slug": "product-mammotion-luba3-awd-3000s",
   "name": "Mammotion LUBA 3 AWD 3000S",
   "manufacturer": "Mammotion",
   "category": "Outdoor & Yard",
@@ -66,7 +66,7 @@
   "sourcing": "Verified against Mammotion's own official product/blog pages (mammotion.com, us.mammotion.com) and a TechRadar review. Runtime-per-charge figures differ between Mammotion's own site (215 min) and TechRadar's tested result (175 min) — both are reported above rather than picking one. Price also differs by source ($2,799 official vs. $2,399 in the TechRadar review); confirm current price before buying. This is a brand-new model announced at CES 2026, so longer-term reliability data isn't yet available.",
   "manufacturerUrl": "https://mammotion.com/pages/luba-3-awd-robot-lawn-mower",
   "pricing": {
-    "summary": "Mammotion's official US site lists the LUBA 3 AWD 3000 at **$2,799**. A TechRadar review cited **$2,399** — likely a launch-promo or bundle price difference around the CES 2026 debut — so treat this as a discrepancy to double-check at checkout rather than a fixed number."
+    "summary": "Mammotion's official US site lists the LUBA 3 AWD 3000 at **$2,799**. A TechRadar review cited **$2,399**, likely a launch-promo or bundle price difference around the CES 2026 debut."
   },
   "editorial": [
     {

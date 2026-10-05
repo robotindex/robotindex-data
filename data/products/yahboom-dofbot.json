@@ -1,8 +1,8 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "yahboom-dofbot",
-  "slug": "product-yahboom-dofbot.html",
-  "name": "Yahboom DOFBOT",
+  "slug": "product-yahboom-dofbot",
+  "name": "Yahboom DOFBOT Pro / Ultra",
   "manufacturer": "Yahboom",
   "category": "Robot Arms",
   "subcategory": "",
@@ -17,22 +17,22 @@
     {
       "label": "Weight",
       "value": "~1,256g assembled",
-      "note": "requires 12V/5A power supply"
+      "note": "Jetson Nano generation figure; requires 12V/5A power supply"
     },
     {
-      "label": "Compute",
-      "value": "Jetson Nano 4GB",
-      "note": "this SKU only — Yahboom sells separate Raspberry Pi (DOFBOT-Pi) and Jetson Orin Nano (DOFBOT Pro) variants"
+      "label": "Compute (current)",
+      "value": "DOFBOT Pro / DOFBOT Ultra",
+      "note": "Pro: Jetson Nano/Orin Nano/Orin NX; Ultra: Raspberry Pi 5 or RDK X5"
     },
     {
-      "label": "Camera",
-      "value": "0.3MP, 30fps",
-      "note": "wide-angle, manual focus — a VGA-class sensor behind the \"AI vision\" marketing"
+      "label": "Camera (current)",
+      "value": "3D depth vision",
+      "note": "Pro and Ultra both ship a depth camera, a step up from the original's 0.3MP unit"
     },
     {
       "label": "Software",
-      "value": "Python 3 + ROS (Noetic)",
-      "note": "OpenCV, YOLOv5, MediaPipe referenced in course materials"
+      "value": "Python 3 + ROS",
+      "note": "Ultra adds ROS2 and vision-guided grasping; OpenCV/YOLOv5/MediaPipe referenced in course materials"
     },
     {
       "label": "Degrees of Freedom",
@@ -42,7 +42,7 @@
     {
       "label": "Payload",
       "value": "~500g vertical",
-      "note": "~200g fully extended — third-party spec, not on Yahboom's own sheet"
+      "note": "~200g fully extended — third-party spec for the original Jetson Nano version, not on Yahboom's own sheet"
     },
     {
       "label": "Actuators",
@@ -55,15 +55,15 @@
       "note": "working radius under ~30cm (third-party spec)"
     }
   ],
-  "sourcing": "Specs compiled from Yahboom's own product and GitHub pages for the Jetson Nano DOFBOT, independent hardware coverage from CNX Software (payload, reach, weight, camera resolution), and NVIDIA's official Jetson product lifecycle page (Jetson Nano EOL status), as of this build. Exact servo model/part number, precise release date, and current third-party (Amazon/RobotShop) pricing could not be independently confirmed and are described only in general terms above. \"Open source\" is Yahboom's own marketing language, not a confirmed license grant — the GitHub repos have no LICENSE file.",
+  "sourcing": "Specs compiled from Yahboom's own product and GitHub pages for the Jetson Nano DOFBOT, independent hardware coverage from CNX Software (payload, reach, weight, camera resolution), and NVIDIA's official Jetson product lifecycle page (Jetson Nano EOL status), as of this build. Exact servo model/part number, precise release date, and current third-party (Amazon/RobotShop) pricing could not be independently confirmed and are described only in general terms above. \"Open source\" is Yahboom's own marketing language, not a confirmed license grant — the GitHub repos have no LICENSE file. The current DOFBOT Pro and DOFBOT Ultra lines and their pricing are confirmed via Yahboom's own category pages (category.yahboom.net), RobotShop, and OpenELAB listings; this entry's display name and lead specs have been updated to reflect them as Yahboom's current models, while the original Jetson Nano hardware specs above (weight, payload, camera resolution, reach) describe the entry-level SKU pictured, not the Pro/Ultra lines.",
   "manufacturerUrl": "https://category.yahboom.net/products/dofbot-jetson_nano",
   "pricing": {
-    "summary": "Listed at **$339** on Yahboom's own store for the Jetson Nano version pictured here (the Raspberry Pi–based DOFBOT-Pi runs $329), though independent 2023 coverage (CNX Software) cited a wider $289–$481 range depending on which compute board is bundled. It's also resold on Amazon, RobotShop, Newegg, and OpenELAB, but current third-party pricing wasn't independently verifiable, so treat Yahboom's own listed price as the more reliable figure."
+    "summary": "Yahboom's current lineup has moved past the original Jetson Nano DOFBOT pictured here (still listed at $339, alongside a $329 Raspberry Pi–based DOFBOT-Pi) to two newer lines: **DOFBOT Pro**, from $499 with Jetson Nano/Orin Nano/Orin NX compute options, and **DOFBOT Ultra**, from $349 with Raspberry Pi 5 or RDK X5 compute and an \"AI Large Language Model\" 3D-depth-vision pitch. It's also resold on Amazon, RobotShop, Newegg, and OpenELAB, but current third-party pricing wasn't independently verifiable, so treat Yahboom's own listed prices as the more reliable figures."
   },
   "editorial": [
     {
       "heading": "Insights",
-      "body": "Despite \"open source\" language in Yahboom's marketing, the Jetson Nano DOFBOT's GitHub repo carries no LICENSE file and shows no published releases — no Open Source badge is applied here. Payload, reach, and repeatability figures come from independent hardware coverage rather than Yahboom's own spec sheet, and haven't been corroborated by a second source."
+      "body": "Despite \"open source\" language in Yahboom's marketing, the Jetson Nano DOFBOT's GitHub repo carries no LICENSE file and shows no published releases — no Open Source badge is applied here. Payload, reach, and repeatability figures come from independent hardware coverage rather than Yahboom's own spec sheet, and haven't been corroborated by a second source. This page originally covered only the older Jetson Nano version pictured here; Yahboom's current lineup has since moved on to two parallel successor lines, both centered on 3D depth vision and marketed AI features: **DOFBOT Pro** (Jetson Nano/Orin Nano/Orin NX compute, from $499) and **DOFBOT Ultra** (Raspberry Pi 5 or RDK X5 compute, from $349, with an \"AI Large Language Model\" pitch and ROS2/vision-guided grasping). The original Jetson Nano DOFBOT still appears to be sold at $339, but it's now the entry-level option rather than Yahboom's featured model."
     }
   ],
   "firmwareCommunity": [

@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "luwu-xgo-mini2",
-  "slug": "product-luwu-xgo-mini2.html",
+  "slug": "product-luwu-xgo-mini2",
   "name": "Luwu Dynamics XGO Mini 2",
   "manufacturer": "Luwu Dynamics",
   "category": "Humanoid & General Purpose",
   "subcategory": "Four Legs",
-  "tier": "featured",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -54,7 +54,7 @@
       "note": "opening range"
     }
   ],
-  "sourcing": "Specs sourced from New Atlas's hands-on coverage of the Kickstarter campaign, the manufacturer's own site (xgorobot.com), and reseller ELECFREAKS' spec sheet, as of September 2026. The manufacturer's English name appears inconsistently across sources as \"Luwu Dynamics\" and \"Luwu Intelligence Technology\" — both refer to the same Harbin-based company; robotindex found no credible link between this company and the separate firm Elephant Robotics. Dimensions, weight, and DOF come from a reseller listing rather than Luwu's own spec sheet, and battery runtime is from a single hands-on review. This product has also been marketed as \"XGO 2\" and \"XGO-Mini2\" across different materials — treat these as the same lineage rather than distinct products. robotindex does not sell this product.",
+  "sourcing": "Moved from Featured to Under Review — the newest independently-confirmed evidence for this exact model is from mid-2025, and Luwu's own site now foregrounds newer XGO-mini2S/mini2SW variants. Specs sourced from New Atlas's hands-on coverage of the Kickstarter campaign, the manufacturer's own site (xgorobot.com), and reseller ELECFREAKS' spec sheet, as of September 2026. The manufacturer's English name appears inconsistently across sources as \"Luwu Dynamics\" and \"Luwu Intelligence Technology\" — both refer to the same Harbin-based company; robotindex found no credible link between this company and the separate firm Elephant Robotics. Dimensions, weight, and DOF come from a reseller listing rather than Luwu's own spec sheet, and battery runtime is from a single hands-on review. This product has also been marketed as \"XGO 2\" and \"XGO-Mini2\" across different materials — treat these as the same lineage rather than distinct products. robotindex does not sell this product.",
   "manufacturerUrl": "https://www.xgorobot.com/en/xgo2.html",
   "pricing": {
     "summary": "Kickstarter early-bird pricing was **$749** for the Mini config (vs. a stated $1,398 post-campaign retail price) and $449 for a stripped-down Lite variant (vs. $898 retail). Current retail pricing on Luwu's own store may differ from these launch figures — check xgorobot.com for live pricing."
@@ -66,7 +66,7 @@
     },
     {
       "heading": "Insights",
-      "body": "The XGO Mini 2 replaces the head found on typical robot-dog kits with a 3-DOF arm and gripper, letting it detect, grasp, lift, drag, and carry small objects in addition to walking — an unusual manipulation capability for this category. It's built around a Raspberry Pi Compute Module 4 with a 5MP camera, 6-axis IMU, and onboard AI for object/face/gesture recognition."
+      "body": "The XGO Mini 2 replaces the head found on typical robot-dog kits with a 3-DOF arm and gripper, letting it detect, grasp, lift, drag, and carry small objects in addition to walking — an unusual manipulation capability for this category. It's built around a Raspberry Pi Compute Module 4 with a 5MP camera, 6-axis IMU, and onboard AI for object/face/gesture recognition. Luwu's own current lineup has moved past this model, with newer XGO-mini2S and wheeled-legged XGO-mini2SW variants now listed on xgorobot.com; robotindex could not independently confirm a specific \"XGO-mini3W\" model, but the broader point that newer XGO variants have shipped since this one is verified."
     }
   ],
   "firmwareCommunity": [

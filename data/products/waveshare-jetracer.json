@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "waveshare-jetracer",
-  "slug": "product-waveshare-jetracer.html",
+  "slug": "product-waveshare-jetracer",
   "name": "Waveshare JetRacer",
   "manufacturer": "Waveshare",
   "category": "Educational & Hobbyist",
@@ -78,8 +78,7 @@
   ],
   "firmwareCommunity": [
     {
-      "status": "not-listed",
-      "note": "Waveshare's own GitHub fork of NVIDIA's original open-source JetRacer project, adapted for its pre-assembled AI Kit hardware."
+      "buildsModsId": "waveshare-jetracer"
     }
   ]
 }

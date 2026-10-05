@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "o-id-modular-humanoid",
+  "slug": "product-o-id-modular-humanoid",
+  "name": "O-ID Modular Humanoid",
+  "manufacturer": "Tokyo-based O-ID Inc",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Wheeled / Mobile Base",
+  "tier": "under-review",
+  "flags": {
+    "pending": true,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A modular industrial humanoid from Tokyo-based O-ID Inc. — major modules (joints, limbs, compute) can reportedly be swapped in about five minutes without tools, on the factory floor, rather than shipping the whole unit back for repair. Runs on a wheeled, omnidirectional base instead of legs.",
+  "specs": [
+    {
+      "label": "Height",
+      "value": "172 cm",
+      "note": "company figure, called \"indicative\""
+    },
+    {
+      "label": "Weight",
+      "value": "70 kg",
+      "note": "company figure, called \"indicative\""
+    },
+    {
+      "label": "Payload",
+      "value": "16 kg",
+      "note": "company figure, called \"indicative\""
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "30",
+      "note": "company figure, called \"indicative\""
+    },
+    {
+      "label": "Modules",
+      "value": "9+",
+      "note": "swappable, tool-free"
+    },
+    {
+      "label": "Base",
+      "value": "Wheeled",
+      "note": "omnidirectional, no legs"
+    },
+    {
+      "label": "Module Swap",
+      "value": "~5 min",
+      "note": "on-site, no tools, per company"
+    },
+    {
+      "label": "Funding",
+      "value": "$1.2M pre-seed",
+      "note": "announced Sept 24, 2026"
+    },
+    {
+      "label": "Status",
+      "value": "Pre-production",
+      "note": "no pilots or customers named"
+    }
+  ],
+  "sourcing": "Specs, funding, and company details sourced from O-ID's own site (o-id.net) and its pre-seed announcement post, plus coverage of the September 24, 2026 raise from TechCrunch-adjacent and robotics-industry outlets (TNW, Techstars, Robotics & Automation News, RoboticsTomorrow), as of September 2026. Height, weight, payload, DOF, and module count are O-ID's own figures, which the company itself calls indicative rather than final, and have not been independently tested. Pricing is not announced by O-ID; a third-party aggregator's $70,000 figure could not be corroborated against a primary source and is not published here. The product photo is O-ID's own manufacturer render, cleaned of a third-party aggregator's watermark before use; it is not a photo of built hardware. Moved directly to Under Review (pending) at initial listing given the product's pre-production stage. robotindex does not sell this product.",
+  "manufacturerUrl": "https://o-id.net/",
+  "pricing": {
+    "summary": "Not announced. O-ID has not published a price for the modular humanoid, and no unit has shipped or been sold. (A third-party robotics directory site lists a $70,000 figure and additional specs such as top speed and runtime, but that figure doesn't appear on O-ID's own site or in its funding coverage, so it's treated here as unverified and not published.)"
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "The core pitch is repairability rather than a specific sensor suite: O-ID says \"every major module comes off and goes back on in about five minutes, on the floor, without tools,\" so a broken shoulder, forearm, or compute module can be swapped on-site instead of returning the whole robot to the manufacturer. The base is wheeled and omnidirectional rather than legged. O-ID has not published sensor, camera, or gripper specifications, battery chemistry, or runtime figures."
+    },
+    {
+      "heading": "Insights",
+      "body": "O-ID is a very early-stage company: it announced a $1.2M pre-seed round on September 24, 2026 (led by Tawani Ventures, with Hustle Fund and Techstars also involved), has signed a letter of intent with Sumitomo Electric Industries on wire-harness technology, and is targeting Japan's projected shortfall of roughly 11 million industrial workers by 2040. No pilots, customers, or shipping units have been announced. The height/weight/payload/DOF figures above are the company's own, explicitly described as indicative rather than final, and the module-swap-time claim is O-ID's own as well — none of this has been independently tested."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "O-ID has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

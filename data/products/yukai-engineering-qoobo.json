@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "yukai-engineering-qoobo",
-  "slug": "product-yukai-engineering-qoobo.html",
+  "slug": "product-yukai-engineering-qoobo",
   "name": "Yukai Engineering Qoobo",
   "manufacturer": "Yukai Engineering",
   "category": "Pets & Toys",
   "subcategory": "Robot Pets",
-  "tier": "featured",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -60,15 +60,15 @@
       "note": "fully mechanical — no app, no Wi-Fi/Bluetooth, no cloud account of any kind"
     }
   ],
-  "sourcing": "Verified against Yukai Engineering's official global store listings for Qoobo and Petit Qoobo, official press releases (including the March 2020 Series A funding announcement, the 2019 Red Dot Design Award announcement, and the Petit Qoobo crowdfunding results), the original 2017 Kickstarter campaign page, and reviews/coverage from TechCrunch, TechCrunch Japan, Engadget, Gizmodo, and Designboom. Yukai Engineering's own founding timeline is given inconsistently (informal activity from 2007, formal incorporation in 2011) across sources and is not fully resolved here. The comparison to therapy robots like Paro appears only in press commentary, not in any clinical study of Qoobo specifically, and is presented as analogy rather than verified fact. No third-party security or privacy audit of Qoobo was found; the \"no connectivity\" finding rests on the absence of any such spec across official and press sources rather than an independent audit.",
+  "sourcing": "Verified against Yukai Engineering's official global store listings for Qoobo and Petit Qoobo, official press releases (including the March 2020 Series A funding announcement, the 2019 Red Dot Design Award announcement, and the Petit Qoobo crowdfunding results), the original 2017 Kickstarter campaign page, and reviews/coverage from TechCrunch, TechCrunch Japan, Engadget, Gizmodo, and Designboom. Yukai Engineering's own founding timeline is given inconsistently (informal activity from 2007, formal incorporation in 2011) across sources and is not fully resolved here. The comparison to therapy robots like Paro appears only in press commentary, not in any clinical study of Qoobo specifically, and is presented as analogy rather than verified fact. No third-party security or privacy audit of Qoobo was found; the \"no connectivity\" finding rests on the absence of any such spec across official and press sources rather than an independent audit. Moved to Under Review because Qoobo is currently sold out across every colorway on Yukai Engineering's own store, checked directly against globalstore.ux-xu.com/products/qoobo as of this writing.",
   "manufacturerUrl": "https://globalstore.ux-xu.com/products/qoobo",
   "pricing": {
-    "summary": "$184 for Qoobo and $148 for the smaller Petit Qoobo on Yukai Engineering's own global store. Both are up substantially from launch, when the original October 2017 Kickstarter priced early-bird Qoobo units around ¥10,000 (roughly $88–92 at the time)."
+    "summary": "Listed at $184 for Qoobo and $148 for the smaller Petit Qoobo on Yukai Engineering's own global store, though as of this writing Qoobo itself is shown sold out in every colorway (Husky Gray, French Brown, and the limited-edition Silky Black) — see note below. Prices are up substantially from launch, when the original October 2017 Kickstarter priced early-bird Qoobo units around ¥10,000 (roughly $88–92 at the time)."
   },
   "editorial": [
     {
       "heading": "Insights",
-      "body": "Qoobo's own specifications list no camera, no microphone-based data capture, no app, and no wireless connectivity of any kind — the only sensing is a local touch trigger that moves the tail, a genuine standout in a catalog where most companion robots are network-connected. It also won the Red Dot Design Award in 2019 (Product Design category)."
+      "body": "Qoobo's own specifications list no camera, no microphone-based data capture, no app, and no wireless connectivity of any kind — the only sensing is a local touch trigger that moves the tail, a genuine standout in a catalog where most companion robots are network-connected. It also won the Red Dot Design Award in 2019 (Product Design category). As of this writing, Qoobo is sold out directly on Yukai Engineering's own global store across all listed colorways — flagged here as an availability concern rather than a change to the product itself; Petit Qoobo, the smaller sibling, remains listed separately."
     }
   ],
   "firmwareCommunity": [

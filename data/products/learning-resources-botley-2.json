@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "learning-resources-botley-2",
-  "slug": "product-learning-resources-botley-2.html",
+  "slug": "product-learning-resources-botley-2",
   "name": "Learning Resources Botley 2.0",
   "manufacturer": "Learning Resources",
   "category": "Educational & Hobbyist",

@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "wowwee-fingerlings",
-  "slug": "product-wowwee-fingerlings.html",
+  "slug": "product-wowwee-fingerlings",
   "name": "WowWee Fingerlings",
   "manufacturer": "WowWee",
   "category": "Pets & Toys",

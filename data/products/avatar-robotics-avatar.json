@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "avatar-robotics-avatar",
+  "slug": "product-avatar-robotics-avatar",
+  "name": "Avatar Robotics Avatar",
+  "manufacturer": "Avatarrobotics",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Wheeled / Mobile Base",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A teleoperated, wheeled humanoid from **Avatar Robotics** of San Francisco (founded 2024), deployed in warehouses as a **robots-as-a-service** offering rather than sold as hardware. Remote operators wearing VR headsets run picking, packing, kitting, sorting, cycle counting, and material handling, and each shift feeds training data back into the company's AI models. Reported at **180 cm**, **12 kg** listed strength, **5 km/h**, and about **2 hours** per charge. Industrial rather than home use.",
+  "specs": [
+    {
+      "label": "Height",
+      "value": "180 cm",
+      "note": "Third-party site only"
+    },
+    {
+      "label": "Payload",
+      "value": "12 kg",
+      "note": "Listed strength; third-party site only"
+    },
+    {
+      "label": "Max Speed",
+      "value": "5 km/h",
+      "note": "Third-party site only"
+    },
+    {
+      "label": "Battery",
+      "value": "~2 h",
+      "note": "Per charge; third-party site only"
+    },
+    {
+      "label": "Control",
+      "value": "Teleoperated",
+      "note": "VR operators with AI-assisted learning (VLA models)"
+    },
+    {
+      "label": "Sensing",
+      "value": "Multi-camera",
+      "note": "HD video; Ethernet and Wi-Fi"
+    },
+    {
+      "label": "End Effectors",
+      "value": "Unclear",
+      "note": "Two-finger claws (listing) vs hands with wrist bands (image)"
+    },
+    {
+      "label": "Model",
+      "value": "Service",
+      "note": "Hourly robots-as-a-service, not sold"
+    },
+    {
+      "label": "Status",
+      "value": "In production",
+      "note": "Deployed at a beauty retailer and a large warehouse operator"
+    }
+  ],
+  "sourcing": "Verified against Avatar Robotics' homepage (avatarrobotics.com), its seed-round coverage (PR Newswire, The Robot Report, Robotics 24/7), a hyper.ai interview write-up, and one third-party spec site (humanoid.guide), as of October 2026. Flagged as uncertain: the product has no model number and the avatarrobotics.com robot and about pages could not be fetched; height, strength, speed, battery, and end-effector details come from the single third-party site and are not confirmed by the company; the seed announcement is dated July 2026 by one outlet and August 5 or 9, 2026 by others; the commercial launch is reported as December 2025; the supplied image shows hands with wrist bands, which conflicts with the third-party site's two-finger claws; degrees of freedom, weight, compute, and chassis details were not found. The founding year (2024) is from one source. The robot's visual match to AgiBot A2-W is an observation from photos, not a sourced claim. Product image: Avatar Robotics. The corner brand logo and a third-party watermark were removed from the supplied image.",
+  "manufacturerUrl": "https://www.avatarrobotics.com/",
+  "pricing": {
+    "summary": "There is **no purchase price**. Avatar Robotics sells the robot as a service, with “hourly pricing competitive with skilled human operators” and a recurring fee that one outlet describes as lower than direct human hiring costs; no dollar rate is published. The $5–$20 per hour figure in press is operator pay, not a robot price. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Avatar Robotics raised a **$6.5 million seed** led by AlleyCorp, announced in mid-2026 (outlets date it July or August 5), after a pre-seed led by defy.vc. Founders are Colin Webb (CEO, MIT, formerly Cruise), Nenye Anagbogu, and Hamid Farzaneh. It reports deployment with a global beauty retailer, more than 900,000 products processed, and a target of dozens of robots this year and hundreds next. One outlet says the wheeled humanoid units are sourced from China. In photos the robot looks the same as the wheeled AgiBot A2-W covered on the [AgiBot A2](/product-agibot-a2) page, but neither company confirms a link, and the specs differ (A2-W is listed at 163 cm and about 5 hours). This is an industrial service rather than a home robot, so it sits at the edge of this directory's scope. The Open Source badge does not apply: no open hardware or software was found."
+    }
+  ]
+}

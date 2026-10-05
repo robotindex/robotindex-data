@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "yukai-engineering-bocco-emo",
-  "slug": "product-yukai-engineering-bocco-emo.html",
+  "slug": "product-yukai-engineering-bocco-emo",
   "name": "Yukai Engineering BOCCO emo",
   "manufacturer": "Yukai Engineering",
   "category": "Companion & Social",
@@ -68,7 +68,7 @@
   "editorial": [
     {
       "heading": "Insights",
-      "body": "BOCCO emo won the iF Design Award 2021, an independently verifiable industry design recognition rather than a marketing claim. A nonprofit news outlet also confirms Shibuya City subsidized it as one of several elder-watch technologies for residents."
+      "body": "BOCCO emo won the iF Design Award 2021, an independently verifiable industry design recognition rather than a marketing claim. A nonprofit news outlet also confirms Shibuya City subsidized it as one of several elder-watch technologies for residents. Still sold as of this writing, but no product news (feature updates, new hardware revisions, or press coverage) has surfaced since 2025 — worth rechecking periodically rather than treating this page as fully current."
     }
   ],
   "firmwareCommunity": [

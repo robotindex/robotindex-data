@@ -1,0 +1,79 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "vesoma-1",
+  "slug": "product-vesoma-1",
+  "name": "Vesoma 1",
+  "manufacturer": "Vesoma",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "under-review",
+  "flags": {
+    "pending": true,
+    "openSource": false,
+    "closedPlatform": true
+  },
+  "description": "A bipedal humanoid from Vesoma, a European startup based in Munich, Germany and Limassol, Cyprus — built around a self-improving reinforcement-learning approach in which the robot learns to move by trial and error rather than by imitating human demonstrations. Lab prototypes already walk using a self-learned policy.",
+  "specs": [
+    {
+      "label": "Form Factor",
+      "value": "Bipedal humanoid",
+      "note": "walks on two legs"
+    },
+    {
+      "label": "Locomotion",
+      "value": "Self-learned RL policy",
+      "note": "not motion-captured or teleoperated"
+    },
+    {
+      "label": "Founded",
+      "value": "Dec 2025",
+      "note": "~9 months to public launch"
+    },
+    {
+      "label": "Headquarters",
+      "value": "Munich + Limassol",
+      "note": "Germany / Cyprus"
+    },
+    {
+      "label": "Team Size",
+      "value": "60+",
+      "note": "as of Sept 2026"
+    },
+    {
+      "label": "AI Lead",
+      "value": "Martin Riedmiller",
+      "note": "ex-Google DeepMind Research Director"
+    },
+    {
+      "label": "Status",
+      "value": "Lab prototype",
+      "note": "no production units"
+    },
+    {
+      "label": "Height / Weight / DOF",
+      "value": "Not published",
+      "note": "no figures released"
+    }
+  ],
+  "sourcing": "Company and product details sourced from Vesoma's own site (vesoma.com), its \"Introducing Vesoma\" announcement (September 22, 2026), and third-party coverage (Dealroom, Humanoids Daily, RobotsBeat, The Humanoid Hub) as of September 2026. No hardware specs (height, weight, DOF, battery, sensors) have been published by the company; the image used here is Vesoma's own design rendering, cleaned of a third-party aggregator's watermark before use — it is not photography of built hardware, and only lab prototypes are known to exist. Moved directly to Under Review (pending) at initial listing given the product's pre-production stage. robotindex does not sell this product.",
+  "manufacturerUrl": "https://vesoma.com/",
+  "pricing": {
+    "summary": "Not announced. Vesoma has not published a price, and no unit is for sale — only lab prototypes currently exist."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "Vesoma has not published sensor, actuator, battery, or dimensional specifications for Vesoma 1. The company's stated focus is its AI approach rather than a particular hardware bill of materials: its prototypes reportedly went from initial design to a working, self-learned walking policy within about six months."
+    },
+    {
+      "heading": "Insights",
+      "body": "Vesoma was founded in December 2025 by Nikolai Ensslen (co-founder of motion-control company Synapticon) and Peter Skoromnyi (co-founder of mobile-games company Easybrain), and exited stealth on September 22, 2026 with a team already past 60 people. Its AI research is led by Martin Riedmiller, formerly a research director and Control Team lead at Google DeepMind. The company's pitch is a \"physical general intelligence\" approach: instead of training on human demonstrations like most humanoid programs, Vesoma's robots learn by exploring and failing in the real world. First target markets are manufacturing, logistics, and warehousing; Vesoma has also stated its technology is not for weapons, military, or surveillance use. The image on Vesoma's own homepage is explicitly labeled a design rendering, not a photo of built hardware — only lab prototypes exist as of this writing."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "closed-platform",
+      "note": "Vesoma has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "weilan-babyalpha-a2",
-  "slug": "product-weilan-babyalpha-a2.html",
+  "slug": "product-weilan-babyalpha-a2",
   "name": "Weilan BabyAlpha A2",
   "manufacturer": "Weilan",
   "category": "Pets & Toys",
   "subcategory": "Robot Pets",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,

@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "hiwonder-mentorpi-t1",
-  "slug": "product-hiwonder-mentorpi-t1.html",
+  "slug": "product-hiwonder-mentorpi-t1",
   "name": "Hiwonder MentorPi T1",
   "manufacturer": "Hiwonder",
   "category": "Educational & Hobbyist",
   "subcategory": "Mobile Robot Kits",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -73,7 +73,7 @@
   "editorial": [
     {
       "heading": "Insights",
-      "body": "Hiwonder's MentorPi GitHub repository contains real, substantial ROS2 packages (SLAM, navigation, YOLO vision), but it has no LICENSE file, so no Open Source badge is applied here — the same situation as this catalog's Yahboom ROSMASTER entry. A published review of the sibling A1 chassis, which shares the same electronics and software stack, found its unit shipped with a default firmware configuration that didn't match the ordered variant and required manual reconfiguration, a plausible risk worth watching for on T1 as well."
+      "body": "Hiwonder's MentorPi GitHub repository contains real, substantial ROS2 packages (SLAM, navigation, YOLO vision), but it has no LICENSE file, so no Open Source badge is applied here — the same situation as this catalog's Yahboom ROSMASTER entry. A published review of the sibling A1 chassis, which shares the same electronics and software stack, found its unit shipped with a default firmware configuration that didn't match the ordered variant and required manual reconfiguration — a risk that applies equally to T1."
     }
   ],
   "firmwareCommunity": [

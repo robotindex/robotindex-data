@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "hatchimals-alive-mystery-hatch",
-  "slug": "product-hatchimals-alive-mystery-hatch.html",
+  "slug": "product-hatchimals-alive-mystery-hatch",
   "name": "Hatchimals Alive Mystery Hatch",
   "manufacturer": "Spin Master",
   "category": "Pets & Toys",
   "subcategory": "Toys & Characters",
-  "tier": "featured",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -60,7 +60,7 @@
       "note": "standalone toy, no app required or available for this product"
     }
   ],
-  "sourcing": "Verified against Spin Master's official press release (via PR Newswire), Wikipedia (Hatchimals, Spin Master), the Hatchimals Fandom wiki's franchise timeline and Mystery Hatch character breakdown, Target and Walmart product/review listings, ToyWiz, TTPM and The Toy Insider reviews, an instruction-manual mirror, and CPSC's recall database, plus contemporary 2016–2017 news coverage (ABC News, CBS San Francisco) and legal-tracking sites (classaction.org, topclassactions.com) for the original Hatchimals lawsuit. Post-hatch growth-stage mechanics, the exact sensor and mist-generation technology, the \"100+ sounds\" figure, and the Tigrette retailer-exclusivity claim are manufacturer or single-source claims not independently verified, and are presented as such. No recall or lawsuit specific to this 2024 relaunch was found as of this writing.",
+  "sourcing": "Verified against Spin Master's official press release (via PR Newswire), Wikipedia (Hatchimals, Spin Master), the Hatchimals Fandom wiki's franchise timeline and Mystery Hatch character breakdown, Target and Walmart product/review listings, ToyWiz, TTPM and The Toy Insider reviews, an instruction-manual mirror, and CPSC's recall database, plus contemporary 2016–2017 news coverage (ABC News, CBS San Francisco) and legal-tracking sites (classaction.org, topclassactions.com) for the original Hatchimals lawsuit. Post-hatch growth-stage mechanics, the exact sensor and mist-generation technology, the \"100+ sounds\" figure, and the Tigrette retailer-exclusivity claim are manufacturer or single-source claims not independently verified, and are presented as such. No recall or lawsuit specific to this 2024 relaunch was found as of this writing. Moved from Featured to Under Review because it has not been superseded by a newer robotic Hatchimals model since its October 2024 launch, and Spin Master's subsequent Hatchimals Alive releases are non-robotic playsets rather than a direct successor.",
   "manufacturerUrl": "https://www.spinmaster.com/en-US/brand/hatchimals",
   "pricing": {
     "summary": "Mystery Hatch launched October 4, 2024 at **$59.99 USD** SRP (£64.99 in the UK), confirmed by Spin Master's own press release and matched by Target and Walmart listings. Reported retailer-exclusivity for specific character families, such as Tigrette being tied to Amazon, is contradicted by at least one active Walmart listing, so buyers shouldn't assume a given character is limited to one store."
@@ -68,7 +68,7 @@
   "editorial": [
     {
       "heading": "Insights",
-      "body": "The original 2016 Hatchimals egg drew a class-action lawsuit against Spin Master over widespread complaints of eggs failing to hatch and batteries dying; no comparable lawsuit or CPSC recall has been found for this Mystery Hatch relaunch. Some customer reviews of Mystery Hatch also describe its hatching mist effect as strong enough to potentially trigger a smoke detector."
+      "body": "The original 2016 Hatchimals egg drew a class-action lawsuit against Spin Master over widespread complaints of eggs failing to hatch and batteries dying; no comparable lawsuit or CPSC recall has been found for this Mystery Hatch relaunch. Some customer reviews of Mystery Hatch also describe its hatching mist effect as strong enough to potentially trigger a smoke detector. This Mystery Hatch egg launched in October 2024 (timed to \"Hatchimals Day\"), and no newer robotic egg has followed it in the Hatchimals Alive line since — Spin Master's more recent 2026 Hatchimals Alive releases, such as the Hatchi-Nursery Playset, the Rainbow Hatchery Playset, and the Make a Splash Playset, are non-robotic, water-hatching or self-hatching-egg playsets rather than motorized/sensor-driven eggs like this one."
     }
   ],
   "firmwareCommunity": [

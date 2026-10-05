@@ -1,0 +1,83 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "unitree-h2",
+  "slug": "product-unitree-h2",
+  "name": "Unitree H2",
+  "manufacturer": "Unitree",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "featured",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "Unitree's current full-size humanoid, unveiled October 20, 2025 in a launch video titled \"H2 Destiny Awakening.\" At roughly 180–182 cm and 70 kg with battery, it carries 31 degrees of freedom — more articulation than the older H1/H1-2 — and is pitched by Unitree as built to \"serve everyone safely and in a friendly way.\" Now sits above H1/H1-2 as Unitree's flagship full-size humanoid; H1 keeps only its 3.3 m/s top-speed record.",
+  "specs": [
+    {
+      "label": "Height",
+      "value": "~180–182 cm",
+      "note": "sources give 1,800mm and 1,820mm"
+    },
+    {
+      "label": "Weight",
+      "value": "~70 kg",
+      "note": "with battery"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "31 total",
+      "note": "6/leg ×2, 7/arm ×2, 3 waist, 2 head"
+    },
+    {
+      "label": "Joint Torque",
+      "value": "Up to 360 N·m",
+      "note": "legs; 120 N·m arms"
+    },
+    {
+      "label": "Arm Payload",
+      "value": "~7 kg rated",
+      "note": "~15 kg peak, single arm"
+    },
+    {
+      "label": "Battery",
+      "value": "~3 hours",
+      "note": "0.972 kWh, 15 Ah"
+    },
+    {
+      "label": "Sensors",
+      "value": "Stereo head camera",
+      "note": "optional wrist cameras, mic array, IMU"
+    },
+    {
+      "label": "Hands",
+      "value": "Placeholder, non-functional",
+      "note": "functional 5-finger hands sold separately"
+    }
+  ],
+  "sourcing": "Specs verified against Unitree's official H2 product page (unitree.com/H2), cross-checked against third-party spec trackers RoboZaps and Firgelli Robots, as of September 2026. Flagged as uncertain: exact height (1,800mm vs. 1,820mm depending on source) and the North American reseller price (Toborlife's own site currently shows $39,900 for the same configuration RoboZaps prices at $40,900). The non-functional placeholder hands on the base unit are confirmed by both third-party sources. Added to the directory as a featured replacement for the now-legacy H1/H1-2. Product image: Unitree Robotics. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.unitree.com/H2/",
+  "pricing": {
+    "summary": "Unitree's own China-direct store lists the base H2 at **$29,900**. A U.S./North American partner, Toborlife, sells the same H2 Basic configuration, but the two sources checked for this page disagree on the exact number — RoboZaps cites $40,900, while Toborlife's own site currently lists $39,900 — so treat the North American price as roughly $39,900–$40,900 rather than a single fixed figure; neither includes duties or shipping. A higher-spec H2 Plus variant is listed at $100,000 direct from Unitree, while Toborlife separately offers an \"H2 Edu Smart\" configuration at $66,800 with expandable compute and optional dexterous hands. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "The base H2 ships with non-functional placeholder hands — confirmed by both RoboZaps and Toborlife — so a buyer expecting out-of-the-box manipulation should budget for Unitree's separately sold dexterous hands (such as the Dex5-1 or Dex3-1 lines used on other Unitree humanoids) before the robot can grasp or handle objects. Unitree positioned the H2 around articulation rather than raw speed: its 31 DOF is meaningfully higher than H1-2's 27, but H1 (not H1-2) still holds Unitree's claimed 3.3 m/s humanoid sprint record, a figure the H2 does not appear to challenge. Unitree filed for a Shanghai IPO in 2026 and disclosed in that prospectus that it shipped roughly 5,500 humanoids in 2025 — a figure the filing, citing industry data, describes as the global #1 — underscoring that the H2 launched into a company already scaling humanoid production rather than a first-generation effort."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "unitree-sdk2"
+    },
+    {
+      "buildsModsId": "unitree-ros2"
+    },
+    {
+      "buildsModsId": "unitree-mujoco"
+    },
+    {
+      "buildsModsId": "unitree-rl-lab"
+    }
+  ]
+}

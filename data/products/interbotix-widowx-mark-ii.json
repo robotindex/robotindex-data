@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "interbotix-widowx-mark-ii",
+  "slug": "product-interbotix-widowx-mark-ii",
+  "name": "Interbotix WidowX Mark II",
+  "manufacturer": "Trossenrobotics",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "under-review",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "The original WidowX desktop arm from **Interbotix**, now part of **Trossen Robotics**: up to five degrees of freedom on six Dynamixel servos, an **ArbotiX-M** controller and ROS support, listed at **$1,499.95** as a complete kit. It predates Trossen's X-Series WidowX 200/250 arms and the current WidowX AI, and it no longer appears on Trossen's own WidowX page, though a legacy store and a reseller still show it in stock.",
+  "specs": [
+    {
+      "label": "Degrees of Freedom",
+      "value": "Up to 5",
+      "note": "With optional wrist rotate"
+    },
+    {
+      "label": "Servos",
+      "value": "6 Dynamixel",
+      "note": "2x MX-64, 2x MX-28, 2x AX-12A"
+    },
+    {
+      "label": "Payload",
+      "value": "800 g",
+      "note": "At 10 cm; 600 g at 20 cm, 400 g at 30 cm"
+    },
+    {
+      "label": "Reach",
+      "value": "37 cm",
+      "note": "Horizontal; 41 cm with wrist rotate"
+    },
+    {
+      "label": "Vertical Reach",
+      "value": "51 cm",
+      "note": "55 cm with wrist rotate"
+    },
+    {
+      "label": "Weight",
+      "value": "1.33 kg",
+      "note": "1.4 kg with wrist rotate"
+    },
+    {
+      "label": "Controller",
+      "value": "ArbotiX-M",
+      "note": "ATMega644p, Arduino IDE compatible"
+    },
+    {
+      "label": "Software",
+      "value": "ROS",
+      "note": "Plus ArmLink and custom firmware options"
+    }
+  ],
+  "sourcing": "Verified against the legacy Interbotix store page for the Mark II, a reseller listing (ic0nstrux), the community WidowX documentation (dated 2017), Trossen's current WidowX product page and WidowX AI guide, and the Interbotix GitHub organization, as of October 2026. Flagged as uncertain: Trossen's current WidowX page lists only the Core, Pro and Heavy arms and does not mention the Mark II, yet the legacy Interbotix page and one reseller still show it in stock, so its availability is unclear; no launch year was found; repeatability is not published; the GitHub repository's license could not be confirmed. The image was supplied by the site owner and shows a Mark II-style arm with an octagonal base; it was not matched against a source page. Tagged Under Review because availability and software support are unclear, not because the core specs are in doubt. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.trossenrobotics.com/widowx",
+  "pricing": {
+    "summary": "The legacy Interbotix store lists the complete kit at **$1,499.95**, with a version without servos at **$449.95** and a barebones frame at **$399.99**. A reseller shows the same $1,499.95 price. For comparison, Trossen's current WidowX arms start at **$2,995** (WidowX Core Follower, 6 DOF, 700 mm reach, 2 kg payload). The Mark II is no longer on Trossen's own WidowX page, so confirm availability before relying on these figures. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "The Mark II is the first-generation WidowX, built on laser-cut plates with Dynamixel servos and an ArbotiX-M controller that can be programmed from the Arduino IDE, and it was widely used in early ROS teaching and research. Its payload is small, under a kilogram, and the community documentation covers ROS Kinetic from 2017, so current ROS setups will need extra work. Trossen's later lines replaced it: the X-Series WidowX 200 and 250 arms, then the current WidowX AI family (Core, Pro and Heavy), which is the arm inside the [Trossen AI Kits](/product-trossen-ai-kits). This catalog's Open Source badge does not apply: Interbotix publishes ROS packages on GitHub for the WidowX, but the repository page shows no license and no hardware design files, and it references the original WidowX rather than the Mark II specifically."
+    }
+  ]
+}

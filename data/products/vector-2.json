@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "vector-2",
-  "slug": "product-vector-2.html",
+  "slug": "product-vector-2",
   "name": "Vector 2.0",
   "manufacturer": "Digital Dream Labs",
   "category": "Pets & Toys",
   "subcategory": "Robot Pets",
-  "tier": "featured",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -70,7 +70,7 @@
       "note": "$11.99/mo or $99.99/yr for \"Hey Vector\" wake-word + new content/animations — Digital Dream Labs, confirmed current"
     }
   ],
-  "sourcing": "Verified against The Robot Report's coverage of the Anki asset acquisition and Vector 2.0 relaunch, the original \"Vector Unleashed!\" Kickstarter campaign page, PR Newswire and Robotics 24/7 coverage of the October 2022 international shipping launch, a Wevolver-hosted spec sheet, Digital Dream Labs' own knowledge-base and security/privacy FAQ pages, DDL's current storefront at anki.bot, and reputable-press coverage (CBS News Pittsburgh, TribLive, Hoodline) of the Pennsylvania Attorney General's September 2024 lawsuit against DDL. Camera resolution, processor clock speed, and exact display resolution are single-sourced to a press release or third-party spec aggregator rather than an independent teardown, and are flagged accordingly. This directory's own listing note (\"$9.99/mo\") reflects a subscription price DDL has since raised twice, most recently to $11.99/mo or $99.99/yr — the note is stale and should be updated. No independent security audit of DDL's on-device/cloud data-handling claims was found. No review of Vector 2.0 specifically from a major outlet (The Verge, Engadget, CNET) was found.",
+  "sourcing": "Verified against The Robot Report's coverage of the Anki asset acquisition and Vector 2.0 relaunch, the original \"Vector Unleashed!\" Kickstarter campaign page, PR Newswire and Robotics 24/7 coverage of the October 2022 international shipping launch, a Wevolver-hosted spec sheet, Digital Dream Labs' own knowledge-base and security/privacy FAQ pages, DDL's current storefront at anki.bot, reputable-press coverage (CBS News Pittsburgh, TribLive, Hoodline) of the Pennsylvania Attorney General's September 2024 lawsuit against DDL, and independent reporting (thedroidyouarelookingfor.info, July 2026) of a Pittsburgh court appointing a receiver over DDL's/Anki's assets in a separate civil suit. Camera resolution, processor clock speed, and exact display resolution are single-sourced to a press release or third-party spec aggregator rather than an independent teardown, and are flagged accordingly. This directory's own listing note (\"$9.99/mo\") reflects a subscription price DDL has since raised twice, most recently to $11.99/mo or $99.99/yr — the note is stale and should be updated. No independent security audit of DDL's on-device/cloud data-handling claims was found. No review of Vector 2.0 specifically from a major outlet (The Verge, Engadget, CNET) was found. Moved to Under Review given the unresolved 2024 AG lawsuit and the July 2026 receivership finding — this reflects the selling company's legal/operational status, not a change in the robot's own hardware or specs.",
   "manufacturerUrl": "https://anki.bot/products/vector-robot",
   "pricing": {
     "summary": "Currently listed at $199.99 (black) / $219.99 (pink) on DDL's own storefront (anki.bot). Voice commands and cloud AI require a separate subscription, currently $11.99/month or $99.99/year per robot per DDL's own knowledge base — **this supersedes the $9.99/mo figure in this directory's own listing note**, which DDL has since raised twice; without a subscription, Vector can still move and react but has no wake-word (\"Hey Vector\") voice commands."
@@ -78,7 +78,7 @@
   "editorial": [
     {
       "heading": "Insights",
-      "body": "On September 18, 2024, Pennsylvania's Attorney General sued Digital Dream Labs, alleging it failed to deliver roughly 14,000 prepaid orders (including Vector 2.0) placed between November 2020 and January 2024, totaling more than $4 million, and sought restitution, civil penalties, and a ban on future prepayment schemes — a reputable-press-corroborated legal action against the company selling this exact product, not a rumor."
+      "body": "On September 18, 2024, Pennsylvania's Attorney General sued Digital Dream Labs, alleging it failed to deliver roughly 14,000 prepaid orders (including Vector 2.0) placed between November 2020 and January 2024, totaling more than $4 million, and sought restitution, civil penalties, and a ban on future prepayment schemes — a reputable-press-corroborated legal action against the company selling this exact product, not a rumor. The situation has since deteriorated further: in an unrelated Pittsburgh civil case (Hanchar v. Swingle et al., GD-25-013191) a court appointed a receiver on July 9, 2026 over DDL's and Anki's digital assets, after finding the company's infrastructure split between two ex-associates — one controlling hosting/repos/domains, the other controlling billing and customer data — such that neither half functions alone. DDL's official cloud backend has reportedly been non-functional since 2023 (unmaintained TLS certificates return HTTP 503), and the receiver's role is limited to preserving assets, not restoring service. Vector still runs on-device without the cloud; the community-maintained wire-pod project (below) remains the practical path to voice/cloud-dependent features."
     }
   ],
   "firmwareCommunity": [

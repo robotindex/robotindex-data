@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "iit-icub",
+  "slug": "product-iit-icub",
+  "name": "IIT iCub",
+  "manufacturer": "Iit",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "The **iCub** is a **child-sized, open-source humanoid** built by the **Istituto Italiano di Tecnologia** in Genoa as a research platform for embodied cognition. It stands about **104 cm** tall with **53 degrees of freedom**, including a **nine-motor hand** on each arm, stereo cameras, force sensing and tactile skin. IIT quotes about **€250,000** for the full robot, with upper-body, head and hand versions sold separately, and publishes both the **software** and the **mechanical designs**.",
+  "specs": [
+    {
+      "label": "Price",
+      "value": "~€250,000",
+      "note": "Full robot, by quote from IIT"
+    },
+    {
+      "label": "Height",
+      "value": "~104 cm",
+      "note": "Child-sized"
+    },
+    {
+      "label": "Weight",
+      "value": "22–33 kg",
+      "note": "Sources differ; 33 kg with battery"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "53",
+      "note": "Arms 7, hands 9, head 6, waist 3, legs 6"
+    },
+    {
+      "label": "Hands",
+      "value": "9 motors",
+      "note": "Tendon-driven, each hand"
+    },
+    {
+      "label": "Vision",
+      "value": "Stereo cameras",
+      "note": "Two cameras in the eyes"
+    },
+    {
+      "label": "Sensing",
+      "value": "F/T + skin",
+      "note": "6 force/torque sensors; tactile skin"
+    },
+    {
+      "label": "Computer",
+      "value": "Intel i7",
+      "note": "Ubuntu LTS, 2019 datasheet"
+    },
+    {
+      "label": "Battery",
+      "value": "36 V 9 Ah",
+      "note": "Backpack"
+    },
+    {
+      "label": "Middleware",
+      "value": "YARP",
+      "note": "ROS interface available"
+    },
+    {
+      "label": "Versions",
+      "value": "2.5 / 2.7",
+      "note": "Current catalog"
+    },
+    {
+      "label": "Maker",
+      "value": "IIT, Genoa",
+      "note": "Genoa, Italy"
+    }
+  ],
+  "sourcing": "Verified against IIT's iCub product catalog (icub.iit.it), IIT's iCub technical specifications Rev 2.3 (2019), the iCub Wikipedia article, a robotology GitHub discussion on the open-source status of the hardware, and New Atlas coverage of the iCub3, as of October 2026. Flagged as uncertain: the €250,000, €200,000 and €40,000 figures are approximate quotation prices from IIT's catalog; weight is about 22 kg on Wikipedia and 33 kg including a 3 kg battery on IIT's datasheet; the 2019 datasheet's Intel i7 computer may not match current iCub 2.7 units; the hardware licence was not stated and the maintainers note some published CAD is outdated; the Open Source badge rests on the project's open hardware designs and GPL/LGPL software; the unit count of about 30 comes from Wikipedia and may be dated; and the photo was cut off on its right side, so the right arm and hand are mirrored from the left.",
+  "manufacturerUrl": "https://icub.iit.it/products/product-catalog",
+  "pricing": {
+    "summary": "IIT lists the full iCub at about **€250,000**, the **upper-body** version without legs at about **€200,000**, and a standalone **head** at about **€40,000**. There is no checkout: prices are by quotation through IIT, and the catalog gives them as approximate figures. Hands and skin are sold as separate items. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "The iCub is built to the size and proportions of a young child, a platform IIT describes as open for research in embodied cognition. Roughly **30 units** are reported in laboratories, mostly in Europe, and IIT has since shown the larger **iCub3** (about 125 cm and 52 kg, also 53 degrees of freedom) as a telepresence avatar in 2021. The project was designed to be open from the start: the software is released under **GPL and LGPL** licences and the mechanical CAD is published on GitHub, so this page carries the **Open Source badge**, although the hardware licence was not found and some published design data is described by users as outdated. The photo supplied was cut off on its right side, so the right arm and hand shown are a mirror image of the left."
+    }
+  ]
+}

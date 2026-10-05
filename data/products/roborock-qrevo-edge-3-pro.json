@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "roborock-qrevo-edge-3-pro",
-  "slug": "product-roborock-qrevo-edge-3-pro.html",
+  "slug": "product-roborock-qrevo-edge-3-pro",
   "name": "Roborock Qrevo Edge 3 Pro",
   "manufacturer": "Roborock",
   "category": "Cleaning & Home Care",

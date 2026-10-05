@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "eilik",
-  "slug": "product-eilik.html",
+  "slug": "product-eilik",
   "name": "Eilik",
   "manufacturer": "Energize Lab",
   "category": "Pets & Toys",

@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "worx-landroid-m-wr140",
-  "slug": "product-worx-landroid-m-wr140.html",
+  "slug": "product-worx-landroid-m-wr140",
   "name": "Worx Landroid M WR140",
   "manufacturer": "Worx",
   "category": "Outdoor & Yard",
   "subcategory": "Robot Lawn Mowers",
-  "tier": "featured",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -60,10 +60,10 @@
       "note": "Worx Landroid app; cloud API also used by free Home Assistant integration"
     }
   ],
-  "sourcing": "Verified against Worx's own official WR140 product page (worx.com), which also identifies this as a legacy SKU superseded by the newer WR147 — buyers should confirm current availability before purchase. The international equivalent is sold as \"WR140E\" / \"Landroid M1000\" on UK/EU/AU Worx sites — same core machine, different regional model suffix; do not confuse either with Landroid L (wider-cut WR147/WR150/WR153) or Landroid Vision (wire-free, camera-navigation WR310 and similar). Battery runtime per charge is not published by Worx and could not be independently confirmed. No mainstream tech-press review (The Verge, PCMag, Tom's Guide, TechRadar) covering this specific WR140/20V M-series unit was found; commonly cited \"Worx Landroid\" reviews online cover different Landroid generations (a 28V model, or the wire-free Vision Cloud WR310) and should not be read as describing this product.",
+  "sourcing": "Moved from Featured to Under Review — a discontinued model kept in the directory as a legacy reference isn't a reliable current recommendation. Verified against Worx's own official WR140 product page (worx.com), which also identifies this as a legacy SKU superseded by the newer WR147 — buyers should confirm current availability before purchase. A check of current listings found the WR140 showing up mainly as refurbished or used units (eDealinfo, eBay) rather than new stock at mainstream US retailers. The international equivalent is sold as \"WR140E\" / \"Landroid M1000\" on UK/EU/AU Worx sites — same core machine, different regional model suffix; do not confuse either with Landroid L (wider-cut WR147/WR150/WR153) or Landroid Vision (wire-free, camera-navigation WR310 and similar). Battery runtime per charge is not published by Worx and could not be independently confirmed. No mainstream tech-press review (The Verge, PCMag, Tom's Guide, TechRadar) covering this specific WR140/20V M-series unit was found; commonly cited \"Worx Landroid\" reviews online cover different Landroid generations (a 28V model, or the wire-free Vision Cloud WR310) and should not be read as describing this product.",
   "manufacturerUrl": "https://www.worx.com/landroid-m-20v-cordless-robotic-lawn-mower-wr140.html",
   "pricing": {
-    "summary": "Listed at **$1,019.99** on worx.com. Third-party retailers have historically priced this model closer to **$999–$1,099**, and Worx's own site currently flags WR140 as a discontinued SKU, so live pricing and stock should be checked at the retailer before buying."
+    "summary": "Listed at **$1,019.99** on worx.com. Third-party retailers have historically priced this model closer to **$999–$1,099**, and Worx's own site currently flags WR140 as a discontinued SKU, so live pricing and stock should be checked at the retailer before buying. In practice, current US listings for the WR140 are now mostly refurbished or used units (eBay, various clearance/refurb sellers) rather than new stock from major retailers."
   },
   "editorial": [
     {

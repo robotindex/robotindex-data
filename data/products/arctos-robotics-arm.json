@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "arctos-robotics-arm",
-  "slug": "product-arctos-robotics-arm.html",
+  "slug": "product-arctos-robotics-arm",
   "name": "Arctos Robotics Arm",
   "manufacturer": "Arctos Robotics",
   "category": "Robot Arms",
   "subcategory": "",
-  "tier": "pending",
+  "tier": "featured",
   "flags": {
     "pending": false,
     "openSource": true,

@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "ubtech-walker-s2",
-  "slug": "product-ubtech-walker-s2.html",
+  "slug": "product-ubtech-walker-s2",
   "name": "UBTECH Walker S2",
   "manufacturer": "UBTECH Robotics",
   "category": "Humanoid & General Purpose",

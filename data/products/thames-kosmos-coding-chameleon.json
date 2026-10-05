@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "thames-kosmos-coding-chameleon",
-  "slug": "product-thames-kosmos-coding-chameleon.html",
+  "slug": "product-thames-kosmos-coding-chameleon",
   "name": "Thames & Kosmos Coding Chameleon",
   "manufacturer": "Thames & Kosmos",
   "category": "Educational & Hobbyist",
   "subcategory": "Classroom & Coding Kits",
-  "tier": "pending",
+  "tier": "featured",
   "flags": {
     "pending": false,
     "openSource": false,

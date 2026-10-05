@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "wlkata-mirobot",
-  "slug": "product-wlkata-mirobot.html",
+  "slug": "product-wlkata-mirobot",
   "name": "WLKATA Mirobot Education Kit",
   "manufacturer": "WLKATA",
   "category": "Robot Arms",
@@ -73,8 +73,7 @@
   ],
   "firmwareCommunity": [
     {
-      "status": "not-listed",
-      "note": "WLKATA's own genuinely open-source, PC-side Python SDK for controlling Mirobot; the arm's onboard firmware itself is proprietary."
+      "buildsModsId": "wlkata-mirobot"
     }
   ]
 }

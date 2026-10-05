@@ -1,0 +1,86 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "m5stackchan",
+  "slug": "product-m5stackchan",
+  "name": "M5StackChan AI Desktop Robot",
+  "manufacturer": "M5Stack",
+  "category": "Pets & Toys",
+  "subcategory": "Robot Pets",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "M5Stack's preassembled AI desktop companion built on the ESP32-S3-based CoreS3 controller — a pan/tilt face display with camera and voice interaction, co-created with the open-source Stack-chan community project. Factory firmware can be replaced with community alternatives over USB.",
+  "specs": [
+    {
+      "label": "Battery",
+      "value": "550 mAh",
+      "note": "runtime/charge time not disclosed"
+    },
+    {
+      "label": "Dimensions",
+      "value": "54 × 70.5 × 61.5 mm",
+      "note": "187 g"
+    },
+    {
+      "label": "Connectivity",
+      "value": "Wi-Fi + BT 5 LE",
+      "note": "802.11 b/g/n, NFC, IR"
+    },
+    {
+      "label": "Sensors",
+      "value": "9-axis IMU",
+      "note": "BMI270 + BMM150; + proximity/light"
+    },
+    {
+      "label": "Camera",
+      "value": "GC0308",
+      "note": "640×480, 0.3MP"
+    },
+    {
+      "label": "Display",
+      "value": "2.0\" IPS Touch",
+      "note": "320×240, capacitive multi-touch"
+    },
+    {
+      "label": "Microphone",
+      "value": "Dual mic",
+      "note": "ES7210 codec + 1W speaker"
+    },
+    {
+      "label": "Actuation",
+      "value": "360° / 90°",
+      "note": "continuous pan, tilt head"
+    },
+    {
+      "label": "Subscription",
+      "value": "None",
+      "note": "fully local option; StackChan World app optional for setup"
+    }
+  ],
+  "sourcing": "Specs sourced from M5Stack's official StackChan product page and m5-docs hardware reference, plus the stack-chan/stack-chan and andymai/stackchan-kai GitHub repositories, as of September 2026. The exact open-source license for the official firmware could not be confirmed from the pages checked. robotindex does not sell this product — pricing shown is for reference and may vary by retailer.",
+  "manufacturerUrl": "https://shop.m5stack.com/products/stackchan-kawaii-co-created-open-source-ai-desktop-robot",
+  "pricing": {
+    "summary": "**$99.00** for the assembled StackChan unit with CoreS3 pre-installed, per M5Stack's official store. Includes a 50cm USB-A-to-USB-C cable, a character expression sticker, a printed manual, and a carrying case."
+  },
+  "editorial": [
+    {
+      "heading": "Sensors & Hardware",
+      "body": "Built around M5Stack's CoreS3 development module (ESP32-S3), StackChan pairs a 2.0\" capacitive touchscreen — used as an animated face — with a two-servo pan/tilt base giving 360° continuous horizontal rotation and 90° of vertical head movement. A front-facing GC0308 camera and dual microphones (ES7210 codec) support the factory AI Agent's voice interaction and a companion mobile app, while a 9-axis IMU (BMI270 + BMM150), NFC reader, and proximity/ambient-light sensor round out the sensor package. A 1W speaker with a 16-bit I2S amplifier handles audio output, and the whole unit runs on a 550 mAh internal battery."
+    },
+    {
+      "heading": "Insights",
+      "body": "No recalls, lawsuits, safety incidents, or data-privacy reports were found for the M5StackChan in the sources reviewed here."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "buildsModsId": "stack-chan"
+    },
+    {
+      "buildsModsId": "stackchan-kai"
+    }
+  ]
+}

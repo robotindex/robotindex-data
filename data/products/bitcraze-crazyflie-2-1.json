@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "bitcraze-crazyflie-2-1",
+  "slug": "product-bitcraze-crazyflie-2-1",
+  "name": "Bitcraze Crazyflie 2.1+",
+  "manufacturer": "Bitcraze",
+  "category": "Educational & Hobbyist",
+  "subcategory": "Classroom & Coding Kits",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "An **open-source nano quadcopter** from **Bitcraze** that weighs about **29 g** and fits in the palm of a hand. It is built for **development, research, education and swarming**: a dual-MCU board, an expansion port for add-on **decks**, wireless firmware updates, and a radio that reaches beyond **1 km** line of sight with the Crazyradio PA. The **Crazyflie 2.1+** (2024) replaced the Crazyflie 2.1 (2019) with a better battery and propellers, and costs **$240**.",
+  "specs": [
+    {
+      "label": "Price",
+      "value": "$240",
+      "note": "Crazyflie 2.1+, Bitcraze store"
+    },
+    {
+      "label": "Takeoff Weight",
+      "value": "29 g",
+      "note": "Control board with battery"
+    },
+    {
+      "label": "Size",
+      "value": "92 × 92 × 29 mm",
+      "note": "Motor to motor"
+    },
+    {
+      "label": "Payload",
+      "value": "15 g",
+      "note": "Crazyflie 2.1 datasheet"
+    },
+    {
+      "label": "Flight Time",
+      "value": "~7 min",
+      "note": "Stock battery; Crazyflie 2.1 datasheet"
+    },
+    {
+      "label": "Charge Time",
+      "value": "40 min",
+      "note": "Micro-USB, on-board charger"
+    },
+    {
+      "label": "Main MCU",
+      "value": "STM32F405",
+      "note": "Cortex-M4, 168 MHz; 1 MB flash"
+    },
+    {
+      "label": "Radio MCU",
+      "value": "nRF51822",
+      "note": "Radio and power management"
+    },
+    {
+      "label": "Sensors",
+      "value": "BMI088 + BMP388",
+      "note": "IMU and pressure sensor"
+    },
+    {
+      "label": "Radio",
+      "value": "2.4 GHz + BLE",
+      "note": "1 km+ LOS with Crazyradio PA"
+    },
+    {
+      "label": "Expansion",
+      "value": "Deck port",
+      "note": "Automatic deck detection"
+    },
+    {
+      "label": "Released",
+      "value": "2024",
+      "note": "Crazyflie 2.1 launched 2019"
+    }
+  ],
+  "sourcing": "Verified against Bitcraze's store pages for the Crazyflie 2.1 and 2.1+ (store.bitcraze.io), its Crazyflie 2.1 product page and datasheet (bitcraze.io), the platform overview, and the crazyflie-firmware repository on GitHub, as of October 2026. Flagged as uncertain: the 7-minute flight time, 15 g payload and charge time are from the Crazyflie 2.1 datasheet, and Bitcraze publishes no separate figures for the 2.1+; weight is 29 g on the datasheet but 27 g on the store description; the $240 price is the store listing in USD; the hardware licence was not confirmed, only Bitcraze's statement that schematics are available; the page is titled for the 2.1+ because the 2.1 is discontinued, though it was requested as the 2.1; and the photo is a low-resolution third-party image showing a Crazyflie with propeller guards and an expansion deck.",
+  "manufacturerUrl": "https://store.bitcraze.io/products/crazyflie-2-1-plus",
+  "pricing": {
+    "summary": "The Crazyflie 2.1+ costs **$240** at Bitcraze's store and includes the control board, a 250 mAh LiPo battery, five motors (one spare), ten propellers (six spare), motor mounts, a battery holder deck and a micro-USB cable. The original **Crazyflie 2.1** was **$225**; Bitcraze lists it as discontinued and replaced by the 2.1+. The Crazyradio PA dongle, expansion decks and any controller are sold separately. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "The Crazyflie is the standard small research drone: it is light enough to fly indoors around people and cheap enough to fly in **swarms**. The Crazyflie 2.1 arrived in 2019 and the **2.1+** in 2024, with an upgraded battery and propellers that Bitcraze says improve flight performance by up to 15%. The line has since gained the **Crazyflie 2.1 Brushless** (2025) and the Crazyflie Bolt board for larger builds; all share the expansion-deck system. The firmware is open source under **LGPL-3.0**, with development tools, APIs in several languages and hardware schematics published by Bitcraze, which is why this page carries the **Open Source badge**; the hardware licence itself was not confirmed. The base kit has no propeller guards, camera or controller: the photo shows a unit with third-party guards and an add-on deck."
+    }
+  ]
+}

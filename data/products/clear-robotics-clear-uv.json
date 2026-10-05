@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "clear-robotics-clear-uv",
-  "slug": "product-clear-robotics-clear-uv.html",
+  "slug": "product-clear-robotics-clear-uv",
   "name": "Clear Robotics Clear UV",
   "manufacturer": "Clear Robotics",
   "category": "Outdoor & Yard",
@@ -66,7 +66,7 @@
   },
   "editorial": [
     {
-      "heading": "Sensors & Hardware — Sourcing Caveat",
+      "heading": "Sourcing Caveat",
       "body": "Navigation uses an onboard gyroscope and accelerometer (no camera-based SLAM), with coverage improving after 2–3 cycles. Connectivity runs through the Clear app (iOS/Android) via Bluetooth/WiFi, with cloud sync, a virtual joystick, scheduling, and water-temperature monitoring. Caution: an unrelated Hong Kong \"Clear Robotics\"/\"Clearbot\" autonomous-ship startup shares this name — don't confuse them; this company's background (founder, funding) is largely undisclosed."
     },
     {

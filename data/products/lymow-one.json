@@ -1,18 +1,18 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "lymow-one",
-  "slug": "product-lymow-one.html",
+  "slug": "product-lymow-one",
   "name": "Lymow One / Lymow One Plus 10A",
   "manufacturer": "Lymow",
   "category": "Outdoor & Yard",
   "subcategory": "Robot Lawn Mowers",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,
     "closedPlatform": true
   },
-  "description": "A tank-tread (not wheeled) robotic mower from Lymow, a startup founded by former SharkNinja robot-vacuum engineers. Originally crowdfunded on Kickstarter, now shipping commercially. Wire-free RTK-GNSS + camera navigation, claimed 45°/100% slope capability.",
+  "description": "A tank-tread (not wheeled) robotic mower from Lymow, a startup founded by former SharkNinja robot-vacuum engineers. Originally crowdfunded on Kickstarter; the original One has since sold out and been succeeded by the One Plus, now shipping commercially. Wire-free RTK-GNSS + camera navigation, claimed 45°/100% slope capability.",
   "specs": [
     {
       "label": "Battery",
@@ -64,10 +64,10 @@
       "note": "Local RTK base station included; maker confirms no mandatory fees"
     }
   ],
-  "sourcing": "Verified against Lymow's own official site and Kickstarter page, plus independent hands-on reviews from Tom's Guide and PCWorld, and coverage from New Atlas, Yanko Design, Notebookcheck, and PR Newswire. Lymow is a young company (founded 2022) that moved from crowdfunding to commercial retail — company-reported unit-shipped figures are self-reported and unverified. Pricing varies by source and appears promo-dependent. A cutting-width discrepancy exists between the CES 2024 press preview (21 in) and the shipped spec sheet (16 in). Claimed max slope (45°/100%) exceeds what independent testers actually observed (~30°).",
+  "sourcing": "Verified against Lymow's own official site and Kickstarter page, plus independent hands-on reviews from Tom's Guide and PCWorld, CES 2026 coverage of the One Plus launch (AndroidHeadlines), and coverage from New Atlas, Yanko Design, Notebookcheck, and PR Newswire. Lymow is a young company (founded 2022) that moved from crowdfunding to commercial retail — company-reported unit-shipped figures are self-reported and unverified. Pricing varies by source and appears promo-dependent. A cutting-width discrepancy exists between the CES 2024 press preview (21 in) and the shipped spec sheet (16 in). Claimed max slope (45°/100%) exceeds what independent testers actually observed (~30°). The original Lymow One is confirmed sold out in the US and Canada as of this writing and has been succeeded, not kept on sale alongside, the One Plus (5A $2,999 / 10A $3,199), which launched at CES 2026 and became available in March 2026.",
   "manufacturerUrl": "https://www.lymow.com/products/lymow-one-plus-robotic-lawn-mower",
   "pricing": {
-    "summary": "Pricing is fluid and promo-dependent: Lymow's own site lists the One Plus around **$2,799 (10A charger) / $2,599 (5A charger)** on sale against a regular price of $3,199/$2,999, while other outlets cite anywhere from $2,699 to $3,199. Treat any single figure as a snapshot rather than a fixed MSRP."
+    "summary": "The original Lymow One is sold out in the US and Canada and no longer being sold — it has been replaced, not kept on sale alongside its successor. Current pricing is for the **Lymow One Plus**: **$2,999 (5A charger)** or **$3,199 (10A charger)**, per Lymow's own site. Some retailer listings and promos still cite figures as low as $2,599–$2,799; treat any single figure as a snapshot rather than a fixed MSRP."
   },
   "editorial": [
     {
@@ -77,6 +77,10 @@
     {
       "heading": "Insights",
       "body": "Lymow advertises a maximum climbing slope of 45° (100% grade) for the One/One Plus, but independent hands-on testing from Tom's Guide and PCWorld found it actually manages slopes of roughly 30° — a real gap between the marketed spec and tested performance. Its rubber tank-tread drive is independently confirmed as the genuine differentiator behind that traction."
+    },
+    {
+      "heading": "Current Lineup: One vs. One Plus",
+      "body": "The original crowdfunded Lymow One is no longer a going product: it shipped to backers, then to retail, and is now listed as sold out in the US and Canada. Lymow One Plus — announced at CES 2026 and available since March 2026 — is the current model, sold in 5A ($2,999) and 10A ($3,199) charger variants with roughly 50% more peak cutting power (1,785W vs. the original's 1,200W) and improved navigation. This differs from a \"sold alongside\" framing: One Plus has succeeded One in the lineup rather than the two being sold side by side."
     }
   ],
   "firmwareCommunity": [

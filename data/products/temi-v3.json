@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "temi-v3",
-  "slug": "product-temi-v3.html",
+  "slug": "product-temi-v3",
   "name": "temi V3",
   "manufacturer": "Robotemi",
   "category": "Companion & Social",
   "subcategory": "Mobility Helpers",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,

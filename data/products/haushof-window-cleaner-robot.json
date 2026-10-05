@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "haushof-window-cleaner-robot",
-  "slug": "product-haushof-window-cleaner-robot.html",
+  "slug": "product-haushof-window-cleaner-robot",
   "name": "HAUSHOF Window Cleaner Robot",
   "manufacturer": "HAUSHOF",
   "category": "Cleaning & Home Care",
   "subcategory": "Other",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -75,7 +75,7 @@
   },
   "editorial": [
     {
-      "heading": "Sensors & Hardware — Sourcing Caveat",
+      "heading": "Sourcing Caveat",
       "body": "HAUSHOF's window-cleaning robot is a real, currently-listed Amazon/eBay product, but has no dedicated brand website and no reputable tech press review. The Amazon listing title alone confirms 3,800 Pa suction, automatic water spray, \"AI path planning\"/edge-detection branding, and a physical remote control. Battery runtime, water-tank capacity, spare-pad count, noise level, and price could not be independently confirmed."
     },
     {

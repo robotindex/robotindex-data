@@ -1,14 +1,14 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "roybi-robot",
-  "slug": "product-roybi-robot.html",
+  "slug": "product-roybi-robot",
   "name": "ROYBI Robot",
   "manufacturer": "ROYBI",
   "category": "Companion & Social",
   "subcategory": "Children Companions",
-  "tier": "featured",
+  "tier": "under-review",
   "flags": {
-    "pending": false,
+    "pending": true,
     "openSource": false,
     "closedPlatform": true
   },
@@ -70,15 +70,15 @@
       "note": "$149 base price includes all 500+ lessons; app has historically offered optional $2.99 per-lesson-pack IAPs, not a required recurring fee"
     }
   ],
-  "sourcing": "Verified against ROYBI's own store and product materials, The Robot Report, EdSurge, CES.tech, a January 2021 company press release, a 2024 Talk Business & Politics piece on the company's Arkansas expansion, independent reviews (New Literacies, rachelbustin.com, Best Buy Canada), and retailer listings (Walmart, a liquidation retailer). Founding year, HQ city, and seed-round investor identities are inconsistent or undisclosed across sources. No Toyota/Toyota AI Ventures investment was corroborated anywhere and should be treated as unconfirmed. Whether a subscription is currently required for any content tier is not fully settled. Most significantly: no confirmed company or product news from 2025–2026 was found, and the product is currently out of stock across every retail channel checked — this is flagged directly rather than presented as an actively thriving product.",
+  "sourcing": "Verified against ROYBI's own store and product materials, The Robot Report, EdSurge, CES.tech, a January 2021 company press release, a 2024 Talk Business & Politics piece on the company's Arkansas expansion, independent reviews (New Literacies, rachelbustin.com, Best Buy Canada), and retailer listings (Walmart, a liquidation retailer). Founding year, HQ city, and seed-round investor identities are inconsistent or undisclosed across sources. No Toyota/Toyota AI Ventures investment was corroborated anywhere and should be treated as unconfirmed. Whether a subscription is currently required for any content tier is not fully settled. Most significantly: no confirmed company or product news from 2025–2026 was found, and the product is currently out of stock across every retail channel checked — this is flagged directly rather than presented as an actively thriving product. Moved to Under Review (pending) because it's currently sold out everywhere checked and no confirmed company news has surfaced since August 2024; note that a Crunchbase activity timeline extending to November 2025 was also found, so this reflects a stock/news-freshness concern rather than a confirmed shutdown.",
   "manufacturerUrl": "https://roybi.world/",
   "pricing": {
     "summary": "Officially listed at $149 on ROYBI's own store (roybi.world), though that listing currently shows sold out, and Walmart's listing is also out of stock. A liquidation retailer has been clearing remaining units at a steep discount against a cited $207 retail reference price."
   },
   "editorial": [
     {
-      "heading": "Sensors & Hardware — Company Status Worth Flagging",
-      "body": "ROYBI runs on a pre-authored curriculum (500+ lessons, ~70 categories) with machine-learning personalization for pacing, not open-ended AI chat. Language claims have expanded from \"first bilingual\" (English/Chinese) to four languages. Worth flagging: no confirmed news since August 2024, and it's sold out at ROYBI's store and Walmart, with a liquidator discounting inventory — no confirmed shutdown, but unclear if shipping."
+      "heading": "Company Status",
+      "body": "ROYBI runs on a pre-authored curriculum (500+ lessons, ~70 categories) with machine-learning personalization for pacing, not open-ended AI chat. Language claims have expanded from \"first bilingual\" (English/Chinese) to four languages. There's no confirmed news since August 2024, and it's sold out at ROYBI's store and Walmart, with a liquidator discounting inventory — no confirmed shutdown, but unclear if shipping."
     },
     {
       "heading": "Insights",

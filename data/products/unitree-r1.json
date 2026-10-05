@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "unitree-r1",
-  "slug": "product-unitree-r1.html",
+  "slug": "product-unitree-r1",
   "name": "Unitree R1",
   "manufacturer": "Unitree",
   "category": "Humanoid & General Purpose",
   "subcategory": "Two Legs",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -55,10 +55,10 @@
       "note": "EDU configuration"
     }
   ],
-  "sourcing": "Specs sourced from Unitree's official R1 product page and cross-checked against RoboStore's EDU listing, as of September 2026. robotindex does not sell this product — pricing shown is for reference and may vary by configuration and retailer.",
+  "sourcing": "Specs sourced from Unitree's official R1 product page and cross-checked against RoboStore's EDU listing, plus coverage of the April 2026 China price cut and AliExpress global listing (Bloomberg, SCMP, Notebookcheck, Interesting Engineering) and a July 2026 pricing review (RoboZaps), as of September 2026. robotindex does not sell this product — pricing shown is for reference and may vary by configuration and retailer. AliExpress delivered-owner reports were still only beginning to appear as of the most recent source checked, so treat the international shipping timeline as recent rather than long-established.",
   "manufacturerUrl": "https://www.unitree.com/R1/",
   "pricing": {
-    "summary": "From **$4,900** (AIR). Standard configuration is $5,900; EDU (with Jetson Orin NX and optional dexterous hands) runs around $15,950 per retailer listings — Unitree's own site lists EDU as contact-for-price."
+    "summary": "From **$4,900** (AIR) direct from Unitree's US shop, in stock. Standard configuration is $5,900; EDU (with Jetson Orin NX and optional dexterous hands) runs around $15,950 per retailer listings — Unitree's own site lists EDU as contact-for-price. In China, the entry price was cut to roughly **¥29,900 (~$4,200)** as of April 2026, down from a ¥39,900 launch price. Unitree's official AliExpress store began listing R1 for international buyers (North America, Europe, Japan, Singapore) in April 2026, with first deliveries reported starting around June 30, 2026 — AliExpress pricing runs higher than the direct China price (observed around $6,800–$8,100) once shipped internationally."
   },
   "editorial": [
     {

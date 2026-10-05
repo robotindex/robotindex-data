@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "freenove-4wd-smart-car-kit",
-  "slug": "product-freenove-4wd-smart-car-kit.html",
+  "slug": "product-freenove-4wd-smart-car-kit",
   "name": "Freenove 4WD Smart Car Kit",
   "manufacturer": "Freenove",
   "category": "Educational & Hobbyist",
   "subcategory": "Mobile Robot Kits",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -42,7 +42,7 @@
     {
       "label": "Display",
       "value": "LED dot-matrix",
-      "note": "Freenove's docs list 8×8; the panel pictured reads wider — worth confirming on your unit"
+      "note": "Freenove's docs list 8×8; the panel pictured reads wider"
     },
     {
       "label": "Drive",
@@ -73,7 +73,7 @@
   "editorial": [
     {
       "heading": "Insights",
-      "body": "Freenove's GitHub repository for this kit is real, browsable source, but it's licensed CC BY-NC-SA 3.0 — a Creative Commons license whose non-commercial clause is not OSI-approved as open source, so no Open Source badge applies here despite the code being public. The pan-tilt LED-matrix panel in this product's photo also reads visually wider than the single 8×8 module Freenove's own documentation describes for this SKU, a spec discrepancy worth confirming against your specific unit."
+      "body": "Freenove's GitHub repository for this kit is real, browsable source, but it's licensed CC BY-NC-SA 3.0 — a Creative Commons license whose non-commercial clause is not OSI-approved as open source, so no Open Source badge applies here despite the code being public. The pan-tilt LED-matrix panel in this product's photo also reads visually wider than the single 8×8 module Freenove's own documentation describes for this SKU."
     }
   ],
   "firmwareCommunity": [

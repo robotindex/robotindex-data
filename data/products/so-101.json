@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "so-101",
-  "slug": "product-so-101.html",
+  "slug": "product-so-101",
   "name": "SO-101",
   "manufacturer": "The Robot Studio",
   "category": "Robot Arms",
@@ -79,6 +79,9 @@
   "firmwareCommunity": [
     {
       "buildsModsId": "so-101-arm100"
+    },
+    {
+      "buildsModsId": "huggingface-lerobot-teleop-presets"
     }
   ]
 }

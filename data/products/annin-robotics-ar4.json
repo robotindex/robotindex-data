@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "annin-robotics-ar4",
-  "slug": "product-annin-robotics-ar4.html",
+  "slug": "product-annin-robotics-ar4",
   "name": "Annin Robotics AR4",
   "manufacturer": "Chris Annin",
   "category": "Robot Arms",
@@ -59,7 +59,7 @@
   "editorial": [
     {
       "heading": "Insights",
-      "body": "Although the AR4 is marketed as \"open source,\" its actual license agreement explicitly prohibits commercial use, resale of parts or derivatives, and redistribution without written permission — restrictions that fail the Open Source Definition, so this catalog does not apply its Open Source badge here. An independent Hackster.io reviewer who built one found the marketed closed-loop encoder correction isn't actually functioning in practice, producing jittery motion and backlash beyond the arm's stated 0.3mm repeatability spec."
+      "body": "Although the AR4 is marketed as \"open source,\" its actual license agreement explicitly prohibits commercial use, resale of parts or derivatives, and redistribution without written permission — restrictions that fail the Open Source Definition, so this catalog does not apply its Open Source badge here. An independent Hackster.io reviewer who built one found the marketed closed-loop encoder correction isn't actually functioning in practice, producing jittery motion and backlash beyond the arm's stated 0.3mm repeatability spec. Still referenced as a current open-source-style arm design, but no recent stock or update news was found for it — worth rechecking periodically rather than treating this page as fully current."
     }
   ],
   "firmwareCommunity": [

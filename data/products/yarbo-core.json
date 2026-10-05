@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "yarbo-core",
-  "slug": "product-yarbo-core.html",
+  "slug": "product-yarbo-core",
   "name": "Yarbo Core",
   "manufacturer": "Yarbo",
   "category": "Outdoor & Yard",
   "subcategory": "Other",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -72,7 +72,7 @@
   "sourcing": "Verified against Yarbo's own official site (yarbo.com) and Kickstarter/funding coverage (PR Newswire), plus an independent Tom's Guide hands-on review. Physical dimensions, weight, battery voltage, and a dB noise rating were not confirmed from accessible official sources and are marked as unpublished rather than estimated. Cybernews' independent reporting on the company's actual China ties (via Hanyang Tech, Shenzhen) and a disclosed security/backdoor flaw is included because it materially affects how the brand should be evaluated, separate from hardware performance. Do not confuse this Y-series \"Core\" with Yarbo's separate, newer \"M Series,\" which launched its own crowdfunding campaign with different pricing.",
   "manufacturerUrl": "https://www.yarbo.com/products/yarbo-core",
   "pricing": {
-    "summary": "The Core base unit alone lists at **$3,999** (0% APR financing advertised at ~$333/mo), consistent across yarbo.com and third-party retailers. Individual attachment modules are sold separately — Lawn Mower Pro ~$2,000, Snow Blower Gen 2 ~$2,200, leaf Blower ~$1,100, Trimmer package ~$1,300 — so a real-world working setup (Core plus one or more modules) typically runs **$6,000–$8,000** per reviewer estimates, well above the base sticker price."
+    "summary": "The Core base unit alone lists at **$3,999** (0% APR financing advertised at ~$333/mo), consistent across yarbo.com and third-party retailers. Individual attachment modules are sold separately — Lawn Mower Pro ~$2,000, Snow Blower Gen 2 ~$2,200, leaf Blower ~$1,100, Trimmer package ~$1,300 — so a real-world working setup (Core plus one or more modules) typically runs **$6,000–$8,000** per reviewer estimates, well above the base sticker price. Core is listed in stock on yarbo.com, with an estimated delivery of 3–8 business days as of this writing."
   },
   "editorial": [
     {

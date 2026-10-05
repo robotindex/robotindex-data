@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "galaxea-nexo",
+  "slug": "product-galaxea-nexo",
+  "name": "Galaxea Nexo",
+  "manufacturer": "Galaxea Dynamics",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Wheeled / Mobile Base",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A wheeled dual-arm humanoid from **Galaxea AI** (Galaxea Dynamics), unveiled at the **World Robot Conference 2026** in Beijing as the wheeled-arms platform between its desktop Lemo and biped Kengo. Press describes about **30 DOF**, whole-body force sensing, a **20 kg peak** dual-arm payload, and an **8-hour** battery, targeting structured indoor work such as electronics assembly, logistics, and retail. A separate product from the [Galaxea R1 Series](/product-galaxea-r1); Galaxea has not yet published an official Nexo spec sheet.",
+  "specs": [
+    {
+      "label": "Degrees of Freedom",
+      "value": "30",
+      "note": "Arms, neck, waist, chassis; 12 in hands per one source"
+    },
+    {
+      "label": "Payload",
+      "value": "20 kg",
+      "note": "Dual-arm, peak (press)"
+    },
+    {
+      "label": "Precision",
+      "value": "0.1 mm",
+      "note": "Repeatability; 0.1 N force-control accuracy (press)"
+    },
+    {
+      "label": "Height",
+      "value": "168 cm",
+      "note": "Third-party site only"
+    },
+    {
+      "label": "Weight",
+      "value": "85 kg",
+      "note": "Third-party site only"
+    },
+    {
+      "label": "Battery",
+      "value": "8 h",
+      "note": "Fast charge, battery swap, auto-return (press)"
+    },
+    {
+      "label": "Compute",
+      "value": "Orin 200 TOPS",
+      "note": "Jetson AGX Orin; third-party site only"
+    },
+    {
+      "label": "Chassis",
+      "value": "Wheeled",
+      "note": "Compact base, up to 5 km/h; third-party site only"
+    },
+    {
+      "label": "Status",
+      "value": "Prototype",
+      "note": "Third-party label; no ship date"
+    }
+  ],
+  "sourcing": "Verified against Chinese and English press coverage of Galaxea's WRC 2026 unveiling (Qbitai, Sohu, Humanoid Robotics Technology, a Galaxea press release) and one third-party spec site (humanoid.guide), as of October 2026. Flagged as uncertain: Galaxea's website has no Nexo page, so there is no official spec sheet; the price, height, weight, speed, compute, hand-DOF detail, and 'prototype' status come from the single third-party site; the unveiling month (September 2026) could not be pinned to a day; the payload is described as a peak figure by one outlet. The sensor suite and software openness were not found. Some outlets call Nexo a humanoid while Galaxea frames it as a wheeled-arm robot. Product image: Galaxea Dynamics. The corner brand logo and a third-party watermark were removed from the supplied image.",
+  "manufacturerUrl": "https://galaxea-dynamics.com/",
+  "pricing": {
+    "summary": "Galaxea has **not published a price** for Nexo. One third-party spec site lists **$90,000** and labels the robot a prototype, but nothing from Galaxea's own site, store, or press material confirms the figure. Galaxea's store separately lists its Kengo biped at a literal $999,999.00 placeholder; that is a different product and not Nexo's price. No ship date was found. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Galaxea positions Nexo as the wheeled-arms platform for structured environments, in contrast to Kengo for unstructured ones, built on its 'hardware plus intelligence' approach with proprietary embodied-AI models. It is not described as a successor to the R1 Pro, though no source says either way; the R1 Pro is a similar wheeled dual-arm robot at $69,999 with a 10 kg payload. Open-source status for Nexo is unknown: Galaxea has published its G0 vision-language-action model and dataset for other products, but that was not tied to Nexo, and no hardware designs are known to be released, so the Open Source badge does not apply."
+    }
+  ]
+}

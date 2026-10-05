@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "chasing-family",
-  "slug": "product-chasing-family.html",
+  "slug": "product-chasing-family",
   "name": "CHASING Underwater Drone Family",
   "manufacturer": "Chasing Innovation",
   "category": "Personal Drones",
@@ -67,7 +67,7 @@
   "editorial": [
     {
       "heading": "Insights",
-      "body": "Chasing's own spec sheet caps every M2 S tier at 100m/328ft depth regardless of tether length, but at least one retailer, iGeobotics, advertises the same product as \"200m Depth Rating\" — a real conflict worth catching before buying by depth rating alone. The most detailed independent review available (SeaBits) covers the predecessor plain M2, not the M2 S, and documented unresolved hardware failures including melted LEDs — a historical safety-relevant malfunction not confirmed to still affect current M2 S hardware, but worth flagging."
+      "body": "Chasing's own spec sheet caps every M2 S tier at 100m/328ft depth regardless of tether length, but at least one retailer, iGeobotics, advertises the same product as \"200m Depth Rating.\" The most detailed independent review available (SeaBits) covers the predecessor plain M2, not the M2 S, and documented unresolved hardware failures including melted LEDs — a historical safety-relevant malfunction not confirmed to still affect current M2 S hardware."
     }
   ],
   "firmwareCommunity": [

@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "pophie-ai-lifeform",
-  "slug": "product-pophie-ai-lifeform.html",
+  "slug": "product-pophie-ai-lifeform",
   "name": "Pophie(AI Lifeform)",
   "manufacturer": "InsBotics Technology",
   "category": "Pets & Toys",
   "subcategory": "Robot Pets",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": false,

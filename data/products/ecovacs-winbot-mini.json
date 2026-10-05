@@ -1,33 +1,38 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "ecovacs-winbot-mini",
-  "slug": "product-ecovacs-winbot-mini.html",
-  "name": "ECOVACS WINBOT Mini",
+  "slug": "product-ecovacs-winbot-mini",
+  "name": "ECOVACS WINBOT MINI 2",
   "manufacturer": "Ecovacs",
   "category": "Cleaning & Home Care",
   "subcategory": "Other",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,
     "closedPlatform": true
   },
-  "description": "Ecovacs' most compact window-cleaning robot, announced at CES 2025 — about 30% thinner and 37% smaller than its predecessor, aimed at small windows and apartments rather than the large-window, multi-scene positioning of the W2 Pro Omni.",
+  "description": "Ecovacs' most compact window-cleaning robot — the current WINBOT MINI 2, launched March 5, 2026 alongside the Deebot T90 Pro Omni and WINBOT W3 OMNI, marketed as \"the industry's slimmest robotic window cleaner\" (8.5in side length, 2.2in thick), aimed at small windows and apartments rather than the large-window, multi-scene positioning of the W2 Pro Omni.",
   "specs": [
     {
       "label": "Weight",
       "value": "2.9 lb",
-      "note": "215×215×55mm"
+      "note": "215×215×55mm — original Mini figure"
     },
     {
       "label": "Suction",
-      "value": "7,500 Pa max",
-      "note": "3,200 Pa while moving"
+      "value": "8,000 Pa max (MINI 2)",
+      "note": "original Mini was 7,500 Pa max / 3,200 Pa while moving"
+    },
+    {
+      "label": "Navigation",
+      "value": "WIN-SLAM 4.0",
+      "note": "MINI 2 generation; adds ultrasonic spray, 5 cleaning modes"
     },
     {
       "label": "Price",
       "value": "$239.99",
-      "note": "MSRP; seen at $199.99 promo"
+      "note": "same MSRP as the original Mini it replaced"
     },
     {
       "label": "Edge Detection",
@@ -60,25 +65,25 @@
       "note": "free ECOVACS HOME app; no cloud fee found"
     }
   ],
-  "sourcing": "Specs sourced from Ecovacs' own US product page (ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini), Ecovacs' CES 2025 press release (via PR Newswire), and Ecovacs' own CES campaign page, as of September 2026. No published noise-level (dB) figure was found. No major tech-press outlet appears to have published an independent review of this specific model. robotindex does not sell this product.",
-  "manufacturerUrl": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini",
+  "sourcing": "Specs originally sourced from Ecovacs' own US product page for the original Mini, Ecovacs' CES 2025 press release (via PR Newswire), and Ecovacs' own CES campaign page. This entry has since been updated to the current WINBOT MINI 2 — confirmed via Ecovacs' own MINI 2 product page (ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2), Amazon's MINI 2 listing (8,000 Pa suction, WIN-SLAM 4.0, ultrasonic spray, 5 cleaning modes), and Window Robot Lab's hands-on review, as of September 2026. Tether rating, edge-detection response time, and battery-backup duration are carried forward from the original Mini's spec sheet and have not been independently re-confirmed for MINI 2. No published noise-level (dB) figure was found for either generation. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2",
   "pricing": {
-    "summary": "MSRP **$239.99**, seen discounted to around **$199.99** in promotions, per Ecovacs' own US store. Sold via ecovacs.com, Amazon, and Walmart, with orders shipping in about two weeks per the manufacturer's site."
+    "summary": "Ecovacs launched the **WINBOT MINI 2** in March 2026 at the same **$239.99** MSRP as the original Mini it replaces (that original was also seen discounted to around $199.99 in promotions). Sold via ecovacs.com, Amazon, and Walmart. This entry now tracks the current MINI 2 as Ecovacs' compact window-cleaner; the original Mini it succeeds is the previous-generation model in that line."
   },
   "editorial": [
     {
       "heading": "Sensors & Hardware",
-      "body": "The Mini attaches with up to 7,500 Pa suction (3,200 Pa while moving) and detects frameless-glass edges via an optocoupler sensor claimed at 0.02-second response, needing a 3mm minimum frame. A 3.3m tether rated to 1,900N backs the mount, plus a 30-minute battery backup if power/suction fails. Four ultrasonic nozzles and WIN-SLAM path planning give a claimed 99.5% surface coverage."
+      "body": "The current MINI 2 attaches with up to 8,000 Pa suction and adds WIN-SLAM 4.0 navigation with ultrasonic spray across 5 cleaning modes; the original Mini it replaces attached with up to 7,500 Pa suction (3,200 Pa while moving). Both detect frameless-glass edges via an optocoupler sensor claimed at 0.02-second response, needing a 3mm minimum frame; a 3.3m tether rated to 1,900N backs the mount, plus a 30-minute battery backup if power/suction fails, on the original — these mechanical specs were not independently re-confirmed for MINI 2 and are carried forward from the original Mini's spec sheet."
     },
     {
       "heading": "Insights",
-      "body": "The Mini backs its suction mount with a 3.3m nylon/latex tether rated to 1,900N of tensile strength and detects frameless-glass edges via an optocoupler sensor with a claimed 0.02-second response time — specific, sourced engineering figures rather than generic marketing claims. No major tech-press outlet appears to have published an independent review of this specific model."
+      "body": "This entry's display name and lead suction/navigation specs were updated to the current WINBOT MINI 2, which launched in March 2026 at the same $239.99 price point as the original Mini it replaced — buyers researching this model should confirm which generation a given retail listing actually ships. The original Mini's tether (3.3m nylon/latex, rated to 1,900N of tensile strength) and edge-detection sensor (0.02-second claimed response) are specific, sourced engineering figures rather than generic marketing claims, though not independently re-confirmed for MINI 2. Window Robot Lab has published hands-on MINI 2 coverage; no major mainstream tech-press outlet appears to have reviewed either generation."
     }
   ],
   "firmwareCommunity": [
     {
       "status": "closed-platform",
-      "note": "ECOVACS WINBOT Mini has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
+      "note": "ECOVACS WINBOT MINI 2 has not released a public SDK, firmware repo, or developer API. Not currently listed in Builds & Mods."
     }
   ]
 }

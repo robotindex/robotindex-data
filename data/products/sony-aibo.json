@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "sony-aibo",
-  "slug": "product-sony-aibo.html",
+  "slug": "product-sony-aibo",
   "name": "Sony Aibo",
   "manufacturer": "Sony",
   "category": "Pets & Toys",
@@ -63,12 +63,16 @@
   "sourcing": "Verified against Sony's own official aibo site (us.aibo.com, including its spec, AI-features, and store pages) and Sony's February 2024 press release (via PR Newswire), Sony's official March 2025 system software update announcement (info.aibo.com), AFP wire coverage of the June 2026 Japan sales discontinuation (syndicated via the Japan Times, RTÉ, CP24, Malay Mail, Bangkok Post), and reviews/retrospectives from TechRadar, Tom's Guide, and Engadget/TechCrunch launch coverage. The current exact US price is unconfirmed — Sony's Feb 2024 release states $2,899.99 while multiple mid-2026 wire reports cite \"over $3,000,\" and this discrepancy is presented rather than resolved. The two-tone brown-and-white colorway shown in this page's photo matches Sony's \"Kinako\" edition (Japan, Aug 2024); its US availability could not be confirmed and it may be a Japan-market-only color. An enthusiast-forum-only \"Cocoa Chiffon\" edition was not corroborated by any Sony source and is omitted from this page. No dedicated review from The Verge, Wired, or Ars Technica was found and none is cited. Sony's claims about facial/voice recognition scale and personality development are presented as manufacturer statements, not independently verified facts.",
   "manufacturerUrl": "https://us.aibo.com/",
   "pricing": {
-    "summary": "Sony's own February 2024 US press release for the Espresso edition lists $2,899.99 as the suggested retail price — essentially flat versus the original 2018 US launch price of $2,899. However, multiple wire-service reports from mid-2026 describe current US pricing as \"over $3,000,\" which doesn't cleanly reconcile with Sony's own figure, so the live current price should be checked directly on us.aibo.com."
+    "summary": "Sony's own February 2024 US press release for the Espresso edition lists $2,899.99 as the suggested retail price — essentially flat versus the original 2018 US launch price of $2,899. However, multiple wire-service reports from mid-2026 describe current US pricing as \"over $3,000,\" which doesn't cleanly reconcile with Sony's own figure, so the live current price should be checked directly on us.aibo.com. US sales continue as normal; the change below affects Japan only."
   },
   "editorial": [
     {
       "heading": "Insights",
       "body": "**The subscription requirement is real and is the single most consistently criticized aspect of aibo**: Sony's own site states an aibo AI Cloud Plan subscription is required for most core features — personality development, cloud memory backup, and app-based photo/remote access — and reviewers have also raised privacy concerns about the continuous cloud upload of in-home video and audio this requires. Sony's claims that aibo recognizes up to 100 faces, learns 50+ voice commands, and develops a distinct \"personality\" are manufacturer marketing statements, not claims independently verified by third-party testing."
+    },
+    {
+      "heading": "Japan Sales Discontinuation",
+      "body": "Sony announced on June 25, 2026 that Japan sales of the current ERS-1000 model will end once existing stock sells through — a wind-down tied to stock, not an immediate halt. Sony says tech support, replacement parts, and cloud-subscription plans will continue for existing Japanese owners. Sony did not comment on plans for a next-generation aibo or on any change to sales outside Japan; US sales continue unaffected, at the \"over $3,000\" pricing noted above."
     }
   ],
   "firmwareCommunity": [

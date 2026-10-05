@@ -1,14 +1,14 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "amazon-astro",
-  "slug": "product-amazon-astro.html",
+  "slug": "product-amazon-astro",
   "name": "Amazon Astro",
   "manufacturer": "Amazon",
   "category": "Security",
   "subcategory": "Indoor Security",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
-    "pending": true,
+    "pending": false,
     "openSource": false,
     "closedPlatform": true
   },

@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "worx-landroid-vision-wr340",
-  "slug": "product-worx-landroid-vision-wr340.html",
+  "slug": "product-worx-landroid-vision-wr340",
   "name": "Worx Landroid Vision Cloud WR340",
   "manufacturer": "Worx",
   "category": "Outdoor & Yard",
   "subcategory": "Robot Lawn Mowers",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -61,10 +61,10 @@
       "note": "Cloud RTK positioning free for mower's life, per independent review"
     }
   ],
-  "sourcing": "Verified against Worx's own official site and support wiki, a CES 2026 press release (PR Newswire), and independent reviews from Tom's Guide and Reviewed.com. Announced at CES 2026 (January 2026); Best Buy currently lists the WR340 as \"Coming Soon,\" yet Tom's Guide and Reviewed.com had already published hands-on reviews at time of research — likely from early-access review units — so treat broad retail availability as not yet fully confirmed despite press coverage existing. No published noise (dB) rating was found from Worx for this model. Do not confuse this wire-free Vision Cloud line with the separately-catalogued, boundary-wire Landroid M (WR140).",
+  "sourcing": "Verified against Worx's own official site and support wiki, a CES 2026 press release (PR Newswire), and independent reviews from Tom's Guide and Reviewed.com. Announced at CES 2026 (January 2026); as of this later check, retail listings for the WR340 are live at Lowe's, Home Depot, and Amazon in addition to Best Buy, so broad retail availability is now confirmed. No published noise (dB) rating was found from Worx for this model. Do not confuse this wire-free Vision Cloud line with the separately-catalogued, boundary-wire Landroid M (WR140).",
   "manufacturerUrl": "https://www.worx.com/landroid-vision.html",
   "pricing": {
-    "summary": "Best Buy and Tom's Guide independently agree on **$2,299.99** MSRP for the WR340 (1-acre tier). Some pricing shown near the WR340 on worx.com's own site appears to actually belong to the lower-coverage WR310 (~$949–1,199, 1/4 acre) and WR320 (~$1,799, 1/2 acre) siblings in the same Vision Cloud lineup, so don't confuse those figures with the WR340's own price."
+    "summary": "Best Buy and Tom's Guide independently agree on **$2,299.99** MSRP for the WR340 (1-acre tier). Some pricing shown near the WR340 on worx.com's own site appears to actually belong to the lower-coverage WR310 (~$949–1,199, 1/4 acre) and WR320 (~$1,799, 1/2 acre) siblings in the same Vision Cloud lineup, so don't confuse those figures with the WR340's own price. Beyond Best Buy, the WR340 is also listed at Lowe's, Home Depot, and Amazon."
   },
   "editorial": [
     {

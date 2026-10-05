@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "agibot-x2",
+  "slug": "product-agibot-x2",
+  "name": "AgiBot X2",
+  "manufacturer": "AgiBot",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "Compact, 1.31m-tall humanoid from AgiBot (Zhiyuan Robotics), a Shanghai company founded February 2023 by former Huawei engineers Deng Taihua and Peng Zhihui. Unveiled March 2025 under the Chinese name \"Lingxi X2\"; AgiBot's international store sells the same hardware simply as **X2**. Two current configurations: **X2 Neo** ($25,600, interaction/demo-focused) and **X2 Ultra** (adds LiDAR, an RGB-D camera, a 4G/5G module, and support for secondary software development with optional dexterous end-effectors).",
+  "specs": [
+    {
+      "label": "Variants",
+      "value": "2",
+      "note": "X2 Neo (standard), X2 Ultra"
+    },
+    {
+      "label": "Height",
+      "value": "~1.31 m",
+      "note": "Same for both variants"
+    },
+    {
+      "label": "Weight",
+      "value": "~35 kg",
+      "note": "~39 kg for X2 Ultra"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "25–31",
+      "note": "Figures differ by source — see note below"
+    },
+    {
+      "label": "Payload",
+      "value": "≤1 kg",
+      "note": "Up to 3kg in specific postures"
+    },
+    {
+      "label": "Battery",
+      "value": "~500 Wh",
+      "note": "Swappable; ~2hr runtime at 0.5 m/s; ≤1.5hr charge"
+    },
+    {
+      "label": "Walking Speed",
+      "value": "≤0.8 m/s",
+      "note": "Typical; rated to 1.8 m/s, lab-demoed to 2 m/s"
+    },
+    {
+      "label": "Sensors",
+      "value": "Varies by tier",
+      "note": "Neo: camera+mics; Ultra adds LiDAR, RGB-D, 4G/5G"
+    }
+  ],
+  "sourcing": "Verified against AgiBot's own sites — agibot.com/products/X2 for the original spec sheet, and store.agibot.com/products/x2 and /x2-ultra for current retail listings and pricing — plus independent coverage of the March 2025 \"Lingxi X2\" unveiling, as of October 2026. Flagged as uncertain: AgiBot's official spec page and its current store listing disagree on degrees of freedom (25/30 vs. 30/31) and arm DOF (5 vs. 7 per arm on the standard unit), likely reflecting a hardware revision since the original announcement that AgiBot hasn't reconciled in one place — both figures are shown here rather than picking one. X2 Ultra's listed $999,999.00 price is treated as a contact-sales placeholder, not a real figure. The X2 Neo price has risen from $24,240 (independently verified July 2026) to $25,600 as of this writing. The official agibot.com/DOCS/OS page documents full open-source releases (BOM, CAD, training/inference code) for the separate X1 line only; for X2 it lists just a URDF/simulation repository, so the \"full-stack open source\" language used by some third-party resellers is not treated as accurate here. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.agibot.com/",
+  "pricing": {
+    "summary": "**X2 Neo**, the standard configuration, lists at **$25,600** direct from AgiBot's own store — up from an independently-verified $24,240 as of July 2026, so treat the current figure as a snapshot rather than a fixed price. Buyers outside China should also budget an additional $500–$3,000 in shipping, plus customs duties and import fees, which AgiBot's store explicitly places on the buyer; the listing also states there are no returns after delivery. **X2 Ultra** adds perception hardware and secondary-development support, but AgiBot's store currently lists it at a literal $999,999.00 — almost certainly a contact-sales placeholder rather than a real retail price, so treat it as \"price on request.\" robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "X2 was first shown in March 2025 under the name \"Lingxi X2,\" demonstrated performing dance routines, riding a bicycle and a hoverboard, and other balance-focused demos aimed at showcasing motion control rather than task autonomy. AgiBot's international store has since dropped the \"Lingxi\" branding and sells the same hardware simply as \"X2.\" The X2 Neo is not intended for secondary software development — AgiBot's own spec sheet marks this as unsupported on the standard unit — while X2 Ultra supports it, and can be paired with optional dexterous end-effectors (OmniHand, OmniPicker) purchased separately. On open source: third-party resellers market X2 as a \"full-stack open source\" robot, but that claim isn't corroborated by AgiBot's own documentation — the company's only official open release for this line is a URDF/MuJoCo description-and-simulation repository (`AgibotTech/agibot_x2_urdf`, Mulan PSL v2 license) covering geometry and kinematics, not hardware designs, firmware, or control software. That's a materially smaller release than AgiBot's actual open-source humanoid line, the separate X1 (full BOM, CAD, and training/inference code). This catalog's Open Source badge is reserved for that kind of full-stack release and does not apply to X2."
+    }
+  ]
+}

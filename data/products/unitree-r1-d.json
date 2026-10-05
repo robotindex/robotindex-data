@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "unitree-r1-d",
+  "slug": "product-unitree-r1-d",
+  "name": "Unitree R1-D",
+  "manufacturer": "Unitree",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Wheeled / Mobile Base",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A compact wheeled dual-arm line from **Unitree Robotics**, published as a single R1-D page covering the **R1-A5-D** (5-DOF arms) and **R1-A7-D** (7-DOF arms), alongside fixed-base R1-A5 and R1-A7 models. At about 30–32 kg, a **self-raising column** on a wheeled base with chassis LiDAR lets the dual-arm upper body reach work surfaces up to about 1.6 m. Aimed at mobile manipulation between workstations, teleoperated data capture, and embodied-AI research. Not the same product as the biped [Unitree R1](/product-unitree-r1).",
+  "specs": [
+    {
+      "label": "Models",
+      "value": "2 wheeled",
+      "note": "R1-A5-D and R1-A7-D"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "18–22",
+      "note": "A5-D: 18 (5-DOF arms); A7-D: 22 (7-DOF arms)"
+    },
+    {
+      "label": "Payload",
+      "value": "2–4 kg",
+      "note": "Per arm"
+    },
+    {
+      "label": "Height",
+      "value": "0.68–1.6 m",
+      "note": "Stowed to raised, per Unitree (reseller: 1.32 m)"
+    },
+    {
+      "label": "Weight",
+      "value": "~30–32 kg",
+      "note": "A5-D ~30 kg; A7-D ~32 kg"
+    },
+    {
+      "label": "Battery",
+      "value": "~1.5 h",
+      "note": "Removable chassis pack or external power"
+    },
+    {
+      "label": "Compute",
+      "value": "8-core + head 10 TOPS",
+      "note": "Orin module optional (40–100 TOPS)"
+    },
+    {
+      "label": "Sensing",
+      "value": "Binocular + LiDAR",
+      "note": "146° stereo camera, 4-mic array, chassis LiDAR"
+    },
+    {
+      "label": "End Effectors",
+      "value": "Optional",
+      "note": "Grippers or five-finger hands by configuration"
+    }
+  ],
+  "sourcing": "Verified against Unitree's R1-D page (unitree.com/R1-D), its shop listing, reseller listings (Robots Asia, Robots International, Futurology), and one aggregator (robotlar.org), as of October 2026. Flagged as uncertain: 'R1-D' is a page covering four models, not one SKU, and this page treats the wheeled R1-A5-D and R1-A7-D as one family; the launch date (April 2026) comes only from the aggregator; DOF is 22 for the A7-D on Unitree's page but 20 at one reseller; raised height is 1,600 mm on Unitree's page but 1,323 mm at one reseller; shoulder torque is 60 N·m on Unitree's page but 120 N·m peak at one reseller; availability is contact-sales on Unitree's shop, 'coming soon' at one reseller, and purchasable at others. The image shows a wheeled unit with two-finger grippers; the exact model is not identified. Product image: Unitree Robotics. The corner brand logo and a third-party watermark were removed from the supplied image.",
+  "manufacturerUrl": "https://www.unitree.com/R1-D/",
+  "pricing": {
+    "summary": "Unitree's R1-D page and shop list **“from $4,290”**, which is the starting price for the R1 family as a whole and almost certainly the fixed-base or biped model, not a wheeled R1-D. Resellers list the wheeled **R1-A7-D** at about **$11,290–$24,490** across configurations; no R1-A5-D price was found. Unitree's shop directs buyers to contact sales for configuration pricing. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "R1-D is the low-cost end of Unitree's wheeled line: about a third of the weight of G1-D and a fraction of its price, with smaller arms and a short 1.5-hour battery. Unitree describes the platform as supporting full-stack open secondary development with OTA updates and a 12-month warranty, though its shop says only the EDU version of the R1 supports secondary development, so which wheeled models include it is unclear. The Open Source badge does not apply: no source confirms open hardware or an SDK license for these models. Compare with Unitree G1-D for the heavier, higher-payload platform."
+    }
+  ]
+}

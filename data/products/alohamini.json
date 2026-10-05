@@ -1,18 +1,18 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "alohamini",
-  "slug": "product-alohamini.html",
+  "slug": "product-alohamini",
   "name": "AlohaMini",
   "manufacturer": "Independent contributors (Hugging Face LeRobot community)",
   "category": "Educational & Hobbyist",
   "subcategory": "Mobile Robot Kits",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": true,
     "closedPlatform": false
   },
-  "description": "A bimanual teleoperation and imitation-learning research rig, not a navigation robot — the mobile base and lift exist to position two arms for pick-and-place manipulation, controlled by physically puppeteering a matching leader arm. Built by independent makers on Hugging Face's LeRobot ecosystem (SO-ARM100 arms, a LeKiwi-derived base), not by Stanford/Berkeley's original ALOHA team or Trossen Robotics, despite the shared name.",
+  "description": "A bimanual teleoperation and imitation-learning research rig, not a navigation robot — the mobile base and lift exist to position two arms for pick-and-place manipulation, controlled by physically puppeteering a matching leader arm, the same leader/follower concept Stanford's ALOHA popularized. Built by independent makers on Hugging Face's LeRobot ecosystem (SO-ARM100 arms, a LeKiwi-derived base), not by Stanford/Berkeley's original ALOHA team or Trossen Robotics, despite the shared name and borrowed design.",
   "specs": [
     {
       "label": "Battery",
@@ -73,12 +73,16 @@
   "editorial": [
     {
       "heading": "Insights",
-      "body": "AlohaMini is an independent open-source project — not built by Stanford/Berkeley's ALOHA research team or Trossen Robotics — assembled from Hugging Face LeRobot community hardware (TheRobotStudio's SO-ARM100 arm design and a LeKiwi-derived base), with real CAD, bill of materials, and code published under Apache-2.0. A separate claim of TechCrunch coverage and Hugging Face leadership endorsement, seen on one reseller's page, could not be verified anywhere else and isn't repeated here."
+      "body": "AlohaMini is an independent open-source project — not built by Stanford/Berkeley's ALOHA research team or Trossen Robotics — assembled from Hugging Face LeRobot community hardware (TheRobotStudio's SO-ARM100 arm design and a LeKiwi-derived base), with real CAD, bill of materials, and code published under Apache-2.0. It borrows its bimanual leader/follower teleoperation concept from Stanford's original ALOHA, listed separately in Builds & Mods, while using its own, unrelated arm and base hardware. A separate claim of TechCrunch coverage and Hugging Face leadership endorsement, seen on one reseller's page, could not be verified anywhere else and isn't repeated here."
     }
   ],
   "firmwareCommunity": [
     {
       "buildsModsId": "liyiteng-alohamini"
+    },
+    {
+      "status": "not-listed",
+      "note": "Stanford's original bimanual leader/follower teleoperation design — the concept AlohaMini's own hardware builds on. MIT-licensed."
     }
   ]
 }

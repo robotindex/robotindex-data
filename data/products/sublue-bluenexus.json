@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "sublue-bluenexus",
-  "slug": "product-sublue-bluenexus.html",
+  "slug": "product-sublue-bluenexus",
   "name": "Sublue BlueNexus",
   "manufacturer": "Sublue",
   "category": "Outdoor & Yard",
   "subcategory": "Other",
-  "tier": "pending",
+  "tier": "new",
   "flags": {
     "pending": false,
     "openSource": false,
@@ -72,7 +72,7 @@
   },
   "editorial": [
     {
-      "heading": "Sensors & Hardware — Sourcing Caveat",
+      "heading": "Sourcing Caveat",
       "body": "BlueNexus launched on Kickstarter in 2023 as Sublue's first robotic pool cleaner; the retail product is now sold as **\"BN Pro,\"** likely its rebranded successor (unconfirmed by Sublue). The tracked drive (visible red/orange rollers) is confirmed as \"caterpillar\" tracks with dual drive motors, not wheels. Independent, non-promotional coverage is thin—largely gadget-blog/PR writeups without independent testing. Dimensions and weight are unconfirmed."
     },
     {

@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "yam-arm",
+  "slug": "product-yam-arm",
+  "name": "YAM Arm Series",
+  "manufacturer": "UC Berkeley",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A 6-DOF (and 7-DOF) manipulator series from **i2rt (I2RT Robotics)** — fully assembled, CNC-machined research arms rather than a DIY kit. Variants span **Standard** ($2,999), **Leader** ($2,999, a teleoperation input arm), **Pro** ($3,499), **Ultra** (top build tier, ~$4,300–$4,400), **BIG YAM** ($4,999, larger shoulder motors), and the 7-DOF **YAM 7** ($4,999–$9,999). i2rt's own site cites published research using YAM from UC Berkeley, Amazon FAR, the Allen Institute for AI, NVIDIA, Stanford, and Toyota Research Institute.",
+  "specs": [
+    {
+      "label": "Variants",
+      "value": "6",
+      "note": "Standard, Leader, Pro, Ultra, BIG YAM, YAM 7"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "6",
+      "note": "7 on the YAM 7 variant"
+    },
+    {
+      "label": "Payload",
+      "value": "~2 kg",
+      "note": "Nominal, per base YAM listing"
+    },
+    {
+      "label": "Reach",
+      "value": "~750 mm",
+      "note": "Max workspace range"
+    },
+    {
+      "label": "Weight",
+      "value": "~5.02 kg",
+      "note": "Including gripper"
+    },
+    {
+      "label": "Communication",
+      "value": "CAN bus",
+      "note": "1 Mbit/s"
+    },
+    {
+      "label": "Gripper",
+      "value": "95mm throw",
+      "note": "Patent-pending linear gripper; 6 end-effectors available"
+    },
+    {
+      "label": "Control Modes",
+      "value": "PD / gravity comp.",
+      "note": "Joint position PD, gravity compensation, zero-gravity teleop"
+    }
+  ],
+  "sourcing": "Verified against i2rt's own sites (i2rt.com product and collection pages, doc.i2rt.com per-variant spec sheets) and i2rt's public GitHub repository (i2rt-robotics/i2rt), as of October 2026. Flagged as uncertain: i2rt's own documentation marks payload, reach, weight, and materials as \"TBD — see i2rt.com\" on every per-variant spec page except the base YAM product listing, so the payload/reach/weight figures shown here come from that one listing and are applied across the series as a best estimate — they are not independently confirmed for Pro, Ultra, BIG YAM, or YAM 7. YAM Ultra's price differs slightly between i2rt's documentation ($4,299) and its store collection page ($4,399, sold as \"YAM Ultra 2\") — both are shown rather than picking one. i2rt's homepage and documentation use the phrase \"open robotics platform,\" but only the control software and simulation description files are actually published openly; no hardware-level open-source release (CAD, BOM) was found for the arm itself, so no Open Source badge is applied here. robotindex does not sell this product.",
+  "manufacturerUrl": "https://i2rt.com/",
+  "pricing": {
+    "summary": "**YAM Standard** and **YAM Leader** (a matched arm used as a teleoperation input device) both list at **$2,999**. **YAM Pro** is **$3,499**, using the same motors as Standard but with tighter build tolerances and higher joint-4 stiffness. **YAM Ultra**, the top-spec build tier, is listed at **$4,299** on i2rt's documentation site and **$4,399** on its store collection page (as \"YAM Ultra 2\") — both figures are shown here since i2rt hasn't reconciled them in one place. **BIG YAM**, a larger-motor variant, is **$4,999**. The 7-DOF **YAM 7** spans **$4,999–$9,999** depending on configuration. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "i2rt positions YAM as an \"open robotics platform\" for research and embodied AI, and its own site lists published work using the arm from UC Berkeley, Amazon FAR, the Allen Institute for AI, NVIDIA, Stanford, and Toyota Research Institute — a strong signal of adoption in the imitation-learning and teleoperation research community, alongside projects like GELLO (acknowledged as a design inspiration for i2rt's own teleoperation tooling). Standard, Pro, and Ultra share identical motors and joint ranges; the only functional difference between them is build quality and a single control-law gain on joint 4, so the choice between tiers is mostly about repeatability and finish rather than capability. This catalog's Open Source badge does not apply here: i2rt publishes its control software (a Python SDK, MIT-licensed, on GitHub) and simulation description files (MuJoCo MJCF + URDF) openly, but no hardware CAD, STEP files, or a bill of materials for the arm itself were found — the arm is sold as a finished, CNC-machined product, not an openly-documented build."
+    }
+  ]
+}

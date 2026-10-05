@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "universal-robots-ur5",
+  "slug": "product-universal-robots-ur5",
+  "name": "Universal Robots UR5 / UR5e",
+  "manufacturer": "Universal Robots",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "under-review",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A six-axis, 5 kg, 850 mm collaborative arm from **Universal Robots** of Odense, Denmark, and one of the founding products of the cobot category. The original **UR5** shipped in 2008 on the CB3 controller and went end-of-sale in 2024. Its e-Series successor, the **UR5e** (2018), tightened repeatability to ±0.03 mm, and in May 2025 Universal Robots renamed it the **UR7e**, citing a 7.5 kg payload delivered by a software update on identical hardware.",
+  "specs": [
+    {
+      "label": "Degrees of Freedom",
+      "value": "6",
+      "note": "Six rotating joints"
+    },
+    {
+      "label": "Payload",
+      "value": "5 kg",
+      "note": "7.5 kg on the renamed UR7e"
+    },
+    {
+      "label": "Reach",
+      "value": "850 mm",
+      "note": "Unchanged across UR5, UR5e and UR7e"
+    },
+    {
+      "label": "Repeatability",
+      "value": "±0.03 mm",
+      "note": "UR5e, ISO 9283; original UR5 is ±0.1 mm"
+    },
+    {
+      "label": "Weight",
+      "value": "20.6 kg",
+      "note": "UR5e with cable; original UR5 is 18 kg"
+    },
+    {
+      "label": "Max TCP Speed",
+      "value": "1 m/s",
+      "note": "Joints ±360°, up to 180°/s on UR5e"
+    },
+    {
+      "label": "Protection",
+      "value": "IP54",
+      "note": "0–50 °C operating range"
+    },
+    {
+      "label": "Power Draw",
+      "value": "200–570 W",
+      "note": "UR5e, moderate to maximum"
+    }
+  ],
+  "sourcing": "Verified against Universal Robots' own UR5e technical datasheet and CB3 end-of-sale notice, Wikipedia's Universal Robots entry, Universal Robots' official GitHub organization (ROS 2 driver, BSD-3-Clause), a CB3 UR5 specification listing (Encycam), and trade coverage of the May 2025 rename (Cobots UK, Raruk Automation), as of October 2026. Flagged as uncertain: the price range and the UR7e quote come from a single third-party survey; Universal Robots' own statement says renamed while that same survey says discontinued and superseded; the original UR5's repeatability and weight come from one third-party listing rather than a UR datasheet. The image supplied shows a Universal Robots arm with the UR logo on its joint caps but was not matched to a specific generation. Tagged Under Review because pricing is an unofficial estimate, the UR5e status is disputed between sources, and the pictured generation is unconfirmed — not because the core specs are in doubt. robotindex does not sell this product.",
+  "manufacturerUrl": "https://www.universal-robots.com/",
+  "pricing": {
+    "summary": "Universal Robots does not publish list prices and sells through distributors. One July 2026 US distributor survey puts the **UR5e at roughly $35,000–$48,000**, a range that mixes remaining new stock with secondary-market units, and quotes new builds of the renamed **UR7e at about $38,400**. Treat these as market estimates, not official prices. The original CB3 **UR5** can no longer be ordered new, so any unit available today is used or remaining inventory. Controller, teach pendant, grippers and installation are typically quoted separately. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Universal Robots was founded in 2005 by Esben Østergaard, Kasper Støy and Kristian Kassow, and Teradyne bought it in 2015 for US$285 million. The UR5 reached the Danish and German markets in 2008, and by 2020 the company had installed more than 50,000 cobots. CB3 went end-of-sale in January 2024 (last order June 30, 2024, last delivery December 31, 2024), with service and spare parts committed through December 2032 and CB3 programs importable into e-Series PolyScope 5. The 2025 rename is where sources split: Universal Robots, quoted by two trade outlets, says the UR5e was renamed UR7e and not discontinued, while one pricing site calls it discontinued and superseded. Both framings are shown here. This catalog's Open Source badge does not apply: Universal Robots maintains a BSD-3-Clause ROS 2 driver on GitHub that supports both CB3 and e-Series arms, but the arm and its controller are closed commercial hardware."
+    }
+  ]
+}

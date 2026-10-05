@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "unitree-g1-d",
+  "slug": "product-unitree-g1-d",
+  "name": "Unitree G1-D",
+  "manufacturer": "Unitree",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Wheeled / Mobile Base",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A wheeled, dual-arm platform from **Unitree Robotics** (Hangzhou) that swaps the G1's legs for a **height-adjustable column** and a **differential-drive base**. Announced in November 2025 as an end-to-end platform for collecting teleoperated demonstrations and training embodied-AI models, it carries two 7-DOF arms with a choice of two-finger grippers or dexterous hands. Sold as a **Standard** tier (fixed column) and an **Ultimate** tier (wheeled base).",
+  "specs": [
+    {
+      "label": "Tiers",
+      "value": "2",
+      "note": "Standard (fixed column); Ultimate (wheeled)"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "19",
+      "note": "Ultimate: 7+7 arms, 2 waist, 1 column, 2 base"
+    },
+    {
+      "label": "Payload",
+      "value": "~3 kg",
+      "note": "Per arm"
+    },
+    {
+      "label": "Column Height",
+      "value": "1.26–1.68 m",
+      "note": "Lift speed about 60 mm/s"
+    },
+    {
+      "label": "Weight",
+      "value": "~90 kg",
+      "note": "Unitree's page; press says ~80 kg"
+    },
+    {
+      "label": "Base",
+      "value": "Diff. drive",
+      "note": "360° in-place rotation, up to 1.5 m/s"
+    },
+    {
+      "label": "Battery",
+      "value": "~6 h",
+      "note": "Ultimate; 9 Ah upper-body pack + 30 Ah chassis"
+    },
+    {
+      "label": "Compute",
+      "value": "8-core + Orin NX",
+      "note": "Jetson Orin NX 16GB (~100 TOPS), optional"
+    },
+    {
+      "label": "Hands",
+      "value": "Gripper or dexterous",
+      "note": "Two-finger, 3-finger Dex3-1, or 5-finger Revo2"
+    }
+  ],
+  "sourcing": "Verified against Unitree's G1-D page (unitree.com/G1-D), reseller listings (Robots International, RoboStore, Weston Robot), and press coverage (Gizmochina, Humanoids Daily), as of October 2026. Flagged as uncertain: the launch date of November 13, 2025 comes from press, not Unitree; availability conflicts (one reseller says in stock, another says sold out with a September 2026 ship estimate that has passed); weight is about 90 kg on Unitree's page and about 80 kg in press; the Orin NX is called optional on Unitree's page but described as built in by one reseller. Unitree's shop page and the unitree_sdk2 repository could not be fetched, so the SDK license is unconfirmed. Product image: Unitree Robotics. The corner brand logo was removed from the supplied image.",
+  "manufacturerUrl": "https://www.unitree.com/G1-D",
+  "pricing": {
+    "summary": "Unitree's own G1-D page shows **no price**. Resellers list the wheeled **Ultimate** tier at about **$51,900** with a two-finger gripper and **$62,300–$66,300** with dexterous hands, and the fixed-column **Standard** tier at about **$38,800–$53,800**. One reseller lists it as contact-sales only. Treat all figures as reseller prices, not Unitree's. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "G1-D reuses the upper body of the G1 humanoid and is positioned as a data-collection platform rather than a general consumer robot: its pitch is generating teleoperation demonstrations at scale, with integrations for open frameworks such as GR00T and PI plus OTA updates. Press also lists laundry folding, factory assembly, and machine tending as target tasks. The Open Source badge does not apply: Unitree supports secondary development, but no source says the hardware or the full software stack is open, and the SDK license for this model could not be confirmed. See also Unitree R1-D, a smaller, much cheaper wheeled dual-arm line."
+    }
+  ]
+}

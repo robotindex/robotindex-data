@@ -1,12 +1,12 @@
 {
   "$schema": "../../schema/product.schema.json",
   "id": "robotis-openmanipulator-x",
-  "slug": "product-robotis-openmanipulator-x.html",
+  "slug": "product-robotis-openmanipulator-x",
   "name": "ROBOTIS OpenMANIPULATOR-X",
   "manufacturer": "ROBOTIS",
   "category": "Robot Arms",
   "subcategory": "",
-  "tier": "pending",
+  "tier": "under-review",
   "flags": {
     "pending": false,
     "openSource": true,
@@ -65,10 +65,10 @@
       "note": "South Korean, KOSDAQ-listed; designed as a TurtleBot3 companion manipulator"
     }
   ],
-  "sourcing": "Specs compiled from ROBOTIS's official e-Manual and product store listings, RobotShop and Generation Robots reseller listings, the ROBOTIS-GIT GitHub organization (LICENSE verified directly as Apache-2.0), the ROS ecosystem's own robot registry, and ROBOTIS/community forum threads, as of this build. Several details are flagged as unconfirmed above: an exact product release date, the precise meaning of the \"X\" in the name, and any specific university co-development partnership for the hardware itself — none were found in a citable primary source. This entry hasn't yet been cross-linked into the rest of the Robot Arms subcategory or synced to the directory listing; that's planned for a later pass.",
+  "sourcing": "Specs compiled from ROBOTIS's official e-Manual and product store listings, RobotShop and Generation Robots reseller listings, the ROBOTIS-GIT GitHub organization (LICENSE verified directly as Apache-2.0), the ROS ecosystem's own robot registry, and ROBOTIS/community forum threads, as of this build. Several details are flagged as unconfirmed above: an exact product release date, the precise meaning of the \"X\" in the name, and any specific university co-development partnership for the hardware itself — none were found in a citable primary source. Moved from Featured to Under Review on a rechecked basis: robotis.us currently shows the RM-X52-TNM kit sold out, and ROBOTIS has been building out a newer \"OMX\" AI Manipulator line (ai.robotis.com) alongside this platform — it's unclear whether OpenMANIPULATOR-X remains a going-forward product or is being wound down in favor of OMX, so this entry is flagged pending restock or a clearer signal either way.",
   "manufacturerUrl": "https://www.robotis.us/openmanipulator-x-rm-x52-tnm/",
   "pricing": {
-    "summary": "ROBOTIS's own US store and RobotShop both list the bare arm (SKU RM-X52-TNM) at **$1,629.09**, matched by Generation Robots in the EU at €1,739.56 incl. VAT. That price covers only the arm itself — a power supply, base plate, and controller interface are all sold separately, pushing a realistic working setup to roughly **$1,750–$1,900+**."
+    "summary": "ROBOTIS's own US store and RobotShop both list the bare arm (SKU RM-X52-TNM) at **$1,629.09**, matched by Generation Robots in the EU at €1,739.56 incl. VAT. That price covers only the arm itself — a power supply, base plate, and controller interface are all sold separately, pushing a realistic working setup to roughly **$1,750–$1,900+**. As of this later check, ROBOTIS's own store shows this exact kit (RM-X52-TNM) sold out, so treat the price above as a reference figure rather than confirmation of current stock."
   },
   "editorial": [
     {
