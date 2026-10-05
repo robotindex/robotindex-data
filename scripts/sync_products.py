@@ -30,12 +30,19 @@ limitations of the Directory data"):
     is skipped with a warning rather than failing the whole run -- its
     existing record, if any, is left untouched.
   - a product record that disappears from directory.html (no longer
-    listed) is NOT auto-deleted here; scripts/validate_products.py will
-    flag it as an orphan on the next validation run for a human to
-    handle.
+    listed) IS removed here, by default. It used to be left in place for
+    a human to delete, but validate_products.py fails on an orphaned
+    record and the workflow validates BEFORE it opens a PR -- so a single
+    retired product blocked every subsequent sync, and the repo fell
+    weeks behind the site with no PR to explain why. Deletions are
+    printed and appear in the PR diff, which is the review step. Two
+    guards stop this removing anything it shouldn't: pruning is skipped
+    entirely if the directory came back with implausibly few items, and
+    a record whose page merely failed to fetch this run is never pruned.
+    Pass --no-prune for the old behaviour.
 
 Usage:
-    python scripts/sync_products.py [--base-url URL]
+    python scripts/sync_products.py [--base-url URL] [--no-prune]
 
 Writes data/directory.json and data/products/*.json in place. Exit code
 0 on success (even with individual page fetch warnings), 1 on a
@@ -108,6 +115,10 @@ MANUFACTURER_PATTERNS = [
 
 review_flags = []
 fetch_warnings = []
+# hrefs whose page could not be fetched this run. A record for one of these
+# must never be pruned: a transient 404 on a live product would otherwise
+# delete its data.
+failed_hrefs = set()
 
 
 def fetch(url):
@@ -116,7 +127,7 @@ def fetch(url):
         return resp.read().decode("utf-8")
 
 
-def fetch_ok(url):
+def fetch_ok(url, href=None):
     """Like fetch(), but returns None (with a warning logged) instead of
     raising on a 404 -- a directory item can point at a not-yet-live page."""
     try:
@@ -124,10 +135,14 @@ def fetch_ok(url):
     except urllib.error.HTTPError as e:
         if e.code == 404:
             fetch_warnings.append(f"{url}: 404 (not live yet, skipped)")
+            if href:
+                failed_hrefs.add(href)
             return None
         raise
     except Exception as e:
         fetch_warnings.append(f"{url}: {e}")
+        if href:
+            failed_hrefs.add(href)
         return None
 
 
@@ -642,9 +657,52 @@ def process_product(href, html_text, meta, repo_to_entries):
     return record
 
 
+def prune_orphans(dir_map, min_items, enabled):
+    """Delete product records for products no longer in the directory.
+
+    This exists because validate_products.py treats an orphaned record as
+    an error, and the workflow validates before opening a PR -- so leaving
+    orphans for "a human to handle" meant one retired product silently
+    blocked every future sync.
+
+    Two guards:
+      - if the directory yielded fewer than min_items, assume the page
+        structure changed rather than that most products were retired,
+        and prune nothing.
+      - never prune a record whose page merely failed to fetch this run.
+        A transient 404 on a live product must not delete its data.
+    """
+    if not enabled:
+        print("\n(--no-prune: orphaned records left in place; validation will fail on them)")
+        return []
+    if len(dir_map) < min_items:
+        print(f"\nNOT pruning: the directory returned only {len(dir_map)} items "
+              f"(threshold {min_items}). Page structure may have changed.", file=sys.stderr)
+        return []
+
+    live_ids = {href_to_pid(h) for h in dir_map}
+    failed_ids = {href_to_pid(h) for h in failed_hrefs}
+    pruned = []
+    for fname in sorted(os.listdir(PRODUCTS_DIR)):
+        if not fname.endswith(".json"):
+            continue
+        pid = fname[: -len(".json")]
+        if pid in live_ids or pid in failed_ids:
+            continue
+        os.remove(os.path.join(PRODUCTS_DIR, fname))
+        pruned.append(pid)
+    return pruned
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--base-url", default=DEFAULT_BASE_URL)
+    ap.add_argument("--no-prune", action="store_true",
+                    help="keep product records that are no longer in the directory "
+                         "(they will then fail validation)")
+    ap.add_argument("--min-directory-items", type=int, default=50,
+                    help="refuse to prune if the directory yielded fewer items than this, "
+                         "on the assumption that the page structure changed")
     args = ap.parse_args()
     base = args.base_url.rstrip("/")
 
@@ -678,24 +736,31 @@ def main():
     os.makedirs(PRODUCTS_DIR, exist_ok=True)
     ok = 0
     for href, meta in sorted(dir_map.items()):
-        page_html = fetch_ok(url_for(base, href))
+        page_html = fetch_ok(url_for(base, href), href)
         if page_html is None:
             continue
         try:
             record = process_product(href, page_html, meta, repo_to_entries)
         except Exception as e:
             fetch_warnings.append(f"{href}: extraction failed: {e}")
+            failed_hrefs.add(href)
             continue
         out_path = os.path.join(PRODUCTS_DIR, record["id"] + ".json")
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(record, f, indent=2, ensure_ascii=False)
         ok += 1
 
+    pruned = prune_orphans(dir_map, args.min_directory_items, not args.no_prune)
+
     directory_json["$schema"] = "../schema/directory.schema.json"
     with open(os.path.join(DATA_DIR, "directory.json"), "w", encoding="utf-8") as f:
         json.dump(directory_json, f, indent=2, ensure_ascii=False)
 
     print(f"Extracted {ok} of {len(dir_map)} directory items")
+    if pruned:
+        print(f"\nRemoved {len(pruned)} record(s) no longer listed in the directory:")
+        for pid in pruned:
+            print(f"  - data/products/{pid}.json")
     if fetch_warnings:
         print(f"\n{len(fetch_warnings)} warning(s):")
         for w in fetch_warnings:
