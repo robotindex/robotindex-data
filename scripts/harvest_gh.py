@@ -55,16 +55,14 @@ TOPICS = [
     "manipulation", "autonomous-robots",
     # models and action generation
     "vision-language-action", "vision-language-action-model", "vla",
-    "diffusion-policy", "diffusion-models", "world-models", "world-model",
-    "physical-ai", "vision-language-model", "vlm",
+    "diffusion-policy", "world-models", "world-model",
+    "physical-ai",
     # simulation, and the policy-learning engines built on top of it
     "sim-to-real", "sim2real", "isaac-sim", "isaac-lab", "isaacgym", "mujoco",
     "gazebo", "pybullet", "genesis", "maniskill", "robosuite", "robomimic",
-    "robotics-simulation", "simulator",
+    "robotics-simulation",
     # dataset schemas and formats — the bridge between code and the data hubs
     "rlds", "open-x-embodiment",
-    # learning
-    "reinforcement-learning", "deep-reinforcement-learning",
     # locomotion
     "legged-locomotion", "quadruped", "bipedal-locomotion",
     "whole-body-control",
@@ -79,9 +77,9 @@ TOPICS = [
     "drone", "uav",
     # perception
     "slam", "lidar-slam", "point-cloud", "lidar-point-cloud", "lidar",
-    "6d-pose-estimation", "3d-reconstruction", "3d-vision",
-    "gaussian-splatting", "localization", "mapping", "odometry",
-    "sensor-fusion", "3d-object-detection", "perception", "place-recognition",
+    "6d-pose-estimation", "3d-vision",
+    "gaussian-splatting", "odometry", "sensor-fusion", "3d-object-detection",
+    "perception", "place-recognition",
 ]
 
 # Broad tags that are honey pots on their own — arduino alone returns LED
@@ -91,6 +89,15 @@ QUALIFIED = [
     ("arduino", "robotics"), ("esp32", "robotics"), ("raspberry-pi", "robotics"),
     ("object-detection", "robotics"), ("pose-estimation", "robotics"),
     ("control", "robotics"), ("planning", "robotics"),
+    # Moved here after an unqualified run: these brought in 4,177 repos with no
+    # robotics word anywhere — Hugging Face transformers, FinGPT, React
+    # Navigation, trading ML. Two are outright ambiguous: "localization" mostly
+    # means i18n, and "mapping" mostly means data mapping.
+    ("reinforcement-learning", "robotics"), ("deep-reinforcement-learning", "robotics"),
+    ("diffusion-models", "robotics"), ("simulator", "robotics"),
+    ("vision-language-model", "robotics"), ("vlm", "robotics"),
+    ("localization", "robotics"), ("mapping", "robotics"),
+    ("3d-reconstruction", "robotics"),
 ]
 
 # Checked against the live API and dropped as empty or near-empty:
@@ -136,6 +143,22 @@ BOOKISH_NAME = re.compile(
     r"(^|[-_])(book|guide|survey|roadmap|awesome|papers?|notes|tutorial|"
     r"overview|cookbook)([-_]|$)", re.I)
 
+# Topic tags are set by authors and always leak, so a repo must also mention
+# something robotic somewhere in its name, description or topics. On the first
+# unqualified run this separated the set cleanly: embodiment resolved for 17% of
+# what it kept and 1% of what it dropped.
+ROBOTICS_WORD = re.compile(
+    # Stems, so "manipul" catches manipulation and manipulator. Leading \b only —
+    # a trailing one would stop every stem matching its own suffixes.
+    r"\b(robot|ros2?\b|slam\b|lidar|manipul|grasp|humanoid|quadruped|biped|"
+    r"legged|drone|uav\b|rover|cobot|exoskelet|teleop|urdf|kinemat|locomot|"
+    r"embodied|odometr|point.?cloud|mujoco|gazebo|isaac|pybullet|gripper|"
+    r"actuator|servo|end.?effector|mobile.?base|mecanum|agv\b|amr\b|vla\b|"
+    r"rlds\b|sim2real|sim.to.real|physical.ai|visual.inertial|"
+    r"autonomous (vehicle|driving|robot|navigation|system|flight)|"
+    r"motion planning|path planning|whole.?body|self.driving|"
+    r"depth camera|rgb.?d\b|imu\b|ros2|moveit|nav2)", re.I)
+
 PERMISSIVE = {"MIT", "Apache-2.0", "BSD-3-Clause", "BSD-2-Clause", "ISC",
               "Unlicense", "0BSD", "MPL-2.0", "Zlib"}
 
@@ -156,35 +179,66 @@ EMBODIMENT = [
     (r"\bg1\b(?=.{0,25}(humanoid|robot|loco))|\bh1\b(?=.{0,25}(humanoid|robot))", "Unitree"),
     (r"\bso-?10[01]\b|\bso-?arm\b",                            "SO-100/101"),
     (r"\baloha\b|\bviperx\b|widowx|trossen",                   "ALOHA / Trossen"),
-    (r"\bur5e?\b|\bur10e?\b|universal robots",                 "Universal Robots"),
+    (r"\bur[3-9]e?\b|\bur10e?\b|universal robots|\bur7e\b",      "Universal Robots"),
     (r"\bxarm\b|ufactory",                                     "xArm"),
-    (r"\bkuka\b|\biiwa\b",                                     "KUKA"),
+    (r"\bkuka\b|\biiwa\b|\blbr\b",                            "KUKA"),
     (r"kinova|\bjaco\b",                                       "Kinova"),
     (r"\bsawyer\b|\bbaxter\b|rethink robotics",                "Rethink"),
-    (r"turtlebot",                                              "TurtleBot"),
-    (r"clearpath|\bjackal\b|\bhusky\b|\bdingo\b",             "Clearpath"),
+    (r"turtlebot\d?",                                           "TurtleBot"),
+    # "husky" is also a very popular JavaScript git-hooks package, so it needs
+    # robot context. Jackal and Dingo are unambiguous.
+    (r"clearpath|\bjackal\b|\bdingo\b|"
+     r"\bhusky\b[^.]{0,40}(robot|ugv|rover|a200|base|platform)|"
+     r"(robot|ugv|rover|mobile)[^.]{0,40}\bhusky\b",   "Clearpath"),
     (r"boston dynamics|\banymal\b",                            "Boston Dynamics / ANYbotics"),
     (r"\bcassie\b|agility robotics",                           "Agility"),
     (r"crazyflie|bitcraze",                                     "Crazyflie"),
-    (r"\bpx4\b|ardupilot|pixhawk",                             "PX4 / ArduPilot"),
     (r"hello robot|stretch (re1|re2|3|robot)",                  "Hello Robot Stretch"),
     (r"agilex|cobot magic",                                     "AgileX"),
     (r"mycobot|elephant robotics",                              "myCobot"),
     (r"\breachy\b|pollen robotics",                             "Pollen Reachy"),
-    (r"\btiago\b|pal robotics",                                 "PAL"),
+    # "Tiago" is a common Portuguese first name, so it needs robot context.
+    # Note \b does not sit between "tiago" and "_robot" — underscore is a word
+    # character — so the separator is matched explicitly.
+    (r"pal[- ]robotics|"
+     r"tiago[-_ ]?(robot|base|pro|ros|sim|dual|head|gripper|navigation)|"
+     r"\btiago\b[^.]{0,30}(robot|mobile manipulator|humanoid)|"
+     r"(robot|mobile manipulator)[^.]{0,30}\btiago\b",  "PAL TIAGo"),
     (r"agibot",                                                 "AgiBot"),
-    (r"fourier intelligence|\bgr-?1\b(?=.{0,20}(humanoid|robot))", "Fourier"),
+    (r"fourier|\bgr-?1\b(?=.{0,25}(humanoid|robot|arm))",        "Fourier"),
     (r"galaxea",                                                "Galaxea"),
     (r"\bpr2\b|willow garage",                                  "PR2"),
     (r"\bfetch\b(?=.{0,20}(robot|mobile))",                     "Fetch"),
     (r"\bopencat\b|petoi",                                      "Petoi"),
     (r"\bdji\b|\btello\b|robomaster",                          "DJI"),
-    (r"waveshare|jetbot|jetracer",                              "Waveshare / Jetson"),
     (r"\brobotis\b|dynamixel|\bop3\b",                         "ROBOTIS"),
     (r"\bicub\b",                                               "iCub"),
     (r"\bk-?scale\b|\bkbot\b|\bzbot\b",                       "K-Scale"),
-    (r"neo gamma|1x technologies",                              "1X"),
-    (r"figure ai|\bfigure 0[23]\b",                             "Figure"),
+    # Added after mining both corpora for hardware names we had no pattern for.
+    # BARX looked like a robot and is a paper — Cross-Embodiment Transfer via
+    # Behavior-Aligned Representations — so it is deliberately absent.
+    (r"\bopenarm\b|enactic",                                    "OpenArm"),
+    (r"\bflexiv\b",                                             "Flexiv"),
+    (r"\blekiwi\b",                                             "LeKiwi"),
+    (r"robotiq",                                                "Robotiq gripper"),
+    (r"spot ?micro|spotmicro",                                  "SpotMicro"),
+    (r"seeed[-_ ]?b601|\bseeed\b[^.]{0,20}(arm|robot|follower)", "Seeed B601"),
+    (r"\baibot2\b|alphabot2",                                   "Aibot2"),
+    (r"\bpiperx\b",                                             "AgileX"),
+    # From checking every product in the directory against both corpora.
+    (r"\bsharpa\b",                                             "Sharpa"),
+    (r"\bdobot\b|x-?trainer",                                   "Dobot"),
+    (r"yahboom|rosmaster|\bdofbot\b",                           "Yahboom"),
+    (r"cyberdog|xiaomi",                                        "Xiaomi CyberDog"),
+    (r"hiwonder|mentorpi|puppypi",                              "Hiwonder"),
+    (r"\bumi\b[^.]{0,30}(gripper|handheld|interface|data)|"
+     r"universal manipulation interface",                       "UMI (handheld)"),
+    (r"\bzeroth\b",                                             "K-Scale"),
+    (r"interbotix",                                             "ALOHA / Trossen"),
+    (r"\bduckiebot\b",                                          "Duckiebot"),
+    (r"f1tenth|\bmushr\b",                                      "F1TENTH / MuSHR"),
+    (r"allegro hand|\bleap hand\b|shadow (dexterous )?hand",     "dexterous hand"),
+    (r"\bdoosan\b|\btechman\b|\brealman\b",                   "other industrial arm"),
 ]
 
 
@@ -210,9 +264,21 @@ def find_embodiment(text):
     return out
 
 
+# Repos whose purpose is cataloguing robots mention all of them. Attributing
+# such a repo to any single robot is wrong — mujoco_menagerie and
+# robot_descriptions.py each list 190+ models.
+COLLECTION = re.compile(
+    r"\b(collection of|catalog(ue)?|menagerie|model zoo|robot zoo|"
+    r"descriptions? (of|for) (robot|many)|[0-9]{2,}\+? robot|"
+    r"list of robot|index of robot|awesome)", re.I)
+
+
 def add_embodiment(rows, token, use_readme):
     """Description and topics first — free. README only where those fail."""
     for i, r in enumerate(rows, 1):
+        if COLLECTION.search(r["description"]):
+            r["embodiment"], r["embodiment_source"] = "", "skipped-collection"
+            continue
         quick = find_embodiment(r["description"] + " " + r["topics"] + " " + r["repo"])
         if quick:
             r["embodiment"], r["embodiment_source"] = "; ".join(quick), "description"
@@ -269,22 +335,38 @@ def quarters(since_year, until):
         y += 1
 
 
-def harvest(min_stars, since_year, token):
+def harvest(min_stars, since_year, token, recent_stars=10, recent_days=90):
+    """Walk the topics twice.
+
+    The main pass uses the full star floor across every quarter since
+    `since_year`. A second pass covers only the last `recent_days` at the much
+    lower `recent_stars` floor, because a repository published last week has
+    had no time to earn 50 stars and is invisible to the main pass however
+    significant it is. Pantheon's Argus annotator, released two days before the
+    first run of this script and audited nine of the largest robotics datasets,
+    was missed for exactly that reason.
+    """
     today = datetime.date.today()
     slices = quarters(since_year, today)
+    recent_from = (today - datetime.timedelta(days=recent_days)).isoformat()
     seen = {}
     truncated = []
+    nq = (len(TOPICS) + len(QUALIFIED)) * (len(slices) + 1)
     print(f"{len(TOPICS)} topics + {len(QUALIFIED)} qualified pairs, "
-          f"x {len(slices)} quarters = "
-          f"{(len(TOPICS)+len(QUALIFIED))*len(slices)} queries\n", file=sys.stderr)
+          f"x {len(slices)} quarters plus one recent pass = {nq} queries\n",
+          file=sys.stderr)
 
     queries = [(t, f"topic:{t}") for t in TOPICS] + \
               [(f"{a}+{b}", f"topic:{a} topic:{b}") for a, b in QUALIFIED]
 
     for ti, (label, clause) in enumerate(queries, 1):
         got = 0
-        for a, b in slices:
-            q = f"{clause} created:{a}..{b} stars:>={min_stars} fork:false"
+        # (window, floor): every quarter at the normal floor, then the last
+        # `recent_days` at the lower one
+        windows = [(a, b, min_stars) for a, b in slices]
+        windows.append((recent_from, today.isoformat(), recent_stars))
+        for a, b, floor in windows:
+            q = f"{clause} created:{a}..{b} stars:>={floor} fork:false"
             page = 1
             while True:
                 url = (SEARCH + "?q=" + urllib.parse.quote(q) +
@@ -312,7 +394,8 @@ def harvest(min_stars, since_year, token):
 
 
 def keep(items, owner_cap):
-    rows, dropped = [], {"junk_name": 0, "not_robotics": 0, "bookish": 0, "owner_cap": 0}
+    rows, dropped = [], {"junk_name": 0, "not_robotics": 0, "bookish": 0,
+                         "no_robotics_word": 0, "owner_cap": 0}
     by_owner = {}
     today = datetime.date.today()
     for full, it in sorted(items.items(), key=lambda kv: -kv[1]["stargazers_count"]):
@@ -327,6 +410,12 @@ def keep(items, owner_cap):
         if BOOKISH.search(desc) or BOOKISH_NAME.search(name):
             dropped["bookish"] += 1
             continue
+        # Deliberately NOT checking topics here: the topic tag is what returned
+        # the repo, so re-reading it is circular. cs-video-courses, wechaty and
+        # kornia all carry topic:robotics and are not robotics.
+        if not ROBOTICS_WORD.search(desc + " " + full):
+            dropped["no_robotics_word"] += 1
+            continue
         if by_owner.get(owner, 0) >= owner_cap:
             dropped["owner_cap"] += 1
             continue
@@ -336,7 +425,7 @@ def keep(items, owner_cap):
         age = (today - datetime.date.fromisoformat(pushed)).days if pushed else None
         status = ("archived" if it.get("archived") else
                   "active" if age is not None and age <= 90 else
-                  "slowing" if age is not None and age <= 365 else "stale")
+                  "slowing" if age is not None and age <= 365 else "inactive")
         lic = (it.get("license") or {}).get("spdx_id") or ""
         rows.append({
             "repo": full,
@@ -366,6 +455,10 @@ def keep(items, owner_cap):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--min-stars", type=int, default=50)
+    ap.add_argument("--recent-stars", type=int, default=10,
+                    help="star floor for repos created in the last --recent-days; a new "
+                         "repository has had no time to earn the main floor")
+    ap.add_argument("--recent-days", type=int, default=90)
     ap.add_argument("--since", type=int, default=2015, help="first year of creation dates")
     ap.add_argument("--owner-cap", type=int, default=10)
     ap.add_argument("--out", default="gh-candidates.csv")
@@ -379,7 +472,8 @@ def main():
         print("warning: no GITHUB_TOKEN — search is 10 req/min and this needs "
               "hundreds. Expect it to crawl.\n", file=sys.stderr)
 
-    items, truncated = harvest(a.min_stars, a.since, token)
+    items, truncated = harvest(a.min_stars, a.since, token,
+                               a.recent_stars, a.recent_days)
     rows, dropped = keep(items, a.owner_cap)
 
     print(f"\nunique repos found: {len(items)} | kept {len(rows)}")
@@ -409,8 +503,8 @@ def main():
 
         st = collections.Counter(r["status"] for r in rows)
         print(f"\nmaintenance: {dict(st)}")
-        print(f"  stale or archived: "
-              f"{(st['stale']+st['archived'])/len(rows)*100:.0f}%")
+        print(f"  inactive or archived: "
+              f"{(st['inactive']+st['archived'])/len(rows)*100:.0f}%")
         lic = collections.Counter(r["commercial"] for r in rows)
         print(f"licence: {dict(lic)}")
         print(f"\n{'stars':>7}  {'status':<9} {'licence':<14} repo")
@@ -421,7 +515,7 @@ def main():
             print(f"{'':>7}  ... and {len(rows)-30} more")
 
         print(f"\nmost neglected, by last push:")
-        for r in sorted([x for x in rows if x["status"] in ("stale", "archived")],
+        for r in sorted([x for x in rows if x["status"] in ("inactive", "archived")],
                         key=lambda x: -(x["days_since_push"] or 0))[:15]:
             print(f"  {r['status']:<9} {r['days_since_push']:>5}d  "
                   f"{r['stars']:>6,}*  {r['repo']}")
