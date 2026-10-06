@@ -65,10 +65,24 @@ PROJECT_PAGE = re.compile(r"https?://([\w\-]+\.github\.io[\w\-/.]*)", re.I)
 JUNK_REPO = re.compile(r"^(blob|tree|search|topics|about|features|pricing)$", re.I)
 
 
-def fetch(url, timeout=30):
+def fetch(url, timeout=30, tries=4, pause=4.0):
+    """GET with retries. arXiv returns an empty feed often enough that a single
+    attempt is unreliable: a first backfill run lost six consecutive months
+    because each one's first page came back empty and the loop moved on. An
+    empty body is treated as a failure worth retrying, not as an answer."""
     req = urllib.request.Request(url, headers={"User-Agent": "robotindex-arxiv"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read().decode("utf-8", "replace")
+    last = ""
+    for attempt in range(tries):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                last = r.read().decode("utf-8", "replace")
+            if "<entry>" in last or "totalResults>0<" in last:
+                return last          # real answer, including a real zero
+        except Exception as e:
+            print(f"    fetch attempt {attempt+1}: {str(e)[:50]}", file=sys.stderr)
+        if attempt < tries - 1:
+            time.sleep(pause * (attempt + 1))
+    return last
 
 
 def entries(xml):
@@ -142,7 +156,7 @@ def backfill(years, per_page=200, pause=3.2, max_pages=40):
     we track is already inactive at a one-year threshold. Two years matches the
     2015 floor on the GitHub harvest and covers the current generation of work.
     """
-    papers, seen = [], set()
+    papers, seen, incomplete = [], set(), []
     windows = months_back(years)
     for wi, (a, b) in enumerate(windows, 1):
         got = 0
@@ -154,6 +168,12 @@ def backfill(years, per_page=200, pause=3.2, max_pages=40):
                 break
             ents = entries(xml)
             if not ents:
+                if page == 0:
+                    total = re.search(r"totalResults[^>]*>(\d+)<", xml)
+                    if not total or total.group(1) != "0":
+                        print(f"  {a}: first page empty after retries — window may be "
+                              f"incomplete", file=sys.stderr)
+                        incomplete.append(a)
                 break
             for e in ents:
                 aid = tag("id", e).rsplit("/", 1)[-1]
@@ -175,6 +195,10 @@ def backfill(years, per_page=200, pause=3.2, max_pages=40):
         print(f"  [{wi}/{len(windows)}] {a}: {got} papers, {len(papers)} total",
               file=sys.stderr)
         time.sleep(pause)
+    if incomplete:
+        print(f"\n{len(incomplete)} window(s) returned nothing and may be incomplete: "
+              f"{', '.join(incomplete)}\nRe-run with --backfill-years to fill them.",
+              file=sys.stderr)
     return papers
 
 
