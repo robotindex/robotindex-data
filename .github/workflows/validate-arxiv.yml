@@ -1,0 +1,91 @@
+name: Validate arXiv links
+
+# Fetch every repository and dataset an arXiv paper named, and record what is
+# actually there.
+#
+# harvest_arxiv.py produces claims: an author wrote "code at github.com/lab/x"
+# in an abstract and that is all we know. The repository may never have been
+# pushed, may be private, may be a placeholder. This turns the claims into
+# facts — exists or not, stars, licence, last push, empty, archived — so a
+# person can decide what is worth indexing.
+#
+# Nothing is merged into the index here. Treating "a paper named it" as grounds
+# for inclusion, where the current bar is fifty strangers starring it, changes
+# what the index means and is a decision rather than a build.
+#
+# About 1,800 calls against GitHub's 5,000/hour authenticated limit, so one
+# pass fits comfortably.
+
+on:
+  workflow_dispatch:
+    inputs:
+      csv:
+        description: "Which arXiv CSV to validate (blank = the most recent)"
+        default: ""
+      limit:
+        description: "Check only the first N links (0 = all)"
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: validate-arxiv
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set date
+        run: echo "STAMP=$(date -u +%Y-%m-%d)" >> "$GITHUB_ENV"
+
+      - name: Validate
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          CSV="${{ github.event.inputs.csv }}"
+          if [ -z "$CSV" ]; then
+            CSV=$(ls -1 data/history/arxiv-*.csv | grep -v validated | tail -1)
+          fi
+          echo "validating $CSV"
+          python scripts/validate_arxiv_links.py "$CSV" \
+            --limit "${{ github.event.inputs.limit || '0' }}" \
+            --out "data/history/arxiv-validated-${STAMP}.csv" \
+            | tee /tmp/validate.log
+
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/history/
+          if git diff --staged --quiet; then
+            echo "Nothing new."
+          else
+            git commit -m "Validated arXiv links ${STAMP}"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: arxiv-validated-${{ env.STAMP }}
+          path: |
+            data/history/arxiv-validated-${{ env.STAMP }}.csv
+            /tmp/validate.log
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "## What the papers actually pointed at"
+            echo '```'; cat /tmp/validate.log; echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
