@@ -5,8 +5,14 @@ name: Harvest GitHub
 # Separate from harvest-sources.yml because it takes around two hours: the
 # search API caps a query at 1,000 results and allows 30 requests a minute, so
 # 78 topics plus 7 qualified pairs are each split into calendar-quarter slices
-# of creation date back to 2015 — 4,080 queries, paced to stay under the limit,
-# then a README fetch per surviving repo to resolve embodiment.
+# of creation date back to 2015, plus one extra pass over the last 90 days at a
+# lower star floor — 4,165 queries, paced to stay under the limit, then a README
+# fetch per surviving repo to resolve embodiment.
+#
+# The recent pass exists because a repository published last week has had no
+# time to earn 50 stars. Pantheon's Argus annotator, released two days before
+# the first run and already auditing nine of the largest robotics datasets, was
+# invisible to the main pass for exactly that reason.
 #
 # Monthly rather than weekly for the same reason. Repo stars and commit dates
 # move slowly enough that a month is a reasonable sampling interval, and the
@@ -22,6 +28,9 @@ on:
       min_stars:
         description: "Star floor"
         default: "50"
+      recent_stars:
+        description: "Star floor for repos created in the last 90 days"
+        default: "10"
       since:
         description: "First year of creation dates"
         default: "2015"
@@ -57,6 +66,7 @@ jobs:
           mkdir -p data/history
           python scripts/harvest_gh.py \
             --min-stars "${{ github.event.inputs.min_stars || '50' }}" \
+            --recent-stars "${{ github.event.inputs.recent_stars || '10' }}" \
             --since "${{ github.event.inputs.since || '2015' }}" \
             --owner-cap "${{ github.event.inputs.owner_cap || '10' }}" \
             --out "data/history/gh-${STAMP}.csv" \
@@ -81,13 +91,13 @@ jobs:
           for k in sorted(new, key=lambda k: -int(b[k]["stars"]))[:25]:
               print(f"  {int(b[k]['stars']):>7,}*  {b[k]['license'] or '-':<14} {k}")
 
-          # A repo going stale is the change worth reporting. Stars drift;
+          # A repo going inactive is the change worth reporting. Stars drift;
           # maintenance stopping is a decision someone made.
           moved = [(k, a[k]["status"], b[k]["status"]) for k in set(a) & set(b)
                    if a[k]["status"] != b[k]["status"]]
-          worse = [m for m in moved if m[2] in ("stale", "archived")]
-          better = [m for m in moved if m[1] in ("stale", "archived") and m[2] == "active"]
-          print(f"\nWENT STALE OR ARCHIVED ({len(worse)})")
+          worse = [m for m in moved if m[2] in ("inactive", "archived")]
+          better = [m for m in moved if m[1] in ("inactive", "archived") and m[2] == "active"]
+          print(f"\nWENT INACTIVE OR ARCHIVED ({len(worse)})")
           for k, x, y in worse:
               print(f"  {x} -> {y}  {int(b[k]['stars']):>7,}*  {k}")
           print(f"\nCAME BACK TO LIFE ({len(better)})")
