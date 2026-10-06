@@ -1,0 +1,102 @@
+name: Harvest arXiv
+
+# Weekly read of recent cs.RO submissions, pulling out the repositories and
+# datasets they announce.
+#
+# The other two harvests lag by design. GitHub needs stars, Hugging Face needs
+# downloads, and a release earns either only after people find it. A paper names
+# its repository on the day it appears, usually in the abstract and often again
+# in the comment field, so this catches releases weeks before the platform
+# signals do.
+#
+# It reports only what is not already in data/history, so the output is a short
+# review list rather than a feed of papers.
+#
+# What it cannot do is find work that was never written up. Pantheon's Argus
+# annotator was announced in a research blog post with no paper, and would be
+# missed here as it was missed by every other automated route we have. That
+# kind of discovery still needs a person reading.
+#
+# arXiv asks for no more than one request every three seconds and no key. The
+# script honours that; a 14-day window is a few dozen requests.
+#
+# For a one-off catch-up, run it by hand with backfill_years set to 2. That
+# walks cs.RO back two years one submission month at a time — about 50
+# requests and three minutes. Two years is deliberate: cs.RO goes back to
+# 1993, and a repository named in a paper from 2014 is almost certainly dead.
+
+on:
+  schedule:
+    - cron: "0 9 * * 3"        # Wednesdays, 09:00 UTC
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "How many days back to read"
+        default: "14"
+      all:
+        description: "Write every paper with a link, not only the new ones"
+        type: boolean
+        default: false
+      backfill_years:
+        description: "One-off: walk cs.RO back this many years instead (2 recommended, 0 = off)"
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: harvest-arxiv
+  cancel-in-progress: false
+
+jobs:
+  arxiv:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set date
+        run: echo "STAMP=$(date -u +%Y-%m-%d)" >> "$GITHUB_ENV"
+
+      - name: Read arXiv
+        run: |
+          mkdir -p data/history
+          python scripts/harvest_arxiv.py \
+            --days "${{ github.event.inputs.days || '14' }}" \
+            --backfill-years "${{ github.event.inputs.backfill_years || '0' }}" \
+            ${{ github.event.inputs.all == 'true' && '--all' || '' }} \
+            --out "data/history/arxiv-${STAMP}.csv" \
+            | tee /tmp/arxiv.log
+
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/history/
+          if git diff --staged --quiet; then
+            echo "Nothing new."
+          else
+            git commit -m "arXiv watch ${STAMP}"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: arxiv-${{ env.STAMP }}
+          path: |
+            data/history/arxiv-${{ env.STAMP }}.csv
+            /tmp/arxiv.log
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "## Repositories and datasets announced on arXiv"
+            echo '```'; cat /tmp/arxiv.log; echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"

@@ -1,0 +1,195 @@
+name: Harvest sources
+
+# Weekly snapshot of the Hugging Face robotics tag, plus GitHub maintenance
+# status for everything indexed.
+#
+# Snapshots are COMMITTED to data/history/, not just uploaded as artifacts.
+# Artifacts expire after 90 days; the whole point of running weekly is to
+# accumulate a record that does not. Each run adds one dated file per source
+# and never overwrites an earlier one.
+#
+# On the download figures: Hugging Face reports `downloads` over a rolling
+# 30-day window, so weekly snapshots overlap and must never be summed to get a
+# total. Week-on-week change is still meaningful — it is movement in that
+# rolling figure.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"        # Mondays, 06:00 UTC
+  workflow_dispatch:
+    inputs:
+      min_downloads:
+        description: "Hugging Face download floor (monthly)"
+        default: "500"
+      pages:
+        description: "HF pages to walk (100 per page)"
+        default: "30"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: harvest-sources
+  cancel-in-progress: false
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set date
+        run: echo "STAMP=$(date -u +%Y-%m-%d)" >> "$GITHUB_ENV"
+
+      - name: Hugging Face robotics tag
+        run: |
+          mkdir -p data/history
+          python scripts/harvest_hf.py \
+            --min-downloads "${{ github.event.inputs.min_downloads || '500' }}" \
+            --pages "${{ github.event.inputs.pages || '30' }}" \
+            --out "data/history/hf-${STAMP}.csv" \
+            | tee /tmp/hf.log
+
+      - name: Compare with the previous snapshot
+        run: |
+          python - <<'EOF' | tee /tmp/diff.log
+          import csv, glob, os
+          snaps = sorted(glob.glob("data/history/hf-*.csv"))
+          if len(snaps) < 2:
+              print("First snapshot — nothing to compare against yet.")
+              print("Week-on-week change starts from the next run.")
+              raise SystemExit
+          prev, cur = snaps[-2], snaps[-1]
+          load = lambda p: {r["id"]: r for r in csv.DictReader(open(p, encoding="utf-8"))}
+          a, b = load(prev), load(cur)
+          print(f"{os.path.basename(prev)} -> {os.path.basename(cur)}")
+          print(f"  {len(a)} -> {len(b)} datasets above the floor\n")
+
+          new  = [k for k in b if k not in a]
+          gone = [k for k in a if k not in b]
+
+          print(f"NEW ({len(new)})")
+          for k in sorted(new, key=lambda k: -int(b[k]["downloads"]))[:25]:
+              print(f"  {int(b[k]['downloads']):>9,}  {b[k]['license'] or '-':<14} {k}")
+          if len(new) > 25:
+              print(f"  ... and {len(new)-25} more")
+
+          print(f"\nDROPPED BELOW FLOOR ({len(gone)})")
+          for k in gone[:12]:
+              print(f"  {k}")
+
+          moved = []
+          for k in set(a) & set(b):
+              d = int(b[k]["downloads"]) - int(a[k]["downloads"])
+              if d:
+                  moved.append((d, k, int(a[k]["downloads"]), int(b[k]["downloads"])))
+          moved.sort(reverse=True)
+
+          print("\nBIGGEST RISERS")
+          for d, k, x, y in moved[:20]:
+              print(f"  +{d:>8,}  {x:>9,} -> {y:>9,}  {k}")
+          print("\nBIGGEST FALLERS")
+          for d, k, x, y in moved[-10:]:
+              print(f"  {d:>9,}  {x:>9,} -> {y:>9,}  {k}")
+
+          # Licence drift matters more than download movement: it changes what
+          # anyone may legally do with data they have already trained on.
+          drift = [(k, a[k]["license"] or "-", b[k]["license"] or "-")
+                   for k in set(a) & set(b)
+                   if (a[k]["license"] or "") != (b[k]["license"] or "")]
+          print(f"\nLICENCE CHANGED ({len(drift)})")
+          for k, x, y in drift:
+              print(f"  {k}: {x} -> {y}")
+          EOF
+
+      - name: GitHub maintenance status
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python - <<'EOF' | tee /tmp/maint.log
+          import json, os, re, csv, time, urllib.request, datetime, collections
+          stamp = os.environ["STAMP"]
+          H = {"User-Agent": "robotindex",
+               "Accept": "application/vnd.github+json",
+               "Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}"}
+          urls = set()
+          for f in ("data/models-data.json", "data/builds-mods.json"):
+              try:
+                  d = json.load(open(f))
+              except Exception:
+                  continue
+              for e in (d.get("entries") if isinstance(d, dict) else d) or []:
+                  for k in ("link", "repo"):
+                      m = re.match(r"https://github\.com/([^/]+/[^/#?]+)", e.get(k) or "")
+                      if m:
+                          urls.add(m.group(1).removesuffix(".git"))
+          print(f"{len(urls)} GitHub repos to check")
+          today = datetime.date.today()
+          out = []
+          for p in sorted(urls):
+              try:
+                  r = json.load(urllib.request.urlopen(
+                      urllib.request.Request(f"https://api.github.com/repos/{p}", headers=H),
+                      timeout=25))
+              except Exception as e:
+                  out.append({"repo": p, "status": "error", "detail": str(e)[:60]})
+                  continue
+              pushed = (r.get("pushed_at") or "")[:10]
+              age = (today - datetime.date.fromisoformat(pushed)).days if pushed else None
+              status = ("archived" if r.get("archived") else
+                        "active"   if age is not None and age <= 90  else
+                        "slowing"  if age is not None and age <= 365 else "stale")
+              out.append({"repo": p, "status": status, "pushed": pushed, "days_since": age,
+                          "stars": r.get("stargazers_count"),
+                          "license": (r.get("license") or {}).get("spdx_id") or "",
+                          "open_issues": r.get("open_issues_count")})
+              time.sleep(0.12)
+          with open(f"data/history/maintenance-{stamp}.csv", "w", newline="", encoding="utf-8") as fh:
+              w = csv.DictWriter(fh, fieldnames=["repo", "status", "pushed", "days_since",
+                                                 "stars", "license", "open_issues", "detail"])
+              w.writeheader()
+              w.writerows(out)
+          print(dict(collections.Counter(o["status"] for o in out)))
+          bad = [o for o in out if o.get("status") in ("stale", "archived")]
+          print(f"\nstale or archived ({len(bad)}), most neglected first:")
+          for o in sorted(bad, key=lambda x: x.get("days_since") or 0, reverse=True)[:20]:
+              print(f"  {o['status']:<9} {o.get('days_since','?'):>5}d  {o['repo']}")
+          EOF
+
+      - name: Commit the snapshots
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/history/
+          if git diff --staged --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "Harvest snapshot ${STAMP}"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: harvest-${{ env.STAMP }}
+          path: |
+            data/history/hf-${{ env.STAMP }}.csv
+            data/history/maintenance-${{ env.STAMP }}.csv
+            /tmp/hf.log
+            /tmp/diff.log
+            /tmp/maint.log
+
+      - name: Summary
+        run: |
+          {
+            echo "## Week-on-week change"
+            echo '```'; cat /tmp/diff.log; echo '```'
+            echo "## Hugging Face"
+            echo '```'; cat /tmp/hf.log; echo '```'
+            echo "## Maintenance"
+            echo '```'; cat /tmp/maint.log; echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
