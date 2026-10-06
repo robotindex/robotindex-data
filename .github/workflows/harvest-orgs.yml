@@ -78,6 +78,7 @@ jobs:
             echo "Nothing new."
           else
             git commit -m "Org sweep ${STAMP}"
+            git pull --rebase --autostash
             git push
           fi
 

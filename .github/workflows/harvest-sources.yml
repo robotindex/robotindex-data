@@ -169,6 +169,7 @@ jobs:
             echo "Nothing changed."
           else
             git commit -m "Harvest snapshot ${STAMP}"
+            git pull --rebase --autostash
             git push
           fi
 

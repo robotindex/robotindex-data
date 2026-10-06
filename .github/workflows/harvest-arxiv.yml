@@ -81,6 +81,7 @@ jobs:
             echo "Nothing new."
           else
             git commit -m "arXiv watch ${STAMP}"
+            git pull --rebase --autostash
             git push
           fi
 
