@@ -51,7 +51,7 @@
         },
         {
           "name": "World Labs",
-          "github": "worldlabs-ai",
+          "github": "worldlabs",
           "huggingface": null,
           "note": "Spatial intelligence and large world models.",
           "verified": false
@@ -128,7 +128,7 @@
         },
         {
           "name": "Decart",
-          "github": "decart-ai",
+          "github": "DecartAI",
           "huggingface": null,
           "note": "Real-time world models.",
           "verified": false
@@ -237,7 +237,7 @@
         },
         {
           "name": "Galbot",
-          "github": "GalbotAI",
+          "github": "Galbot",
           "huggingface": null,
           "note": "G1 wheeled humanoid, China.",
           "verified": false
@@ -307,7 +307,7 @@
         },
         {
           "name": "LimX Dynamics",
-          "github": "LimX-Dynamics",
+          "github": "limxdynamics",
           "huggingface": null,
           "note": "P.One biped and Tron 1 wheeled point-foot biped.",
           "verified": false
@@ -328,7 +328,7 @@
         },
         {
           "name": "Humanoid",
-          "github": "humanoid-uk",
+          "github": "humanoidglobal",
           "huggingface": null,
           "note": "UK humanoid developer, HMND 01.",
           "verified": false
@@ -416,7 +416,7 @@
         },
         {
           "name": "Hiwonder",
-          "github": "Hiwonder-Robotics",
+          "github": "Hiwonder",
           "huggingface": null,
           "note": "MentorPi, PuppyPi.",
           "verified": false
@@ -539,7 +539,7 @@
         },
         {
           "name": "Realman Robotics",
-          "github": "RealManRobotics",
+          "github": "RealManRobot",
           "huggingface": null,
           "note": "RM series.",
           "verified": false
@@ -609,7 +609,7 @@
         },
         {
           "name": "Dexterity",
-          "github": "dexterity-ai",
+          "github": "dexterity",
           "huggingface": null,
           "note": "Warehouse manipulation.",
           "verified": false
@@ -776,7 +776,7 @@
         {
           "name": "XDOF",
           "github": "XDOF",
-          "huggingface": null,
+          "huggingface": "XDOF",
           "note": "ABC-130k, 130,703 bimanual episodes — audited by Argus and already cited in our index.",
           "verified": true
         },
@@ -940,7 +940,7 @@
         },
         {
           "name": "PartNet-Mobility",
-          "github": "partnet-mobility",
+          "github": "daerduoCarey",
           "huggingface": null,
           "note": "Articulated object benchmark underpinning ManiSkill.",
           "verified": false
@@ -1208,7 +1208,7 @@
         },
         {
           "name": "Kodiak Robotics",
-          "github": "kodiak-robotics",
+          "github": "Kodiak-Robotics",
           "huggingface": null,
           "note": "Autonomous trucking.",
           "verified": false
