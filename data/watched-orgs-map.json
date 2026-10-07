@@ -111,6 +111,62 @@
           "huggingface": null,
           "note": "Foundation models for consumer and household manipulation.",
           "verified": false
+        },
+        {
+          "name": "Tau Robotics",
+          "github": "tau-robotics",
+          "huggingface": null,
+          "note": "Learned manipulation models; from the Physical AI landscape.",
+          "verified": false
+        },
+        {
+          "name": "Odyssey",
+          "github": "odyssey-ml",
+          "huggingface": null,
+          "note": "World models for interactive video.",
+          "verified": false
+        },
+        {
+          "name": "Decart",
+          "github": "decart-ai",
+          "huggingface": null,
+          "note": "Real-time world models.",
+          "verified": false
+        },
+        {
+          "name": "Reward AI",
+          "github": "reward-ai",
+          "huggingface": null,
+          "note": "OM-1, open embodied model.",
+          "verified": false
+        },
+        {
+          "name": "Grounded Superintelligence",
+          "github": "grounded-si",
+          "huggingface": null,
+          "note": "Embodied reasoning; little public yet.",
+          "verified": false
+        },
+        {
+          "name": "Moonlake AI",
+          "github": "moonlake-ai",
+          "huggingface": null,
+          "note": "Robot learning.",
+          "verified": false
+        },
+        {
+          "name": "General Robotics",
+          "github": "general-robotics",
+          "huggingface": null,
+          "note": "Generalist control.",
+          "verified": false
+        },
+        {
+          "name": "Atoms",
+          "github": "atoms-ai",
+          "huggingface": null,
+          "note": "Embodied intelligence.",
+          "verified": false
         }
       ]
     },
@@ -269,6 +325,27 @@
           "huggingface": null,
           "note": "Low-cost dexterous research hand from CMU, underpinning much of the dexterous manipulation data.",
           "verified": false
+        },
+        {
+          "name": "Humanoid",
+          "github": "humanoid-uk",
+          "huggingface": null,
+          "note": "UK humanoid developer, HMND 01.",
+          "verified": false
+        },
+        {
+          "name": "THEKER",
+          "github": "theker-robotics",
+          "huggingface": null,
+          "note": "Humanoid manipulation, Europe.",
+          "verified": false
+        },
+        {
+          "name": "Watney",
+          "github": "watney-robotics",
+          "huggingface": null,
+          "note": "Mobile humanoid.",
+          "verified": false
         }
       ]
     },
@@ -364,6 +441,13 @@
           "huggingface": null,
           "note": "Community-maintained ROS 2 drivers, bridges and IK tools — separate from Unitree's own account.",
           "verified": false
+        },
+        {
+          "name": "Intel RealSense",
+          "github": "IntelRealSense",
+          "huggingface": null,
+          "note": "Depth cameras used across robotics. Spun out of Intel in 2025.",
+          "verified": true
         }
       ]
     },
@@ -494,6 +578,97 @@
           "huggingface": null,
           "note": "Dexterous hands. Surfaced 22 times in tag mining and has no page.",
           "verified": false
+        },
+        {
+          "name": "FANUC",
+          "github": "FANUC-CORPORATION",
+          "huggingface": null,
+          "note": "The largest industrial robot maker in the world. Absent from the map until now.",
+          "verified": false
+        },
+        {
+          "name": "ABB Robotics",
+          "github": "abb-robotics",
+          "huggingface": null,
+          "note": "IRB series; one of the big four industrial arm makers.",
+          "verified": false
+        },
+        {
+          "name": "Wandelbots",
+          "github": "wandelbots",
+          "huggingface": null,
+          "note": "No-code robot programming, Germany.",
+          "verified": false
+        },
+        {
+          "name": "Standard Bots",
+          "github": "standard-bots",
+          "huggingface": null,
+          "note": "RO1 cobot, US-built.",
+          "verified": false
+        },
+        {
+          "name": "Dexterity",
+          "github": "dexterity-ai",
+          "huggingface": null,
+          "note": "Warehouse manipulation.",
+          "verified": false
+        },
+        {
+          "name": "Collaborative Robotics",
+          "github": "collaborative-robotics",
+          "huggingface": null,
+          "note": "Proxie mobile manipulator.",
+          "verified": false
+        },
+        {
+          "name": "Sereact",
+          "github": "sereact",
+          "huggingface": null,
+          "note": "Picking with vision-language models, Germany.",
+          "verified": false
+        },
+        {
+          "name": "Inbolt",
+          "github": "inbolt",
+          "huggingface": null,
+          "note": "Real-time guidance for industrial arms, France.",
+          "verified": false
+        },
+        {
+          "name": "Tacta Systems",
+          "github": "tacta-systems",
+          "huggingface": null,
+          "note": "Tactile-driven manipulation.",
+          "verified": false
+        },
+        {
+          "name": "Vesoma",
+          "github": "vesoma",
+          "huggingface": null,
+          "note": "Manipulation hardware.",
+          "verified": false
+        },
+        {
+          "name": "Axis Robotics",
+          "github": "axis-robotics",
+          "huggingface": null,
+          "note": "Industrial automation.",
+          "verified": false
+        },
+        {
+          "name": "Robocurve",
+          "github": "robocurve",
+          "huggingface": null,
+          "note": "Robot arms.",
+          "verified": false
+        },
+        {
+          "name": "UMA / Universal Manipulation",
+          "github": "uma-robotics",
+          "huggingface": null,
+          "note": "Universal manipulation hardware.",
+          "verified": false
         }
       ]
     },
@@ -597,6 +772,76 @@
           "huggingface": null,
           "note": "Zero-overhead pub/sub increasingly replacing DDS for teleoperation and cloud bridging.",
           "verified": false
+        },
+        {
+          "name": "XDOF",
+          "github": "XDOF",
+          "huggingface": null,
+          "note": "ABC-130k, 130,703 bimanual episodes — audited by Argus and already cited in our index.",
+          "verified": true
+        },
+        {
+          "name": "Roboto AI",
+          "github": "roboto-ai",
+          "huggingface": null,
+          "note": "Robotics data platform and log analysis.",
+          "verified": false
+        },
+        {
+          "name": "ReSim",
+          "github": "resim-ai",
+          "huggingface": null,
+          "note": "Simulation-based testing and evaluation for robots.",
+          "verified": false
+        },
+        {
+          "name": "Mecka AI",
+          "github": "mecka-ai",
+          "huggingface": null,
+          "note": "Robot data collection at scale.",
+          "verified": false
+        },
+        {
+          "name": "micro1",
+          "github": "micro1-ai",
+          "huggingface": null,
+          "note": "Expert data labelling.",
+          "verified": false
+        },
+        {
+          "name": "Veeda AI",
+          "github": "veeda-ai",
+          "huggingface": null,
+          "note": "Robot data.",
+          "verified": false
+        },
+        {
+          "name": "Midcentury",
+          "github": "midcentury-ai",
+          "huggingface": null,
+          "note": "Robot data collection.",
+          "verified": false
+        },
+        {
+          "name": "AMI Labs",
+          "github": "ami-labs",
+          "huggingface": null,
+          "note": "Embodied data.",
+          "verified": false
+        },
+        {
+          "name": "InOrbit",
+          "github": "inorbit-ai",
+          "huggingface": null,
+          "note": "Fleet operations and observability for robots.",
+          "verified": false
+        },
+        {
+          "name": "Antioch",
+          "github": "antioch-ai",
+          "huggingface": null,
+          "note": "Robot operations.",
+          "verified": false
         }
       ]
     },
@@ -698,6 +943,20 @@
           "github": "partnet-mobility",
           "huggingface": null,
           "note": "Articulated object benchmark underpinning ManiSkill.",
+          "verified": false
+        },
+        {
+          "name": "Intrinsic",
+          "github": "intrinsic-ai",
+          "huggingface": null,
+          "note": "Alphabet's industrial robotics software arm; Flowstate.",
+          "verified": false
+        },
+        {
+          "name": "Duality AI",
+          "github": "duality-ai",
+          "huggingface": null,
+          "note": "Falcon digital twin simulation.",
           "verified": false
         }
       ]
@@ -932,6 +1191,48 @@
           "huggingface": null,
           "note": "UniAD.",
           "verified": true
+        },
+        {
+          "name": "Aurora",
+          "github": "aurora-innovation",
+          "huggingface": null,
+          "note": "Autonomous trucking.",
+          "verified": false
+        },
+        {
+          "name": "Zoox",
+          "github": "zoox",
+          "huggingface": null,
+          "note": "Amazon's robotaxi.",
+          "verified": false
+        },
+        {
+          "name": "Kodiak Robotics",
+          "github": "kodiak-robotics",
+          "huggingface": null,
+          "note": "Autonomous trucking.",
+          "verified": false
+        },
+        {
+          "name": "Skydio",
+          "github": "Skydio",
+          "huggingface": null,
+          "note": "Autonomous drones; the largest US drone maker.",
+          "verified": false
+        },
+        {
+          "name": "Shield AI",
+          "github": "shield-ai",
+          "huggingface": null,
+          "note": "Hivemind autonomy for aircraft.",
+          "verified": false
+        },
+        {
+          "name": "Anduril",
+          "github": "anduril",
+          "huggingface": null,
+          "note": "Lattice; defence autonomy.",
+          "verified": false
         }
       ]
     },
