@@ -365,6 +365,45 @@ def follow_links(posts, limit=60):
     return posts
 
 
+def score_reddit(rows, pause=4.0):
+    """Fill in scores for the Reddit rows that found a repository.
+
+    The RSS feed carries no score, so every Reddit post arrives at zero and
+    sorts level — a shared project and one person's weekend build look the
+    same. A post's own .json does carry the score, unauthenticated, but at one
+    request each it is too slow to run over everything.
+
+    So it runs over the handful that matter: Reddit rows that named a
+    repository or dataset. Those are the only ones anyone would act on, and
+    there were four of them in a thirty-day scan. Anything that fails keeps its
+    zero and stays exempt from the score floor.
+    """
+    todo = [r for r in rows
+            if r["source"].startswith("r/") and not r.get("score")
+            and (r.get("repos") or r.get("datasets"))]
+    if not todo:
+        return rows
+    print(f"  scoring {len(todo)} reddit posts that found something", file=sys.stderr)
+    done = 0
+    for r in todo:
+        url = r["discussion"].rstrip("/") + "/.json?limit=1"
+        d, err = get(url, tries=3)
+        if err or not isinstance(d, list) or not d:
+            continue
+        try:
+            post = d[0]["data"]["children"][0]["data"]
+        except Exception:
+            continue
+        r["score"] = post.get("score") or 0
+        r["comments"] = post.get("num_comments") or 0
+        if r["score"]:
+            r.pop("no_score", None)     # it has a real score now
+        done += 1
+        time.sleep(pause)
+    print(f"  scored {done} of {len(todo)}", file=sys.stderr)
+    return rows
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--days", type=int, default=7)
@@ -379,6 +418,9 @@ def main():
                          "only about one post in ten names a repository in the post itself.")
     ap.add_argument("--follow-limit", type=int, default=60,
                     help="how many linked pages to fetch, most-discussed first")
+    ap.add_argument("--no-reddit-scores", action="store_true",
+                    help="skip the per-post fetch that scores Reddit rows which found "
+                         "a repository")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
@@ -430,6 +472,8 @@ def main():
             "is_new": bool(new_r or new_d),
         })
 
+    if not a.no_reddit_scores:
+        rows = score_reddit(rows)
     rows.sort(key=lambda r: (-int(r["is_new"]), -r["score"]))
     new = [r for r in rows if r["is_new"]]
     unwatched = [r for r in new if r["watched_org"] == "no"]
