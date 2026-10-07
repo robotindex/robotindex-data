@@ -1,0 +1,1237 @@
+{
+  "_comment": "A market map of the robotics, robot-model and robot-data space, written by hand. The derived watch lists can only find publishers already in the index, which is why they missed TheRobotStudio (SO-ARM100, 6,800 stars, the arm behind 64 of our datasets), unitreerobotics (unitree_sdk2, 1,200 stars) and Pantheon (Argus, published two days before a harvest). This list exists to be independent of what we have already seen.",
+  "_scope": "Includes companies that publish no hardware at all: foundation-model labs, data-tooling companies, simulation vendors and big-tech research groups. A company earns a place by mattering to the field, not by selling a robot. Several entries publish nothing at all — Figure and Tesla among them — and are listed so that the absence is a recorded fact rather than an oversight.",
+  "_handles": "github and huggingface are account handles. verified:true means the handle has been confirmed to exist; verified:false means it is a best guess. A wrong handle costs one wasted API call and returns nothing, so the cost of guessing is far lower than the cost of omitting. Anything marked false should be confirmed before the list is relied on.",
+  "_updated": "2026-10-07",
+  "categories": {
+    "foundation_models": {
+      "note": "Build the model layer. Most publish little or no hardware, several publish no code either, and the largest single funding round in the space went to one of them rather than to a robot maker.",
+      "orgs": [
+        {
+          "name": "Physical Intelligence",
+          "github": "Physical-Intelligence",
+          "huggingface": "physical-intelligence",
+          "note": "pi-zero, openpi. Open-sourced model and weights February 2025. About $2.1B raised.",
+          "verified": false
+        },
+        {
+          "name": "Skild AI",
+          "github": "skild-ai",
+          "huggingface": null,
+          "note": "Skild Brain, an omni-bodied model. $1.4B Series C in January 2026, the largest single round in the space.",
+          "verified": false
+        },
+        {
+          "name": "Covariant",
+          "github": "covariant-ai",
+          "huggingface": null,
+          "note": "RFM-1. The most production-validated manipulation foundation model.",
+          "verified": false
+        },
+        {
+          "name": "Field AI",
+          "github": "fieldai",
+          "huggingface": null,
+          "note": "Field foundation models for unstructured environments. About $2B.",
+          "verified": false
+        },
+        {
+          "name": "Generalist AI",
+          "github": "generalist-ai",
+          "huggingface": null,
+          "note": "Cross-embodiment physical AGI.",
+          "verified": false
+        },
+        {
+          "name": "Dyna Robotics",
+          "github": "dyna-robotics",
+          "huggingface": null,
+          "note": "DYNA-1.",
+          "verified": false
+        },
+        {
+          "name": "World Labs",
+          "github": "worldlabs-ai",
+          "huggingface": null,
+          "note": "Spatial intelligence and large world models.",
+          "verified": false
+        },
+        {
+          "name": "RLWRLD",
+          "github": "rlwrld",
+          "huggingface": null,
+          "note": "Industrial-environment robot foundation models, Korea.",
+          "verified": false
+        },
+        {
+          "name": "X Square Robot",
+          "github": "xsquare-robot",
+          "huggingface": null,
+          "note": "WALL-A and WALL-B model stack.",
+          "verified": false
+        },
+        {
+          "name": "Archetype AI",
+          "github": "archetype-ai",
+          "huggingface": null,
+          "note": "Newton, a physical-sensor foundation model.",
+          "verified": false
+        },
+        {
+          "name": "Rhoda AI",
+          "github": null,
+          "huggingface": null,
+          "note": "Video-trained robot intelligence. No public code found.",
+          "verified": false
+        },
+        {
+          "name": "General Intuition",
+          "github": null,
+          "huggingface": null,
+          "note": "Training environments and cross-embodiment learning.",
+          "verified": false
+        },
+        {
+          "name": "EmbodyX",
+          "github": null,
+          "huggingface": null,
+          "note": "Embodied intelligence lab.",
+          "verified": false
+        },
+        {
+          "name": "Vayu Robotics",
+          "github": "vayurobotics",
+          "huggingface": null,
+          "note": "Foundation perception and mobility models that work without LiDAR.",
+          "verified": false
+        },
+        {
+          "name": "Sunday Robotics",
+          "github": "sunday-robotics",
+          "huggingface": null,
+          "note": "Foundation models for consumer and household manipulation.",
+          "verified": false
+        }
+      ]
+    },
+    "humanoids": {
+      "orgs": [
+        {
+          "name": "Figure AI",
+          "github": "figure-ai",
+          "huggingface": null,
+          "note": "Figure 03, Helix VLA. About $39B valuation and publishes nothing, which is why it is absent from both indexes.",
+          "verified": false
+        },
+        {
+          "name": "1X Technologies",
+          "github": "1x-technologies",
+          "huggingface": "1x-technologies",
+          "note": "NEO. Released a world-model dataset.",
+          "verified": false
+        },
+        {
+          "name": "Apptronik",
+          "github": "apptronik",
+          "huggingface": null,
+          "note": "Apollo. About $5B.",
+          "verified": false
+        },
+        {
+          "name": "Agility Robotics",
+          "github": "agilityrobotics",
+          "huggingface": null,
+          "note": "Digit.",
+          "verified": false
+        },
+        {
+          "name": "Sanctuary AI",
+          "github": "sanctuary-ai",
+          "huggingface": null,
+          "note": "Phoenix.",
+          "verified": false
+        },
+        {
+          "name": "NEURA Robotics",
+          "github": "neurarobotics",
+          "huggingface": null,
+          "note": "4NE-1, Germany.",
+          "verified": false
+        },
+        {
+          "name": "Unitree Robotics",
+          "github": "unitreerobotics",
+          "huggingface": "unitreerobotics",
+          "note": "G1, H1, H2, Go2, B2. The most-represented robot in our GitHub data at 113 repositories, and their own SDK is not indexed.",
+          "verified": true
+        },
+        {
+          "name": "AgiBot",
+          "github": "AgibotTech",
+          "huggingface": "agibot-world",
+          "note": "AgiBot World, one of the largest open manipulation datasets.",
+          "verified": false
+        },
+        {
+          "name": "Fourier Intelligence",
+          "github": "FFTAI",
+          "huggingface": null,
+          "note": "GR-1, listed discontinued in our directory; GR-2 is the successor.",
+          "verified": false
+        },
+        {
+          "name": "Galbot",
+          "github": "GalbotAI",
+          "huggingface": null,
+          "note": "G1 wheeled humanoid, China.",
+          "verified": false
+        },
+        {
+          "name": "Robot Era",
+          "github": "robotera",
+          "huggingface": null,
+          "note": "XBot, STAR1.",
+          "verified": false
+        },
+        {
+          "name": "Booster Robotics",
+          "github": "BoosterRobotics",
+          "huggingface": null,
+          "note": "Booster T1.",
+          "verified": false
+        },
+        {
+          "name": "UBTech",
+          "github": "ubtechrobotics",
+          "huggingface": null,
+          "note": "Walker S.",
+          "verified": false
+        },
+        {
+          "name": "EngineAI",
+          "github": "engineai-robotics",
+          "huggingface": null,
+          "note": "PM01, SE01.",
+          "verified": false
+        },
+        {
+          "name": "Westwood Robotics",
+          "github": "westwoodrobotics",
+          "huggingface": null,
+          "note": "THEMIS.",
+          "verified": false
+        },
+        {
+          "name": "K-Scale Labs",
+          "github": "kscalelabs",
+          "huggingface": "kscalelabs",
+          "note": "Zeroth Bot, open humanoid.",
+          "verified": false
+        },
+        {
+          "name": "PNDbotics",
+          "github": "pndbotics",
+          "huggingface": null,
+          "note": "Adam.",
+          "verified": false
+        },
+        {
+          "name": "Tesla Optimus",
+          "github": null,
+          "huggingface": null,
+          "note": "Publishes nothing. Listed so the absence is deliberate rather than an oversight.",
+          "verified": false
+        },
+        {
+          "name": "Mentee Robotics",
+          "github": "menteebot",
+          "huggingface": null,
+          "note": "End-to-end vision-to-motion humanoid.",
+          "verified": false
+        },
+        {
+          "name": "LimX Dynamics",
+          "github": "LimX-Dynamics",
+          "huggingface": null,
+          "note": "P.One biped and Tron 1 wheeled point-foot biped.",
+          "verified": false
+        },
+        {
+          "name": "Clone Robotics",
+          "github": "clone-robotics",
+          "huggingface": null,
+          "note": "Biomimetic musculoskeletal hands and torsos using artificial muscles.",
+          "verified": false
+        },
+        {
+          "name": "LEAP Hand",
+          "github": "leap-hand",
+          "huggingface": null,
+          "note": "Low-cost dexterous research hand from CMU, underpinning much of the dexterous manipulation data.",
+          "verified": false
+        }
+      ]
+    },
+    "legged_and_mobile": {
+      "orgs": [
+        {
+          "name": "Boston Dynamics",
+          "github": "boston-dynamics",
+          "huggingface": null,
+          "note": "Spot SDK. Excluded from robot attribution because the name is cited constantly as inspiration, but their own releases matter.",
+          "verified": false
+        },
+        {
+          "name": "ANYbotics",
+          "github": "ANYbotics",
+          "huggingface": null,
+          "note": "ANYmal, now attributed separately from Boston Dynamics.",
+          "verified": false
+        },
+        {
+          "name": "Deep Robotics",
+          "github": "DeepRoboticsLab",
+          "huggingface": null,
+          "note": "X30, Lite3.",
+          "verified": false
+        },
+        {
+          "name": "Clearpath Robotics",
+          "github": "clearpathrobotics",
+          "huggingface": null,
+          "note": "TurtleBot 4, Husky, Jackal. Excluded from attribution because 'husky' collides with a JavaScript package.",
+          "verified": false
+        },
+        {
+          "name": "ROBOTIS",
+          "github": "ROBOTIS-GIT",
+          "huggingface": null,
+          "note": "TurtleBot 3, OpenManipulator. At the owner cap in our index, so work is being discarded.",
+          "verified": true
+        },
+        {
+          "name": "Hello Robot",
+          "github": "hello-robot",
+          "huggingface": null,
+          "note": "Stretch.",
+          "verified": false
+        },
+        {
+          "name": "PAL Robotics",
+          "github": "pal-robotics",
+          "huggingface": null,
+          "note": "TIAGo.",
+          "verified": true
+        },
+        {
+          "name": "Bitcraze",
+          "github": "bitcraze",
+          "huggingface": null,
+          "note": "Crazyflie. Open hardware, active, absent from both indexes.",
+          "verified": false
+        },
+        {
+          "name": "Yahboom",
+          "github": "YahboomTechnology",
+          "huggingface": null,
+          "note": "ROSMASTER, DOFBOT. Seven repositories attributed.",
+          "verified": false
+        },
+        {
+          "name": "Hiwonder",
+          "github": "Hiwonder-Robotics",
+          "huggingface": null,
+          "note": "MentorPi, PuppyPi.",
+          "verified": false
+        },
+        {
+          "name": "Petoi",
+          "github": "PetoiCamp",
+          "huggingface": null,
+          "note": "Bittle and Nybble, open firmware.",
+          "verified": false
+        },
+        {
+          "name": "Xiaomi",
+          "github": "MiRoboticsLab",
+          "huggingface": null,
+          "note": "CyberDog. Pattern tightened after their VLA and driving research matched a bare company-name rule.",
+          "verified": false
+        },
+        {
+          "name": "Unitree Community",
+          "github": "unitree-community",
+          "huggingface": null,
+          "note": "Community-maintained ROS 2 drivers, bridges and IK tools — separate from Unitree's own account.",
+          "verified": false
+        }
+      ]
+    },
+    "arms_and_manipulators": {
+      "orgs": [
+        {
+          "name": "The Robot Studio",
+          "github": "TheRobotStudio",
+          "huggingface": null,
+          "note": "SO-100 and SO-101. SO-ARM100 has 6,800 stars and is absent from the index, despite SO-101 being the second most-represented robot in our data.",
+          "verified": true
+        },
+        {
+          "name": "Enactic",
+          "github": "enactic",
+          "huggingface": null,
+          "note": "OpenArm, hardware under CERN-OHL-S.",
+          "verified": true
+        },
+        {
+          "name": "Trossen Robotics",
+          "github": "Interbotix",
+          "huggingface": "TrossenRoboticsCommunity",
+          "note": "ALOHA and WidowX kits; the Interbotix organisation publishes the drivers.",
+          "verified": false
+        },
+        {
+          "name": "AgileX Robotics",
+          "github": "agilexrobotics",
+          "huggingface": null,
+          "note": "PiPER, Cobot Magic.",
+          "verified": false
+        },
+        {
+          "name": "Franka Robotics",
+          "github": "frankarobotics",
+          "huggingface": null,
+          "note": "FR3. Panda withdrawn; Franka Emika insolvent 2023, acquired by Agile Robots. Still the most-represented robot across both sources.",
+          "verified": false
+        },
+        {
+          "name": "Universal Robots",
+          "github": "UniversalRobots",
+          "huggingface": null,
+          "note": "UR series. CB3 UR5 end-of-sale 2024; UR5e renamed UR7e in 2025.",
+          "verified": false
+        },
+        {
+          "name": "KUKA",
+          "github": "kuka-isir",
+          "huggingface": null,
+          "note": "LBR iiwa, KR series.",
+          "verified": false
+        },
+        {
+          "name": "Kinova",
+          "github": "Kinovarobotics",
+          "huggingface": null,
+          "note": "Gen3; datasets reference the older Jaco 2.",
+          "verified": false
+        },
+        {
+          "name": "Flexiv",
+          "github": "flexivrobotics",
+          "huggingface": null,
+          "note": "Rizon, Enlight, MICO. Maintained first-party SDK.",
+          "verified": true
+        },
+        {
+          "name": "Dobot",
+          "github": "Dobot-Arm",
+          "huggingface": null,
+          "note": "X-Trainer, CR series.",
+          "verified": false
+        },
+        {
+          "name": "UFACTORY",
+          "github": "xArm-Developer",
+          "huggingface": null,
+          "note": "xArm.",
+          "verified": false
+        },
+        {
+          "name": "Elephant Robotics",
+          "github": "elephantrobotics",
+          "huggingface": null,
+          "note": "myCobot, which has datasets but no repositories in our index.",
+          "verified": false
+        },
+        {
+          "name": "Realman Robotics",
+          "github": "RealManRobotics",
+          "huggingface": null,
+          "note": "RM series.",
+          "verified": false
+        },
+        {
+          "name": "Doosan Robotics",
+          "github": "doosan-robotics",
+          "huggingface": null,
+          "note": "M and A series cobots.",
+          "verified": false
+        },
+        {
+          "name": "Techman Robot",
+          "github": "TechmanRobotInc",
+          "huggingface": null,
+          "note": "TM series.",
+          "verified": false
+        },
+        {
+          "name": "Galaxea",
+          "github": "OpenGalaxea",
+          "huggingface": "OpenGalaxea",
+          "note": "Open-World Dataset, audited by Argus, not in our index.",
+          "verified": false
+        },
+        {
+          "name": "Robotiq",
+          "github": "Robotiq",
+          "huggingface": null,
+          "note": "Grippers. Not a robot, but appears on the end of twelve indexed UR projects.",
+          "verified": false
+        },
+        {
+          "name": "Sharpa",
+          "github": "sharpa-robotics",
+          "huggingface": null,
+          "note": "Dexterous hands. Surfaced 22 times in tag mining and has no page.",
+          "verified": false
+        }
+      ]
+    },
+    "data_and_tooling": {
+      "note": "Build the infrastructure rather than the robots. The category our index covers worst, and the one Argus came from.",
+      "orgs": [
+        {
+          "name": "Hugging Face",
+          "github": "huggingface",
+          "huggingface": "lerobot",
+          "note": "LeRobot, the framework behind a large share of the datasets we index. huggingface/lerobot has 27,960 stars and was never in the index at all.",
+          "verified": true
+        },
+        {
+          "name": "Pantheon Industries",
+          "github": "Pantheon-Industries-Inc",
+          "huggingface": null,
+          "note": "Argus, which audited nine of the largest robotics datasets and found 27% of episodes carry a medium-or-higher severity issue. Published 1 October, missed by the 3 October harvest.",
+          "verified": true
+        },
+        {
+          "name": "Foxglove",
+          "github": "foxglove",
+          "huggingface": null,
+          "note": "Robotics data platform and the MCAP format. Raised $40M.",
+          "verified": false
+        },
+        {
+          "name": "Rerun",
+          "github": "rerun-io",
+          "huggingface": null,
+          "note": "Visualisation used widely in robotics logging.",
+          "verified": true
+        },
+        {
+          "name": "Voxel51",
+          "github": "voxel51",
+          "huggingface": "Voxel51",
+          "note": "FiftyOne. Publishes many vision datasets, most not robotics — a reason their uploads need filtering rather than blanket inclusion.",
+          "verified": true
+        },
+        {
+          "name": "Scale AI",
+          "github": "scaleapi",
+          "huggingface": null,
+          "note": "Data labelling at scale.",
+          "verified": false
+        },
+        {
+          "name": "Roboflow",
+          "github": "roboflow",
+          "huggingface": "roboflow",
+          "note": "Vision dataset tooling.",
+          "verified": false
+        },
+        {
+          "name": "Encord",
+          "github": "encord-team",
+          "huggingface": null,
+          "note": "Multimodal data curation.",
+          "verified": false
+        },
+        {
+          "name": "Bones Studio",
+          "github": "bones-studio",
+          "huggingface": "bones-studio",
+          "note": "BONES-SEED, 142,220 motion sequences under a revenue-capped licence that propagates to derivatives — a licensing pattern worth watching.",
+          "verified": false
+        },
+        {
+          "name": "Weights & Biases",
+          "github": "wandb",
+          "huggingface": null,
+          "note": "Experiment tracking, widely used in robot learning.",
+          "verified": false
+        },
+        {
+          "name": "PickNik Robotics",
+          "github": "PickNikRobotics",
+          "huggingface": null,
+          "note": "Maintainers of MoveIt 2 and MoveIt Pro.",
+          "verified": false
+        },
+        {
+          "name": "Open Navigation",
+          "github": "open-navigation",
+          "huggingface": null,
+          "note": "Nav2, the ROS 2 navigation stack.",
+          "verified": false
+        },
+        {
+          "name": "eProsima",
+          "github": "eProsima",
+          "huggingface": null,
+          "note": "Fast DDS and micro-XRCE-DDS, the middleware under ROS 2.",
+          "verified": false
+        },
+        {
+          "name": "Eclipse Zenoh",
+          "github": "eclipse-zenoh",
+          "huggingface": null,
+          "note": "Zero-overhead pub/sub increasingly replacing DDS for teleoperation and cloud bridging.",
+          "verified": false
+        }
+      ]
+    },
+    "simulation": {
+      "orgs": [
+        {
+          "name": "Genesis Embodied AI",
+          "github": "Genesis-Embodied-AI",
+          "huggingface": null,
+          "note": "Genesis simulator. Absent from the index.",
+          "verified": false
+        },
+        {
+          "name": "Open Robotics / OSRF",
+          "github": "gazebosim",
+          "huggingface": null,
+          "note": "Gazebo. At the owner cap in our index.",
+          "verified": true
+        },
+        {
+          "name": "ROS",
+          "github": "ros-planning",
+          "huggingface": null,
+          "note": "Nav2, MoveIt.",
+          "verified": false
+        },
+        {
+          "name": "Farama Foundation",
+          "github": "Farama-Foundation",
+          "huggingface": null,
+          "note": "Gymnasium, the environment interface most RL robotics builds on.",
+          "verified": true
+        },
+        {
+          "name": "Coppelia Robotics",
+          "github": "CoppeliaRobotics",
+          "huggingface": null,
+          "note": "CoppeliaSim.",
+          "verified": false
+        },
+        {
+          "name": "LightwheelAI",
+          "github": "LightwheelAI",
+          "huggingface": "LightwheelAI",
+          "note": "Simulation assets; appears in the arXiv results.",
+          "verified": false
+        },
+        {
+          "name": "Bullet Physics",
+          "github": "bulletphysics",
+          "huggingface": null,
+          "note": "The basis for PyBullet.",
+          "verified": true
+        },
+        {
+          "name": "Project Chrono",
+          "github": "projectchrono",
+          "huggingface": null,
+          "note": "Multi-physics, granular and fluid-structure.",
+          "verified": false
+        },
+        {
+          "name": "Cyberbotics",
+          "github": "cyberbotics",
+          "huggingface": null,
+          "note": "Webots, Apache-2.0 since 2018.",
+          "verified": false
+        },
+        {
+          "name": "Drake / Robot Locomotion",
+          "github": "RobotLocomotion",
+          "huggingface": null,
+          "note": "MIT and Toyota Research Institute.",
+          "verified": true
+        },
+        {
+          "name": "Newton Physics",
+          "github": "newton-physics",
+          "huggingface": null,
+          "note": "NVIDIA, DeepMind and Disney Research jointly.",
+          "verified": false
+        },
+        {
+          "name": "Isaac Sim",
+          "github": "isaac-sim",
+          "huggingface": null,
+          "note": "Isaac Sim and Isaac Lab.",
+          "verified": false
+        },
+        {
+          "name": "Hao Su Lab",
+          "github": "haosulab",
+          "huggingface": null,
+          "note": "ManiSkill and SAPIEN, UCSD.",
+          "verified": false
+        },
+        {
+          "name": "PartNet-Mobility",
+          "github": "partnet-mobility",
+          "huggingface": null,
+          "note": "Articulated object benchmark underpinning ManiSkill.",
+          "verified": false
+        }
+      ]
+    },
+    "big_tech_labs": {
+      "orgs": [
+        {
+          "name": "NVIDIA",
+          "github": "NVIDIA",
+          "huggingface": "nvidia",
+          "note": "Isaac, GR00T, Cosmos. nvidia/cosmos has 11,980 stars and was not in the index.",
+          "verified": true
+        },
+        {
+          "name": "NVIDIA Labs",
+          "github": "NVlabs",
+          "huggingface": null,
+          "note": "Research releases, a separate organisation.",
+          "verified": true
+        },
+        {
+          "name": "NVIDIA Isaac ROS",
+          "github": "NVIDIA-ISAAC-ROS",
+          "huggingface": null,
+          "note": "At the owner cap.",
+          "verified": true
+        },
+        {
+          "name": "Google DeepMind",
+          "github": "google-deepmind",
+          "huggingface": null,
+          "note": "MuJoCo, Menagerie, the RT series, Gemini Robotics.",
+          "verified": true
+        },
+        {
+          "name": "Meta FAIR",
+          "github": "facebookresearch",
+          "huggingface": "facebook",
+          "note": "Habitat, SuperDex. project_superdex at 715 stars was missed.",
+          "verified": true
+        },
+        {
+          "name": "Allen Institute for AI",
+          "github": "allenai",
+          "huggingface": "allenai",
+          "note": "MolmoAct, audited by Argus.",
+          "verified": true
+        },
+        {
+          "name": "Microsoft Research",
+          "github": "microsoft",
+          "huggingface": "microsoft",
+          "note": "Very large organisation; needs filtering rather than blanket inclusion.",
+          "verified": true
+        },
+        {
+          "name": "Toyota Research Institute",
+          "github": "TRI-ML",
+          "huggingface": null,
+          "note": "Large behaviour models, diffusion policy work.",
+          "verified": false
+        },
+        {
+          "name": "Amazon Robotics / FAR",
+          "github": "amazon-science",
+          "huggingface": null,
+          "note": "amazon-far/PRISM appeared in the org sweep.",
+          "verified": false
+        },
+        {
+          "name": "ByteDance Seed",
+          "github": "ByteDance-Seed",
+          "huggingface": "ByteDance-Seed",
+          "note": "GR-2 and robotics VLA work.",
+          "verified": false
+        },
+        {
+          "name": "Tencent Robotics X",
+          "github": "tencent-ailab",
+          "huggingface": "tencent",
+          "note": "",
+          "verified": false
+        },
+        {
+          "name": "Alibaba DAMO",
+          "github": "alibaba",
+          "huggingface": "Alibaba-NLP",
+          "note": "",
+          "verified": false
+        },
+        {
+          "name": "Samsung Research",
+          "github": "SamsungLabs",
+          "huggingface": null,
+          "note": "",
+          "verified": false
+        },
+        {
+          "name": "Honda Research",
+          "github": "honda-research-institute",
+          "huggingface": null,
+          "note": "",
+          "verified": false
+        },
+        {
+          "name": "OpenAI",
+          "github": "openai",
+          "huggingface": "openai",
+          "note": "VPT, Minecraft gameplay with action logs.",
+          "verified": true
+        },
+        {
+          "name": "Google Research",
+          "github": "google-research",
+          "huggingface": null,
+          "note": "Language-Table and related.",
+          "verified": true
+        },
+        {
+          "name": "Google",
+          "github": "google",
+          "huggingface": null,
+          "note": "Brax. Separate from google-deepmind.",
+          "verified": true
+        },
+        {
+          "name": "PyTorch",
+          "github": "pytorch",
+          "huggingface": null,
+          "note": "TorchRL.",
+          "verified": true
+        },
+        {
+          "name": "Ray",
+          "github": "ray-project",
+          "huggingface": null,
+          "note": "RLlib, distributed RL.",
+          "verified": true
+        },
+        {
+          "name": "DLR German Aerospace",
+          "github": "DLR-RM",
+          "huggingface": null,
+          "note": "Stable-Baselines3, the standard RL baseline library.",
+          "verified": true
+        },
+        {
+          "name": "Skywork AI",
+          "github": "SkyworkAI",
+          "huggingface": null,
+          "note": "Matrix-Game interactive world model.",
+          "verified": false
+        },
+        {
+          "name": "Etched",
+          "github": "etched-ai",
+          "huggingface": null,
+          "note": "Oasis, with Decart.",
+          "verified": false
+        },
+        {
+          "name": "Kyutai",
+          "github": "kyutai-labs",
+          "huggingface": null,
+          "note": "Moshi, full-duplex spoken dialogue.",
+          "verified": false
+        },
+        {
+          "name": "Alibaba Qwen Audio",
+          "github": "QwenAudio",
+          "huggingface": null,
+          "note": "SenseVoice and CosyVoice.",
+          "verified": false
+        },
+        {
+          "name": "NetEase Youdao",
+          "github": "netease-youdao",
+          "huggingface": null,
+          "note": "EmotiVoice.",
+          "verified": false
+        }
+      ]
+    },
+    "autonomous_vehicles": {
+      "note": "Adjacent rather than core, but a large share of the perception code we index comes from here.",
+      "orgs": [
+        {
+          "name": "Autoware Foundation",
+          "github": "autowarefoundation",
+          "huggingface": null,
+          "note": "",
+          "verified": true
+        },
+        {
+          "name": "comma.ai",
+          "github": "commaai",
+          "huggingface": null,
+          "note": "openpilot, 63,799 stars — the most-starred repository in our index.",
+          "verified": true
+        },
+        {
+          "name": "Wayve",
+          "github": "wayveai",
+          "huggingface": null,
+          "note": "About $8.6B.",
+          "verified": false
+        },
+        {
+          "name": "Waymo",
+          "github": "waymo-research",
+          "huggingface": null,
+          "note": "Waymo Open Dataset.",
+          "verified": false
+        },
+        {
+          "name": "Nuro",
+          "github": "nuro-ai",
+          "huggingface": null,
+          "note": "",
+          "verified": false
+        },
+        {
+          "name": "Applied Intuition",
+          "github": "appliedintuition",
+          "huggingface": null,
+          "note": "Simulation for autonomous vehicles.",
+          "verified": false
+        },
+        {
+          "name": "OpenDriveLab",
+          "github": "OpenDriveLab",
+          "huggingface": null,
+          "note": "UniAD.",
+          "verified": true
+        }
+      ]
+    },
+    "academic_labs": {
+      "note": "Derived lists catch these well once they publish, but several are at our owner cap and losing work.",
+      "orgs": [
+        {
+          "name": "Stanford Vision & Learning",
+          "github": "StanfordVL",
+          "huggingface": null,
+          "note": "BEHAVIOR, iGibson, OmniGibson.",
+          "verified": false
+        },
+        {
+          "name": "Stanford REAL",
+          "github": "real-stanford",
+          "huggingface": null,
+          "note": "Diffusion Policy, UMI.",
+          "verified": true
+        },
+        {
+          "name": "UT Austin RPL",
+          "github": "UT-Austin-RPL",
+          "huggingface": null,
+          "note": "LIBERO, robosuite.",
+          "verified": true
+        },
+        {
+          "name": "Berkeley RAIL",
+          "github": "rail-berkeley",
+          "huggingface": null,
+          "note": "BridgeData, Octo.",
+          "verified": false
+        },
+        {
+          "name": "ETH Zurich RSL",
+          "github": "leggedrobotics",
+          "huggingface": null,
+          "note": "ANYmal, rsl_rl, legged_gym. At the owner cap, and hoi-retarget at 127 stars was discarded by it.",
+          "verified": true
+        },
+        {
+          "name": "Bonn Photogrammetry & Robotics",
+          "github": "PRBonn",
+          "huggingface": null,
+          "note": "KISS-ICP.",
+          "verified": true
+        },
+        {
+          "name": "HKU MaRS Lab",
+          "github": "hku-mars",
+          "huggingface": null,
+          "note": "FAST-LIO, FAST-LIVO. 16,016 stars and no active repositories.",
+          "verified": true
+        },
+        {
+          "name": "HKUST Aerial Robotics",
+          "github": "HKUST-Aerial-Robotics",
+          "huggingface": null,
+          "note": "VINS-Mono, Fast-Planner.",
+          "verified": true
+        },
+        {
+          "name": "IIT robotology",
+          "github": "robotology",
+          "huggingface": null,
+          "note": "The iCub software distribution.",
+          "verified": true
+        },
+        {
+          "name": "CMU AirLab",
+          "github": "castacks",
+          "huggingface": null,
+          "note": "TartanAir.",
+          "verified": false
+        },
+        {
+          "name": "Shanghai AI Lab",
+          "github": "InternRobotics",
+          "huggingface": "InternRobotics",
+          "note": "GAUGE, InternVLA. In the arXiv results but not the index.",
+          "verified": false
+        },
+        {
+          "name": "BAAI",
+          "github": "FlagOpen",
+          "huggingface": "BAAI",
+          "note": "RoboBrain, SWITCH.",
+          "verified": false
+        },
+        {
+          "name": "NYU GRAIL",
+          "github": "NYU-robot-learning",
+          "huggingface": null,
+          "note": "Dobb-E, home robot learning from phone demonstrations.",
+          "verified": false
+        },
+        {
+          "name": "MIT Biomimetics",
+          "github": "mit-biomimetics",
+          "huggingface": null,
+          "note": "Mini Cheetah.",
+          "verified": false
+        },
+        {
+          "name": "Tsinghua TEA Lab",
+          "github": "TEA-Lab",
+          "huggingface": null,
+          "note": "",
+          "verified": false
+        },
+        {
+          "name": "Tsinghua ML",
+          "github": "thu-ml",
+          "huggingface": null,
+          "note": "RDT-1B bimanual diffusion model.",
+          "verified": false
+        },
+        {
+          "name": "Tsinghua CoAI",
+          "github": "thu-coai",
+          "huggingface": null,
+          "note": "ESConv emotional-support conversations.",
+          "verified": false
+        },
+        {
+          "name": "DeCLaRe Lab",
+          "github": "declare-lab",
+          "huggingface": null,
+          "note": "MELD, multimodal emotion. Singapore.",
+          "verified": false
+        },
+        {
+          "name": "Retico",
+          "github": "retico-team",
+          "huggingface": null,
+          "note": "Incremental spoken dialogue framework.",
+          "verified": false
+        },
+        {
+          "name": "MIT Improbable AI",
+          "github": "improbable-ai",
+          "huggingface": null,
+          "note": "LucidSim, deformable manipulation, extreme locomotion.",
+          "verified": false
+        }
+      ]
+    },
+    "benchmarks_and_datasets": {
+      "note": "Dataset and benchmark projects that publish under their own organisation rather than a parent lab's. Taken from the robotindex models-data page, which is itself a curated view of what matters and was not being used as a watch-list source.",
+      "orgs": [
+        {
+          "name": "DROID",
+          "github": "droid-dataset",
+          "huggingface": null,
+          "note": "76,000 trajectories across 564 scenes.",
+          "verified": false
+        },
+        {
+          "name": "RoboCasa",
+          "github": "robocasa",
+          "huggingface": null,
+          "note": "RoboCasa365, household simulation at scale.",
+          "verified": false
+        },
+        {
+          "name": "ARISE Initiative",
+          "github": "ARISE-Initiative",
+          "huggingface": null,
+          "note": "robosuite and robomimic, Stanford and UT Austin.",
+          "verified": true
+        },
+        {
+          "name": "Octo",
+          "github": "octo-models",
+          "huggingface": null,
+          "note": "Berkeley's generalist transformer policy.",
+          "verified": false
+        },
+        {
+          "name": "OpenVLA",
+          "github": "openvla",
+          "huggingface": null,
+          "note": "7B open vision-language-action model.",
+          "verified": false
+        },
+        {
+          "name": "RoboTurk",
+          "github": "RoboTurk-Platform",
+          "huggingface": null,
+          "note": "Crowdsourced teleoperation.",
+          "verified": false
+        },
+        {
+          "name": "RoboArena",
+          "github": "robo-arena",
+          "huggingface": null,
+          "note": "Distributed real-world policy evaluation.",
+          "verified": false
+        },
+        {
+          "name": "RoboDojo",
+          "github": "RoboDojo-Benchmark",
+          "huggingface": null,
+          "note": "Sim-and-real generalist benchmark.",
+          "verified": false
+        },
+        {
+          "name": "ManipArena",
+          "github": "maniparena",
+          "huggingface": null,
+          "note": "Real-robot bimanual benchmark.",
+          "verified": false
+        },
+        {
+          "name": "UniDex",
+          "github": "unidex-ai",
+          "huggingface": null,
+          "note": "50,000+ trajectories across eight dexterous hands.",
+          "verified": false
+        },
+        {
+          "name": "OpenHLM",
+          "github": "OpenHLM-project",
+          "huggingface": null,
+          "note": "Whole-body humanoid loco-manipulation on the Unitree G1.",
+          "verified": false
+        },
+        {
+          "name": "Physical Superintelligence Lab",
+          "github": "physical-superintelligence-lab",
+          "huggingface": null,
+          "note": "Psi0 and Humanoid Everyday.",
+          "verified": false
+        },
+        {
+          "name": "EgoVerse",
+          "github": "GaTech-RL2",
+          "huggingface": null,
+          "note": "1,362 hours of egocentric demonstrations, Georgia Tech.",
+          "verified": false
+        },
+        {
+          "name": "Amazon FAR",
+          "github": "amazon-far",
+          "huggingface": null,
+          "note": "ABC-130K, 130,703 bimanual episodes. Audited by Argus.",
+          "verified": false
+        },
+        {
+          "name": "Alexa AI",
+          "github": "alexa",
+          "huggingface": null,
+          "note": "TEACh, household task dialogues.",
+          "verified": false
+        },
+        {
+          "name": "ALFRED",
+          "github": "askforalfred",
+          "huggingface": null,
+          "note": "Language-conditioned household benchmark.",
+          "verified": false
+        },
+        {
+          "name": "BAAI Humanoid",
+          "github": "BAAI-Humanoid",
+          "huggingface": null,
+          "note": "MOSAIC motion bank.",
+          "verified": false
+        },
+        {
+          "name": "DAVIAN Robotics",
+          "github": "DAVIAN-Robotics",
+          "huggingface": null,
+          "note": "PHUMA, physics-filtered humanoid locomotion, KAIST.",
+          "verified": true
+        },
+        {
+          "name": "KAIST CLVR",
+          "github": "clvrai",
+          "huggingface": null,
+          "note": "FurnitureBench.",
+          "verified": true
+        },
+        {
+          "name": "Freiburg robot learning",
+          "github": "mees",
+          "huggingface": null,
+          "note": "CALVIN. Published under a personal account.",
+          "verified": false
+        },
+        {
+          "name": "Technion",
+          "github": "zoharri",
+          "huggingface": null,
+          "note": "LESS tactile dataset. Personal account.",
+          "verified": false
+        }
+      ]
+    }
+  },
+  "_note_on_duplicates": "Each organisation appears once. Open X-Embodiment is published by google-deepmind, which is listed under big_tech_labs."
+}
