@@ -20,7 +20,10 @@ name: Breaking
 # Without them it falls back to the RSS feed, which still works and still finds
 # things, but carries no score and no comment count: every Reddit post then
 # sorts equally at zero and is exempted from the score floor rather than being
-# silently dropped by it.
+# silently dropped by it. The handful of Reddit rows that do name a repository
+# are then scored individually from their own .json, which carries the score
+# unauthenticated — four requests in a thirty-day scan, rather than the hundred
+# that scoring everything would take.
 #
 # It also follows the page each post links to. A first run extracted a link from
 # only four posts in forty, because most point at an article rather than a
@@ -53,6 +56,10 @@ on:
       follow_limit:
         description: "How many linked pages to fetch, most-discussed first"
         default: "60"
+      no_reddit_scores:
+        description: "Skip the per-post fetch that scores Reddit rows which found a repository"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -87,6 +94,7 @@ jobs:
             ${{ github.event.inputs.links_only == 'true' && '--links-only' || '' }} \
             ${{ github.event.inputs.no_follow == 'true' && '--no-follow' || '' }} \
             --follow-limit "${{ github.event.inputs.follow_limit || '60' }}" \
+            ${{ github.event.inputs.no_reddit_scores == 'true' && '--no-reddit-scores' || '' }} \
             --out "data/history/breaking-${STAMP}.csv" \
             2>&1 | tee /tmp/breaking.log
 
