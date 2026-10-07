@@ -165,7 +165,7 @@ def scan_hn(since_ts, per_query=50):
     return out
 
 
-def get_text(url, tries=2, timeout=25):
+def get_text(url, tries=4, timeout=25):
     """Fetch a page as text rather than JSON."""
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     for attempt in range(tries):
@@ -176,11 +176,20 @@ def get_text(url, tries=2, timeout=25):
                     return "", "not text"
                 return r.read(400000).decode("utf-8", "replace"), None
         except urllib.error.HTTPError as e:
-            return "", f"http {e.code}"
+            # Reddit rate-limits the RSS feed hard from shared CI addresses: a
+            # first run got r/robotics and then 429 on the other three subs,
+            # because this returned on the first error instead of waiting.
+            if e.code == 429 and attempt < tries - 1:
+                wait = int(e.headers.get("Retry-After") or 30) * (attempt + 1)
+                print(f"    429, waiting {wait}s", file=sys.stderr)
+                time.sleep(min(wait, 180))
+                continue
+            if e.code in (403, 404) or attempt == tries - 1:
+                return "", f"http {e.code}"
         except Exception as e:
             if attempt == tries - 1:
                 return "", str(e)[:40]
-            time.sleep(2)
+        time.sleep(3 * (attempt + 1))
     return "", "failed"
 
 
@@ -196,7 +205,7 @@ def scan_reddit(since_ts):
         body, err = get_text(REDDIT_RSS.format(sub=sub))
         if err or not body:
             print(f"  r/{sub}: {err or 'empty'}", file=sys.stderr)
-            time.sleep(2)
+            time.sleep(12)
             continue
         entries = re.findall(r"<entry>([\s\S]*?)</entry>", body)
         for e in entries:
@@ -227,7 +236,7 @@ def scan_reddit(since_ts):
             })
         print(f"  r/{sub}: {len([x for x in out if x['source'] == f'r/{sub}'])} posts",
               file=sys.stderr)
-        time.sleep(2)
+        time.sleep(12)   # Reddit needs real spacing between subreddits, not courtesy
     return out
 
 
@@ -288,7 +297,7 @@ def main():
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
-    since = datetime.datetime.utcnow() - datetime.timedelta(days=a.days)
+    since = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=a.days)
     since_ts = int(since.timestamp())
     known_repos, known_datasets = known()
     watched = watched_orgs()
