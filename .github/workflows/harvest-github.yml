@@ -34,6 +34,13 @@ on:
       since:
         description: "First year of creation dates"
         default: "2015"
+      no_manifest:
+        description: "Skip the manifest rescue (URDF / ROS / simulator-dependency check)"
+        type: boolean
+        default: false
+      manifest_word_limit:
+        description: "How many of the most-starred word-filter rejects to check"
+        default: "400"
       owner_cap:
         description: "Max repos kept per owner"
         default: "10"
@@ -69,6 +76,8 @@ jobs:
             --recent-stars "${{ github.event.inputs.recent_stars || '10' }}" \
             --since "${{ github.event.inputs.since || '2015' }}" \
             --owner-cap "${{ github.event.inputs.owner_cap || '10' }}" \
+            --manifest-word-limit "${{ github.event.inputs.manifest_word_limit || '400' }}" \
+            ${{ github.event.inputs.no_manifest == 'true' && '--no-manifest' || '' }} \
             --out "data/history/gh-${STAMP}.csv" \
             | tee /tmp/gh.log
 
