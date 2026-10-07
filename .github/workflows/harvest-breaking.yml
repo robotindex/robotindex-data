@@ -1,0 +1,96 @@
+name: Breaking
+
+# Weekly scan of Hacker News and r/robotics for work that has just been released.
+#
+# Every other route here has a structural delay. The GitHub harvest waits for
+# fifty stars; the Hugging Face harvest for a hundred downloads; the
+# organisation sweep only asks accounts already on the watch list; the arXiv
+# harvest only sees work written up as a paper.
+#
+# Pantheon's Argus fell through all four. Published 1 October, audited nine of
+# the largest open robotics datasets, no paper, a company nobody here had heard
+# of, and missed by a harvest two days later. It reached us because a person saw
+# a link. This is that person, automated.
+#
+# Neither API needs a key. Reddit is rate-limited harder than Hacker News, so
+# the script paces itself and degrades to whichever source answers.
+#
+# The output is a review list, not an ingestion. Social posts are a noisy signal
+# and the point of the other harvests is that they are not — so nothing here
+# enters the index without someone reading it first.
+
+on:
+  schedule:
+    - cron: "0 11 * * 5"      # Fridays, after the week's other harvests
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "How many days back to scan"
+        default: "7"
+      min_score:
+        description: "Ignore posts below this score"
+        default: "3"
+      links_only:
+        description: "Only keep posts that point at a repository or dataset"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: harvest-breaking
+  cancel-in-progress: false
+
+jobs:
+  breaking:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set date
+        run: echo "STAMP=$(date -u +%Y-%m-%d)" >> "$GITHUB_ENV"
+
+      - name: Scan
+        run: |
+          mkdir -p data/history
+          python scripts/harvest_breaking.py \
+            --days "${{ github.event.inputs.days || '7' }}" \
+            --min-score "${{ github.event.inputs.min_score || '3' }}" \
+            ${{ github.event.inputs.links_only == 'true' && '--links-only' || '' }} \
+            --out "data/history/breaking-${STAMP}.csv" \
+            | tee /tmp/breaking.log
+
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/history/
+          if git diff --staged --quiet; then
+            echo "Nothing new."
+          else
+            git commit -m "Breaking scan ${STAMP}"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: breaking-${{ env.STAMP }}
+          path: |
+            data/history/breaking-${{ env.STAMP }}.csv
+            /tmp/breaking.log
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "## Released this week"
+            echo '```'; cat /tmp/breaking.log; echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
