@@ -399,9 +399,96 @@ def harvest(min_stars, since_year, token, recent_stars=10, recent_days=90):
     return seen, truncated
 
 
+# ---------------------------------------------------------------- manifest gate
+#
+# Everything above decides what a repository IS from what it SAYS: its name, its
+# description, its topics. That is lexical, and it fails in both directions —
+# topic:robotics returns a web scraper, while a driver whose description reads
+# "control software for our arm" has no robotics word in it at all.
+#
+# These patterns ask a different question: what does the repository CONTAIN. A
+# robot description file, a ROS build manifest, or a dependency on a simulator
+# is structural evidence that no amount of prose can fake. NVIDIA's maths proofs
+# have no URDF; Voxel51's agricultural datasets do not depend on robosuite.
+#
+# It costs one API call per repository, so it is used selectively: to rescue
+# repositories the lexical filter rejected, and to let a repository past the
+# per-owner cap. It is not run over everything.
+
+ROBOT_ASSET = re.compile(
+    r"\.(urdf|xacro|mjcf|sdf|usd|usda)$|"
+    r"(^|/)(package\.xml|scene\.xml|robot\.xml|CATKIN_IGNORE|COLCON_IGNORE)$|"
+    r"(^|/)(urdf|xacro|meshes|mjcf|mujoco|launch|rviz|moveit_config|"
+    r"robot_description|config/joint)/", re.I)
+
+DEP_FINGERPRINT = re.compile(
+    r"\b(lerobot|rlds|robomimic|robosuite|isaacgym|isaaclab|isaac-sim|mujoco|"
+    r"dm-control|genesis-world|pinocchio|pybullet|rerun-sdk|roboticstoolbox|"
+    r"ros2?-|rclpy|rclcpp|moveit|nav2|open3d|pytransform3d|urdfpy|yourdfpy|"
+    r"placo|crocoddyl|ocs2|drake|sapien|habitat-sim|gymnasium-robotics)\b", re.I)
+
+DEP_FILES = ("requirements.txt", "pyproject.toml", "setup.py", "environment.yml",
+             "package.xml", "CMakeLists.txt", "Cargo.toml")
+
+
+def repo_tree(full, branch, token, timeout=20):
+    """Every path in a repository, in one call. Returns [] on any failure, so a
+    missing tree is treated as no evidence rather than as an error."""
+    url = f"https://api.github.com/repos/{full}/git/trees/{branch}?recursive=1"
+    try:
+        d = gh(url, token, timeout=timeout, tries=2)
+    except Exception:
+        return []
+    if not isinstance(d, dict):
+        return []
+    return [t.get("path", "") for t in (d.get("tree") or [])]
+
+
+def manifest_evidence(full, branch, token, read_deps=True):
+    """Does this repository contain robotics assets?
+
+    Returns (bool, reason). Checks paths first because that is free once the
+    tree is fetched, and only reads dependency files if the paths say nothing.
+    """
+    paths = repo_tree(full, branch or "main", token)
+    if not paths:
+        paths = repo_tree(full, "master", token)
+    if not paths:
+        return False, ""
+
+    for pth in paths:
+        if ROBOT_ASSET.search(pth):
+            return True, f"asset:{pth.rsplit('/', 1)[-1][:40]}"
+
+    if not read_deps:
+        return False, ""
+
+    # A dependency on a simulator or a robotics middleware is the next
+    # strongest signal. Only the root copies, to keep this to one extra call.
+    for name in DEP_FILES:
+        if name not in paths and f"./{name}" not in paths:
+            continue
+        raw = f"https://raw.githubusercontent.com/{full}/{branch or 'main'}/{name}"
+        try:
+            req = urllib.request.Request(raw, headers={"User-Agent": "robotindex-gh"})
+            with urllib.request.urlopen(req, timeout=15) as r:
+                body = r.read(40000).decode("utf-8", "replace")
+        except Exception:
+            continue
+        m = DEP_FINGERPRINT.search(body)
+        if m:
+            return True, f"dep:{m.group(0).lower()}"
+    return False, ""
+
+
 def keep(items, owner_cap):
+    """Filter the harvested items. Repositories rejected for lacking a robotics
+    word, or for exceeding the per-owner cap, are returned separately so a
+    manifest check can rescue the ones that contain robot assets — see
+    rescue() and the note above manifest_evidence()."""
     rows, dropped = [], {"junk_name": 0, "not_robotics": 0, "bookish": 0,
                          "no_robotics_word": 0, "owner_cap": 0}
+    rescuable = {"no_robotics_word": [], "owner_cap": []}
     by_owner = {}
     today = datetime.date.today()
     for full, it in sorted(items.items(), key=lambda kv: -kv[1]["stargazers_count"]):
@@ -421,9 +508,11 @@ def keep(items, owner_cap):
         # kornia all carry topic:robotics and are not robotics.
         if not ROBOTICS_WORD.search(desc + " " + full):
             dropped["no_robotics_word"] += 1
+            rescuable["no_robotics_word"].append((full, it))
             continue
         if by_owner.get(owner, 0) >= owner_cap:
             dropped["owner_cap"] += 1
+            rescuable["owner_cap"].append((full, it))
             continue
         by_owner[owner] = by_owner.get(owner, 0) + 1
 
@@ -455,7 +544,93 @@ def keep(items, owner_cap):
             "embodiment": "",
             "embodiment_source": "",
         })
-    return rows, dropped
+    return rows, dropped, rescuable
+
+
+def rescue(rescuable, token, limit_word=400, limit_cap=0, read_deps=True):
+    """Re-admit repositories that the lexical filter or the owner cap rejected
+    but that contain robot assets.
+
+    Two different failures, rescued for different reasons.
+
+    The cap is the clearer case. It exists so one prolific publisher cannot
+    dominate a leaderboard, but it was discarding real work: leggedrobotics is
+    at the cap, and hoi-retarget — 127 stars, carrying topic:robotics — was
+    dropped by it. A repository holding a URDF or depending on a simulator is
+    exactly what the index is for, so it should not be lost to a display rule.
+    Every capped repository is checked by default.
+
+    The word filter is noisier, so only the most-starred rejects are checked.
+    The filter is right far more often than it is wrong — it removed 4,177
+    entries with no robot, arm, drone or sensor in them — but a first-party
+    driver whose description reads "control software for our arm" has no
+    robotics word in it either.
+
+    Returns (rescued_rows, stats). Each rescued row carries found_by so the
+    provenance survives into the index.
+    """
+    out, stats = [], {"checked": 0, "rescued_cap": 0, "rescued_word": 0,
+                      "calls": 0, "by_reason": {}}
+    today = datetime.date.today()
+
+    def admit(full, it, why, how):
+        owner, _, _ = full.partition("/")
+        pushed = (it.get("pushed_at") or "")[:10]
+        age = (today - datetime.date.fromisoformat(pushed)).days if pushed else None
+        lic = (it.get("license") or {}).get("spdx_id") or ""
+        desc = it.get("description") or ""
+        return {
+            "repo": full, "owner": owner, "stars": it["stargazers_count"],
+            "forks": it.get("forks_count", 0),
+            "open_issues": it.get("open_issues_count", 0),
+            "license": "" if lic == "NOASSERTION" else lic,
+            "license_detected": lic,
+            "commercial": ("yes" if lic in PERMISSIVE else
+                           "copyleft" if lic.startswith(("GPL", "AGPL", "LGPL")) else
+                           "undeclared"),
+            "created": (it.get("created_at") or "")[:10], "pushed": pushed,
+            "days_since_push": age,
+            "status": ("archived" if it.get("archived") else
+                       "active" if age is not None and age <= 90 else
+                       "slowing" if age is not None and age <= 365 else "inactive"),
+            "language": it.get("language") or "",
+            "topics": " ".join(it.get("topics") or []),
+            "url": it["html_url"],
+            "description": re.sub(r"\s+", " ", desc)[:300],
+            "embodiment": "", "embodiment_source": "",
+            "found_by": f"manifest:{how}", "manifest_evidence": why,
+        }
+
+    # capped repositories: the cap is a display rule, not a judgement about worth
+    capped = rescuable.get("owner_cap", [])
+    if limit_cap:
+        capped = sorted(capped, key=lambda kv: -kv[1]["stargazers_count"])[:limit_cap]
+    for full, it in capped:
+        stats["checked"] += 1
+        stats["calls"] += 1
+        ok, why = manifest_evidence(full, it.get("default_branch"), token, read_deps)
+        if ok:
+            out.append(admit(full, it, why, "cap"))
+            stats["rescued_cap"] += 1
+            stats["by_reason"][why.split(":")[0]] = \
+                stats["by_reason"].get(why.split(":")[0], 0) + 1
+        time.sleep(0.05)
+
+    # word-filter rejects: only the most-starred, since the filter is usually right
+    words = sorted(rescuable.get("no_robotics_word", []),
+                   key=lambda kv: -kv[1]["stargazers_count"])[:limit_word]
+    for full, it in words:
+        stats["checked"] += 1
+        stats["calls"] += 1
+        ok, why = manifest_evidence(full, it.get("default_branch"), token, read_deps)
+        if ok:
+            out.append(admit(full, it, why, "word"))
+            stats["rescued_word"] += 1
+            stats["by_reason"][why.split(":")[0]] = \
+                stats["by_reason"].get(why.split(":")[0], 0) + 1
+        time.sleep(0.05)
+
+    return out, stats
 
 
 def main():
@@ -471,6 +646,15 @@ def main():
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--no-readme", action="store_true",
                     help="skip the per-repo README fetch (much lower embodiment coverage)")
+    ap.add_argument("--no-manifest", action="store_true",
+                    help="skip the manifest rescue. Without it, repositories holding a "
+                         "URDF or depending on a simulator stay dropped because their "
+                         "description happens to use no robotics word, and anything over "
+                         "the owner cap is lost regardless of what it contains.")
+    ap.add_argument("--manifest-word-limit", type=int, default=400,
+                    help="how many of the most-starred word-filter rejects to check")
+    ap.add_argument("--manifest-cap-limit", type=int, default=0,
+                    help="how many capped repos to check; 0 means all of them")
     a = ap.parse_args()
 
     token = os.environ.get("GITHUB_TOKEN")
@@ -480,11 +664,36 @@ def main():
 
     items, truncated = harvest(a.min_stars, a.since, token,
                                a.recent_stars, a.recent_days)
-    rows, dropped = keep(items, a.owner_cap)
+    rows, dropped, rescuable = keep(items, a.owner_cap)
 
     print(f"\nunique repos found: {len(items)} | kept {len(rows)}")
     for k, v in dropped.items():
         print(f"  -{v:<6} {k}")
+
+    for r in rows:
+        r.setdefault("found_by", "search")
+        r.setdefault("manifest_evidence", "")
+
+    if not a.no_manifest:
+        n_cap = len(rescuable["owner_cap"])
+        n_word = min(a.manifest_word_limit, len(rescuable["no_robotics_word"]))
+        print(f"\nmanifest check on {n_cap} capped and {n_word} word-filtered repos",
+              file=sys.stderr)
+        extra, mstats = rescue(rescuable, token,
+                               a.manifest_word_limit, a.manifest_cap_limit)
+        rows.extend(extra)
+        print(f"\nmanifest rescue: {len(extra)} re-admitted from "
+              f"{mstats['checked']} checked")
+        print(f"  {mstats['rescued_cap']:<5} over the owner cap but holding robot assets")
+        print(f"  {mstats['rescued_word']:<5} no robotics word in the description, "
+              f"but robot assets present")
+        if mstats["by_reason"]:
+            for k, v in sorted(mstats["by_reason"].items(), key=lambda kv: -kv[1]):
+                print(f"      {v:>4}  evidence from {k}")
+        if extra:
+            print(f"\n  {'stars':>6}  {'evidence':<22} repo")
+            for r in sorted(extra, key=lambda x: -x["stars"])[:15]:
+                print(f"  {r['stars']:>6}  {r['manifest_evidence'][:22]:<22} {r['repo']}")
     if truncated:
         print(f"\n{len(truncated)} slices hit the 1,000-result cap and are "
               f"incomplete — narrow the window for these:")
@@ -530,10 +739,20 @@ def main():
         print("\n(dry run — nothing written)", file=sys.stderr)
         return
 
+    # Columns from the union of every row, not from the first one: rescued rows
+    # carry found_by and manifest_evidence, and taking the shape from row zero
+    # would silently drop whichever kind happened not to be first.
+    cols, seen = [], set()
+    for r in rows:
+        for k in r:
+            if k not in seen:
+                seen.add(k)
+                cols.append(k)
     with open(a.out, "w", newline="", encoding="utf-8") as fh:
-        w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()) if rows else ["repo"])
+        w = csv.DictWriter(fh, fieldnames=cols or ["repo"], extrasaction="ignore")
         w.writeheader()
-        w.writerows(rows)
+        for r in rows:
+            w.writerow({k: r.get(k, "") for k in cols})
     print(f"\nwritten to {a.out}")
 
 
