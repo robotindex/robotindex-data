@@ -153,6 +153,35 @@ def known():
     return repos, datasets
 
 
+def gh_profile(handle, token):
+    """The account's own profile: homepage, display name, description, location.
+
+    One extra call per organisation. Worth it because the homepage is the one
+    field the map cannot sensibly hold by hand — 169 URLs written from memory
+    would be mostly wrong and would go stale, whereas GitHub holds whatever the
+    organisation itself set and keeps it current.
+    """
+    for kind in ("orgs", "users"):
+        d, err = gh_get(f"{GH_API}/{kind}/{handle}", token)
+        if err == "no such account":
+            continue
+        if err or not d:
+            return {}
+        site = (d.get("blog") or "").strip()
+        if site and not site.startswith(("http://", "https://")):
+            site = "https://" + site
+        return {
+            "website": site,
+            "display_name": d.get("name") or "",
+            "bio": re.sub(r"\s+", " ", d.get("description") or d.get("bio") or "")[:200],
+            "location": d.get("location") or "",
+            "public_repos": d.get("public_repos", 0),
+            "followers": d.get("followers", 0),
+            "account_created": (d.get("created_at") or "")[:10],
+        }
+    return {}
+
+
 def list_github(handle, token, since, pages=4):
     """Every public repository an account owns, newest first. Tries the org
     endpoint then the user one: several of the most interesting publishers are
@@ -255,6 +284,8 @@ def main():
              "gh_exists": "", "hf_exists": "",
              "repos": 0, "stars": 0, "repos_new": 0, "repos_known": 0,
              "datasets": 0, "downloads": 0, "datasets_new": 0, "datasets_known": 0,
+             "website": "", "display_name": "", "location": "",
+             "followers": 0, "public_repos": 0,
              "last_activity": "", "note": o.get("note", "")[:200]}
 
         if o["github"]:
@@ -264,6 +295,14 @@ def main():
                 bad_handles.append((o["name"], "github", o["github"]))
             else:
                 verified["github"] += 1
+                prof = gh_profile(o["github"], gh_token)
+                s["website"] = prof.get("website", "")
+                s["display_name"] = prof.get("display_name", "")
+                s["location"] = prof.get("location", "")
+                s["followers"] = prof.get("followers", 0)
+                s["public_repos"] = prof.get("public_repos", 0)
+                if prof.get("bio") and not s["note"]:
+                    s["note"] = prof["bio"]
                 for it in items:
                     full = it.get("full_name", "")
                     if not full or it.get("fork"):
@@ -403,7 +442,8 @@ def main():
             w.writerows(new_items)
         print(f"\nnew items written to {a.out}")
 
-    cols = ["name", "category", "github", "huggingface", "gh_exists", "hf_exists",
+    cols = ["name", "display_name", "category", "website", "location",
+            "github", "huggingface", "gh_exists", "hf_exists", "followers", "public_repos",
             "repos", "stars", "repos_new", "repos_known",
             "datasets", "downloads", "datasets_new", "datasets_known",
             "last_activity", "days_since_activity", "note"]
@@ -412,6 +452,22 @@ def main():
         w.writeheader()
         w.writerows(summaries)
     print(f"per-organisation summary written to {a.summary_out}")
+
+    # Fold the homepages back into the map. GitHub holds what each organisation
+    # set itself, so the map stays current without anyone maintaining a URL list.
+    found = {s["name"]: s["website"] for s in summaries if s.get("website")}
+    if found:
+        changed = 0
+        for block in m["categories"].values():
+            for o in block["orgs"]:
+                w = found.get(o["name"])
+                if w and o.get("website") != w:
+                    o["website"] = w
+                    changed += 1
+        if changed:
+            with open(a.map, "w", encoding="utf-8") as fh:
+                json.dump(m, fh, indent=2, ensure_ascii=False)
+            print(f"{changed} homepages written back into {a.map}")
     return 0
 
 
