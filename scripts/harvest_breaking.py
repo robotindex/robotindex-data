@@ -193,13 +193,98 @@ def get_text(url, tries=4, timeout=25):
     return "", "failed"
 
 
+def reddit_token():
+    """An application-only OAuth token, or None.
+
+    Reddit closed the public JSON API to unauthenticated clients, and the RSS
+    feed that replaced it carries no score and no comment count — so every
+    Reddit post sorted equally at zero and the score floor had to be waived for
+    them. With a token the listing endpoint returns both, and Reddit's limits
+    are far more generous: 100 requests a minute rather than the handful the
+    unauthenticated feed allows.
+
+    Needs REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET, from a free "script" app
+    registered at reddit.com/prefs/apps. Without them this returns None and the
+    caller falls back to RSS, which still works and still finds things.
+    """
+    cid = os.environ.get("REDDIT_CLIENT_ID")
+    secret = os.environ.get("REDDIT_CLIENT_SECRET")
+    if not (cid and secret):
+        return None
+    import base64
+    auth = base64.b64encode(f"{cid}:{secret}".encode()).decode()
+    data = urllib.parse.urlencode({"grant_type": "client_credentials"}).encode()
+    req = urllib.request.Request(
+        "https://www.reddit.com/api/v1/access_token", data=data,
+        headers={"Authorization": f"Basic {auth}", "User-Agent": UA})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            return json.load(r).get("access_token")
+    except Exception as e:
+        print(f"  reddit auth failed ({str(e)[:40]}) — falling back to RSS",
+              file=sys.stderr)
+        return None
+
+
+def scan_reddit_oauth(since_ts, token, limit=100, pages=3):
+    """The listing endpoint, with scores and comment counts."""
+    out = []
+    for sub in SUBS:
+        after, got = None, 0
+        for _ in range(pages):
+            url = (f"{REDDIT_JSON.format(sub=sub)}?limit={limit}"
+                   + (f"&after={after}" if after else ""))
+            req = urllib.request.Request(url, headers={
+                "Authorization": f"bearer {token}", "User-Agent": UA})
+            try:
+                with urllib.request.urlopen(req, timeout=25) as r:
+                    d = json.load(r)
+            except Exception as e:
+                print(f"  r/{sub}: {str(e)[:40]}", file=sys.stderr)
+                break
+            children = (d.get("data") or {}).get("children") or []
+            if not children:
+                break
+            stop = False
+            for c in children:
+                p = c.get("data") or {}
+                if (p.get("created_utc") or 0) < since_ts:
+                    stop = True
+                    break
+                title = p.get("title") or ""
+                out.append({
+                    "source": f"r/{sub}",
+                    "title": title,
+                    "url": p.get("url_overridden_by_dest") or p.get("url") or "",
+                    "discussion": "https://www.reddit.com" + (p.get("permalink") or ""),
+                    "score": p.get("score") or 0,
+                    "comments": p.get("num_comments") or 0,
+                    "created": datetime.datetime.fromtimestamp(
+                        p.get("created_utc") or 0, datetime.timezone.utc).date().isoformat(),
+                    "text": f"{title} {p.get('url') or ''} {(p.get('selftext') or '')[:3000]}",
+                })
+                got += 1
+            after = (d.get("data") or {}).get("after")
+            if stop or not after:
+                break
+            time.sleep(1.2)
+        print(f"  r/{sub}: {got} posts (with scores)", file=sys.stderr)
+        time.sleep(1.2)
+    return out
+
+
 def scan_reddit(since_ts):
-    """Reddit's new-post feed, by RSS.
+    """Reddit's new-post feed. OAuth where a token is available, RSS otherwise.
 
     Returns the same shape as scan_hn, with score 0: RSS carries no score, so
     --min-score would silently drop everything from Reddit. These rows are
     exempted from that filter in main() instead.
     """
+    tok = reddit_token()
+    if tok:
+        return scan_reddit_oauth(since_ts, tok)
+    print("  no REDDIT_CLIENT_ID — using RSS, which carries no score or comment count",
+          file=sys.stderr)
     out = []
     for sub in SUBS:
         body, err = get_text(REDDIT_RSS.format(sub=sub))
