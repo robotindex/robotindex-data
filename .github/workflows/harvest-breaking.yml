@@ -12,9 +12,15 @@ name: Breaking
 # of, and missed by a harvest two days later. It reached us because a person saw
 # a link. This is that person, automated.
 #
-# Neither source needs a key. Reddit closed its JSON API to unauthenticated
-# clients, so this reads the RSS feed instead — which carries no score, so the
-# score floor is not applied to Reddit rows.
+# Hacker News needs no key. Reddit closed its JSON API to unauthenticated
+# clients, so set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET as repository
+# secrets — a free "script" app at reddit.com/prefs/apps — and the listing
+# returns scores and comment counts, with a far more generous rate limit.
+#
+# Without them it falls back to the RSS feed, which still works and still finds
+# things, but carries no score and no comment count: every Reddit post then
+# sorts equally at zero and is exempted from the score floor rather than being
+# silently dropped by it.
 #
 # It also follows the page each post links to. A first run extracted a link from
 # only four posts in forty, because most point at an article rather than a
@@ -70,6 +76,9 @@ jobs:
         run: echo "STAMP=$(date -u +%Y-%m-%d)" >> "$GITHUB_ENV"
 
       - name: Scan
+        env:
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
         run: |
           mkdir -p data/history
           python scripts/harvest_breaking.py \
