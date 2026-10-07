@@ -39,7 +39,14 @@ import urllib.parse
 import urllib.request
 
 HN = "https://hn.algolia.com/api/v1/search_by_date"
-REDDIT = "https://www.reddit.com/r/{sub}/new.json"
+# Reddit closed the public JSON API to unauthenticated clients in 2023 and a
+# first run of this script got nothing back from it at all — every row came
+# from Hacker News and the failure was silent, because the error went to stderr
+# while the log captured only stdout. The RSS feed is still open and needs no
+# key, so that is what this uses. If a REDDIT_TOKEN is set, the JSON API is
+# tried first because it carries scores and comment counts that RSS does not.
+REDDIT_JSON = "https://oauth.reddit.com/r/{sub}/new"
+REDDIT_RSS = "https://www.reddit.com/r/{sub}/new/.rss"
 SUBS = ["robotics", "ROS", "reinforcementlearning", "embedded"]
 
 UA = ("robotindex/1.0 (+https://robotindex.io; weekly robotics release scan; "
@@ -158,44 +165,110 @@ def scan_hn(since_ts, per_query=50):
     return out
 
 
-def scan_reddit(since_ts, limit=100):
+def get_text(url, tries=2, timeout=25):
+    """Fetch a page as text rather than JSON."""
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    for attempt in range(tries):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                ct = (r.headers.get("Content-Type") or "").lower()
+                if "html" not in ct and "xml" not in ct and "text" not in ct:
+                    return "", "not text"
+                return r.read(400000).decode("utf-8", "replace"), None
+        except urllib.error.HTTPError as e:
+            return "", f"http {e.code}"
+        except Exception as e:
+            if attempt == tries - 1:
+                return "", str(e)[:40]
+            time.sleep(2)
+    return "", "failed"
+
+
+def scan_reddit(since_ts):
+    """Reddit's new-post feed, by RSS.
+
+    Returns the same shape as scan_hn, with score 0: RSS carries no score, so
+    --min-score would silently drop everything from Reddit. These rows are
+    exempted from that filter in main() instead.
+    """
     out = []
     for sub in SUBS:
-        after, pages = None, 0
-        while pages < 3:
-            url = f"{REDDIT.format(sub=sub)}?limit={limit}" + (f"&after={after}" if after else "")
-            d, err = get(url)
-            if err:
-                print(f"  r/{sub}: {err}", file=sys.stderr)
-                break
-            children = (d.get("data") or {}).get("children") or []
-            if not children:
-                break
-            stop = False
-            for c in children:
-                p = c.get("data") or {}
-                if (p.get("created_utc") or 0) < since_ts:
-                    stop = True
-                    break
-                title = p.get("title") or ""
-                out.append({
-                    "source": f"r/{sub}",
-                    "title": title,
-                    "url": p.get("url_overridden_by_dest") or p.get("url") or "",
-                    "discussion": "https://www.reddit.com" + (p.get("permalink") or ""),
-                    "score": p.get("score") or 0,
-                    "comments": p.get("num_comments") or 0,
-                    "created": datetime.datetime.utcfromtimestamp(
-                        p.get("created_utc") or 0).date().isoformat(),
-                    "text": f"{title} {p.get('url') or ''} {(p.get('selftext') or '')[:2000]}",
-                })
-            after = (d.get("data") or {}).get("after")
-            pages += 1
-            if stop or not after:
-                break
-            time.sleep(1.2)       # Reddit is stricter than HN
-        time.sleep(1.2)
+        body, err = get_text(REDDIT_RSS.format(sub=sub))
+        if err or not body:
+            print(f"  r/{sub}: {err or 'empty'}", file=sys.stderr)
+            time.sleep(2)
+            continue
+        entries = re.findall(r"<entry>([\s\S]*?)</entry>", body)
+        for e in entries:
+            def tag(t):
+                m = re.search(rf"<{t}[^>]*>([\s\S]*?)</{t}>", e)
+                return re.sub(r"\s+", " ", m.group(1)).strip() if m else ""
+            upd = tag("updated")[:10]
+            try:
+                ts = datetime.datetime.fromisoformat(
+                    tag("updated").replace("Z", "+00:00")).timestamp()
+            except Exception:
+                ts = since_ts
+            if ts < since_ts:
+                continue
+            link = re.search(r'<link[^>]*href="([^"]+)"', e)
+            title = re.sub(r"<[^>]+>", "", tag("title"))
+            content = re.sub(r"&lt;", "<", re.sub(r"&gt;", ">", tag("content")))
+            out.append({
+                "source": f"r/{sub}",
+                "title": title,
+                "url": link.group(1) if link else "",
+                "discussion": link.group(1) if link else "",
+                "score": 0,            # RSS carries none; see docstring
+                "comments": 0,
+                "created": upd,
+                "text": f"{title} {content[:4000]}",
+                "no_score": True,
+            })
+        print(f"  r/{sub}: {len([x for x in out if x['source'] == f'r/{sub}'])} posts",
+              file=sys.stderr)
+        time.sleep(2)
     return out
+
+
+def follow_links(posts, limit=60):
+    """Read the page a post points at, when the post itself names no repository.
+
+    A first run extracted a link from only 4 of 40 posts, because most of them
+    point at an article rather than a repository — "JBR-001, an open-source 3D
+    printable desktop robot" scored 133 points on Hacker News and yielded
+    nothing, since the repository was named on the linked page.
+
+    One fetch per post, most-discussed first, skipping anything that already
+    carries a link and anything pointing at a platform we would be fetching
+    from itself.
+    """
+    SKIP = re.compile(r"(news\.ycombinator|reddit\.com|youtube|youtu\.be|twitter|x\.com|"
+                      r"linkedin|\.pdf$|\.mp4$|\.jpg$|\.png$)", re.I)
+    todo = [p for p in posts
+            if p.get("url") and not SKIP.search(p["url"])
+            and not GITHUB.search(p["text"]) and not HUGGINGFACE.search(p["text"])]
+    todo.sort(key=lambda p: -(p.get("score") or 0) - (p.get("comments") or 0))
+    todo = todo[:limit]
+    found = 0
+    for i, p in enumerate(todo, 1):
+        body, err = get_text(p["url"])
+        if err or not body:
+            continue
+        # Only the links, not the whole page: a blog post can mention dozens of
+        # repositories in passing, and the body text is not evidence of a release.
+        hrefs = " ".join(re.findall(r'href="([^"]+)"', body)[:400])
+        hits = GITHUB.findall(hrefs) or HUGGINGFACE.findall(hrefs)
+        if hits:
+            p["text"] += " " + hrefs
+            p["link_followed"] = "yes"
+            found += 1
+        if i % 20 == 0:
+            print(f"    followed {i}/{len(todo)}, {found} yielded links", file=sys.stderr)
+        time.sleep(0.4)
+    print(f"  followed {len(todo)} linked pages, {found} named a repository",
+          file=sys.stderr)
+    return posts
 
 
 def main():
@@ -207,6 +280,11 @@ def main():
                          "requiring a post to have gone anywhere")
     ap.add_argument("--links-only", action="store_true",
                     help="only keep posts that point at a repository or dataset")
+    ap.add_argument("--no-follow", action="store_true",
+                    help="do not fetch the page each post links to. Without following, "
+                         "only about one post in ten names a repository in the post itself.")
+    ap.add_argument("--follow-limit", type=int, default=60,
+                    help="how many linked pages to fetch, most-discussed first")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
@@ -220,6 +298,8 @@ def main():
 
     posts = scan_hn(since_ts) + scan_reddit(since_ts)
     print(f"  {len(posts)} posts fetched", file=sys.stderr)
+    if not a.no_follow:
+        posts = follow_links(posts, a.follow_limit)
 
     rows, dropped = [], {"not_robotics": 0, "noise": 0, "low_score": 0, "no_links": 0}
     for p in posts:
@@ -229,7 +309,9 @@ def main():
         if not ROBOTICS.search(p["title"]):
             dropped["not_robotics"] += 1
             continue
-        if p["score"] < a.min_score:
+        # Reddit rows come from RSS and have no score, so the floor would drop
+        # every one of them.
+        if not p.get("no_score") and p["score"] < a.min_score:
             dropped["low_score"] += 1
             continue
         repos = {f"{o}/{r}" for o, r in GITHUB.findall(p["text"])
@@ -245,6 +327,7 @@ def main():
         rows.append({
             **{k: p[k] for k in ("source", "created", "title", "score", "comments",
                                  "url", "discussion")},
+            "link_followed": p.get("link_followed", ""),
             "repos": "; ".join(sorted(repos)),
             "new_repos": "; ".join(new_r),
             "datasets": "; ".join(sorted(dsets)),
