@@ -21,6 +21,9 @@ on:
       min_downloads:
         description: "Hugging Face download floor (monthly)"
         default: "500"
+      recent_downloads:
+        description: "Download floor for datasets created in the last 90 days"
+        default: "10"
       pages:
         description: "HF pages to walk (100 per page)"
         default: "30"
@@ -50,6 +53,8 @@ jobs:
           mkdir -p data/history
           python scripts/harvest_hf.py \
             --min-downloads "${{ github.event.inputs.min_downloads || '500' }}" \
+            --recent-downloads "${{ github.event.inputs.recent_downloads || '10' }}" \
+            --recent-downloads "${{ github.event.inputs.recent_downloads || '10' }}" \
             --pages "${{ github.event.inputs.pages || '30' }}" \
             --out "data/history/hf-${STAMP}.csv" \
             | tee /tmp/hf.log
