@@ -12,8 +12,14 @@ name: Breaking
 # of, and missed by a harvest two days later. It reached us because a person saw
 # a link. This is that person, automated.
 #
-# Neither API needs a key. Reddit is rate-limited harder than Hacker News, so
-# the script paces itself and degrades to whichever source answers.
+# Neither source needs a key. Reddit closed its JSON API to unauthenticated
+# clients, so this reads the RSS feed instead — which carries no score, so the
+# score floor is not applied to Reddit rows.
+#
+# It also follows the page each post links to. A first run extracted a link from
+# only four posts in forty, because most point at an article rather than a
+# repository: JBR-001, an open-source desktop robot, scored 133 points and
+# yielded nothing because its repository was named on the linked page.
 #
 # The output is a review list, not an ingestion. Social posts are a noisy signal
 # and the point of the other harvests is that they are not — so nothing here
@@ -34,6 +40,13 @@ on:
         description: "Only keep posts that point at a repository or dataset"
         type: boolean
         default: false
+      no_follow:
+        description: "Do not fetch the page each post links to"
+        type: boolean
+        default: false
+      follow_limit:
+        description: "How many linked pages to fetch, most-discussed first"
+        default: "60"
 
 permissions:
   contents: write
@@ -63,8 +76,10 @@ jobs:
             --days "${{ github.event.inputs.days || '7' }}" \
             --min-score "${{ github.event.inputs.min_score || '3' }}" \
             ${{ github.event.inputs.links_only == 'true' && '--links-only' || '' }} \
+            ${{ github.event.inputs.no_follow == 'true' && '--no-follow' || '' }} \
+            --follow-limit "${{ github.event.inputs.follow_limit || '60' }}" \
             --out "data/history/breaking-${STAMP}.csv" \
-            | tee /tmp/breaking.log
+            2>&1 | tee /tmp/breaking.log
 
       - name: Commit
         run: |
