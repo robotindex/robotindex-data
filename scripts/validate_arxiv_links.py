@@ -38,6 +38,10 @@ import urllib.request
 
 GH_API = "https://api.github.com/repos/"
 HF_API = "https://huggingface.co/api/datasets/"
+RAW = "https://raw.githubusercontent.com/"
+
+# Candidate README filenames, in the order GitHub itself resolves them.
+READMES = ["README.md", "readme.md", "README.rst", "README.txt", "README"]
 
 
 def get(url, token=None, tries=3):
@@ -74,7 +78,31 @@ def get(url, token=None, tries=3):
     return None, "failed"
 
 
-def check_repo(full, token):
+def fetch_readme(full, branch, token, limit=60000):
+    """The README text, or "".
+
+    Worth the extra call: in the main index 326 of 556 robot attributions come
+    from README text rather than from the name, description or topics. Judging
+    these repositories on metadata alone resolved hardware for 1% of them
+    against 8% for the same fields in the index, which measures what we did not
+    read rather than what is not there.
+    """
+    for name in READMES:
+        url = f"{RAW}{full}/{branch}/{name}"
+        req = urllib.request.Request(url, headers={"User-Agent": "robotindex-validate"})
+        try:
+            with urllib.request.urlopen(req, timeout=15) as r:
+                return r.read(limit).decode("utf-8", "replace")
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                continue
+            return ""
+        except Exception:
+            return ""
+    return ""
+
+
+def check_repo(full, token, want_readme=True):
     d, err = get(GH_API + full, token)
     if err:
         return {"kind": "github", "ref": full, "status": err}
@@ -94,6 +122,9 @@ def check_repo(full, token):
         "language": d.get("language") or "",
         "description": (d.get("description") or "").replace("\n", " ")[:200],
         "url": d.get("html_url", ""),
+        "readme": (fetch_readme(d.get("full_name", full),
+                                d.get("default_branch") or "main", token)
+                   if want_readme and d.get("size", 0) else ""),
     }
 
 
@@ -120,11 +151,39 @@ def check_dataset(ref, token=None):
     }
 
 
+def resolve_hardware(records):
+    """Name the robot each repository is for, using the same patterns as the
+    main harvest. Imported rather than copied so the two cannot drift."""
+    try:
+        import importlib.util
+        here = os.path.dirname(os.path.abspath(__file__))
+        spec = importlib.util.spec_from_file_location(
+            "harvest_gh", os.path.join(here, "harvest_gh.py"))
+        hg = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(hg)
+    except Exception as e:
+        print(f"  (no hardware attribution: {e})", file=sys.stderr)
+        for r in records:
+            r["robots"] = ""
+        return records
+    for r in records:
+        if r.get("status") != "ok":
+            r["robots"] = ""
+            continue
+        text = " ".join([r.get("name", ""), r.get("description", ""),
+                         r.get("readme", "")])
+        r["robots"] = "; ".join(hg.find_embodiment(text))
+    return records
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("csv_in", help="the CSV harvest_arxiv.py wrote")
     ap.add_argument("--out", default=None)
     ap.add_argument("--limit", type=int, default=0, help="check only the first N links")
+    ap.add_argument("--no-readme", action="store_true",
+                    help="skip the README fetch; halves the requests and loses most "
+                         "of the hardware attribution")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
@@ -151,7 +210,8 @@ def main():
 
     out = []
     for i, (kind, ref) in enumerate(targets, 1):
-        rec = check_repo(ref, token) if kind == "github" else check_dataset(ref)
+        rec = (check_repo(ref, token, not a.no_readme) if kind == "github"
+               else check_dataset(ref))
         rec["papers"] = ";".join((repos if kind == "github" else dsets)[ref][:3])
         rec["paper_count"] = len((repos if kind == "github" else dsets)[ref])
         out.append(rec)
@@ -160,6 +220,7 @@ def main():
             print(f"  [{i}/{len(targets)}] {ok} alive", file=sys.stderr)
         time.sleep(0.05)
 
+    out = resolve_hardware(out)
     alive = [x for x in out if x["status"] == "ok"]
     dead = [x for x in out if x["status"] != "ok"]
     empty = [x for x in alive if x.get("empty")]
@@ -189,6 +250,15 @@ def main():
             for x in top:
                 print(f"  {x['stars']:>6}  {(x['licence'] or '-'):<14} {x['name']}")
 
+    withhw = [x for x in alive if x.get("robots")]
+    if withhw:
+        import collections as _c
+        c = _c.Counter(e for x in withhw for e in x["robots"].split("; ") if e)
+        print(f"\n  {len(withhw)} name identifiable hardware "
+              f"({len(withhw)/max(1,len(alive))*100:.0f}%)")
+        for k, v in c.most_common(12):
+            print(f"      {v:>4}  {k}")
+
     if a.dry_run:
         print("\n(dry run — nothing written)", file=sys.stderr)
         return 0
@@ -196,7 +266,7 @@ def main():
     path = a.out or a.csv_in.replace(".csv", "-validated.csv")
     cols = ["kind", "ref", "status", "name", "stars", "forks", "downloads",
             "licence", "created", "pushed", "size_kb", "archived", "empty",
-            "language", "description", "url", "papers", "paper_count"]
+            "language", "description", "robots", "url", "papers", "paper_count"]
     with open(path, "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=cols, extrasaction="ignore")
         w.writeheader()

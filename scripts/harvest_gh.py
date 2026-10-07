@@ -190,7 +190,6 @@ EMBODIMENT = [
     (r"clearpath|\bjackal\b|\bdingo\b|"
      r"\bhusky\b[^.]{0,40}(robot|ugv|rover|a200|base|platform)|"
      r"(robot|ugv|rover|mobile)[^.]{0,40}\bhusky\b",   "Clearpath"),
-    (r"boston dynamics|\banymal\b",                            "Boston Dynamics / ANYbotics"),
     (r"\bcassie\b|agility robotics",                           "Agility"),
     (r"crazyflie|bitcraze",                                     "Crazyflie"),
     (r"hello robot|stretch (re1|re2|3|robot)",                  "Hello Robot Stretch"),
@@ -220,8 +219,6 @@ EMBODIMENT = [
     (r"\bopenarm\b|enactic",                                    "OpenArm"),
     (r"\bflexiv\b",                                             "Flexiv"),
     (r"\blekiwi\b",                                             "LeKiwi"),
-    (r"robotiq",                                                "Robotiq gripper"),
-    (r"spot ?micro|spotmicro",                                  "SpotMicro"),
     (r"seeed[-_ ]?b601|\bseeed\b[^.]{0,20}(arm|robot|follower)", "Seeed B601"),
     (r"\baibot2\b|alphabot2",                                   "Aibot2"),
     (r"\bpiperx\b",                                             "AgileX"),
@@ -229,16 +226,25 @@ EMBODIMENT = [
     (r"\bsharpa\b",                                             "Sharpa"),
     (r"\bdobot\b|x-?trainer",                                   "Dobot"),
     (r"yahboom|rosmaster|\bdofbot\b",                           "Yahboom"),
-    (r"cyberdog|xiaomi",                                        "Xiaomi CyberDog"),
+    # "xiaomi" alone matched the company's VLA and autonomous-driving work
+    # (xiaomi-research/onevl, XiaomiMiMo/MiMo-Embodied, unidrivevla), none of
+    # which is a CyberDog. Same failure as bare "husky" and bare "tiago":
+    # a name that is a company, a product and a common word at once.
+    (r"cyberdog",                                               "Xiaomi CyberDog"),
     (r"hiwonder|mentorpi|puppypi",                              "Hiwonder"),
     (r"\bumi\b[^.]{0,30}(gripper|handheld|interface|data)|"
      r"universal manipulation interface",                       "UMI (handheld)"),
     (r"\bzeroth\b",                                             "K-Scale"),
     (r"interbotix",                                             "ALOHA / Trossen"),
+    # Boston Dynamics is deliberately absent. Of 30 matches only one was
+    # genuinely theirs, a Spot ROS driver; the rest cited Spot as inspiration
+    # for an open quadruped. "ROS driver for Boston Dynamics Spot" and
+    # "inspired by Boston Dynamics Spot" are the same string to a regex, and a
+    # pattern that keeps the first keeps the second. One real repository is not
+    # worth twenty-nine wrong ones. ANYmal is ANYbotics, so it stands alone.
+    (r"\banymal\b",                                              "ANYbotics ANYmal"),
     (r"\bduckiebot\b",                                          "Duckiebot"),
-    (r"f1tenth|\bmushr\b",                                      "F1TENTH / MuSHR"),
     (r"allegro hand|\bleap hand\b|shadow (dexterous )?hand",     "dexterous hand"),
-    (r"\bdoosan\b|\btechman\b|\brealman\b",                   "other industrial arm"),
 ]
 
 

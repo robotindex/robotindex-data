@@ -38,6 +38,7 @@ rate limit.
 
 import argparse
 import csv
+import datetime
 import json
 import os
 import re
@@ -204,83 +205,116 @@ def find_embodiment(tags, text):
     return found, ("readme" if found else "")
 
 
-def harvest(min_downloads, pages, token):
-    """Walk the robotics tag, most-downloaded first, until we drop below the floor."""
+def harvest(min_downloads, pages, token, recent_downloads=10, recent_days=90):
+    """Walk the robotics tag twice.
+
+    The first pass sorts by downloads and stops at the floor. The second sorts
+    by creation date and takes anything from the last `recent_days` at a much
+    lower floor.
+
+    The second exists because the first is structurally late. A dataset
+    published last week has had no time to accumulate 100 downloads and is
+    invisible to a download-ordered walk however good it is. Reading two years
+    of robotics papers turned up 49 datasets this harvest had never seen, 32 of
+    them live, and 28 of those already above the 100 floor — they qualified
+    under this rule and were simply never reached.
+    """
     seen, kept = {}, []
     dropped = {"downloads": 0, "stub_card": 0, "junk_name": 0, "duplicate": 0}
     basenames = {}
+    cutoff = (datetime.date.today() - datetime.timedelta(days=recent_days)).isoformat()
 
-    for page in range(pages):
-        url = (f"{API}?filter=robotics&sort=downloads&direction=-1"
-               f"&limit=100&skip={page*100}&full=true")
-        try:
-            batch = fetch(url, token)
-        except Exception as e:
-            print(f"  page {page}: {e}", file=sys.stderr)
-            break
-        if not batch:
-            break
+    passes = [("downloads", min_downloads, "most downloaded"),
+              ("createdAt", recent_downloads, f"created since {cutoff}")]
 
-        below_floor = 0
-        for d in batch:
-            rid = d.get("id") or ""
-            if not rid or rid in seen:
-                continue
-            seen[rid] = True
+    for sort_key, floor, label in passes:
+        print(f"\n  pass: {label} (floor {floor})", file=sys.stderr)
+        for page in range(pages):
+            url = (f"{API}?filter=robotics&sort={sort_key}&direction=-1"
+                   f"&limit=100&skip={page * 100}&full=true")
+            try:
+                batch = fetch(url, token)
+            except Exception as e:
+                print(f"  page {page}: {e}", file=sys.stderr)
+                break
+            if not batch:
+                break
 
-            dl = d.get("downloads", 0) or 0
-            if dl < min_downloads:
-                below_floor += 1
-                dropped["downloads"] += 1
-                continue
+            below_floor = 0
+            past_window = False
+            for d in batch:
+                rid = d.get("id") or ""
+                if not rid or rid in seen:
+                    continue
 
-            owner, _, base = rid.partition("/")
-            if JUNK_NAME.search(base):
-                dropped["junk_name"] += 1
-                continue
+                created = (d.get("createdAt") or "")[:10]
+                if sort_key == "createdAt" and created and created < cutoff:
+                    # newest-first, so everything after this is older still
+                    past_window = True
+                    break
 
-            card = d.get("cardData") or {}
-            # `full=true` returns the parsed card. An empty or near-empty one is
-            # the LeRobot stub.
-            desc = (card.get("description") or d.get("description") or "").strip()
-            tags = d.get("tags") or []
-            if len(json.dumps(card)) < MIN_CARD_BYTES and len(desc) < 80:
-                dropped["stub_card"] += 1
-                continue
+                seen[rid] = True
 
-            key = base.lower().replace("-", "_")
-            if key in basenames:
-                dropped["duplicate"] += 1
-                continue
-            basenames[key] = rid
+                dl = d.get("downloads", 0) or 0
+                if dl < floor:
+                    below_floor += 1
+                    dropped["downloads"] += 1
+                    continue
 
-            lic = card.get("license")
-            if isinstance(lic, list):
-                lic = ", ".join(lic)
-            if not lic:
-                lic = next((t.split(":", 1)[1] for t in tags if t.startswith("license:")), "")
+                owner, _, base = rid.partition("/")
+                if JUNK_NAME.search(base):
+                    dropped["junk_name"] += 1
+                    continue
 
-            kept.append({
-                "id": rid,
-                "owner": owner,
-                "downloads": dl,
-                "downloads_all_time": d.get("downloadsAllTime", 0) or 0,
-                "likes": d.get("likes", 0),
-                "license": lic or "",
-                "modified": (d.get("lastModified") or "")[:10],
-                "created": (d.get("createdAt") or "")[:10],
-                "is_lerobot": "LeRobot" in tags or "lerobot" in tags,
-                "tags": " ".join(t for t in tags if not t.startswith(("license:", "region:", "size_categories:"))),
-                "url": f"https://huggingface.co/datasets/{rid}",
-                "description": re.sub(r"\s+", " ", desc)[:300],
-                "_tags": tags,
-            })
+                card = d.get("cardData") or {}
+                # `full=true` returns the parsed card. An empty or near-empty
+                # one is the LeRobot stub.
+                desc = (card.get("description") or d.get("description") or "").strip()
+                tags = d.get("tags") or []
+                if len(json.dumps(card)) < MIN_CARD_BYTES and len(desc) < 80:
+                    dropped["stub_card"] += 1
+                    continue
 
-        # Sorted descending, so once a whole page is under the floor we are done.
-        if below_floor == len(batch):
-            print(f"  stopped at page {page}: entire page below {min_downloads} downloads")
-            break
-        time.sleep(0.4)
+                key = base.lower().replace("-", "_")
+                if key in basenames:
+                    dropped["duplicate"] += 1
+                    continue
+                basenames[key] = rid
+
+                lic = card.get("license")
+                if isinstance(lic, list):
+                    lic = ", ".join(lic)
+                if not lic:
+                    lic = next((t.split(":", 1)[1] for t in tags
+                                if t.startswith("license:")), "")
+
+                kept.append({
+                    "id": rid,
+                    "owner": owner,
+                    "downloads": dl,
+                    "likes": d.get("likes", 0),
+                    "license": lic or "",
+                    "modified": (d.get("lastModified") or "")[:10],
+                    "created": created,
+                    "is_lerobot": "LeRobot" in tags or "lerobot" in tags,
+                    "found_by": "downloads" if sort_key == "downloads" else "recent",
+                    "tags": " ".join(t for t in tags if not t.startswith(
+                        ("license:", "region:", "size_categories:"))),
+                    "url": f"https://huggingface.co/datasets/{rid}",
+                    "description": re.sub(r"\s+", " ", desc)[:300],
+                    "_tags": tags,
+                })
+
+            if past_window:
+                print(f"  stopped at page {page}: past the {recent_days}-day window",
+                      file=sys.stderr)
+                break
+            # sorted descending, so a whole page under the floor means we are done
+            if below_floor == len(batch):
+                print(f"  stopped at page {page}: entire page below {floor} downloads",
+                      file=sys.stderr)
+                break
+            time.sleep(0.4)
 
     return kept, dropped, len(seen)
 
@@ -314,6 +348,10 @@ def add_embodiment(kept, token, use_readme):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--min-downloads", type=int, default=500)
+    ap.add_argument("--recent-downloads", type=int, default=10,
+                    help="download floor for datasets created in the last --recent-days; "
+                         "a new upload has had no time to earn the main floor")
+    ap.add_argument("--recent-days", type=int, default=90)
     ap.add_argument("--pages", type=int, default=30, help="100 per page")
     ap.add_argument("--out", default="hf-candidates.csv")
     ap.add_argument("--dry-run", action="store_true")
@@ -322,7 +360,7 @@ def main():
     a = ap.parse_args()
 
     token = os.environ.get("HF_TOKEN")
-    kept, dropped, scanned = harvest(a.min_downloads, a.pages, token)
+    kept, dropped, scanned = harvest(a.min_downloads, a.pages, token, a.recent_downloads, a.recent_days)
 
     print(f"\nscanned {scanned} | kept {len(kept)}")
     for k, v in dropped.items():
