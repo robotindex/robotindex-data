@@ -444,6 +444,17 @@
               "productId": "dobot-x-trainer"
             },
             {
+              "name": "Enactic OpenArm 2.0",
+              "tier": "new",
+              "productId": "enactic-openarm",
+              "openSource": true
+            },
+            {
+              "name": "Flexiv Rizon",
+              "tier": "new",
+              "productId": "flexiv-rizon"
+            },
+            {
               "name": "Kinova JACO",
               "tier": "under-review",
               "productId": "kinova-jaco-9"
