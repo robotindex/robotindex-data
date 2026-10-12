@@ -46,6 +46,7 @@ import urllib.request
 
 GH_API = "https://api.github.com"
 HF_API = "https://huggingface.co/api/datasets"
+HF_MODELS = "https://huggingface.co/api/models"
 MAP_FILE = os.path.join("data", "watched-orgs-map.json")
 
 # Same filters the harvests use, so a watched organisation's tutorial repo or
@@ -137,7 +138,7 @@ def hf_get(url, token, tries=3):
 
 def known():
     """Everything already harvested, so the sweep reports only the gap."""
-    repos, datasets = set(), set()
+    repos, datasets, models = set(), set(), set()
     for path in glob.glob(os.path.join("data", "history", "gh-*.csv")):
         try:
             for r in csv.DictReader(open(path, encoding="utf-8")):
@@ -150,7 +151,13 @@ def known():
                 datasets.add(r["id"].lower())
         except Exception:
             pass
-    return repos, datasets
+    for path in glob.glob(os.path.join("data", "history", "hf-models-*.csv")):
+        try:
+            for r in csv.DictReader(open(path, encoding="utf-8")):
+                models.add(r["id"].lower())
+        except Exception:
+            pass
+    return repos, datasets, models
 
 
 def gh_profile(handle, token):
@@ -214,10 +221,18 @@ def list_github(handle, token, since, pages=4):
     return [], "no such account"
 
 
-def list_hf(handle, token, since, pages=3):
+def list_hf(handle, token, since, pages=3, api=None):
+    """Datasets by default, models when `api` is HF_MODELS.
+
+    The two endpoints return the same shape, so one function covers both. The
+    models call is the reason this sweep exists in the form it does: the tag
+    harvest finds models that carry the robotics tag, and the organisations
+    here are exactly the ones who publish policy weights without tagging them.
+    """
     out = []
+    api = api or HF_API
     for page in range(pages):
-        url = (f"{HF_API}?author={urllib.parse.quote(handle)}"
+        url = (f"{api}?author={urllib.parse.quote(handle)}"
                f"&sort=createdAt&direction=-1&limit=100&skip={page * 100}&full=true")
         batch, err = hf_get(url, token)
         if err:
@@ -246,6 +261,9 @@ def main():
                          "Pass 2000-01-01 for everything an organisation has ever published.")
     ap.add_argument("--verify-only", action="store_true",
                     help="only check which handles exist; no listing, no output file")
+    ap.add_argument("--no-models", action="store_true",
+                    help="skip the model listing. Models are policy weights — what "
+                         "actually runs on a robot — and the index has never held them.")
     ap.add_argument("--no-robotics-filter", action="store_true",
                     help="keep everything a watched account published, including its "
                          "unrelated work. Off by default: NVIDIA publishes maths proofs "
@@ -267,7 +285,7 @@ def main():
     since = a.since or (datetime.date.today() - datetime.timedelta(days=180)).isoformat()
     gh_token = os.environ.get("GITHUB_TOKEN")
     hf_token = os.environ.get("HF_TOKEN")
-    known_repos, known_datasets = known()
+    known_repos, known_datasets, known_models = known()
     today = datetime.date.today()
 
     print(f"{len(orgs)} organisations | items created since {since}\n"
@@ -284,6 +302,7 @@ def main():
              "gh_exists": "", "hf_exists": "",
              "repos": 0, "stars": 0, "repos_new": 0, "repos_known": 0,
              "datasets": 0, "downloads": 0, "datasets_new": 0, "datasets_known": 0,
+             "models": 0, "model_downloads": 0, "models_new": 0, "models_known": 0,
              "website": "", "display_name": "", "location": "",
              "followers": 0, "public_repos": 0,
              "last_activity": "", "note": o.get("note", "")[:200]}
@@ -376,6 +395,47 @@ def main():
                         "description": re.sub(r"\s+", " ", desc)[:250],
                     })
 
+        # Models, the same way. A policy checkpoint is what somebody actually
+        # runs on a robot, and until now the sweep has never looked for one.
+        if o["huggingface"] and not a.no_models:
+            items, err = list_hf(o["huggingface"], hf_token, since, api=HF_MODELS)
+            if not err:
+                for d in items:
+                    mid = d.get("id") or d.get("modelId") or ""
+                    base = mid.split("/", 1)[-1]
+                    if not mid or JUNK_NAME.search(base) or SHARD.search(base):
+                        continue
+                    card = d.get("cardData") or {}
+                    desc = (card.get("description") or d.get("description") or "")
+                    tags = d.get("tags") or []
+                    if not a.no_robotics_filter and not ROBOTICS.search(
+                            mid + " " + desc + " " + " ".join(tags)):
+                        continue
+                    s["models"] += 1
+                    s["model_downloads"] += d.get("downloads", 0) or 0
+                    mod = (d.get("lastModified") or "")[:10]
+                    if mod > s["last_activity"]:
+                        s["last_activity"] = mod
+                    if mid.lower() in known_models:
+                        s["models_known"] += 1
+                        continue
+                    s["models_new"] += 1
+                    lic = card.get("license") or ""
+                    if isinstance(lic, list):
+                        lic = ", ".join(lic)
+                    new_items.append({
+                        "kind": "model", "org": o["name"], "category": o["category"],
+                        "ref": mid, "stars": d.get("likes", 0),
+                        "downloads": d.get("downloads", 0) or 0, "licence": lic,
+                        "created": (d.get("createdAt") or "")[:10], "updated": mod,
+                        "language": d.get("pipeline_tag") or "",
+                        "topics": " ".join(
+                            t for t in tags if not t.startswith(
+                                ("license:", "region:", "arxiv:"))),
+                        "url": f"https://huggingface.co/{mid}",
+                        "description": re.sub(r"\s+", " ", desc)[:250],
+                    })
+
         if s["last_activity"]:
             try:
                 s["days_since_activity"] = (
@@ -404,9 +464,11 @@ def main():
 
     gh_new = [x for x in new_items if x["kind"] == "github"]
     hf_new = [x for x in new_items if x["kind"] == "huggingface"]
+    md_new = [x for x in new_items if x["kind"] == "model"]
     print(f"\n{len(new_items)} items not already in the index")
     print(f"  {len(gh_new)} repositories")
     print(f"  {len(hf_new)} datasets")
+    print(f"  {len(md_new)} models")
 
     if gh_new:
         over = sum(1 for x in gh_new if x["stars"] >= 50)
@@ -423,8 +485,16 @@ def main():
         for x in sorted(hf_new, key=lambda r: -(r["downloads"] or 0))[:15]:
             print(f"  {x['downloads']:>9,}  {x['updated']:<11} {x['ref']}")
 
-    live = [s for s in summaries if s["repos"] or s["datasets"]]
-    silent = [s for s in summaries if not s["repos"] and not s["datasets"]]
+    if md_new:
+        over = sum(1 for x in md_new if (x["downloads"] or 0) >= 1000)
+        print(f"\n  {over} models above a thousand monthly downloads")
+        print(f"\n  {'downloads':>9}  {'updated':<11} model")
+        for x in sorted(md_new, key=lambda r: -(r["downloads"] or 0))[:15]:
+            print(f"  {x['downloads']:>9,}  {x['updated']:<11} {x['ref']}")
+
+    live = [s for s in summaries if s["repos"] or s["datasets"] or s["models"]]
+    silent = [s for s in summaries if not s["repos"] and not s["datasets"]
+              and not s["models"]]
     print(f"\n{len(live)} organisations publish something; {len(silent)} publish nothing "
           f"we can see")
     if silent:
@@ -446,6 +516,7 @@ def main():
             "github", "huggingface", "gh_exists", "hf_exists", "followers", "public_repos",
             "repos", "stars", "repos_new", "repos_known",
             "datasets", "downloads", "datasets_new", "datasets_known",
+            "models", "model_downloads", "models_new", "models_known",
             "last_activity", "days_since_activity", "note"]
     with open(a.summary_out, "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=cols, extrasaction="ignore")
