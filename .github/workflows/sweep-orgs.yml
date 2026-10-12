@@ -18,7 +18,13 @@ name: Sweep watched orgs
 # never been confirmed; a handle that does not exist returns nothing, so the
 # sweep settles them as a side effect and prints the ones to correct.
 #
-# About 190 calls, well inside GitHub's 5,000/hour.
+# It also lists each organisation's models — the policy weights that actually
+# run on a robot, which the index has never held. The tag harvest in
+# harvest_hf_models.py finds models that carry the robotics tag; this finds the
+# ones published by organisations who do not tag, which is the same division of
+# labour as the datasets side.
+#
+# About 500 calls, well inside GitHub's 5,000/hour.
 
 on:
   schedule:
@@ -30,6 +36,10 @@ on:
         default: ""
       verify_only:
         description: "Only check which handles exist; no listing, no output"
+        type: boolean
+        default: false
+      no_models:
+        description: "Skip the model listing (policy weights on Hugging Face)"
         type: boolean
         default: false
       no_robotics_filter:
@@ -67,6 +77,7 @@ jobs:
           python scripts/sweep_orgs.py \
             ${{ github.event.inputs.since && format('--since {0}', github.event.inputs.since) || '' }} \
             ${{ github.event.inputs.verify_only == 'true' && '--verify-only' || '' }} \
+            ${{ github.event.inputs.no_models == 'true' && '--no-models' || '' }} \
             ${{ github.event.inputs.no_robotics_filter == 'true' && '--no-robotics-filter' || '' }} \
             --out "data/history/sweep-${STAMP}.csv" \
             --summary-out "data/history/sweep-orgs-${STAMP}.csv" \
