@@ -1,6 +1,6 @@
 {
-  "_comment": "A market map of the robotics, robot-model and robot-data space, written by hand. The derived watch lists can only find publishers already in the index, which is why they missed TheRobotStudio (SO-ARM100, 6,800 stars, the arm behind 64 of our datasets), unitreerobotics (unitree_sdk2, 1,200 stars) and Pantheon (Argus, published two days before a harvest). This list exists to be independent of what we have already seen.",
-  "_scope": "Includes companies that publish no hardware at all: foundation-model labs, data-tooling companies, simulation vendors and big-tech research groups. A company earns a place by mattering to the field, not by selling a robot. Several entries publish nothing at all — Figure and Tesla among them — and are listed so that the absence is a recorded fact rather than an oversight.",
+  "_comment": "A market map of the robotics, robot-model and robot-data space, written by hand. The derived watch lists can only find publishers already in the index, which is why they missed TheRobotStudio (SO-ARM100, the arm behind 64 of our datasets), unitreerobotics (unitree_sdk2) and Pantheon (Argus, published two days before a harvest). This list exists to be independent of what we have already seen.",
+  "_scope": "Includes companies that build no hardware at all: foundation-model labs, data-tooling companies, simulation vendors and big-tech research groups. A company earns a place by mattering to the field, not by selling a robot. Several have no public repositories or datasets — that is recorded as a fact about what is findable, not a judgement about the company.",
   "_handles": "github and huggingface are account handles. verified:true means the handle has been confirmed to exist; verified:false means it is a best guess. A wrong handle costs one wasted API call and returns nothing, so the cost of guessing is far lower than the cost of omitting. Anything marked false should be confirmed before the list is relied on.",
   "_updated": "2026-10-07",
   "categories": {
@@ -12,161 +12,238 @@
           "github": "Physical-Intelligence",
           "huggingface": "physical-intelligence",
           "note": "pi-zero, openpi. Open-sourced model and weights February 2025. About $2.1B raised.",
-          "verified": false
+          "verified": false,
+          "founded": 2024,
+          "first_published": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Skild AI",
           "github": "skild-ai",
           "huggingface": null,
           "note": "Skild Brain, an omni-bodied model. $1.4B Series C in January 2026, the largest single round in the space.",
-          "verified": false
+          "verified": false,
+          "founded": 2023,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Covariant",
-          "github": "covariant-ai",
+          "github": null,
           "huggingface": null,
-          "note": "RFM-1. The most production-validated manipulation foundation model.",
-          "verified": false
+          "note": "RFM-1 and warehouse picking. Whitepapers only — the model and data are proprietary. Acquired by Amazon.",
+          "verified": false,
+          "publishes": "none",
+          "founded": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Field AI",
           "github": "fieldai",
           "huggingface": null,
           "note": "Field foundation models for unstructured environments. About $2B.",
-          "verified": false
+          "verified": false,
+          "founded": 2023,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Generalist AI",
           "github": "generalist-ai",
           "huggingface": null,
           "note": "Cross-embodiment physical AGI.",
-          "verified": false
+          "verified": false,
+          "founded": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Dyna Robotics",
           "github": "dyna-robotics",
           "huggingface": null,
           "note": "DYNA-1.",
-          "verified": false
+          "verified": false,
+          "founded": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "World Labs",
           "github": "worldlabs",
           "huggingface": null,
           "note": "Spatial intelligence and large world models.",
-          "verified": false
+          "verified": false,
+          "founded": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "RLWRLD",
           "github": "rlwrld",
           "huggingface": null,
           "note": "Industrial-environment robot foundation models, Korea.",
-          "verified": false
+          "verified": false,
+          "founded": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "X Square Robot",
-          "github": "xsquare-robot",
-          "huggingface": null,
-          "note": "WALL-A and WALL-B model stack.",
-          "verified": false
+          "github": "X-Square-Robot",
+          "huggingface": "x-square-robot",
+          "note": "WALL-OSS vision-language-action models, published in LeRobot format across several embodiments.",
+          "verified": false,
+          "founded": 2023,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Archetype AI",
           "github": "archetype-ai",
           "huggingface": null,
           "note": "Newton, a physical-sensor foundation model.",
-          "verified": false
+          "verified": false,
+          "founded": 2022,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Rhoda AI",
           "github": null,
           "huggingface": null,
           "note": "Video-trained robot intelligence. No public code found.",
-          "verified": false
+          "verified": false,
+          "stage": "unknown",
+          "stage_source": "no founding year and nothing published"
         },
         {
           "name": "General Intuition",
           "github": null,
           "huggingface": null,
           "note": "Training environments and cross-embodiment learning.",
-          "verified": false
+          "verified": false,
+          "stage": "unknown",
+          "stage_source": "no founding year and nothing published"
         },
         {
           "name": "EmbodyX",
           "github": null,
           "huggingface": null,
           "note": "Embodied intelligence lab.",
-          "verified": false
+          "verified": false,
+          "stage": "unknown",
+          "stage_source": "no founding year and nothing published"
         },
         {
           "name": "Vayu Robotics",
-          "github": "vayurobotics",
-          "huggingface": null,
-          "note": "Foundation perception and mobility models that work without LiDAR.",
-          "verified": false
+          "github": null,
+          "huggingface": "vayu-robotics",
+          "note": "Perception and mobility models without LiDAR. Acquired by Serve Robotics in August 2025; the Hugging Face account was registered but never populated.",
+          "verified": false,
+          "founded": 2022,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Sunday Robotics",
           "github": "sunday-robotics",
           "huggingface": null,
           "note": "Foundation models for consumer and household manipulation.",
-          "verified": false
+          "verified": false,
+          "founded": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Tau Robotics",
           "github": "tau-robotics",
           "huggingface": null,
           "note": "Learned manipulation models; from the Physical AI landscape.",
-          "verified": false
+          "verified": false,
+          "first_published": 2020,
+          "stage": "uncertain",
+          "stage_source": "first repository 2020, but the handle is unverified"
         },
         {
           "name": "Odyssey",
-          "github": "odyssey-ml",
+          "github": null,
           "huggingface": null,
-          "note": "World models for interactive video.",
-          "verified": false
+          "note": "World models for interactive video. Work appears under project-specific accounts rather than a company organisation.",
+          "verified": false,
+          "publishes": "unconfirmed",
+          "founded": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Decart",
           "github": "DecartAI",
           "huggingface": null,
           "note": "Real-time world models.",
-          "verified": false
+          "verified": false,
+          "founded": 2023,
+          "first_published": 2026,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Reward AI",
           "github": "reward-ai",
           "huggingface": null,
           "note": "OM-1, open embodied model.",
-          "verified": false
+          "verified": false,
+          "stage": "unknown",
+          "stage_source": "no founding year and nothing published"
         },
         {
           "name": "Grounded Superintelligence",
           "github": "grounded-si",
           "huggingface": null,
           "note": "Embodied reasoning; little public yet.",
-          "verified": false
+          "verified": false,
+          "stage": "unknown",
+          "stage_source": "no founding year and nothing published"
         },
         {
           "name": "Moonlake AI",
-          "github": "moonlake-ai",
+          "github": null,
           "huggingface": null,
-          "note": "Robot learning.",
-          "verified": false
+          "note": "3D spatial and interactive generative models for simulation. Appears in third-party benchmarks; no public weights found.",
+          "verified": false,
+          "publishes": "none",
+          "stage": "unknown",
+          "stage_source": "no founding year and nothing published"
         },
         {
           "name": "General Robotics",
           "github": "general-robotics",
           "huggingface": null,
           "note": "Generalist control.",
-          "verified": false
+          "verified": false,
+          "stage": "unknown",
+          "stage_source": "no founding year and nothing published"
         },
         {
           "name": "Atoms",
           "github": "atoms-ai",
           "huggingface": null,
           "note": "Embodied intelligence.",
-          "verified": false
+          "verified": false,
+          "first_published": 2020,
+          "stage": "uncertain",
+          "stage_source": "first repository 2020, but the handle is unverified"
+        },
+        {
+          "name": "OpenMind",
+          "github": "OpenMind-AGI",
+          "huggingface": null,
+          "note": "OM1, an open-source operating system for robots.",
+          "verified": false,
+          "founded": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
         }
       ]
     },
@@ -176,176 +253,292 @@
           "name": "Figure AI",
           "github": "figure-ai",
           "huggingface": null,
-          "note": "Figure 03, Helix VLA. About $39B valuation and publishes nothing, which is why it is absent from both indexes.",
-          "verified": false
+          "note": "Figure 03 and the Helix VLA. About $39B valuation. No public repositories or datasets found.",
+          "verified": false,
+          "founded": 2022,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "1X Technologies",
           "github": "1x-technologies",
           "huggingface": "1x-technologies",
           "note": "NEO. Released a world-model dataset.",
-          "verified": false
+          "verified": false,
+          "founded": 2014,
+          "first_published": 2024,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Apptronik",
           "github": "apptronik",
           "huggingface": null,
           "note": "Apollo. About $5B.",
-          "verified": false
+          "verified": false,
+          "founded": 2016,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Agility Robotics",
           "github": "agilityrobotics",
           "huggingface": null,
           "note": "Digit.",
-          "verified": false
+          "verified": false,
+          "founded": 2015,
+          "first_published": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Sanctuary AI",
           "github": "sanctuary-ai",
           "huggingface": null,
           "note": "Phoenix.",
-          "verified": false
+          "verified": false,
+          "founded": 2018,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "NEURA Robotics",
           "github": "neurarobotics",
           "huggingface": null,
           "note": "4NE-1, Germany.",
-          "verified": false
+          "verified": false,
+          "founded": 2019,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Unitree Robotics",
           "github": "unitreerobotics",
           "huggingface": "unitreerobotics",
           "note": "G1, H1, H2, Go2, B2. The most-represented robot in our GitHub data at 113 repositories, and their own SDK is not indexed.",
-          "verified": true
+          "verified": true,
+          "founded": 2016,
+          "first_published": 2019,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "AgiBot",
           "github": "AgibotTech",
           "huggingface": "agibot-world",
           "note": "AgiBot World, one of the largest open manipulation datasets.",
-          "verified": false
+          "verified": false,
+          "founded": 2023,
+          "first_published": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Fourier Intelligence",
           "github": "FFTAI",
           "huggingface": null,
           "note": "GR-1, listed discontinued in our directory; GR-2 is the successor.",
-          "verified": false
+          "verified": false,
+          "founded": 2015,
+          "first_published": 2023,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Galbot",
           "github": "Galbot",
           "huggingface": null,
           "note": "G1 wheeled humanoid, China.",
-          "verified": false
+          "verified": false,
+          "founded": 2023,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Robot Era",
           "github": "robotera",
           "huggingface": null,
           "note": "XBot, STAR1.",
-          "verified": false
+          "verified": false,
+          "founded": 2023,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Booster Robotics",
           "github": "BoosterRobotics",
           "huggingface": null,
           "note": "Booster T1.",
-          "verified": false
+          "verified": false,
+          "founded": 2023,
+          "first_published": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "UBTech",
           "github": "ubtechrobotics",
           "huggingface": null,
           "note": "Walker S.",
-          "verified": false
+          "verified": false,
+          "founded": 2012,
+          "first_published": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "EngineAI",
           "github": "engineai-robotics",
           "huggingface": null,
           "note": "PM01, SE01.",
-          "verified": false
+          "verified": false,
+          "founded": 2023,
+          "first_published": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Westwood Robotics",
           "github": "westwoodrobotics",
           "huggingface": null,
           "note": "THEMIS.",
-          "verified": false
+          "verified": false,
+          "founded": 2018,
+          "first_published": 2013,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "K-Scale Labs",
           "github": "kscalelabs",
           "huggingface": "kscalelabs",
           "note": "Zeroth Bot, open humanoid.",
-          "verified": false
+          "verified": false,
+          "founded": 2024,
+          "first_published": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "PNDbotics",
           "github": "pndbotics",
           "huggingface": null,
           "note": "Adam.",
-          "verified": false
+          "verified": false,
+          "founded": 2023,
+          "first_published": 2025,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Tesla Optimus",
           "github": null,
           "huggingface": null,
-          "note": "Publishes nothing. Listed so the absence is deliberate rather than an oversight.",
-          "verified": false
+          "note": "Optimus. No public repositories or datasets found.",
+          "verified": false,
+          "founded": 2003,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Mentee Robotics",
           "github": "menteebot",
           "huggingface": null,
           "note": "End-to-end vision-to-motion humanoid.",
-          "verified": false
+          "verified": false,
+          "founded": 2022,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "LimX Dynamics",
           "github": "limxdynamics",
           "huggingface": null,
           "note": "P.One biped and Tron 1 wheeled point-foot biped.",
-          "verified": false
+          "verified": false,
+          "founded": 2022,
+          "first_published": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Clone Robotics",
           "github": "clone-robotics",
           "huggingface": null,
           "note": "Biomimetic musculoskeletal hands and torsos using artificial muscles.",
-          "verified": false
+          "verified": false,
+          "founded": 2021,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "LEAP Hand",
           "github": "leap-hand",
           "huggingface": null,
           "note": "Low-cost dexterous research hand from CMU, underpinning much of the dexterous manipulation data.",
-          "verified": false
+          "verified": false,
+          "first_published": 2022,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "Humanoid",
-          "github": "humanoidglobal",
+          "github": null,
           "huggingface": null,
-          "note": "UK humanoid developer, HMND 01.",
-          "verified": false
+          "note": "UK humanoid developer, HMND 01. Not to be confused with Hugging Face's lerobot-humanoid workspace, which is a different project.",
+          "verified": false,
+          "publishes": "unconfirmed",
+          "stage": "unknown",
+          "stage_source": "no founding year and nothing published"
         },
         {
           "name": "THEKER",
           "github": "theker-robotics",
           "huggingface": null,
           "note": "Humanoid manipulation, Europe.",
-          "verified": false
+          "verified": false,
+          "stage": "unknown",
+          "stage_source": "no founding year and nothing published"
         },
         {
           "name": "Watney",
-          "github": "watney-robotics",
+          "github": null,
           "huggingface": null,
-          "note": "Mobile humanoid.",
-          "verified": false
+          "note": "Listed from the Physical AI landscape. The GitHub project of the same name (nikivanov/watney) is a 3D-printable telepresence rover by an individual, which is probably a different Watney — not linked until confirmed.",
+          "verified": false,
+          "publishes": "unconfirmed",
+          "stage": "unknown",
+          "stage_source": "no founding year and nothing published"
+        },
+        {
+          "name": "Weave Robotics",
+          "github": "weave-robotics",
+          "huggingface": null,
+          "note": "Home robot, Isaac.",
+          "verified": false,
+          "founded": 2023,
+          "stage": "recent",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "The Bot Company",
+          "github": "thebotcompany",
+          "huggingface": null,
+          "note": "Home robots.",
+          "verified": false,
+          "founded": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Trener Robotics",
+          "github": "trener-robotics",
+          "huggingface": null,
+          "note": "Humanoid robotics.",
+          "verified": false,
+          "founded": null,
+          "stage": "unknown",
+          "stage_source": "no founding year and nothing published"
         }
       ]
     },
@@ -356,98 +549,301 @@
           "github": "boston-dynamics",
           "huggingface": null,
           "note": "Spot SDK. Excluded from robot attribution because the name is cited constantly as inspiration, but their own releases matter.",
-          "verified": false
+          "verified": false,
+          "founded": 1992,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "ANYbotics",
           "github": "ANYbotics",
           "huggingface": null,
           "note": "ANYmal, now attributed separately from Boston Dynamics.",
-          "verified": false
+          "verified": false,
+          "founded": 2016,
+          "first_published": 2014,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Deep Robotics",
           "github": "DeepRoboticsLab",
           "huggingface": null,
           "note": "X30, Lite3.",
-          "verified": false
+          "verified": false,
+          "founded": 2017,
+          "first_published": 2023,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Clearpath Robotics",
           "github": "clearpathrobotics",
           "huggingface": null,
           "note": "TurtleBot 4, Husky, Jackal. Excluded from attribution because 'husky' collides with a JavaScript package.",
-          "verified": false
+          "verified": false,
+          "founded": 2009,
+          "first_published": 2012,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "ROBOTIS",
           "github": "ROBOTIS-GIT",
           "huggingface": null,
           "note": "TurtleBot 3, OpenManipulator. At the owner cap in our index, so work is being discarded.",
-          "verified": true
+          "verified": true,
+          "founded": 1999,
+          "first_published": 2016,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Hello Robot",
           "github": "hello-robot",
           "huggingface": null,
           "note": "Stretch.",
-          "verified": false
+          "verified": false,
+          "founded": 2017,
+          "first_published": 2020,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "PAL Robotics",
           "github": "pal-robotics",
           "huggingface": null,
           "note": "TIAGo.",
-          "verified": true
+          "verified": true,
+          "founded": 2004,
+          "first_published": 2011,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Bitcraze",
           "github": "bitcraze",
           "huggingface": null,
           "note": "Crazyflie. Open hardware, active, absent from both indexes.",
-          "verified": false
+          "verified": false,
+          "founded": 2011,
+          "first_published": 2014,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Yahboom",
           "github": "YahboomTechnology",
           "huggingface": null,
           "note": "ROSMASTER, DOFBOT. Seven repositories attributed.",
-          "verified": false
+          "verified": false,
+          "founded": 2008,
+          "first_published": 2019,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Hiwonder",
           "github": "Hiwonder",
           "huggingface": null,
           "note": "MentorPi, PuppyPi.",
-          "verified": false
+          "verified": false,
+          "founded": 2011,
+          "first_published": 2025,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Petoi",
           "github": "PetoiCamp",
           "huggingface": null,
           "note": "Bittle and Nybble, open firmware.",
-          "verified": false
+          "verified": false,
+          "founded": 2016,
+          "first_published": 2022,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Xiaomi",
           "github": "MiRoboticsLab",
           "huggingface": null,
           "note": "CyberDog. Pattern tightened after their VLA and driving research matched a bare company-name rule.",
-          "verified": false
+          "verified": false,
+          "founded": 2010,
+          "first_published": 2021,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Unitree Community",
-          "github": "unitree-community",
+          "github": null,
           "huggingface": null,
-          "note": "Community-maintained ROS 2 drivers, bridges and IK tools — separate from Unitree's own account.",
-          "verified": false
+          "note": "Community ROS 2 drivers, bridges and IK tools for Unitree hardware, maintained separately from Unitree's own account. No single organisation handle confirmed.",
+          "verified": false,
+          "publishes": "unconfirmed",
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "Intel RealSense",
           "github": "IntelRealSense",
           "huggingface": null,
           "note": "Depth cameras used across robotics. Spun out of Intel in 2025.",
-          "verified": true
+          "verified": true,
+          "founded": 2015,
+          "stage": "established",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Ouster",
+          "github": "ouster-lidar",
+          "huggingface": null,
+          "note": "Digital LiDAR; publishes open ROS and client drivers.",
+          "verified": false,
+          "founded": 2015,
+          "stage": "established",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Starship Technologies",
+          "github": "starship-technologies",
+          "huggingface": null,
+          "note": "Sidewalk delivery robots.",
+          "verified": false,
+          "founded": 2014,
+          "stage": "established",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Built Robotics",
+          "github": "builtrobotics",
+          "huggingface": null,
+          "note": "Autonomous heavy construction equipment.",
+          "verified": false,
+          "founded": 2016,
+          "stage": "established",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Civ Robotics",
+          "github": "civrobotics",
+          "huggingface": null,
+          "note": "Autonomous surveying and stakeout.",
+          "verified": false,
+          "founded": 2018,
+          "stage": "established",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Mytra",
+          "github": "mytra-io",
+          "huggingface": null,
+          "note": "Three-dimensional warehouse storage and movement.",
+          "verified": false,
+          "founded": 2022,
+          "stage": "recent",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Simbe Robotics",
+          "github": "simberobotics",
+          "huggingface": null,
+          "note": "Retail shelf-scanning robots.",
+          "verified": false,
+          "founded": 2014,
+          "stage": "established",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Agtonomy",
+          "github": "agtonomy",
+          "huggingface": null,
+          "note": "Autonomy for agricultural equipment.",
+          "verified": false,
+          "founded": 2020,
+          "stage": "recent",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Bedrock Robotics",
+          "github": "bedrock-robotics",
+          "huggingface": null,
+          "note": "Autonomous construction equipment.",
+          "verified": false,
+          "founded": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Cartken",
+          "github": "cartken",
+          "huggingface": null,
+          "note": "Sidewalk delivery robots.",
+          "verified": false,
+          "founded": 2019,
+          "stage": "established",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Serve Robotics",
+          "github": "serve-robotics",
+          "huggingface": null,
+          "note": "Sidewalk delivery robots. Acquired Vayu Robotics in 2025.",
+          "verified": false,
+          "founded": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Bear Robotics",
+          "github": "bearrobotics",
+          "huggingface": null,
+          "note": "Serving robots for restaurants.",
+          "verified": false,
+          "founded": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Bonsai Robotics",
+          "github": "bonsairobotics",
+          "huggingface": null,
+          "note": "Vision-based autonomy for agriculture.",
+          "verified": false,
+          "founded": 2022,
+          "stage": "recent",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Knightscope",
+          "github": "knightscope",
+          "huggingface": null,
+          "note": "Security patrol robots.",
+          "verified": false,
+          "founded": 2013,
+          "stage": "established",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Dusty Robotics",
+          "github": "dustyrobotics",
+          "huggingface": null,
+          "note": "Building layout printing robots.",
+          "verified": false,
+          "founded": 2018,
+          "stage": "established",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Matic Robots",
+          "github": "maticrobots",
+          "huggingface": null,
+          "note": "Autonomous home vacuum.",
+          "verified": false,
+          "founded": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
         }
       ]
     },
@@ -458,217 +854,371 @@
           "github": "TheRobotStudio",
           "huggingface": null,
           "note": "SO-100 and SO-101. SO-ARM100 has 6,800 stars and is absent from the index, despite SO-101 being the second most-represented robot in our data.",
-          "verified": true
+          "verified": true,
+          "founded": 2007,
+          "first_published": 2015,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Enactic",
           "github": "enactic",
           "huggingface": null,
           "note": "OpenArm, hardware under CERN-OHL-S.",
-          "verified": true
+          "verified": true,
+          "founded": 2023,
+          "first_published": 2025,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Trossen Robotics",
           "github": "Interbotix",
           "huggingface": "TrossenRoboticsCommunity",
           "note": "ALOHA and WidowX kits; the Interbotix organisation publishes the drivers.",
-          "verified": false
+          "verified": false,
+          "founded": 2008,
+          "first_published": 2013,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "AgileX Robotics",
           "github": "agilexrobotics",
           "huggingface": null,
           "note": "PiPER, Cobot Magic.",
-          "verified": false
+          "verified": false,
+          "founded": 2016,
+          "first_published": 2020,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Franka Robotics",
           "github": "frankarobotics",
           "huggingface": null,
           "note": "FR3. Panda withdrawn; Franka Emika insolvent 2023, acquired by Agile Robots. Still the most-represented robot across both sources.",
-          "verified": false
+          "verified": false,
+          "founded": 2016,
+          "first_published": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Universal Robots",
           "github": "UniversalRobots",
           "huggingface": null,
           "note": "UR series. CB3 UR5 end-of-sale 2024; UR5e renamed UR7e in 2025.",
-          "verified": false
+          "verified": false,
+          "founded": 2005,
+          "first_published": 2018,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "KUKA",
           "github": "kuka-isir",
           "huggingface": null,
           "note": "LBR iiwa, KR series.",
-          "verified": false
+          "verified": false,
+          "founded": 1898,
+          "first_published": 2014,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Kinova",
           "github": "Kinovarobotics",
           "huggingface": null,
           "note": "Gen3; datasets reference the older Jaco 2.",
-          "verified": false
+          "verified": false,
+          "founded": 2006,
+          "first_published": 2013,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Flexiv",
           "github": "flexivrobotics",
           "huggingface": null,
           "note": "Rizon, Enlight, MICO. Maintained first-party SDK.",
-          "verified": true
+          "verified": true,
+          "founded": 2016,
+          "first_published": 2021,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Dobot",
           "github": "Dobot-Arm",
           "huggingface": null,
           "note": "X-Trainer, CR series.",
-          "verified": false
+          "verified": false,
+          "founded": 2015,
+          "first_published": 2021,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "UFACTORY",
           "github": "xArm-Developer",
           "huggingface": null,
           "note": "xArm.",
-          "verified": false
+          "verified": false,
+          "founded": 2013,
+          "first_published": 2018,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Elephant Robotics",
           "github": "elephantrobotics",
           "huggingface": null,
           "note": "myCobot, which has datasets but no repositories in our index.",
-          "verified": false
+          "verified": false,
+          "founded": 2016,
+          "first_published": 2020,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Realman Robotics",
           "github": "RealManRobot",
           "huggingface": null,
           "note": "RM series.",
-          "verified": false
+          "verified": false,
+          "founded": 2013,
+          "first_published": 2023,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Doosan Robotics",
           "github": "doosan-robotics",
           "huggingface": null,
           "note": "M and A series cobots.",
-          "verified": false
+          "verified": false,
+          "founded": 2015,
+          "first_published": 2019,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Techman Robot",
           "github": "TechmanRobotInc",
           "huggingface": null,
           "note": "TM series.",
-          "verified": false
+          "verified": false,
+          "founded": 2016,
+          "first_published": 2020,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Galaxea",
           "github": "OpenGalaxea",
           "huggingface": "OpenGalaxea",
           "note": "Open-World Dataset, audited by Argus, not in our index.",
-          "verified": false
+          "verified": false,
+          "founded": 2023,
+          "first_published": 2025,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Robotiq",
           "github": "Robotiq",
           "huggingface": null,
           "note": "Grippers. Not a robot, but appears on the end of twelve indexed UR projects.",
-          "verified": false
+          "verified": false,
+          "founded": 2008,
+          "first_published": 2026,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Sharpa",
           "github": "sharpa-robotics",
           "huggingface": null,
           "note": "Dexterous hands. Surfaced 22 times in tag mining and has no page.",
-          "verified": false
+          "verified": false,
+          "first_published": 2026,
+          "stage": "recent",
+          "stage_source": "first repository 2026"
         },
         {
           "name": "FANUC",
           "github": "FANUC-CORPORATION",
           "huggingface": null,
           "note": "The largest industrial robot maker in the world. Absent from the map until now.",
-          "verified": false
+          "verified": false,
+          "founded": 1972,
+          "first_published": 2025,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "ABB Robotics",
           "github": "abb-robotics",
           "huggingface": null,
           "note": "IRB series; one of the big four industrial arm makers.",
-          "verified": false
+          "verified": false,
+          "founded": 1988,
+          "first_published": 2021,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Wandelbots",
           "github": "wandelbots",
           "huggingface": null,
           "note": "No-code robot programming, Germany.",
-          "verified": false
+          "verified": false,
+          "founded": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Standard Bots",
           "github": "standard-bots",
           "huggingface": null,
           "note": "RO1 cobot, US-built.",
-          "verified": false
+          "verified": false,
+          "founded": 2020,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Dexterity",
-          "github": "dexterity",
+          "github": null,
           "huggingface": null,
-          "note": "Warehouse manipulation.",
-          "verified": false
+          "note": "Warehouse manipulation. The github handle 'dexterity' belongs to an unrelated design firm in Canada — a handle can resolve and still be the wrong account, which no automated check catches. Left empty until the real one is confirmed.",
+          "verified": false,
+          "founded": 2017,
+          "first_published": 2015,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Collaborative Robotics",
           "github": "collaborative-robotics",
           "huggingface": null,
           "note": "Proxie mobile manipulator.",
-          "verified": false
+          "verified": false,
+          "founded": 2022,
+          "first_published": 2017,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Sereact",
           "github": "sereact",
           "huggingface": null,
           "note": "Picking with vision-language models, Germany.",
-          "verified": false
+          "verified": false,
+          "founded": 2021,
+          "first_published": 2025,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Inbolt",
           "github": "inbolt",
           "huggingface": null,
           "note": "Real-time guidance for industrial arms, France.",
-          "verified": false
+          "verified": false,
+          "founded": 2019,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Tacta Systems",
           "github": "tacta-systems",
           "huggingface": null,
           "note": "Tactile-driven manipulation.",
-          "verified": false
+          "verified": false,
+          "founded": 2023,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Vesoma",
           "github": "vesoma",
           "huggingface": null,
           "note": "Manipulation hardware.",
-          "verified": false
+          "verified": false,
+          "stage": "unknown",
+          "stage_source": "no founding year and nothing published"
         },
         {
           "name": "Axis Robotics",
           "github": "axis-robotics",
           "huggingface": null,
           "note": "Industrial automation.",
-          "verified": false
+          "verified": false,
+          "first_published": 2020,
+          "stage": "uncertain",
+          "stage_source": "first repository 2020, but the handle is unverified"
         },
         {
           "name": "Robocurve",
           "github": "robocurve",
           "huggingface": null,
           "note": "Robot arms.",
-          "verified": false
+          "verified": false,
+          "first_published": 2026,
+          "stage": "recent",
+          "stage_source": "first repository 2026"
         },
         {
           "name": "UMA / Universal Manipulation",
-          "github": "uma-robotics",
+          "github": null,
           "huggingface": null,
-          "note": "Universal manipulation hardware.",
-          "verified": false
+          "note": "Read from a truncated label; the full name is unconfirmed. A research project at uma-manipulation.github.io by the LeRobot authors may or may not be the same thing.",
+          "verified": false,
+          "publishes": "unconfirmed",
+          "stage": "n/a",
+          "stage_source": "not a company"
+        },
+        {
+          "name": "Nimble Robotics",
+          "github": "nimble-robotics",
+          "huggingface": null,
+          "note": "Warehouse fulfilment robots.",
+          "verified": false,
+          "founded": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Chef Robotics",
+          "github": "chef-robotics",
+          "huggingface": null,
+          "note": "Food assembly robots.",
+          "verified": false,
+          "founded": 2019,
+          "stage": "established",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Ambi Robotics",
+          "github": "ambirobotics",
+          "huggingface": null,
+          "note": "Parcel sorting with AI picking.",
+          "verified": false,
+          "founded": 2018,
+          "stage": "established",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Robust AI",
+          "github": "robust-ai",
+          "huggingface": null,
+          "note": "Carter, a collaborative warehouse cart.",
+          "verified": false,
+          "founded": 2019,
+          "stage": "established",
+          "stage_source": "founding year"
         }
       ]
     },
@@ -680,168 +1230,263 @@
           "github": "huggingface",
           "huggingface": "lerobot",
           "note": "LeRobot, the framework behind a large share of the datasets we index. huggingface/lerobot has 27,960 stars and was never in the index at all.",
-          "verified": true
+          "verified": true,
+          "founded": 2016,
+          "first_published": 2022,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Pantheon Industries",
           "github": "Pantheon-Industries-Inc",
           "huggingface": null,
           "note": "Argus, which audited nine of the largest robotics datasets and found 27% of episodes carry a medium-or-higher severity issue. Published 1 October, missed by the 3 October harvest.",
-          "verified": true
+          "verified": true,
+          "founded": 2025,
+          "first_published": 2026,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Foxglove",
           "github": "foxglove",
           "huggingface": null,
           "note": "Robotics data platform and the MCAP format. Raised $40M.",
-          "verified": false
+          "verified": false,
+          "founded": 2021,
+          "first_published": 2021,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Rerun",
           "github": "rerun-io",
           "huggingface": null,
           "note": "Visualisation used widely in robotics logging.",
-          "verified": true
+          "verified": true,
+          "founded": 2022,
+          "first_published": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Voxel51",
           "github": "voxel51",
           "huggingface": "Voxel51",
           "note": "FiftyOne. Publishes many vision datasets, most not robotics — a reason their uploads need filtering rather than blanket inclusion.",
-          "verified": true
+          "verified": true,
+          "founded": 2016,
+          "first_published": 2024,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Scale AI",
           "github": "scaleapi",
           "huggingface": null,
           "note": "Data labelling at scale.",
-          "verified": false
+          "verified": false,
+          "founded": 2016,
+          "first_published": 2020,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Roboflow",
           "github": "roboflow",
           "huggingface": "roboflow",
           "note": "Vision dataset tooling.",
-          "verified": false
+          "verified": false,
+          "founded": 2019,
+          "first_published": 2020,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Encord",
           "github": "encord-team",
           "huggingface": null,
           "note": "Multimodal data curation.",
-          "verified": false
+          "verified": false,
+          "founded": 2020,
+          "first_published": 2025,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Bones Studio",
           "github": "bones-studio",
           "huggingface": "bones-studio",
           "note": "BONES-SEED, 142,220 motion sequences under a revenue-capped licence that propagates to derivatives — a licensing pattern worth watching.",
-          "verified": false
+          "verified": false,
+          "founded": 2024,
+          "first_published": 2026,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Weights & Biases",
           "github": "wandb",
           "huggingface": null,
           "note": "Experiment tracking, widely used in robot learning.",
-          "verified": false
+          "verified": false,
+          "founded": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "PickNik Robotics",
           "github": "PickNikRobotics",
           "huggingface": null,
           "note": "Maintainers of MoveIt 2 and MoveIt Pro.",
-          "verified": false
+          "verified": false,
+          "founded": 2015,
+          "first_published": 2014,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Open Navigation",
           "github": "open-navigation",
           "huggingface": null,
           "note": "Nav2, the ROS 2 navigation stack.",
-          "verified": false
+          "verified": false,
+          "founded": 2021,
+          "first_published": 2023,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "eProsima",
           "github": "eProsima",
           "huggingface": null,
           "note": "Fast DDS and micro-XRCE-DDS, the middleware under ROS 2.",
-          "verified": false
+          "verified": false,
+          "founded": 2008,
+          "first_published": 2014,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Eclipse Zenoh",
           "github": "eclipse-zenoh",
           "huggingface": null,
           "note": "Zero-overhead pub/sub increasingly replacing DDS for teleoperation and cloud bridging.",
-          "verified": false
+          "verified": false,
+          "founded": 2020,
+          "first_published": 2020,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "XDOF",
           "github": "XDOF",
           "huggingface": "XDOF",
           "note": "ABC-130k, 130,703 bimanual episodes — audited by Argus and already cited in our index.",
-          "verified": true
+          "verified": true,
+          "stage": "unknown",
+          "stage_source": "no founding year and nothing published"
         },
         {
           "name": "Roboto AI",
           "github": "roboto-ai",
           "huggingface": null,
           "note": "Robotics data platform and log analysis.",
-          "verified": false
+          "verified": false,
+          "founded": 2022,
+          "first_published": 2022,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "ReSim",
           "github": "resim-ai",
           "huggingface": null,
           "note": "Simulation-based testing and evaluation for robots.",
-          "verified": false
+          "verified": false,
+          "founded": 2023,
+          "first_published": 2026,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Mecka AI",
           "github": "mecka-ai",
           "huggingface": null,
           "note": "Robot data collection at scale.",
-          "verified": false
+          "verified": false,
+          "founded": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "micro1",
           "github": "micro1-ai",
           "huggingface": null,
           "note": "Expert data labelling.",
-          "verified": false
+          "verified": false,
+          "founded": 2022,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Veeda AI",
-          "github": "veeda-ai",
+          "github": null,
           "huggingface": null,
-          "note": "Robot data.",
-          "verified": false
+          "note": "Enterprise synthetic training data, founded by ex-NVIDIA researchers. No public releases found.",
+          "verified": false,
+          "publishes": "none",
+          "stage": "unknown",
+          "stage_source": "no founding year and nothing published"
         },
         {
           "name": "Midcentury",
-          "github": "midcentury-ai",
+          "github": null,
           "huggingface": null,
-          "note": "Robot data collection.",
-          "verified": false
+          "note": "Data and simulation infrastructure for physical AI. Private client work; no public releases found.",
+          "verified": false,
+          "publishes": "none",
+          "stage": "unknown",
+          "stage_source": "no founding year and nothing published"
         },
         {
           "name": "AMI Labs",
           "github": "ami-labs",
           "huggingface": null,
           "note": "Embodied data.",
-          "verified": false
+          "verified": false,
+          "stage": "unknown",
+          "stage_source": "no founding year and nothing published"
         },
         {
           "name": "InOrbit",
           "github": "inorbit-ai",
           "huggingface": null,
           "note": "Fleet operations and observability for robots.",
-          "verified": false
+          "verified": false,
+          "founded": 2018,
+          "first_published": 2021,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Antioch",
-          "github": "antioch-ai",
+          "github": "antioch-robotics",
           "huggingface": null,
-          "note": "Robot operations.",
-          "verified": false
+          "note": "antioch-py, an open client library and deterministic execution middleware for modular robotics.",
+          "verified": false,
+          "stage": "unknown",
+          "stage_source": "no founding year and nothing published"
+        },
+        {
+          "name": "Formant",
+          "github": "formant",
+          "huggingface": null,
+          "note": "Robot fleet operations and observability.",
+          "verified": false,
+          "founded": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
         }
       ]
     },
@@ -852,112 +1497,182 @@
           "github": "Genesis-Embodied-AI",
           "huggingface": null,
           "note": "Genesis simulator. Absent from the index.",
-          "verified": false
+          "verified": false,
+          "founded": 2023,
+          "first_published": 2023,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Open Robotics / OSRF",
           "github": "gazebosim",
           "huggingface": null,
           "note": "Gazebo. At the owner cap in our index.",
-          "verified": true
+          "verified": true,
+          "founded": 2012,
+          "first_published": 2020,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "ROS",
           "github": "ros-planning",
           "huggingface": null,
           "note": "Nav2, MoveIt.",
-          "verified": false
+          "verified": false,
+          "founded": 2007,
+          "first_published": 2012,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Farama Foundation",
           "github": "Farama-Foundation",
           "huggingface": null,
           "note": "Gymnasium, the environment interface most RL robotics builds on.",
-          "verified": true
+          "verified": true,
+          "founded": 2022,
+          "first_published": 2023,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Coppelia Robotics",
           "github": "CoppeliaRobotics",
           "huggingface": null,
           "note": "CoppeliaSim.",
-          "verified": false
+          "verified": false,
+          "founded": 2006,
+          "first_published": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "LightwheelAI",
           "github": "LightwheelAI",
           "huggingface": "LightwheelAI",
           "note": "Simulation assets; appears in the arXiv results.",
-          "verified": false
+          "verified": false,
+          "founded": 2023,
+          "first_published": 2025,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Bullet Physics",
           "github": "bulletphysics",
           "huggingface": null,
           "note": "The basis for PyBullet.",
-          "verified": true
+          "verified": true,
+          "founded": 2003,
+          "first_published": 2011,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Project Chrono",
           "github": "projectchrono",
           "huggingface": null,
           "note": "Multi-physics, granular and fluid-structure.",
-          "verified": false
+          "verified": false,
+          "founded": 1998,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Cyberbotics",
           "github": "cyberbotics",
           "huggingface": null,
           "note": "Webots, Apache-2.0 since 2018.",
-          "verified": false
+          "verified": false,
+          "founded": 1998,
+          "first_published": 2018,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Drake / Robot Locomotion",
           "github": "RobotLocomotion",
           "huggingface": null,
           "note": "MIT and Toyota Research Institute.",
-          "verified": true
+          "verified": true,
+          "founded": 2013,
+          "first_published": 2014,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Newton Physics",
           "github": "newton-physics",
           "huggingface": null,
           "note": "NVIDIA, DeepMind and Disney Research jointly.",
-          "verified": false
+          "verified": false,
+          "founded": 2025,
+          "first_published": 2025,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Isaac Sim",
           "github": "isaac-sim",
           "huggingface": null,
           "note": "Isaac Sim and Isaac Lab.",
-          "verified": false
+          "verified": false,
+          "founded": 1993,
+          "first_published": 2021,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Hao Su Lab",
           "github": "haosulab",
           "huggingface": null,
           "note": "ManiSkill and SAPIEN, UCSD.",
-          "verified": false
+          "verified": false,
+          "first_published": 2020,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "PartNet-Mobility",
           "github": "daerduoCarey",
           "huggingface": null,
           "note": "Articulated object benchmark underpinning ManiSkill.",
-          "verified": false
+          "verified": false,
+          "first_published": 2019,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "Intrinsic",
           "github": "intrinsic-ai",
           "huggingface": null,
           "note": "Alphabet's industrial robotics software arm; Flowstate.",
-          "verified": false
+          "verified": false,
+          "founded": 2021,
+          "first_published": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Duality AI",
           "github": "duality-ai",
           "huggingface": null,
           "note": "Falcon digital twin simulation.",
-          "verified": false
+          "verified": false,
+          "founded": 2018,
+          "stage": "established",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Bucket Robotics",
+          "github": "bucket-robotics",
+          "huggingface": null,
+          "note": "Defect detection from simulation.",
+          "verified": false,
+          "founded": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
         }
       ]
     },
@@ -968,175 +1683,272 @@
           "github": "NVIDIA",
           "huggingface": "nvidia",
           "note": "Isaac, GR00T, Cosmos. nvidia/cosmos has 11,980 stars and was not in the index.",
-          "verified": true
+          "verified": true,
+          "founded": 1993,
+          "first_published": 2024,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "NVIDIA Labs",
           "github": "NVlabs",
           "huggingface": null,
           "note": "Research releases, a separate organisation.",
-          "verified": true
+          "verified": true,
+          "founded": 1993,
+          "first_published": 2020,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "NVIDIA Isaac ROS",
           "github": "NVIDIA-ISAAC-ROS",
           "huggingface": null,
           "note": "At the owner cap.",
-          "verified": true
+          "verified": true,
+          "founded": 1993,
+          "first_published": 2021,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Google DeepMind",
           "github": "google-deepmind",
           "huggingface": null,
           "note": "MuJoCo, Menagerie, the RT series, Gemini Robotics.",
-          "verified": true
+          "verified": true,
+          "founded": 2010,
+          "first_published": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Meta FAIR",
           "github": "facebookresearch",
           "huggingface": "facebook",
           "note": "Habitat, SuperDex. project_superdex at 715 stars was missed.",
-          "verified": true
+          "verified": true,
+          "founded": 2013,
+          "first_published": 2022,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Allen Institute for AI",
           "github": "allenai",
           "huggingface": "allenai",
           "note": "MolmoAct, audited by Argus.",
-          "verified": true
+          "verified": true,
+          "founded": 2014,
+          "first_published": 2020,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Microsoft Research",
           "github": "microsoft",
           "huggingface": "microsoft",
           "note": "Very large organisation; needs filtering rather than blanket inclusion.",
-          "verified": true
+          "verified": true,
+          "founded": 1991,
+          "first_published": 2024,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Toyota Research Institute",
           "github": "TRI-ML",
           "huggingface": null,
           "note": "Large behaviour models, diffusion policy work.",
-          "verified": false
+          "verified": false,
+          "founded": 2016,
+          "first_published": 2020,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Amazon Robotics / FAR",
           "github": "amazon-science",
           "huggingface": null,
           "note": "amazon-far/PRISM appeared in the org sweep.",
-          "verified": false
+          "verified": false,
+          "founded": 2012,
+          "first_published": 2022,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "ByteDance Seed",
           "github": "ByteDance-Seed",
           "huggingface": "ByteDance-Seed",
           "note": "GR-2 and robotics VLA work.",
-          "verified": false
+          "verified": false,
+          "founded": 2023,
+          "first_published": 2025,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Tencent Robotics X",
           "github": "tencent-ailab",
           "huggingface": "tencent",
           "note": "",
-          "verified": false
+          "verified": false,
+          "founded": 2018,
+          "first_published": 2021,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Alibaba DAMO",
           "github": "alibaba",
           "huggingface": "Alibaba-NLP",
           "note": "",
-          "verified": false
+          "verified": false,
+          "founded": 2017,
+          "first_published": 2019,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Samsung Research",
           "github": "SamsungLabs",
           "huggingface": null,
           "note": "",
-          "verified": false
+          "verified": false,
+          "founded": 1987,
+          "first_published": 2024,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Honda Research",
           "github": "honda-research-institute",
           "huggingface": null,
           "note": "",
-          "verified": false
+          "verified": false,
+          "founded": 2003,
+          "first_published": 2023,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "OpenAI",
           "github": "openai",
           "huggingface": "openai",
           "note": "VPT, Minecraft gameplay with action logs.",
-          "verified": true
+          "verified": true,
+          "founded": 2015,
+          "first_published": 2016,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Google Research",
           "github": "google-research",
           "huggingface": null,
           "note": "Language-Table and related.",
-          "verified": true
+          "verified": true,
+          "founded": 1998,
+          "first_published": 2018,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Google",
           "github": "google",
           "huggingface": null,
           "note": "Brax. Separate from google-deepmind.",
-          "verified": true
+          "verified": true,
+          "founded": 1998,
+          "first_published": 2024,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "PyTorch",
           "github": "pytorch",
           "huggingface": null,
           "note": "TorchRL.",
-          "verified": true
+          "verified": true,
+          "founded": 2016,
+          "first_published": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Ray",
           "github": "ray-project",
           "huggingface": null,
           "note": "RLlib, distributed RL.",
-          "verified": true
+          "verified": true,
+          "founded": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "DLR German Aerospace",
           "github": "DLR-RM",
           "huggingface": null,
           "note": "Stable-Baselines3, the standard RL baseline library.",
-          "verified": true
+          "verified": true,
+          "founded": 1969,
+          "first_published": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Skywork AI",
           "github": "SkyworkAI",
           "huggingface": null,
           "note": "Matrix-Game interactive world model.",
-          "verified": false
+          "verified": false,
+          "founded": 2021,
+          "first_published": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Etched",
           "github": "etched-ai",
           "huggingface": null,
           "note": "Oasis, with Decart.",
-          "verified": false
+          "verified": false,
+          "founded": 2022,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Kyutai",
           "github": "kyutai-labs",
           "huggingface": null,
           "note": "Moshi, full-duplex spoken dialogue.",
-          "verified": false
+          "verified": false,
+          "founded": 2023,
+          "first_published": 2026,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Alibaba Qwen Audio",
           "github": "QwenAudio",
           "huggingface": null,
           "note": "SenseVoice and CosyVoice.",
-          "verified": false
+          "verified": false,
+          "founded": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "NetEase Youdao",
           "github": "netease-youdao",
           "huggingface": null,
           "note": "EmotiVoice.",
-          "verified": false
+          "verified": false,
+          "founded": 2006,
+          "first_published": 2026,
+          "stage": "established",
+          "stage_source": "founding year"
         }
       ]
     },
@@ -1148,91 +1960,194 @@
           "github": "autowarefoundation",
           "huggingface": null,
           "note": "",
-          "verified": true
+          "verified": true,
+          "founded": 2019,
+          "first_published": 2020,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "comma.ai",
           "github": "commaai",
           "huggingface": null,
           "note": "openpilot, 63,799 stars — the most-starred repository in our index.",
-          "verified": true
+          "verified": true,
+          "founded": 2015,
+          "first_published": 2016,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Wayve",
           "github": "wayveai",
           "huggingface": null,
           "note": "About $8.6B.",
-          "verified": false
+          "verified": false,
+          "founded": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Waymo",
           "github": "waymo-research",
           "huggingface": null,
           "note": "Waymo Open Dataset.",
-          "verified": false
+          "verified": false,
+          "founded": 2009,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Nuro",
           "github": "nuro-ai",
           "huggingface": null,
           "note": "",
-          "verified": false
+          "verified": false,
+          "founded": 2016,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Applied Intuition",
           "github": "appliedintuition",
           "huggingface": null,
           "note": "Simulation for autonomous vehicles.",
-          "verified": false
+          "verified": false,
+          "founded": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "OpenDriveLab",
           "github": "OpenDriveLab",
           "huggingface": null,
           "note": "UniAD.",
-          "verified": true
+          "verified": true,
+          "founded": 2021,
+          "first_published": 2022,
+          "stage": "recent",
+          "stage_source": "founding year"
         },
         {
           "name": "Aurora",
           "github": "aurora-innovation",
           "huggingface": null,
           "note": "Autonomous trucking.",
-          "verified": false
+          "verified": false,
+          "founded": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Zoox",
           "github": "zoox",
           "huggingface": null,
           "note": "Amazon's robotaxi.",
-          "verified": false
+          "verified": false,
+          "founded": 2014,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Kodiak Robotics",
-          "github": "Kodiak-Robotics",
+          "github": null,
           "huggingface": null,
-          "note": "Autonomous trucking.",
-          "verified": false
+          "note": "Autonomous freight trucking. No public SDK, developer hub or driving dataset.",
+          "verified": false,
+          "publishes": "none",
+          "founded": 2018,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Skydio",
           "github": "Skydio",
           "huggingface": null,
           "note": "Autonomous drones; the largest US drone maker.",
-          "verified": false
+          "verified": false,
+          "founded": 2014,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Shield AI",
           "github": "shield-ai",
           "huggingface": null,
           "note": "Hivemind autonomy for aircraft.",
-          "verified": false
+          "verified": false,
+          "founded": 2015,
+          "stage": "established",
+          "stage_source": "founding year"
         },
         {
           "name": "Anduril",
           "github": "anduril",
           "huggingface": null,
           "note": "Lattice; defence autonomy.",
-          "verified": false
+          "verified": false,
+          "founded": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Reliable Robotics",
+          "github": "reliable-robotics",
+          "huggingface": null,
+          "note": "Autonomous aircraft systems.",
+          "verified": false,
+          "founded": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Zipline",
+          "github": "zipline",
+          "huggingface": null,
+          "note": "Autonomous delivery drones.",
+          "verified": false,
+          "founded": 2014,
+          "stage": "established",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Gatik",
+          "github": "gatik-ai",
+          "huggingface": null,
+          "note": "Autonomous middle-mile trucking.",
+          "verified": false,
+          "founded": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Scout AI",
+          "github": "scout-ai",
+          "huggingface": null,
+          "note": "Autonomy for defence vehicles.",
+          "verified": false,
+          "founded": 2024,
+          "stage": "recent",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Plus AI",
+          "github": "plusai",
+          "huggingface": null,
+          "note": "Autonomous trucking software.",
+          "verified": false,
+          "founded": 2016,
+          "stage": "established",
+          "stage_source": "founding year"
+        },
+        {
+          "name": "Corvus Robotics",
+          "github": "corvus-robotics",
+          "huggingface": null,
+          "note": "Warehouse inventory drones.",
+          "verified": false,
+          "founded": 2017,
+          "stage": "established",
+          "stage_source": "founding year"
         }
       ]
     },
@@ -1244,140 +2159,200 @@
           "github": "StanfordVL",
           "huggingface": null,
           "note": "BEHAVIOR, iGibson, OmniGibson.",
-          "verified": false
+          "verified": false,
+          "first_published": 2017,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "Stanford REAL",
           "github": "real-stanford",
           "huggingface": null,
           "note": "Diffusion Policy, UMI.",
-          "verified": true
+          "verified": true,
+          "first_published": 2020,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "UT Austin RPL",
           "github": "UT-Austin-RPL",
           "huggingface": null,
           "note": "LIBERO, robosuite.",
-          "verified": true
+          "verified": true,
+          "first_published": 2020,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "Berkeley RAIL",
           "github": "rail-berkeley",
           "huggingface": null,
           "note": "BridgeData, Octo.",
-          "verified": false
+          "verified": false,
+          "first_published": 2023,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "ETH Zurich RSL",
           "github": "leggedrobotics",
           "huggingface": null,
           "note": "ANYmal, rsl_rl, legged_gym. At the owner cap, and hoi-retarget at 127 stars was discarded by it.",
-          "verified": true
+          "verified": true,
+          "first_published": 2015,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "Bonn Photogrammetry & Robotics",
           "github": "PRBonn",
           "huggingface": null,
           "note": "KISS-ICP.",
-          "verified": true
+          "verified": true,
+          "first_published": 2017,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "HKU MaRS Lab",
           "github": "hku-mars",
           "huggingface": null,
           "note": "FAST-LIO, FAST-LIVO. 16,016 stars and no active repositories.",
-          "verified": true
+          "verified": true,
+          "first_published": 2019,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "HKUST Aerial Robotics",
           "github": "HKUST-Aerial-Robotics",
           "huggingface": null,
           "note": "VINS-Mono, Fast-Planner.",
-          "verified": true
+          "verified": true,
+          "first_published": 2017,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "IIT robotology",
           "github": "robotology",
           "huggingface": null,
           "note": "The iCub software distribution.",
-          "verified": true
+          "verified": true,
+          "first_published": 2013,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "CMU AirLab",
           "github": "castacks",
           "huggingface": null,
           "note": "TartanAir.",
-          "verified": false
+          "verified": false,
+          "first_published": 2016,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "Shanghai AI Lab",
           "github": "InternRobotics",
           "huggingface": "InternRobotics",
           "note": "GAUGE, InternVLA. In the arXiv results but not the index.",
-          "verified": false
+          "verified": false,
+          "first_published": 2023,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "BAAI",
           "github": "FlagOpen",
           "huggingface": "BAAI",
           "note": "RoboBrain, SWITCH.",
-          "verified": false
+          "verified": false,
+          "first_published": 2023,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "NYU GRAIL",
           "github": "NYU-robot-learning",
           "huggingface": null,
           "note": "Dobb-E, home robot learning from phone demonstrations.",
-          "verified": false
+          "verified": false,
+          "first_published": 2021,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "MIT Biomimetics",
           "github": "mit-biomimetics",
           "huggingface": null,
           "note": "Mini Cheetah.",
-          "verified": false
+          "verified": false,
+          "first_published": 2024,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "Tsinghua TEA Lab",
           "github": "TEA-Lab",
           "huggingface": null,
           "note": "",
-          "verified": false
+          "verified": false,
+          "first_published": 2024,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "Tsinghua ML",
           "github": "thu-ml",
           "huggingface": null,
           "note": "RDT-1B bimanual diffusion model.",
-          "verified": false
+          "verified": false,
+          "first_published": 2023,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "Tsinghua CoAI",
           "github": "thu-coai",
           "huggingface": null,
           "note": "ESConv emotional-support conversations.",
-          "verified": false
+          "verified": false,
+          "first_published": 2025,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "DeCLaRe Lab",
           "github": "declare-lab",
           "huggingface": null,
           "note": "MELD, multimodal emotion. Singapore.",
-          "verified": false
+          "verified": false,
+          "first_published": 2025,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "Retico",
           "github": "retico-team",
           "huggingface": null,
           "note": "Incremental spoken dialogue framework.",
-          "verified": false
+          "verified": false,
+          "first_published": 2024,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "MIT Improbable AI",
           "github": "improbable-ai",
           "huggingface": null,
           "note": "LucidSim, deformable manipulation, extreme locomotion.",
-          "verified": false
+          "verified": false,
+          "first_published": 2022,
+          "stage": "n/a",
+          "stage_source": "not a company"
         }
       ]
     },
@@ -1389,150 +2364,212 @@
           "github": "droid-dataset",
           "huggingface": null,
           "note": "76,000 trajectories across 564 scenes.",
-          "verified": false
+          "verified": false,
+          "first_published": 2024,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "RoboCasa",
           "github": "robocasa",
           "huggingface": null,
           "note": "RoboCasa365, household simulation at scale.",
-          "verified": false
+          "verified": false,
+          "first_published": 2024,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "ARISE Initiative",
           "github": "ARISE-Initiative",
           "huggingface": null,
           "note": "robosuite and robomimic, Stanford and UT Austin.",
-          "verified": true
+          "verified": true,
+          "first_published": 2020,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "Octo",
           "github": "octo-models",
           "huggingface": null,
           "note": "Berkeley's generalist transformer policy.",
-          "verified": false
+          "verified": false,
+          "first_published": 2023,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "OpenVLA",
           "github": "openvla",
           "huggingface": null,
           "note": "7B open vision-language-action model.",
-          "verified": false
+          "verified": false,
+          "first_published": 2024,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "RoboTurk",
           "github": "RoboTurk-Platform",
           "huggingface": null,
           "note": "Crowdsourced teleoperation.",
-          "verified": false
+          "verified": false,
+          "first_published": 2019,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "RoboArena",
           "github": "robo-arena",
           "huggingface": null,
           "note": "Distributed real-world policy evaluation.",
-          "verified": false
+          "verified": false,
+          "first_published": 2025,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "RoboDojo",
           "github": "RoboDojo-Benchmark",
           "huggingface": null,
           "note": "Sim-and-real generalist benchmark.",
-          "verified": false
+          "verified": false,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "ManipArena",
           "github": "maniparena",
           "huggingface": null,
           "note": "Real-robot bimanual benchmark.",
-          "verified": false
+          "verified": false,
+          "first_published": 2026,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "UniDex",
           "github": "unidex-ai",
           "huggingface": null,
           "note": "50,000+ trajectories across eight dexterous hands.",
-          "verified": false
+          "verified": false,
+          "first_published": 2026,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "OpenHLM",
           "github": "OpenHLM-project",
           "huggingface": null,
           "note": "Whole-body humanoid loco-manipulation on the Unitree G1.",
-          "verified": false
+          "verified": false,
+          "first_published": 2026,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "Physical Superintelligence Lab",
           "github": "physical-superintelligence-lab",
           "huggingface": null,
           "note": "Psi0 and Humanoid Everyday.",
-          "verified": false
+          "verified": false,
+          "first_published": 2025,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "EgoVerse",
           "github": "GaTech-RL2",
           "huggingface": null,
           "note": "1,362 hours of egocentric demonstrations, Georgia Tech.",
-          "verified": false
+          "verified": false,
+          "first_published": 2023,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "Amazon FAR",
           "github": "amazon-far",
           "huggingface": null,
           "note": "ABC-130K, 130,703 bimanual episodes. Audited by Argus.",
-          "verified": false
+          "verified": false,
+          "first_published": 2025,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "Alexa AI",
           "github": "alexa",
           "huggingface": null,
           "note": "TEACh, household task dialogues.",
-          "verified": false
+          "verified": false,
+          "first_published": 2020,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "ALFRED",
           "github": "askforalfred",
           "huggingface": null,
           "note": "Language-conditioned household benchmark.",
-          "verified": false
+          "verified": false,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "BAAI Humanoid",
           "github": "BAAI-Humanoid",
           "huggingface": null,
           "note": "MOSAIC motion bank.",
-          "verified": false
+          "verified": false,
+          "first_published": 2026,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "DAVIAN Robotics",
           "github": "DAVIAN-Robotics",
           "huggingface": null,
           "note": "PHUMA, physics-filtered humanoid locomotion, KAIST.",
-          "verified": true
+          "verified": true,
+          "first_published": 2025,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "KAIST CLVR",
           "github": "clvrai",
           "huggingface": null,
           "note": "FurnitureBench.",
-          "verified": true
+          "verified": true,
+          "first_published": 2020,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "Freiburg robot learning",
           "github": "mees",
           "huggingface": null,
           "note": "CALVIN. Published under a personal account.",
-          "verified": false
+          "verified": false,
+          "first_published": 2011,
+          "stage": "n/a",
+          "stage_source": "not a company"
         },
         {
           "name": "Technion",
           "github": "zoharri",
           "huggingface": null,
           "note": "LESS tactile dataset. Personal account.",
-          "verified": false
+          "verified": false,
+          "first_published": 2026,
+          "stage": "n/a",
+          "stage_source": "not a company"
         }
       ]
     }
   },
-  "_note_on_duplicates": "Each organisation appears once. Open X-Embodiment is published by google-deepmind, which is listed under big_tech_labs."
+  "_note_on_duplicates": "Each organisation appears once. Open X-Embodiment is published by google-deepmind, which is listed under big_tech_labs.",
+  "_fields": "founded is a stated year, looked up or known, never guessed. first_published is the year of the earliest repository seen from that account: measured, accurate for recent companies, useless for old ones — KUKA's first repository is 116 years after the company started. stage is recent (2020 or later), established (before 2020), uncertain where the only evidence is an old first repository on an unverified handle, unknown where there is no evidence at all, and n/a for labs and projects. stage_source says which of those applied."
 }
