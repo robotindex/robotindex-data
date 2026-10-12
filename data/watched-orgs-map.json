@@ -244,6 +244,16 @@
           "founded": 2024,
           "stage": "recent",
           "stage_source": "founding year"
+        },
+        {
+          "name": "Liqing Intelligence",
+          "github": "liqing-intelligence",
+          "huggingface": null,
+          "note": "Physical AI infrastructure, China. Raised several hundred million RMB across angel rounds.",
+          "verified": false,
+          "founded": null,
+          "stage": "unknown",
+          "stage_source": "no founding year recorded"
         }
       ]
     },
@@ -854,6 +864,16 @@
           "founded": 2017,
           "stage": "established",
           "stage_source": "founding year"
+        },
+        {
+          "name": "Ultra Robotics",
+          "github": "ultra-robotics",
+          "huggingface": null,
+          "note": "Warehouse robotics.",
+          "verified": false,
+          "founded": null,
+          "stage": "unknown",
+          "stage_source": "no founding year recorded"
         }
       ]
     },
@@ -1703,6 +1723,16 @@
           "founded": 2024,
           "stage": "recent",
           "stage_source": "founding year"
+        },
+        {
+          "name": "SafeWorld",
+          "github": "safeworld-ai",
+          "huggingface": null,
+          "note": "Robot safety and simulation.",
+          "verified": false,
+          "founded": null,
+          "stage": "unknown",
+          "stage_source": "no founding year recorded"
         }
       ]
     },
@@ -2383,6 +2413,16 @@
           "first_published": 2022,
           "stage": "n/a",
           "stage_source": "not a company"
+        },
+        {
+          "name": "Duke General Robotics Lab",
+          "github": "generalroboticslab",
+          "huggingface": null,
+          "note": "Text2Robot, the Duke Humanoid V1 with open RL simulation and hardware control, ClutterGen and MARBLE.",
+          "verified": false,
+          "founded": null,
+          "stage": "unknown",
+          "stage_source": "no founding year recorded"
         }
       ]
     },
