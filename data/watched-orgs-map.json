@@ -237,9 +237,9 @@
         },
         {
           "name": "OpenMind",
-          "github": "OpenMind-AGI",
+          "github": "OpenMind",
           "huggingface": null,
-          "note": "OM1, an open-source operating system for robots.",
+          "note": "OM1, an open-source robot operating system, plus the BrainPack — open hardware with CAD, STL files and a bill of materials.",
           "verified": false,
           "founded": 2024,
           "stage": "recent",
@@ -504,7 +504,7 @@
           "name": "Watney",
           "github": null,
           "huggingface": null,
-          "note": "Listed from the Physical AI landscape. The GitHub project of the same name (nikivanov/watney) is a 3D-printable telepresence rover by an individual, which is probably a different Watney — not linked until confirmed.",
+          "note": "Autonomous robots for continuous physical monitoring, maintenance and auditing inside high-density data centres. No public GitHub account found.",
           "verified": false,
           "publishes": "unconfirmed",
           "stage": "unknown",
@@ -522,9 +522,9 @@
         },
         {
           "name": "The Bot Company",
-          "github": "thebotcompany",
+          "github": null,
           "huggingface": null,
-          "note": "Home robots.",
+          "note": "Home robots. No public GitHub organisation found.",
           "verified": false,
           "founded": 2024,
           "stage": "recent",
@@ -532,13 +532,23 @@
         },
         {
           "name": "Trener Robotics",
-          "github": "trener-robotics",
+          "github": null,
           "huggingface": null,
-          "note": "Humanoid robotics.",
+          "note": "Humanoid robotics. No public GitHub organisation found.",
           "verified": false,
           "founded": null,
           "stage": "unknown",
           "stage_source": "no founding year and nothing published"
+        },
+        {
+          "name": "Theseus Robotics",
+          "github": "theseus-robotics",
+          "huggingface": null,
+          "note": "Humanoids for retail: e-grocery order picking by day, overnight shelf restocking from back-of-house.",
+          "verified": false,
+          "founded": null,
+          "stage": "unknown",
+          "stage_source": "no founding year recorded"
         }
       ]
     },
@@ -727,9 +737,9 @@
         },
         {
           "name": "Civ Robotics",
-          "github": "civrobotics",
+          "github": null,
           "huggingface": null,
-          "note": "Autonomous surveying and stakeout.",
+          "note": "Autonomous surveying and stakeout. No public GitHub organisation found.",
           "verified": false,
           "founded": 2018,
           "stage": "established",
@@ -737,9 +747,9 @@
         },
         {
           "name": "Mytra",
-          "github": "mytra-io",
+          "github": null,
           "huggingface": null,
-          "note": "Three-dimensional warehouse storage and movement.",
+          "note": "Three-dimensional warehouse storage and movement. No public GitHub organisation found.",
           "verified": false,
           "founded": 2022,
           "stage": "recent",
@@ -777,9 +787,9 @@
         },
         {
           "name": "Cartken",
-          "github": "cartken",
+          "github": null,
           "huggingface": null,
-          "note": "Sidewalk delivery robots.",
+          "note": "Sidewalk and indoor delivery robots. No public GitHub organisation found.",
           "verified": false,
           "founded": 2019,
           "stage": "established",
@@ -837,9 +847,9 @@
         },
         {
           "name": "Matic Robots",
-          "github": "maticrobots",
+          "github": "MaticianInc",
           "huggingface": null,
-          "note": "Autonomous home vacuum.",
+          "note": "Autonomous home vacuum. Publishes as MaticianInc; mostly forks and a device-connection service.",
           "verified": false,
           "founded": 2017,
           "stage": "established",
@@ -1202,7 +1212,7 @@
         },
         {
           "name": "Ambi Robotics",
-          "github": "ambirobotics",
+          "github": "ambi-robotics",
           "huggingface": null,
           "note": "Parcel sorting with AI picking.",
           "verified": false,
@@ -1219,6 +1229,26 @@
           "founded": 2019,
           "stage": "established",
           "stage_source": "founding year"
+        },
+        {
+          "name": "Silica",
+          "github": "silica-robotics",
+          "huggingface": null,
+          "note": "Low-cost direct-force-sensing actuators, giving standard manipulators compliance without multi-axis torque sensors.",
+          "verified": false,
+          "founded": null,
+          "stage": "unknown",
+          "stage_source": "no founding year recorded"
+        },
+        {
+          "name": "Rodeo Robotics",
+          "github": "rodeo-robotics",
+          "huggingface": null,
+          "note": "Autonomous technicians for heavy fleet maintenance — oil changes and depot servicing — pairing foundation-model manipulation with teleoperation.",
+          "verified": false,
+          "founded": null,
+          "stage": "unknown",
+          "stage_source": "no founding year recorded"
         }
       ]
     },
@@ -2111,9 +2141,9 @@
         },
         {
           "name": "Gatik",
-          "github": "gatik-ai",
+          "github": null,
           "huggingface": null,
-          "note": "Autonomous middle-mile trucking.",
+          "note": "Autonomous middle-mile trucking. No organisation account found; a 'Gatik USA' profile exists but belongs to StarskyRobotics.",
           "verified": false,
           "founded": 2017,
           "stage": "established",
