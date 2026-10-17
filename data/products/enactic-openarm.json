@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "enactic-openarm",
+  "slug": "product-enactic-openarm",
+  "name": "Enactic OpenArm 2.0",
+  "manufacturer": "Openarm",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A fully **open-source 7-DOF humanoid arm** from **Enactic** of Tokyo, built for **physical AI research** and contact-rich manipulation. It uses **backdrivable quasi-direct-drive** actuators, reaches about **633 mm**, weighs **5.5 kg** and holds **4.1 kg** nominal. The **CAD is under CERN-OHL-S-2.0** and the software under **Apache-2.0**, so you can build one yourself, or buy a complete **bimanual system from about $6,500** from certified manufacturers.",
+  "specs": [
+    {
+      "label": "Price",
+      "value": "From $6,500",
+      "note": "Bimanual system, certified manufacturers"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "7 per arm",
+      "note": "14 in the bimanual setup"
+    },
+    {
+      "label": "Reach",
+      "value": "633 mm",
+      "note": "606 mm per CNX Software"
+    },
+    {
+      "label": "Weight",
+      "value": "5.5 kg",
+      "note": "Per arm"
+    },
+    {
+      "label": "Payload",
+      "value": "4.1 kg",
+      "note": "Nominal; 6.0 kg peak"
+    },
+    {
+      "label": "Actuators",
+      "value": "QDD",
+      "note": "Quasi-direct-drive, backdrivable"
+    },
+    {
+      "label": "Control",
+      "value": "CAN-FD",
+      "note": "1 kHz loop; CAN 2.0 fallback"
+    },
+    {
+      "label": "End Effector",
+      "value": "Pinch gripper",
+      "note": "Redesigned in 2.0; in-hand camera"
+    },
+    {
+      "label": "Scale",
+      "value": "Human",
+      "note": "For a person of ~160–165 cm"
+    },
+    {
+      "label": "Construction",
+      "value": "Al + steel",
+      "note": "CNC parts, 3D-printed casings"
+    },
+    {
+      "label": "Hardware Licence",
+      "value": "CERN-OHL-S-2.0",
+      "note": "CAD, STEP, Fusion 360"
+    },
+    {
+      "label": "Software Licence",
+      "value": "Apache-2.0",
+      "note": "Software repositories"
+    }
+  ],
+  "sourcing": "Verified against Enactic's documentation (docs.openarm.dev) and the enactic/openarm GitHub repository, CNX Software's 30 September 2026 write-up, the Hugging Face LeRobot OpenArm page, and WowRobo and OpenELAB seller listings, as of 4 October 2026. Flagged as uncertain: reach is 633 mm in Enactic's documentation and at MyBotShop but 606 mm in CNX Software, which cites the 2.0 CAD, and the difference may be a 1.1 versus 2.0 change; price varies by nearly four times across sellers for nominally the same system, from $5,000 at WowRobo (V1.1) to $19,998 at OpenELAB for a pair, against Enactic's own $6,500; CNX Software says most software repositories, not all, are Apache-2.0, and quotes 20-40 day lead times for 2.0 against WowRobo's 10-15 days for V1.1; and the photo is Enactic's promotional render with its studio floor and shadow removed.",
+  "manufacturerUrl": "https://openarm.dev",
+  "pricing": {
+    "summary": "Enactic designs the arm but does not manufacture it, so the price depends on the seller. Enactic's own figure is a complete bimanual OpenArm 2.0 system from about **$6,500** through certified manufacturers in Japan, China and Taiwan. **WowRobo** lists the earlier OpenArm V1.1, one set of two arms with grippers, at **$5,000** by bank transfer, **$5,400** by card or CNY 38,800 in China, with a quoted 10-15 day production lead time. **OpenELAB** lists a WowRobo OpenArm at **$9,999** each, **$19,998** for a leader and follower pair. A third party reports a self-build from the published bill of materials at under **$3,000**. Two related open-source products complete the 2.0 ecosystem: the **OpenArm Cell**, a standard evaluation enclosure with fixed background, lighting, cameras and arm position, at **$6,200**, and the **OpenArm KER**, a 1.7 kg motorless shoulder-worn leader arm at 70% scale with 15-bit magnetic encoders, at **$2,599**. Prices exclude shipping. The spread is wide enough to confirm with the seller before ordering. robotindex does not sell this product and takes no commission from any seller listed."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Most research arms are open in the sense that you can write code for them. **OpenArm** is open in the sense that you can **build one**: CAD, STEP files, Fusion 360 assemblies, firmware, control software and simulation assets are all published, and the hardware carries **CERN-OHL-S-2.0** rather than a licence covering only the software layer. That is why this page carries the **Open Source badge**. The more unusual part of 2.0 is the **OpenArm Cell**, a standard enclosure meant to let a result from one lab be reproduced in another under identical conditions; whether it is adopted widely remains to be seen. The **KER** leader arm maps its joints one to one to the follower, so teleoperation needs no coordinate transform. Support is broad: Hugging Face's **LeRobot v0.5.0** added native OpenArm support on 9 March 2026, and Enactic maintains ROS 2, MuJoCo and URDF repositories, with the main repository at roughly 3,600 GitHub stars. Timeline: a first public beta in February 2025, the formal launch of OpenArm 01 on 23 July 2025, Release No.2 (v1.1) on 31 October 2025, OpenArm 2.0 in May 2026 with a redesigned gripper, the Cell and VR teleoperation, and KER v0.2.0 on 26 June 2026. Documentation is at docs.openarm.dev."
+    }
+  ]
+}
