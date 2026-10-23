@@ -746,7 +746,7 @@
       "tab": "models",
       "category": "Manipulation Models",
       "name": "ACT (Action Chunking with Transformers)",
-      "desc": "Imitation-learning policy behind ALOHA bimanual manipulation; predicts chunks of future actions for smooth fine-grained control.",
+      "desc": "Imitation-learning policy behind ALOHA and Mobile ALOHA bimanual manipulation; predicts chunks of future actions for smooth fine-grained control.",
       "license": "MIT",
       "link": "https://github.com/tonyzhaozh/act",
       "access": "Open"
@@ -919,6 +919,16 @@
       "desc": "Meta AI's high-performance 3D simulator for embodied AI research, rendering photorealistic indoor scenes at thousands of frames per second for navigation and interaction task training.",
       "license": "MIT",
       "link": "https://github.com/facebookresearch/habitat-sim",
+      "access": "Open"
+    },
+    {
+      "id": "eidon-ai-eidon-sim",
+      "tab": "simulation-training",
+      "category": "Synthetic Data & Sensors",
+      "name": "Eidon Sim",
+      "desc": "Open-source simulation environment and visualizer from Eidon AI, released when the company shut down: quaternion-to-Euler conversion, a seven-DOF arm kinematics solver, 3D skeletal reconstruction, and trajectory playback synced to video, with simulation-compatible output. Built around motion captured by Eidon's own wearable trackers.",
+      "license": "Not yet confirmed (the repo's license file hasn't been checked)",
+      "link": "https://github.com/Eidon-AI/eidon-sim",
       "access": "Open"
     },
     {
