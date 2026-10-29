@@ -1,0 +1,251 @@
+name,display_name,category,website,location,github,huggingface,gh_exists,hf_exists,followers,public_repos,repos,stars,repos_new,repos_known,datasets,downloads,datasets_new,datasets_known,models,model_downloads,models_new,models_known,last_activity,days_since_activity,note
+Physical Intelligence,Physical Intelligence,foundation_models,,,Physical-Intelligence,physical-intelligence,yes,yes,1659,10,0,0,0,0,0,0,0,0,0,0,0,0,,,"pi-zero, openpi. Open-sourced model and weights February 2025. About $2.1B raised."
+Skild AI,Skild AI,foundation_models,https://skild.ai/,,skild-ai,,yes,,22,0,0,0,0,0,0,0,0,0,0,0,0,0,,,"Skild Brain, an omni-bodied model. $1.4B Series C in January 2026, the largest single round in the space."
+Covariant,,foundation_models,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,RFM-1 and warehouse picking. Whitepapers only — the model and data are proprietary. Acquired by Amazon.
+Field AI,,foundation_models,,,fieldai,,yes,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,,,Field foundation models for unstructured environments. About $2B.
+Generalist AI,,foundation_models,,,generalist-ai,,yes,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Cross-embodiment physical AGI.
+Dyna Robotics,Dyna Robotics,foundation_models,,,dyna-robotics,,yes,,14,0,0,0,0,0,0,0,0,0,0,0,0,0,,,DYNA-1.
+World Labs,,foundation_models,,,worldlabs,,yes,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Spatial intelligence and large world models.
+RLWRLD,,foundation_models,,,rlwrld,,yes,,47,11,1,0,1,0,0,0,0,0,0,0,0,0,2026-10-25,4,"Industrial-environment robot foundation models, Korea."
+X Square Robot,X Square Robot,foundation_models,,China,X-Square-Robot,x-square-robot,yes,yes,249,22,12,682,12,0,7,14622,6,1,5,280,5,0,2026-10-28,1,"WALL-OSS vision-language-action models, published in LeRobot format across several embodiments."
+Archetype AI,Archetype,foundation_models,https://www.archetype.dev,,archetype-ai,,yes,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,"Newton, a physical-sensor foundation model."
+Rhoda AI,,foundation_models,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Video-trained robot intelligence. No public code found.
+General Intuition,,foundation_models,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Training environments and cross-embodiment learning.
+EmbodyX,,foundation_models,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Embodied intelligence lab.
+Vayu Robotics,,foundation_models,,,,vayu-robotics,,yes,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Perception and mobility models without LiDAR. Acquired by Serve Robotics in August 2025; the Hugging Face account was registered but never populated.
+Sunday Robotics,Sunday Robotics,foundation_models,https://sunday.ai,United States of America,sunday-robotics,,yes,,29,5,0,0,0,0,0,0,0,0,0,0,0,0,,,Foundation models for consumer and household manipulation.
+Tau Robotics,,foundation_models,,,tau-robotics,,yes,,1,2,0,0,0,0,0,0,0,0,0,0,0,0,,,Learned manipulation models; from the Physical AI landscape.
+Odyssey,,foundation_models,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,World models for interactive video. Work appears under project-specific accounts rather than a company organisation.
+Decart,,foundation_models,,,DecartAI,,yes,,137,20,1,1,1,0,0,0,0,0,0,0,0,0,2026-09-30,29,Real-time world models.
+Reward AI,,foundation_models,,,reward-ai,,yes,,2,0,0,0,0,0,0,0,0,0,0,0,0,0,,,"OM-1, open embodied model."
+Grounded Superintelligence,grounded si,foundation_models,,,grounded-si,,yes,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Embodied reasoning; little public yet.
+Moonlake AI,,foundation_models,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,3D spatial and interactive generative models for simulation. Appears in third-party benchmarks; no public weights found.
+General Robotics,,foundation_models,,,general-robotics,,yes,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Generalist control.
+Atoms,,foundation_models,,,atoms-ai,,yes,,4,8,0,0,0,0,0,0,0,0,0,0,0,0,,,Embodied intelligence.
+OpenMind,OpenMind,foundation_models,https://openmind.com,United States of America,OpenMind,,yes,,389,34,1,1,1,0,0,0,0,0,0,0,0,0,2026-09-12,47,"OM1, an open-source robot operating system, plus the BrainPack — open hardware with CAD, STL files and a bill of materials."
+Liqing Intelligence,,foundation_models,,,liqing-intelligence,,no,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,"Physical AI infrastructure, China. Raised several hundred million RMB across angel rounds."
+Figure AI,,humanoids,,,figure-ai,,yes,,0,8,0,0,0,0,0,0,0,0,0,0,0,0,,,Figure 03 and the Helix VLA. About $39B valuation. No public repositories or datasets found.
+1X Technologies,1X Technologies,humanoids,http://www.1x.tech,,1x-technologies,1x-technologies,yes,yes,190,1,0,0,0,0,0,0,0,0,0,0,0,0,,,NEO. Released a world-model dataset.
+Apptronik,,humanoids,,,apptronik,,yes,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Apollo. About $5B.
+Agility Robotics,Agility Robotics,humanoids,http://www.agilityrobotics.com,,agilityrobotics,,yes,,86,9,0,0,0,0,0,0,0,0,0,0,0,0,,,Digit.
+Sanctuary AI,,humanoids,,,sanctuary-ai,,yes,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Phoenix.
+NEURA Robotics,,humanoids,,,neurarobotics,,yes,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,"4NE-1, Germany."
+Unitree Robotics,Unitree Robotics,humanoids,https://www.unitree.com,Hangzhou China,unitreerobotics,unitreerobotics,yes,yes,7134,56,10,313,10,0,144,252659,144,0,3,1046,3,0,2026-10-29,0,"G1, H1, H2, Go2, B2. The most-represented robot in our GitHub data at 113 repositories, and their own SDK is not indexed."
+AgiBot,,humanoids,https://www.agibot.com/,China,AgibotTech,agibot-world,yes,yes,2245,26,13,336,13,0,2,2066,2,0,1,0,1,0,2026-10-27,2,"AgiBot World, one of the largest open manipulation datasets."
+Fourier Intelligence,Fourier,humanoids,https://fourierintelligence.com,China,FFTAI,,yes,,395,26,0,0,0,0,0,0,0,0,0,0,0,0,,,"GR-1, listed discontinued in our directory; GR-2 is the successor."
+Galbot,German Autolabs Bot,humanoids,,Berlin,Galbot,,yes,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,"G1 wheeled humanoid, China."
+Robot Era,,humanoids,,,robotera,,yes,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,"XBot, STAR1."
+Booster Robotics,,humanoids,https://www.boosterobotics.com/,,BoosterRobotics,,yes,,323,9,1,11,1,0,0,0,0,0,0,0,0,0,2026-07-20,101,Booster T1.
+UBTech,,humanoids,,,ubtechrobotics,,yes,,0,7,0,0,0,0,0,0,0,0,0,0,0,0,,,Walker S.
+EngineAI,,humanoids,,,engineai-robotics,,yes,,342,11,6,122,6,0,0,0,0,0,0,0,0,0,2026-10-28,1,"PM01, SE01."
+Westwood Robotics,Westwood Robotics,humanoids,https://westwoodrobots.org,Texas,westwoodrobotics,,yes,,26,75,2,0,2,0,0,0,0,0,0,0,0,0,2026-09-25,34,THEMIS.
+K-Scale Labs,K-Scale Labs,humanoids,,United States of America,kscalelabs,kscalelabs,yes,yes,1134,133,0,0,0,0,0,0,0,0,0,0,0,0,,,"Zeroth Bot, open humanoid."
+PNDbotics,PNDbotics,humanoids,https://www.pndbotics.com,China,pndbotics,,yes,,40,15,0,0,0,0,0,0,0,0,0,0,0,0,,,Adam.
+Tesla Optimus,,humanoids,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Optimus. No public repositories or datasets found.
+Mentee Robotics,,humanoids,,,menteebot,,yes,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,End-to-end vision-to-motion humanoid.
+LimX Dynamics,LimX Dynamics,humanoids,https://www.limxdynamics.com,,limxdynamics,,yes,,710,52,21,101,21,0,0,0,0,0,0,0,0,0,2026-10-29,0,P.One biped and Tron 1 wheeled point-foot biped.
+Clone Robotics,Clone Robotics,humanoids,,,clone-robotics,,yes,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Biomimetic musculoskeletal hands and torsos using artificial muscles.
+LEAP Hand,,humanoids,,,leap-hand,,yes,,49,9,0,0,0,0,0,0,0,0,0,0,0,0,,,"Low-cost dexterous research hand from CMU, underpinning much of the dexterous manipulation data."
+Humanoid,,humanoids,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,"UK humanoid developer, HMND 01. Not to be confused with Hugging Face's lerobot-humanoid workspace, which is a different project."
+THEKER,,humanoids,,,theker-robotics,,yes,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,,,"Humanoid manipulation, Europe."
+Watney,,humanoids,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,"Autonomous robots for continuous physical monitoring, maintenance and auditing inside high-density data centres. No public GitHub account found."
+Weave Robotics,,humanoids,,,weave-robotics,,yes,,4,0,0,0,0,0,0,0,0,0,0,0,0,0,,,"Home robot, Isaac."
+The Bot Company,,humanoids,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Home robots. No public GitHub organisation found.
+Trener Robotics,,humanoids,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Humanoid robotics. No public GitHub organisation found.
+Theseus Robotics,Theseus Robotics,humanoids,,,theseus-robotics,,yes,,0,3,0,0,0,0,0,0,0,0,0,0,0,0,,,"Humanoids for retail: e-grocery order picking by day, overnight shelf restocking from back-of-house."
+Boston Dynamics,Boston Dynamics,legged_and_mobile,,,boston-dynamics,,yes,,622,5,0,0,0,0,0,0,0,0,0,0,0,0,,,"Spot SDK. Excluded from robot attribution because the name is cited constantly as inspiration, but their own releases matter."
+ANYbotics,ANYbotics,legged_and_mobile,https://www.anybotics.com/,Zurich,ANYbotics,,yes,,719,102,0,0,0,0,0,0,0,0,0,0,0,0,,,"ANYmal, now attributed separately from Boston Dynamics."
+Deep Robotics,DEEPRoboticsLab,legged_and_mobile,https://www.deeprobotics.cn/,China,DeepRoboticsLab,,yes,,831,28,9,36,9,0,0,0,0,0,0,0,0,0,2026-10-28,1,"X30, Lite3."
+Clearpath Robotics,,legged_and_mobile,,,clearpathrobotics,,yes,,228,318,2,46,2,0,0,0,0,0,0,0,0,0,2026-10-23,6,"TurtleBot 4, Husky, Jackal. Excluded from attribution because 'husky' collides with a JavaScript package."
+ROBOTIS,ROBOTIS,legged_and_mobile,http://robotis.com/,"#37, Magok Jungang 5-ro 1-gil, Gangseo-gu, Seoul, Korea",ROBOTIS-GIT,,yes,,1235,156,6,125,6,0,0,0,0,0,0,0,0,0,2026-10-29,0,"TurtleBot 3, OpenManipulator. At the owner cap in our index, so work is being discarded."
+Hello Robot,hello robot,legged_and_mobile,https://hello-robot.com,,hello-robot,,yes,,262,68,23,45,23,0,0,0,0,0,0,0,0,0,2026-10-29,0,Stretch.
+PAL Robotics,PAL Robotics S.L.,legged_and_mobile,https://www.pal-robotics.com,"Barcelona, Spain",pal-robotics,,yes,,352,197,3,8,3,0,0,0,0,0,0,0,0,0,2026-10-28,1,TIAGo.
+Bitcraze,Bitcraze,legged_and_mobile,https://www.bitcraze.io,Sweden,bitcraze,,yes,,694,78,0,0,0,0,0,0,0,0,0,0,0,0,,,"Crazyflie. Open hardware, active, absent from both indexes."
+Yahboom,Yahboom Technology,legged_and_mobile,https://www.yahboom.store/,Shenzhen,YahboomTechnology,,yes,,694,344,7,4,7,0,0,0,0,0,0,0,0,0,2026-10-27,2,"ROSMASTER, DOFBOT. Seven repositories attributed."
+Hiwonder,Hiwonder,legged_and_mobile,https://www.hiwonder.com,,Hiwonder,,yes,,263,35,2,1,2,0,0,0,0,0,0,0,0,0,2026-08-27,63,"MentorPi, PuppyPi."
+Petoi,Petoi LLC,legged_and_mobile,https://www.petoi.com,Pittsburgh,PetoiCamp,,yes,,429,20,2,0,2,0,0,0,0,0,0,0,0,0,2026-10-24,5,"Bittle and Nybble, open firmware."
+Xiaomi,,legged_and_mobile,,,MiRoboticsLab,,yes,,480,29,0,0,0,0,0,0,0,0,0,0,0,0,,,CyberDog. Pattern tightened after their VLA and driving research matched a bare company-name rule.
+Unitree Community,,legged_and_mobile,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,"Community ROS 2 drivers, bridges and IK tools for Unitree hardware, maintained separately from Unitree's own account. No single organisation handle confirmed."
+Intel RealSense,,legged_and_mobile,,"Santa Clara, CA",IntelRealSense,,yes,,591,2,0,0,0,0,0,0,0,0,0,0,0,0,,,Depth cameras used across robotics. Spun out of Intel in 2025.
+Ouster,Ouster Inc,legged_and_mobile,https://ouster.com/,United States of America,ouster-lidar,,yes,,118,11,1,0,1,0,0,0,0,0,0,0,0,0,2026-10-23,6,Digital LiDAR; publishes open ROS and client drivers.
+Starship Technologies,Starship Technologies,legged_and_mobile,https://www.starship.xyz,,starship-technologies,,yes,,13,4,0,0,0,0,0,0,0,0,0,0,0,0,,,Sidewalk delivery robots.
+Built Robotics,Built Robotics,legged_and_mobile,https://www.builtrobotics.com/,United States of America,builtrobotics,,yes,,14,6,1,0,1,0,0,0,0,0,0,0,0,0,2026-10-19,10,Autonomous heavy construction equipment.
+Civ Robotics,,legged_and_mobile,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Autonomous surveying and stakeout. No public GitHub organisation found.
+Mytra,,legged_and_mobile,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Three-dimensional warehouse storage and movement. No public GitHub organisation found.
+Simbe Robotics,Simbe Robotics,legged_and_mobile,,"San Francisco, CA",simberobotics,,yes,,13,16,0,0,0,0,0,0,0,0,0,0,0,0,,,Retail shelf-scanning robots.
+Agtonomy,Agtonomy,legged_and_mobile,https://www.agtonomy.com,United States of America,agtonomy,,yes,,17,14,0,0,0,0,0,0,0,0,0,0,0,0,,,Autonomy for agricultural equipment.
+Bedrock Robotics,Bedrock Robotics,legged_and_mobile,,United States of America,bedrock-robotics,,yes,,19,3,0,0,0,0,0,0,0,0,0,0,0,0,,,Autonomous construction equipment.
+Cartken,,legged_and_mobile,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Sidewalk and indoor delivery robots. No public GitHub organisation found.
+Serve Robotics,,legged_and_mobile,,,serve-robotics,,yes,,41,33,1,0,1,0,0,0,0,0,0,0,0,0,2026-07-27,94,Sidewalk delivery robots. Acquired Vayu Robotics in 2025.
+Bear Robotics,"Bear Robotics, Inc.",legged_and_mobile,,,bearrobotics,,yes,,74,8,0,0,0,0,0,0,0,0,0,0,0,0,,,Serving robots for restaurants.
+Bonsai Robotics,BonsaiRobotics,legged_and_mobile,,United States of America,bonsairobotics,,yes,,24,25,2,0,2,0,0,0,0,0,0,0,0,0,2026-09-21,38,Vision-based autonomy for agriculture.
+Knightscope,KI,legged_and_mobile,,United States of America,knightscope,,yes,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Security patrol robots.
+Dusty Robotics,Dusty Robotics,legged_and_mobile,,,dustyrobotics,,yes,,8,14,0,0,0,0,0,0,0,0,0,0,0,0,,,Building layout printing robots.
+Matic Robots,"Matic Robots, Inc.",legged_and_mobile,,,MaticianInc,,yes,,47,25,0,0,0,0,0,0,0,0,0,0,0,0,,,Autonomous home vacuum. Publishes as MaticianInc; mostly forks and a device-connection service.
+Ultra Robotics,,legged_and_mobile,,,ultra-robotics,,yes,,0,12,0,0,0,0,0,0,0,0,0,0,0,0,,,Warehouse robotics.
+The Robot Studio,TRS,arms_and_manipulators,http://www.therobotstudio.com,France,TheRobotStudio,,yes,,1078,26,0,0,0,0,0,0,0,0,0,0,0,0,,,"SO-100 and SO-101. SO-ARM100 has 6,800 stars and is absent from the index, despite SO-101 being the second most-represented robot in our data."
+Enactic,"Enactic, Inc.",arms_and_manipulators,https://enactic.ai,Japan,enactic,,yes,,249,54,7,22,7,0,0,0,0,0,0,0,0,0,2026-10-28,1,"OpenArm, hardware under CERN-OHL-S."
+Trossen Robotics,Trossen Robotics (Interbotix),arms_and_manipulators,https://www.trossenrobotics.com/,"Chicago, IL",Interbotix,TrossenRoboticsCommunity,yes,yes,231,75,0,0,0,0,8,1994,8,0,3,48,3,0,2026-09-25,34,ALOHA and WidowX kits; the Interbotix organisation publishes the drivers.
+AgileX Robotics,,arms_and_manipulators,https://www.agilex.ai,china,agilexrobotics,,yes,,1531,98,7,9,7,0,0,0,0,0,0,0,0,0,2026-10-09,20,"PiPER, Cobot Magic."
+Franka Robotics,FRANKA ROBOTICS,arms_and_manipulators,https://franka.de,,frankarobotics,,yes,,283,22,3,46,3,0,0,0,0,0,0,0,0,0,2026-10-29,0,"FR3. Panda withdrawn; Franka Emika insolvent 2023, acquired by Agile Robots. Still the most-represented robot across both sources."
+Universal Robots,Universal Robots A/S,arms_and_manipulators,https://www.universal-robots.com/developer,"Odense, Denmark",UniversalRobots,,yes,,615,72,0,0,0,0,0,0,0,0,0,0,0,0,,,UR series. CB3 UR5 end-of-sale 2024; UR5e renamed UR7e in 2025.
+KUKA,Kuka LWR 4+ ISIR,arms_and_manipulators,http://www.isir.upmc.fr/index.php?op=view_equipe&id=4&lang=fr,Paris,kuka-isir,,yes,,14,49,0,0,0,0,0,0,0,0,0,0,0,0,,,"LBR iiwa, KR series."
+Kinova,Kinova Robotics,arms_and_manipulators,http://www.kinovarobotics.com,"Montreal, QC",Kinovarobotics,,yes,,146,16,3,5,3,0,0,0,0,0,0,0,0,0,2026-10-23,6,Gen3; datasets reference the older Jaco 2.
+Flexiv,Flexiv Robotics,arms_and_manipulators,https://www.flexiv.com,,flexivrobotics,,yes,,106,27,7,12,7,0,0,0,0,0,0,0,0,0,2026-10-23,6,"Rizon, Enlight, MICO. Maintained first-party SDK."
+Dobot,Dobot,arms_and_manipulators,https://dobot-robots.com,China SZ,Dobot-Arm,,yes,,559,44,4,1,4,0,0,0,0,0,0,0,0,0,2026-08-21,69,"X-Trainer, CR series."
+UFACTORY,UFACTORY,arms_and_manipulators,https://www.ufactory.cc,,xArm-Developer,,yes,,237,14,3,10,3,0,0,0,0,0,0,0,0,0,2026-10-29,0,xArm.
+Elephant Robotics,Elephant Robotics,arms_and_manipulators,https://www.elephantrobotics.com,"Shenzhen, China",elephantrobotics,,yes,,289,125,8,0,8,0,0,0,0,0,0,0,0,0,2026-10-16,13,"myCobot, which has datasets but no repositories in our index."
+Realman Robotics,,arms_and_manipulators,,,RealManRobot,,yes,,182,26,0,0,0,0,0,0,0,0,0,0,0,0,,,RM series.
+Doosan Robotics,Doosan Robotics,arms_and_manipulators,http://www.doosanrobotics.com,Korea,doosan-robotics,,yes,,128,8,0,0,0,0,0,0,0,0,0,0,0,0,,,M and A series cobots.
+Techman Robot,TechmanRobot,arms_and_manipulators,https://www.tm-robot.com,,TechmanRobotInc,,yes,,65,13,1,2,1,0,0,0,0,0,0,0,0,0,2026-10-27,2,TM series.
+Galaxea,Galaxea,arms_and_manipulators,,,OpenGalaxea,OpenGalaxea,yes,yes,110,13,3,6,3,0,1,291,1,0,2,0,2,0,2026-09-22,37,"Open-World Dataset, audited by Argus, not in our index."
+Robotiq,ROBOTIQ,arms_and_manipulators,https://www.robotiq.com/,,Robotiq,,yes,,37,6,3,20,3,0,0,0,0,0,0,0,0,0,2026-10-29,0,"Grippers. Not a robot, but appears on the end of twelve indexed UR projects."
+Sharpa,Sharpa,arms_and_manipulators,https://www.sharpa.com/,Singapore,sharpa-robotics,,yes,,199,18,7,49,7,0,0,0,0,0,0,0,0,0,2026-10-29,0,Dexterous hands. Surfaced 22 times in tag mining and has no page.
+FANUC,FANUC CORPORATION,arms_and_manipulators,https://www.fanuc.com,JAPAN,FANUC-CORPORATION,,yes,,122,4,0,0,0,0,0,0,0,0,0,0,0,0,,,The largest industrial robot maker in the world. Absent from the map until now.
+ABB Robotics,,arms_and_manipulators,,,abb-robotics,,yes,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,,,IRB series; one of the big four industrial arm makers.
+Wandelbots,,arms_and_manipulators,,,wandelbots,,yes,,1,5,0,0,0,0,0,0,0,0,0,0,0,0,,,"No-code robot programming, Germany."
+Standard Bots,,arms_and_manipulators,,,standard-bots,,yes,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,"RO1 cobot, US-built."
+Dexterity,,arms_and_manipulators,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,"Warehouse manipulation. The github handle 'dexterity' belongs to an unrelated design firm in Canada — a handle can resolve and still be the wrong account, which no automated check catches. Left empty "
+Collaborative Robotics,,arms_and_manipulators,https://collaborative-robotics.github.io/,,collaborative-robotics,,yes,,16,17,1,0,1,0,0,0,0,0,0,0,0,0,2026-09-19,40,Proxie mobile manipulator.
+Sereact,Sereact,arms_and_manipulators,https://sereact.ai,"Stuttgart, Germany",sereact,,yes,,37,24,0,0,0,0,0,0,0,0,0,0,0,0,,,"Picking with vision-language models, Germany."
+Inbolt,,arms_and_manipulators,,,inbolt,,yes,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,"Real-time guidance for industrial arms, France."
+Tacta Systems,Tacta Systems Inc.,arms_and_manipulators,,,tacta-systems,,yes,,10,4,0,0,0,0,0,0,0,0,0,0,0,0,,,Tactile-driven manipulation.
+Vesoma,SenseHook,arms_and_manipulators,,,vesoma,,yes,,0,4,0,0,0,0,0,0,0,0,0,0,0,0,,,Manipulation hardware.
+Axis Robotics,AXIS Robotics,arms_and_manipulators,,,axis-robotics,,yes,,0,2,0,0,0,0,0,0,0,0,0,0,0,0,,,Industrial automation.
+Robocurve,robocurve,arms_and_manipulators,https://robocurve.org,,robocurve,,yes,,119,16,16,779,15,1,0,0,0,0,0,0,0,0,2026-10-29,0,Robot arms.
+UMA / Universal Manipulation,,arms_and_manipulators,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Read from a truncated label; the full name is unconfirmed. A research project at uma-manipulation.github.io by the LeRobot authors may or may not be the same thing.
+Nimble Robotics,,arms_and_manipulators,,,nimble-robotics,,yes,,0,2,0,0,0,0,0,0,0,0,0,0,0,0,,,Warehouse fulfilment robots.
+Chef Robotics,"Chef Robotics, Inc.",arms_and_manipulators,https://chefrobotics.ai,"San Francisco, CA",chef-robotics,,yes,,13,22,0,0,0,0,0,0,0,0,0,0,0,0,,,Food assembly robots.
+Ambi Robotics,Ambi Robotics,arms_and_manipulators,https://ambirobotics.com,United States of America,ambi-robotics,,yes,,7,19,0,0,0,0,0,0,0,0,0,0,0,0,,,Parcel sorting with AI picking.
+Robust AI,Robust AI,arms_and_manipulators,https://robust.ai,"Palo Alto, CA",robust-ai,,yes,,2,0,0,0,0,0,0,0,0,0,0,0,0,0,,,"Carter, a collaborative warehouse cart."
+Silica,,arms_and_manipulators,,,silica-robotics,,no,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,"Low-cost direct-force-sensing actuators, giving standard manipulators compliance without multi-axis torque sensors."
+Rodeo Robotics,,arms_and_manipulators,,,rodeo-robotics,,no,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Autonomous technicians for heavy fleet maintenance — oil changes and depot servicing — pairing foundation-model manipulation with teleoperation.
+Hugging Face,Hugging Face,data_and_tooling,https://huggingface.co/,NYC + Paris,huggingface,lerobot,yes,yes,70253,479,2,272,2,0,9,211476,6,3,39,32375,39,0,2026-10-29,0,"LeRobot, the framework behind a large share of the datasets we index. huggingface/lerobot has 27,960 stars and was never in the index at all."
+Pantheon Industries,,data_and_tooling,,,Pantheon-Industries-Inc,,yes,,9,3,1,114,1,0,0,0,0,0,0,0,0,0,2026-10-29,0,"Argus, which audited nine of the largest robotics datasets and found 27% of episodes carry a medium-or-higher severity issue. Published 1 October, missed by the 3 October harvest."
+Foxglove,Foxglove,data_and_tooling,https://foxglove.dev,,foxglove,,yes,,678,132,2,0,2,0,0,0,0,0,0,0,0,0,2026-10-27,2,Robotics data platform and the MCAP format. Raised $40M.
+Rerun,rerun.io,data_and_tooling,https://www.rerun.io,Sweden,rerun-io,,yes,,800,148,4,33,4,0,0,0,0,0,0,0,0,0,2026-10-29,0,Visualisation used widely in robotics logging.
+Voxel51,Voxel51,data_and_tooling,https://voxel51.com,"Ann Arbor, MI",voxel51,Voxel51,yes,yes,481,62,1,1,1,0,86,180152,22,64,0,0,0,0,2026-10-08,21,"FiftyOne. Publishes many vision datasets, most not robotics — a reason their uploads need filtering rather than blanket inclusion."
+Scale AI,Scale,data_and_tooling,https://scale.com,San Francisco,scaleapi,,yes,,793,56,0,0,0,0,0,0,0,0,0,0,0,0,,,Data labelling at scale.
+Roboflow,Roboflow,data_and_tooling,https://roboflow.com,United States of America,roboflow,roboflow,yes,yes,5481,170,3,29,3,0,0,0,0,0,0,0,0,0,2026-10-29,0,Vision dataset tooling.
+Encord,Encord,data_and_tooling,https://encord.com,,encord-team,,yes,,118,20,0,0,0,0,0,0,0,0,0,0,0,0,,,Multimodal data curation.
+Bones Studio,,data_and_tooling,,,bones-studio,bones-studio,yes,yes,28,2,0,0,0,0,0,0,0,0,0,0,0,0,,,"BONES-SEED, 142,220 motion sequences under a revenue-capped licence that propagates to derivatives — a licensing pattern worth watching."
+Weights & Biases,Weights & Biases,data_and_tooling,https://wandb.ai,San Francisco,wandb,,yes,,1444,157,1,10,1,0,0,0,0,0,0,0,0,0,2026-09-25,34,"Experiment tracking, widely used in robot learning."
+PickNik Robotics,PickNik Robotics,data_and_tooling,https://picknik.ai,"Boulder, CO",PickNikRobotics,,yes,,419,97,4,2,4,0,0,0,0,0,0,0,0,0,2026-10-14,15,Maintainers of MoveIt 2 and MoveIt Pro.
+Open Navigation,,data_and_tooling,https://opennav.org,,open-navigation,,yes,,211,29,1,31,1,0,0,0,0,0,0,0,0,0,2026-10-06,23,"Nav2, the ROS 2 navigation stack."
+eProsima,eProsima,data_and_tooling,https://eprosima.com,"Plaza de la Encina 10-11 Nucleo 4 2º Planta, 28760, Tres Cantos, Spain",eProsima,,yes,,344,135,0,0,0,0,0,0,0,0,0,0,0,0,,,"Fast DDS and micro-XRCE-DDS, the middleware under ROS 2."
+Eclipse Zenoh,Eclipse zenoh,data_and_tooling,,,eclipse-zenoh,,yes,,261,32,3,1,3,0,0,0,0,0,0,0,0,0,2026-10-28,1,Zero-overhead pub/sub increasingly replacing DDS for teleoperation and cloud bridging.
+XDOF,,data_and_tooling,,,XDOF,XDOF,yes,yes,0,1,0,0,0,0,1,265621,0,1,0,0,0,0,2026-09-24,35,"ABC-130k, 130,703 bimanual episodes — audited by Argus and already cited in our index."
+Roboto AI,Roboto,data_and_tooling,https://roboto.ai,,roboto-ai,,yes,,32,20,3,10,3,0,0,0,0,0,0,0,0,0,2026-10-01,28,Robotics data platform and log analysis.
+ReSim,SignalFlag,data_and_tooling,https://signalflag.ai,,resim-ai,,yes,,18,23,1,0,1,0,0,0,0,0,0,0,0,0,2026-09-17,42,Simulation-based testing and evaluation for robots.
+Mecka AI,Mecka AI,data_and_tooling,,,mecka-ai,,yes,,8,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Robot data collection at scale.
+micro1,,data_and_tooling,,,micro1-ai,,yes,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Expert data labelling.
+Veeda AI,,data_and_tooling,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,"Enterprise synthetic training data, founded by ex-NVIDIA researchers. No public releases found."
+Midcentury,,data_and_tooling,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Data and simulation infrastructure for physical AI. Private client work; no public releases found.
+AMI Labs,Adem Ademi,data_and_tooling,,,ami-labs,,yes,,1,10,0,0,0,0,0,0,0,0,0,0,0,0,,,Embodied data.
+InOrbit,InOrbit,data_and_tooling,https://developer.inorbit.ai,United States of America,inorbit-ai,,yes,,39,23,0,0,0,0,0,0,0,0,0,0,0,0,,,Fleet operations and observability for robots.
+Antioch,Antioch,data_and_tooling,https://antioch.com,United States of America,antioch-robotics,,yes,,3,6,1,1,1,0,0,0,0,0,0,0,0,0,2026-10-28,1,"antioch-py, an open client library and deterministic execution middleware for modular robotics."
+Formant,,data_and_tooling,,,formant,,yes,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Robot fleet operations and observability.
+Genesis Embodied AI,Genesis AI,simulation,https://genesis.ai,,Genesis-Embodied-AI,,yes,,1976,17,3,141,3,0,0,0,0,0,0,0,0,0,2026-10-26,3,Genesis simulator. Absent from the index.
+Open Robotics / OSRF,Gazebo,simulation,http://gazebosim.org,,gazebosim,,yes,,1193,58,0,0,0,0,0,0,0,0,0,0,0,0,,,Gazebo. At the owner cap in our index.
+ROS,ROS Planning,simulation,,,ros-planning,,yes,,771,10,0,0,0,0,0,0,0,0,0,0,0,0,,,"Nav2, MoveIt."
+Farama Foundation,Farama Foundation,simulation,https://farama.org,,Farama-Foundation,,yes,,2053,45,0,0,0,0,0,0,0,0,0,0,0,0,,,"Gymnasium, the environment interface most RL robotics builds on."
+Coppelia Robotics,Coppelia Robotics AG,simulation,http://coppeliarobotics.com,"Zürich, Switzerland",CoppeliaRobotics,,yes,,253,73,3,0,3,0,0,0,0,0,0,0,0,0,2026-10-29,0,CoppeliaSim.
+LightwheelAI,,simulation,https://lightwheel.ai/,,LightwheelAI,LightwheelAI,yes,yes,379,17,0,0,0,0,4,36971,0,4,0,0,0,0,2026-10-14,15,Simulation assets; appears in the arXiv results.
+Bullet Physics,Bullet Physics SDK,simulation,http://bulletphysics.org,United States,bulletphysics,,yes,,366,3,0,0,0,0,0,0,0,0,0,0,0,0,,,The basis for PyBullet.
+Project Chrono,,simulation,http://www.projectchrono.org,,projectchrono,,yes,,178,18,0,0,0,0,0,0,0,0,0,0,0,0,,,"Multi-physics, granular and fluid-structure."
+Cyberbotics,Cyberbotics Ltd.,simulation,https://cyberbotics.com,"Lausanne, Switzerland",cyberbotics,,yes,,409,72,0,0,0,0,0,0,0,0,0,0,0,0,,,"Webots, Apache-2.0 since 2018."
+Drake / Robot Locomotion,,simulation,,,RobotLocomotion,,yes,,548,58,0,0,0,0,0,0,0,0,0,0,0,0,,,MIT and Toyota Research Institute.
+Newton Physics,Newton Physics,simulation,,,newton-physics,,yes,,544,9,0,0,0,0,0,0,0,0,0,0,0,0,,,"NVIDIA, DeepMind and Disney Research jointly."
+Isaac Sim,NVIDIA Isaac Sim,simulation,,,isaac-sim,,yes,,1843,22,1,17,1,0,0,0,0,0,0,0,0,0,2026-10-29,0,Isaac Sim and Isaac Lab.
+Hao Su Lab,"Hao Su's Lab, UCSD",simulation,http://cseweb.ucsd.edu/~haosu/,,haosulab,,yes,,329,36,0,0,0,0,0,0,0,0,0,0,0,0,,,"ManiSkill and SAPIEN, UCSD."
+PartNet-Mobility,Kaichun Mo,simulation,http://kaichun-mo.github.io,"Seattle, Washington",daerduoCarey,,yes,,511,118,0,0,0,0,0,0,0,0,0,0,0,0,,,Articulated object benchmark underpinning ManiSkill.
+Intrinsic,Intrinsic,simulation,,,intrinsic-ai,,yes,,173,14,3,642,3,0,0,0,0,0,0,0,0,0,2026-10-29,0,Alphabet's industrial robotics software arm; Flowstate.
+Duality AI,Duality AI,simulation,,,duality-ai,,yes,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Falcon digital twin simulation.
+Bucket Robotics,Bucket Robotics,simulation,https://bucket.bot,United States of America,bucket-robotics,,yes,,13,8,1,0,1,0,0,0,0,0,0,0,0,0,2026-08-21,69,Defect detection from simulation.
+SafeWorld,,simulation,,,safeworld-ai,,yes,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Robot safety and simulation.
+NVIDIA,NVIDIA Corporation,big_tech_labs,https://nvidia.com,"2788 San Tomas Expressway, Santa Clara, CA, 95051",NVIDIA,nvidia,yes,yes,32048,830,9,221,9,0,30,179725,14,16,39,46174,39,0,2026-10-29,0,"Isaac, GR00T, Cosmos. nvidia/cosmos has 11,980 stars and was not in the index."
+NVIDIA Labs,NVIDIA Research Projects,big_tech_labs,http://research.nvidia.com,,NVlabs,,yes,,11826,513,6,1790,6,0,0,0,0,0,0,0,0,0,2026-10-16,13,"Research releases, a separate organisation."
+NVIDIA Isaac ROS,NVIDIA Isaac ROS,big_tech_labs,https://developer.nvidia.com/isaac-ros,United States of America,NVIDIA-ISAAC-ROS,,yes,,2903,70,0,0,0,0,0,0,0,0,0,0,0,0,,,At the owner cap.
+Google DeepMind,Google DeepMind,big_tech_labs,https://www.deepmind.com/,,google-deepmind,,yes,,27587,412,2,7,2,0,0,0,0,0,0,0,0,0,2026-10-28,1,"MuJoCo, Menagerie, the RT series, Gemini Robotics."
+Meta FAIR,Meta Research,big_tech_labs,https://opensource.fb.com,"Menlo Park, California",facebookresearch,facebook,yes,yes,38251,1464,5,852,5,0,2,48604,2,0,0,0,0,0,2026-10-29,0,"Habitat, SuperDex. project_superdex at 715 stars was missed."
+Allen Institute for AI,Ai2,big_tech_labs,http://www.allenai.org,"Seattle, WA",allenai,allenai,yes,yes,5119,597,1,0,1,0,72,101616,70,2,13,92378,13,0,2026-10-02,27,"MolmoAct, audited by Argus."
+Microsoft Research,Microsoft,big_tech_labs,https://opensource.microsoft.com,"Redmond, WA",microsoft,microsoft,yes,yes,132885,8409,8,149,8,0,4,8093,4,0,4,32,4,0,2026-10-27,2,Very large organisation; needs filtering rather than blanket inclusion.
+Toyota Research Institute,Toyota Research Institute - Machine Learning,big_tech_labs,,,TRI-ML,,yes,,444,49,3,1,3,0,0,0,0,0,0,0,0,0,2026-10-22,7,"Large behaviour models, diffusion policy work."
+Amazon Robotics / FAR,Amazon Science,big_tech_labs,https://amazon.science,,amazon-science,,yes,,2599,516,0,0,0,0,0,0,0,0,0,0,0,0,,,amazon-far/PRISM appeared in the org sweep.
+ByteDance Seed,,big_tech_labs,https://seed.bytedance.com/,,ByteDance-Seed,ByteDance-Seed,yes,yes,3190,64,0,0,0,0,2,16034,2,0,0,0,0,0,2026-07-27,94,GR-2 and robotics VLA work.
+Tencent Robotics X,,big_tech_labs,https://ai.tencent.com/,,tencent-ailab,tencent,yes,yes,1799,58,0,0,0,0,4,60393,1,3,5,1887,5,0,2026-10-28,1,Research repositories. 
+Alibaba DAMO,Alibaba,big_tech_labs,,"Hangzhou, China",alibaba,Alibaba-NLP,yes,yes,21522,544,1,13,1,0,0,0,0,0,0,0,0,0,2026-10-19,10,Alibaba Open Source
+Samsung Research,SamsungLabs,big_tech_labs,,,SamsungLabs,,yes,,790,107,1,1,1,0,0,0,0,0,0,0,0,0,2026-06-03,148,SAMSUNG
+Honda Research,Honda Research Institute,big_tech_labs,,,honda-research-institute,,yes,,44,19,0,0,0,0,0,0,0,0,0,0,0,0,,,
+OpenAI,OpenAI,big_tech_labs,https://openai.com/,,openai,openai,yes,yes,140937,278,0,0,0,0,0,0,0,0,0,0,0,0,,,"VPT, Minecraft gameplay with action logs."
+Google Research,Google Research,big_tech_labs,https://research.google,Earth,google-research,,yes,,18689,369,0,0,0,0,0,0,0,0,0,0,0,0,,,Language-Table and related.
+Google,Google,big_tech_labs,https://opensource.google/,United States of America,google,,yes,,81184,2936,4,15628,4,0,0,0,0,0,0,0,0,0,2026-10-28,1,Brax. Separate from google-deepmind.
+PyTorch,,big_tech_labs,https://pytorch.org,where the eigens are valued,pytorch,,yes,,13939,70,0,0,0,0,0,0,0,0,0,0,0,0,,,TorchRL.
+Ray,,big_tech_labs,https://docs.ray.io,,ray-project,,yes,,1863,127,0,0,0,0,0,0,0,0,0,0,0,0,,,"RLlib, distributed RL."
+DLR German Aerospace,DLR-RM,big_tech_labs,https://rm.dlr.de,"48.08329, 11.27507",DLR-RM,,yes,,944,63,1,1,1,0,0,0,0,0,0,0,0,0,2026-10-23,6,"Stable-Baselines3, the standard RL baseline library."
+Skywork AI,Skywork ,big_tech_labs,https://skywork.ai/,Singapore,SkyworkAI,,yes,,1872,38,0,0,0,0,0,0,0,0,0,0,0,0,,,Matrix-Game interactive world model.
+Etched,Etched,big_tech_labs,https://etched.com/,,etched-ai,,yes,,190,12,0,0,0,0,0,0,0,0,0,0,0,0,,,"Oasis, with Decart."
+Kyutai,kyutai,big_tech_labs,https://kyutai.org/,France,kyutai-labs,,yes,,2015,34,1,11,1,0,0,0,0,0,0,0,0,0,2026-09-09,50,"Moshi, full-duplex spoken dialogue."
+Alibaba Qwen Audio,QwenAudio,big_tech_labs,https://www.funasr.com,,QwenAudio,,yes,,1851,20,0,0,0,0,0,0,0,0,0,0,0,0,,,SenseVoice and CosyVoice.
+NetEase Youdao,NetEase Youdao,big_tech_labs,http://www.youdao.com,Beijing,netease-youdao,,yes,,882,14,1,127,1,0,0,0,0,0,0,0,0,0,2026-10-21,8,EmotiVoice.
+Autoware Foundation,The Autoware Foundation,autonomous_vehicles,https://www.autoware.org,,autowarefoundation,,yes,,1971,157,4,1,4,0,0,0,0,0,0,0,0,0,2026-10-28,1,Open-source software for self-driving vehicles
+comma.ai,comma.ai,autonomous_vehicles,https://comma.ai,San Diego,commaai,,yes,,4593,164,0,0,0,0,0,0,0,0,0,0,0,0,,,"openpilot, 63,799 stars — the most-starred repository in our index."
+Wayve,Wayve,autonomous_vehicles,https://wayve.ai,United Kingdom,wayveai,,yes,,413,69,0,0,0,0,0,0,0,0,0,0,0,0,,,About $8.6B.
+Waymo,Waymo Research,autonomous_vehicles,https://waymo.com,"Mountain View, CA, USA",waymo-research,,yes,,518,5,0,0,0,0,0,0,0,0,0,0,0,0,,,Waymo Open Dataset.
+Nuro,,autonomous_vehicles,,,nuro-ai,,yes,,25,1,0,0,0,0,0,0,0,0,0,0,0,0,,,
+Applied Intuition,,autonomous_vehicles,,,appliedintuition,,yes,,185,37,0,0,0,0,0,0,0,0,0,0,0,0,,,Simulation for autonomous vehicles.
+OpenDriveLab,OpenDriveLab,autonomous_vehicles,https://opendrivelab.com,Hong Kong,OpenDriveLab,,yes,,2724,60,6,209,6,0,0,0,0,0,0,0,0,0,2026-10-29,0,UniAD.
+Aurora,,autonomous_vehicles,,,aurora-innovation,,yes,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Autonomous trucking.
+Zoox,,autonomous_vehicles,,,zoox,,yes,,2,1,0,0,0,0,0,0,0,0,0,0,0,0,,,Amazon's robotaxi.
+Kodiak Robotics,,autonomous_vehicles,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,"Autonomous freight trucking. No public SDK, developer hub or driving dataset."
+Skydio,Skydio,autonomous_vehicles,https://skydio.com/careers,United States of America,Skydio,,yes,,166,21,0,0,0,0,0,0,0,0,0,0,0,0,,,Autonomous drones; the largest US drone maker.
+Shield AI,Shield AI,autonomous_vehicles,https://www.shield.ai/,"San Diego, CA",shield-ai,,yes,,60,19,0,0,0,0,0,0,0,0,0,0,0,0,,,Hivemind autonomy for aircraft.
+Anduril,Anduril Industries,autonomous_vehicles,https://anduril.com,,anduril,,yes,,679,18,0,0,0,0,0,0,0,0,0,0,0,0,,,Lattice; defence autonomy.
+Reliable Robotics,Reliable Robotics,autonomous_vehicles,https://reliablerobotics.ai/,"Dubai, United Arab Emirates",reliable-robotics,,yes,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Autonomous aircraft systems.
+Zipline,Video Squirrel,autonomous_vehicles,https://videosquirrel.app,"St. Louis, MO",zipline,,yes,,3,7,0,0,0,0,0,0,0,0,0,0,0,0,,,Autonomous delivery drones.
+Gatik,,autonomous_vehicles,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Autonomous middle-mile trucking. No organisation account found; a 'Gatik USA' profile exists but belongs to StarskyRobotics.
+Scout AI,,autonomous_vehicles,,,scout-ai,,yes,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,,,Autonomy for defence vehicles.
+Plus AI,PlusAI,autonomous_vehicles,http://plus.ai,,plusai,,yes,,32,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Autonomous trucking software.
+Corvus Robotics,Corvus Robotics,autonomous_vehicles,https://www.corvus-robotics.com,,corvus-robotics,,yes,,7,0,0,0,0,0,0,0,0,0,0,0,0,0,,,Warehouse inventory drones.
+Stanford Vision & Learning,Stanford Vision and Learning Lab,academic_labs,http://svl.stanford.edu/,"Stanford, CA",StanfordVL,,yes,,647,98,0,0,0,0,0,0,0,0,0,0,0,0,,,"BEHAVIOR, iGibson, OmniGibson."
+Stanford REAL,Robotics & Embodied Artificial Intelligence Lab (REAL),academic_labs,https://real.stanford.edu/,United States of America,real-stanford,,yes,,1137,50,5,455,4,1,0,0,0,0,0,0,0,0,2026-10-25,4,"Diffusion Policy, UMI."
+UT Austin RPL,UT Robot Perception and Learning Lab,academic_labs,,"Austin, TX",UT-Austin-RPL,,yes,,212,41,0,0,0,0,0,0,0,0,0,0,0,0,,,"LIBERO, robosuite."
+Berkeley RAIL,Robotic AI & Learning Lab Berkeley,academic_labs,http://rail.eecs.berkeley.edu/,,rail-berkeley,,yes,,592,23,0,0,0,0,0,0,0,0,0,0,0,0,,,"BridgeData, Octo."
+ETH Zurich RSL,Robotic Systems Lab - Legged Robotics at ETH Zürich,academic_labs,https://rsl.ethz.ch/,Zürich,leggedrobotics,,yes,,3643,311,10,512,10,0,0,0,0,0,0,0,0,0,2026-10-22,7,"ANYmal, rsl_rl, legged_gym. At the owner cap, and hoi-retarget at 127 stars was discarded by it."
+Bonn Photogrammetry & Robotics,Photogrammetry & Robotics Bonn,academic_labs,https://www.ipb.uni-bonn.de,Bonn,PRBonn,,yes,,1331,122,2,53,2,0,0,0,0,0,0,0,0,0,2026-10-16,13,KISS-ICP.
+HKU MaRS Lab,HKU-Mars-Lab,academic_labs,https://mars.hku.hk,The University of Hong Kong,hku-mars,,yes,,3544,53,2,108,2,0,0,0,0,0,0,0,0,0,2026-10-20,9,"FAST-LIO, FAST-LIVO. 16,016 stars and no active repositories."
+HKUST Aerial Robotics,HKUST Aerial Robotics Group,academic_labs,https://uav.hkust.edu.hk/,Hong Kong,HKUST-Aerial-Robotics,,yes,,3303,76,2,92,2,0,0,0,0,0,0,0,0,0,2026-08-29,61,"VINS-Mono, Fast-Planner."
+IIT robotology,Robotology,academic_labs,https://icub.iit.it,Italy,robotology,,yes,,337,154,7,0,7,0,0,0,0,0,0,0,0,0,2026-10-28,1,The iCub software distribution.
+CMU AirLab,AirLab Stacks,academic_labs,https://theairlab.org,,castacks,,yes,,449,221,6,16,6,0,0,0,0,0,0,0,0,0,2026-10-14,15,TartanAir.
+Shanghai AI Lab,Intern Robotics,academic_labs,https://internrobotics.shlab.org.cn,,InternRobotics,InternRobotics,yes,yes,1858,98,18,460,18,0,6,16458,0,6,13,650,13,0,2026-10-27,2,"GAUGE, InternVLA. In the arXiv results but not the index."
+BAAI,,academic_labs,,,FlagOpen,BAAI,yes,yes,1049,34,0,0,0,0,5,5723,4,1,3,797,3,0,2026-10-29,0,"RoboBrain, SWITCH."
+NYU GRAIL,NYU Generalizable Robotics and AI Lab (GRAIL),academic_labs,,United States of America,NYU-robot-learning,,yes,,84,57,1,1,1,0,0,0,0,0,0,0,0,0,2026-09-10,49,"Dobb-E, home robot learning from phone demonstrations."
+MIT Biomimetics,MIT Biomimetic Robotics Lab,academic_labs,https://biomimetics.mit.edu/,"Cambridge, MA",mit-biomimetics,,yes,,589,20,0,0,0,0,0,0,0,0,0,0,0,0,,,Mini Cheetah.
+Tsinghua TEA Lab, Tsinghua Embodied AI Lab (TEA Lab),academic_labs,http://hxu.rocks/,,TEA-Lab,,yes,,285,7,0,0,0,0,0,0,0,0,0,0,0,0,,,"The Tsinghua Embodied AI Lab (TEA Lab) is led by Prof. Huazhe Xu 🍯, where we build robot 🤖️ and then bring intelligence to them 🌍！"
+Tsinghua ML,TSAIL group,academic_labs,https://ml.cs.tsinghua.edu.cn,"FIT Building, Tsinghua University, Beijing, China",thu-ml,,yes,,1820,93,1,17,1,0,0,0,0,0,0,0,0,0,2026-06-16,135,RDT-1B bimanual diffusion model.
+Tsinghua CoAI,,academic_labs,http://coai.cs.tsinghua.edu.cn/,"Beijing, China",thu-coai,,yes,,651,115,0,0,0,0,0,0,0,0,0,0,0,0,,,ESConv emotional-support conversations.
+DeCLaRe Lab,Deep Cognition and Language Research (DeCLaRe) Lab,academic_labs,https://declare-lab.github.io,Singapore,declare-lab,,yes,,376,84,2,19,2,0,0,0,0,0,0,0,0,0,2026-10-08,21,"MELD, multimodal emotion. Singapore."
+Retico,retico-team,academic_labs,,,retico-team,,yes,,19,60,1,0,1,0,0,0,0,0,0,0,0,0,2026-06-03,148,Incremental spoken dialogue framework.
+MIT Improbable AI,Improbable-AI @MIT,academic_labs,,,improbable-ai,,yes,,270,46,0,0,0,0,0,0,0,0,0,0,0,0,,,"LucidSim, deformable manipulation, extreme locomotion."
+Duke General Robotics Lab,General Robotics Lab - Duke University,academic_labs,http://generalroboticslab.com/,,generalroboticslab,,yes,,103,51,16,158,16,0,0,0,0,0,0,0,0,0,2026-10-10,19,"Text2Robot, the Duke Humanoid V1 with open RL simulation and hardware control, ClutterGen and MARBLE."
+DROID,,benchmarks_and_datasets,,,droid-dataset,,yes,,35,3,0,0,0,0,0,0,0,0,0,0,0,0,,,"76,000 trajectories across 564 scenes."
+RoboCasa,RoboCasa,benchmarks_and_datasets,https://robocasa.ai/,,robocasa,,yes,,53,3,0,0,0,0,0,0,0,0,0,0,0,0,,,"RoboCasa365, household simulation at scale."
+ARISE Initiative,ARISE Initiative,benchmarks_and_datasets,,,ARISE-Initiative,,yes,,293,9,0,0,0,0,0,0,0,0,0,0,0,0,,,"robosuite and robomimic, Stanford and UT Austin."
+Octo,,benchmarks_and_datasets,,,octo-models,,yes,,33,2,0,0,0,0,0,0,0,0,0,0,0,0,,,Berkeley's generalist transformer policy.
+OpenVLA,OpenVLA Collaboration,benchmarks_and_datasets,https://openvla.github.io,,openvla,,yes,,191,2,0,0,0,0,0,0,0,0,0,0,0,0,,,7B open vision-language-action model.
+RoboTurk,RoboTurk,benchmarks_and_datasets,,,RoboTurk-Platform,,yes,,3,2,0,0,0,0,0,0,0,0,0,0,0,0,,,Crowdsourced teleoperation.
+RoboArena,,benchmarks_and_datasets,,,robo-arena,,yes,,2,2,0,0,0,0,0,0,0,0,0,0,0,0,,,Distributed real-world policy evaluation.
+RoboDojo,RoboDojo Benchmark,benchmarks_and_datasets,https://robodojo-benchmark.com/,,RoboDojo-Benchmark,,yes,,14,2,1,798,0,1,0,0,0,0,0,0,0,0,2026-10-21,8,Sim-and-real generalist benchmark.
+ManipArena,,benchmarks_and_datasets,,,maniparena,,yes,,1,2,0,0,0,0,0,0,0,0,0,0,0,0,,,Real-robot bimanual benchmark.
+UniDex,,benchmarks_and_datasets,,,unidex-ai,,yes,,0,2,0,0,0,0,0,0,0,0,0,0,0,0,,,"50,000+ trajectories across eight dexterous hands."
+OpenHLM,,benchmarks_and_datasets,,,OpenHLM-project,,yes,,2,2,1,106,1,0,0,0,0,0,0,0,0,0,2026-07-10,111,Whole-body humanoid loco-manipulation on the Unitree G1.
+Physical Superintelligence Lab,Physical Superintelligence (PSI) Lab at the University of Southern California (USC),benchmarks_and_datasets,,United States of America,physical-superintelligence-lab,,yes,,175,15,0,0,0,0,0,0,0,0,0,0,0,0,,,Psi0 and Humanoid Everyday.
+EgoVerse,Robot Learning and Reasoning Lab (RL2),benchmarks_and_datasets,https://rl2.cc.gatech.edu/,,GaTech-RL2,,yes,,59,30,2,8,2,0,0,0,0,0,0,0,0,0,2026-10-16,13,"1,362 hours of egocentric demonstrations, Georgia Tech."
+Amazon FAR,Amazon FAR,benchmarks_and_datasets,,United States of America,amazon-far,,yes,,569,21,5,490,5,0,0,0,0,0,0,0,0,0,2026-10-26,3,"ABC-130K, 130,703 bimanual episodes. Audited by Argus."
+Alexa AI,Alexa,benchmarks_and_datasets,https://developer.amazon.com/alexa,,alexa,,yes,,705,55,0,0,0,0,0,0,0,0,0,0,0,0,,,"TEACh, household task dialogues."
+ALFRED,ALFRED,benchmarks_and_datasets,,,askforalfred,,yes,,10,2,0,0,0,0,0,0,0,0,0,0,0,0,,,Language-conditioned household benchmark.
+BAAI Humanoid,,benchmarks_and_datasets,,China,BAAI-Humanoid,,yes,,46,9,2,7,2,0,0,0,0,0,0,0,0,0,2026-10-13,16,MOSAIC motion bank.
+DAVIAN Robotics,DAVIAN-Robotics,benchmarks_and_datasets,https://davian-robotics.github.io/,"Korea, South",DAVIAN-Robotics,,yes,,37,22,12,67,12,0,0,0,0,0,0,0,0,0,2026-10-27,2,"PHUMA, physics-filtered humanoid locomotion, KAIST."
+KAIST CLVR,Cognitive Learning for Vision and Robotics (CLVR) lab @ KAIST,benchmarks_and_datasets,https://clvrai.com/,"Korea, South",clvrai,,yes,,132,36,0,0,0,0,0,0,0,0,0,0,0,0,,,FurnitureBench.
+Freiburg robot learning,Oier Mees,benchmarks_and_datasets,https://www.oiermees.com,"Berkeley, CA",mees,,yes,,179,45,0,0,0,0,0,0,0,0,0,0,0,0,,,CALVIN. Published under a personal account.
+Technion,Zohar Rimon,benchmarks_and_datasets,https://www.linkedin.com/in/zohar-rimon,,zoharri,,yes,,8,10,0,0,0,0,0,0,0,0,0,0,0,0,,,LESS tactile dataset. Personal account.
