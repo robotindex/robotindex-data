@@ -1,0 +1,94 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "leap-hand",
+  "slug": "product-leap-hand",
+  "name": "LEAP Hand",
+  "manufacturer": "Carnegie Mellon University",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A 16-actuator, four-finger anthropomorphic robot hand from Carnegie Mellon University (Shaw, Agarwal and Pathak, RSS 2023), built from sixteen off-the-shelf Dynamixel XC330 servos and 3D-printed parts. Every joint has its own servo, and the design is aimed at robot-learning research: teleoperation, in-hand reorientation and sim-to-real transfer. The authors put the parts bill at about $2,000 and assembly at about four hours. This entry covers LEAP Hand v1; V2 and V2 Advanced are different, tendon-driven designs.",
+  "specs": [
+    {
+      "label": "Degrees of Freedom",
+      "value": "16 actuated",
+      "note": "every joint has its own servo, four per digit; no tendons or coupled joints in v1"
+    },
+    {
+      "label": "Digits",
+      "value": "4",
+      "note": "index, middle, ring and thumb; one aggregator lists five fingers, which doesn't match the hardware"
+    },
+    {
+      "label": "Actuators",
+      "value": "16x Dynamixel XC330-M288-T",
+      "note": "per ROBOTIS' bundle bill of materials and a reseller's kit listing"
+    },
+    {
+      "label": "Weight",
+      "value": "About 595 g",
+      "note": "the RSS 2023 paper figure as cited by a third-party spec site, not checked against the paper directly; an aggregator lists 0.94 kg and a reseller shows 1.2 kg net for the kit, which probably includes the controller and accessories"
+    },
+    {
+      "label": "Payload",
+      "value": "Not published",
+      "note": "no standard payload spec; the paper says only that the hand sustains large torques over long periods"
+    },
+    {
+      "label": "Sensing",
+      "value": "Servo feedback only",
+      "note": "position, velocity and current per the API README; no tactile sensing in the base design. One aggregator lists tactile sensors, which isn't confirmed"
+    },
+    {
+      "label": "Controller",
+      "value": "External host required",
+      "note": "USB via the ROBOTIS U2D2 adapter; PID position control by default, velocity and current modes also supported"
+    },
+    {
+      "label": "Software",
+      "value": "Python, C++, ROS, ROS2",
+      "note": "all four listed as officially supported in the API README; Isaac Gym and Isaac Lab simulation repos for v1"
+    },
+    {
+      "label": "Construction",
+      "value": "3D-printed + Dynamixel",
+      "note": "printed polymer parts around off-the-shelf servos; about 4 hours to assemble per the paper, and no pre-assembled units"
+    },
+    {
+      "label": "Versions",
+      "value": "v1 Lite and Full",
+      "note": "the README gives current limits of about 300 mA (Lite) and 550 mA (Full); left and right hands are both sold as print sets"
+    },
+    {
+      "label": "Licence",
+      "value": "Code MIT, CAD CC BY-NC-SA",
+      "note": "code per the API and simulation repos' READMEs; the non-commercial CAD licence is why this entry carries no Open Source badge"
+    }
+  ],
+  "sourcing": "Specs compiled from the RSS 2023 paper (Shaw, Agarwal and Pathak, arXiv 2309.06440), the leap-hand GitHub organization's API and simulation repositories (README licence statements; the LICENSE files themselves weren't opened), ROBOTIS' bundle listing, a reseller's kit listing, and two third-party spec sites. Weight conflicts across sources (about 595 g in the paper as cited, 0.94 kg and 1.2 kg elsewhere), one aggregator lists five fingers and tactile sensors that the hardware and documentation don't show, and the manufacturer site v1.leaphand.com was not retrieved directly. The V2 and V2 Advanced hands are separate designs and not covered here.",
+  "manufacturerUrl": "https://v1.leaphand.com/",
+  "pricing": {
+    "summary": "The RSS 2023 paper puts the parts bill at **about $2,000**. In practice it is a build-it-yourself kit: ROBOTIS lists the motor and electronics bundle (16 servos, U2D2 adapter and power hub) at **$1,838.87**, with the 3D-printed parts a separate $42 per hand and some miscellaneous parts from the project's bill of materials not included. That listing was sold out with a roughly two-month lead time and ships to the Americas only. A reseller's complete assembly kit is listed from **$2,066** on backorder, 4–6 weeks. There is no pre-assembled hand."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "LEAP Hand is a research hand that anyone can build: every joint is a standard Dynamixel servo, the kinematics were designed to keep dexterity high across finger poses, and the authors report it beating the Allegro Hand in every one of their experiments at about one-eighth the cost, a claim from the authors' own paper. The trade-offs are the usual ones for a self-built hand: no tactile sensing and no published payload figure. The code is MIT-licensed, but the CAD is CC BY-NC-SA, which bars commercial use, so this catalog doesn't give the hand an Open Source badge."
+    }
+  ],
+  "firmwareCommunity": [
+    {
+      "status": "not-listed",
+      "note": "Official API for LEAP Hand v1 in Python, C++, ROS and ROS2, with joint position, velocity and current control through the U2D2 adapter. MIT licence."
+    },
+    {
+      "status": "not-listed",
+      "note": "URDF, Isaac Gym environment and sim-to-real deployment code for in-hand reorientation. MIT licence; an Isaac Lab version and teleoperation repos for Manus gloves and Apple Vision Pro sit alongside it."
+    }
+  ]
+}
