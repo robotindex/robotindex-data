@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "flexiv-rizon",
+  "slug": "product-flexiv-rizon",
+  "name": "Flexiv Rizon",
+  "manufacturer": "Flexiv",
+  "category": "Robot Arms",
+  "subcategory": "",
+  "tier": "new",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A **7-axis, force-controlled adaptive robot arm** from **Flexiv**. The **Rizon 4** carries **4 kg**, repeats to about **±0.05 mm**, weighs about **20 kg**, is rated **IP65**, and senses force and torque in **every joint** so it can feel contact along the whole arm. It was introduced in **2019**, the line also includes the **Rizon 4s** and the larger **Rizon 10**, and Flexiv sells it by quote with no published price.",
+  "specs": [
+    {
+      "label": "Price",
+      "value": "On request",
+      "note": "No published price"
+    },
+    {
+      "label": "Axes",
+      "value": "7",
+      "note": "Redundant arm"
+    },
+    {
+      "label": "Payload",
+      "value": "4 kg",
+      "note": "Rizon 4 / 4s"
+    },
+    {
+      "label": "Reach",
+      "value": "780–876 mm",
+      "note": "Sources differ"
+    },
+    {
+      "label": "Repeatability",
+      "value": "±0.05 mm",
+      "note": "Rizon 4; 4s quoted 0.1 mm"
+    },
+    {
+      "label": "Weight",
+      "value": "~20 kg",
+      "note": "Rizon 4"
+    },
+    {
+      "label": "Protection",
+      "value": "IP65",
+      "note": "Dust-tight, water jets"
+    },
+    {
+      "label": "Sensing",
+      "value": "Joint F/T",
+      "note": "Every axis, plus end-effector"
+    },
+    {
+      "label": "Safety",
+      "value": "CE + ETL",
+      "note": "18 functions, ISO 13849 PLd"
+    },
+    {
+      "label": "Mounting",
+      "value": "Any angle",
+      "note": "Or on AMR / AGV"
+    },
+    {
+      "label": "Introduced",
+      "value": "2019",
+      "note": "Rizon 10 launched 2021"
+    },
+    {
+      "label": "Maker",
+      "value": "Flexiv",
+      "note": "Founded June 2016"
+    }
+  ],
+  "sourcing": "Verified against Automate.org's Rizon 4 listing, RoboDK's Rizon 4 entry, Qviro's Rizon 4s data, Robotic Gizmos, Flexiv's company history page, Wikipedia's Flexiv article and Robotics and Automation News coverage of IROS 2026, as of October 2026. Flagged as uncertain: reach is 780 mm at RoboDK and Qviro, 850 mm at Robotic Gizmos and 876 mm at Automate.org, and none was checked against a Flexiv datasheet; repeatability is ±0.05 mm for the Rizon 4 and 0.1 mm for the Rizon 4s; weight comes from RoboDK and Qviro only; the ISO/TS 15066 claim and the 18 safety functions come from a Robotic Gizmos article that cites Flexiv; no price is published; Wikipedia gives Flexiv's headquarters as Shanghai while Flexiv's own history page cites Silicon Valley for the first prototype; and the photo is a small manufacturer image, enlarged.",
+  "manufacturerUrl": "https://www.flexiv.com/",
+  "pricing": {
+    "summary": "Flexiv **does not publish a price** for the Rizon. It is sold by quotation through Flexiv and its resellers, and no list price turned up in any source checked. Which model you need depends on payload: **Rizon 4** and **Rizon 4s** carry 4 kg, and the **Rizon 10** is the larger-payload model. Grippers, end effectors and software packages are configured separately. robotindex does not sell this product."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "Flexiv was founded in **June 2016** with roots at Stanford, and the first Rizon prototype was built in October 2017. Rizon was soft-launched at Hannover Messe in **2019**, mass production began in the second half of 2020, the Rizon 4 won iF Design and German Innovation awards in 2020, the **Rizon 10** launched in 2021, and Rizon 4 received CE and ETL certification the same year. Flexiv reports that Rizon 4 was the **first robot arm to pass the ISO/TS 15066 collision test at the elbow and wrist**. The arm's selling point is **force control**: every joint senses torque, so it can polish, assemble and handle delicate parts by touch, and it has been used for tasks such as robotic massage. At IROS 2026 Flexiv showed a Rizon 4 leader-follower teleoperation pair alongside its newer **Enlight** arm and the **MICO** dual-arm system, so Rizon is no longer the newest platform. It is a commercial, closed product, so this page has no Open Source badge."
+    }
+  ]
+}
