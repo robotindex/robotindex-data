@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "xiaomi-cyberone",
+  "slug": "product-xiaomi-cyberone",
+  "name": "Xiaomi CyberOne",
+  "manufacturer": "Xiaomi",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "under-review",
+  "flags": {
+    "pending": false,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A **full-size humanoid** from **Xiaomi** (China, listed on HKEX as 1810), introduced in **2022**. A V2 exists, but its height and weight have not been published. CyberOne has **never been sold**. Xiaomi publishes its robotics work openly through the **XiaomiRobotics** GitHub and Hugging Face organizations.",
+  "specs": [
+    {
+      "label": "Maker",
+      "value": "Xiaomi",
+      "note": "China · HKEX 1810"
+    },
+    {
+      "label": "Introduced",
+      "value": "2022",
+      "note": "V2 exists"
+    },
+    {
+      "label": "Height & Weight",
+      "value": "Not published",
+      "note": "For V2"
+    },
+    {
+      "label": "Availability",
+      "value": "Never sold",
+      "note": "No consumer or commercial release"
+    },
+    {
+      "label": "Open Publishing",
+      "value": "XiaomiRobotics",
+      "note": "GitHub and Hugging Face"
+    },
+    {
+      "label": "Xiaomi-Robotics-1",
+      "value": "722★",
+      "note": "VLA foundation model, 51 forks"
+    },
+    {
+      "label": "Xiaomi-Robotics-U0",
+      "value": "184★",
+      "note": "Unified embodied synthesis / world model"
+    },
+    {
+      "label": "Hugging Face Models",
+      "value": "15",
+      "note": "3 collections"
+    },
+    {
+      "label": "Xiaomi-Robotics-0",
+      "value": "4.7B parameters",
+      "note": "Announced as Xiaomi's first open-source robot foundation model"
+    }
+  ],
+  "sourcing": "Compiled from robotindex research, as of October 2026. Xiaomi's height and weight for the V2 are not published and are left out rather than carried over from the original. Figures for the XiaomiRobotics organization are star, fork and model counts from its GitHub and Hugging Face accounts and will move. Xiaomi's language-model accounts are out of scope and not counted here.",
+  "manufacturerUrl": "https://robotics.xiaomi.com",
+  "pricing": {
+    "summary": "CyberOne has **never been sold**, so there is no price. Xiaomi has not published a price or a sales date for the V2."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "CyberOne is the humanoid, and the code is somewhere else. Xiaomi publishes its robotics work under a dedicated **XiaomiRobotics** organization on GitHub and Hugging Face, separate from its language-model accounts. **Xiaomi-Robotics-1** is a vision-language-action foundation model built on more than 100,000 hours of real-world manipulation trajectories (722 stars, 51 forks), **Xiaomi-Robotics-U0** is a unified embodied synthesis and world foundation model (184 stars, 15 forks), and the Hugging Face organization holds **15 models** in 3 collections. Xiaomi-Robotics-0 was announced as the company's first open-source robot foundation model, at 4.7 billion parameters.\n\nNone of that makes the robot open hardware. The Open Source badge on robotindex means the robot itself publishes CAD, a bill of materials and build instructions, and CyberOne does not, so it does not carry the badge. Among bipedal humanoids Xiaomi is one of the larger public publishers, which the [homepage humanoids table](/) shows alongside makers that publish nothing findable. The quadruped [Xiaomi CyberDog 2](/product-xiaomi-cyberdog2) is a separate product with its own page."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "kinetix-kai",
+  "slug": "product-kinetix-kai",
+  "name": "Kinetix AI KAI",
+  "manufacturer": "Unknown",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "under-review",
+  "flags": {
+    "pending": true,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "A **173 cm, 70 kg** humanoid from **Kinetix AI**, which also operates as **Kai Robotics** (Shenzhen, China), unveiled on **26 April 2026**. It has **115 degrees of freedom**, **36 in each hand**, a full-body tactile skin with **18,000 sensors** and a **20 kg** lift capacity. It is aimed at retail, concierge and home assistance. Mass production is stated for later in 2026; shipping hardware has not been verified.",
+  "specs": [
+    {
+      "label": "Maker",
+      "value": "Kinetix AI",
+      "note": "Also Kai Robotics · Shenzhen, China · private"
+    },
+    {
+      "label": "Unveiled",
+      "value": "26 Apr 2026"
+    },
+    {
+      "label": "Height",
+      "value": "173 cm"
+    },
+    {
+      "label": "Weight",
+      "value": "70 kg"
+    },
+    {
+      "label": "Degrees of Freedom",
+      "value": "115",
+      "note": "36 per hand"
+    },
+    {
+      "label": "Tactile Skin",
+      "value": "18,000 sensors",
+      "note": "Full body"
+    },
+    {
+      "label": "Lift Capacity",
+      "value": "20 kg"
+    },
+    {
+      "label": "Target Use",
+      "value": "Retail, concierge, home",
+      "note": "Not industry"
+    },
+    {
+      "label": "Production",
+      "value": "Later in 2026",
+      "note": "Mass production stated, not achieved"
+    }
+  ],
+  "sourcing": "Compiled from robotindex research, as of October 2026. The sub-$40,000 figure is a reported target and conflicts with the manufacturer having published no pricing, so it is stated as disputed. The manufacturer website has not been confirmed, so this page does not link one. No official GitHub organization was found.",
+  "pricing": {
+    "summary": "The price is **disputed**. A target **below $40,000** has been reported; Kinetix AI has **not published pricing**. Treat any figure as unconfirmed."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "KAI is a **173 cm, 70 kg** humanoid with **115 degrees of freedom**, 36 of them in each hand, and a full-body tactile skin with **18,000 sensors**. It can lift **20 kg**. Its software is built around a **World Model** with base, action and evaluation layers. Training data is captured with **KAI Halo**, a head-mounted wearable that records first-person video and body movement from human operators.\n\nThe company was founded by veterans of the [XPeng IRON](/product-xpeng-iron) humanoid R&D team and targets retail, concierge and home assistance rather than industry. Mass production is stated for later in 2026. With no verified shipping hardware the page stays under review. No official GitHub organization was found for Kinetix AI; the humanoids table shows an em dash for \"no account found\", not a confirmed zero."
+    }
+  ]
+}
