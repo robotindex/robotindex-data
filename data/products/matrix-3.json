@@ -1,0 +1,66 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "matrix-3",
+  "slug": "product-matrix-3",
+  "name": "Matrix Robotics MATRIX-3",
+  "manufacturer": "Matrixrobotics",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "under-review",
+  "flags": {
+    "pending": true,
+    "openSource": false,
+    "closedPlatform": false
+  },
+  "description": "The third-generation flagship of **Matrix Robotics** (Shanghai, China), launched on **10 January 2026**. It stands **1.7 m**, weighs **65 kg**, wears a biomimetic fabric skin with tactile sensors, and has **27 degrees of freedom per hand**. An Early Access Program is open and pilot deployments were stated for mid-2026; shipping hardware has not been verified.",
+  "specs": [
+    {
+      "label": "Maker",
+      "value": "Matrix Robotics",
+      "note": "Shanghai, China · private"
+    },
+    {
+      "label": "Launched",
+      "value": "10 Jan 2026",
+      "note": "Third-generation flagship"
+    },
+    {
+      "label": "Height",
+      "value": "1.7 m"
+    },
+    {
+      "label": "Weight",
+      "value": "65 kg"
+    },
+    {
+      "label": "Hands",
+      "value": "27 DoF",
+      "note": "Per hand"
+    },
+    {
+      "label": "Skin",
+      "value": "Biomimetic fabric",
+      "note": "With tactile sensors"
+    },
+    {
+      "label": "Model",
+      "value": "WAVE"
+    },
+    {
+      "label": "Availability",
+      "value": "Early Access",
+      "note": "Pilot deployments stated for mid-2026"
+    }
+  ],
+  "sourcing": "Compiled from robotindex research, as of October 2026. The $99,000 figure comes from a single report and conflicts with the manufacturer having published no pricing, so it is stated as disputed rather than as a price. Pilot deployments were stated for mid-2026; this page does not confirm that any have shipped. No official GitHub organization was found.",
+  "manufacturerUrl": "https://matrixrobotics.ai",
+  "pricing": {
+    "summary": "The price is **disputed**. One report says **$99,000** starting; Matrix Robotics has **not published pricing**. Treat any figure as unconfirmed."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "MATRIX-3 is Matrix Robotics' third-generation humanoid, launched in January 2026. It is **1.7 m** and **65 kg**, covered in a biomimetic fabric skin with tactile sensors, with **27 degrees of freedom in each hand** and a model called **WAVE**. The company has an **Early Access Program** open and stated pilot deployments for mid-2026.\n\nFounder **Zhang Haixing** previously led Tesla China's Design and Research Centre and worked on early Optimus R&D, which is why the robot is often compared with [Tesla Optimus](/product-tesla-optimus). Pilot and early-access status is not shipping hardware, so the page stays under review. No official GitHub organization was found for Matrix Robotics; the humanoids table shows an em dash for \"no account found\", not a confirmed zero."
+    }
+  ]
+}
