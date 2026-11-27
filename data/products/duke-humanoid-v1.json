@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "duke-humanoid-v1",
+  "slug": "product-duke-humanoid-v1",
+  "name": "Duke Humanoid V1",
+  "manufacturer": "Generalroboticslab",
+  "category": "Humanoid & General Purpose",
+  "subcategory": "Two Legs",
+  "tier": "under-review",
+  "flags": {
+    "pending": false,
+    "openSource": true,
+    "closedPlatform": false
+  },
+  "description": "A **child-sized, open-source humanoid** from **Duke University's General Robotics Lab**, built to study **energy-efficient walking**. Its control policy switches between active and passive joint control and cuts the cost of transport by **31%** on real hardware. It has **10 degrees of freedom**, all in the legs, stands **1 meter** tall and weighs **30 kg**. It is a research platform, not a product for sale.",
+  "specs": [
+    {
+      "label": "Degrees of Freedom",
+      "value": "10",
+      "note": "5 per leg"
+    },
+    {
+      "label": "Hip",
+      "value": "3 DOF",
+      "note": "Rotation, flexion/extension, abduction/adduction"
+    },
+    {
+      "label": "Knee",
+      "value": "1 DOF",
+      "note": "Flexion/extension"
+    },
+    {
+      "label": "Ankle",
+      "value": "1 DOF",
+      "note": "Plantar flexion and dorsiflexion"
+    },
+    {
+      "label": "Height",
+      "value": "1.0 m",
+      "note": "Shoulder to foot"
+    },
+    {
+      "label": "Weight",
+      "value": "30 kg",
+      "note": "About an eight-year-old child's proportions"
+    },
+    {
+      "label": "Control",
+      "value": "End-to-end RL",
+      "note": "Active/passive joint switching"
+    },
+    {
+      "label": "Simulation",
+      "value": "Isaac Lab",
+      "note": "Isaac Gym / Isaac Lab"
+    },
+    {
+      "label": "Energy Efficiency",
+      "value": "−31% CoT",
+      "note": "Hardware; 50% in simulation"
+    },
+    {
+      "label": "Price",
+      "value": "Not sold",
+      "note": "Open hardware, build it yourself"
+    },
+    {
+      "label": "Availability",
+      "value": "Research platform",
+      "note": "Duke General Robotics Lab"
+    },
+    {
+      "label": "License",
+      "value": "Apache-2.0",
+      "note": "Reported; repository not checked"
+    }
+  ],
+  "sourcing": "Verified against the Duke Humanoid paper (arXiv:2409.19795), the General Robotics Lab's site and secondary reports, as of October 2026. The specifications are from the paper, the primary source, and the 31% and 50% efficiency figures are the paper's own measured results. Flagged as uncertain: the DukeHumanoidv1 repository was not opened, so it is not confirmed that the CAD and hardware documentation are published there rather than only referenced by the paper, and the Apache-2.0 license and 72-star figure come from the organization's GitHub listing; no build cost or bill-of-materials total is published; the Open Source badge rests on the paper's open-hardware claim until the repository is checked.",
+  "manufacturerUrl": "https://generalroboticslab.com/",
+  "pricing": {
+    "summary": "There is **no price and no supplier**. The Duke Humanoid is a design to build from, like the SO-100 and OpenArm, not a product to order. Duke has not published a build cost: the paper discusses the cost of geared motors as a design constraint but gives no bill-of-materials total, so the accurate entry is **open hardware, build cost not published**."
+  },
+  "editorial": [
+    {
+      "heading": "Insights",
+      "body": "The Duke Humanoid is a **10-degree-of-freedom bipedal robot** released as a complete open platform: hardware documentation, CAD, and the reinforcement learning stack that controls it. It stands about **1 meter** from shoulder to foot and weighs **30 kg**, roughly the proportions of an eight-year-old child. Duke chose that size deliberately: large enough to reach human-height surfaces for later manipulation work, small enough to stay affordable given the cost of geared motors. It sits alongside the [K-Scale Zeroth Bot](/product-kscale-zeroth-bot) and the [LeRobot Humanoid](/product-hf-lerobot-humanoid) as an open-source bipedal platform built for research rather than sale.\n\nAll ten degrees of freedom are in the legs, five per side: three at the hip (rotation, flexion/extension, abduction/adduction), one at the knee, and one ankle limited to plantar flexion and dorsiflexion. The ankle was constrained to a single axis to reduce mass at the end of the limb. Leg proportions and joint ranges follow human anatomy, and the hip's center of mass is aligned in the frontal plane so the robot can balance and walk with straight knees.\n\nThe research contribution is the control rather than the mechanics. Most walking robots hold every joint under active control throughout the gait, while humans and animals let the leg swing freely through much of it. The team trained an end-to-end reinforcement learning policy that alternates between active and passive control, reaching a **50% improvement in cost of transport in simulation** and **31% on the physical robot** at low walking speed. Training runs in Isaac Gym and Isaac Lab.\n\nThe paper is [arXiv:2409.19795](https://arxiv.org/abs/2409.19795), *The Duke Humanoid: Design and Control For Energy Efficient Bipedal Locomotion Using Passive Dynamics* (Xia, Li, Lee, Scutari, Chen). The code is in the [DukeHumanoidv1](https://github.com/generalroboticslab/DukeHumanoidv1) repository, which covers the RL simulation and hardware control and has 72 stars. The same lab also publishes Text2Robot (generating robot designs from text prompts and optimizing them with evolutionary algorithms), ClutterGen, SonicFly and MARBLE."
+    }
+  ]
+}
